@@ -1,30 +1,20 @@
 
-# Contributing
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+# <a name="contributing"></a>Contributions
+Ce projet accepte les contributions et les suggestions.  La plupart des contributions vous demandent d’accepter un contrat de licence de contribution (CLA) déclarant que vous avez le droit de nous accorder, et que vous nous accordez réellement, les droits d’utilisation de votre contribution. Pour plus d’informations, visitez https://cla.microsoft.com.
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+Quand vous envoyez une requête de tirage, un bot CLA détermine automatiquement si vous devez fournir un contrat CLA et agrémenter la requête de tirage de façon appropriée (par exemple, étiquette, commentaire). Suivez simplement les instructions fournies par le bot. Vous ne devez effectuer cette opération qu’une seule fois sur tous les dépôts utilisant notre contrat CLA.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Ce projet a adopté le [code de conduite Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/).
+Pour plus d’informations, consultez les [questions fréquentes sur le code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) en posant vos questions ou fournissant vos commentaires.
 
-# Legal Notices
-Microsoft and any contributors grant you a license to the Microsoft documentation and other content
-in this repository under the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/legalcode),
-see the [LICENSE](LICENSE.md) file, and grant you a license to any code in the repository under the [MIT License](https://opensource.org/licenses/MIT), see the
-[LICENSE-CODE](LICENSE-CODE.md) file.
+# <a name="legal-notices"></a>Mentions légales
+Microsoft et les contributeurs vous octroient une licence d’accès à la documentation Microsoft et aux autres contenus de ce dépôt sous la [licence publique internationale Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) (voir le fichier [LICENSE](LICENSE.md)) et vous octroient une licence d’accès au code du dépôt sous la [licence MIT](https://opensource.org/licenses/MIT) (voir le fichier [LICENSE-CODE](LICENSE-CODE.md)).
 
-Microsoft, Windows, Microsoft Azure and/or other Microsoft products and services referenced in the documentation
-may be either trademarks or registered trademarks of Microsoft in the United States and/or other countries.
-The licenses for this project do not grant you rights to use any Microsoft names, logos, or trademarks.
-Microsoft's general trademark guidelines can be found at http://go.microsoft.com/fwlink/?LinkID=254653.
+Microsoft, Windows, Microsoft Azure et/ou les autres produits et services Microsoft référencés dans la documentation peuvent être des marques ou des marques déposées de Microsoft aux États-Unis et/ou dans d’autres pays.
+Les licences de ce projet ne vous octroient pas de droits d’utilisation des noms, logos ou marques de Microsoft.
+Des instructions générales sur les marques de Microsoft sont disponibles à la page http://go.microsoft.com/fwlink/?LinkID=254653.
 
-Privacy information can be found at https://privacy.microsoft.com/en-us/
+Des informations sur la confidentialité sont disponibles à la page https://privacy.microsoft.com/en-us/
 
-Microsoft and any contributors reserve all others rights, whether under their respective copyrights, patents,
-or trademarks, whether by implication, estoppel or otherwise.
+Microsoft et les contributeurs se réservent tous les autres droits, en vertu de leurs droits d’auteur, brevets ou marques respectifs, que ce soit par implication, préclusion ou autrement.
 
