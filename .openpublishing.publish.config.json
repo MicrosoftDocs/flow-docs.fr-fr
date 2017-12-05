@@ -22,7 +22,6 @@
   ],
   "notification_subscribers": [],
   "branches_to_filter": [
-    "live-sxs",
     "master-sxs",
     "live"
   ],
