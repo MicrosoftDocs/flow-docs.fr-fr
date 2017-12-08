@@ -1,9 +1,8 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
 title: Utiliser les approbations
 metadata:
   title: Utiliser les approbations | Microsoft Flow
-  description: Découvrez comment gérer l’approbation des documents et processus dans Microsoft Flow.
+  description: "Découvrez comment gérer l’approbation des documents et processus dans Microsoft Flow."
   audience: Business User
   level: Beginner
   nextTutorialHref: administer-flows
@@ -16,20 +15,25 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
 items:
-  - durationInMinutes: 1
-    content: |
-      Découvrez comment gérer l’approbation des documents et processus dans Microsoft Flow.
-  - title: Créer une demande d’approbation
-    durationInMinutes: 4
-    content: |
-      > [!Video https://www.youtube.com/embed/65yz8tqnWe0?rel=0]
+- durationInMinutes: 1
+  content: "Découvrez comment gérer l’approbation des documents et processus dans Microsoft Flow.\n"
+  ms.openlocfilehash: 1967e986e5bf7a9ffceb13578b41710869d8e890
+  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/07/2017
+- title: "Créer une demande d’approbation"
+  durationInMinutes: 4
+  content: >
+    > [!Video https://www.youtube.com/embed/65yz8tqnWe0?rel=0]
 
-      [!INCLUDE [learning-approval-center](../includes/learning-approval-center.md)]
-  - title: Traiter une demande d’approbation
-    durationInMinutes: 7
-    content: |
-      > [!Video https://www.youtube.com/embed/-0r5ZKVEIS4?rel=0]
 
-      [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
-  - content: |
-      Vous avez terminé la section **Utiliser les approbations** de la formation guidée sur Microsoft Flow.
+    [!INCLUDE [learning-approval-center](../includes/learning-approval-center.md)]
+- title: "Traiter une demande d’approbation"
+  durationInMinutes: 7
+  content: >
+    > [!Video https://www.youtube.com/embed/-0r5ZKVEIS4?rel=0]
+
+
+    [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
+- content: "Vous avez terminé la section **Utiliser les approbations** de la formation guidée sur Microsoft Flow.\0"

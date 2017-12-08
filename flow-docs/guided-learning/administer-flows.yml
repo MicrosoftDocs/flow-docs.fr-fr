@@ -1,9 +1,8 @@
-### YamlMime:YamlDocument
 documentType: Tutorial
 title: Administrer des flux
 metadata:
   title: Administrer des flux | Microsoft Flow
-  description: Découvrez comment utiliser les stratégies de protection des données et les environnements pour gérer les sources de données et les flux.
+  description: "Découvrez comment utiliser les stratégies de protection des données et les environnements pour gérer les sources de données et les flux."
   audience: Business User
   level: Beginner
   displayType: one-column
@@ -14,20 +13,25 @@ metadata:
   ms.date: 10/04/2017
   ms.author: deonhe
 items:
-  - durationInMinutes: 1
-    content: |
-      Découvrez comment utiliser les stratégies de protection des données et les environnements pour gérer les sources de données et les flux.
-  - title: Utiliser des environnements pour gérer des flux
-    durationInMinutes: 8
-    content: |
-      > [!Video https://www.youtube.com/embed/wnScBLz7css?rel=0]
+- durationInMinutes: 1
+  content: "Découvrez comment utiliser les stratégies de protection des données et les environnements pour gérer les sources de données et les flux.\n"
+  ms.openlocfilehash: 52eb25087beb258481be25a560c84093d025021a
+  ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 11/07/2017
+- title: "Utiliser des environnements pour gérer des flux"
+  durationInMinutes: 8
+  content: >
+    > [!Video https://www.youtube.com/embed/wnScBLz7css?rel=0]
 
-      [!INCLUDE [learning-environments](../includes/learning-environments.md)]
-  - title: Utiliser des stratégies de protection contre la perte de données
-    durationInMinutes: 6
-    content: |
-      > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
 
-      [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
-  - content: |
-      Vous avez terminé la section **Administrer des flux** de la formation guidée sur Microsoft Flow.
+    [!INCLUDE [learning-environments](../includes/learning-environments.md)]
+- title: "Utiliser des stratégies de protection contre la perte de données"
+  durationInMinutes: 6
+  content: >
+    > [!Video https://www.youtube.com/embed/vls4RPVP5xE?rel=0]
+
+
+    [!INCLUDE [learning-data-loss-prevention](../includes/learning-data-loss-prevention.md)]
+- content: "Vous avez terminé la section **Administrer des flux** de la formation guidée sur Microsoft Flow.\0"
