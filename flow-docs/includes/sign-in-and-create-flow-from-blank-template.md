@@ -1,10 +1,10 @@
 1. Connectez-vous à [Microsoft Flow](https://flow.microsoft.com).
    
-    ![se connecter](includes/media/modern-approvals/sign-in.png)
+    ![se connecter](media/modern-approvals/sign-in.png)
 2. Sélectionnez l’onglet **Mes flux**.
    
-    ![sélectionner mes flux](includes/media/modern-approvals/select-my-flows.png)
+    ![sélectionner mes flux](media/modern-approvals/select-my-flows.png)
 3. Sélectionnez **Créer entièrement**.
    
-    ![créer entièrement](includes/media/modern-approvals/blank-template.png)
+    ![créer entièrement](media/modern-approvals/blank-template.png)
 
