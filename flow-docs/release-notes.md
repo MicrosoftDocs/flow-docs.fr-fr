@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/25/2017
+ms.date: 01/01/2018
 ms.author: stepsic
-ms.openlocfilehash: 37bab7ccd54ecc7976a42df2e215daa19916fc85
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 8bdfafff5fbf3a5491809063e92607cd8e10167c
+ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="release-notes"></a>Notes de publication
 ## <a name="top-questions"></a>Principales questions
@@ -28,11 +28,11 @@ ms.lasthandoff: 10/15/2017
    1. Identifiez l’erreur. Commencez par accéder à l’icône de notifications en haut du portail web ou par sélectionner l’onglet **Activité** dans l’application mobile. Votre flux doit s’afficher et vous pouvez le sélectionner.
    2. Vous voyez maintenant les détails du flux. Trouvez l’étape avec un point d’exclamation rouge pour voir le message d’erreur relatif à votre flux.
    3. Selon le message d’erreur, vous devez pouvoir **modifier** le flux et le corriger. [En savoir plus sur la façon de corriger les problèmes courants rencontrés avec les flux](fix-flow-failures.md).
-2. Comment utiliser une condition avancée ou une formule ?
+2. Comment utiliser une condition ou une expression avancée ?
    
-   * En savoir plus sur l’[ajout de conditions](add-a-condition.md).
+   * En savoir plus sur l’[ajout de conditions](add-condition.md).
    * Si vous souhaitez avoir plusieurs étapes à l’intérieur d’un flux, cliquez ou appuyez sur **Ajouter une condition** dans une condition existante.
-   * Créez une formule avancée en faisant référence à [une fonction dans Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
+   * Créez une expression avancée en faisant référence à [une fonction dans Logic Apps](https://docs.microsoft.com/rest/api/logic/definition-language).
 3. Comment fonctionnent les licences avec Office 365 ?
    
    * Si vous êtes un utilisateur Office 365, vous bénéficiez d’un accès complet à Microsoft Flow dans le cadre de l’abonnement Office 365. Pour plus d’informations, consultez la [tarification des offres Microsoft Flow](https://flow.microsoft.com/pricing/).
@@ -40,11 +40,110 @@ ms.lasthandoff: 10/15/2017
 
 ## <a name="known-issues-and-resolutions"></a>Problèmes connus et solutions
 1. Les listes SharePoint sur Mes Sites et qui ne sont pas de type *Liste personnalisée* ne sont pas prises en charge. Pour contourner ce problème, créez une liste personnalisée sur un site SharePoint standard.
-2. Les métadonnées de document ne sont pas renvoyées à partir de déclencheurs sur les bibliothèques documentaires SharePoint.
-3. Les flux ne peuvent pas être écrits dans les champs Taxonomie dans les listes SharePoint. Jusqu’à ce que le problème soit corrigé, nous vous recommandons d’utiliser un champ de chaîne simple.
-4. Les déclencheurs de fichier ne sont pas activés pour les fichiers ajoutés dans les dossiers imbriqués au sein du dossier sélectionné.
+2. Les flux ne peuvent pas être écrits dans les champs Taxonomie dans les listes SharePoint. Jusqu’à ce que le problème soit corrigé, nous vous recommandons d’utiliser un champ de chaîne simple.
+3. Les déclencheurs de fichier ne sont pas activés pour les fichiers ajoutés dans les dossiers imbriqués au sein du dossier sélectionné.
 
 ## <a name="whats-new"></a>Nouveautés
+
+### <a name="release-2017-12-20"></a>Version 20-12-2017
+
+Microsoft Flow Analytics est à présent disponible dans toutes les régions Microsoft Flow. Cela signifie que vous pouvez obtenir plus d’informations sur l’état de vos flux exécutés dans votre environnement.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/announcing-microsoft-flow-analytics/) sur cette version.
+
+
+### <a name="release-2017-12-14"></a>Version 14-12-2017
+
+- **Améliorations du connecteur Outlook** : vous pouvez enregistrer un message électronique sous forme de fichier « .eml », répondre à des invitations de calendrier automatiquement et déclencher des flux lorsque vous êtes mentionné dans un fil de discussion.
+- **Améliorations des connexions** : Microsoft Flow mémorise vos connexions les plus récentes et vous montre tous les connecteurs qui viennent d’être ajoutés.
+- **Cinq nouveaux connecteurs** : ajout de Azure Container Instances, Azure Kusto, Metatask, Microsoft To-Do et Plumsail Documents.
+- **Améliorations HTTP** : l’action HTTP prend maintenant en charge le codage segmenté.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/outlook-connector-more/) sur cette version.
+
+### <a name="release-2017-12-05"></a>Version 05-12-2017
+
+Le panneau de lancement de Microsoft Flow est maintenant disponible dans toutes les régions. Ce panneau vous permet d’ajouter des valeurs à un flux lorsque vous l’exécutez à l’intérieur de votre liste ou bibliothèque de documents SharePoint.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/introducing-flow-launch-panel-in-sharepoint-lists-and-libraries/) sur cette version.
+
+
+### <a name="release-2017-11-28"></a>Version 28-11-2017
+
+- **Métadonnées gérées** : lisez et écrivez des données dans des colonnes SharePoint qui utilisent le type Métadonnées gérées (également appelées Classification).
+- **Ajout aux tableaux** : ajoutez des éléments à la fin de tableaux à l’aide d’une nouvelle action de variable Ajouter au tableau.
+- **Tago** : nouveau connecteur à Tago, qui fournit une connexion simple d’appareils électroniques avec des données externes permettant de prendre de meilleures décisions à l’aide d’une analyse contextuelle.
+- **iPhone X** : nouvelle version de l’application Microsoft Flow qui utilise le mode plein écran sur l’iPhone X, et qui comporte une amélioration de la vitesse de chargement des images.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/managed-metadata-tago/) sur cette version.
+
+### <a name="release-2017-11-09"></a>Version 09-11-2017
+
+- **Intégration de OneDrive Entreprise** : il existe [maintenant un bouton de flux dans OneDrive Entreprise](https://flow.microsoft.com/blog/microsoft-flow-integration-in-one-drive-for-business-and-new-connector-actions/) qui permet de créer ou de déclencher des flux sur les fichiers ou dossiers sélectionnés.
+- **Déclencheurs de planification** : lancez des flux lorsqu’une tâche est créée, vous est assignée ou est terminée.
+- **Pièces jointes SharePoint** : utilisez des pièces jointes sur des éléments de liste SharePoint : répertorier, télécharger, ajouter ou supprimer des pièces jointes.
+- **Connecteur de gestion de flux** : créez des flux qui automatisent la gestion des autres flux de votre environnement (par exemple, ajoutez des autorisations aux flux automatiquement).
+- **Quatre nouveaux connecteurs** : ajout de Azure Custom Vision Service, D&B Optimizer, Enadoc et Derdak SIGNL4. 
+- **Autres actions de connecteur** : exécutez des requêtes SQL, obtenez des déclencheurs de messagerie plus rapides, utilisez n’importe quelle méthode HTTP avec Azure AD et bien plus encore.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/planner-triggers-connector-improvements/) sur cette version.
+
+### <a name="release-2017-11-02"></a>Version 02-11-2017
+
+- **Enregistrement d’audit** : les événements d’audit Microsoft Flow sont maintenant disponibles dans le centre de sécurité et conformité Office 365 pour tous les locataires.
+- **Correctifs apportés aux widgets des flux** : résolution d’un problème dans l’application mobile Flow qui empêchait le chargement des boutons dans le widget.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/security-and-compliance-center/) sur cette version.
+
+### <a name="release-2017-10-19"></a>Version 19-10-2017
+
+- **Action « Appliquer à chacun » imbriquée** : vous pouvez ajouter des actions « Appliquer à chacun », filtrer et sélectionner dans d’autres conteneurs « Appliquer à chacun ».
+- **Actions DateTime** : nouvelles actions pour l’obtention des heures locales, l’ajout, la soustraction ou la mise en forme des heures.
+- **Quatre nouveaux connecteurs** : ajout de Content Moderator, Docparser, Microsoft Kaizala et Pitney Bowes Data Validation.
+- **Amélioration de l’expérience de connexion** : réception de notifications dans le portail Flow lorsqu’une connexion est interrompue et détails de connexion enrichis.
+- **Collection mobile** : nouvelle collection de modèles pour les [travailleurs mobiles](https://flow.microsoft.com/collections/onthego/).
+- **Collecte d’adresses e-mail via des boutons** : collectez les adresses e-mail des utilisateurs lorsque ces derniers exécutent des boutons.
+- **Obtention de fichiers via des boutons** : obtenez des fichiers chargés, tels que des photos, provenant des utilisateurs lorsqu’ils exécutent des boutons.
+- **Première exécution et connexion automatique** : amélioration des expériences de première exécution sur l’application mobile, notamment la connexion automatique.
+- **Déclencheurs Microsoft Forms plus rapides** : les formulaires déclenchent des flux beaucoup plus rapidement qu’avant (une fois par heure).
+- **Entrées de bouton dans les différentes sessions** : les boutons déclenchés sur votre téléphone mobile mémorisent les entrées précédentes.
+- **Flux d’activités mobile** : amélioration du flux d’activité pour inclure des résumés d’exécution plus détaillés et des informations de dépannage.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/nested-apply-to-each/) sur cette version.
+
+### <a name="release-2017-10-03"></a>Version 03-10-2017
+
+- **Tous doivent approuver** : demandez l’envoi d’une demande d’approbation à plusieurs personnes pour que tous les utilisateurs qui ont reçu la demande l’approuvent.
+- **Nouvelles actions OneDrive Entreprise** : générez des PDF pour les fichiers stockés sur OneDrive Entreprise et quatre nouvelles actions.
+- **Connecteur Apache Impala** : Apache Impala (incubating) est la base de données d’analytique native open source pour Apache Hadoop.
+- **Ajouter des descriptions de flux** : décrivez vos flux afin que vos collègues puissent en afficher un résumé lorsque vous les partagez avec eux.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/all-must-approve-and-onedrive/) sur cette version.
+
+### <a name="release-2017-09-25---q3-update-for-microsoft-flow"></a>Version 25-09-2017 - Mise à jour du 3e trimestre pour Microsoft Flow
+
+- **Intégration SharePoint approfondie dans la version First Release** : il existe de nouveaux flux prêts à l’emploi d’envoi pour révision et un volet Flow pour la collecte d’entrées lorsque vous exécutez un flux pour les locataires First Release.
+- **Dynamics 365 Customer Engagement** : Flow est maintenant intégré dans l’interface utilisateur de Dynamics 365 Customer Engagement.
+- **Centre de gestion de la confidentialité Microsoft** : Flow est répertorié dans le Centre de gestion de la confidentialité Microsoft, et affiche des certifications telles que HIPAA, ISO et SOC.
+- **Analyse de l’utilisation** : chaque flux possède un tableau de bord Power BI incorporé avec une analyse de l’utilisation de base.
+- **Enregistrement d’audit dans la version First Release** : tous les événements de gestion de flux sont enregistrés dans le Centre de conformité et sécurité Office 365 pour les locataires de la version First Release.
+- **Six nouveaux connecteurs** : ajout de LinkedIn, Groupes Office 365, Skype Entreprise, Adobe Sign, Bizzy et Azure Log Analytics Data Collection.
+- **Déclencheurs SQL** : exécutez des flux lorsqu’une ligne est ajoutée ou mise à jour dans une table SQL.
+- **Connecteurs personnalisés locaux** : les connecteurs personnalisés peuvent maintenant utiliser la passerelle de données locale pour se connecter aux points de terminaison internes sur votre réseau.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/q3-2017-update/) sur cette version.
+
+### <a name="release-2017-09-21"></a>Version 21-09-2017
+
+- **Télécharger l’historique des flux** : téléchargez l’historique d’exécution d’un flux dans un fichier CSV à ouvrir dans Excel.
+- **Périodicité avancée** : créez des planifications périodiques pour déclencher vos flux (par exemple, déclencher uniquement les jours de semaine).
+- **IntelliSense** : lorsque vous tapez des expressions, IntelliSense fournit des suggestions de paramètres.
+- **Quatre nouveaux connecteurs** : ajout de connecteurs pour les services Azure AD HTTP, Amazon Redshift, Azure Event Grid Publish et FlowForma.
+- **Partage de liens** : nouvelle action permettant de générer des liens partageables pour les fichiers OneDrive ou les blob Stockage Azure.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/download-history-recurrence/) sur cette version.
+
+
 ### <a name="release-2017-08-25"></a>Version 25-08-2017
 * **Propriétés du document et plus encore pour SharePoint** - [Lecture et configuration des propriétés de la bibliothèque de documents SharePoint](https://flow.microsoft.com/blog/support-for-sharepoint-document-library-properties/)et utilisation de champs supplémentaires, tels que des liens vers un élément SharePoint.
 * **Collections de flux** -Les collections de flux sont un ensemble de collections de modèles organisés par rôle ou verticalement.
@@ -406,8 +505,8 @@ Si vous avez utilisé des flux logiques dans le cadre de [Microsoft PowerApps](h
 * Vous pouvez [publier vos propres modèles](publish-a-template.md) dans la galerie une fois que vous avez personnalisé un flux.
 * Vous pouvez consulter l’historique de chacune des vérifications et exécutions de votre flux.
 * Lorsque vous enregistrez un flux, vous pouvez [le voir en action immédiatement](see-a-flow-run.md) en effectuant simplement l’action de déclencheur.
-* Nous avons une [nouvelle communauté](http://go.microsoft.com/fwlink/?LinkID=787467) dans laquelle vous pouvez discuter de Microsoft Flow ou [soumettre vos idées](https://go.microsoft.com/fwlink/?LinkID=787474).
+* Nous avons une [nouvelle communauté](https://go.microsoft.com/fwlink/?LinkID=787467) dans laquelle vous pouvez discuter de Microsoft Flow ou [soumettre vos idées](https://go.microsoft.com/fwlink/?LinkID=787474).
 
 ## <a name="next-steps"></a>Étapes suivantes
-Si vous rencontrez des problèmes qui ne sont pas encore traités dans ces notes de publication ou dans le [Forum Aux Questions](frequently-asked-questions.md), [rejoignez notre communauté](http://go.microsoft.com/fwlink/?LinkID=787467) pour poser des questions ou [contactez le support technique](http://go.microsoft.com/fwlink/?LinkID=787479).
+Si vous rencontrez des problèmes qui ne sont pas encore traités dans ces notes de publication ou dans le [Forum Aux Questions](frequently-asked-questions.md), [rejoignez notre communauté](https://go.microsoft.com/fwlink/?LinkID=787467) pour poser des questions ou [contactez le support technique](http://go.microsoft.com/fwlink/?LinkID=787479).
 

@@ -1,6 +1,6 @@
 ---
-title: "Basculer entre des environnements lors de la création d’un flux Microsoft | Microsoft Docs"
-description: "Découvrez comment un créateur utilise différents environnements lors de la création d’un flux Microsoft"
+title: En savoir plus sur les environnements Microsoft Flow | Microsoft Docs
+description: "Découvrez comment utiliser des environnements pour isoler vos flux"
 services: 
 suite: flow
 documentationcenter: na
@@ -13,70 +13,79 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/27/2016
+ms.date: 11/27/2017
 ms.author: sunayv
-ms.openlocfilehash: bcbb566c20291da14881d771c538dd89689b6b1d
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 202167f833c6f5e1a8105db8bd44addc24dfdc3e
+ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="choosing-an-environment"></a>Choix d’un environnement
-Avec Microsoft Flow, vous pouvez travailler dans différents environnements et basculer facilement entre ces derniers. Cet article aborde les sujets suivants relatifs à l’environnement :
 
-* Informations sur le rôle des environnements
-* Changer d’environnement
-* Créer un flux dans l’environnement approprié
+Cet article vous présente les **environnements** Microsoft Flow dans lesquels vous pouvez créer, et en toute sécurité isoler vos flux, passerelles, connexions et autres ressources.
+
+Voici ce que vous allez apprendre :
+
+* Fonctionnalités fournies par les environnements.
+* Changer d’environnement.
+* Créer un flux dans l’environnement approprié.
 
 ## <a name="environments-overview"></a>Vue d’ensemble des environnements
-Les environnements fournissent une limite d’isolation pour vos flux, connexions, passerelles et autres ressources. Lorsque vous créez un flux, vous choisissez l’environnement qui l’héberge et les ressources utilisées par ce flux. Vous pouvez utiliser différents environnements pour différents scénarios.
 
-Voici quelques exemples :
+Lorsque vous créez un flux, vous choisissez l’environnement qui l’héberge et les ressources utilisées par le flux. Vous pouvez utiliser différents environnements pour différents scénarios.
 
-* Vous créez un flux qui utilise une connexion au service Common Data Service de Microsoft. Dans ce scénario, le flux et le service Common Data Service se trouvent dans le même environnement. Cela garantit que toutes les données sont isolées dans cet environnement (limite d’isolation).
-* Vous créez un flux pour votre service des ressources humaines. Vous souhaitez vous assurer que seuls les utilisateurs de votre service des ressources humaines ont accès au flux. Par exemple, vous ne souhaitez pas que votre groupe Ventes utilise le flux. Dans ce scénario, vous pouvez utiliser un environnement séparé, pour lequel seuls les utilisateurs des ressources humaines ont des autorisations, afin d’héberger le flux et toutes les ressources qu’il utilise, y compris les connexions ou les passerelles.
-* Il existe des utilisateurs en Europe qui utilisent un flux pour afficher les données SharePoint. Dans ce scénario, créez un environnement en Europe qui héberge le flux et la connexion SharePoint. Cet environnement en Europe offre aux utilisateurs européens les meilleures performances, comme toutes les ressources se trouvent en Europe (localité des données).
+## <a name="here-are-a-few-scenarios-for-using-environments"></a>Voici quelques scénarios pour l’utilisation des environnements
 
-Les environnements sont créés par les administrateurs Microsoft Flow. Ces derniers contrôlent également qui a accès aux différents environnements.
+Scénario|Recommandation
+-----|-----
+Vous voulez créer un flux qui utilise une connexion au service Common Data Service de Microsoft.|Placez le flux et le service Common Data Service dans le même environnement. Cela garantit que toutes les données sont isolées dans cet environnement (limite d’isolation).
+Vous créez un flux pour votre service des ressources humaines. Vous souhaitez vous assurer que seuls les utilisateurs de votre service des ressources humaines ont accès au flux.|Créez un environnement et ajoutez-y uniquement des utilisateurs des ressources humaines. Placez le flux et les autres ressources utilisées par le flux dans cet environnement.
+Des utilisateurs en Europe utilisent un flux pour afficher les données SharePoint.|Créez un environnement en Europe, puis créez votre flux et la connexion SharePoint associée. Cet environnement en Europe offre aux utilisateurs européens les meilleures performances, car toutes les ressources se trouvent en Europe (localité des données).
 
-Cette rubrique montre comment naviguer entre les différents environnements. Pour plus d’informations sur la façon dont vous pouvez créer et gérer les environnements, consultez la rubrique sur [l’administration des environnements](environments-overview-admin.md).
+Pour créer des environnements, vous devez être administrateur de Microsoft Flow. Les administrateurs contrôlent également qui a accès aux environnements. Pour plus d’informations sur la façon dont vous pouvez créer et gérer les environnements, consultez la rubrique sur [l’administration des environnements](environments-overview-admin.md).
 
 ## <a name="switching-environments"></a>Changer d’environnement
-Microsoft Flow permet de basculer relativement facilement entre les environnements. Lorsque vous changez d’environnement, vous voyez tous les éléments de cet environnement spécifique. Vous ne voyez pas les éléments des autres environnements.
+
+Microsoft Flow permet de basculer facilement entre les environnements. Lorsque vous changez d’environnement, vous voyez uniquement les éléments qui sont créés dans cet environnement spécifique ; vous ne voyez pas les éléments des autres environnements.
 
 Voici un exemple.
 
-Vous créez un flux nommé *Nouvel employé* dans l’environnement *Ressources humaines*. Dans [flow.microsoft.com](http://flow.microsoft.com), ouvrez l’environnement *Ventes*. Le flux *Nouvel employé* n’est pas répertorié. Pour voir le flux *Nouvel employé*, ouvrez l’environnement *Ressources humaines*. Rappelez-vous, cela s’applique à tous les éléments que vous créez dans l’environnement, y compris les connexions, les passerelles, PowerApps, etc.
+Vous avez créé un flux nommé *Nouvel employé* dans l’environnement *Ressources humaines*. Dans [Microsoft Flow](https://flow.microsoft.com), ouvrez l’environnement *Ventes*. Le flux *Nouvel employé* n’est pas répertorié. Pour voir le flux *Nouvel employé*, ouvrez l’environnement *Ressources humaines*. Rappelez-vous que les mêmes règles s’appliquent à tous les éléments que vous créez dans l’environnement, y compris les connexions, passerelles, flux, etc.
 
-1. Ouvrez [flow.microsoft.com](http://flow.microsoft.com).
-2. En haut à droite, vous voyez votre nom et l’environnement dans lequel vous êtes :  
-   ![](./media/environments-overview-maker/default-environment.png)
-   
-    Dans l’image, notez les notifications. Celles-ci sont propres au flux dans cet environnement par défaut.
-3. Sélectionnez votre nom. Dans la liste déroulante, tous les environnements disponibles sont répertoriés. Votre environnement actuel est sélectionné :  
-   ![](./media/environments-overview-maker/all-environments.png)
-4. Pour basculer vers un autre environnement, sélectionnez ce dernier dans la liste :  
-   ![](./media/environments-overview-maker/select-europe.png)
-5. Microsoft Flow bascule automatiquement vers le nouvel environnement :  
-   ![](./media/environments-overview-maker/europe-environment.png)
-   
-    Dans l’image, notez l’absence de notifications. Le nouvel environnement Europe n’a aucune notification.
+Suivez ces instructions pour changer d’environnement :
+
+1. Connectez-vous à [Microsoft Flow](https://flow.microsoft.com).
+1. Dans l’angle supérieur droit, vous voyez une image qui représente votre profil.
+
+   ![image de profil](./media/environments-overview-maker/default-environment.png)
+
+1. Sélectionnez l’image. Une liste déroulante affiche tous les environnements disponibles. L’environnement dans lequel vous êtes actuellement connecté est coché :
+
+   ![image de liste d’environnements](./media/environments-overview-maker/all-environments.png)
+1. Pour basculer vers un autre environnement, sélectionnez ce dernier dans la liste :
+
+   ![sélectionner l’environnement vers lequel basculer](./media/environments-overview-maker/select-europe.png)
+1. Microsoft Flow bascule vers le nouvel environnement.
 
 ## <a name="create-flows-in-the-right-environment"></a>Créer des flux dans l’environnement approprié
-Avant de créer un flux, assurez-vous toujours de sélectionner l’environnement dans lequel vous souhaitez placer le flux. Sinon, vous allez devoir supprimer le flux et le recréer dans l’environnement approprié.
 
-Lorsque vous choisissez l’environnement pour créer vos flux, tenez compte des facteurs suivants :
+Avant de créer un flux, sélectionnez l’environnement dans lequel vous allez ajouter le flux et ses ressources.
 
-* Les passerelles sont créées dans l’environnement par défaut. Les passerelles ne peuvent pas être créées dans d’autres environnements. Par conséquent, si vous souhaitez vous connecter aux données locales, vous devrez utiliser l’environnement par défaut.
-* Les flux peuvent uniquement utiliser les connexions et d’autres ressources dans le même environnement. Ils ne peuvent pas utiliser de ressources dans un autre environnement. Par exemple, vous créez un flux qui utilise un connecteur personnalisé. Ce connecteur personnalisé doit être dans le même environnement que le flux.
-* La base de données du service Common Data Service de Microsoft est toujours liée à un seul environnement. Cela signifie que si vous voulez travailler avec les données du service Common Data Service, vous devez sélectionner le même environnement que celui dans lequel se trouve la base de données.
-* Vous verrez tous les environnements dans lesquels vous pouvez modifier les ressources. Toutefois, cela ne signifie pas que vous pouvez créer des ressources dans tous les environnements. Par conséquent, dans certains environnements, vous ne pouvez pas créer de flux. Vous devez demander à l’administrateur de vous ajouter comme **créateur** de cet environnement ou, choisir un autre environnement pour y créer le flux (vous serez toujours en mesure de créer des flux dans l’environnement par défaut).
+> [!NOTE]
+Si vous créez un flux dans l’environnement incorrect, vous devrez le supprimer, puis le créer dans l’environnement approprié.
 
-## <a name="what-you-did"></a>Ce que vous avez fait
-En suivant ces étapes, vous basculez entre les environnements que vous êtes autorisé à utiliser. Commencez maintenant à créer vos flux.
+Lorsque vous choisissez l’environnement pour héberger vos flux, tenez compte des facteurs suivants :
+
+* Vous pouvez créer des passerelles uniquement dans l’environnement par défaut. Aussi, si vous voulez utiliser une passerelle pour connecter votre flux aux données locales, vous devez utiliser l’environnement par défaut.
+* Les bases de données du service Common Data Service de Microsoft sont liées à un environnement spécifique. Par conséquent, si vous souhaitez créer un flux qui utilise Common Data Service, vous devez le créer dans l’environnement qui héberge la base de données.
+* Vous voyez tous les environnements dans lesquels vous pouvez modifier les ressources. Toutefois, vous devez demander à un administrateur de vous ajouter en tant que créateur à tous les environnements dans lesquels vous souhaitez créer des flux.
+
+> [!NOTE]
+Vous pouvez toujours créer des flux dans l’environnement par défaut.
 
 ## <a name="next-steps"></a>Étapes suivantes
-[Créer un flux à partir d’un modèle](get-started-logic-template.md)  
-[Créer un flux](get-started-logic-flow.md)  
-[Vue d’ensemble de l’environnement pour les administrateurs](environments-overview-admin.md)
 
+* [Créer un flux à partir d’un modèle](get-started-logic-template.md)
+* [Créer un flux](get-started-logic-flow.md)
+* [Vue d’ensemble de l’environnement pour les administrateurs](environments-overview-admin.md)
