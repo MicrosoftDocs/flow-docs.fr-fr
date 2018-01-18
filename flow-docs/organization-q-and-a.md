@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/05/2016
 ms.author: stepsic
-ms.openlocfilehash: 6a05153864e37682ece83d8e5d90fa43a3ad01e1
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: f8807ca0941761018c92a385c26f427e69ededcb
+ms.sourcegitcommit: 56d69fadcbc9169feb2e1a68d9e9361709084cf4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/17/2018
 ---
 # <a name="flow-in-your-organization-qa"></a>Questions et réponses sur Microsoft Flow dans votre organisation
 Cette rubrique décrit comment les utilisateurs de votre organisation peuvent utiliser Flow, et comment vous pouvez contrôler le service Microsoft Flow.
@@ -106,7 +106,7 @@ Tout le monde peut essayer Microsoft Flow Plan 1 ou 2 pendant 90 jours et ces
 1. Si au moins un utilisateur de votre locataire a participé à la version préliminaire publique de Flow qui s’étendait d’avril 2016 à octobre 2016, vous voyez 10 000 licences portant la mention « Microsoft PowerApps et flux logiques ».
    
     ![](./media/organization-q-and-a/licenses2.png)
-2. Si au moins un utilisateur de votre locataire s’est inscrit à une version d’essai Flow Plan 2 par l’intermédiaire de l’**Option 1** décrite dans la section qui décrit [comment les utilisateurs s’inscrivent à PowerApps](#how-do-users-sign-up-for-powerapps), vous voyez 10 000 licences intitulées « Microsoft Power Apps et Flow ».
+2. Si au moins un utilisateur de votre locataire s’est inscrit à une version d’essai Flow Plan 2 par l’intermédiaire de l’**Option 1** décrite dans la section qui décrit [comment les utilisateurs s’inscrivent à PowerApps](#how-do-people-sign-up-for-flow), vous voyez 10 000 licences intitulées « Microsoft Power Apps et Flow ».
    
     ![](./media/organization-q-and-a/licenses1.png)
 
