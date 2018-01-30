@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/02/2017
 ms.author: stepsic
-ms.openlocfilehash: 27e12df6ae5754f921d37992fa6759d152fd1afc
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: c5fefde9bdd2f8e82052abfaa64a7188d768d8ea
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limites et configuration dans Microsoft Flow
 Cette rubrique contient des informations sur les limites actuelles et les détails de configuration des flux.
@@ -108,4 +108,16 @@ Les appels effectués à partir d’une API connectée par le biais d’un flux 
 | États-Unis (accès en avant-première) |52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29 |
 
 Par exemple, si vous recherchez des adresses IP autorisées pour votre base de données Azure SQL Database, vous devez utiliser ces adresses.
+
+Le tableau suivant répertorie les services auxquels Microsoft Flow se connecte. Vérifiez qu’aucun de ces services n’est bloqué sur votre réseau.
+
+Domaines | Protocoles | Utilisations
+--------|  ---------| -----
+management.azure.com|https|Accès à Azure Resource Manager.
+login.microsoft.com</br>login.windows.net</br>login.microsoftonline.com</br>secure.aadcdn.microsoftonline-p.com|https|Accès à ADAL (Active Directory Authentication Library).
+graph.microsoft.com </br>graph.windows.net</br>|https|Accès à l’API Graph Azure AD, pour obtenir des informations utilisateur telles qu’une photo de profil.
+*.azure-apim.net|https|Accès au Runtime pour les connecteurs.
+*.flow.microsoft.com|https|Accéder au site Microsoft Flow.
+*.powerapps.com|https|Accéder au site PowerApps.
+psux.azureedge.net|https|Accéder au CDN Microsoft Flow.
 
