@@ -15,15 +15,15 @@ ms.workload: na
 ms.date: 04/28/2017
 ms.author: sunayv
 ms.openlocfilehash: fe98999ea307367c7f3b032974fef9be6ca3f388
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="describe-a-custom-connector-with-postman"></a>Décrire un connecteur personnalisé avec Postman
 [Postman](https://www.getpostman.com/) est un outil qui permet de créer des développements d’API plus rapides et faciles. Ce tutoriel montre comment créer un fichier Postman Collection, que vous pouvez ensuite utiliser pour créer facilement des [connecteurs personnalisés](register-custom-api.md) dans Microsoft Flow.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 * Installez l’[application Postman](https://www.getpostman.com/apps).
 
 ## <a name="create-a-postman-collection"></a>Créer un fichier Postman Collection
