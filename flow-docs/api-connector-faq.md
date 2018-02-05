@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/19/2017
 ms.author: astay
 ms.openlocfilehash: 1715700fa6a94bb35733865556a2c9be0ba3ce9f
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="api-connector-faq-microsoft-flow"></a>FAQ Connecteur API (Microsoft Flow)
 ## <a name="requirements"></a>Configuration requise
@@ -27,7 +27,7 @@ ms.lasthandoff: 10/15/2017
 **R :** Non. Pour créer un connecteur, vous devez prendre en charge les API REST HTTP stables pour votre service. 
 
 **Q :** Quels outils puis-je utiliser pour créer un connecteur ? </br>
-**R :** Azure dispose de fonctionnalités et services que vous pouvez utiliser pour exposer en tant qu’API tout service tel qu’Azure App Service pour l’hébergement, Gestion des API, et bien plus encore.
+**R :** Azure propose des fonctionnalités et des services qui permettent d’exposer en tant qu’API n’importe quel service, par exemple, Azure App Service pour l’hébergement, Gestion des API, et bien plus encore.
 
 **Q :** Quels types d’authentifications sont pris en charge ? </br>
 **R :** Vous pouvez utiliser les normes d’authentification prises en charge suivantes :
@@ -39,11 +39,11 @@ ms.lasthandoff: 10/15/2017
 
 ## <a name="triggers"></a>Déclencheurs
 **Q :** Puis-je créer des déclencheurs sans webhooks ? </br>
-**R :** Non. Les connecteurs personnalisés pour Azure Logic Apps et Microsoft Flow prennent en charge uniquement les déclencheurs basés sur webhook. Si vous souhaitez demander d’autres modèles d’implémentation, contactez [condevhelp@microsoft.com](mailto:condevhelp@microsoft.com) avec plus de détails sur votre API.
+**R :** Non. Les connecteurs personnalisés d’Azure Logic Apps et de Microsoft Flow prennent en charge uniquement les déclencheurs basés sur Webhook. Si vous souhaitez demander d’autres modèles d’implémentation, contactez [condevhelp@microsoft.com](mailto:condevhelp@microsoft.com) avec plus de détails sur votre API.
 
 ## <a name="certification"></a>Certification
 **Q**: Je ne suis ni un partenaire Microsoft ni un éditeur de logiciels indépendant. Puis-je créer des connecteurs ? </br>
-**R** : Oui. Vous pouvez inscrire ces connecteurs pour un usage au sein dans votre organisation mais, si vous souhaitez certifier et publier un connecteur, vous devez soit être propriétaire du service sous-jacent, soit présenter des droits explicites d’utiliser l’API.
+**R** : Oui. Vous pouvez inscrire ces connecteurs pour un usage en interne dans votre organisation mais, si vous souhaitez certifier et publier un connecteur, vous devez soit être propriétaire du service sous-jacent, soit présenter des droits explicites d’utilisation de l’API.
 
 ## <a name="other"></a>Autres
 **Q :** Mes API utilisent un hôte dynamique. Comment les implémenter avec OpenAPI ? </br>
