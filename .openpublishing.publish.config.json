@@ -39,6 +39,11 @@
       "branch": "master",
       "branch_mapping": {}
     },
+     {
+         "path_to_root": "_themes.pdf",
+         "url": "https://github.com/Microsoft/templates.docs.msft.pdf",
+         "branch": "master"
+     },
     {
       "path_to_root": "_repo.en-us",
       "url": "https://github.com/MicrosoftDocs/flow-docs-pr",
