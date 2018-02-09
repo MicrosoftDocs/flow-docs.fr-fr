@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/02/2017
+ms.date: 01/31/2018
 ms.author: stepsic
-ms.openlocfilehash: c5fefde9bdd2f8e82052abfaa64a7188d768d8ea
-ms.sourcegitcommit: f3236f9f1ec050cda0d9c3e2b9c356132b2a2594
+ms.openlocfilehash: 60caaba88e825e97a49c3cf65d0ecceff586046c
+ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 02/05/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limites et configuration dans Microsoft Flow
 Cette rubrique contient des informations sur les limites actuelles et les détails de configuration des flux.
@@ -48,7 +48,7 @@ Il s’agit des limites pour une seule exécution de flux.
 
 | Nom | Limite | Notes |
 | --- | --- | --- |
-| Durée d’exécution |30 jours |Inclut des flux de travail avec des étapes en attente telles que des approbations. Après 30 jours, les opérations en attente arrivent à expiration. |
+| Durée d’exécution |30 jours |Inclut des flux de travail avec des étapes en attente telles que des approbations. Après 30 jours, toutes les étapes en attente expirent. Les approbations expirées sont supprimées du centre d’approbations. Si une personne tente d’approuver une demande expirée, elle reçoit un message d’erreur. |
 | Rétention du stockage |30 jours |À compter de l’heure de début de l’exécution. |
 | Intervalle de périodicité minimal |1 minute | |
 | Intervalle de périodicité maximal |500 jours | |
@@ -107,7 +107,7 @@ Les appels effectués à partir d’une API connectée par le biais d’un flux 
 | États-Unis |104.43.232.28, 104.43.232.242, 104.43.235.249, 104.43.234.211, 52.160.93.247, 52.160.91.66, 52.160.92.131, 52.160.95.100, 40.117.101.91, 40.117.98.246, 40.117.101.120, 40.117.100.191 |
 | États-Unis (accès en avant-première) |52.161.26.191, 52.161.27.42, 52.161.29.40, 52.161.26.33, 13.66.213.240, 13.66.214.51, 13.66.210.166, 13.66.213.29 |
 
-Par exemple, si vous recherchez des adresses IP autorisées pour votre base de données Azure SQL Database, vous devez utiliser ces adresses.
+Par exemple, si vous recherchez des adresses IP autorisées pour votre base de données SQL Azure, vous devez utiliser ces adresses.
 
 Le tableau suivant répertorie les services auxquels Microsoft Flow se connecte. Vérifiez qu’aucun de ces services n’est bloqué sur votre réseau.
 
