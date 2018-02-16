@@ -40,7 +40,7 @@ La première étape consiste à vous [inscrire](sign-up-sign-in.md), ou, si vous
 Chaque modèle est conçu dans un but spécifique, par exemple envoyer un message texte lorsque votre patron vous envoie un courrier électronique, ajouter des prospects Twitter à Dynamics 365 ou sauvegarder vos fichiers. Ces modèles ne constituent qu’une infime partie des possibilités. Ils sont destinés à vous encourager à créer des flux qui sont personnalisés en fonction des processus exacts dont vous avez besoin.
 
 ## <a name="create-your-first-flow"></a>Créer votre premier flux
-Vous devrez trouver un modèle de flux qui peut être utile pour vous. Un modèle très simple est [**Get daily reminders in Email**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/) (Recevoir des rappels quotidiens par courrier électronique) :
+Vous devrez trouver un modèle de flux qui peut être utile pour vous. Un modèle très simple est [**Recevoir des rappels quotidiens par e-mail**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/) :
 
 ![Modèles Flow](./media/getting-started/template-details.png)
 
