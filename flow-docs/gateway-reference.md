@@ -10,25 +10,25 @@ editor:
 tags: 
 ms.service: flow
 ms.devlang: na
-ms.topic: article
+ms.topic: get-started-article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 06b0198ffa75a3de673460dc13037205f58ad515
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 73567d4d553ceac1d2cee46feb07ad9a6e7ade33
+ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Comprendre les passerelles de données locales pour Microsoft Flow
 Utilisez la passerelle de données locale avec Microsoft Flow pour établir des connexions sécurisées à vos sources de données locales telles que Microsoft SQL Server.
 
 ## <a name="installation-and-configuration"></a>Installation et configuration
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 Configuration minimale :
 
-* [.NET Framework 4.5](http://www.microsoft.com/download/details.aspx?id=30653)
+* [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48130)
 * Version 64 bits de Windows 7 ou Windows Server 2008 R2 (ou version ultérieure)
 
 Configuration recommandée :
@@ -49,7 +49,7 @@ Considérations liées :
 > 
 > 
 
-1. [Téléchargez le programme d’installation](http://go.microsoft.com/fwlink/?LinkID=820931), puis exécutez-le.
+1. [Téléchargez le programme d’installation](https://go.microsoft.com/fwlink/?LinkID=820931), puis exécutez-le.
    
     ![Exécuter le programme d’installation](./media/gateway-reference/run-installer.png)
 2. Dans le premier écran de l’Assistant Installation, sélectionnez **Suivant** pour confirmer que vous avez pris connaissance du rappel concernant l’installation d’une passerelle sur un ordinateur portable.
@@ -81,18 +81,25 @@ Considérations liées :
 La passerelle s’exécute comme un service Windows et en tant que telle, vous pouvez la démarrer et l’arrêter de plusieurs façons. Par exemple, vous pouvez ouvrir une invite de commandes avec des autorisations élevées sur l’ordinateur sur lequel la passerelle est exécutée, puis exécuter les commandes suivantes :
 
 * Pour arrêter le service, exécutez la commande suivante :
-  
-    ````net stop PBIEgwService````
+
+```batchfile
+    net stop PBIEgwService
+```
+
 * Pour démarrer le service, exécutez la commande suivante :
-  
-    ````net start PBIEgwService````
+
+```batchfile
+    net start PBIEgwService
+```
 
 ## <a name="configure-a-firewall-or-proxy"></a>Configurer un pare-feu ou un proxy
 Pour plus d’informations sur la façon de fournir des informations de proxy pour votre passerelle, consultez [Configurer des paramètres de proxy](https://powerbi.microsoft.com/documentation/powerbi-gateway-proxy/).
 
 Vous pouvez vérifier si votre pare-feu ou proxy peut bloquer les connexions en exécutant la commande suivante à partir d’une invite PowerShell. Cette commande permet de tester la connectivité à Azure Service Bus. Cette commande teste uniquement la connectivité réseau. Elle n’a pas d’impact sur le service du serveur cloud ni la passerelle. Elle permet de déterminer si votre ordinateur est connecté à Internet.
 
-````Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350````
+```powershell
+Test-NetConnection -ComputerName watchdog.servicebus.windows.net -Port 9350
+```
 
 Le résultat doit ressembler à la sortie ci-dessous. Si **TcpTestSucceeded** n’est pas défini sur *true*, vous pouvez être bloqué par un pare-feu.
 
@@ -157,7 +164,7 @@ Il ne s’agit pas du compte utilisé pour se connecter à des sources de donné
 **Réponse :** Non. La passerelle utilise des connexions sortantes vers Azure Service Bus.
 
 **Question :** Que se passe-t-il si je bloque les connexions sortantes ? Que dois-je ouvrir ?
-**Réponse :** Vérifiez les [ports](gateway-reference.md#ports) et les hôtes que la passerelle utilise.
+**Réponse :** Vérifiez les [ports](gateway-reference.md#configure-ports) et les hôtes que la passerelle utilise.
 
 **Question :** La passerelle doit-elle être installée sur le même ordinateur que la source de données ?
 **Réponse :** Non. La passerelle se connecte à la source de données en utilisant les informations de connexion qui ont été fournies. Considérez la passerelle comme une application cliente. Elle doit simplement être en mesure de se connecter au nom de serveur fourni.
