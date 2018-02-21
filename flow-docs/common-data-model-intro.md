@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: a63ccacb1e6d9bd63d5a11a8db6ea01a9fc37333
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: e4e92bfdcf1ea65de272233b2056523641010cf2
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Créer un flux qui utilise le service Common Data Service
 Améliorez l’efficacité opérationnelle avec une vue unifiée des données métier en créant un flux qui utilise le service [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Déployez cette base de données d’entreprise sécurisée qui comprend des entités métier standard bien formées (par exemple, Ventes, Achat, Service clientèle et Productivité) dans votre organisation. Stockez les données de l’organisation dans une ou plusieurs [entités personnalisées](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), qui offrent plusieurs avantages par rapport aux sources de données externes telles que Microsoft Excel et Salesforce.
@@ -37,7 +37,7 @@ Par exemple, utilisez le service Common Data Service au sein de Microsoft Flow d
 
 * Inscrivez-vous à [Microsoft Flow](https://flow.microsoft.com) et [PowerApps](https://web.powerapps.com).
   
-    Si vous rencontrez des problèmes, vérifiez si [Microsoft Flow](sign-up-sign-in.md) et [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/) prennent en charge le type de compte que vous utilisez et si votre organisation n’a pas bloqué l’inscription.
+    Si vous rencontrez des problèmes, vérifiez si [Microsoft Flow](sign-up-sign-in.md) et [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/) prennent en charge le type de compte que vous utilisez et si votre organisation n’a pas bloqué l’inscription.
 * Si vous n’avez pas utilisé le service Common Data Service avant, ouvrez l’onglet **Entités** de [powerapps.com](https://web.powerapps.com/#/entities), puis cliquez ou appuyez sur **Créer ma base de données**.
 
 ## <a name="sign-in-to-your-environment"></a>Se connecter à l’environnement

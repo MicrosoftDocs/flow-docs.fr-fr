@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: 41c416557dbb491432448c33369767f9705278c9
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: f56b109cc0263c8464d6d7475421ab32af8888d5
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Créer une chaîne d’approbation avec Microsoft Flow et le service Common Data Service de Microsoft
 Le service Common Data Service vous permet de générer des flux qui comportent des informations stockées dans une base de données indépendante d’un flux. Les approbations en sont le meilleur exemple. Si vous stockez l’état de l’approbation dans une entité, votre flux peut fonctionner par-dessus.
@@ -34,7 +34,7 @@ En suivant les étapes décrites dans cette section, vous allez créer :
 
 **Conditions préalables**
 
-* Inscrivez-vous à [Microsoft Flow](sign-up-sign-in.md) et [PowerApps](https://powerapps.microsoft.com/en-us/tutorials/signup-for-powerapps/).
+* Inscrivez-vous à [Microsoft Flow](sign-up-sign-in.md) et [PowerApps](https://powerapps.microsoft.com/tutorials/signup-for-powerapps/).
 * Créez des connexions à Dropbox et Office 365 Outlook en suivant les instructions de la page [Gérer vos connexions](https://powerapps.microsoft.com/tutorials/add-manage-connections/).
 
 ## <a name="build-the-entity"></a>Créer l’entité

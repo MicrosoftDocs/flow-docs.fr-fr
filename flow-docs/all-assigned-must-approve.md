@@ -15,25 +15,25 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/22/2017
 ms.author: deonhe
-ms.openlocfilehash: 0e0309793cfcb45ca7ee72910803a4abc27d2f26
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 6b152f0ec85558889970db2784fe8c2dcbf526ed
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Créer un flux d’approbation nécessitant l’approbation de tout le monde
 Cette procédure pas à pas décrit comment créer un flux de travail d’approbation nécessitant que tout le monde (l’ensemble des approbateurs affectés) consente à une demande de congé pour que celle-ci soit approuvée, et entraînant son rejet si un seul approbateur s’y oppose.
 
 Ce type de flux de travail d’approbation est utile au sein d’une organisation qui exige que toute demande de congé soit approuvée tant par le responsable du demandeur, que par le responsable du responsable. Chaque responsable peut refuser la demande de son côté.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 * Accès à [Microsoft Flow](https://flow.microsoft.com), à Office 365 Outlook et à Utilisateurs d’Office 365.
-* [List](https://support.office.com/en-us/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) SharePoint Online.
+* [List](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194) SharePoint Online.
   
     Cette procédure pas à pas suppose que vous avez créé une liste SharePoint Online est utilisée pour les demandes de congés. Pour un exemple détaillé de liste SharePoint, voir la procédure pas à pas [Approbations parallèles](parallel-modern-approvals.md).
 * Bonne maîtrise des principes fondamentaux de la création de flux.
   
-    Nous vous invitons à réviser la manière d’ajouter [des actions, des déclencheurs](multi-step-logic-flow.md#add-another-action) et [des conditions](add-a-condition.md). Les étapes suivantes supposent que vous savez comment effectuer ces actions.
+    Nous vous invitons à réviser la manière d’ajouter [des actions, des déclencheurs](multi-step-logic-flow.md#add-another-action) et [des conditions](add-condition.md). Les étapes suivantes supposent que vous savez comment effectuer ces actions.
 
 > [!NOTE]
 > Bien que nous utilisions SharePoint Online et Office 365 Outlook dans cette procédure pas à pas, vous pouvez utiliser d’autres services, tels que Zendesk, Salesforce, Gmail, n’importe lequel des plus de [150 services](https://flow.microsoft.com/connectors/) que Microsoft Flow prend en charge.

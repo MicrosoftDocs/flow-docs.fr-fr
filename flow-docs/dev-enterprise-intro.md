@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
 ms.author: mblythe
-ms.openlocfilehash: 3e6a6e0e369f8d89dcf834b4225dfd5aa4758dd7
-ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
+ms.openlocfilehash: d8886f0828ca3b8ccf7ae1ce9c46f6e9b8fcc766
+ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="microsoft-flow-for-enterprise-developers-isvs-and-partners"></a>Microsoft Flow pour les développeurs en entreprise, les ISV et les partenaires
 
@@ -51,7 +51,7 @@ Si vous êtes partenaire Microsoft ou éditeur de logiciels indépendant (ISV), 
 
 ### <a name="1-connecting-to-your-apis-or-enabling-customers-to-connect-to-your-apis"></a>1. Connexion à vos API OU autorisation des clients à se connecter à vos API
 
-En tant qu’éditeur ISV, vous avez généralement des données propriétaires auxquelles vous aimeriez que les clients accèdent via vos flux. Vous pouvez exposer l’accès à toutes vos données via un connecteur personnalisé. [En savoir plus](https://docs.microsoft.com/en-us/connectors/custom-connectors/)
+En tant qu’éditeur ISV, vous avez généralement des données propriétaires auxquelles vous aimeriez que les clients accèdent via vos flux. Vous pouvez exposer l’accès à toutes vos données via un connecteur personnalisé. [En savoir plus](https://docs.microsoft.com/connectors/custom-connectors/)
 
 Une fois créé, il existe deux façons de mettre le connecteur à la disposition de vos clients :
 - Le connecteur peut être déployé dans le locataire des clients via les API REST ou PowerShell.
@@ -77,7 +77,7 @@ Pour donner aux utilisateurs finaux l’accès aux flux qu’ils peuvent utilise
 
 Si vos clients disposent déjà d’Office 365 ou de Dynamics 365 et que ces licences sont associées avec les identités avec lesquelles les utilisateurs se connectent avec Azure AD, vous n’avez pas besoin d’avoir de licences supplémentaires. Par contre, si vos clients n’utilisent pas Office 365 ni Dynamics 365, vous devez obtenir des droits d’utilisation pour Microsoft Flow afin qu’ils disposent de licence et tirent parti de ces composants incorporés dans votre application.
 
-Nous proposons le programme [Fournisseur de solutions Microsoft Cloud](https://partner.microsoft.com/en-US/cloud-solution-provider) qui permet d’acquérir des licences pour le compte de vos clients. Il existe deux [plans tarifaires](https://flow.microsoft.com/pricing/) disponibles pour Microsoft Flow, dont vous devriez consulter les détails et les fonctionnalités.
+Nous proposons le programme [Fournisseur de solutions Microsoft Cloud](https://partner.microsoft.com/cloud-solution-provider) qui permet d’acquérir des licences pour le compte de vos clients. Il existe deux [plans tarifaires](https://flow.microsoft.com/pricing/) disponibles pour Microsoft Flow, dont vous devriez consulter les détails et les fonctionnalités.
 
 ### <a name="7-list-on-appsource"></a>7. Référencer sur AppSource
 
