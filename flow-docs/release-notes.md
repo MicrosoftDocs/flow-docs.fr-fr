@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 3687266e84c06c37ac6ae0ee3d89aae0814158f3
-ms.sourcegitcommit: 28b6b09c9f3dd98a64492668d9a3b8c7bfbd6ce3
+ms.openlocfilehash: 57a86fa86633e040cf788443d54bd60cfd340844
+ms.sourcegitcommit: 6308b1f4ec4ed18a8a7c89911a83cd2f12ed6dc4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="release-notes"></a>Notes de publication
 ## <a name="top-questions"></a>Principales questions
@@ -121,7 +121,7 @@ Le panneau de lancement de Microsoft Flow est maintenant disponible dans toutes 
 
 ### <a name="release-2017-10-19"></a>Version 19-10-2017
 
-- **Action « Appliquer à chacun » imbriquée** : vous pouvez ajouter des actions « Appliquer à chacun », filtrer et sélectionner dans d’autres conteneurs « Appliquer à chacun ».
+- **Action « Appliquer à chacun » imbriquée** : vous pouvez ajouter des actions « Appliquer à chacun », filtrer et sélectionner dans d’autres actions de conteneur « Appliquer à chacun ».
 - **Actions DateTime** : nouvelles actions pour l’obtention des heures locales, l’ajout, la soustraction ou la mise en forme des heures.
 - **Quatre nouveaux connecteurs** : ajout de Content Moderator, Docparser, Microsoft Kaizala et Pitney Bowes Data Validation.
 - **Amélioration de l’expérience de connexion** : réception de notifications dans le portail Flow lorsqu’une connexion est interrompue et détails de connexion enrichis.
@@ -288,7 +288,7 @@ Vous pouvez à présent afficher l’état de toutes les demandes d’approbatio
 ### <a name="release-2017-04-11"></a>Version 11-04-2017
 * **Nouvelles actions pour créer des tableaux et des listes** : actions Créer un tableau HTML, Créer un tableau CSV et Joindre qui peuvent traiter des listes d’éléments (au lieu de l’action Apply-to-each précédente).
 * **Insertion d’étapes n’importe où** : vous pouvez désormais insérer une nouvelle étape n’importe où dans le flux de travail sans avoir recours au glisser-déposer.
-* **Quatre nouveaux services** : Flow prend désormais en charge les API 10 to 8 Scheduling, Act!, Inoreader et Computer Vision. Avec l’API Computer Vision, vous pouvez traiter des images pour obtenir le contenu de texte (procédé appelé OCR) ou appliquer automatiquement une balise aux images en fonction de leur contenu.
+* **Quatre nouveaux services** : Flow prend désormais en charge les API 10 to 8 Scheduling, Act!, Inoreader et Computer Vision. Avec l’API Vision par ordinateur, vous pouvez traiter des images pour obtenir le contenu de texte (procédé appelé OCR) ou appliquer automatiquement une balise aux images en fonction de leur contenu.
 
 [Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/html-tables-csvs-computer-vision/) sur cette version.
 

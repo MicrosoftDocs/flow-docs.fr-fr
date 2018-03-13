@@ -15,18 +15,18 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
 ms.author: deonhe
-ms.openlocfilehash: fe05ce536b61887f52ea4e297457c71ead3e8bfd
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: f6fc61a25dadba50c4906310b0562d32c11f8e73
+ms.sourcegitcommit: 22a883c30c859b6193fc2a619e753d71247f5e15
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Créer et tester un flux de travail d’approbation avec Microsoft Flow
-Avec Microsoft Flow, vous pouvez gérer l’approbation des documents ou processus au sein de plusieurs services, y compris SharePoint, Dynamics CRM, Salesforce, OneDrive Entreprise, Zendesk ou WordPress.
+Avec Microsoft Flow, vous pouvez gérer l’approbation de documents ou processus au sein de plusieurs services, y compris SharePoint, Dynamics CRM, Salesforce, OneDrive Entreprise, Zendesk ou WordPress.
 
 Pour créer un flux de travail d’approbation, vous devez ajouter l’action **Approvals - Start an approval (Approbations - Démarrer une approbation)** à un flux. Une fois que vous avez ajouté cette action, votre flux peut gérer l’approbation des documents ou processus. Par exemple, vous pouvez créer un flux d’approbation de document qui approuve les factures, les ordres de travail ou les devis. Vous pouvez également créer un flux d’approbation de processus qui approuve les demandes de congés, les heures supplémentaires ou les programmes de voyage.
 
-Les approbateurs gèrent les demandes à partir de leur boîte de réception, du [centre d’approbations](https://flow.microsoft.com/manage/approvals/received/) sur le site web Microsoft Flow ou de l’application Microsoft Flow.
+Les approbateurs peuvent répondre aux demandes à partir de leur boîte de réception, [du centre d’approbations](https://flow.microsoft.com/manage/approvals/received/) sur le site web Microsoft Flow ou de l’application Microsoft Flow.
 
 ## <a name="create-an-approval-flow"></a>Créer un flux d’approbation
 Voici une vue d’ensemble du flux que vous allez créer et tester :
@@ -40,7 +40,7 @@ Le flux effectue les étapes suivantes :
 3. Il envoie un e-mail avec la décision prise par l’approbateur à la personne qui a demandé le congé.
 4. Il met à jour la liste SharePoint Online avec les commentaires sur la décision de l’approbateur.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 Pour effectuer cette procédure pas à pas, vous devez :
 
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
@@ -129,4 +129,3 @@ Maintenant que vous avez créé et testé votre flux, indiquez aux autres commen
 * Créez des [flux d’approbations séquentielles.](sequential-modern-approvals.md)
 * Créez des [flux d’approbations parallèles.](parallel-modern-approvals.md)
 * Installez l’application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows).
-
