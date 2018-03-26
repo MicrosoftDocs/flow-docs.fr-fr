@@ -1,13 +1,13 @@
 ---
 title: Forum aux questions | Microsoft Docs
-description: "Réponses à plusieurs questions courantes sur Microsoft Flow"
-services: 
+description: Réponses à plusieurs questions courantes sur Microsoft Flow
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: 5b8deda5f22bcc1fa7cfa37a0d4244f26c2004a4
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 99a66520b5a922b4945c9d3c94c7a5c053df98ee
+ms.sourcegitcommit: a0435b92fa7f5dedff3b0ff806836c7a07309fd2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 03/15/2018
 ---
 # <a name="frequently-asked-questions"></a>Forum aux questions
 ## <a name="audience-and-strategy"></a>Public concerné et stratégie
@@ -99,10 +99,21 @@ Démarrez avec les ressources suivantes :
 * [Blog](https://flow.microsoft.com)
 * [Chaîne YouTube](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
 * [Rubrique](getting-started.md)
-* [Communauté](http://powerusers.microsoft.com)
+* [Communauté](https://powerusers.microsoft.com)
 
 ### <a name="what-operating-systems-does-the-mobile-app-for-microsoft-flow-support"></a>Quels systèmes d’exploitation l’application mobile pour Microsoft Flow prend-elle en charge ?
 L’application mobile Microsoft Flow est disponible pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows).
+
+### <a name="can-flows-be-turned-off-or-disabled"></a>Les flux peuvent-ils être arrêtés ou désactivés ?
+
+Oui, chaque flux a un commutateur activé/désactivé qui vous permet d’arrêter le traitement des demandes par le flux.
+
+Consultez le tableau suivant pour comprendre comment votre flux répond quand il est réactivé.
+
+Type de déclencheur|Description
+-------|--------
+Interrogation, comme le déclencheur **Récurrence**|Quand le flux est réactivé, tous les événements non traités/en attente sont traités.
+Webhook|Quand le flux est réactivé, il traite seulement les nouveaux événements qui sont générés une fois le flux activé.
 
 ### <a name="what-regions-and-languages-does-microsoft-flow-support"></a>Quelles sont les régions et les langues prises en charge par Microsoft Flow ?
 Microsoft Flow est disponible en 42 langues et dans [six régions](regions-overview.md).
