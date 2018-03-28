@@ -1,0 +1,105 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Documentation Microsoft Flow
+metadata:
+  title: 'Documents, vidéos, références, etc. sur Microsoft Flow'
+  description: 'Commencez à créer, partager et gérer des flux en utilisant les ressources ici. Vous pouvez démarrer avec un simple bouton ou créer vos propres flux d’approbation.'
+  author: MSFTMan
+  manager: anneta
+  layout: LandingPage
+  ms.assetid: null
+  ms.service: flow
+  ms.tgt_pltfrm: na
+  ms.devlang: na
+  ms.topic: landing-page
+  ms.date: 10/18/2017
+  ms.author: deonhe
+sections:
+  - items:
+      - type: markdown
+        text: |
+          Commencez à créer, partager et gérer des flux en utilisant les ressources ici. Vous pouvez démarrer avec un simple bouton ou créer vos propres flux d’approbation.
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: guided-learning/index
+            html: <p>Suivez la visite de la formation guidée</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: Visite guidée
+          - href: getting-started
+            html: <p>Obtenir une vue d’ensemble de Microsoft Flow</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: Bien démarrer
+          - href: mobile-create-flow
+            html: <p>Créer des flux sur un appareil mobile</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_mobileapp.svg'
+            title: Apprendre à connaître l’application mobile
+          - href: introduction-to-button-flows
+            html: "<p>Créer un flux de bouton en 2\_minutes</p>"
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
+            title: En savoir plus sur les boutons
+          - href: 'https://aka.ms/flowoftheweek'
+            html: <p>Inspirez-vous du flux de la semaine</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_api-reference.svg'
+            title: Flux de la semaine
+          - href: 'https://flow.microsoft.com/support/'
+            html: <p>Obtenir de l’aide et du support</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_support.svg'
+            title: Nous sommes là pour vous aider
+  - title: Tutoriels pas à pas
+    items:
+      - type: paragraph
+        text: Apprenez à créer différents types de flux.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: get-started-logic-template
+            title: Créer un flux à partir d’un modèle
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_guide.svg'
+          - href: get-started-logic-flow
+            title: Créer entièrement un flux
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+          - href: modern-approvals
+            title: Créer des flux d’approbation
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_tasks.svg'
+          - href: share-buttons
+            title: Partager vos boutons avec d’autres utilisateurs
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+          - href: create-team-flows
+            title: Partager la propriété de vos flux
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_configure-teams.svg'
+          - href: fix-flow-failures
+            title: Résoudre les problèmes de flux
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_investigate.svg'
+  - title: Vue d’ensemble vidéo de Microsoft Flow
+    items:
+      - type: markdown
+        text: '<iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>'
+  - title: Tutoriels avancés
+    items:
+      - type: paragraph
+        text: 'Découvrez comment utiliser des expressions, l’API REST et comment créer des connecteurs personnalisés et bien plus encore...'
+      - type: list
+        style: unordered
+        items:
+          - html: <a href="environments-overview-admin">Gérer Microsoft Flow pour une organisation</a>
+          - html: '<a href="https://flow.microsoft.com/blog/call-flow-restapi/">Apprendre à utiliser les API REST avec vos flux</a>'
+          - html: <a href="customapi-web-api-tutorial">Créer un connecteur personnalisé</a>
+          - html: '<a href="https://flow.microsoft.com/blog/grow-up-to-logic-apps/">Développer vos flux avec Logic Apps</a>'
