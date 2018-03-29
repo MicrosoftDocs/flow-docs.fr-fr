@@ -1,13 +1,13 @@
 ---
 title: Notes de publication | Microsoft Docs
-description: "Problèmes courants et nouveautés des versions Microsoft Flow"
-services: 
+description: Problèmes courants et nouveautés des versions Microsoft Flow
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 57a86fa86633e040cf788443d54bd60cfd340844
-ms.sourcegitcommit: 6308b1f4ec4ed18a8a7c89911a83cd2f12ed6dc4
+ms.openlocfilehash: 4d88b0baee16fb0aeea24e2f2c84806595f21662
+ms.sourcegitcommit: 753d52fa29d04f2eb774f7bec29b8d5793ccbb93
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="release-notes"></a>Notes de publication
 ## <a name="top-questions"></a>Principales questions
@@ -288,7 +288,7 @@ Vous pouvez à présent afficher l’état de toutes les demandes d’approbatio
 ### <a name="release-2017-04-11"></a>Version 11-04-2017
 * **Nouvelles actions pour créer des tableaux et des listes** : actions Créer un tableau HTML, Créer un tableau CSV et Joindre qui peuvent traiter des listes d’éléments (au lieu de l’action Apply-to-each précédente).
 * **Insertion d’étapes n’importe où** : vous pouvez désormais insérer une nouvelle étape n’importe où dans le flux de travail sans avoir recours au glisser-déposer.
-* **Quatre nouveaux services** : Flow prend désormais en charge les API 10 to 8 Scheduling, Act!, Inoreader et Computer Vision. Avec l’API Vision par ordinateur, vous pouvez traiter des images pour obtenir le contenu de texte (procédé appelé OCR) ou appliquer automatiquement une balise aux images en fonction de leur contenu.
+* **Quatre nouveaux services** : Flow prend désormais en charge les API 10 to 8 Scheduling, Act!, Inoreader et Computer Vision. Avec l’API Computer Vision, vous pouvez traiter des images pour obtenir le contenu de texte (procédé appelé OCR) ou appliquer automatiquement une balise aux images en fonction de leur contenu.
 
 [Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/html-tables-csvs-computer-vision/) sur cette version.
 
@@ -391,7 +391,7 @@ Vous pouvez maintenant tirer parti d’informations précieuses lors du déclenc
 ### <a name="release-2016-11-23"></a>Version 23-11-2016
 * **Prise en charge des alertes Power BI dans Flow** : transformez les insights en action en déclenchant des flux à partir d’alertes de données Power BI.
 * **Améliorations apportées à l’application mobile** : il est à présent possible de créer entièrement des flux en plus d’en créer à partir de modèles. Nous avons également amélioré les performances lors de l’affichage des exécutions de flux.
-* **Huit nouveaux services** : vous pouvez à présent vous connecter à Azure Resource Manager, Files d’attente Azure, Chatter, Disqus, Azure DocumentDB, l’API Visage Cognitive Services, HipChat et Wordpress.
+* **Huit nouveaux services** : vous pouvez à présent vous connecter à Azure Resource Manager, Files d’attente Azure, Chatter, Disqus, Azure Cosmos DB, l’API Visage Cognitive Services, HipChat et Wordpress.
 
 [Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/power-bi-and-eight-other-services/) sur cette version.
 
