@@ -1,144 +1,185 @@
 ---
-title: "Vue d’ensemble de l’environnement pour les administrateurs | Microsoft Docs"
-description: "Utilisation, création et gestion d’environnements dans Microsoft Flow"
-services: 
+title: Vue d’ensemble de l’environnement pour les administrateurs | Microsoft Docs
+description: Utilisation, création et gestion d’environnements dans Microsoft Flow
+services: ''
 suite: flow
 documentationcenter: na
 author: sunaysv
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/27/2016
+ms.date: 11/22/2017
 ms.author: sunayv
-ms.openlocfilehash: f1c50e5d16d5b9fbbd3e6db3128947b0554e9a85
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 631c53aaa19e137e1df82f8070192f6f4271339e
+ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Utilisation d’environnements dans Microsoft Flow
-## <a name="benefits"></a>Avantages
-Les environnements sont la nouvelle fonctionnalité de Microsoft Flow et incluent les avantages suivants : 
 
-* **Localité des données** : les environnements peuvent être créés dans différentes régions et sont liés à cet emplacement géographique. Lorsque vous créez un flux dans un environnement, ce flux est acheminé vers tous les centres de données situés à cet emplacement géographique. Cela vous permet également de bénéficier de meilleures performances. 
-  
-    Si vos utilisateurs sont en Europe, créez et utilisez l’environnement dans la région Europe. Si vos utilisateurs sont aux États-Unis, créez et utilisez l’environnement aux États-Unis 
-  
-    Si vous supprimez l’environnement, tous les flux associés sont également supprimés. Cela s’applique à tous les éléments que vous créez dans l’environnement, y compris les connexions, les passerelles, PowerApps et bien plus encore.
-* **Protection contre la perte de données** : en tant qu’administrateur, vous ne voulez pas que les flux qui récupèrent des données à partir d’un emplacement interne (tel que *OneDrive Entreprise*), publient ces données publiquement (p. ex. sur *Twitter*). Grâce à la protection contre la perte de données, vous contrôlez les services qui peuvent être utilisés dans une stratégie pour les données métier uniquement. 
-  
-    Par exemple, vous pouvez ajouter les services *SharePoint* et *OneDrive Entreprise* à une stratégie pour les données métier uniquement. Tous les flux créés dans cet environnement peuvent utiliser ces services *SharePoint* et *OneDrive Entreprise*. Seuls les services que vous ajoutez sont disponibles. 
-  
+## <a name="benefits"></a>Avantages
+
+Les environnements présentent les avantages suivants :
+
+* **Localité des données** : les environnements peuvent être créés dans différentes régions et sont liés à cet emplacement géographique. Lorsque vous créez un flux dans un environnement, ce flux est acheminé vers tous les centres de données situés à cet emplacement géographique. Cela vous permet également de bénéficier de meilleures performances.
+
+    Si vos utilisateurs sont en Europe, créez et utilisez l’environnement dans la région Europe. Si vos utilisateurs sont aux États-Unis, créez et utilisez l’environnement aux États-Unis. 
+
+    > [!IMPORTANT]
+    > Si vous supprimez l’environnement, tous les flux associés sont également supprimés. Cela s’applique à tous les éléments que vous créez dans l’environnement, y compris les connexions, les passerelles, PowerApps et bien plus encore.
+* **Protection contre la perte de données** : en tant qu’administrateur, vous ne voulez pas que les flux qui récupèrent des données à partir d’un emplacement interne (tel que *OneDrive Entreprise* ou une liste SharePoint contenant des informations sur les salaires), publient ces données publiquement (p. ex. sur *Twitter*). Utilisez la protection contre la perte de données pour contrôler les services qui peuvent partager des données dans votre déploiement Microsoft Flow.
+
+    Par exemple, vous pouvez ajouter les services *SharePoint* et *OneDrive Entreprise* à une stratégie pour les données métier uniquement. Tous les flux créés dans cet environnement peuvent utiliser les services *SharePoint* et *OneDrive Entreprise*. Toutefois, ils ne pourront pas partager des données avec d’autres services qui ne sont pas inclus dans la stratégie pour les données métier uniquement.
+
   > [!NOTE]
-  > La protection contre la perte de données est disponible avec certaines références de licence, y compris la licence P2. 
-  > 
-  > 
-* **Limite d’isolation pour toutes les ressources** : l’ensemble des flux, passerelles, connexions, connecteurs personnalisés, etc. résident dans cet environnement spécifique. Ils n’existent pas dans les autres environnements. 
-* **Service Common Data Service** : vous voulez créer un flux qui insère des données quelque part. Voici les options disponibles :
-  
+  > La protection contre la perte de données est disponible avec certaines références de licence, y compris la licence P2.
+
+* **Limite d’isolation pour toutes les ressources** : l’ensemble des flux, passerelles, connexions, connecteurs personnalisés, etc. résident dans un environnement spécifique. Ils n’existent pas dans les autres environnements.
+* **Common Data Service** : voici les options disponibles si vous souhaitez créer un flux qui insère des données dans un service :
+
   * Insérez des données dans un fichier Excel que vous stockez dans un compte de stockage cloud tel que OneDrive.
-  * Créez votre propre base de données SQL Database et stockez-y vos données.
+  * Créez une base de données SQL Database et stockez-y vos données.
   * Utilisez le service Common Data Service pour stocker vos données.
-    
-    Chaque environnement peut avoir zéro ou un stockage de base de données pour vos flux dans le service Common Data Service. L’accès au service Common Data Service dépend de la licence que vous achetez ; il n’est pas inclus dans la licence gratuite.
+
+    Chaque environnement peut avoir au maximum une base de données pour vos flux dans le service Common Data Service. L’accès au service Common Data Service dépend de la licence que vous achetez ; il n’est pas inclus dans la licence gratuite.
 
 ## <a name="limitations"></a>Limitations
-Bien que les environnements présentent de nombreux avantages, ils introduisent également de nouvelles limitations. Le fait que les environnements soient une limite d’isolement signifie que vous ne pouvez jamais avoir de ressources qui référencent d’autres ressources *entre* les environnements. Par exemple, il est impossible de créer un connecteur personnalisé dans un environnement spécifique et de créer un flux qui utilise ce connecteur personnalisé et une passerelle dans un environnement différent.
 
-Par conséquent, il est important que les environnements soient uniquement créés lorsque cela est nécessaire. La création d’un trop grand nombre d’environnements complique le partage des ressources des utilisateurs au sein de votre organisation.
+Bien que les environnements présentent de nombreux avantages, ils introduisent également de nouvelles limitations. Le fait que les environnements soient une limite d’isolement signifie que vous ne pouvez jamais avoir de ressources qui référencent des ressources *entre* les environnements. Par exemple, vous ne pouvez pas créer un connecteur personnalisé dans un environnement spécifique et créer un flux qui utilise ce connecteur personnalisé dans un environnement différent.
 
 ## <a name="use-the-default-environment"></a>Utiliser l’environnement par défaut
-L’environnement **par défaut** est disponible pour chaque utilisateur et il est partagé par tous les utilisateurs. Tous les utilisateurs peuvent créer des flux dans cet environnement.
+
+L’environnement **Par défaut** est partagé par tous les utilisateurs et n’importe quel utilisateur peut créer des flux dans l’environnement **Par défaut**.
 
 > [!TIP]
-> Si vous êtes un utilisateur de la version préliminaire, tous les flux existants se trouvent dans l’environnement par défaut. Un *utilisateur de la version préliminaire* est une personne qui utilisait Microsoft Flow avant sa mise à disposition générale. 
-> 
-> 
+> Si vous êtes un utilisateur de la version préliminaire, tous les flux existants se trouvent dans l’environnement par défaut. Un *utilisateur de la version préliminaire* est une personne qui utilisait Microsoft Flow avant sa mise à disposition générale.
 
-## <a name="use-the-administrator-center"></a>Utiliser le centre d’administration
-Les administrateurs utilisent le centre d’administration pour créer des environnements, ajouter des utilisateurs à ces environnements et effectuer d’autres tâches similaires. Il existe deux manières d’ouvrir le centre d’administration :
+## <a name="the-admin-center"></a>Centre d’administration
 
-#### <a name="option-1-select-settings"></a>Option 1 : sélectionner des paramètres
+Les administrateurs utilisent le centre d’administration pour créer et gérer des environnements. Il existe deux manières d’ouvrir le centre d’administration :
+
+### <a name="option-1-select-settings"></a>Option 1 : sélectionner des paramètres
+
 1. Connectez-vous à [flow.microsoft.com](https://flow.microsoft.com).
-2. Sélectionnez l’icône des paramètres, puis choisissez **Centre d’administration** dans la liste :  
-   ![Paramètres et portail d’administration](./media/environments-overview-admin/settings.png)
-3. Le centre d’administration s’ouvre.
+1. Sélectionnez l’icône des paramètres, puis choisissez **Centre d’administration** dans la liste :
 
-#### <a name="option-2-open-adminflowmicrosoftcom"></a>Option 2 : ouvrir admin.flow.microsoft.com
-Accédez à [admin.flow.microsoft.com](https://admin.flow.microsoft.com) et connectez-vous avec votre compte professionnel. Le centre d’administration s’ouvre.
+   ![Paramètres et portail d’administration](./media/environments-overview-admin/settings.png)
+1. Le centre d’administration s’ouvre.
+
+### <a name="option-2-open-adminflowmicrosoftcom"></a>Option 2 : ouvrir admin.flow.microsoft.com
+
+Accédez à [admin.flow.microsoft.com](https://admin.flow.microsoft.com) et connectez-vous avec votre compte professionnel.
 
 ## <a name="create-an-environment"></a>Créer un environnement
-1. Dans le [centre d’administration Microsoft Flow](https://admin.flow.microsoft.com), sélectionnez **Environnements**. Les environnements existants s’affichent :  
-   ![](./media/environments-overview-admin/environments-list.png)
-2. Sélectionnez **Nouvel environnement**. Entrez les informations suivantes :
-   
+
+1. Dans le [centre d’administration Microsoft Flow](https://admin.flow.microsoft.com), sélectionnez **Environnements**. Vous verrez tous les environnements existants : ![Environnements](./media/environments-overview-admin/environments-list.png)
+1. Sélectionnez **Nouvel environnement**, puis entrez les informations requises :
+
    | Propriété | Description |
    | --- | --- |
    | Nom de l’environnement |Entrez le nom de votre environnement, tel que `Human Resources` ou `Europe flows`. |
-   | Région |Choisissez l’emplacement dans lequel héberger votre environnement. Pour bénéficier de performances optimales, utilisez la région la plus proche de vos utilisateurs. Par exemple, si vos utilisateurs de flux sont basés à Paris, choisissez la région Europe. Si vos utilisateurs de flux sont basés à New York, choisissez la région États-Unis. |
-3. Sélectionnez **Créer un environnement**. Votre nouvel environnement est répertorié. 
+   | Région |Choisissez l’emplacement dans lequel héberger votre environnement. Pour bénéficier de performances optimales, utilisez la région la plus proche de vos utilisateurs.|
+   |Type d’environnement | Choisissez un type d’environnement en fonction de votre licence : Production ou Version d’évaluation.| 
+     ![paramètres de l’environnement](./media/environments-overview-admin/new-environment-dialog.png)
+1. Cliquez sur **Créer un environnement**.
+1. Vous disposez maintenant de deux options : **Créer une base de données** ou **Ignorer**.
+1. Si vous choisissez **Créer une base de données**, vous serez invité à entrer une **Devise** et une **Langue** pour la base de données. En outre, vous pouvez également choisir d’avoir des exemples d’applications et des données déployés.
+   
+   ![paramètres de configuration de la base de données](./media/environments-overview-admin/create-database-dialog2.png)
 
-Ensuite, ajoutez des utilisateurs à l’environnement.
+
+Vous pouvez maintenant ajouter des utilisateurs à l’environnement.
 
 ## <a name="manage-your-existing-environments"></a>Gérer vos environnements existants
-1. Dans le [centre d’administration Microsoft Flow](https://admin.flow.microsoft.com), sélectionnez **Environnements** :  
-   ![](./media/environments-overview-admin/select-environments.png)  
-2. Sélectionnez un environnement pour ouvrir ses propriétés. 
-3. La section **Détails** affiche des informations supplémentaires sur l’environnement, y compris le créateur de l’environnement, son emplacement géographique et d’autres propriétés :  
-   ![](./media/environments-overview-admin/open-environment.png)
-4. Sélectionnez **Sécurité**. Dans **Rôles d’environnement**, il existe deux options : **Administrateur** et **Créateur** :  
-   
-    ![](./media/environments-overview-admin/environment-roles.png)
-   
-    Un **créateur** peut créer des ressources dans un environnement, telles que les flux, les connexions aux données et les passerelles. 
-   
+
+1. Dans le [centre d’administration Microsoft Flow](https://admin.flow.microsoft.com), sélectionnez **Environnements** :
+
+   ![élément de menu Environnements](./media/environments-overview-admin/select-environments.png)
+1. Sélectionnez un environnement pour ouvrir ses propriétés.
+1. Utilisez l’onglet **Détails** pour afficher des informations supplémentaires sur l’environnement, notamment le créateur de l’environnement, son emplacement géographique et d’autres propriétés :
+
+   ![onglet Détails](./media/environments-overview-admin/open-environment.png)
+1. Sélectionnez **Sécurité**.
+
+    Si vous n’avez pas sélectionné **Créer une base de données** dans les étapes précédentes, deux options sont disponibles sous **Rôles de l’environnement** : **Administrateur de l’environnement** et **Créateur de l’environnement** :
+
+    ![rôles d’administrateur](./media/environments-overview-admin/environment-roles.png)
+
+    Un **créateur** peut créer des ressources dans un environnement, telles que les flux, les connexions aux données et les passerelles.
+
    > [!NOTE]
-   > Un utilisateur n’a pas besoin d’être **créateur** pour *modifier* des ressources dans un environnement, mais uniquement pour créer des ressources *net*. Chaque créateur de ressource peut déterminer qui peut modifier cette ressource et accorder des autorisations de modification aux utilisateurs qui ne sont pas des créateurs de l’environnement.
+   > Un utilisateur n’a pas besoin d’être un **créateur** pour *modifier* les ressources dans un environnement. Chaque créateur décide qui peut modifier ses ressources en accordant des autorisations aux utilisateurs qui ne sont pas des créateurs de l’environnement.
    > 
    > 
-   
-    Un **administrateur** peut créer des stratégies de protection contre la perte de données. Il peut également effectuer des tâches administratives, telles que la création d’environnements, l’ajout d’utilisateurs à un environnement et l’assignation des privilèges d’administrateur/de créateur.  
-   
-   1. Sélectionnez le rôle **Créateur de l’environnement**, puis **Utilisateurs** :  
-      ![](./media/environments-overview-admin/add-environment-maker.png)
-   2. Entrez un nom, une adresse de messagerie ou un groupe d’utilisateurs auquel vous souhaitez affecter le rôle Créateur. À mesure que vous tapez, intellisense commence à indiquer les utilisateurs/groupes qui correspondent au texte que vous entrez. 
-   3. Sélectionnez **Enregistrer** pour terminer l’ajout d’utilisateurs. 
-5. Dans **Sécurité**, sélectionnez **Rôles d’utilisateur** :  
-    ![](./media/environments-overview-admin/security-user-roles.png)
-   
-    Tous les rôles existants sont répertoriés, y compris les options pour modifier ou supprimer le rôle. 
-   
-    Sélectionnez **Nouveau rôle** pour créer un rôle. 
-6. Dans **Sécurité**, sélectionnez **Jeux d’autorisations** :  
-    ![](./media/environments-overview-admin/security-permission-set.png)
-   
-    Tous les jeux d’autorisations existants sont répertoriés, y compris les options pour modifier ou supprimer le rôle. 
-   
-    Sélectionnez **Nouvel ensemble d’autorisations** pour en créer un. 
-7. Dans **Base de données**, vous pouvez choisir de créer une base de données pour stocker vos données. Cette base de données fait partie du service Common Data Service.
 
-## <a name="commonly-asked-questions"></a>Forum aux questions
-##### <a name="can-i-migrate-a-microsoft-flow-in-my-us-environment-to-a-europe-environment"></a>Puis-je migrer un flux Microsoft de mon environnement situé aux États-Unis dans un environnement en Europe ?
-Non, vous ne pouvez pas déplacer les flux entre différents environnements. Vous devez recréer le flux dans un environnement différent.
+    Un **administrateur** peut créer des stratégies de protection contre la perte de données et effectuer d’autres tâches administratives, telles que la création d’environnements, l’ajout d’utilisateurs à des environnements et l’assignation des privilèges d’administrateur/de créateur.
 
-##### <a name="which-license-includes-the-common-data-service"></a>Quelle licence inclut le service Common Data Service ?
+   1. Sélectionnez le rôle **Créateur de l’environnement**, puis **Utilisateurs** : ![rôle de créateur](./media/environments-overview-admin/add-environment-maker.png)
+   1. Entrez un nom, une adresse de messagerie ou un groupe d’utilisateurs auquel vous souhaitez affecter le rôle **Créateur**.
+   1. Sélectionnez **Enregistrer**.
+
+1. Dans **Sécurité**, sélectionnez **Rôles d’utilisateur** :
+
+    ![rôles d’utilisateurs](./media/environments-overview-admin/security-user-roles.png)
+
+    Tous les rôles existants sont répertoriés, y compris les options pour modifier ou supprimer le rôle.
+
+    Sélectionnez **Nouveau rôle** pour créer un rôle.
+1. Dans **Sécurité**, sélectionnez **Jeux d’autorisations** :
+
+    ![définition des autorisations](./media/environments-overview-admin/security-permission-set.png)
+
+    Vous verrez tous les jeux d’autorisations existants, ainsi que des options pour modifier ou supprimer des rôles.
+
+    Sélectionnez **Nouveau jeu d’autorisations** pour créer une nouvelle autorisation.
+1. Si vous avez choisi **Créer une base de données**, pour stocker vos données, cette base de données fait partie du service Common Data Service. Lorsque vous cliquez sur l’onglet **Sécurité**, vous serez invité à accéder au **centre de gestion des instance Dynamics 365** où la sécurité basée sur les rôles peut être appliquée.
+![paramètres de sécurité Dynamics](./media/environments-overview-admin/Security-Link-D365.png)
+
+1. Sélectionnez l’utilisateur dans la liste des utilisateurs dans l’environnement / l’instance.
+  ![paramètres de sécurité Dynamics](./media/environments-overview-admin/D365-Select-User.png)
+
+1. Attribuez le rôle à l’utilisateur.
+
+   ![attribuer un rôle à l’utilisateur](./media/environments-overview-admin/D365-Assign-Role.png)
+
+> [!NOTE]
+> Les utilisateurs ou groupes affectés à ces rôles d’environnement n’ont pas automatiquement accès à la base de données de l’environnement (le cas échéant) et doivent se voir attribuer l’accès séparément par un propriétaire de la base de données. 
+>
+>
+
+### <a name="database-security"></a>Sécurité de la base de données
+La possibilité de créer et de modifier un schéma de base de données et de se connecter aux données stockées dans une base de données qui est provisionnée dans votre environnement est contrôlée par les rôles d’utilisateurs et les jeux d’autorisations pour la base de données. Vous pouvez gérer les rôles d’utilisateurs et les jeux d’autorisations pour la base de données de votre environnement à partir de la section **Rôles d’utilisateurs** et **Jeux d’autorisations** de l’onglet **Sécurité**. 
+
+   ![attribuer un rôle à l’utilisateur](./media/environments-overview-admin/D365-Assign-Role.png)
+
+## <a name="frequently-asked-questions"></a>Forum aux questions
+
+### <a name="can-i-move-a-flow-between-environments"></a>Puis-je déplacer un flux entre des environnements ?
+
+Oui, les flux peuvent être exportés à partir d’un environnement et importés dans un autre environnement.
+
+### <a name="which-license-includes-the-common-data-service"></a>Quelle licence inclut le service Common Data Service ?
+
 Seul Microsoft PowerApps plan 2 inclut les droits nécessaires à la création des bases de données avec le service Common Data Service. Toutefois, tous les plans payants (Microsoft Flow plans 1 et 2 et Microsoft PowerApps plans 1 et 2) ont les droits nécessaires à l’utilisation du service Common Data Service.
 
-La page sur la [tarification de Flow](https://flow.microsoft.com/pricing/) peut vous aider à choisir une offre adaptée à vos besoins.  
+Choisissez un plan qui vous convient en consultant la page [Tarification Microsoft Flow](https://flow.microsoft.com/pricing/).
 
-La page de [questions sur la facturation](billing-questions.md) vous permet également de consulter certaines des questions fréquentes que nous avons reçues. 
+Consultez le document [Questions sur la facturation](billing-questions.md) pour obtenir des réponses aux questions fréquemment posées sur la facturation.
 
-##### <a name="can-the-common-data-service-be-used-outside-of-an-environment"></a>Le service Common Data Service peut-il être utilisé en dehors d’un environnement ?
+### <a name="can-the-common-data-service-be-used-outside-of-an-environment"></a>Le service Common Data Service peut-il être utilisé en dehors d’un environnement ?
+
 Non. Le service Common Data Service nécessite un environnement. [En savoir plus](common-data-model-intro.md) à ce sujet.
 
-##### <a name="what-regions-include-microsoft-flow"></a>Quelles régions incluent Microsoft Flow ?
+### <a name="what-regions-include-microsoft-flow"></a>Quelles régions incluent Microsoft Flow ?
+
 Microsoft Flow prend en charge la plupart des régions que Office 365 prend en charge, consultez [la vue d’ensemble des régions](regions-overview.md) pour plus de détails.
 
-##### <a name="what-is-needed-to-create-my-own-custom-environment"></a>Quels sont les éléments nécessaires pour créer mon environnement personnalisé ?
-Tous les utilisateurs possédant la licence Microsoft Flow plan 2 peuvent créer leurs environnements, en plus de l’environnement par défaut. Tous les utilisateurs de Microsoft Flow, y compris d’Office 365 et de la version gratuite, peuvent utiliser les environnements créés par les administrateurs plan 2, mais ils ne peuvent pas créer leurs environnements. 
+### <a name="whats-needed-to-create-my-own-custom-environment"></a>Quels sont les éléments nécessaires pour créer mon environnement personnalisé ?
 
+Tous les utilisateurs possédant la licence Microsoft Flow plan 2 peuvent créer leurs environnements. Tous les utilisateurs de Microsoft Flow peuvent utiliser les environnements créés par les administrateurs plan 2, mais ils ne peuvent pas créer leurs environnements.

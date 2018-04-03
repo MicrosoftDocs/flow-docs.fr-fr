@@ -1,12 +1,12 @@
 ### YamlMime:Tutorial
-title: "Bien démarrer"
+title: Bien démarrer
 metadata:
-  title: "Bien démarrer | Microsoft Flow"
-  description: "Bienvenue dans la Formation guidée sur Microsoft Flow. Ce cours en ligne à votre propre rythme explique le fonctionnement de Microsoft Flow de manière séquentielle afin que vous puissiez développer vos connaissances pas à pas."
+  title: Bien démarrer | Microsoft Flow
+  description: Bienvenue dans la Formation guidée sur Microsoft Flow. Ce cours en ligne à votre propre rythme explique le fonctionnement de Microsoft Flow de manière séquentielle afin que vous puissiez développer vos connaissances pas à pas.
   audience: Business User
   level: Beginner
   nextTutorialHref: build-flows
-  nextTutorialTitle: "Créer des flux"
+  nextTutorialTitle: Créer des flux
   displayType: one-column
   author: MSFTMan
   manager: anneta
@@ -14,14 +14,15 @@ metadata:
   ms.topic: get-started-article
   ms.date: 10/04/2017
   ms.author: deonhe
-  ms.openlocfilehash: e0cc75bf5ca6683b5b5ca751908311b226a5065d
-  ms.sourcegitcommit: b943fa83d7ca2d1a313c0c7b2cf0d7e4a9528b85
+  ms.openlocfilehash: 3f5cc6ac324e5e389b05d84c10cc45891ea518d2
+  ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/06/2018
+  ms.lasthandoff: 03/28/2018
 items:
 - durationInMinutes: 1
-  content: "Bienvenue dans la Formation guidée sur Microsoft Flow. Ce cours en ligne à votre propre rythme explique le fonctionnement de Microsoft Flow de manière séquentielle afin que vous puissiez développer vos connaissances pas à pas.\n"
+  content: >
+    Bienvenue dans la Formation guidée sur Microsoft Flow. Ce cours en ligne à votre propre rythme explique le fonctionnement de Microsoft Flow de manière séquentielle afin que vous puissiez développer vos connaissances pas à pas.
 - title: Comprendre les concepts de base de Microsoft Flow
   durationInMinutes: 14
   content: >
@@ -29,18 +30,18 @@ items:
 
 
     [!INCLUDE [learning-introduce-flow](../includes/learning-introduce-flow.md)]
-- title: "Créer un flux à partir d’un modèle"
+- title: Créer un flux à partir d’un modèle
   durationInMinutes: 9
   content: >
-    > [!Video https://www.youtube.com/embed/D46qE7FuShM?rel=0]
+    > [!Vidéo https://www.youtube.com/watch?v=NeCu5VnL4s0
 
 
     [!INCLUDE [learning-create-a-flow](../includes/learning-create-a-flow.md)]
-- title: "Utiliser l’application mobile Microsoft Flow"
+- title: Utiliser l’application mobile Microsoft Flow
   durationInMinutes: 8
   content: >
     > [!Video https://www.youtube.com/embed/o80hRMpb0_4?rel=0]
 
 
     [!INCLUDE [learning-mobile-app](../includes/learning-mobile-app.md)]
-- content: "Vous avez terminé la section **Bien démarrer** de la formation guidée sur Microsoft Flow.\0"
+- content: Vous avez terminé la section **Bien démarrer** de la formation guidée sur Microsoft Flow.
