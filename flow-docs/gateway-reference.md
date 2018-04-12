@@ -1,13 +1,13 @@
 ---
-title: "Comprendre les passerelles de données locales | Microsoft Docs"
-description: "Informations de référence, notamment sur l’installation et le dépannage des passerelles de données locales"
-services: 
+title: Comprendre les passerelles de données locales | Microsoft Docs
+description: Informations de référence, notamment sur l’installation et le dépannage des passerelles de données locales
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: get-started-article
@@ -132,7 +132,7 @@ En savoir plus sur les [solutions hybrides](https://azure.microsoft.com/document
 | login.microsoftonline.com |443 |HTTPS |
 | *.msftncsi.com |443 |Permet de tester la connectivité à Internet si la passerelle n’est pas accessible. |
 
-Si vous avez besoin à mettre sur liste blanche des adresses IP au lieu des domaines, vous pouvez télécharger et utiliser la [liste de plages d’adresses IP des centres de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653). Dans certains cas, les connexions Azure Service Bus sont effectuées avec l’adresse IP plutôt qu’avec le nom de domaine complet.
+Si vous avez besoin à mettre sur liste verte des adresses IP au lieu des domaines, vous pouvez télécharger et utiliser la [liste de plages d’adresses IP des centres de données Microsoft Azure](https://www.microsoft.com/download/details.aspx?id=41653). Dans certains cas, les connexions Azure Service Bus sont effectuées avec l’adresse IP plutôt qu’avec le nom de domaine complet.
 
 ## <a name="sign-in-account"></a>Compte de connexion
 Les utilisateurs se connectent avec un compte professionnel ou scolaire. Il s’agit du compte de votre organisation. Si vous vous êtes inscrit à une offre Office 365 et que vous n’avez pas fourni votre adresse de messagerie professionnelle, le compte peut ressembler à nancy@contoso.onmicrosoft.com. Au sein d’un service cloud, votre compte est stocké dans un locataire au sein d’Azure Active Directory (AAD). Dans la plupart des cas, l’UPN de votre compte AAD correspond à l’adresse de messagerie.
