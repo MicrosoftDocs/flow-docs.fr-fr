@@ -1,6 +1,7 @@
 Avec la liste toujours plus grande de [services](https://flow.microsoft.com/services) disponibles pour créer des flux de travail avec [Microsoft Flow](https://flow.microsoft.com), vous devrez peut-être protéger les données sensibles et critiques stockées dans les services d’entreprise tels que SharePoint ou SalesForce. Il se peut que votre organisation ait besoin de créer une stratégie qui garantit que les données sensibles de l’entreprise ne sont pas publiées dans les services grand public tels que Twitter et Facebook. Avec Microsoft Flow, vous pouvez facilement créer des stratégies de **protection contre la perte de données** pour contrôler étroitement les services grand public avec lesquels vos données d’entreprise peuvent être partagées quand vos utilisateurs créent des flux.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Termes que vous devez connaître
+
 | Terme | Description |
 | --- | --- |
 | **DLP** |Il s’agit de l’abréviation de « protection contre la perte de données ». Vous allez créer une stratégie DLP pour gérer le partage des données entre les **services**. |

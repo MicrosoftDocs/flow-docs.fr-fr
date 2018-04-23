@@ -1,13 +1,13 @@
 ---
 title: En savoir plus sur les environnements Microsoft Flow | Microsoft Docs
-description: "Découvrez comment utiliser des environnements pour isoler vos flux"
-services: 
+description: Découvrez comment utiliser des environnements pour isoler vos flux
+services: ''
 suite: flow
 documentationcenter: na
 author: sunaysv
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/27/2017
 ms.author: sunayv
-ms.openlocfilehash: 202167f833c6f5e1a8105db8bd44addc24dfdc3e
-ms.sourcegitcommit: 7bf01167913038b3ad3527592013eefdd3ee9200
+ms.openlocfilehash: e6667c1c1999c36177d40d52fa657edadd063516
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choosing-an-environment"></a>Choix d’un environnement
 
@@ -73,7 +73,7 @@ Suivez ces instructions pour changer d’environnement :
 Avant de créer un flux, sélectionnez l’environnement dans lequel vous allez ajouter le flux et ses ressources.
 
 > [!NOTE]
-Si vous créez un flux dans l’environnement incorrect, vous devrez le supprimer, puis le créer dans l’environnement approprié.
+> Si vous créez un flux dans l’environnement incorrect, vous devrez le supprimer, puis le créer dans l’environnement approprié.
 
 Lorsque vous choisissez l’environnement pour héberger vos flux, tenez compte des facteurs suivants :
 
@@ -82,7 +82,7 @@ Lorsque vous choisissez l’environnement pour héberger vos flux, tenez compte 
 * Vous voyez tous les environnements dans lesquels vous pouvez modifier les ressources. Toutefois, vous devez demander à un administrateur de vous ajouter en tant que créateur à tous les environnements dans lesquels vous souhaitez créer des flux.
 
 > [!NOTE]
-Vous pouvez toujours créer des flux dans l’environnement par défaut.
+> Vous pouvez toujours créer des flux dans l’environnement par défaut.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

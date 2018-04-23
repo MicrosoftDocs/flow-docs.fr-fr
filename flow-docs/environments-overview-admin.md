@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/22/2017
 ms.author: sunayv
-ms.openlocfilehash: 631c53aaa19e137e1df82f8070192f6f4271339e
-ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
+ms.openlocfilehash: cf1a618b9e0ed76147eb4ede2aed42111c66b4a5
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-environments-within-microsoft-flow"></a>Utilisation d’environnements dans Microsoft Flow
 
@@ -79,18 +79,20 @@ Accédez à [admin.flow.microsoft.com](https://admin.flow.microsoft.com) et conn
 ## <a name="create-an-environment"></a>Créer un environnement
 
 1. Dans le [centre d’administration Microsoft Flow](https://admin.flow.microsoft.com), sélectionnez **Environnements**. Vous verrez tous les environnements existants : ![Environnements](./media/environments-overview-admin/environments-list.png)
-1. Sélectionnez **Nouvel environnement**, puis entrez les informations requises :
+2. Sélectionnez **Nouvel environnement**, puis entrez les informations requises :
 
-   | Propriété | Description |
-   | --- | --- |
-   | Nom de l’environnement |Entrez le nom de votre environnement, tel que `Human Resources` ou `Europe flows`. |
-   | Région |Choisissez l’emplacement dans lequel héberger votre environnement. Pour bénéficier de performances optimales, utilisez la région la plus proche de vos utilisateurs.|
-   |Type d’environnement | Choisissez un type d’environnement en fonction de votre licence : Production ou Version d’évaluation.| 
+
+   |     Propriété     |                                                 Description                                                 |
+   |------------------|-------------------------------------------------------------------------------------------------------------|
+   | Nom de l’environnement |              Entrez le nom de votre environnement, tel que `Human Resources` ou `Europe flows`.              |
+   |      Région      | Choisissez l’emplacement dans lequel héberger votre environnement. Pour bénéficier de performances optimales, utilisez la région la plus proche de vos utilisateurs. |
+   | Type d’environnement |                  Choisissez un type d’environnement en fonction de votre licence : Production ou Version d’évaluation.                   |
+
      ![paramètres de l’environnement](./media/environments-overview-admin/new-environment-dialog.png)
-1. Cliquez sur **Créer un environnement**.
-1. Vous disposez maintenant de deux options : **Créer une base de données** ou **Ignorer**.
-1. Si vous choisissez **Créer une base de données**, vous serez invité à entrer une **Devise** et une **Langue** pour la base de données. En outre, vous pouvez également choisir d’avoir des exemples d’applications et des données déployés.
-   
+3. Cliquez sur **Créer un environnement**.
+4. Vous disposez maintenant de deux options : **Créer une base de données** ou **Ignorer**.
+5. Si vous choisissez **Créer une base de données**, vous serez invité à entrer une **Devise** et une **Langue** pour la base de données. En outre, vous pouvez également choisir d’avoir des exemples d’applications et des données déployés.
+
    ![paramètres de configuration de la base de données](./media/environments-overview-admin/create-database-dialog2.png)
 
 

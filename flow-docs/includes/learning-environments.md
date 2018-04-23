@@ -2,6 +2,7 @@
 Un environnement est un espace virtuel utilisé pour stocker, gérer et partager des applications, des flux et des données d’entreprise dans Common Data Service. Les environnements sont géolocalisés afin que toutes les applications et données stockées dans la base de données d’un environnement le soient également.  
 
 ## <a name="terms-you-should-get-familiar-with"></a>Termes que vous devez connaître
+
 | **Terme** | **Description** |
 | --- | --- |
 | **Centre d’administration** |Le centre d’administration est un [portail web](https://admin.flow.microsoft.com) pour la gestion de l’ensemble de vos environnements et stratégies de protection contre la perte de données. |
