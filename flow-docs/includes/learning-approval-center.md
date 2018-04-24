@@ -12,7 +12,7 @@ Par défaut, ce modèle démarre un processus d’approbation chaque fois qu’u
 
 1. Dans la liste SharePoint **TweetsContoso** créée précédemment, ajoutez deux colonnes :
    
-   1. Sélectionnez le signe « **+** », puis **Oui/Non**
+   1. Sélectionnez le signe « **+**  », puis **Oui/Non**
    2. Entrez l’**ÉtatApprobation**, puis sélectionnez **Créer**
    3. Sélectionnez le signe «**+**», puis choisissez **Une seule ligne de texte**
    4. Entrez **CommentairesApprobateur**, puis sélectionnez **Enregistrer**
@@ -39,7 +39,7 @@ Par défaut, ce modèle démarre un processus d’approbation chaque fois qu’u
 7. Dans **Lien vers l’élément**, copiez et collez l’URL de votre liste SharePoint, puis, dans **Description du lien vers l’élément**, entrez **Liste**. 
    
     ![Lien vers l’élément](./media/learning-approval-center/tweet-item-link.png)
-8. Dans l’action **Condition**, pointez sur le champ **Si Oui**, sélectionnez le signe plus « **+** », puis choisissez **Ajouter une action**. 
+8. Dans l’action **Condition**, pointez sur le champ **Si Oui**, sélectionnez le signe plus « **+**  », puis choisissez **Ajouter une action**. 
    
     ![Ajouter une action](./media/learning-approval-center/add-an-action.png)
 9. Recherchez **Mettre à jour l’élément**, sélectionnez le connecteur **SharePoint**, puis choisissez l’action **SharePoint – Mettre à jour l’élément**.
@@ -54,7 +54,7 @@ Par défaut, ce modèle démarre un processus d’approbation chaque fois qu’u
 12. Sélectionnez **ÉtatApprobation** et définissez la valeur sur **Oui**, puis choisissez **CommentairesApprobateur** et définissez la valeur de **Commentaires** à partir de la liste de contenu dynamique. 
     
      ![État et commentaires](./media/learning-approval-center/approver-status.png)
-13. Au bas de la zone **Si Non, *ne rien faire***, sélectionnez **Ajouter une action**.
+13. Au bas de la zone **SI NON, NE RIEN FAIRE**, sélectionnez **Ajouter une action**.
     
      ![Ajouter une action pour la condition Si Non](./media/learning-approval-center/add-a-no-action.png)
 14. En procédant de la même manière que pour la configuration de la condition **Si Oui**, créez une action **SharePoint – Mettre à jour l’élément**, puis configurez les champs avec les mêmes valeurs, à l’exception du paramètre **ÉtatApprobation** que vous définissez sur **Non**. 

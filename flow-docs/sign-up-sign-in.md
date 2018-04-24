@@ -1,13 +1,13 @@
 ---
 title: Inscription et connexion | Microsoft Docs
-description: "Inscrivez-vous et connectez-vous à Microsoft Flow et trouvez la solution à vos problèmes avec ce processus."
-services: 
+description: Inscrivez-vous et connectez-vous à Microsoft Flow et trouvez la solution à vos problèmes avec ce processus.
+services: ''
 suite: flow
 documentationcenter: na
 author: anjlic
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/04/2017
 ms.author: anjlic
-ms.openlocfilehash: a7ebed9be4753bbd3a416271464fe908db00e8bb
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: b4243c00a3b7929654be52fdcb6dd9aa70ddf10d
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sign-up-and-sign-in-for-microsoft-flow"></a>S’inscrire et se connecter dans Microsoft Flow
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cRkmSZrctLc?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
@@ -32,14 +32,14 @@ Si vous n’avez pas utilisé d’autres produits Microsoft en ligne, vous devre
 1. Dans [flow.microsoft.com](https://flow.microsoft.com), cliquez ou appuyez sur **Inscrivez-vous gratuitement** dans le coin supérieur droit.
 2. Saisissez votre adresse de messagerie.
 3. Cliquez ou appuyez sur la flèche à droite.
-   
+
     ![Lien d’inscription](./media/sign-up-sign-in/signup.png)
 
 ## <a name="sign-in"></a>Se connecter
 Si vous avez utilisé d’autres produits Microsoft en ligne, que ce soit dans un cadre professionnel ou personnel, il vous suffit de vous connecter.
 
 1. Dans [flow.microsoft.com](https://flow.microsoft.com), cliquez ou appuyez sur **Se connecter** dans le coin supérieur droit.
-   
+
     ![Lien de connexion](./media/sign-up-sign-in/signin.png)
 2. Saisissez votre adresse de messagerie.
 3. Dans la page de connexion, saisissez votre adresse de messagerie et votre mot de passe.
@@ -52,12 +52,13 @@ Pour plus d’informations en matière d’administration, consultez [Flows in y
 ## <a name="troubleshooting"></a>Résolution des problèmes
 Dans de nombreux cas, vous pouvez vous inscrire à Microsoft Flow en suivant le processus simple décrit plus haut dans cette rubrique. Toutefois, ce tableau récapitule les raisons les plus courantes pour lesquelles vous ne pouvez peut-être pas vous inscrire et décrit les solutions de contournement disponibles.
 
-| Symptôme/message d’erreur | Cause et solution de contournement |
-| --- | --- |
-| **Aucun compte Microsoft créé pour l’instant** <br> Vous recevez un message après avoir entré votre adresse de messagerie pendant l’inscription :<br><br> *Ce compte Microsoft n’existe pas. Entrez un autre compte ou créez-en un.* |Vous vous êtes inscrit avec une adresse de messagerie pour laquelle aucun compte Microsoft n’a été créé. Cliquez sur le lien **Sign up now** (S’inscrire maintenant) affiché sur cette page pour créer un compte Microsoft associé à votre adresse de messagerie. Vous pouvez utiliser votre adresse de messagerie existante pour créer un compte Microsoft. |
-| **Adresses de messagerie .gov ou .mil**<br>Vous recevez un message similaire au suivant pendant l’inscription :<br><br>*Microsoft Flow indisponible : Microsoft Flow n’est pas disponible pour les utilisateurs ayant une adresse de messagerie .gov ou .mil pour l’instant. Utilisez une autre adresse de messagerie professionnelle ou réessayez ultérieurement.* |Actuellement, vous ne pouvez pas vous inscrire à Microsoft Flow avec une adresse de messagerie .gov ou .mil. À la place, vous pouvez vous connecter avec toutes les adresses de messagerie de compte Microsoft, par exemple une adresse *@outlook.com*. |
-| **Inscription libre-service désactivée**<br><br>Vous recevez un message similaire au suivant pendant l’inscription :<br>*Nous ne pouvons pas finaliser votre inscription. Votre service informatique a désactivé l’inscription à Microsoft Flow. Contactez-le pour terminer l’inscription.* <br>ou<br> *Nous ne pouvons pas finaliser votre inscription. Il semble que Microsoft Flow n’est pas actuellement disponible pour votre entreprise ou établissement.* |Vous avez sélectionné **S’inscrire** au lieu de **Se connecter**. Si vous sélectionnez **Se connecter** en haut de la page d’accueil, vous pourrez accéder à Microsoft Flow. |
-| **L’adresse de messagerie n’est pas un ID Office 365**<br><br>Vous recevez un message similaire au suivant pendant l’inscription :<br>*Nous ne pouvons pas vous trouver à contoso.com.  Utilisez-vous un ID différent pour votre compte professionnel ou scolaire ? Essayez de vous connecter avec celui-ci et si cela ne fonctionne pas, contactez votre service informatique.* |Les ID que votre organisation utilise pour la connexion à Office 365 et d’autres services Microsoft diffèrent de votre adresse de messagerie. Par exemple, votre adresse de messagerie peut être Nancy.Smith@contoso.com et votre ID nancys@contoso.com. Pour terminer l’inscription, utilisez l’ID que votre organisation vous a affecté pour vous connecter à Office 365 ou d’autres services Microsoft. |
+
+|                                                                                                                                                                                       Symptôme/message d’erreur                                                                                                                                                                                        |                                                                                                                                                                              Cause et solution de contournement                                                                                                                                                                              |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                       **Aucun compte Microsoft créé pour l’instant** <br> Vous recevez un message après avoir entré votre adresse de messagerie pendant l’inscription :<br><br> *Ce compte Microsoft n’existe pas. Entrez un autre compte ou créez-en un.*                                                                                       |                                              Vous vous êtes inscrit avec une adresse de messagerie pour laquelle aucun compte Microsoft n’a été créé. Cliquez sur le lien **Sign up now** (S’inscrire maintenant) affiché sur cette page pour créer un compte Microsoft associé à votre adresse de messagerie. Vous pouvez utiliser votre adresse de messagerie existante pour créer un compte Microsoft.                                               |
+|                                                  **Adresses de messagerie .gov ou .mil**<br>Vous recevez un message similaire au suivant pendant l’inscription :<br><br>*Microsoft Flow indisponible : Microsoft Flow n’est pas disponible pour les utilisateurs ayant une adresse de messagerie .gov ou .mil pour l’instant. Utilisez une autre adresse de messagerie professionnelle ou réessayez ultérieurement.*                                                  |                                                                                            Actuellement, vous ne pouvez pas vous inscrire à Microsoft Flow avec une adresse de messagerie .gov ou .mil. À la place, vous pouvez vous connecter avec toutes les adresses e-mail de compte Microsoft, comme une adresse *\@outlook.com*.                                                                                             |
+| **Inscription libre-service désactivée**<br><br>Vous recevez un message similaire au suivant pendant l’inscription :<br>*Nous ne pouvons pas finaliser votre inscription. Votre service informatique a désactivé l’inscription à Microsoft Flow. Contactez-le pour terminer l’inscription.* <br>ou<br> *Nous ne pouvons pas finaliser votre inscription. Il semble que Microsoft Flow n’est pas actuellement disponible pour votre entreprise ou établissement.* |                                                                                        Vous avez sélectionné **S’inscrire** au lieu de **Se connecter**. Si vous sélectionnez **Se connecter** en haut de la page d’accueil, vous pourrez accéder à Microsoft Flow.                                                                                        |
+|                                                   **L’adresse de messagerie n’est pas un ID Office 365**<br><br>Vous recevez un message similaire au suivant pendant l’inscription :<br>*Nous ne pouvons pas vous trouver à contoso.com.  Utilisez-vous un ID différent pour votre compte professionnel ou scolaire ? Essayez de vous connecter avec celui-ci et si cela ne fonctionne pas, contactez votre service informatique.*                                                    | Les ID que votre organisation utilise pour la connexion à Office 365 et d’autres services Microsoft diffèrent de votre adresse de messagerie. Par exemple, votre adresse de messagerie peut être Nancy.Smith@contoso.com et votre ID nancys@contoso.com. Pour terminer l’inscription, utilisez l’ID que votre organisation vous a affecté pour vous connecter à Office 365 ou d’autres services Microsoft. |
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Démarrez avec un modèle](get-started-logic-template.md), qui est un flux prédéfini configuré pour vous.

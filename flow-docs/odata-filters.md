@@ -1,13 +1,13 @@
 ---
-title: "Filtrer et copier des données | Microsoft Docs"
-description: "Apprenez à filtrer et à copier des données d’une source vers une destination avec Microsoft Flow"
-services: 
+title: Filtrer et copier des données | Microsoft Docs
+description: Apprenez à filtrer et à copier des données d’une source vers une destination avec Microsoft Flow
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
-ms.openlocfilehash: b266a953785b79c0dbc5e2d483330b239a7bf17f
-ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
+ms.openlocfilehash: 7c182328c341043ffc155a679f39bcbc2130a0bc
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Filtrer et copier des données avec Microsoft Flow
 Cette procédure pas à pas montre comment créer un flux qui surveille une source afin de détecter l’ajout ou la modification d’éléments, puis copie ces changements vers une destination. Vous pouvez créer un tel flux si vos utilisateurs entrent des données dans un emplacement, alors que votre équipe doit pouvoir y accéder ailleurs ou dans un autre format.
@@ -106,7 +106,7 @@ Sur la carte de condition :
     ![configurer une condition](media/odata-filters/configure-condition.png)
 5. Sélectionnez **Modifier en mode Avancé**.
    
-    Lorsque le mode Avancé s’ouvre, vous voyez l’expression **@equals(body(’Get_rows’)?[’value’], 0)** dans la zone. Modifiez cette expression en ajoutant **length()** à la fonction **body(’Get_items’)?[’value’]**. L’expression entière est à présent : **@equals(length(body(’Get_rows’)?[’value’]), 0)**
+    Lorsque le mode Avancé s’ouvre, vous voyez l’expression **\@equals(body('Get_rows')?['value'], 0)** dans la zone. Modifiez cette expression en ajoutant **length()** à la fonction **body(’Get_items’)?[’value’]**. L’expression entière est à présent : **@equals(length(body(’Get_rows’)?[’value’]), 0)**
    
     La carte **Condition** ressemble à présent à cette image :
    

@@ -13,13 +13,13 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/12/2018
+ms.date: 04/12/2018
 ms.author: stepsic
-ms.openlocfilehash: 4d88b0baee16fb0aeea24e2f2c84806595f21662
-ms.sourcegitcommit: 753d52fa29d04f2eb774f7bec29b8d5793ccbb93
+ms.openlocfilehash: ef14fd29dbf0b227acf4d5fef6233837514d4ab0
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="release-notes"></a>Notes de publication
 ## <a name="top-questions"></a>Principales questions
@@ -44,6 +44,39 @@ ms.lasthandoff: 03/23/2018
 3. Les déclencheurs de fichier ne sont pas activés pour les fichiers ajoutés dans les dossiers imbriqués au sein du dossier sélectionné.
 
 ## <a name="whats-new"></a>Nouveautés
+
+### <a name="release-2018-04-12"></a>Version 12-04-2018
+
+- **Retour des données à PowerApps à partir d’un flux** - Créez des flux qui peuvent être appelés à partir d’une application créée avec PowerApps et retournez les données à l’application. Utilisez le concepteur de flux de glisser-déplacer visuel pour créer la logique dont vous avez besoin pour vos applications. 
+- **Ajout de plusieurs enregistrements aux entrées de tableau** - Ajout d’un générateur de listes dans Microsoft Flow qui peut être utilisé pour ajouter plusieurs pièces jointes à un e-mail, par exemple.
+- **Test des flux avec les données de précédentes exécutions** - Ajout d’un nouveau bouton Tester le flux dans le concepteur, qui vous permet de tester votre flux avec des données de précédentes exécutions de flux.
+- **Nouveaux champs workflow()** - Vous pouvez maintenant accéder au nom de l’environnement et au nom d’affichage du flux avec l’expression workflow().
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/return-data-to-powerapps/) sur cette version.
+
+### <a name="release-2018-04-04"></a>Version 04-04-2018
+
+- **Approbations sur Common Data Service** - Les approbations modernes reposent sur la version la plus récente de Common Data Service for Apps. Cela signifie que vous pouvez créer des flux qui lisent l’état des approbations que vous envoyez ou recevez avec le connecteur CDS.
+- **Recherche des erreurs dans apply to each** - Accédez directement aux erreurs dans les boucles dans la vue d’exécution de flux, même si des centaines d’éléments sont dans la boucle.
+- **Réaffectation des approbations** - Vous pouvez affecter une approbation que vous recevez à une autre personne de votre organisation pour lui déléguer l’approbation. 
+- **Listes des salles** - Le connecteur Outlook Office 365 a ajouté des actions pour obtenir des données de salle de votre organisation.
+- **Vue des détails des boutons de flux** - Quand vous exécutez un flux qui a été partagé avec vous, vous pouvez maintenant voir toutes les actions que le flux utilise.
+- **Région Royaume-Uni** - Les environnements peuvent maintenant être créés pour stocker leurs données au Royaume-Uni.
+- **Deux nouveaux connecteurs** - Ajout de la prise en charge d’AtBot Admin et de Marketing Content Hub.
+- **Nouvelle page d’accueil dans la documentation** - Mise à jour de la page d’accueil de la documentation pour regrouper le contenu en fonction de votre niveau : débutant, intermédiaire ou expert. 
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/approvals-in-cds-and-seven-updates/) sur cette version.
+
+### <a name="release-2018-03-13"></a>Version 13-03-2018
+
+- **Historique des approbations** - Consultez toutes les demandes d’approbation que vous avez envoyées, notamment les réponses, les commentaires qui ont été envoyés et l’heure exacte de création.
+- **Quatre nouveaux connecteurs** - Ajout d’Excel Online (Entreprise), Excel Online (OneDrive), Azure SQL Data Warehouse et Pitney Bowes Tax Calculator.
+- **Info-bulles du contenu dynamique** - Survolez le contenu dynamique pour voir d’où il vient dans les actions et affichez un aperçu des expressions sans ouvrir l’éditeur d’expressions complètes.
+- **Contrôle d’accès concurrentiel** - Activez le contrôle d’accès concurrentiel pour qu’un flux donné n’ait qu’une seule exécution à la fois.
+- **Nouvelle tentative exponentielle** - Nouveau type de stratégie de nouvelle tentative qui espace les nouvelles tentatives de manière exponentielle au fil du temps.
+- **Mise en conformité de l’accessibilité** - Publication de nouveaux documents de conformité qui décrivent comment Microsoft Flow répond aux normes d’accessibilité.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/approval-history-accessibility/) sur cette version.
 
 ### <a name="release-2018-02-09"></a>Version 09-02-2018
 

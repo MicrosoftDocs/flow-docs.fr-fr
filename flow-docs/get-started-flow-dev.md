@@ -1,57 +1,65 @@
 ---
-title: "Commencer à créer | Microsoft Docs"
-description: "Créez un connecteur personnalisé, partagez-le, incorporez un flux et bien plus encore."
-services: 
+title: Créer des connecteurs personnalisés et incorporer des flux | Microsoft Docs
+description: Créez un connecteur personnalisé, partagez-le, incorporez un flux et bien plus encore.
+services: ''
 suite: flow
 documentationcenter: na
 author: bbarath
-manager: erikre
-editor: 
-tags: 
+manager: anneta
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/22/2016
+ms.date: 11/22/2017
 ms.author: barathb
-ms.openlocfilehash: d22193ac40b6eb8f90abf2ae5ced91b39c2faad9
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: a3f1e21cfbf00749a0ef09c0363da162f0419f42
+ms.sourcegitcommit: aee927ab32b5e28ee9b1880b4a292f9c15025f88
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 04/03/2018
 ---
 # <a name="start-to-build-with-microsoft-flow"></a>Commencer à créer avec Microsoft Flow
-Développez votre application avec Microsoft Flow des façons suivantes (entre autres) :
 
-* créer un connecteur personnalisé et s’y connecter ;
-* partager cette API avec tous les utilisateurs de Microsoft Flow ;
-* incorporer l’expérience de flux à partir d’une application ;
-* tirer parti de toutes les API de développeur afin que les utilisateurs peuvent interagir avec Microsoft Flow de façon optimale.
+Voici comment vous pouvez étendre votre application avec Microsoft Flow :
 
-## <a name="prerequisites"></a>Conditions préalables
-* Un compte sur [flow.microsoft.com](https://flow.microsoft.com)
+* Créer un connecteur personnalisé et s’y connecter.
+* Partager votre connecteur personnalisé avec tous les utilisateurs de Microsoft Flow.
+* Incorporer l’expérience de flux dans une application.
+* Sélectionner tous les connecteurs personnalisés afin que les utilisateurs puissent interagir avec Microsoft Flow de façon optimale.
+
+## <a name="prerequisites"></a>Prérequis
+
+* Un compte [Microsoft Flow](https://flow.microsoft.com).
 
 ## <a name="create-a-custom-connector"></a>Créer un connecteur personnalisé
-Lorsque vous disposez d’un service web que vous souhaitez automatiser avec Microsoft Flow, vous devez tout d’abord créer un connecteur personnalisé. En inscrivant un connecteur personnalisé, vous fournissez à Microsoft Flow les caractéristiques de votre API web, y compris l’authentification requise, les déclencheurs et actions pris en charge, ainsi que les paramètres et les sorties pour chacune de ces actions.
 
-Suivez [ce tutoriel](https://powerapps.microsoft.com/tutorials/register-custom-api/) pour inscrire un connecteur personnalisé. Une fois que vous l’avez inscrite, vous pouvez la partager au sein de votre organisation afin que d’autres utilisateurs puissent vous aider à la tester.
+Si vous avez un service web auquel que vous souhaitez vous connecter à partir de Microsoft Flow, vous devez tout d’abord créer un connecteur personnalisé. Quand vous inscrivez un connecteur personnalisé, vous fournissez à Microsoft Flow les caractéristiques de votre API web, notamment l’authentification requise, les déclencheurs et actions pris en charge, ainsi que les paramètres et les sorties pour chacune de ces actions.
+
+Suivez ce tutoriel pour savoir comment [inscrire et utiliser des connecteurs personnalisés](https://powerapps.microsoft.com/tutorials/register-custom-api/). Après avoir inscrit votre connecteur personnalisé, vous pouvez le partager au sein de votre organisation pour le tester.
 
 ## <a name="share-a-custom-connector-with-all-microsoft-flow-users"></a>Partager un connecteur personnalisé avec tous les utilisateurs de Microsoft Flow
-Une fois que vous avez complètement testé votre connecteur personnalisé, démarrez le processus de révision, comme indiqué dans ce [billet de blog](https://flow.microsoft.com/blog/calling-all-saas-apps-now-you-can-build-your-own-connector-for-flow-and-logic-apps/) :
 
-* un fichier OpenAPI qui représente votre API et les informations d’authentification ;
-* une icône pour votre connecteur ;
-* une description de votre API ;
-* environ 10 idées sur la façon dont votre API peut constituer un avantage pour d’autres utilisateurs grâce à des modèles.
+Après avoir testé en totalité votre connecteur personnalisé, démarrez le [processus de révision](https://flow.microsoft.com/blog/calling-all-saas-apps-now-you-can-build-your-own-connector-for-flow-and-logic-apps/) pour le faire approuver par Microsoft et le partager avec tous les autres utilisateurs de Microsoft Flow.
 
-Une fois que vous avez envoyé ces informations, Microsoft commence à évaluer la fonction de votre API dans Microsoft Flow et Microsoft PowerApps.
+Voici ce dont vous avez besoin pour le processus de révision :
 
-## <a name="embed-the-flow-experience-in-your-website-or-app"></a>Incorporer l’expérience de flux dans votre application ou site web
-Enfin, vous pouvez incorporer Microsoft Flow à partir de votre application pour permettre une intégration en contexte approfondie entre votre application et tous les autres services pris en charge par Microsoft Flow. Par exemple, vous pouvez :
+* Un fichier OpenAPI qui représente votre API et les informations d’authentification.
+* Une icône pour votre connecteur.
+* Une description de votre connecteur.
+* Environ 10 idées sur la façon dont votre connecteur peut constituer un avantage pour d’autres utilisateurs par le biais de modèles.
 
-* parcourir tous les modèles liés à votre service et permettent aux utilisateurs de sélectionner un modèle ;
-* gérer les flux que les utilisateurs ont associés à votre application.
+Une fois que vous avez envoyé ces informations, Microsoft commence à évaluer le fonctionnement de votre API dans Microsoft Flow et Microsoft PowerApps.
 
-Suivez [ce didacticiel](embed-flow-dev.md) pour plus d’informations sur la façon d’intégrer Microsoft Flow au sein d’une application.
+## <a name="embed-the-flow-experience-into-your-website-or-app"></a>Incorporer l’expérience de flux dans votre application ou site web
 
+Vous pouvez [incorporer](embed-flow-dev.md) Microsoft Flow dans votre application pour profiter d’une intégration profonde en contexte entre votre application et tous les autres services pris en charge par Microsoft Flow. Par exemple, vous pouvez :
+
+* Parcourir tous les modèles liés à votre service et permettre aux utilisateurs d’en sélectionner un.
+* Gérer les flux que les utilisateurs ont associés à votre application.
+
+## <a name="next-steps"></a>Étapes suivantes
+
+Découvrez comment [incorporer](embed-flow-dev.md) Microsoft Flow dans votre application.

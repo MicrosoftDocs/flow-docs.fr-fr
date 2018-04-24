@@ -1,13 +1,13 @@
 ---
-title: "Créer un flux à partir d’un modèle | Microsoft Docs"
-description: "Créez un flux à partir d’un des modèles intégrés."
-services: 
+title: Créer un flux à partir d’un modèle | Microsoft Docs
+description: Créez un flux à partir d’un des modèles intégrés.
+services: ''
 suite: flow
 documentationcenter: na
 author: aftowen
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/07/2017
 ms.author: anneta
-ms.openlocfilehash: 876723b62274f3a306c0a8472095b131e223408b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: b755d9abe70740a97ad85aaa60b8a3f4685a7b26
+ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-flow-from-a-template-in-microsoft-flow"></a>Créer un flux à partir d’un modèle dans Microsoft Flow
 Créez un flux à partir d’un des nombreux modèles intégrés qui peuvent, par exemple, vous envoyer un message Slack lorsque votre responsable vous envoie un message électronique dans Office 365.
@@ -54,7 +54,7 @@ Créez un flux à partir d’un des nombreux modèles intégrés qui peuvent, pa
 1. Sélectionnez la barre de titre d’un événement pour la développer, puis personnalisez-la (par exemple en spécifiant un filtre sur la messagerie qui vous intéresse).
 2. Les actions qui nécessitent une intervention de votre part sont automatiquement développées.
    
-    Par exemple, l’action **Publier un message** est développée, car vous devez entrer un canal, tel que votre *@username*. Vous pouvez également personnaliser le contenu du message. Par défaut, le message contient simplement l’objet, mais vous pouvez inclure d’autres informations.
+    Par exemple, l’action **Publier un message** est développée, car vous devez entrer un canal, tel que votre*\@nom_utilisateur*. Vous pouvez également personnaliser le contenu du message. Par défaut, le message contient simplement l’objet, mais vous pouvez inclure d’autres informations.
    
     ![Spécifier le canal Slack](./media/get-started-logic-template/specify-keyword.png)
 3. Près du haut de l’écran, spécifiez le nom de votre flux, puis sélectionnez **Créer un flux**.
