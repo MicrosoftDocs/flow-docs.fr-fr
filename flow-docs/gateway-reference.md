@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
-manager: anneta
+manager: KFile
 editor: ''
 tags: ''
 ms.service: flow
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 73567d4d553ceac1d2cee46feb07ad9a6e7ade33
-ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
+ms.openlocfilehash: 3ff4148f88c145df1db5e8ec8468138fe7413a6a
+ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Comprendre les passerelles de données locales pour Microsoft Flow
 Utilisez la passerelle de données locale avec Microsoft Flow pour établir des connexions sécurisées à vos sources de données locales telles que Microsoft SQL Server.
@@ -141,6 +141,10 @@ Les utilisateurs se connectent avec un compte professionnel ou scolaire. Il s’
 La passerelle de données locale est configurée de façon à utiliser *NT SERVICE\PBIEgwService* comme informations d’identification pour la connexion au service Windows. Par défaut, elle est autorisée à se connecter en tant que service, dans le contexte de l’ordinateur sur lequel vous installez la passerelle.
 
 Il ne s’agit pas du compte utilisé pour se connecter à des sources de données locales ou le compte professionnel ou scolaire avec lequel vous vous connectez aux services cloud.
+
+## <a name="tenant-level-administration"></a>Administration au niveau du client
+
+Il n’existe actuellement aucun emplacement unique où les administrateurs clients peuvent gérer toutes les passerelles que d’autres utilisateurs ont installées et configurées.  Si vous êtes un administrateur client, nous vous recommandons de demander aux utilisateurs de votre organisation de vous ajouter comme administrateur de chaque passerelle qu’ils installent. Cela vous permet de gérer toutes les passerelles de votre organisation via la page des paramètres de la passerelle ou via les [commandes PowerShell](https://docs.microsoft.com/power-bi/service-gateway-high-availability-clusters#powershell-support-for-gateway-clusters).
 
 ## <a name="frequently-asked-questions"></a>Forum aux questions
 ### <a name="general-questions"></a>Questions générales
