@@ -1,13 +1,13 @@
 ---
-title: "Automatisez facilement les flux de travail d’approbation. | Microsoft Docs"
-description: "Automatisez les flux de travail d’approbation qui s’intègrent à SharePoint, Dynamics CRM, Salesforce, OneDrive Entreprise, Zendesk ou WordPress."
-services: 
+title: Automatisez facilement les flux de travail d’approbation. | Microsoft Docs
+description: Automatisez les flux de travail d’approbation qui s’intègrent à SharePoint, Dynamics CRM, Salesforce, OneDrive Entreprise, Zendesk ou WordPress.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,13 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
 ms.author: deonhe
-ms.openlocfilehash: f6fc61a25dadba50c4906310b0562d32c11f8e73
-ms.sourcegitcommit: 22a883c30c859b6193fc2a619e753d71247f5e15
+ms.openlocfilehash: bd89bca994a77072815a73ba1cbc7ba1db6955d3
+ms.sourcegitcommit: e52f04b5953240d71d726c0e3373740cc59292dc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Créer et tester un flux de travail d’approbation avec Microsoft Flow
+
 Avec Microsoft Flow, vous pouvez gérer l’approbation de documents ou processus au sein de plusieurs services, y compris SharePoint, Dynamics CRM, Salesforce, OneDrive Entreprise, Zendesk ou WordPress.
 
 Pour créer un flux de travail d’approbation, vous devez ajouter l’action **Approvals - Start an approval (Approbations - Démarrer une approbation)** à un flux. Une fois que vous avez ajouté cette action, votre flux peut gérer l’approbation des documents ou processus. Par exemple, vous pouvez créer un flux d’approbation de document qui approuve les factures, les ordres de travail ou les devis. Vous pouvez également créer un flux d’approbation de processus qui approuve les demandes de congés, les heures supplémentaires ou les programmes de voyage.
@@ -49,12 +50,13 @@ Créer ces colonnes dans votre liste SharePoint Online :
 
    ![colonnes de liste SharePoint Online](./media/modern-approvals/sharepoint-list-fields.png)
 
-Notez le nom et l’URL de la liste SharePoint Online. Vous aurez besoin de ces éléments plus tard lorsque vous configurerez le déclencheur **SharePoint - Création d’un élément** .
+Notez le nom et l’URL de la liste SharePoint Online. Vous aurez besoin de ces éléments plus tard pour configurer le déclencheur **SharePoint - Création d’un élément**.
 
 ## <a name="create-your-flow-from-the-blank-template"></a>Créer votre flux à partir du modèle vide
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## <a name="add-a-trigger"></a>Ajouter un déclencheur
+
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
 L’**Adresse du site** et le **Nom de la liste** sont les éléments que vous avez notés précédemment dans cette procédure pas à pas.
@@ -62,6 +64,7 @@ L’**Adresse du site** et le **Nom de la liste** sont les éléments que vous a
 ![informations SharePoint](./media/modern-approvals/select-sharepoint-site-info.png)
 
 ## <a name="add-a-profile-action"></a>Ajouter une action de profil
+
 1. Sélectionnez **Nouvelle étape**, puis **Ajouter une action**.
    
     ![nouvelle étape](./media/modern-approvals/select-sharepoint-add-action.png)
@@ -76,14 +79,20 @@ L’**Adresse du site** et le **Nom de la liste** sont les éléments que vous a
     ![enregistrer le flux](./media/modern-approvals/save.png)
 
 ## <a name="add-an-approval-action"></a>Ajouter une action d’approbation
+
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
-Remarque : cette action envoie la demande d’approbation à l’adresse de courrier indiquée dans la zone **Assigned To** (Affecté à).
+> [!NOTE]
+> Cette action envoie la demande d’approbation à l’adresse e-mail indiquée dans la zone **Assigned To** (Assigné à).
+>
+>
 
 ## <a name="add-a-condition"></a>Ajouter une condition
+
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
 
 ## <a name="add-an-email-action-for-approvals"></a>Ajouter une action de messagerie pour les approbations
+
 Suivez ces étapes pour envoyer un e-mail si la demande de congé est approuvée :
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
@@ -91,21 +100,30 @@ Suivez ces étapes pour envoyer un e-mail si la demande de congé est approuvée
    ![configurer un modèle d’e-mail approuvé](./media/sequential-modern-approvals/yes-email-config.png)
 
 ## <a name="add-an-update-action-for-approved-requests"></a>Ajouter une action de mise à jour pour les demandes approuvées
+
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
-Remarque : les champs **Adresse du site**, **Nom de la liste**, **ID** et **Titre** sont obligatoires.
+> [!NOTE]
+> Les champs **Adresse du site**, **Nom de la liste**, **ID** et **Titre** sont obligatoires.
+>
+>
 
 ![mettre à jour la configuration de l’élément](./media/modern-approvals/configure-update-item.png)
 
 ## <a name="add-an-email-action-for-rejections"></a>Ajouter une action de messagerie pour les refus
+
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
 ![configuration des demandes refusées](./media/modern-approvals/configure-rejected-email.png)
 
 ## <a name="add-update-action-for-rejected-requests"></a>Ajouter une action de mise à jour pour les demandes refusées
+
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
-   Remarque : les champs **Adresse du site**, **Nom de la liste**, **ID** et **Titre** sont obligatoires.
+   > [!NOTE]
+   > Les champs **Adresse du site**, **Nom de la liste**, **ID** et **Titre** sont obligatoires.
+   >
+   >
 
 ![carte Mettre à jour l’élément](./media/modern-approvals/configure-update-item-no.png)
 
@@ -120,11 +138,13 @@ Si vous avez respecté cette procédure, votre flux doit ressembler à la captur
 Maintenant que vous avez créé le flux, il est temps de le tester !
 
 ## <a name="request-an-approval"></a>Demander une approbation
+
 [!INCLUDE [request-vacation-approval](includes/request-vacation-approval.md)]
 
 Maintenant que vous avez créé et testé votre flux, indiquez aux autres comment l’utiliser.
 
 ## <a name="learn-more"></a>En savoir plus
+
 * Voir et gérer les [demandes d’approbation en attente](approve-reject-requests.md)
 * Créez des [flux d’approbations séquentielles.](sequential-modern-approvals.md)
 * Créez des [flux d’approbations parallèles.](parallel-modern-approvals.md)

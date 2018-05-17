@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/12/2018
 ms.author: stepsic
-ms.openlocfilehash: ef14fd29dbf0b227acf4d5fef6233837514d4ab0
-ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
+ms.openlocfilehash: bae4991754de37ca9483d540891431e216ee74cd
+ms.sourcegitcommit: b6ac1562b3ed6601401d23f4009b7528c1ce8925
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/08/2018
 ---
 # <a name="release-notes"></a>Notes de publication
 ## <a name="top-questions"></a>Principales questions
@@ -44,6 +44,14 @@ ms.lasthandoff: 04/16/2018
 3. Les déclencheurs de fichier ne sont pas activés pour les fichiers ajoutés dans les dossiers imbriqués au sein du dossier sélectionné.
 
 ## <a name="whats-new"></a>Nouveautés
+
+### <a name="release-2014-05-01"></a>Version 01-05-2014
+
+- **Texte enrichi dans les messages d’approbation** - Utiliser Markdown pour mettre en forme les détails de l’approbation que vous envoyez.
+- **Boutons avec plusieurs entrées de sélection** - Créez des boutons de flux qui utilisent une liste de sélection multiple pour collecter plusieurs valeurs à la fois.
+- **Utiliser des flux plus larges** - L’application mobile Microsoft Flow prend désormais en charge la vue paysage, et le concepteur web comporte une barre de défilement horizontale.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/rich-approvals-text-and-multiselect/) sur cette version.
 
 ### <a name="release-2018-04-12"></a>Version 12-04-2018
 
@@ -275,7 +283,7 @@ Vous pouvez à présent afficher l’état de toutes les demandes d’approbatio
 ### <a name="release-2017-05-23"></a>Version 23-05-2017
 * **Connecteur Microsoft Teams** - [Microsoft Teams](https://flow.microsoft.com/blog/introducing-the-microsoft-teams-connector-for-flow/) est un espace de travail basé sur les conversations dans Office 365. Celui-ci rassemble les individus, les conversations et les contenus, ainsi que les outils dont les équipes ont besoin pour collaborer aisément et être plus productives.
 * **Widgets sur iOS et Android** : les widgets Microsoft Flow sont des raccourcis de bouton qui fournissent un moyen plus simple et rapide de déclencher un bouton directement depuis votre écran d’accueil.
-* **Créer des étapes de « gestion des erreurs »** : définissez une ou plusieurs étapes à exécuter après l’échec d’une action. Par exemple, recevez immédiatement une notification si votre flux ne parvient pas à créer un enregistrement dans Dynamics 365.
+* **Créer des étapes de « gestion des erreurs »**  : définissez une ou plusieurs étapes à exécuter après l’échec d’une action. Par exemple, recevez immédiatement une notification si votre flux ne parvient pas à créer un enregistrement dans Dynamics 365.
 * **Variables de type Integer et Float** : initialisez et incrémentez ou décrémentez les compteurs dans une exécution de flux pour compter le nombre d’exécutions d’un ensemble de logique donné.
 * **Page Détails flux** : lorsque vous sélectionnez un flux dans la liste **Mes flux**, une page affiche des détails sur ce flux, comme l’utilisateur qui y a accès et l’historique d’exécution.
 * **Quotas d’exécutions de flux pour les administrateurs** : ces derniers peuvent maintenant surveiller l’utilisation des exécutions de flux au sein d’une organisation, la comparer au quota d’exécutions communes de l’entreprise et obtenir une répartition du quota pour comprendre les licences qui y contribuent.
@@ -314,7 +322,7 @@ Vous pouvez à présent afficher l’état de toutes les demandes d’approbatio
 * **Expériences d’approbation modernes** : créez des flux de travail où les approbateurs peuvent approuver en toute sécurité à partir de l’application mobile Microsoft Flow ou du centre d’approbations unifié sur le site web Microsoft Flow.
 * **Disponibilité générale des flux d’équipes** : plusieurs personnes peuvent posséder et gérer un flux avec les flux d’équipes, maintenant mis à la disposition générale.
 * **Créer des connecteurs pour Microsoft Flow** : tout le monde peut soumettre son propre connecteur Microsoft Flow gratuit qui pourra ensuite être utilisé par les utilisateurs du monde entier.
-* **Concepteur « allégé »** : pour certains modèles, une nouvelle version du concepteur affiche uniquement les champs qui sont nécessaires pour créer un flux, ce qui simplifie l’expérience.
+* **Concepteur « allégé »**  : pour certains modèles, une nouvelle version du concepteur affiche uniquement les champs qui sont nécessaires pour créer un flux, ce qui simplifie l’expérience.
 
 [Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/q1-2017-update/) sur cette version.
 
