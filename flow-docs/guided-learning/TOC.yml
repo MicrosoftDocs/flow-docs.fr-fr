@@ -1,8 +1,8 @@
 - name: Bien démarrer
-  href: 'get-started.yml#step-1'
+  href: get-started.yml?tutorial-step=1
 - name: Créer des flux
-  href: 'build-flows.yml#step-1'
+  href: build-flows.yml?tutorial-step=1
 - name: Utiliser les approbations
-  href: 'work-with-approvals.yml#step-1'
+  href: work-with-approvals.yml?tutorial-step=1
 - name: Administrer des flux
-  href: 'administer-flows.yml#step-1'
+  href: administer-flows.yml?tutorial-step=1
