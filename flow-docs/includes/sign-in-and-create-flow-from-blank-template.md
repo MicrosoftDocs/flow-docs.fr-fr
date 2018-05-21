@@ -8,3 +8,5 @@
    
     ![créer entièrement](media/modern-approvals/blank-template.png)
 
+4. Sélectionnez le bouton **Créer** entièrement.
+
