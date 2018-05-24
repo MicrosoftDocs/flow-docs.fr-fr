@@ -1,13 +1,13 @@
 ---
-title: "Apprenez à automatiser des tâches répétitives avec les flux de bouton acceptant les entrées utilisateur | Microsoft Docs"
-description: "Microsoft Flow permet d’automatiser facilement les tâches répétitives. Votre flux peut même accepter l’entrée d’un utilisateur lors de l’exécution d’une tâche répétitive."
-services: 
+title: Apprenez à automatiser des tâches répétitives avec les flux de bouton acceptant les entrées utilisateur | Microsoft Docs
+description: Microsoft Flow permet d’automatiser facilement les tâches répétitives. Votre flux peut même accepter l’entrée d’un utilisateur lors de l’exécution d’une tâche répétitive.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 73feb90b3907ee8a7a192f16bc29c5893d0be4bb
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 483837a013b5fa0c8dfa27d2ed3a1e3481c36c5b
+ms.sourcegitcommit: 8bf92483780a5682777dd9fb73be8c2fb0e78dc4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Présentation des flux de bouton avec entrée utilisateur
 Créez un flux de bouton pour exécuter des tâches de routine en appuyant simplement sur un bouton. Personnalisez votre flux en autorisant l’utilisateur à fournir des détails spécifiques à utiliser lors de l’exécution du flux. Cette rubrique vous guide lors de la création d’un flux de bouton qui accepte une entrée de l’utilisateur, lors de l’exécution du flux de bouton, puis lors de la mise en surbrillance de la façon de fournir l’entrée d’utilisateur.
@@ -116,7 +116,7 @@ Dans cette procédure pas à pas, vous allez utiliser l’application mobile Mic
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Partager des flux de bouton](share-buttons.md)
-* [En savoir plus sur les flux](guided-learning/learning-introducing-flow.md)  
+* [En savoir plus sur les flux](guided-learning/get-started.yml?tutorial-step=1)  
 * [En savoir plus sur les flux de bouton](introduction-to-button-flows.md)  
 * [En savoir plus sur les flux de bouton avec jetons de déclencheur](introduction-to-button-trigger-tokens.md)  
 

@@ -1,13 +1,13 @@
 ---
-title: "Créer un flux de travail d’approbation moderne avec plusieurs approbateurs | Microsoft Docs"
-description: "Créer un flux de travail d’approbation moderne avec plusieurs approbateurs "
-services: 
+title: Créer un flux de travail d’approbation moderne avec plusieurs approbateurs | Microsoft Docs
+description: 'Créer un flux de travail d’approbation moderne avec plusieurs approbateurs '
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 8620cd49f9e19f6641909fcab3103568d148e565
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Gérer les approbations séquentielles avec Microsoft Flow
 Certains flux de travail exigent une approbation préalable avant que l’approbateur final donne sa décision finale. Par exemple, une entreprise peut avoir une stratégie d’approbation séquentielle qui exige une approbation préalable des factures dont le montant est supérieur à 1 000 € avant leur approbation par le département Finance.
@@ -43,7 +43,7 @@ Cette image résume les étapes précédentes :
 
    ![diagramme visio du flux](./media/sequential-modern-approvals/visio-overview.png)
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
 La liste SharePoint Online que vous créez doit comprendre les colonnes suivantes :

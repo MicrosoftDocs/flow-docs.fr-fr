@@ -1,13 +1,13 @@
 ---
-title: "Créer un flux avec Dynamics 365 (en ligne) | Microsoft Docs"
-description: "Créer des workflows utiles à l’aide d’une connexion Dynamics 365 et de Microsoft Flow"
-services: 
+title: Créer un flux avec Dynamics 365 (en ligne) | Microsoft Docs
+description: Créer des workflows utiles à l’aide d’une connexion Dynamics 365 et de Microsoft Flow
+services: ''
 suite: flow
 documentationcenter: na
 author: Mattp123
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: 5ef3de417b1557644ce9bfcd935353e017ceb676
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 923fd1fc573586871d506a66aaa2b09d5b5dc9da
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Créer un flux à l’aide de Dynamics 365 (en ligne)
 En utilisant un connecteur Dynamics 365, vous pouvez créer des flux qui se lancent lorsqu’un événement se produit dans Dynamics 365 ou un autre service, qui effectue ensuite une action dans Dynamics 365 ou un autre service. 
@@ -73,7 +73,7 @@ Si le modèle dont vous avez besoin n’est pas disponible, créez entièrement 
 12. Cliquez ou appuyez sur **Créer un flux**.
 
 ## <a name="create-a-wunderlist-task-from-a-dynamics-365-task"></a>Créer une tâche Wunderlist à partir d’une tâche Dynamics 365
-Cette procédure pas à pas vous montre comment créer une tâche dans [Wunderlist](http://www.wunderlist.com) lorsqu’une tâche est créée dans Dynamics 365. Wunderlist est un service Internet qui permet de créer des listes de tâches, d’ajouter des rappels ou d’effectuer le suivi de vos courses.
+Cette procédure pas à pas vous montre comment créer une tâche dans [Wunderlist](https://www.wunderlist.com) lorsqu’une tâche est créée dans Dynamics 365. Wunderlist est un service Internet qui permet de créer des listes de tâches, d’ajouter des rappels ou d’effectuer le suivi de vos courses.
 
 1. Connectez-vous au [site web Microsoft Flow](https://flow.microsoft.com/).
 2. Cliquez ou appuyez sur **Mes flux**, puis sur **Créer entièrement**.
@@ -129,7 +129,7 @@ Cet exemple affecte également la tâche à un utilisateur spécifique en foncti
 
   ![Flow - ID d’enregistrement et type d’utilisateur](./media/connection-dynamics365/flow-recordid-user.png)
 
-Pour rechercher l’ID d’un enregistrement, consultez [Rechercher l’ID d’un enregistrement](#find-the-record-id) plus loin dans cette rubrique.
+Pour rechercher l’ID d’un enregistrement, consultez [Rechercher l’ID d’un enregistrement](#find-the-records-id) plus loin dans cette rubrique.
 
 > **Important :** les champs ne doivent pas contenir de valeur s’ils ont la description « Utilisation interne uniquement ». Ces champs sont **Chemin d’accès traversé**, **Paramètres supplémentaires** et **Numéro de version de la règle du fuseau horaire**.
 > 

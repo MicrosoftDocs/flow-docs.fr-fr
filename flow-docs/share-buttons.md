@@ -1,13 +1,13 @@
 ---
-title: "Partagez vos boutons avec d’autres utilisateurs. | Microsoft Docs"
-description: "Partagez vos boutons avec d’autres utilisateurs de votre choix pour leur faire gagner du temps."
-services: 
+title: Partagez vos boutons avec d’autres utilisateurs. | Microsoft Docs
+description: Partagez vos boutons avec d’autres utilisateurs de votre choix pour leur faire gagner du temps.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
 ms.openlocfilehash: 2804c683defb94f87c40452a27382bc143c11f10
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="share-button-flows-in-microsoft-flow"></a>Partager des flux de bouton dans Microsoft Flow
 L’application mobile pour Microsoft Flow vous permet de partager des [flux de bouton](introduction-to-button-flows.md) (boutons) avec d’autres utilisateurs ou groupes au sein de votre organisation. Quand vous partagez un bouton, la personne ou le groupe bénéficiaires du partage peuvent exécuter ce bouton comme s’il était le leur. Vous pouvez également [partager un lien](share-buttons.md#re-share-a-button) vers un bouton qu’une autre personne a partagé avec vous. Vous pouvez [cesser de partager](share-buttons.md#stop-sharing-a-button) vos boutons à tout moment.
@@ -30,7 +30,7 @@ L’application mobile pour Microsoft Flow vous permet de partager des [flux de 
 
 Procédez [comme suit](share-buttons.md#use-shared-buttons) pour utiliser un bouton qu’un autre utilisateur a partagé avec vous.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 Pour partager des boutons, vous avez besoin des éléments suivants :
 
 * Un compte ayant accès à [Microsoft Flow](https://flow.microsoft.com).

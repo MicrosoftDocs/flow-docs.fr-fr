@@ -1,13 +1,13 @@
 ---
-title: "Apprenez à automatiser et à exécuter des tâches répétitives avec les flux de bouton | Microsoft Docs"
-description: "Présentation des flux de bouton."
-services: 
+title: Apprenez à automatiser et à exécuter des tâches répétitives avec les flux de bouton | Microsoft Docs
+description: Présentation des flux de bouton.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,10 @@ ms.workload: na
 ms.date: 01/30/2017
 ms.author: deonhe
 ms.openlocfilehash: 558570733819e1fde6c1845ed5ca9debe9232c88
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="introducing-button-flows"></a>Présentation des flux de bouton
 ## <a name="what-are-button-flows"></a>Que sont les flux de bouton ?
@@ -32,7 +32,7 @@ Il existe de nombreuses tâches répétitives que nous voudrions tous exécuter 
 Créez des boutons pour pouvoir facilement exécuter des tâches répétitives depuis n’importe où et à tout moment sur votre appareil mobile. L’exécution de boutons vous fait gagner du temps et, puisque les tâches sont automatisées, les erreurs sont moins nombreuses qu’avec une exécution manuelle.  
 
 ## <a name="create-a-button"></a>Créer un bouton
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 * Accès à Flow. Contactez votre administrateur pour lui demander l’accès.
 * Un compte disposant des autorisations pour utiliser les connecteurs afin de créer votre bouton. Par exemple, vous avez besoin d’un compte Dropbox pour créer un bouton qui permet d’accéder à Dropbox.
 

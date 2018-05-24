@@ -1,13 +1,13 @@
 ---
-title: "Introduction aux jetons de déclencheur de bouton | Microsoft Docs"
-description: "Introduction aux jetons de déclencheur de bouton pour les flux de bouton Microsoft."
-services: 
+title: Introduction aux jetons de déclencheur de bouton | Microsoft Docs
+description: Introduction aux jetons de déclencheur de bouton pour les flux de bouton Microsoft.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/12/2016
 ms.author: deonhe
-ms.openlocfilehash: 4b0e6d7187d12c7257bce4715c3549caf19ce093
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: c3231811e5318b1fe941e005012c2890c83f6e76
+ms.sourcegitcommit: 8bf92483780a5682777dd9fb73be8c2fb0e78dc4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Bien démarrer avec les jetons de déclencheur de bouton
 ## <a name="what-are-button-trigger-tokens"></a>Que sont les jetons de déclencheur de bouton ?
@@ -52,7 +52,7 @@ Dans cette procédure pas à pas, vous allez créer un flux de bouton sur un app
 
 Dans cette procédure pas à pas, les captures d’écran sont issues d’un appareil Android, mais l’expérience est semblable sur des appareils iOS et Windows Phone.
 
-### <a name="prerequisites"></a>Conditions préalables
+### <a name="prerequisites"></a>Prérequis
 * Une adresse de messagerie scolaire ou professionnelle ou un [compte Microsoft](https://account.microsoft.com/about?refd=www.microsoft.com) ayant accès à Microsoft Flow.
 * Application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows).
 
@@ -66,7 +66,7 @@ Commençons :
    ![jeton de déclencheur de bouton](./media/introduction-to-button-trigger-tokens/3.png)  
 4. Sélectionnez **Modifier** sur la carte **Send an email** (Envoyer un e-mail)  
    ![jeton de déclencheur de bouton](./media/introduction-to-button-trigger-tokens/3-5.png)  
-5. Cliquez sur la zone de texte **Objet** et entrez : « **aujourd’hui -** » dans la zone de texte après le texte « WFH » (TDA). Notez que lorsque vous avez cliqué sur la zone de texte, une liste de paramètres/jetons s’est également ouverte. Vous allez utiliser un de ces jetons à l’étape suivante pour ajouter la date à l’objet du message électronique.  
+5. Cliquez sur la zone de texte **Objet** et entrez : « **aujourd’hui -**  » dans la zone de texte après le texte « WFH » (TDA). Notez que lorsque vous avez cliqué sur la zone de texte, une liste de paramètres/jetons s’est également ouverte. Vous allez utiliser un de ces jetons à l’étape suivante pour ajouter la date à l’objet du message électronique.  
    ![jeton de déclencheur de bouton](./media/introduction-to-button-trigger-tokens/4.png)  
 6. Avec le curseur dans la zone de texte Objet, défilez vers la liste **manuelle** de paramètres et appuyez sur **Date**. Notez que le paramètre de date est à présent dans la zone de texte **Objet** :  
    ![jeton de déclencheur de bouton](./media/introduction-to-button-trigger-tokens/6.png)  
@@ -92,5 +92,5 @@ Félicitations ! Vous venez de créer un flux de bouton qui utilise les jetons 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Partager des flux de bouton](share-buttons.md)
 * [En savoir plus sur les flux de bouton](introduction-to-button-flows.md)  
-* [En savoir plus sur les flux](guided-learning/learning-introducing-flow.md)
+* [En savoir plus sur les flux](guided-learning/get-started.yml?tutorial-step=1)
 

@@ -1,13 +1,13 @@
 ---
-title: "Ajouter une option avancée et plusieurs actions | Microsoft Docs"
-description: "Développez un flux pour inclure une option avancée (telle que la définition d’un e-mail sur une priorité élevée) et ajoutez une autre action pour le même événement."
-services: 
+title: Ajouter une option avancée et plusieurs actions | Microsoft Docs
+description: Développez un flux pour inclure une option avancée (telle que la définition d’un e-mail sur une priorité élevée) et ajoutez une autre action pour le même événement.
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,15 +16,15 @@ ms.workload: na
 ms.date: 04/20/2017
 ms.author: stepsic
 ms.openlocfilehash: f6c936cbf5a2bd481adb52ec9b01545fb9ba7b0b
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Ajouter plusieurs actions et options avancées à un flux
 Personnalisez un flux en ajoutant une ou plusieurs options avancées et plusieurs actions pour le même déclencheur. Par exemple, ajoutez une option avancée qui envoie un e-mail avec une priorité élevée. Outre l’envoi de messages lorsqu’un élément est ajouté à une liste SharePoint, créez un fichier dans le dossier Dropbox qui contient les mêmes informations.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 * [Créer un flux](get-started-logic-flow.md)
 
 ## <a name="add-another-action"></a>Ajouter une autre action
