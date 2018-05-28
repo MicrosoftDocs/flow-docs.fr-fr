@@ -1,13 +1,13 @@
 ---
 title: Approuver des demandes sur un appareil mobile | Microsoft Docs
-description: "Utilisez un appareil mobile pour approuver les demandes créées dans Microsoft Flow."
-services: 
+description: Utilisez un appareil mobile pour approuver les demandes créées dans Microsoft Flow.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
 ms.author: deonhe
-ms.openlocfilehash: 18546c044dc823d703544c48f5cda76a3581e99f
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.openlocfilehash: 2b856dfa75e0acb7eb83525c4d64d070315b5735
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="approve-requests-on-your-mobile-device-by-using-microsoft-flow"></a>Approuver des demandes sur votre appareil mobile à l’aide de Microsoft Flow
 Si un flux vous identifie en tant qu’approbateur et que vous avez installé l’application mobile pour Microsoft Flow, vous recevez une notification Push chaque fois que votre approbation est requise.
@@ -31,7 +31,7 @@ Cet article vous guide tout au long de quelques scénarios courants que vous êt
 > 
 > 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 Pour effectuer cette procédure pas à pas, vous avez besoin de ce qui suit :
 
 * Un appareil [Android](https://aka.ms/flowmobiledocsandroid) ou [iOS](https://aka.ms/flowmobiledocsios) exécutant l’application mobile pour Microsoft Flow.
@@ -52,7 +52,7 @@ Pour effectuer cette procédure pas à pas, vous avez besoin de ce qui suit :
 Si vous n’avez aucune demande d’approbation en attente, créez un [flux d’approbation](modern-approvals.md), définissez-vous en tant qu’approbateur, puis déclenchez le flux. Les demandes d’approbation apparaissent dans le centre d’approbation quelques secondes après que le flux se déclenche et envoie une demande d’approbation.
 
 ## <a name="approve-requests-and-leave-an-optional-comment"></a>Approuver les demandes et laisser un commentaire facultatif
-1. Si vous ne l’avez pas encore fait, suivez les étapes précédentes pour [afficher toutes les demandes d’approbation en attente](mobile-approvals.md#view-pending-approval-requests).
+1. Si vous ne l’avez pas encore fait, suivez les étapes précédentes pour [voir les demandes en attente](mobile-approvals.md#view-pending-requests).
 2. Sélectionnez **APPROUVER** dans la demande que vous souhaitez approuver.
    
     ![sélectionner approuver](./media/mobile-approvals/select-approve.png)

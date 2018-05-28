@@ -16,18 +16,40 @@ ms.date: 03/28/2018
 ms.topic: hub-page
 ms.reviewer:
 - karann-msft
-ms.openlocfilehash: 7a030259095667ed64c796c8c8ab68495d3d61dc
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: 05bf99aa91b5cfe8635cc7be72669b4d1012ef49
+ms.sourcegitcommit: f9be24c533003146d75e5a7fa6e40356d4ce47d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 <div id="main" class="v2">
+    <div class="container">
+        <ul class="cardsY panelContent featuredContent">
+            <li>
+                <a href="getting-started.md">
+                    <div class="cardSize">
+                        <div class="cardPadding">
+                            <div class="card">
+                                <div class="cardImageOuter">
+                                    <div class="cardImage">
+                                        <img src="https://docs.microsoft.com/media/common/i_get-started.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="cardText">
+                                    <span class="likeAnH3">Voir toute la documentation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
 <div class="container">
     <h1>Documentation sur Microsoft Flow</h1>
     <ul class="pivots">
         <li>
-            <a href="#start">Je suis un débutant</a>
+            <a href="#start">Je suis débutant</a>
             <ul id="start">
                 <li>
                     <a href="#start-all"></a>
@@ -274,7 +296,7 @@ ms.lasthandoff: 04/26/2018
             </ul>
         </li>
         <li>
-            <a href="#expert">Je suis un expert</a>
+            <a href="#expert">Je suis expert</a>
             <ul id="expert">
                 <li>
                     <a href="#expert-all"></a>

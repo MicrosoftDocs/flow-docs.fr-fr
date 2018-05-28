@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/31/2018
 ms.author: stepsic
-ms.openlocfilehash: 06e327963a44f74141492ec14f2bef7cab802b79
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: 9b2447ce0a7c9bc353e47ee1edb4bea55f2c49f4
+ms.sourcegitcommit: f9be24c533003146d75e5a7fa6e40356d4ce47d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/25/2018
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limites et configuration dans Microsoft Flow
 Cette rubrique contient des informations sur les limites actuelles et les détails de configuration des flux.
@@ -31,7 +31,8 @@ Il s’agit des limites pour une seule demande sortante.
 
 | Nom | Limite |
 | --- | --- |
-| Délai d’expiration de la demande |120 secondes |
+| Délai d’expiration de la demande pour les appels synchrones |120 secondes |
+| Délai d’expiration de la demande pour les appels asynchrones|Configurable. La valeur maximale est 30 jours. |
 
 ### <a name="message-size"></a>Taille du message
 
@@ -55,6 +56,7 @@ Il s’agit des limites pour une seule exécution de flux.
 | Rétention du stockage |30 jours |À compter de l’heure de début de l’exécution. |
 | Intervalle de périodicité minimal |1 minute | |
 | Intervalle de périodicité maximal |500 jours | |
+| Conservation maximale de l’historique des exécutions |28 jours, selon les règles RGPD. | |
 
 ## <a name="looping-and-debatching-limits"></a>Limites de l’exécution de boucles et de la décomposition des lots
 Il s’agit des limites pour une seule exécution de flux.

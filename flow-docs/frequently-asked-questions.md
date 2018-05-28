@@ -15,11 +15,11 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/15/2017
 ms.author: stepsic
-ms.openlocfilehash: 99a66520b5a922b4945c9d3c94c7a5c053df98ee
-ms.sourcegitcommit: a0435b92fa7f5dedff3b0ff806836c7a07309fd2
+ms.openlocfilehash: 4fa6af7557fdbae46db5eb74a82a9d30a991e93b
+ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="frequently-asked-questions"></a>Forum aux questions
 ## <a name="audience-and-strategy"></a>Public concerné et stratégie
@@ -131,3 +131,7 @@ Oui. Vous pouvez utiliser notre offre gratuite avec limitation des droits utilis
 ### <a name="what-pricing-plans-do-you-offer"></a>Quels niveaux de tarification proposez-vous ?
 Microsoft Flow propose des niveaux de services gratuits et payants. [En savoir plus sur la tarification](billing-questions.md).
 
+## <a name="learn-more"></a>En savoir plus
+
+* Découvrez une [visite guidée](guided-learning/index.yml) de Microsoft Flow
+* Apprenez les principes fondamentaux de Microsoft Flow dans le [guide de prise en main](getting-started.md)
