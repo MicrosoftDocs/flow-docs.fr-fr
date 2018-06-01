@@ -15,16 +15,20 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: 923fd1fc573586871d506a66aaa2b09d5b5dc9da
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.openlocfilehash: d34cfd6632ca0e8c560c5af199877b13b210a64a
+ms.sourcegitcommit: a378fb36722ae4be9909fb453efa81808b509255
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34689373"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Créer un flux à l’aide de Dynamics 365 (en ligne)
 En utilisant un connecteur Dynamics 365, vous pouvez créer des flux qui se lancent lorsqu’un événement se produit dans Dynamics 365 ou un autre service, qui effectue ensuite une action dans Dynamics 365 ou un autre service. 
 
 Dans Microsoft Flow, vous pouvez définir des workflows automatisés entre vos applications et services favoris pour synchroniser des fichiers, obtenir des notifications, collecter des données, etc. Pour plus d’informations, consultez [Prise en main de Microsoft Flow](getting-started.md).
+
+> [!IMPORTANT] 
+> Pour appeler un déclencheur de flux, l’entité d’engagement client Dynamics 365 utilisée avec le flux doit avoir le **suivi des modifications** activé. Plus d’informations : [Activer le suivi des modifications pour contrôler la synchronisation des données](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization) 
 
 ## <a name="create-a-flow-from-a-template"></a>Créer un flux à partir d’un modèle
 Vous pouvez créer un flux à l’aide de l’un des nombreux modèles disponibles, dont voici des exemples :
