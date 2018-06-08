@@ -1,13 +1,13 @@
 ---
-title: "Utilisez l’action « Appliquer à chacun » pour itérer sur un tableau d’éléments. | Microsoft Docs"
-description: "Utilisez Microsoft Flow pour itérer sur un tableau d’éléments afin de vérifier plusieurs conditions et d’agir en fonction de ces conditions."
-services: 
+title: Utilisez l’action « Appliquer à chacun » pour itérer sur un tableau d’éléments. | Microsoft Docs
+description: Utilisez Microsoft Flow pour itérer sur un tableau d’éléments afin de vérifier plusieurs conditions et d’agir en fonction de ces conditions.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 03/16/2017
 ms.author: deonhe
 ms.openlocfilehash: 37f1ce939db23694bcd92e7f1af75bf6c474be91
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440458"
 ---
 # <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Utiliser l’action « Appliquer à chacun » dans Microsoft Flow pour traiter régulièrement une liste d’éléments
 De nombreux déclencheurs peuvent commencer immédiatement un flux en fonction d’un événement tel que la réception d’un e-mail dans votre boîte de réception. Ces déclencheurs sont formidables, mais vous pouvez parfois exécuter un flux qui interroge une source de données selon une planification prédéfinie et mène certaines actions en fonction des propriétés des éléments dans la source de données. Pour ce faire, votre flux peut être démarré selon une planification (par exemple une fois par jour) et utiliser une action de boucle comme **Appliquer à chacun** pour traiter une liste d’éléments. Par exemple, vous pouvez utiliser **Appliquer à chacun** pour mettre à jour les enregistrements d’une base de données ou d’une liste d’éléments à partir de Microsoft SharePoint.

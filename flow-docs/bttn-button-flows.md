@@ -1,13 +1,13 @@
 ---
-title: "Démarrer des flux avec des boutons bttn | Microsoft Docs"
-description: "Découvrez comment démarrer votre flux avec un bouton bttn"
-services: 
+title: Démarrer des flux avec des boutons bttn | Microsoft Docs
+description: Découvrez comment démarrer votre flux avec un bouton bttn
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 05/30/2017
 ms.author: deonhe
 ms.openlocfilehash: c4010f95ad2db3c4f3b97b39f0b45934c7b69c48
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440314"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Exécuter vos flux avec des boutons physiques (bttns) à partir de Button Corporation (préversion)
 Déclenchez vos flux en appuyant sur un bouton bttn (bouton physique développé par [The Button Corporation](https://my.bt.tn/)). Par exemple, vous pouvez appuyer sur un bouton bttn qui déclenche un flux qui effectue les tâches suivantes :
@@ -39,7 +40,7 @@ Déclenchez vos flux en appuyant sur un bouton bttn (bouton physique développé
 
 Vous pouvez également déclencher un flux en utilisant un [bouton physique Flic](flic-button-flows.md).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 * Accédez à [Microsoft Flow](https://flow.microsoft.com).
 * Au moins un [bouton bttn inscrit](https://my.bt.tn/).
 

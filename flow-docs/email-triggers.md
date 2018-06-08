@@ -1,13 +1,13 @@
 ---
-title: "Exécutez des flux en fonction des propriétés de courrier. | Microsoft Docs"
-description: "Démarrez un flux en fonction des propriétés d’un courrier, telles que l’objet, l’expéditeur ou le destinataire."
-services: 
+title: Exécutez des flux en fonction des propriétés de courrier. | Microsoft Docs
+description: Démarrez un flux en fonction des propriétés d’un courrier, telles que l’objet, l’expéditeur ou le destinataire.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 395cb9bc1d58e50e5ac8ebac9afaed544f3261ec
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440008"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>Déclencher un flux en fonction des propriétés d’un courrier
 Utilisez le déclencheur **Lors de l’arrivée d’un nouveau message électronique** pour créer un flux qui s’exécute lorsqu’une ou plusieurs des propriétés de courrier suivantes correspondent aux critères que vous fournissez :
@@ -40,7 +41,7 @@ Utilisez le déclencheur **Lors de l’arrivée d’un nouveau message électron
 
 Dans les procédures détaillées ci-dessous, vous allez vérifier toutes les propriétés du déclencheur **Lors de l’arrivée d’un nouveau message électronique**. Pour en savoir plus, consultez les [questions fréquentes sur la facturation](billing-questions.md#what-counts-as-a-run) et la page sur la [tarification](https://ms.flow.microsoft.com/pricing/).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 * Un compte ayant accès à [Microsoft Flow](https://flow.microsoft.com).
 * Un compte Office 365 Outlook.
 * Application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows).

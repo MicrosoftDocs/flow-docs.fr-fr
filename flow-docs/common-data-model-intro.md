@@ -1,13 +1,13 @@
 ---
 title: Common Data Service | Microsoft Docs
-description: "Créez un flux qui permet d’importer des données, d’en exporter ou de créer des approbations avec le service Common Data Service."
-services: 
+description: Créez un flux qui permet d’importer des données, d’en exporter ou de créer des approbations avec le service Common Data Service.
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
 ms.openlocfilehash: e4e92bfdcf1ea65de272233b2056523641010cf2
-ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "29351300"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Créer un flux qui utilise le service Common Data Service
 Améliorez l’efficacité opérationnelle avec une vue unifiée des données métier en créant un flux qui utilise le service [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Déployez cette base de données d’entreprise sécurisée qui comprend des entités métier standard bien formées (par exemple, Ventes, Achat, Service clientèle et Productivité) dans votre organisation. Stockez les données de l’organisation dans une ou plusieurs [entités personnalisées](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), qui offrent plusieurs avantages par rapport aux sources de données externes telles que Microsoft Excel et Salesforce.

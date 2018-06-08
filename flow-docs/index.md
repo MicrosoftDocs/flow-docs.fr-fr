@@ -17,10 +17,11 @@ ms.topic: hub-page
 ms.reviewer:
 - karann-msft
 ms.openlocfilehash: 05bf99aa91b5cfe8635cc7be72669b4d1012ef49
-ms.sourcegitcommit: f9be24c533003146d75e5a7fa6e40356d4ce47d7
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34479755"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -49,7 +50,7 @@ ms.lasthandoff: 05/25/2018
     <h1>Documentation sur Microsoft Flow</h1>
     <ul class="pivots">
         <li>
-            <a href="#start">Je suis débutant</a>
+            <a href="#start">Je suis un débutant</a>
             <ul id="start">
                 <li>
                     <a href="#start-all"></a>
@@ -296,7 +297,7 @@ ms.lasthandoff: 05/25/2018
             </ul>
         </li>
         <li>
-            <a href="#expert">Je suis expert</a>
+            <a href="#expert">Je suis un expert</a>
             <ul id="expert">
                 <li>
                     <a href="#expert-all"></a>

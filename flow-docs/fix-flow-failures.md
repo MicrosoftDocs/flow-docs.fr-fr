@@ -1,13 +1,13 @@
 ---
-title: "Résoudre les problèmes de flux | Microsoft Docs"
-description: "Résoudre certaines des raisons les plus courantes pour lesquelles les flux échouent"
-services: 
+title: Résoudre les problèmes de flux | Microsoft Docs
+description: Résoudre certaines des raisons les plus courantes pour lesquelles les flux échouent
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 01/17/2017
 ms.author: stepsic
 ms.openlocfilehash: 7f4e41437fa19f58c08e2ecd1fb65a3a30092ef8
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23439540"
 ---
 # <a name="troubleshooting-a-flow"></a>Résolution des problèmes de flux
 ## <a name="identify-the-error"></a>Identifier l’erreur

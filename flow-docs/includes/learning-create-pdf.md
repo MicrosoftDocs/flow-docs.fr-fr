@@ -1,6 +1,6 @@
 Cette rubrique décrit comment Contoso Flooring utilise Microsoft Flow pour convertir automatiquement des documents dans un format standard les stocker dans SharePoint Online afin de les garder en lieu sûr dans le cloud. Vous allez créer un flux qui détecte l’ajout d’un fichier à un dossier OneDrive Entreprise, puis convertit ce fichier au format PDF et le stocke dans un dossier SharePoint Online. 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 Pour ce scénario, vous devez disposer d’un compte **Muhimbi**, un service de conversion au format PDF. Si vous n’avez pas de compte Muhimbi, vous pouvez vous inscrire pour une [évaluation gratuite de 30 jours](http://www.muhimbi.com/Products/PDF-Converter-for-SharePoint/Products-PDF-Converter-for-SharePoint-Free-Trial.aspx). Suivez les instructions de cette page pour déployer l’application sur votre site SharePoint Online. 
 
 ## <a name="create-the-source-and-target-folders"></a>Créer les dossiers source et cible
@@ -55,7 +55,7 @@ Pour la dernière étape, vous allez ajouter une action qui déplace le document
    
    * **Adresse du site** : URL de votre site SharePoint.  
    * **Chemin d’accès du dossier** : sélectionnez l’icône de dossier, puis accédez au dossier **PDF - Fichiers terminés**.
-   * **Nom de fichier** : dans la liste de contenu dynamique, pour **Convertir le document**, sélectionnez **Nom de fichier de base**, puis ajoutez « **.pdf** » de façon à ce qu’il soit enregistré dans SharePoint avec cette extension de fichier. 
+   * **Nom de fichier** : dans la liste de contenu dynamique, pour **Convertir le document**, sélectionnez **Nom de fichier de base**, puis ajoutez «  **.pdf** » de façon à ce qu’il soit enregistré dans SharePoint avec cette extension de fichier. 
    * **Contenu du fichier** : dans la liste de contenu dynamique, pour **Convertir le document**, sélectionnez **Contenu de fichier traité**.
 3. Sélectionnez **Créer un flux** en haut de la page pour enregistrer votre travail.
    

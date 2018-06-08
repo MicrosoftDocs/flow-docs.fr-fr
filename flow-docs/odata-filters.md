@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 09/21/2017
 ms.author: deonhe
 ms.openlocfilehash: 7c182328c341043ffc155a679f39bcbc2130a0bc
-ms.sourcegitcommit: d00c10759d4afb54517a0b1032f8d0a509006d5b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "31008067"
 ---
 # <a name="filter-and-copy-data-with-microsoft-flow"></a>Filtrer et copier des données avec Microsoft Flow
 Cette procédure pas à pas montre comment créer un flux qui surveille une source afin de détecter l’ajout ou la modification d’éléments, puis copie ces changements vers une destination. Vous pouvez créer un tel flux si vos utilisateurs entrent des données dans un emplacement, alors que votre équipe doit pouvoir y accéder ailleurs ou dans un autre format.

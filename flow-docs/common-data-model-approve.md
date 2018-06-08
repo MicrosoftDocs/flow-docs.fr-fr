@@ -1,13 +1,13 @@
 ---
-title: "Créer une chaîne d’approbation avec Common Data Service | Microsoft Docs"
-description: "Créez une entité, un flux et une application qui fonctionnent ensemble afin que les réviseurs puissent approuver ou rejeter des fichiers ajoutés à Dropbox."
-services: 
+title: Créer une chaîne d’approbation avec Common Data Service | Microsoft Docs
+description: Créez une entité, un flux et une application qui fonctionnent ensemble afin que les réviseurs puissent approuver ou rejeter des fichiers ajoutés à Dropbox.
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
 ms.openlocfilehash: f56b109cc0263c8464d6d7475421ab32af8888d5
-ms.sourcegitcommit: f3261717768177e03e825c0dd2e3ba736dc9b94d
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "29351336"
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Créer une chaîne d’approbation avec Microsoft Flow et le service Common Data Service de Microsoft
 Le service Common Data Service vous permet de générer des flux qui comportent des informations stockées dans une base de données indépendante d’un flux. Les approbations en sont le meilleur exemple. Si vous stockez l’état de l’approbation dans une entité, votre flux peut fonctionner par-dessus.

@@ -1,13 +1,13 @@
 ---
-title: "Gérer les passerelles de données locales | Microsoft Docs"
-description: "Afficher et installer une passerelle de données locale dans Microsoft Flow"
-services: 
+title: Gérer les passerelles de données locales | Microsoft Docs
+description: Afficher et installer une passerelle de données locale dans Microsoft Flow
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 02/05/2018
 ms.author: deonhe
 ms.openlocfilehash: 642cf26110a09404c8bd453f894540963904ebda
-ms.sourcegitcommit: 0b7964058416fd8d5e355913eea27172f1c61992
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "29057403"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Gérer une passerelle de données locale dans Microsoft Flow
 

@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 10/26/2016
 ms.author: deonhe
 ms.openlocfilehash: fd76c12d1879c9b613ba833d9ef2211cd4aab702
-ms.sourcegitcommit: f0202f74ba9a2282a670a1751462f598a5ea0ce5
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440242"
 ---
 # <a name="learn-all-about-data-groups"></a>En savoir plus sur les groupes de données
 ## <a name="what-is-a-data-group"></a>Qu’est-ce qu’un groupe de données ?

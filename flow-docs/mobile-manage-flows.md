@@ -1,13 +1,13 @@
 ---
-title: "Gérer des flux à partir de votre téléphone | Microsoft Docs"
-description: "Affichez la liste de vos flux, activez ou désactivez des flux et affichez les événements, actions et historiques d’exécution de chaque flux"
-services: 
+title: Gérer des flux à partir de votre téléphone | Microsoft Docs
+description: Affichez la liste de vos flux, activez ou désactivez des flux et affichez les événements, actions et historiques d’exécution de chaque flux
+services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 06/11/2016
 ms.author: adiregev
 ms.openlocfilehash: 4a04fec70ae70ff17ddf6e1f93e6461ec432e8d2
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440098"
 ---
 # <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Gérer des flux à partir de votre téléphone dans Microsoft Flow
 Affichez la liste de tous les flux que vous avez créés. En outre, affichez les événements et actions de chaque flux, activez ou désactivez un flux ou explorez un historique d’exécution.

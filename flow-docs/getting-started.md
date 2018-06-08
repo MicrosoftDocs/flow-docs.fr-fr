@@ -1,13 +1,13 @@
 ---
 title: Prise en main| Microsoft Docs
-description: "Méthodes rapides pour démarrer l’automatisation de votre travail et de vos activités personnelles avec Microsoft Flow"
-services: 
+description: Méthodes rapides pour démarrer l’automatisation de votre travail et de vos activités personnelles avec Microsoft Flow
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: hero-article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 10/31/2017
 ms.author: stepsic
 ms.openlocfilehash: 11c8d9846982cfd372df787b6a7c9e6584d61ae5
-ms.sourcegitcommit: 95e9c124868ce09d961b5776c957b051fd621b88
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23439990"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Prise en main de Microsoft Flow #
 

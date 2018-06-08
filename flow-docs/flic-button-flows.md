@@ -1,13 +1,13 @@
 ---
 title: Lancer des flux avec des boutons Flic | Microsoft Docs
-description: "Démarrez facilement les flux de bouton avec des boutons physiques à partir de Flic, proposé par Shortcut Labs."
-services: 
+description: Démarrez facilement les flux de bouton avec des boutons physiques à partir de Flic, proposé par Shortcut Labs.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 05/19/2017
 ms.author: deonhe
 ms.openlocfilehash: 518834103c1a17ef2f5af218eae43ccab4e5fda2
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440836"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Exécuter vos flux en appuyant sur un bouton intelligent Flic (préversion)
 Déclenchez vos flux en appuyant sur un bouton physique, appelé Flic, proposé par Shortcut Labs. Par exemple, appuyez sur un bouton Flic pour effectuer le suivi de vos heures de travail, bloquer votre calendrier, compter le nombre de visiteurs lors d’un événement ou enregistrer des emplacements géographiques.
@@ -29,7 +30,7 @@ Déclenchez vos flux en appuyant sur un bouton physique, appelé Flic, proposé 
 > 
 > 
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 Voici les prérequis pour utiliser des boutons Flic avec Microsoft Flow :
 
 * Accédez à [Microsoft Flow](https://flow.microsoft.com).
@@ -101,7 +102,7 @@ Commencez à créer le flux.
    Vous pouvez créer d’autres flux et les déclencher à l’aide d’autres événements de la liste **Événements**. Par exemple, vous pouvez utiliser l’événement **Double-clic** pour enregistrer l’heure à laquelle vous quittez un client.
 
 ### <a name="configure-the-sheet"></a>Configurer la feuille
-   Sur la carte **Insert row (Insérer une ligne)** :
+   Sur la carte **Insert row (Insérer une ligne)**  :
 
 1. Sélectionnez la feuille de calcul créée précédemment dans la liste **Fichier**.
 2. Sélectionnez la feuille dans la liste **Feuille de calcul**.

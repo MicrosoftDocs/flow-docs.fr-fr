@@ -1,13 +1,13 @@
 ---
 title: Permettre aux clients de tester vos flux sur AppSource | Microsoft Docs
-description: "Utilisez AppSource pour partager des applications avec les clients et générer des prospects pour votre entreprise."
-services: 
+description: Utilisez AppSource pour partager des applications avec les clients et générer des prospects pour votre entreprise.
+services: ''
 suite: flow
 documentationcenter: na
 author: linhtranms
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 05/09/2017
 ms.author: litran
 ms.openlocfilehash: 41d53a6f7382365dfcabbc98a2fa362d465720fa
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23439648"
 ---
 # <a name="let-customers-test-drive-your-flows-on-appsource"></a>Permettre aux clients de tester vos flux sur AppSource
 Vous souhaitez montrer comment votre application s’intègre à Microsoft Flow ? Nous proposons à présent des solutions en version d’évaluation sur [AppSource.com](https://appsource.microsoft.com), ce qui vous permet de partager l’intégration de Microsoft Flow avec les clients et de générer des prospects pour votre entreprise.

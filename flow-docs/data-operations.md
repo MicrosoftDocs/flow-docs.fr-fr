@@ -1,13 +1,13 @@
 ---
-title: "Présentation des opérations sur les données | Microsoft Docs"
-description: "Découvrez comment effectuer des opérations, telles que créer un tableau HTML, créer un tableau CSV, composer un message, joindre, sélectionner et filtrer un tableau avec Microsoft Flow."
-services: 
+title: Présentation des opérations sur les données | Microsoft Docs
+description: Découvrez comment effectuer des opérations, telles que créer un tableau HTML, créer un tableau CSV, composer un message, joindre, sélectionner et filtrer un tableau avec Microsoft Flow.
+services: ''
 suite: flow
 documentationcenter: na
 author: MSFTMan
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,15 +16,16 @@ ms.workload: na
 ms.date: 08/02/2017
 ms.author: deonhe
 ms.openlocfilehash: aa3f61d09cb5e9b8d07124838883da9b5b9794ab
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440908"
 ---
 # <a name="use-data-operations-with-microsoft-flow"></a>Utiliser des opérations sur les données avec Microsoft Flow
 Dans cette procédure pas à pas, découvrez certaines opérations sur les données courantes de Microsoft Flow (telles que composer un message, joindre, sélectionner, filtrer un tableau, créer un tableau et analyser JSON) qui sont disponibles pour manipuler des données lorsque vous créez des flux.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 * Accédez à Microsoft Flow.
 * Un outil tel que [PostMan](https://www.getpostman.com/postman) pour envoyer des requêtes HTTP POST avec un tableau JSON à votre flux.
 

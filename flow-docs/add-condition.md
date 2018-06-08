@@ -1,13 +1,13 @@
 ---
-title: "Ajouter une condition à un flux | Microsoft Docs"
-description: "Spécifiez qu’un flux effectue une ou plusieurs tâches uniquement si une condition est remplie."
-services: 
+title: Ajouter une condition à un flux | Microsoft Docs
+description: Spécifiez qu’un flux effectue une ou plusieurs tâches uniquement si une condition est remplie.
+services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,16 +16,17 @@ ms.workload: na
 ms.date: 10/17/2017
 ms.author: stepsic
 ms.openlocfilehash: 135b3509a9412f7674a1e9cb2ada86ebd2bb9f4f
-ms.sourcegitcommit: 01325305b9d2cf964acac9feb6cca0af66db7440
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23981283"
 ---
 # <a name="add-a-condition-to-a-flow"></a>Ajouter une condition à un flux
 
 Spécifiez qu’un flux effectue une ou plusieurs tâches uniquement si une condition est remplie. Par exemple, spécifiez que vous recevez un message électronique uniquement si un tweet contenant un mot clé est retweeté au moins 10 fois.
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 
 * [Créez un flux](get-started-logic-template.md) à partir d’un modèle : ce tutoriel [utilise ce modèle](https://flow.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) comme exemple
 

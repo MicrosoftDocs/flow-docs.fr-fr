@@ -1,13 +1,13 @@
 ---
-title: "Créer un flux à partir de votre téléphone | Microsoft Docs"
-description: "Créez un flux à partir d’un modèle, par exemple, pour envoyer une notification Push lorsque vous recevez des messages d’une adresse que vous spécifiez."
-services: 
+title: Créer un flux à partir de votre téléphone | Microsoft Docs
+description: Créez un flux à partir d’un modèle, par exemple, pour envoyer une notification Push lorsque vous recevez des messages d’une adresse que vous spécifiez.
+services: ''
 suite: flow
 documentationcenter: na
 author: adiregev
 manager: erikre
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,17 +16,18 @@ ms.workload: na
 ms.date: 09/18/2016
 ms.author: adiregev
 ms.openlocfilehash: 27a2001e3fa154f9354ef5ad888e194f30b3d6ab
-ms.sourcegitcommit: 4f2cb27d392f46aa1d8680d6278876780ed3871b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "23440296"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Créer un flux à partir de votre téléphone à l’aide de Microsoft Flow
 Créez un flux à partir de votre téléphone à l’aide d’un modèle, que vous pouvez trouver en recherchant parmi une liste de services, en parcourant les catégories ou en spécifiant des mots clés. Suivez les étapes décrites dans cette rubrique pour créer un flux qui envoie une notification Push à votre téléphone quand vous recevez un message de votre responsable.
 
 Si vous débutez sur Microsoft Flow, [consultez une vue d’ensemble](getting-started.md).
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Prérequis
 * Un [compte pour Microsoft Flow](sign-up-sign-in.md).
 * Application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows) sur un [appareil pris en charge](getting-started.md#use-the-mobile-app). Les illustrations de cette rubrique reflètent la version iPhone de l’application, mais l’interface Android ou Windows Phone lui ressemble.
 * Pour utiliser le modèle présenté dans cette rubrique, vous avez également besoin :

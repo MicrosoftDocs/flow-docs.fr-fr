@@ -2,7 +2,7 @@
 title: Utiliser les approbations
 metadata:
   title: Utiliser les approbations | Microsoft Flow
-  description: "Découvrez comment gérer l’approbation des documents et processus dans Microsoft Flow."
+  description: Découvrez comment gérer l’approbation des documents et processus dans Microsoft Flow.
   audience: Business User
   level: Beginner
   nextTutorialHref: administer-flows
@@ -15,25 +15,27 @@ metadata:
   ms.date: 02/22/2018
   ms.author: deonhe
   ms.openlocfilehash: b3b77f073464ae15eaf3ca49ce6664ed5d03cfe8
-  ms.sourcegitcommit: 22a883c30c859b6193fc2a619e753d71247f5e15
+  ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/27/2018
+  ms.lasthandoff: 06/04/2018
+  ms.locfileid: "29563018"
 items:
 - durationInMinutes: 1
-  content: "Découvrez comment gérer l’approbation des documents et processus dans Microsoft Flow.\n"
-- title: "Créer une demande d’approbation"
+  content: >
+    Découvrez comment gérer l’approbation des documents et processus dans Microsoft Flow.
+- title: Créer une demande d’approbation
   durationInMinutes: 4
   content: >
     > [!Video https://www.youtube.com/embed/65yz8tqnWe0?rel=0]
 
 
     [!INCLUDE [learning-approval-center](../includes/learning-approval-center.md)]
-- title: "Traiter une demande d’approbation"
+- title: Traiter une demande d’approbation
   durationInMinutes: 7
   content: >
     > [!Video https://www.youtube.com/embed/-0r5ZKVEIS4?rel=0]
 
 
     [!INCLUDE [learning-approval-request](../includes/learning-approval-request.md)]
-- content: "Vous avez terminé la section **Utiliser les approbations** de la formation guidée sur Microsoft Flow.\0"
+- content: Vous avez terminé la section **Utiliser les approbations** de la formation guidée sur Microsoft Flow.

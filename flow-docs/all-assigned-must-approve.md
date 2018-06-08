@@ -1,13 +1,13 @@
 ---
-title: "Créer un flux d’approbation nécessitant l’approbation de tout le monde | Microsoft Docs"
-description: "Créez un flux d’approbation de demande nécessitant l’approbation de tout le monde, et entraînant le rejet de la demande en cas de refus d’une seule personne."
-services: 
+title: Créer un flux d’approbation nécessitant l’approbation de tout le monde | Microsoft Docs
+description: Créez un flux d’approbation de demande nécessitant l’approbation de tout le monde, et entraînant le rejet de la demande en cas de refus d’une seule personne.
+services: ''
 suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: 
-tags: 
+editor: ''
+tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
@@ -16,10 +16,11 @@ ms.workload: na
 ms.date: 02/27/2018
 ms.author: deonhe
 ms.openlocfilehash: b7cf57ad343433f50a918e3a09710fbb1e3325de
-ms.sourcegitcommit: 79fc1e439640c6329bac884085eb66e71f63ab63
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "29681293"
 ---
 # <a name="create-an-approval-flow-that-requires-everyone-to-approve"></a>Créer un flux d’approbation nécessitant l’approbation de tout le monde
 
