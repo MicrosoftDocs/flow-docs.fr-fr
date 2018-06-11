@@ -1,6 +1,6 @@
 ---
-title: Résumé des requêtes RGPD de personnes concernées | Microsoft Docs
-description: Découvrez comment répondre aux requêtes RGPD d’une personne concernée pour Microsoft Flow.
+title: Résumé des demandes RGPD de personnes concernées | Microsoft Docs
+description: Découvrez comment répondre aux demandes RGPD d’une personne concernée pour Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,15 +13,16 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/18/2018
+ms.date: 4/24/2018
 ms.author: keweare
-ms.openlocfilehash: 9f9513ca0239f72c36e96387fc010040936bbd02
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: c57296bed460dbf94aa597542413783292e1a8f7
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552165"
 ---
-# <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Répondre aux requêtes RGPD d’une personne concernée pour Microsoft Flow
+# <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Répondre aux demandes RGPD d’une personne concernée pour Microsoft Flow
 
 Cet article vous prépare, vous et votre organisation, aux directives du Règlement général sur la protection des données (RGPD) de l’Union européenne. Non seulement cet article décrit ce que Microsoft fait pour préparer l’environnement RGPD, mais il fournit également des exemples d’étapes que vous pouvez effectuer dès aujourd'hui pour garantir la conformité RGPD lors de l’utilisation de PowerApps, Microsoft Flow et de Common Data Service for Apps.
 
@@ -42,6 +43,9 @@ Vous pouvez effectuer les opérations nécessitant des privilèges d’administr
     [Une licence d’évaluation](http://web.powerapps.com/trial) expire dans 30 jours.
 
 - [Administrateur général Office 365](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) ou [Administrateur général Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
+
+### <a name="unmanaged-tenants"></a>Locataires non gérés
+Si vous êtes membre d’un [locataire non géré](https://docs.microsoft.com/azure/active-directory/domains-admin-takeover), ce qui signifie que votre locataire Azure AD n’a pas d’administrateur général, vous serez néanmoins en mesure de suivre les étapes décrites dans cet article pour exporter et supprimer vos propres données personnelles. 
 
 ## <a name="responding-to-dsrs-for-microsoft-flow-customer-data"></a>Répondre aux DSR pour les données client Microsoft Flow
 

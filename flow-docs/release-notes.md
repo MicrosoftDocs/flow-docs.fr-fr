@@ -13,13 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/12/2018
+ms.date: 06/04/2018
 ms.author: stepsic
-ms.openlocfilehash: bae4991754de37ca9483d540891431e216ee74cd
-ms.sourcegitcommit: b6ac1562b3ed6601401d23f4009b7528c1ce8925
+ms.openlocfilehash: 61c6382a35a55ca18dbfbce5b5b6fe38dc6ee0f2
+ms.sourcegitcommit: 3f7f5a941466485cd16e78239fcfd89d71f501e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34755572"
 ---
 # <a name="release-notes"></a>Notes de publication
 ## <a name="top-questions"></a>Principales questions
@@ -45,7 +46,17 @@ ms.lasthandoff: 05/08/2018
 
 ## <a name="whats-new"></a>Nouveautés
 
-### <a name="release-2014-05-01"></a>Version 01-05-2014
+### <a name="release-2018-05-21"></a>Version du 21-05-2018
+
+- **Flux « détenus » par des listes et des bibliothèques SharePoint** : les flux qui fonctionnent avec des listes et des bibliothèques SharePoint peuvent être partagés avec ces listes ou ces bibliothèques. Ainsi, au lieu d’être partagés avec des personnes ou des groupes, ils sont partagés avec toutes les personnes ayant accès à la liste. Quand des utilisateurs sont ajoutés ou supprimés de la liste ou de la bibliothèque, leur appartenance change automatiquement en conséquence.
+- **Analytique des détails des erreurs** : nouveau rapport incorporé qui fournit des informations sur toutes les erreurs qui se produisent dans un flux.
+- **Partager des flux avec des groupes Office 365** : vous pouvez rendre un groupe moderne Office 365 propriétaire d’un flux et partager des flux de bouton avec des groupes Office 365, pour que tous les utilisateurs d’un groupe puissent exécuter le flux.
+- **Améliorations du connecteur SharePoint** : deux nouvelles fonctionnalités ont été ajoutées au connecteur SharePoint : déclencher des flux quand des éléments ou des fichiers sont supprimés, et appeler n’importe quel point de terminaison HTTP pris en charge par l’API REST de SharePoint.
+- **Deux nouveaux connecteurs** : prise en charge d’Azure Data Factory et de MailParser
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/share-with-sharepoint-office-365/) sur cette version.
+
+### <a name="release-2018-05-01"></a>Version du 01-05-2018
 
 - **Texte enrichi dans les messages d’approbation** - Utiliser Markdown pour mettre en forme les détails de l’approbation que vous envoyez.
 - **Boutons avec plusieurs entrées de sélection** - Créez des boutons de flux qui utilisent une liste de sélection multiple pour collecter plusieurs valeurs à la fois.

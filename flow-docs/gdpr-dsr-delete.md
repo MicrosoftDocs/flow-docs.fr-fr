@@ -1,6 +1,6 @@
 ---
 title: Requêtes de suppression RGPD d’une personne concernée avec Microsoft Flow | Microsoft Docs
-description: Découvrez comment utiliser Microsoft Flow pour répondre aux requêtes de suppression RGPD d’une personne concernée.
+description: Découvrez comment utiliser Microsoft Flow pour répondre aux demandes de suppression RGPD d’une personne concernée.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,13 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: d750ee2bc672d08bff940341349663b4721f9a57
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: f7ceaa76ddf4e1980ad8144a6152fc8211c3880b
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34561307"
 ---
-# <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Répondre aux requêtes de suppression RGPD d’une personne concernée pour Microsoft Flow
+# <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Répondre aux demandes de suppression RGPD d’une personne concernée pour Microsoft Flow
 
 Le « droit à l’effacement » par suppression des données personnelles des données client d’une organisation est une protection clé de la directive RGPD. La suppression des données personnelles inclut la suppression de la totalité des données personnelles et des journaux générés par le système, à l’exception des informations du journal d’audit.
 
@@ -33,17 +34,17 @@ Le tableau suivant présente les données personnelles automatiquement supprimé
 |------|------|
 |Environnement*|Journaux générés par le système|
 |Autorisations d’environnement**|Historique des exécutions|
-|Flux|Tâches de l’utilisateur|
+|Flux|Flux d’activité|
 |Autorisations de flux|Passerelle |
-|Détails de l’utilisateur|Autorisations de passerelle |
+|Détails de l’utilisateur|Autorisations de passerelle|
 |Connexions*||
 |Autorisations de connexion||
 |Connecteur personnalisé*||
 |Autorisations des connecteurs personnalisés||
 
-* Chacune de ces ressources contient les enregistrements « Créé par » et « Modifié par » incluant des données personnelles. Pour des raisons de sécurité, ces enregistrements sont conservés jusqu'à ce que la ressource soit supprimée.
+*Chacune de ces ressources contient les enregistrements « Créé par » et « Modifié par » incluant des données personnelles. Pour des raisons de sécurité, ces enregistrements sont conservés jusqu'à ce que la ressource soit supprimée.
 
-* Pour les environnements qui incluent une base de données Common Data Service For Apps, les autorisations d’environnement (par exemple, les utilisateurs affectés à des rôles Environment Maker et Admin) sont stockées sous forme d’enregistrements dans la base de données Common Data Service. Consultez la section [Exécution de demandes DSR avec des données client Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251) pour obtenir des conseils sur la façon de répondre aux demandes DSR pour les utilisateurs de Common Data Service.
+**Pour les environnements qui incluent une base de données Common Data Service For Apps, les autorisations d’environnement (par exemple quels utilisateurs sont affectés aux rôles Créateur d’environnement et Administrateur) sont stockées sous forme d’enregistrements dans la base de données Common Data Service. Consultez la section [Exécution de demandes DSR avec des données client Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251) pour obtenir des conseils sur la façon de répondre aux demandes DSR pour les utilisateurs de Common Data Service.
 
 Pour les données et ressources nécessitant une vérification manuelle, Microsoft Flow offre les expériences suivantes, qui permettent de rechercher ou de modifier les données personnelles d’un utilisateur spécifique :
 
@@ -59,11 +60,11 @@ Voici le détail des expériences disponibles permettant à un administrateur de
 |Environnement|Centre d'administration de Microsoft Flow|Applets de commande PowerApps||
 |Autorisations d’environnement*|Centre d'administration de Microsoft Flow|Applets de commande PowerApps||
 |Historique des exécutions||| Supprimé via une stratégie de rétention de 28 jours|
-|Flux d'activités ||Applets de commande PowerApps||
+|Flux d'activités |||Supprimé via une stratégie de rétention de 28 jours|
 |Tâches de l’utilisateur|| ||
 |Flux|Microsoft Flow Maker Portal**|||
 |Autorisations de flux|Microsoft Flow Maker Portal|||
-|Détails de l’utilisateur|| ||
+|Détails de l’utilisateur||Applets de commande PowerApps||
 |Connexions|Microsoft Flow Maker Portal| ||
 |Autorisations de connexion|Microsoft Flow Maker Portal| ||
 |Connecteur personnalisé|Microsoft Flow Maker Portal| ||
@@ -74,9 +75,9 @@ Voici le détail des expériences disponibles permettant à un administrateur de
 
 **Un administrateur pourra uniquement accéder à ces ressources depuis Microsoft Flow Maker Portal s’il en a reçu l’accès à partir du Centre d'administration de Microsoft Flow.
 
-## <a name="manage-delete-requests"></a>Gérer les requêtes de suppression
+## <a name="manage-delete-requests"></a>Gérer les demandes de suppression
 
-Les étapes ci-dessous décrivent les fonctions administratives permettant d’exécuter les demandes de suppression RGPD.
+Les étapes ci-dessous décrivent les fonctions administratives permettant d’exécuter les demandes de suppression RGPD. Ces étapes doivent être effectuées dans l’ordre indiqué ci-dessous.
 
 > [!IMPORTANT]
 > Pour éviter toute altération des données, effectuez ces étapes dans l’ordre.
@@ -124,6 +125,7 @@ Ces étapes copient des flux existants pour un utilisateur qui quitte l’organi
     ![Confirmation de suppression du flux](./media/gdpr-dsr-delete/delete-flow-confirmation.png)
 
 1. Activez la copie du flux en ouvrant **Mes flux** puis en positionnant le contrôle de basculement sur **On** (Activé).
+
     ![Activer le flux](./media/gdpr-dsr-delete/toggle-on.png)
 
 1. La copie exécute maintenant la même logique de workflow que la version d’origine.
@@ -142,6 +144,7 @@ Ces étapes copient des flux existants pour un utilisateur qui quitte l’organi
 
 Consultez la section [Exécution de demandes DSR avec des données client Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251) pour obtenir des conseils supplémentaires sur la façon de répondre aux demandes DSR pour les utilisateurs de Common Data Service.
 
+
 ## <a name="delete-connections-created-by-a-user"></a>Supprimer les connexions créées par un utilisateur
 
 Les connexions sont utilisées conjointement avec les connecteurs pour établir la connectivité avec d’autres API et systèmes SaaS.  Les connexions incluent des références à l’utilisateur qui les a créés et, par conséquent, peuvent être supprimées pour effacer toutes les références à cet utilisateur.
@@ -159,8 +162,14 @@ Get-Connection | Remove-Connection
 
 Applets de commandes PowerShell PowerApps Admin
 
-Non disponible.
+```PowerShell
+Add-PowerAppsAccount
 
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all connections for the DSR user and deletes them 
+Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
+
+```
 ## <a name="delete-the-users-permissions-to-shared-connections"></a>Supprimer les autorisations de l’utilisateur pour les connexions partagées
 
 Applets de commande PowerShell PowerApps Maker
@@ -174,14 +183,20 @@ Add-PowerAppsAccount
 Get-ConnectionRoleAssignment | Remove-ConnectionRoleAssignment
 ```
 
+Applets de commandes PowerShell PowerApps Admin
+
+```PowerShell
+Add-PowerAppsAccount
+
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all shared connections for the DSR user and deletes their permissions 
+Get-AdminConnectionRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectionRoleAssignment  
+
+```
 > [!NOTE]
 > Les attributions de rôle de propriétaire ne peuvent pas être supprimées sans supprimer également la ressource de connexion.
 >
 >
-
-Applets de commandes PowerShell PowerApps Admin
-
-Non disponible.
 
 ## <a name="delete-custom-connectors-created-by-the-user"></a>Supprimer les connecteurs personnalisés créés par l’utilisateur
 
@@ -199,8 +214,14 @@ Get-Connector -FilterNonCustomConnectors | Remove-Connector
 ```
 
 Applets de commandes PowerShell PowerApps Admin
+```PowerShell
+Add-PowerAppsAccount
 
-Non disponible.
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all custom connectors created by the DSR user and deletes them 
+Get-AdminConnector -CreatedBy $deleteDsrUserId | Remove-AdminConnector  
+
+```
 
 ## <a name="delete-the-users-permissions-to-shared-custom-connectors"></a>Supprimer les autorisations de l’utilisateur pour les connecteurs personnalisés partagés
 
@@ -215,14 +236,21 @@ Add-PowerAppsAccount
 Get-ConnectorRoleAssignment | Remove-ConnectorRoleAssignment
 ```
 
+Applets de commandes PowerShell PowerApps Admin
+```PowerShell
+Add-PowerAppsAccount
+
+$deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+#Retrieves all custom connector role assignments for the DSR user and deletes them 
+Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-AdminConnectorRoleAssignment  
+
+```
+
 > [!NOTE]
 > Les attributions de rôle de propriétaire ne peuvent pas être supprimées sans supprimer également la ressource de connexion.
 >
 >
 
-Applets de commandes PowerShell PowerApps Admin
-
-Non disponible.
 
 ## <a name="delete-or-reassign-all-environments-created-by-the-user"></a>Supprimer ou réassigner tous les environnements créés par l’utilisateur
 
@@ -246,3 +274,43 @@ Les utilisateurs peuvent recevoir des autorisations (par exemple, Administrateur
 Avec l’introduction de Common Data Service for Apps, si une base de données est créée dans l’environnement, ces « autorisations de rôle » sont stockées sous forme d’enregistrements dans Common Data Service pour l’instance de base de données d’applications.
 
 Pour plus d’informations sur la suppression de l’autorisation d’un utilisateur dans un environnement, consultez la rubrique [Utilisation d’environnements dans Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
+
+## <a name="delete-gateway-settings"></a>Supprimer les paramètres de la passerelle
+Vous trouverez des informations sur les demandes de suppression des données de la personne concernée pour les passerelles de données locales [ici](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+
+## <a name="delete-user-details"></a>Supprimer les détails de l’utilisateur
+Les détails de l’utilisateur fournissent un lien entre un utilisateur et un locataire spécifique. Avant d’exécuter cette commande, vérifiez que tous les flux de cet utilisateur ont été réaffectés et/ou supprimés. Une fois cette vérification effectuée, un administrateur peut supprimer les détails de l’utilisateur en appelant l’applet de commande **Remove-AdminFlowUserDetails** et en passant l’ID d’objet pour l’utilisateur.
+
+
+Applets de commandes PowerShell PowerApps Admin
+```PowerShell
+Add-PowerAppsAccount
+Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
+```
+
+> [!IMPORTANT]
+> Si un utilisateur détient encore des flux individuels ou d’équipe, cette commande retourne une erreur. Pour résoudre cette erreur, supprimez tous les flux restants ou les flux d’équipe de cet utilisateur et réexécutez la commande.
+>
+>
+## <a name="delete-the-user-from-azure-active-directory"></a>Supprimer l’utilisateur d’Azure Active Directory
+Une fois les étapes ci-dessus terminées, l’étape finale consiste à supprimer le compte d’utilisateur pour Azure Active Directory en suivant les étapes décrites dans la documentation du RGPD sur les demandes de la personne concernée dans Azure, qui se trouve sur le [portail d’approbation de services Office 365](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
+
+## <a name="delete-the-user-from-unmanaged-tenant"></a>Supprimer l’utilisateur d’un locataire non géré
+Dans le cas où vous êtes membre d’un locataire non géré, vous devez effectuer une action de **fermeture de compte** à partir du [portail de confidentialité des comptes professionnels et scolaires](https://go.microsoft.com/fwlink/?linkid=873123).
+
+Pour déterminer si vous êtes ou non utilisateur d’un locataire géré ou non géré, effectuez les actions suivantes :
+1. Ouvrez l’URL suivante dans un navigateur, en veillant à utiliser votre adresse e-mail dans l’URL :[ https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1 ](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
+1. Si vous êtes membre d’un **locataire non géré**, vous voyez la mention `"IsViral": true` dans la réponse.
+
+    {
+
+     "Login": "foobar@unmanagedcontoso.com",
+
+    "DomainName": "unmanagedcontoso.com",
+
+    "IsViral": **true**,
+    
+    }
+
+1. Dans le cas contraire, c’est que vous appartenez à un locataire géré.
+

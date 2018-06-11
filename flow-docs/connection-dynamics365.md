@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: d34cfd6632ca0e8c560c5af199877b13b210a64a
-ms.sourcegitcommit: a378fb36722ae4be9909fb453efa81808b509255
+ms.openlocfilehash: 2db995eafaf8e73af7cd29b8a2469d4abaab2356
+ms.sourcegitcommit: 7d04ee86361fe5d70ee89cde06d01754ada757b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2018
-ms.locfileid: "34689373"
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34799668"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Créer un flux à l’aide de Dynamics 365 (en ligne)
 En utilisant un connecteur Dynamics 365, vous pouvez créer des flux qui se lancent lorsqu’un événement se produit dans Dynamics 365 ou un autre service, qui effectue ensuite une action dans Dynamics 365 ou un autre service. 
@@ -91,6 +91,11 @@ Cette procédure pas à pas vous montre comment créer une tâche dans [Wunderli
 8. Sous **ID de la liste**, sélectionnez **inbox**.
 9. Sous **Titre**, sélectionnez **Objet** dans le volet de contenu dynamique.
 10. Cliquez ou appuyez sur **Créer un flux**.  
+
+## <a name="trigger-based-logic"></a>Logique basée sur des déclencheurs
+Des déclencheurs comme **Lorsqu’un enregistrement est créé**, **Lorsqu’un enregistrement est mis à jour** et **Lorsqu’un enregistrement est supprimé** lancent votre flux dans un délai de quelques minutes après la survenance de l’événement.  Dans de rares cas, votre flux peut prendre jusqu’à 2 heures pour se déclencher.
+
+Quand le déclencheur s’active, le flux reçoit une notification mais s’exécute sur les données qui existent au moment où l’action s’exécute.  Par exemple, si votre flux se déclenche quand un nouvel enregistrement est créé et que vous mettez à jour l’enregistrement à deux reprises avant l’exécution du flux, votre flux s’exécute une seule fois avec les données les plus récentes.
 
 ## <a name="specify-advanced-options"></a>Spécifier des options avancées
 Lorsque vous ajoutez une étape à un flux, vous pouvez cliquer ou appuyer sur **Afficher les options avancées** pour ajouter un filtre ou effectuer un tri par requête pour contrôler la façon dont les données sont filtrées dans le flux.

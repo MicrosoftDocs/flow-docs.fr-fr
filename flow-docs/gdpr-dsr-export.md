@@ -1,6 +1,6 @@
 ---
-title: Requêtes d’exportation RGPD des personnes concernées avec Microsoft Flow | Microsoft Docs
-description: Découvrez comment utiliser Microsoft Flow pour répondre aux requêtes d’exportation RGPD des personnes concernées.
+title: Demandes d’exportation RGPD des personnes concernées avec Microsoft Flow | Microsoft Docs
+description: Découvrez comment utiliser Microsoft Flow pour répondre aux demandes d’exportation RGPD des personnes concernées.
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,19 +13,20 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 4/17/2018
+ms.date: 4/24/2018
 ms.author: keweare
-ms.openlocfilehash: 1e1fe346ba6ffb264985da0115714246a621ef5a
-ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
+ms.openlocfilehash: 5b813bbd8ba9b4e5a778d9fa424704b61ed6dd31
+ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34552062"
 ---
-# <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Répondre aux requêtes d’exportation RGPD des personnes concernées pour Microsoft Flow
+# <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Répondre aux demandes d’exportation RGPD des personnes concernées pour Microsoft Flow
 
 Dans le cadre du partenariat conclu avec vous pour vous accompagner dans l’adoption des directives du Règlement général sur la protection des données (RGPD), nous avons élaboré une documentation qui vous aidera à bien vous préparer. Non seulement cette documentation décrit ce que nous faisons pour préparer l’environnement RGPD, mais elle fournit également des exemples d’étapes que vous pouvez effectuer dès aujourd'hui avec Microsoft pour garantir la conformité RGPD lors de l’utilisation de Microsoft Flow.
 
-## <a name="manage-export-requests"></a>Gérer les requêtes d’exportation
+## <a name="manage-export-requests"></a>Gérer les demandes d’exportation
 
 Le *droit à la portabilité des données* permet à une personne concernée de demander une copie de ses données personnelles dans un format électronique (c’est-à-dire un format « structuré, couramment utilisé, lisible par machine et interopérable ») et qui peut être transmise à un autre contrôleur de données.
 
@@ -39,16 +40,15 @@ Microsoft Flow offre les options suivantes pour rechercher ou exporter les donn�
 |-----------------|------------------|-------------------|
 |Journaux générés par le système|[Office 365 Service Trust Portal](https://servicetrust.microsoft.com/)|
 |Historique des exécutions|Microsoft Flow Maker Portal||
-|Tâches de l’utilisateur|| |
 |Flux|Microsoft Flow Maker Portal||
 |Autorisations de flux| Microsoft Flow Maker Portal et Centre d'administration de Microsoft Flow||
-|Détails de l’utilisateur|| |
-|Connexions|Microsoft Flow Maker Portal| |
-|Autorisations de connexion|Microsoft Flow Maker Portal| |
-|Connecteurs personnalisés|Microsoft Flow Maker Portal| |
-|Autorisations des connecteurs personnalisés|Microsoft Flow Maker Portal| |
-|Passerelle|Microsoft Flow Maker Portal|Applets de commande PowerShell de la passerelle locale|
-|Autorisations de passerelle|Microsoft Flow Maker Portal|
+|Détails de l’utilisateur||Applets de commande PowerApps|
+|Connexions|Microsoft Flow Maker Portal|Applets de commande PowerApps |
+|Autorisations de connexion|Microsoft Flow Maker Portal|Applets de commande PowerApps |
+|Connecteurs personnalisés|Microsoft Flow Maker Portal|Applets de commande PowerApps |
+|Autorisations des connecteurs personnalisés|Microsoft Flow Maker Portal|Applets de commande PowerApps |
+|Passerelle|Microsoft Flow Maker Portal|Applets de commande PowerShell de la passerelle de données locale|
+|Autorisations de passerelle|Microsoft Flow Maker Portal|Applets de commande PowerShell de la passerelle de données locale|
 
 ## <a name="export-a-flow"></a>Exporter un flux
 
@@ -105,10 +105,35 @@ Les connexions permettent de connecter les flux aux API, applications SaaS et au
     ![Afficher les connexions](./media/gdpr-dsr-export/show-connections.png)
 1. Copiez les résultats, puis collez-les dans un éditeur de document comme Microsoft Word.
 
+Applets de commandes PowerShell PowerApps Admin
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connections for the user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnection -CreateBy $userId | ConvertTo-Json |Out-File -FilePath "UserConnections.txt"
+```
+
 ## <a name="export-a-list-of-a-users-connection-permissions"></a>Exporter une liste des autorisations de connexion d’un utilisateur
 
 Un utilisateur peut exporter les attributions de rôle de connexion pour toutes les connexions auxquelles il a accès via la fonction Get-ConnectionRoleAssignment dans les [applets de commandes PowerShell PowerApps](https://go.microsoft.com/fwlink/?linkid=871804).
-![Exporter les autorisations de connexion](./media/gdpr-dsr-export/export-connection-permissions.png)
+
+```PowerShell
+Add-PowerAppsAccount
+Get-ConnectionRoleAssignment | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt"
+```
+Applets de commandes PowerShell PowerApps Admin
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connection permissions for the specified user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnectionRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "ConnectionPermissions.txt" 
+```
 
 ## <a name="export-a-users-custom-connectors"></a>Exporter les connecteurs personnalisés d’un utilisateur
 
@@ -125,13 +150,41 @@ Procédez comme suit pour exporter une liste des connecteurs d’un client :
 
 Outre l’expérience fournie dans Microsoft Flow, vous pouvez utiliser la fonction Get-Connector des [applets de commande PowerShell PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) pour exporter tous les connecteurs personnalisés.
 
-![Exporter des connecteurs personnalisés PowerShell](./media/gdpr-dsr-export/export-custom-connectors-powershell.png)
+~~~~
+Add-PowerAppsAccount
+Get-Connector -FilterNonCustomConnectors | ConvertTo-Json | Out-File -FilePath "CustomConnectors.txt"
+~~~~
+
+Applets de commandes PowerShell PowerApps Admin
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all custom connectors for user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnector -CreatedBy $userId | ConvertTo-Json | Out-File -FilePath "UserCustomConnectors.txt"  
+```
 
 ## <a name="export-a-users-custom-connector-permissions"></a>Exporter les autorisations du connecteur personnalisé d’un utilisateur
 
 Un utilisateur peut exporter toutes les autorisations d’un connecteur personnalisé qu’il a créé via la fonction Get-ConnectorRoleAssignment des [applets de commande PowerShell PowerApps](https://go.microsoft.com/fwlink/?linkid=871804).
 
-![Exporter les autorisations d’un connecteur personnalisé PowerShell](./media/gdpr-dsr-export/export-connector-permissions.png)
+```PowerShell
+Add-PowerAppsAccount
+Get-ConnectorRoleAssignment | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"
+```
+
+Applets de commandes PowerShell PowerApps Admin
+
+```PowerShell
+Add-PowerAppsAccount
+
+#Retrieves all connection permissions for the specified user 
+Add-PowerAppsAccount
+$userId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
+Get-AdminConnectorRoleAssignment -PrincipalObjectId $userId | ConvertTo-Json | Out-File -FilePath "CustomConnectorPermissions.txt"   
+```
 
 ## <a name="export-approval-history"></a>Exporter l’historique des approbations
 
@@ -144,3 +197,18 @@ L’historique des approbations Microsoft Flow consigne les approbations qui ont
 1. Une liste affiche les approbations reçues par l’utilisateur. Les utilisateurs peuvent afficher les approbations qu’ils ont envoyées en sélectionnant la flèche vers le bas en regard de l’option **Reçues**, puis en sélectionnant **Envoyées**.
 
     ![Afficher les approbations reçues](./media/gdpr-dsr-export/view-received-approvals.png)
+
+## <a name="export-user-details"></a>Exporter les détails de l’utilisateur
+Les détails de l’utilisateur fournissent un lien entre un utilisateur et un locataire spécifique. Un administrateur peut exporter ces informations en appelant l’applet de commande **Get-AdminFlowUserDetails** et en passant l’ID d’objet pour l’utilisateur.
+
+Applets de commandes PowerShell PowerApps Admin
+
+```PowerShell
+Add-PowerAppsAccount
+
+Get-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
+```
+
+## <a name="export-gateway-settings"></a>Exporter les paramètres de la passerelle
+Vous trouverez des informations sur les demandes d’exportation des données de la personne concernée pour les passerelles de données locales [ici](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+
