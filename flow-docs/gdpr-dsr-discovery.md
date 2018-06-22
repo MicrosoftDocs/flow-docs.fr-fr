@@ -20,6 +20,7 @@ ms.sourcegitcommit: 12fbfe22fedd780d42ef1d2febfd7a0769b4902e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31823189"
 ---
 # <a name="responding-to-gdpr-data-subject-discovery-requests-for-microsoft-flow"></a>Répondre aux requêtes de découverte RGPD des personnes concernées avec Microsoft Flow
 
