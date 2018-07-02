@@ -2,7 +2,7 @@ Cette rubrique explique comment **Créer un flux de bouton** pour la société C
 
 Un flux de bouton permet d’**envoyer un courrier** à une équipe pour l’**alerter concernant des tâches** à accomplir. La **Propriété** des flux **peut être attribuée à une** personne ou **partagée par plusieurs** membres d’une équipe.  
 
-1. Tout d’abord, accédez au [site web de Microsoft Flow](https://ms.flow.microsoft.com) et connectez-vous.
+1. Tout d’abord, accédez au [site web Microsoft Flow](https://ms.flow.microsoft.com) et connectez-vous.
 2. Une fois connecté, sélectionnez **Mes flux**, puis **Créer entièrement**.
    
     ![Créer entièrement](./media/learning-create-button-flow/2-create-from-blank.png)
