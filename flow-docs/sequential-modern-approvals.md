@@ -16,11 +16,11 @@ ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
 ms.openlocfilehash: 8620cd49f9e19f6641909fcab3103568d148e565
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.sourcegitcommit: 4a8d11e1768cd0ca96a60b6f5548a68c0c8999e5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23442312"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38949538"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Gérer les approbations séquentielles avec Microsoft Flow
 Certains flux de travail exigent une approbation préalable avant que l’approbateur final donne sa décision finale. Par exemple, une entreprise peut avoir une stratégie d’approbation séquentielle qui exige une approbation préalable des factures dont le montant est supérieur à 1 000 € avant leur approbation par le département Finance.
