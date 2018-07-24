@@ -55,7 +55,7 @@ Créez un flux à partir d’un des nombreux modèles intégrés qui peuvent, pa
 1. Sélectionnez la barre de titre d’un événement pour la développer, puis personnalisez-la (par exemple en spécifiant un filtre sur la messagerie qui vous intéresse).
 2. Les actions qui nécessitent une intervention de votre part sont automatiquement développées.
    
-    Par exemple, l’action **Publier un message** est développée, car vous devez entrer un canal, tel que votre*\@nom_utilisateur*. Vous pouvez également personnaliser le contenu du message. Par défaut, le message contient simplement l’objet, mais vous pouvez inclure d’autres informations.
+    Par exemple, l’action **Publier un message** est développée, car vous devez entrer un canal, tel que votre *\@nom_utilisateur*. Vous pouvez également personnaliser le contenu du message. Par défaut, le message contient simplement l’objet, mais vous pouvez inclure d’autres informations.
    
     ![Spécifier le canal Slack](./media/get-started-logic-template/specify-keyword.png)
 3. Près du haut de l’écran, spécifiez le nom de votre flux, puis sélectionnez **Créer un flux**.
