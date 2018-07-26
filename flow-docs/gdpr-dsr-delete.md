@@ -1,6 +1,6 @@
 ---
 title: Requêtes de suppression RGPD d’une personne concernée avec Microsoft Flow | Microsoft Docs
-description: Découvrez comment utiliser Microsoft Flow pour répondre aux demandes de suppression RGPD d’une personne concernée.
+description: Découvrez comment utiliser Microsoft Flow pour répondre aux requêtes de suppression RGPD d’une personne concernée.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,14 +15,14 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: f7ceaa76ddf4e1980ad8144a6152fc8211c3880b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: 70206e0ed6c2b59d0dfffa0c4608ba47e0fac1dc
+ms.sourcegitcommit: ca875127f607034d7ef6a3fe270fc48e4f7eeee6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34561307"
+ms.lasthandoff: 07/20/2018
+ms.locfileid: "39175129"
 ---
-# <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Répondre aux demandes de suppression RGPD d’une personne concernée pour Microsoft Flow
+# <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Répondre aux requêtes de suppression RGPD d’une personne concernée pour Microsoft Flow
 
 Le « droit à l’effacement » par suppression des données personnelles des données client d’une organisation est une protection clé de la directive RGPD. La suppression des données personnelles inclut la suppression de la totalité des données personnelles et des journaux générés par le système, à l’exception des informations du journal d’audit.
 
@@ -75,7 +75,7 @@ Voici le détail des expériences disponibles permettant à un administrateur de
 
 **Un administrateur pourra uniquement accéder à ces ressources depuis Microsoft Flow Maker Portal s’il en a reçu l’accès à partir du Centre d'administration de Microsoft Flow.
 
-## <a name="manage-delete-requests"></a>Gérer les demandes de suppression
+## <a name="manage-delete-requests"></a>Gérer les requêtes de suppression
 
 Les étapes ci-dessous décrivent les fonctions administratives permettant d’exécuter les demandes de suppression RGPD. Ces étapes doivent être effectuées dans l’ordre indiqué ci-dessous.
 
@@ -258,10 +258,10 @@ En tant qu’administrateur, vous avez deux décisions à prendre lors du traite
 
 1. Si vous déterminez que l’environnement n’est pas utilisé par quelqu'un d’autre dans votre organisation, vous pouvez choisir de le supprimer
 1. Si vous déterminez que l’environnement est toujours nécessaire, vous pouvez choisir de ne pas le supprimer et de vous ajouter vous-même (ou un autre utilisateur de votre organisation) en tant qu’administrateur d’environnement.
-    > [!IMPORTANT]
-    > La suppression d’un environnement supprimera définitivement toutes ses ressources, y compris les applications, flux, connexions, etc., par conséquent, examinez attentivement le contenu d’un environnement avant la suppression.
-    >
-    >
+> [!IMPORTANT]
+> La suppression d’un environnement supprimera définitivement toutes ses ressources, y compris les applications, flux, connexions, etc., par conséquent, examinez attentivement le contenu d’un environnement avant la suppression.
+>
+>
 
 ## <a name="give-access-to-a-users-environments-from-the-microsoft-flow-admin-center"></a>Donner accès aux environnements d’un utilisateur depuis le Centre d’administration de Microsoft Flow
 
