@@ -73,7 +73,7 @@ Voici le détail des expériences disponibles permettant à un administrateur de
 
 *Avec l’introduction de Common Data Service for Apps, si une base de données est créée dans l’environnement, les autorisations de cet environnement et les autorisations d’apps basées sur un modèle sont stockées sous forme d’enregistrements dans Common Data Service pour l’instance de base de données d’applications. Consultez la section [Exécution de demandes DSR avec des données client Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251) pour obtenir des conseils sur la façon de répondre aux demandes DSR pour les utilisateurs de Common Data Service.
 
-**Un administrateur pourra uniquement accéder à ces ressources depuis Microsoft Flow Maker Portal s’il en a reçu l’accès à partir du Centre d'administration de Microsoft Flow.
+\*\*Un administrateur pourra uniquement accéder à ces ressources depuis Microsoft Flow Maker Portal s’il en a reçu l’accès à partir du Centre d'administration de Microsoft Flow.
 
 ## <a name="manage-delete-requests"></a>Gérer les requêtes de suppression
 
