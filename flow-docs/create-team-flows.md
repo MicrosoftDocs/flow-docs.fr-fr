@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/21/2017
 ms.author: deonhe
-ms.openlocfilehash: d4e8de2f9f67c07861297e079948a5336ff66e7f
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+ms.openlocfilehash: ec7801f249ce4f3a1e33a6092726a6574a2e6d4c
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439684"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39520005"
 ---
 # <a name="create-team-flows"></a>Créer des flux d’équipe
 Créez un flux d’équipe en ajoutant d’autres personnes de votre organisation en tant que propriétaires. Tous les propriétaires d’un flux d’équipe peuvent exécuter les actions suivantes :
@@ -64,6 +64,10 @@ Pour créer un flux d’équipe ou pour ajouter des propriétaires à un flux d�
     ![nouveau propriétaire](./media/create-team-flows/addowner4.png)
    
      Félicitations, le flux d’équipe a été créé !
+
+##<a name="add-a-list-as-a-co-owner"></a>Ajouter une liste en tant que copropriétaire
+
+Vous pouvez ajouter des listes SharePoint en tant que copropriétaire dans un flux afin que toutes les personnes disposant d’un accès en modification obtiennent automatiquement un accès en modification sur le flux. Une fois que le flux est partagé, il vous suffit juste de distribuer un lien vers celui-ci.
 
 ## <a name="remove-an-owner"></a>Supprimer un propriétaire
 > [!IMPORTANT]

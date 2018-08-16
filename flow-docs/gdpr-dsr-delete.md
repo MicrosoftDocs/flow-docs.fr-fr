@@ -15,12 +15,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
 ms.author: keweare
-ms.openlocfilehash: 70206e0ed6c2b59d0dfffa0c4608ba47e0fac1dc
-ms.sourcegitcommit: ca875127f607034d7ef6a3fe270fc48e4f7eeee6
+ms.openlocfilehash: 532d3c1affe899da3125e9f512b21bf3e39ca25e
+ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39175129"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39520074"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Répondre aux requêtes de suppression RGPD d’une personne concernée pour Microsoft Flow
 
@@ -73,7 +73,7 @@ Voici le détail des expériences disponibles permettant à un administrateur de
 
 *Avec l’introduction de Common Data Service for Apps, si une base de données est créée dans l’environnement, les autorisations de cet environnement et les autorisations d’apps basées sur un modèle sont stockées sous forme d’enregistrements dans Common Data Service pour l’instance de base de données d’applications. Consultez la section [Exécution de demandes DSR avec des données client Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251) pour obtenir des conseils sur la façon de répondre aux demandes DSR pour les utilisateurs de Common Data Service.
 
-\*\*Un administrateur pourra uniquement accéder à ces ressources depuis Microsoft Flow Maker Portal s’il en a reçu l’accès à partir du Centre d'administration de Microsoft Flow.
+\*\* Un administrateur peut uniquement accéder à ces ressources depuis Microsoft Flow Maker Portal s’il en a reçu l’accès du Centre d’administration de Microsoft Flow.
 
 ## <a name="manage-delete-requests"></a>Gérer les requêtes de suppression
 
