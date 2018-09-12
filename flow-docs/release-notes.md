@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/04/2018
+ms.date: 07/21/2018
 ms.author: stepsic
-ms.openlocfilehash: 61c6382a35a55ca18dbfbce5b5b6fe38dc6ee0f2
-ms.sourcegitcommit: 3f7f5a941466485cd16e78239fcfd89d71f501e0
+ms.openlocfilehash: 063fd316f1c4e1679935fb7a83560441d2704701
+ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34755572"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "43774252"
 ---
 # <a name="release-notes"></a>Notes de publication
 ## <a name="top-questions"></a>Principales questions
@@ -45,6 +45,35 @@ ms.locfileid: "34755572"
 3. Les déclencheurs de fichier ne sont pas activés pour les fichiers ajoutés dans les dossiers imbriqués au sein du dossier sélectionné.
 
 ## <a name="whats-new"></a>Nouveautés
+
+### <a name="release-2018-07-23"></a>Version 23-07-2018
+
+- **Générer et exécuter des flux à partir d’Excel** : avec le nouveau bouton **Flux** (accessible à partir de l’onglet **Données** du ruban), vous pouvez créer et déclencher des automatisations à partir de Flux sur vos données de table dans Excel. Automatisez le traitement des données ou la copie/l’importation de données.
+- **Créer un flux de processus d’entreprise** : un flux de processus d’entreprise est un nouveau type de flux interactif avec état basé sur Common Data Service for Apps. Ces nouveaux flux permettent de définir un ensemble de phases et d’étapes que les utilisateurs peuvent suivre. Ils peuvent revenir en arrière ou avancer en fonction de leurs besoins.
+- **Créer un flux pour Microsoft To-Do dans Outlook Web App** : si une personne est \@mentionnée dans Outlook Web App, un raccourci s’affiche pour lui permettre de créer un flux. Ce flux crée automatiquement des tâches pour la \@personne mentionnée dans Microsoft To-Do, en fonction du contenu de l’e-mail.
+- **Prise en charge de la vue SharePoint** : le connecteur SharePoint prend désormais en charge la sélection d’une vue SharePoint spécifique sur les déclencheurs et actions. Cela permet de filtrer les colonnes sur uniquement les champs qui se trouvent dans la vue sélectionnée.
+- **Quatre nouveaux connecteurs** : Azure IoT Central, une solution SaaS IoT hautement évolutive, ajouté, ainsi que Survey 123, LMS365 et ProjectWise Design Integration.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/excel-bpf-todo-and-more/) sur cette version.
+
+### <a name="release-2018-06-29"></a>Version 29-06-2018
+
+- **Flux de requête de déconnexion intégré à SharePoint** : lorsque vous sélectionnez un fichier ou un élément dans SharePoint, un nouveau flux **Requête de déconnexion** s’affiche. Ce flux ne nécessite aucune configuration et envoie une requête de déconnexion avec un seul clic.
+- **Deux nouveaux connecteurs** : Cloud Connect Studio et PoliteMail ajoutés.
+- **Améliorations de l’historique et de la création de page** : nous actualisons la liste d’historique d’exécution en incluant les heures d’exécution exactes, et la création de page en ajoutant une nouvelle vidéo de démonstration.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/request-sign-off-four-connectors/) sur cette version.
+
+### <a name="release-2018-06-08"></a>Version 08-06-2018
+
+- **Cmdlets PowerShell** : les créateurs de flux et les administrateurs de locataires peuvent désormais utiliser PowerShell pour gérer leurs flux par programme.
+- **Améliorations du bot Flux Teams** : le bot Flux dans Microsoft Teams peut exécuter des boutons de flux et décrire vos flux.
+- **Trois nouveaux connecteurs** : Marketo, ElasticOCR et DynamicSignal ajoutés. 
+- **Informations supplémentaires de partage** : informations supplémentaires ajoutées lorsque vous partagez des flux ou lorsque vous exécutez des flux partagés, pour vous permettre de savoir exactement quelles autorisations les autres utilisateurs recevront.
+- **Découpage automatique des URL SharePoint** : lorsque vous copiez et collez une URL SharePoint dans le navigateur, elle peut contenir du texte supplémentaire au-delà du site, ce texte sera automatiquement supprimé pour vous permettre de vous connecter au site uniquement.
+- **Documentation sur les requêtes de RGPD** : nous avons créé un guide complet et un ensemble d’outils pour les entreprises afin de leur permettre de gérer les Demandes de droits de la personne concernée.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/powershell-flow-bot-marketo/) sur cette version.
 
 ### <a name="release-2018-05-21"></a>Version du 21-05-2018
 

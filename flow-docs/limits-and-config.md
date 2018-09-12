@@ -13,14 +13,14 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/31/2018
+ms.date: 06/19/2018
 ms.author: stepsic
-ms.openlocfilehash: 0595fa9113d85c6517392149f510a3a11df36061
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+ms.openlocfilehash: dcdd82b358737867372c1adece907158fa2ee77b
+ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519867"
+ms.lasthandoff: 08/16/2018
+ms.locfileid: "43774306"
 ---
 # <a name="limits-and-configuration-in-microsoft-flow"></a>Limites et configuration dans Microsoft Flow
 Cette rubrique contient des informations sur les limites actuelles et les détails de configuration des flux.
@@ -46,7 +46,9 @@ Il s’agit des limites pour une seule demande sortante.
 
 | Nom | Limite |
 | --- | --- |
-| Nouvelles tentatives |4 |
+| Nouvelles tentatives |90 | La valeur par défaut est 4. Pour modifier la valeur par défaut, utilisez les paramètres d’action | 
+| Délai maximal de nouvelle tentative |1 jour | |
+| Délai minimal de nouvelle tentative |5 secondes | |
 
 ## <a name="run-duration-and-retention"></a>Durée et rétention des exécutions
 Il s’agit des limites pour une seule exécution de flux.
@@ -64,10 +66,12 @@ Il s’agit des limites pour une seule exécution de flux.
 
 | Nom | Limite | Notes |
 | --- | --- | --- |
-| Éléments ForEach |5 000 |Vous pouvez utiliser l’action de filtrage pour filtrer des tableaux plus volumineux en fonction des besoins. |
+| Éléments Apply to each (Appliquer à chacun) |100 000 |100 000 est uniquement disponible pour les plans Premium. Sinon, vous êtes limité à 5 000. Vous pouvez utiliser l’action de filtrage pour filtrer des tableaux plus volumineux en fonction des besoins. |
 | Itérations Until (Jusqu’à) |5 000 | |
-| Éléments SplitOn |5 000 | |
-| Parallélisme ForEach |1 | |
+| Éléments SplitOn |100 000 |Comme pour les éléments Apply to each (Appliquer à chacun), la limite est de 5 000, sauf si vous avez un plan Premium. |
+| Parallélisme Apply to each (Appliquer à chacun) |50 |Par défaut, les boucles s’exécutent en séquence (essentiellement, le parallélisme est égal à 1). Vous pouvez en configurer jusqu’à 50 en parallèle. |
+| Exécutions d’actions toutes les 5 minutes | 100 000 | En outre, vous pouvez distribuer une charge de travail sur plusieurs flux en fonction des besoins. |
+| Actions simultanées aux appels sortants | ~2 500 | Réduisez le nombre de requêtes simultanées ou réduisez la durée en fonction des besoins. | 
 
 ## <a name="definition-limits"></a>Limites de définition
 Il s’agit des limites pour un seul flux.
