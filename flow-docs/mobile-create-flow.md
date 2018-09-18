@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/18/2016
 ms.author: adiregev
-ms.openlocfilehash: 27a2001e3fa154f9354ef5ad888e194f30b3d6ab
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: f87320c61427957c02ff75675e4e15b938ac99f4
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440296"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44688326"
 ---
 # <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Créer un flux à partir de votre téléphone à l’aide de Microsoft Flow
 Créez un flux à partir de votre téléphone à l’aide d’un modèle, que vous pouvez trouver en recherchant parmi une liste de services, en parcourant les catégories ou en spécifiant des mots clés. Suivez les étapes décrites dans cette rubrique pour créer un flux qui envoie une notification Push à votre téléphone quand vous recevez un message de votre responsable.

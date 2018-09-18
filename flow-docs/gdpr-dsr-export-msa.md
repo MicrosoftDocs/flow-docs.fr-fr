@@ -15,14 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/25/2018
 ms.author: keweare
-ms.openlocfilehash: 6c1bf3038020f56e5eae57e345391ace2fe65d7f
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: d03b2fff23fc313ebb7f8c12ce2835687f589516
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34563119"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690764"
 ---
-# <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Répondre aux demandes d’exportation RGPD des personnes concernées pour Microsoft Flow
+# <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Répondre aux requêtes d’exportation RGPD des personnes concernées pour Microsoft Flow
 
 Dans le cadre du partenariat conclu avec vous pour vous accompagner dans l’adoption des directives du Règlement général sur la protection des données (RGPD), nous avons élaboré une documentation qui vous aidera à bien vous préparer. Non seulement cette documentation décrit ce que nous faisons pour préparer l’environnement RGPD, mais elle fournit également des exemples d’étapes que vous pouvez effectuer dès aujourd'hui avec Microsoft pour garantir la conformité RGPD lors de l’utilisation de Microsoft Flow.
 

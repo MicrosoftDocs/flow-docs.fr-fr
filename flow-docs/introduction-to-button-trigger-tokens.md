@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/12/2016
 ms.author: deonhe
-ms.openlocfilehash: c3231811e5318b1fe941e005012c2890c83f6e76
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 4746fa74911126f3e23ed009dd109a2766dae12a
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34308760"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690925"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Bien démarrer avec les jetons de déclencheur de bouton
 ## <a name="what-are-button-trigger-tokens"></a>Que sont les jetons de déclencheur de bouton ?

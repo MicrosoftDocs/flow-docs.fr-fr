@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 483837a013b5fa0c8dfa27d2ed3a1e3481c36c5b
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: f0e075a63331a70c32fd87a25ad0b3fdb7cf043b
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34308714"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689959"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Présentation des flux de bouton avec entrée utilisateur
 Créez un flux de bouton pour exécuter des tâches de routine en appuyant simplement sur un bouton. Personnalisez votre flux en autorisant l’utilisateur à fournir des détails spécifiques à utiliser lors de l’exécution du flux. Cette rubrique vous guide lors de la création d’un flux de bouton qui accepte une entrée de l’utilisateur, lors de l’exécution du flux de bouton, puis lors de la mise en surbrillance de la façon de fournir l’entrée d’utilisateur.

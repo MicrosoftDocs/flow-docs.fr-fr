@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/21/2017
 ms.author: deonhe
-ms.openlocfilehash: ec7801f249ce4f3a1e33a6092726a6574a2e6d4c
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 238ef8eac80d3259981cb11cc21e3b05eb83e0ec
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39520005"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689729"
 ---
 # <a name="create-team-flows"></a>Créer des flux d’équipe
 Créez un flux d’équipe en ajoutant d’autres personnes de votre organisation en tant que propriétaires. Tous les propriétaires d’un flux d’équipe peuvent exécuter les actions suivantes :

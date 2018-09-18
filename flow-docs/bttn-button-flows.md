@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/30/2017
 ms.author: deonhe
-ms.openlocfilehash: 3387cc29bb088348634c4d97699f56a4a69ac434
-ms.sourcegitcommit: 77aae180d972373d1f251fa6a5c8f484f08ffc15
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 813ad16dbc9514975daadac456b73d98fc30db79
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/08/2018
-ms.locfileid: "39718209"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689062"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Exécuter vos flux avec des boutons physiques (bttns) à partir de Button Corporation (préversion)
 Déclenchez vos flux en appuyant sur un bouton bttn (bouton physique développé par [The Button Corporation](https://my.bt.tn/)). Par exemple, vous pouvez appuyer sur un bouton bttn qui déclenche un flux qui effectue les tâches suivantes :

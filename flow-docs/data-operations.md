@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/02/2017
 ms.author: deonhe
-ms.openlocfilehash: aa3f61d09cb5e9b8d07124838883da9b5b9794ab
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: c28fa7feb743db4616199246d6d517e2e1f6aff9
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440908"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690994"
 ---
 # <a name="use-data-operations-with-microsoft-flow"></a>Utiliser des opérations sur les données avec Microsoft Flow
 Dans cette procédure pas à pas, découvrez certaines opérations sur les données courantes de Microsoft Flow (telles que composer un message, joindre, sélectionner, filtrer un tableau, créer un tableau et analyser JSON) qui sont disponibles pour manipuler des données lorsque vous créez des flux.

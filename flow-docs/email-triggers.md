@@ -15,51 +15,56 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/08/2017
 ms.author: deonhe
-ms.openlocfilehash: c021f4fee692863bdeaa71d2d49901fbb603aa31
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 94af3389301f40aa5caaa46eda98c8b1c9be0228
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519959"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689798"
 ---
-# <a name="trigger-a-flow-based-on-email-properties"></a>Déclencher un flux en fonction des propriétés d’un e-mail
+# <a name="trigger-a-flow-based-on-email-properties"></a>Déclencher un flux en fonction des propriétés d’un courrier
 Utilisez le déclencheur **À la réception d'un e-mail** pour créer un flux qui s’exécute lorsqu’une ou plusieurs des propriétés d’e-mail suivantes correspondent aux critères que vous fournissez :
 
 | Propriété | Dans quel cas l’utiliser |
 | --- | --- |
-| Dossier |Déclenchez un flux à chaque fois que des e-mails arrivent dans un dossier spécifique. Cette propriété peut être utile si vous avez des règles qui routent les e-mails dans différents dossiers. |
-| À |Déclenchez un flux en fonction de l’adresse à laquelle l’e-mail a été envoyé. Cette propriété peut être utile si vous recevez l’e-mail qui a été envoyé à différentes adresses e-mail dans la même boîte de réception. |
-| De |Déclenchez un flux en fonction de l’adresse e-mail de l’expéditeur. |
-| Importance |Déclenchez un flux en fonction de l’importance avec laquelle les e-mails ont été envoyés. L’e-mail peut être envoyé avec une importance haute, normale ou faible. |
+| Dossier |Déclenchez un flux à chaque fois que des e-mails arrivent dans un dossier spécifique. Cette propriété peut être utile si vous avez des règles qui routent les courriers électroniques dans différents dossiers. |
+| À |Déclenchez un flux en fonction de l’adresse à laquelle le courrier a été envoyé. Cette propriété peut être utile si vous recevez le courrier qui a été envoyé à différentes adresses de courrier dans la même boîte de réception. |
+| De |Déclenchez un flux en fonction de l’adresse de courrier de l’expéditeur. |
+| Importance |Déclenchez un flux en fonction de l’importance avec laquelle les courriers ont été envoyés. Le courrier peut être envoyé avec une importance haute, normale ou faible. |
 | A des pièces jointes |Déclenchez un flux en fonction de la présence de pièces jointes dans les e-mails entrants. |
-| Filtre Objet |Recherchez la présence de mots spécifiques dans l’objet d’un e-mail. Votre flux exécute ensuite des *actions* basées sur les résultats de votre recherche. |
+| Filtre Objet |Recherchez la présence de mots spécifiques dans l’objet d’un courrier. Votre flux exécute ensuite des *actions* basées sur les résultats de votre recherche. |
 
 > [!IMPORTANT]
-> Chaque [plan Microsoft Flow](https://flow.microsoft.com/pricing/) inclut un quota d’exécution. Vérifiez toujours les propriétés du déclencheur du flux si possible. Cela vous évite d’utiliser votre quota d’exécution inutilement. Si vous vérifiez une propriété dans une condition, chaque exécution est comptabilisée dans le quota d’exécution de votre plan, même si la condition de filtre que vous avez définie n’est pas remplie. 
+> Chaque [offre Microsoft Flow](https://flow.microsoft.com/pricing/) inclut un quota d’exécution. Vérifiez toujours les propriétés du déclencheur du flux si possible. Cela vous évite d’utiliser votre quota d’exécution inutilement. Si vous vérifiez une propriété dans une condition, chaque exécution est comptabilisée dans le quota d’exécution de votre plan, même si la condition de filtre que vous avez définie n’est pas remplie. 
 
-Par exemple, si vous vérifiez l’adresse d’*expéditeur* d’un e-mail dans une condition, chaque exécution est comptabilisée dans le quota d’exécution de votre plan, même si ce n’est pas l’adresse de l’*expéditeur* qui vous intéresse.
+Par exemple, si vous vérifiez l’adresse d’*expéditeur* d’un courrier dans une condition, chaque exécution est comptabilisée dans le quota d’exécution de votre offre, même si ce n’est pas l’adresse de l’*expéditeur* qui vous intéresse.
 > 
 > 
 
 Dans les procédures détaillées suivantes, vous allez vérifier toutes les propriétés du déclencheur **À la réception d’un e-mail**. Pour en savoir plus, consultez les [questions fréquentes sur la facturation](billing-questions.md#what-counts-as-a-run) et la page des [tarifs](https://ms.flow.microsoft.com/pricing/).
 
 ## <a name="prerequisites"></a>Prérequis
-* Un compte avec un accès à [Microsoft Flow](https://flow.microsoft.com)
+* Un compte ayant accès à [Microsoft Flow](https://flow.microsoft.com).
 * Un compte Office 365 Outlook
 * Une application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows)
 * Des connexions à Office, Outlook et au service de notification Push
 
-## <a name="trigger-a-flow-based-on-an-emails-subject"></a>Déclencher un flux en fonction de l’objet d’un e-mail
-Dans cette procédure pas à pas, vous créez un flux qui envoie une notification Push à votre téléphone portable si l’objet d’un nouveau e-mail comporte le mot « loterie ». Votre flux marque ensuite les messages de ce type comme *lus*.
+## <a name="trigger-a-flow-based-on-an-emails-subject"></a>Déclencher un flux en fonction de l’objet d’un courrier
+Dans cette procédure pas à pas, vous créez un flux qui envoie une notification Push à votre téléphone portable si l’objet d’un nouveau courrier comporte le mot « loterie ». Votre flux marque ensuite les messages de ce type comme *lus*.
 
 >[!NOTE]
->Bien que cette procédure pas à pas envoie une notification Push, vous êtes libre d’utiliser une autre action qui correspond à vos besoins de flux de travail. Par exemple, vous pouvez stocker le contenu des e-mails dans un autre dépôt tel que Google Sheets ou un fichier Microsoft Excel stocké sur Dropbox.
+>Bien que cette procédure pas à pas envoie une notification Push, vous êtes libre d’utiliser une autre action qui correspond à vos besoins de flux de travail. Par exemple, vous pouvez stocker le contenu des courriers dans un autre dépôt tel que Google Sheets ou un fichier Microsoft Excel stocké sur Dropbox.
 
 Commençons :
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-1. Dans la zone **Filtre Objet**, entrez le texte que votre flux utilise pour filtrer les e-mails entrants.
+1. Dans la zone **Filtre Objet**, entrez le texte que votre flux utilise pour filtrer les courriers entrants.
    
      Dans cet exemple, nous nous intéressons aux e-mails dont l’objet contient le mot « loterie ».
    
@@ -79,8 +84,8 @@ Commençons :
 
 Félicitations ! Vous allez maintenant recevoir une notification Push chaque fois que vous recevez un e-mail dont l’objet contient le mot « loterie ».
 
-## <a name="trigger-a-flow-based-on-an-emails-sender"></a>Déclencher un flux en fonction de l’expéditeur d’un e-mail
-Dans cette procédure pas à pas, vous créez un flux qui envoie une notification Push à votre téléphone portable si un nouvel e-mail provient d’un expéditeur spécifique (adresse e-mail). Le flux marque également les messages comme *lus*.
+## <a name="trigger-a-flow-based-on-an-emails-sender"></a>Déclencher un flux en fonction de l’expéditeur d’un courrier
+Dans cette procédure pas à pas, vous créez un flux qui envoie une notification Push à votre téléphone portable si un nouveau courrier provient d’un expéditeur spécifique (adresse de courrier). Le flux marque également les messages comme *lus*.
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
@@ -102,19 +107,19 @@ Dans cette procédure pas à pas, vous créez un flux qui envoie une notificatio
    
     ![Enregistrer le flux](./media/email-triggers/email-triggers-sender-5.png)
 
-## <a name="trigger-a-flow-when-emails-arrive-in-a-specific-folder"></a>Déclencher un flux quand des e-mails arrivent dans un dossier spécifique
-Si vous avez défini des règles qui routent les e-mails dans différents dossiers en fonction de certaines propriétés, telles que l’adresse, ce type de flux est idéal.
+## <a name="trigger-a-flow-when-emails-arrive-in-a-specific-folder"></a>Déclencher un flux quand des courriers arrivent dans un dossier spécifique
+Si vous avez défini des règles qui routent les courriers dans différents dossiers en fonction de certaines propriétés, telles que l’adresse, ce type de flux est idéal.
 
 Commençons :
 
 > [!NOTE]
-> Si vous n’avez pas encore défini de règle qui route les e-mails vers un dossier autre que votre boîte de réception, créez-en une et vérifiez qu’elle fonctionne en envoyant un e-mail de test.
+> Si vous n’avez pas encore défini de règle qui route les courriers vers un dossier autre que votre boîte de réception, créez-en une et vérifiez qu’elle fonctionne en envoyant un courrier de test.
 > 
 > 
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-specific-folder](includes/sign-in-use-blank-select-email-trigger-and-specific-folder.md)]
 
-1. Sélectionnez le dossier vers lequel vous routez des e-mails spécifiques. Pour afficher tous les dossiers d’e-mail, sélectionnez l’icône **Afficher le sélecteur**, qui se trouve à droite de la zone **Dossier** sur la carte **À la réception d’un e-mail**.
+1. Sélectionnez le dossier vers lequel vous routez des e-mails spécifiques. Pour afficher tous les dossiers de courrier, sélectionnez l’icône **Afficher le sélecteur**, qui se trouve à droite de la zone **Dossier** sur la carte **Lors de l’arrivée d’un nouveau message électronique**.
    
     ![Sélectionner un dossier](./media/email-triggers/email-triggers-2.png)
 
@@ -130,5 +135,5 @@ Commençons :
    
     ![Enregistrer le flux](./media/email-triggers/email-triggers-7.png)
 
-Testez le flux en envoyant un e-mail qui est routé vers le dossier que vous avez sélectionné plus haut dans cette procédure pas à pas.
+Testez le flux en envoyant un courrier qui est routé vers le dossier que vous avez sélectionné plus haut dans cette procédure pas à pas.
 

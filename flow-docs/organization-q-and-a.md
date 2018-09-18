@@ -1,6 +1,6 @@
 ---
-title: Questions et réponses sur l’inscription à Flow dans votre organisation | Microsoft Docs
-description: Questions et réponses courantes sur les licences, l’administration et l’inscription des utilisateurs à Flow dans votre client Office 365
+title: Questions et réponses sur la connexion à Microsoft Flow dans votre organisation | Microsoft Docs
+description: Questions et réponses courantes sur les licences, l’administration et la connexion des utilisateurs à Microsoft Flow dans votre client Office 365
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 12/05/2016
 ms.author: stepsic
-ms.openlocfilehash: f8807ca0941761018c92a385c26f427e69ededcb
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: f62bbf9e508c269c17284382b674a07221a2d568
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23442492"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690557"
 ---
 # <a name="flow-in-your-organization-qa"></a>Questions et réponses sur Microsoft Flow dans votre organisation
 Cette rubrique décrit comment les utilisateurs de votre organisation peuvent utiliser Flow, et comment vous pouvez contrôler le service Microsoft Flow.

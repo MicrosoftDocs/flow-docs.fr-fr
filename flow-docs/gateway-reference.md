@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/15/2017
 ms.author: deonhe
-ms.openlocfilehash: fc69517beb24d50432c1cbed216f28cfc0f862fb
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 95081295bfe0fd6c904876aaf70974575a7986c1
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34453259"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690902"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Comprendre les passerelles de données locales pour Microsoft Flow
 Utilisez la passerelle de données locale avec Microsoft Flow pour établir des connexions sécurisées à vos sources de données locales telles que Microsoft SQL Server.
@@ -175,7 +180,7 @@ Il n’existe actuellement aucun emplacement unique où les administrateurs clie
 **Réponse :** Non. La passerelle se connecte à la source de données en utilisant les informations de connexion qui ont été fournies. Considérez la passerelle comme une application cliente. Elle doit simplement être en mesure de se connecter au nom de serveur fourni.
 
 **Question :** Quelle est la latence pour exécuter des requêtes sur une source de données à partir de la passerelle ? Quelle est la meilleure architecture ?
-**Réponse :** Pour réduire le temps de réponse du réseau, installez la passerelle le plus près possible de la source de données. Si vous pouvez installer la passerelle sur la source de données réelle, cela minimise le temps de réponse. Prenez également en compte les centres de données. Par exemple, si votre service utilise le centre de données États-Unis de l’Ouest et que SQL Server est hébergé sur une machine virtuelle Azure, nous vous recommandons d’installer la machine virtuelle Azure dans cette même région. Cela réduit le temps de réponse et évite que des frais de sortie soient facturés sur la machine virtuelle Azure.
+**Réponse :** Pour réduire le temps de réponse du réseau, installez la passerelle le plus près possible de la source de données. Si vous pouvez installer la passerelle sur la source de données réelle, cela minimise le temps de réponse. Prenez également en compte les centres de données. Par exemple, si votre service utilise le centre de données des États-Unis de l’Ouest et que l’instance SQL Server est hébergée sur une machine virtuelle Azure, nous vous invitons à installer cette dernière dans la même région. Cela réduit le temps de réponse et évite que des frais de sortie soient facturés sur la machine virtuelle Azure.
 
 **Question :** Existe-t-il des conditions requises concernant la bande passante réseau ?
 **Réponse :** Il est recommandé d’avoir un débit relativement élevé pour votre connexion réseau. Chaque environnement est différent et la quantité de données envoyées a une incidence sur les résultats. L’utilisation d’ExpressRoute peut contribuer à garantir un niveau de débit entre les centres de données Azure et locaux.

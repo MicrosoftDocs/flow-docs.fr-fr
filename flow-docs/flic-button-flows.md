@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/19/2017
 ms.author: deonhe
-ms.openlocfilehash: 518834103c1a17ef2f5af218eae43ccab4e5fda2
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: bbcb6c8950e8ac5959880727604e0355b3150c6f
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440836"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690471"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Exécuter vos flux en appuyant sur un bouton intelligent Flic (préversion)
 Déclenchez vos flux en appuyant sur un bouton physique, appelé Flic, proposé par Shortcut Labs. Par exemple, appuyez sur un bouton Flic pour effectuer le suivi de vos heures de travail, bloquer votre calendrier, compter le nombre de visiteurs lors d’un événement ou enregistrer des emplacements géographiques.

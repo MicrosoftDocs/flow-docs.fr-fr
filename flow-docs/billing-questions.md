@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/21/2017
 ms.author: deonhe
-ms.openlocfilehash: 302dc02e24b23b68e842ead001beb77b08e12aeb
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: 65f2776af5b0219ea887302d5cfa9e101f62c309
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "27763191"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690281"
 ---
 # <a name="billing-and-metering-questions"></a>Questions relatives à la facturation et à la mesure
 

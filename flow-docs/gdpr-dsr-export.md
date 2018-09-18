@@ -1,6 +1,6 @@
 ---
-title: Demandes d’exportation RGPD des personnes concernées avec Microsoft Flow | Microsoft Docs
-description: Découvrez comment utiliser Microsoft Flow pour répondre aux demandes d’exportation RGPD des personnes concernées.
+title: Requêtes d’exportation RGPD des personnes concernées avec Microsoft Flow | Microsoft Docs
+description: Découvrez comment utiliser Microsoft Flow pour répondre aux requêtes d’exportation RGPD des personnes concernées.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,18 +15,23 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/24/2018
 ms.author: keweare
-ms.openlocfilehash: 5b813bbd8ba9b4e5a778d9fa424704b61ed6dd31
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: e0f9b8e5b345b4dbc226cff2f42850bb126c09b3
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34552062"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727133"
 ---
-# <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Répondre aux demandes d’exportation RGPD des personnes concernées pour Microsoft Flow
+# <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Répondre aux requêtes d’exportation RGPD des personnes concernées pour Microsoft Flow
 
 Dans le cadre du partenariat conclu avec vous pour vous accompagner dans l’adoption des directives du Règlement général sur la protection des données (RGPD), nous avons élaboré une documentation qui vous aidera à bien vous préparer. Non seulement cette documentation décrit ce que nous faisons pour préparer l’environnement RGPD, mais elle fournit également des exemples d’étapes que vous pouvez effectuer dès aujourd'hui avec Microsoft pour garantir la conformité RGPD lors de l’utilisation de Microsoft Flow.
 
-## <a name="manage-export-requests"></a>Gérer les demandes d’exportation
+## <a name="manage-export-requests"></a>Gérer les requêtes d’exportation
 
 Le *droit à la portabilité des données* permet à une personne concernée de demander une copie de ses données personnelles dans un format électronique (c’est-à-dire un format « structuré, couramment utilisé, lisible par machine et interopérable ») et qui peut être transmise à un autre contrôleur de données.
 
@@ -210,5 +215,5 @@ Get-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 ```
 
 ## <a name="export-gateway-settings"></a>Exporter les paramètres de la passerelle
-Vous trouverez des informations sur les demandes d’exportation des données de la personne concernée pour les passerelles de données locales [ici](https://docs.microsoft.com/en-us/power-bi/service-gateway-onprem#tenant-level-administration).
+Vous trouverez des informations sur les demandes d’exportation des données de la personne concernée pour les passerelles de données locales [ici](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
 

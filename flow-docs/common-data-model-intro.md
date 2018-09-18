@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/22/2016
 ms.author: stepsic
-ms.openlocfilehash: e4e92bfdcf1ea65de272233b2056523641010cf2
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: b2cf6c52a2cbaf06fc638fe8fc898689e6d523c4
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "29351300"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690810"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Créer un flux qui utilise le service Common Data Service
 Améliorez l’efficacité opérationnelle avec une vue unifiée des données métier en créant un flux qui utilise le service [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Déployez cette base de données d’entreprise sécurisée qui comprend des entités métier standard bien formées (par exemple, Ventes, Achat, Service clientèle et Productivité) dans votre organisation. Stockez les données de l’organisation dans une ou plusieurs [entités personnalisées](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), qui offrent plusieurs avantages par rapport aux sources de données externes telles que Microsoft Excel et Salesforce.

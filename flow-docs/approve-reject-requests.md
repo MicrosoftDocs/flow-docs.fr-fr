@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/15/2017
 ms.author: deonhe
-ms.openlocfilehash: 016673948ffaeaf98e81cc2c561d9ff9f5f627e4
-ms.sourcegitcommit: 4a8d11e1768cd0ca96a60b6f5548a68c0c8999e5
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 0197d117f2e7a7e22dbe77e64111b21dc890f83b
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38949439"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44688993"
 ---
 # <a name="manage-approval-requests-in-microsoft-flow"></a>Gérer les demandes d’approbation dans Microsoft Flow
 Microsoft Flow permet de facilement automatiser les [processus de flux de travail d’approbation](modern-approvals.md). Dans cette procédure pas à pas, découvrez comment afficher, approuver ou rejeter des demandes d’approbation envoyées à partir de Microsoft Flow.

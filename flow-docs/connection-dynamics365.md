@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/06/2017
 ms.author: matp
-ms.openlocfilehash: ffce0a2fcc77d2bf2ff132e589410cc032bf63fd
-ms.sourcegitcommit: cd3cdcff3accb9a54f002fdc33d33935b4276249
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 9a054ab8179d4c2a06cbab95cd2633088bbf7458
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39519890"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727202"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Créer un flux à l’aide de Dynamics 365 (en ligne)
 En utilisant un connecteur Dynamics 365, vous pouvez créer des flux qui se lancent lorsqu’un événement se produit dans Dynamics 365 ou un autre service, qui effectue ensuite une action dans Dynamics 365 ou un autre service. 
@@ -56,7 +61,7 @@ Si le modèle dont vous avez besoin n’est pas disponible, créez entièrement 
      Pour cette procédure pas à pas, sélectionnez **Prospects**.
    
     ![Détails du flux](./media/connection-dynamics365/flow-details.png)
-    > [IMPORTANT] Pour que le flux se déclenche sur l’entité Dynamics 365, la définition d’entité doit avoir le suivi des modifications activé. Consultez [Activer le suivi des modifications pour contrôler la synchronisation des données](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    > [IMPORTANT] Pour que le flux se déclenche sur l’entité Dynamics 365, la définition d’entité doit avoir le suivi des modifications activé. Consultez [Activer le suivi des modifications pour contrôler la synchronisation des données](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
 7. Cliquez ou appuyez sur **Nouvelle étape**, puis sur **Ajouter une action**.
 8. Cliquez ou appuyez sur **Dynamics 365 – Créer un enregistrement**.

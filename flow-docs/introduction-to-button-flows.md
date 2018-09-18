@@ -15,12 +15,17 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/30/2017
 ms.author: deonhe
-ms.openlocfilehash: 558570733819e1fde6c1845ed5ca9debe9232c88
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: cbcbce51bb950ef9154f356ce44a651f25ce55bd
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23440512"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690080"
 ---
 # <a name="introducing-button-flows"></a>Présentation des flux de bouton
 ## <a name="what-are-button-flows"></a>Que sont les flux de bouton ?

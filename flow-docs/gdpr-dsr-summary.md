@@ -1,6 +1,6 @@
 ---
-title: Résumé des demandes RGPD de personnes concernées | Microsoft Docs
-description: Découvrez comment répondre aux demandes RGPD d’une personne concernée pour Microsoft Flow.
+title: Résumé des requêtes RGPD de personnes concernées | Microsoft Docs
+description: Découvrez comment répondre aux requêtes RGPD d’une personne concernée pour Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,14 +15,19 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/24/2018
 ms.author: keweare
-ms.openlocfilehash: c57296bed460dbf94aa597542413783292e1a8f7
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+- Powerplatform
+search.audienceType:
+- admin
+ms.openlocfilehash: 6e4763fd3851276d647a302747342a6980293c33
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34552165"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44690789"
 ---
-# <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Répondre aux demandes RGPD d’une personne concernée pour Microsoft Flow
+# <a name="responding-to-gdpr-data-subject-requests-for-microsoft-flow"></a>Répondre aux requêtes RGPD d’une personne concernée pour Microsoft Flow
 
 Cet article vous prépare, vous et votre organisation, aux directives du Règlement général sur la protection des données (RGPD) de l’Union européenne. Non seulement cet article décrit ce que Microsoft fait pour préparer l’environnement RGPD, mais il fournit également des exemples d’étapes que vous pouvez effectuer dès aujourd'hui pour garantir la conformité RGPD lors de l’utilisation de PowerApps, Microsoft Flow et de Common Data Service for Apps.
 
