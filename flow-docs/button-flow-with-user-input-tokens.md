@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f0e075a63331a70c32fd87a25ad0b3fdb7cf043b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: f87b0d93b912799a4977f347d89b12421cf42e70
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689959"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711562"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Présentation des flux de bouton avec entrée utilisateur
 Créez un flux de bouton pour exécuter des tâches de routine en appuyant simplement sur un bouton. Personnalisez votre flux en autorisant l’utilisateur à fournir des détails spécifiques à utiliser lors de l’exécution du flux. Cette rubrique vous guide lors de la création d’un flux de bouton qui accepte une entrée de l’utilisateur, lors de l’exécution du flux de bouton, puis lors de la mise en surbrillance de la façon de fournir l’entrée d’utilisateur.
@@ -122,7 +122,6 @@ Dans cette procédure pas à pas, vous allez utiliser l’application mobile Mic
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Partager des flux de bouton](share-buttons.md)
-* [En savoir plus sur les flux](guided-learning/get-started.yml?tutorial-step=1)  
 * [En savoir plus sur les flux de bouton](introduction-to-button-flows.md)  
 * [En savoir plus sur les flux de bouton avec jetons de déclencheur](introduction-to-button-trigger-tokens.md)  
 

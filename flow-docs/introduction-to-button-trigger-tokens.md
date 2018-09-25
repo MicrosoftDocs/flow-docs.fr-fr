@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4746fa74911126f3e23ed009dd109a2766dae12a
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: dc1b93553938221c3f1c995b63b984cfff913c06
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690925"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711608"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Bien démarrer avec les jetons de déclencheur de bouton
 ## <a name="what-are-button-trigger-tokens"></a>Que sont les jetons de déclencheur de bouton ?
@@ -97,6 +97,4 @@ Félicitations ! Vous venez de créer un flux de bouton qui utilise les jetons 
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Partager des flux de bouton](share-buttons.md)
-* [En savoir plus sur les flux de bouton](introduction-to-button-flows.md)  
-* [En savoir plus sur les flux](guided-learning/get-started.yml?tutorial-step=1)
-
+* [En savoir plus sur les flux de bouton](introduction-to-button-flows.md)

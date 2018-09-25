@@ -1,8 +1,15 @@
+items:
 - name: Bien démarrer
-  href: get-started.yml?tutorial-step=1
+  href: https://docs.microsoft.com/learn/modules/get-started-with-flow/1-introduction
 - name: Créer des flux
-  href: build-flows.yml?tutorial-step=1
+  href: https://docs.microsoft.com/learn/modules/get-started-with-flow/2-create-first-flow
 - name: Utiliser les approbations
-  href: work-with-approvals.yml?tutorial-step=1
+  href: https://docs.microsoft.com/learn/modules/use-flow-to-create-an-approval-flow/1-create-approval-request
 - name: Administrer des flux
   href: administer-flows.yml?tutorial-step=1
+ms.openlocfilehash: 096b85067e519083739451c1000c65e5f8573a6c
+ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "46711700"
