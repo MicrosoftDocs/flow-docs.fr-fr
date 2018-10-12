@@ -13,14 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/21/2018
+ms.date: 08/31/2018
 ms.author: stepsic
-ms.openlocfilehash: 063fd316f1c4e1679935fb7a83560441d2704701
-ms.sourcegitcommit: 4489d9587bfb1ef197df7f4c0253a3ab4ecb1d1d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: 244f3f072dd0250d4c9c4a8c62760009f54a6a45
+ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/16/2018
-ms.locfileid: "43774252"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727248"
 ---
 # <a name="release-notes"></a>Notes de publication
 ## <a name="top-questions"></a>Principales questions
@@ -45,6 +50,29 @@ ms.locfileid: "43774252"
 3. Les déclencheurs de fichier ne sont pas activés pour les fichiers ajoutés dans les dossiers imbriqués au sein du dossier sélectionné.
 
 ## <a name="whats-new"></a>Nouveautés
+
+### <a name="release-2018-08-31"></a>Version 31-08-2018
+
+- **Tester votre flux à l’aide d’exemples de données** : utilisez des exemples de données à partir de connecteurs pour tester votre flux quand vous le générez à partir du concepteur Microsoft Flow. Quand vous testez votre flux avec des exemples de données, vous vérifiez qu’il s’exécutera comme prévu quand il sera déployé en production.
+- **Cinq nouveaux connecteurs** : nous avons ajouté cinq nouveaux connecteurs de gestion, à savoir PowerApps pour les créateurs d’applications, la plateforme Power pour les administrateurs, PowerApps pour les administrateurs, Microsoft Flow pour les administrateurs et Microsoft School Data Sync.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/test-data-management-connectors/) sur cette version.
+
+### <a name="release-2018-08-24"></a>Version 24-08-2018
+
+- **Nouveaux modèles de synchronisation de calendrier** : nouveaux modèles de calendrier qui copient les événements entre Google Agenda et Office 365 ou Outlook.com.
+- **Prise en charge de valeurs multiples pour SharePoint** : lecture et écriture des champs à valeurs multiples dans SharePoint qui sont de types Choix, Personne ou Recherche.
+- **Envoyer des approbations pour le compte d’autres utilisateurs de votre organisation** : envoyez des approbations pour le compte d’autres utilisateurs de votre organisation, par exemple, la personne qui a chargé le fichier sur la liste SharePoint, au lieu de la personne qui a créé le flux.
+- **Plus de types d’entrées pour les boutons** : les boutons bénéficient de deux nouveaux types d’entrée : Nombre et Oui/non.
+- **Mises à jour du connecteur** : nouveau connecteur NetDocuments, améliorations apportées aux connecteurs Azure et bien plus encore.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/button-types-more/) sur cette version.
+
+### <a name="release-2018-08-02"></a>Version 02-08-2018
+
+Le programme d’évaluation de Microsoft Flow permet d’obtenir un accès en avant-première aux fonctionnalités à venir et aux mises à jour de Microsoft Flow. Pour obtenir un accès en avant-première aux dernières fonctionnalités, il vous suffit de créer, puis d’utiliser, un environnement dans la région de la préversion.
+
+[Découvrez davantage de ressources et posez des questions](https://flow.microsoft.com/blog/flow-preview-program/) sur cette version.
 
 ### <a name="release-2018-07-23"></a>Version 23-07-2018
 

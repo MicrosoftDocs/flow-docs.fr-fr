@@ -1,49 +1,101 @@
-- name: Bien démarrer
+items:
+- name: Présentation
   items:
-    - name: Bien démarrer
-      href: getting-started.md
-    - name: S’inscrire
-      href: sign-up-sign-in.md
-    - name: Créer un flux à partir d’un modèle
-      href: get-started-logic-template.md
-    - name: Créer entièrement un flux
-      href: get-started-logic-flow.md
-    - name: Créer un flux d’équipe
-      href: create-team-flows.md
-    - name: Vue d’ensemble des environnements
-      href: environments-overview-maker.md
-    - name: Forum aux questions
-      href: frequently-asked-questions.md
-- name: Créer un flux
+  - name: S’inscrire
+    href: sign-up-sign-in.md
+  - name: Bien démarrer
+    href: getting-started.md
+  - name: Apprentissage guidé
+    href: https://docs.microsoft.com/learn/paths/automate-process-using-flow
+  - name: Créer un flux dans le navigateur
+    href: get-started-logic-template.md
+  - name: Créer un flux sur un téléphone
+    href: mobile-create-flow.md
+  - name: Créer un flux d’équipe
+    href: create-team-flows.md
+  - name: Créer un flux qui utilise Common Data Service
+    href: common-data-model-intro.md
+- name: Flux automatisés
   items:
-    - name: Ajouter une action
-      href: multi-step-logic-flow.md
-    - name: Ajouter une condition
-      href: add-condition.md
-    - name: Exécuter un flux selon une planification
-      href: run-scheduled-tasks.md
-    - name: Déclencher un flux avec la messagerie
-      href: email-triggers.md
-    - name: Traiter une liste d’éléments
-      href: apply-to-each.md
-    - name: Utiliser des opérations sur les données
-      href: data-operations.md
-    - name: Filtrer et copier des données
-      href: odata-filters.md
-    - name: Utiliser des expressions dans des conditions
-      href: use-expressions-in-conditions.md
-    - name: "Créer un flux avec Dynamics\_365"
-      href: connection-dynamics365.md
-    - name: Ajouter des données à Common Data Service
-      href: common-data-model-intro.md
-    - name: Voir un flux
-      href: see-a-flow-run.md
-    - name: Publier un modèle
-      href: publish-a-template.md
-    - name: Résoudre les problèmes de flux
-      href: fix-flow-failures.md
-- name: Créer des flux d’approbation
+  - name: Créer entièrement un flux
+    href: get-started-logic-flow.md
+  - name: Déclencher un flux avec la messagerie
+    href: email-triggers.md
+  - name: Créer un flux avec Dynamics 365
+    href: connection-dynamics365.md
+  - name: Filtrer et copier des données
+    href: odata-filters.md
+  - name: Utiliser un bouton Flic
+    href: flic-button-flows.md
+  - name: Utiliser un bouton Bttn
+    href: bttn-button-flows.md
+- name: Flux de bouton
   items:
+  - name: Créer un flux de bouton
+    href: introduction-to-button-flows.md
+  - name: Créer un flux de bouton avec des jetons de déclencheur
+    href: introduction-to-button-trigger-tokens.md
+  - name: Créer un flux de bouton avec entrée utilisateur
+    href: button-flow-with-user-input-tokens.md
+  - name: Partager un bouton
+    href: share-buttons.md
+- name: Flux planifiés
+  items:
+  - name: Exécuter un flux selon une planification
+    href: run-scheduled-tasks.md
+  - name: Traiter une liste d’éléments
+    href: apply-to-each.md
+- name: Flux de processus métier
+  items:
+  - name: Vue d’ensemble des flux de processus métier système
+    href: business-process-flows-overview.md
+  - name: Créer un flux de processus métier pour standardiser les processus
+    href: create-business-process-flow.md
+  - name: Améliorer les flux de processus métier avec le branchement
+    href: enhance-business-process-flows-branching.md
+- name: Common Data Service (CDS) for Apps
+  items:
+  - name: Workflows CDS for Apps classiques
+    href: workflow-processes.md
+    items:
+    - name: Configurer les phases et les étapes de workflow
+      href: configure-workflow-steps.md
+    - name: Superviser et gérer les processus de workflow
+      href: monitor-manage-processes.md
+    - name: Bonnes pratiques pour les processus de workflow
+      href: best-practices-workflow-processes.md
+  - name: Actions CDS for Apps classiques
+    items:
+    - name: Utiliser des actions
+      href: actions.md
+    - name: Créer une action personnalisée
+      href: create-actions.md
+    - name: Configurer des actions personnalisées à partir d’un workflow
+      href: configure-actions.md
+    - name: Appeler des actions personnalisées à partir d’un workflow
+      href: invoke-custom-actions-workflow-dialog.md
+  - name: Flux de tâches CDS for Apps classiques
+    items:
+    - name: Créer des flux de tâches mobiles
+      href: create-mobile-task-flow.md
+  - name: Boîtes de dialogue CDS for Apps classiques
+    items:
+    - name: Utiliser des boîtes de dialogue CDS for Apps classiques
+      href: use-cds-for-apps-dialogs.md
+    - name: Remplacer des boîtes de dialogue CDS for Apps classiques
+      href: replace-dialogs.md
+- name: Guide pratique
+  items:
+  - name: Ajouter une action
+    href: multi-step-logic-flow.md
+  - name: Ajouter une condition
+    href: add-condition.md
+  - name: Utiliser des opérations sur les données
+    href: data-operations.md
+  - name: Utiliser des expressions dans des conditions
+    href: use-expressions-in-conditions.md
+  - name: Flux d’approbation
+    items:
     - name: Approbations uniques
       href: modern-approvals.md
     - name: Approbations séquentielles
@@ -56,64 +108,61 @@
       href: common-data-model-approve.md
     - name: Formater les demandes d’approbation
       href: approvals-markdown-support.md
-- name: Utiliser l’application mobile
+  - name: Gérer des flux sur un téléphone
+    href: mobile-manage-flows.md
+  - name: Publier un modèle
+    href: publish-a-template.md
+- name: Résoudre les problèmes
   items:
-    - name: Créer un flux
-      href: mobile-create-flow.md
-    - name: Créer un flux de bouton
-      href: introduction-to-button-flows.md
-    - name: Créer un flux de bouton avec des jetons de déclencheur
-      href: introduction-to-button-trigger-tokens.md
-    - name: Créer un flux de bouton avec entrée utilisateur
-      href: button-flow-with-user-input-tokens.md
-    - name: Partager un bouton
-      href: share-buttons.md
-    - name: Surveiller l’activité de flux
-      href: mobile-monitor-activity.md
-    - name: Gérer vos flux
-      href: mobile-manage-flows.md
-- name: Utiliser des appareils physiques
+  - name: Voir un flux
+    href: see-a-flow-run.md
+  - name: Superviser l’activité de flux sur un téléphone
+    href: mobile-monitor-activity.md
+  - name: Résoudre les problèmes de flux
+    href: fix-flow-failures.md
+- name: Se connecter aux données
   items:
-    - name: Utiliser un bouton Flic
-      href: flic-button-flows.md
-    - name: Utiliser un bouton Bttn
-      href: bttn-button-flows.md
-- name: Connexions
+  - name: Connexions disponibles
+    href: https://go.microsoft.com/fwlink/?linkid=832211
+  - name: Gérer les connexions
+    href: add-manage-connections.md
+  - name: Gérer les passerelles
+    href: gateway-manage.md
+  - name: Comprendre les passerelles
+    href: gateway-reference.md
+- name: Pour les développeurs
   items:
-    - name: Connexions disponibles
-      href: 'https://go.microsoft.com/fwlink/?linkid=832211'
-    - name: Gérer les connexions
-      href: add-manage-connections.md
-    - name: Gérer les passerelles
-      href: gateway-manage.md
-    - name: Comprendre les passerelles
-      href: gateway-reference.md
-- name: Développer pour Microsoft Flow
-  items:
-    - name: 'Microsoft Flow pour les développeurs en entreprise, les partenaires et les éditeurs indépendants'
-      href: dev-enterprise-intro.md
-    - name: Créer et certifier des connecteurs personnalisés
-      href: register-custom-api.md
-    - name: Intégrer des sites web et d’autres technologies
-      href: embed-flow-dev.md
-    - name: Permettre aux clients de tester vos flux
-      href: dev-appsource-test-drive.md
+  - name: Microsoft Flow pour les développeurs en entreprise, les partenaires et les éditeurs indépendants
+    href: ./developer/dev-enterprise-intro.md
+  - name: Créer et certifier des connecteurs personnalisés
+    href: ./developer/register-custom-api.md
+  - name: Intégrer des sites web et d’autres technologies
+    href: ./developer/embed-flow-dev.md
+  - name: Permettre aux clients de tester vos flux
+    href: ./developer/dev-appsource-test-drive.md
+  - name: Utiliser des flux de processus métier à l’aide de code
+    href: ./developer/business-process-flows-code.md
+    items:
+    - name: 'Exemple : Utiliser des flux de processus métier'
+      href: ./developer/sample-work-business-process-flows.md
+  - name: Activités de workflow CDS for Apps personnalisées
+    href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Administration
   items:
-    - name: Questions et réponses sur les flux dans votre organisation
-      href: organization-q-and-a.md
-    - name: Tarification
-      href: billing-questions.md
-    - name: Présentation du centre d’administration
-      href: admin-center-introduction.md
-    - name: Administrer des environnements
-      href: environments-overview-admin.md
-    - name: Définir une stratégie pour éviter la perte de données
-      href: prevent-data-loss.md
-    - name: Présentation des groupes de données
-      href: introduction-to-data-groups.md
-- name: Répondre aux requêtes DSR
-  items:
+  - name: Questions et réponses sur les flux dans votre organisation
+    href: organization-q-and-a.md
+  - name: Tarification
+    href: billing-questions.md
+  - name: Présentation du centre d’administration
+    href: admin-center-introduction.md
+  - name: Administrer des environnements
+    href: environments-overview-admin.md
+  - name: Définir une stratégie pour éviter la perte de données
+    href: prevent-data-loss.md
+  - name: Présentation des groupes de données
+    href: introduction-to-data-groups.md
+  - name: Répondre aux requêtes DSR
+    items:
     - name: Résumé
       href: gdpr-dsr-summary.md
     - name: Requêtes de découverte
@@ -122,8 +171,8 @@
       href: gdpr-dsr-export.md
     - name: Requêtes de suppression
       href: gdpr-dsr-delete.md
-- name: Requêtes DSR pour les comptes Microsoft
-  items:
+  - name: Requêtes DSR pour les comptes Microsoft
+    items:
     - name: Résumé
       href: gdpr-dsr-summary-msa.md
     - name: Requêtes de découverte
@@ -136,9 +185,25 @@
       href: gdpr-dsr-accountclose-msa.md
 - name: Référence
   items:
-    - name: Présentation des régions
-      href: regions-overview.md
-    - name: Limites et configuration
-      href: limits-and-config.md
-    - name: Notes de publication
-      href: release-notes.md
+  - name: Présentation des régions
+    href: regions-overview.md
+  - name: Limites et configuration
+    href: limits-and-config.md
+  - name: Notes de publication
+    href: release-notes.md
+  - name: Forum aux questions
+    href: frequently-asked-questions.md
+- name: Apprendre des autres
+  items:
+  - name: Webinaires
+    href: https://flow.microsoft.com/blog/category/webinars/
+  - name: Blog
+    href: https://flow.microsoft.com/blog/
+  - name: Forums
+    href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
+ms.openlocfilehash: 0ea74141e1c80b2f550ca5f43191a40c1b5aad58
+ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47188521"

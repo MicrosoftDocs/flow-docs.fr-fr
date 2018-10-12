@@ -1,0 +1,1 @@
+Cette fonctionnalité étant susceptible d’évoluer, évitez de l’utiliser en production. Utilisez-la uniquement dans des environnements de développement et de test.

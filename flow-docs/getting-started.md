@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: stepsic-microsoft-com
-manager: anneta
+manager: kvivek
 editor: ''
 tags: ''
 ms.service: flow
@@ -15,18 +15,27 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2017
 ms.author: stepsic
-ms.openlocfilehash: 11c8d9846982cfd372df787b6a7c9e6584d61ae5
-ms.sourcegitcommit: 945614d737d5909c40029a61e050302d96e1619d
+search.app:
+- Flow
+search.audienceType:
+- flowmaker
+- enduser
+ms.openlocfilehash: cfd337180d1517df67864e239b611f6283e3af14
+ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "23439990"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "44689775"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Prise en main de Microsoft Flow #
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
 
-Bienvenue ! Microsoft Flow est un service qui vous aide à créer des flux de travail automatisés entre vos applications et services favoris pour synchroniser des fichiers, obtenir des notifications, collecter des données, etc.
+Bienvenue ! Microsoft Flow est un service qui vous aide à créer des workflows automatisés entre vos applications et services favoris pour synchroniser des fichiers, obtenir des notifications, collecter des données, etc.
+
+Les principaux types de flux sont les flux [automatisés](get-started-logic-flow.md), de [bouton](introduction-to-button-flows.md), [planifiés](run-scheduled-tasks.md) et de [processus métier](business-process-flows-overview.md).
+
+Si vous êtes personnalisateur Dynamics 365 Customer Engagement, vous pouvez également être familiarisé avec les processus Common Data Service for Apps classiques qui incluent les [workflows](configure-workflow-steps.md), les [actions](create-actions.md), les [flux de tâches mobiles](create-mobile-task-flow.md) et les [dialogues](use-cds-for-apps-dialogs.md).
 
 La première étape consiste à vous [inscrire](sign-up-sign-in.md), ou, si vous avez déjà un compte Microsoft Flow, [connectez-vous](https://flow.microsoft.com/signin) sur votre tablette, votre ordinateur de bureau ou même votre téléphone.
 

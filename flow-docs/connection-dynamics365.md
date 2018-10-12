@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9a054ab8179d4c2a06cbab95cd2633088bbf7458
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
+ms.openlocfilehash: c780b3d305fbd5549f9c7ffc2a23571007dac7a7
+ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727202"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47188613"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Créer un flux à l’aide de Dynamics 365 (en ligne)
 En utilisant un connecteur Dynamics 365, vous pouvez créer des flux qui se lancent lorsqu’un événement se produit dans Dynamics 365 ou un autre service, qui effectue ensuite une action dans Dynamics 365 ou un autre service. 
@@ -61,7 +61,7 @@ Si le modèle dont vous avez besoin n’est pas disponible, créez entièrement 
      Pour cette procédure pas à pas, sélectionnez **Prospects**.
    
     ![Détails du flux](./media/connection-dynamics365/flow-details.png)
-    > [IMPORTANT] Pour que le flux se déclenche sur l’entité Dynamics 365, la définition d’entité doit avoir le suivi des modifications activé. Consultez [Activer le suivi des modifications pour contrôler la synchronisation des données](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
+    > [IMPORTANT] Pour que le flux se déclenche sur l’entité Dynamics 365, la définition d’entité doit avoir le **Suivi des modifications** activé. Consultez [Activer le suivi des modifications pour contrôler la synchronisation des données](https://docs.microsoft.com/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization)
     
 7. Cliquez ou appuyez sur **Nouvelle étape**, puis sur **Ajouter une action**.
 8. Cliquez ou appuyez sur **Dynamics 365 – Créer un enregistrement**.
@@ -111,7 +111,7 @@ Par exemple, vous pouvez utiliser une requête de filtre pour récupérer unique
 
   ![Flow - Requête de tri](./media/connection-dynamics365/flow-orderby-query.png)
 
-### <a name="best-practices-when-using-advanced-options"></a>Meilleures pratiques lors de l’utilisation des options avancées
+### <a name="best-practices-when-using-advanced-options"></a>Bonnes pratiques lors de l’utilisation des options avancées
 Lorsque vous ajoutez une valeur à un champ, vous devez faire correspondre le type de champ, que vous tapiez une valeur ou en sélectionniez une à partir du volet de contenu dynamique.
 
 | Type de champ | Utilisation | Emplacement | Nom | Type de données |

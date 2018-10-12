@@ -1,0 +1,1 @@
+Les fonctionnalités en préversion ne sont pas destinées à être utilisées en production et peuvent être limitées. Ces fonctionnalités sont disponibles avant une version officielle afin que les clients puissent y accéder en avant-première et faire part de leurs commentaires.
