@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 15f7a58f6cee58d588cf10976cabf55b800f28ce
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
+ms.openlocfilehash: 1d2560a2a15a77a516701bce977c5bed9fbbe1cf
+ms.sourcegitcommit: c8646cff9ca510203cd0414d1be93a7d12e6018d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711654"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48892401"
 ---
 # <a name="frequently-asked-questions"></a>Forum aux questions
 ## <a name="audience-and-strategy"></a>Public concerné et stratégie
@@ -133,7 +133,7 @@ Consultez le tableau suivant pour comprendre comment votre flux répond quand il
 
 Type de déclencheur|Description
 -------|--------
-Interrogation, comme le déclencheur **Récurrence**|Quand le flux est réactivé, tous les événements non traités/en attente sont traités.
+Interrogation, comme le déclencheur **Récurrence**|Quand le flux est réactivé, tous les événements non traités/en attente sont traités. Supprimez votre flux si vous ne souhaitez pas traiter les éléments en attente.
 Webhook|Quand le flux est réactivé, il traite seulement les nouveaux événements qui sont générés une fois le flux activé.
 
 ### <a name="what-regions-and-languages-does-microsoft-flow-support"></a>Quelles sont les régions et les langues prises en charge par Microsoft Flow ?
