@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 430d29c4520cbe28801b6912b58a5819a59b5168
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
+ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690534"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "48874434"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Utiliser des expressions dans des conditions pour vérifier plusieurs valeurs
 Dans cette procédure pas à pas, vous allez apprendre à utiliser des expressions et **conditions** pour comparer plusieurs valeurs en **mode Avancé**.
@@ -44,7 +44,7 @@ Expression|Description|Exemple
 |[greater](#use-the-greater-expression)|Accepte deux arguments et retourne la valeur true si le premier argument est supérieur au deuxième argument. <br><b>Remarque</b> : les types pris en charge sont integer, float et string.|Cette expression retourne la valeur false :<br>greater(10,10)
 |greaterOrEquals|Accepte deux arguments et retourne la valeur true si le premier argument est supérieur ou égal au deuxième argument. <br><b>Remarque</b> : les types pris en charge sont integer, float et string.|Cette expression retourne la valeur false :<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Retourne la valeur true si l’objet, le tableau ou la chaîne est vide.|Cette expression retourne la valeur true :<br>empty('')
-|not|Accepte deux arguments et retourne la valeur true si les arguments ont la valeur false. <br><b>Remarque</b> : les deux arguments doivent être des valeurs booléennes.|Cette expression retourne la valeur true :<br>not(contains('200 Success','Fail'))
+|not|Retourne la valeur booléenne opposée. |Cette expression retourne la valeur true :<br>not(contains('200 Success','Fail'))
 |if|Retourne une valeur spécifique si l’expression retourne la valeur true ou false.|Cette expression retourne la valeur yes :<br>if(equals(1, 1), 'yes', 'no')
 
 ## <a name="prerequisites"></a>Prérequis

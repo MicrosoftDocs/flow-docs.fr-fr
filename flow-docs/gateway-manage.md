@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 180ff4b54fdf395c8524fd1ff132e9adedf1c848
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 04246007fabacabaf86914f906eee1741df217a1
+ms.sourcegitcommit: b5395b7f3d6610990cbbeeff8f6972224bc2149a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690373"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "48817938"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Gérer une passerelle de données locale dans Microsoft Flow
 
@@ -33,16 +33,20 @@ Installez et gérez une passerelle de données locale pour intégrer en toute s�
 
 Une passerelle vous permet de vous connecter à des données locales sur ces connexions :
 
+* Apache Impala
+* DB2
+* Système de fichiers
+* HTTP avec Azure AD
+* Informix
+* MySQL
+* Oracle Database
+* PostgreSQL
 * SharePoint
 * SQL Server
-* Oracle
-* Informix
-* Système de fichiers
-* DB2
+* Teradata (préversion)
 
 > [!IMPORTANT]
 > Les passerelles de données Microsoft SharePoint prennent maintenant en charge le trafic HTTP et HTTPS.
-
 
 ## <a name="prerequisites"></a>Prérequis
 
