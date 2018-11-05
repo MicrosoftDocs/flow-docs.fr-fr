@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 04246007fabacabaf86914f906eee1741df217a1
-ms.sourcegitcommit: b5395b7f3d6610990cbbeeff8f6972224bc2149a
+ms.openlocfilehash: b25f63a3980d21e60b26a0783ac4bf5eb6030cd3
+ms.sourcegitcommit: 282059c82bfcf5896d06043476c34641906e20e3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "48817938"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49087905"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Gérer une passerelle de données locale dans Microsoft Flow
 
@@ -34,6 +34,7 @@ Installez et gérez une passerelle de données locale pour intégrer en toute s�
 Une passerelle vous permet de vous connecter à des données locales sur ces connexions :
 
 * Apache Impala
+* Connecteurs personnalisés créés par vos soins
 * DB2
 * Système de fichiers
 * HTTP avec Azure AD
