@@ -15,10 +15,10 @@ search.app:
 search.audienceType:
 - developer
 ms.openlocfilehash: ae3633047bda556058c8e2ec94e6411e7f277e76
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
+ms.lasthandoff: 11/28/2018
 ms.locfileid: "44691063"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Utiliser des flux de processus métier à l’aide de code
@@ -354,7 +354,7 @@ Par défaut, pour une entité pour laquelle plusieurs flux de processus métier 
 1. Identifier tous les flux de processus métier applicables au nouvel enregistrement d’entité selon l’attribut **Workflow.PrimaryEntity** des enregistrements de définition de flux de processus métier.
 2. Identifier les définitions de flux de processus métier auxquelles l’utilisateur actuel a accès. Pour plus d’informations sur la détermination et la gestion de l’accès à un flux de processus métier, consultez [Gérer la sécurité des flux de processus métier](#BPFSecurity) plus haut dans cette rubrique.<br/>  
 3. Toutes les définitions de flux de processus métier dans le système sont soumises à un ordre global par entité. L’ordre du flux de processus métier est stocké dans l’attribut **Workflow.ProcessOrder**. Les définitions de flux de processus métier pour une entité sont triées en fonction de cet ordre ; celle ayant la plus petite valeur d’ordre est choisie.
-4. Enfin, si l’enregistrement d’entité est créé à partir d’une application métier (module d’application), un niveau de filtrage supplémentaire est appliqué pour récupérer le flux de processus métier à appliquer automatiquement au nouvel enregistrement d’entité. Quand vous travaillez dans une application métier, les entités, flux de processus métier, vues et formulaires accessibles aux utilisateurs sont déterminés par les rôles de sécurité attribués à l’application. 
+4. Enfin, si l’enregistrement d’entité est créé à partir d’une application métier (module d’application), un niveau de filtrage supplémentaire est appliqué pour récupérer le flux de processus métier à appliquer automatiquement au nouvel enregistrement d’entité. Quand vous travaillez dans une application métier, les entités, flux de processus métier, vues et formulaires accessibles aux utilisateurs sont déterminés par les rôles de sécurité attribués à l’application. 
     - Si l’application métier ne contient pas de flux de processus métier, le flux de processus métier est appliqué comme expliqué jusqu’à l’étape 3.
     - Si l’application métier a un ou plusieurs flux de processus métier, seuls les flux de processus métier présents dans l’application sont applicables. Dans ce cas, quand l’utilisateur travaille dans le contexte d’une application métier, la liste des flux de processus métier issue de l’étape 3 est filtrée de manière à ne contenir que ceux qui font partie de l’application métier et qui sont présents dans le module d’application, puis est triée en fonction de l’ordre des processus. 
     - Si aucun flux de processus métier n’est disponible dans une application métier pour l’entité ou pour une entité à laquelle l’utilisateur a accès, aucun flux de processus métier n’est appliqué pour le nouvel enregistrement d’entité.
