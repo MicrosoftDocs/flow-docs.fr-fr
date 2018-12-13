@@ -19,7 +19,7 @@ Une stratégie DLP est tout simplement une règle nommée qui place chaque servi
 | **Données d’entreprise uniquement** |Tous les services de ce groupe peuvent partager des données entre eux. Ils ne peuvent pas partager des données avec le groupe de données **Aucune donnée commerciale autorisée**. |
 | **Aucune donnée commerciale autorisée** |Tous les services de ce groupe peuvent partager des données entre eux. Ils ne peuvent pas partager des données avec le groupe de données **Données d’entreprise uniquement**. |
 
-**Remarque** : l’ajout d’un service à un groupe de données automatiquement le supprime de l’autre groupe de données. Par exemple, si Twitter se trouve actuellement dans le groupe de données **Données d’entreprise uniquement** et que vous ne voulez pas autoriser le partage des données d’entreprise sur Twitter, ajoutez simplement le service Twitter au groupe de données **Aucune donnée commerciale autorisée**. Cela permet de supprimer Twitter du groupe de données **Données d’entreprise uniquement**.
+**Remarque** : L’ajout d’un service à un groupe de données le supprime automatiquement de l’autre groupe de données. Par exemple, si Twitter se trouve actuellement dans le groupe de données **Données d’entreprise uniquement** et que vous ne voulez pas autoriser le partage des données d’entreprise sur Twitter, ajoutez simplement le service Twitter au groupe de données **Aucune donnée commerciale autorisée**. Cela permet de supprimer Twitter du groupe de données **Données d’entreprise uniquement**.
 
 ## <a name="heres-what-you-need-to-create-a-dlp"></a>Voici ce dont vous avez besoin pour créer une stratégie DLP
 * Accéder au [centre d’administration](https://admin.flow.microsoft.com) Microsoft Flow  

@@ -24,12 +24,12 @@ Les environnements peuvent servir à différentes fins selon les besoins de votr
 * Vous pouvez choisir de créer un environnement pour différents types d’applications et de flux. Par exemple, vous pouvez créer un environnement de test et environnement de production distincts.  
 * Vous pouvez également choisir de créer des environnements en fonction de la structure de votre organisation ou même de l’emplacement géographique de vos équipes ou services. Par exemple, si vous avez des équipes en Australie, au Mexique et en Europe, vous pouvez créer un environnement pour chacun de ces emplacements et les gérer de manière indépendante.  
 
-**Remarque** : les utilisateurs ne voient pas les environnements. Ils n’ont pas besoin de savoir dans quel environnement ils se trouvent. Les environnements sont des outils permettant aux administrateurs de catégoriser, gérer et partager des applications et des flux d’organisation.  
+**Remarque** : Les utilisateurs ne voient pas les environnements. Ils n’ont pas besoin de savoir dans quel environnement ils se trouvent. Les environnements sont des outils permettant aux administrateurs de catégoriser, gérer et partager des applications et des flux d’organisation.  
 
 ## <a name="what-are-roles"></a>Que sont les rôles ?
 Une personne ayant accès à un environnement doit exercer l’un des rôles **Administrateur d’environnement** ou **Créateur d’environnement**. Les administrateurs d’environnement peuvent effectuer toutes les tâches d’administration sur un environnement. Un créateur d’environnement peut créer des ressources dans un environnement existant. Une personne peut avoir les deux rôles simultanément.  
 
-**Remarque** : tous les utilisateurs ont accès à un environnement par défaut quand chaque utilisateur a accès à Microsoft Flow. Les utilisateurs peuvent avoir accès à plusieurs environnements.  
+**Remarque** : Tous les utilisateurs ont accès à un environnement par défaut quand chaque utilisateur a accès à Microsoft Flow. Les utilisateurs peuvent avoir accès à plusieurs environnements.  
 
 ## <a name="create-an-environment"></a>Créer un environnement
 Pour créer des environnements à partir du [Centre d’administration de Microsoft Flow](https://admin.flow.microsoft.com) procédez comme suit :  

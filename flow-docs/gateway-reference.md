@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 95081295bfe0fd6c904876aaf70974575a7986c1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 8baaf85ae07d2763886eb1ffda0141e4804cb630
+ms.sourcegitcommit: 8a36a3211e76b2b1a4a3154bc41e12a87dc3c288
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690902"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53179814"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Comprendre les passerelles de données locales pour Microsoft Flow
 Utilisez la passerelle de données locale avec Microsoft Flow pour établir des connexions sécurisées à vos sources de données locales telles que Microsoft SQL Server.
@@ -123,14 +123,14 @@ Si vous souhaitez être exhaustif, remplacez les valeurs **Nom_ordinateur** et *
 Le pare-feu peut également bloquer les connexions d’Azure Service Bus aux centres de données Azure. Si tel est le cas, annulez le blocage de toutes les [adresses IP](https://www.microsoft.com/download/details.aspx?id=41653) de votre région pour ces centres de données.
 
 ## <a name="configure-ports"></a>Configurer les ports
-La passerelle crée une connexion sortante à Azure Service Bus. Elle communique sur les ports de sortie suivants : TCP 443 (valeur par défaut), 5671, 5672, 9350 à 9354. La passerelle ne nécessite pas de ports d’entrée.
+La passerelle crée une connexion sortante à Azure Service Bus. Elle communique sur les ports de sortie suivants : TCP 443 (par défaut), 5671, 5672, 9350 à 9354. La passerelle ne nécessite pas de ports d’entrée.
 
 En savoir plus sur les [solutions hybrides](https://azure.microsoft.com/documentation/articles/service-bus-fundamentals-hybrid-solutions/).
 
 | Noms de domaine | Ports de sortie | Description |
 | --- | --- | --- |
 | *.analysis.windows.net |443 |HTTPS |
-| *.login.windows.net |443 |HTTPS |
+| *.login.microsoftonline.com |443 |HTTPS |
 | *.servicebus.windows.net |5671-5672 |Advanced Message Queuing Protocol (AMQP) |
 | *.servicebus.windows.net |443, 9350-9354 |Écouteurs Service Bus Relay sur TCP (nécessite le port 443 pour l’acquisition de jeton Access Control) |
 | *.frontend.clouddatahub.net |443 |HTTPS |
@@ -165,53 +165,53 @@ Il n’existe actuellement aucun emplacement unique où les administrateurs clie
 * DB2
 
 **Question :** Ai-je besoin d’une passerelle pour les sources de données dans le cloud, comme SQL Azure ?
-**Réponse :** Non. Une passerelle se connecte aux sources de données locales uniquement.
+**Réponse :** Non. Une passerelle se connecte aux sources de données locales uniquement.
 
-**Question :** Quel est le nom réel du service Windows ?
-**Réponse :** dans Services, la passerelle est appelée **Power BI Enterprise Gateway Service**.
+**Question :** Quel est le vrai nom du service Windows ?
+**Réponse :** Dans Services, la passerelle est appelée **Power BI Enterprise Gateway Service**.
 
 **Question :** Existe-t-il des connexions entrantes dans la passerelle à partir du cloud ?
-**Réponse :** Non. La passerelle utilise des connexions sortantes vers Azure Service Bus.
+**Réponse :** Non. La passerelle utilise des connexions sortantes vers Azure Service Bus.
 
 **Question :** Que se passe-t-il si je bloque les connexions sortantes ? Que dois-je ouvrir ?
-**Réponse :** Vérifiez les [ports](gateway-reference.md#configure-ports) et les hôtes que la passerelle utilise.
+**Réponse :** Vérifiez les [ports](gateway-reference.md#configure-ports) et les hôtes que la passerelle utilise.
 
 **Question :** La passerelle doit-elle être installée sur le même ordinateur que la source de données ?
-**Réponse :** Non. La passerelle se connecte à la source de données en utilisant les informations de connexion qui ont été fournies. Considérez la passerelle comme une application cliente. Elle doit simplement être en mesure de se connecter au nom de serveur fourni.
+**Réponse :** Non. La passerelle se connecte à la source de données en utilisant les informations de connexion qui ont été fournies. Considérez la passerelle comme une application cliente. Elle doit simplement être en mesure de se connecter au nom de serveur fourni.
 
 **Question :** Quelle est la latence pour exécuter des requêtes sur une source de données à partir de la passerelle ? Quelle est la meilleure architecture ?
-**Réponse :** Pour réduire le temps de réponse du réseau, installez la passerelle le plus près possible de la source de données. Si vous pouvez installer la passerelle sur la source de données réelle, cela minimise le temps de réponse. Prenez également en compte les centres de données. Par exemple, si votre service utilise le centre de données des États-Unis de l’Ouest et que l’instance SQL Server est hébergée sur une machine virtuelle Azure, nous vous invitons à installer cette dernière dans la même région. Cela réduit le temps de réponse et évite que des frais de sortie soient facturés sur la machine virtuelle Azure.
+**Réponse :**  Pour réduire le temps de réponse du réseau, installez la passerelle le plus près possible de la source de données. Si vous pouvez installer la passerelle sur la source de données réelle, cela minimise le temps de réponse. Prenez également en compte les centres de données. Par exemple, si votre service utilise le centre de données des États-Unis de l’Ouest et que l’instance SQL Server est hébergée sur une machine virtuelle Azure, nous vous invitons à installer cette dernière dans la même région. Cela réduit le temps de réponse et évite que des frais de sortie soient facturés sur la machine virtuelle Azure.
 
 **Question :** Existe-t-il des conditions requises concernant la bande passante réseau ?
-**Réponse :** Il est recommandé d’avoir un débit relativement élevé pour votre connexion réseau. Chaque environnement est différent et la quantité de données envoyées a une incidence sur les résultats. L’utilisation d’ExpressRoute peut contribuer à garantir un niveau de débit entre les centres de données Azure et locaux.
+**Réponse :** Il est recommandé d’avoir un débit relativement élevé pour votre connexion réseau. Chaque environnement est différent et la quantité de données envoyées a une incidence sur les résultats. L’utilisation d’ExpressRoute peut contribuer à garantir un niveau de débit entre les centres de données Azure et locaux.
 
 Vous pouvez utiliser l’outil tiers [Azure Speed Test](http://azurespeedtest.azurewebsites.net/) pour déterminer votre débit.
 
 **Question :** Le service Windows de passerelle peut-il s’exécuter avec un compte Azure Active Directory ?
-**Réponse :** Non. Le service Windows doit avoir un compte Windows valide. Par défaut, il s’exécute avec le SID de service *NT SERVICE\PBIEgwService*.
+**Réponse :** Non. Le service Windows doit avoir un compte Windows valide. Par défaut, il s’exécute avec le SID de service *NT SERVICE\PBIEgwService*.
 
 **Question :** Comment les résultats sont-ils envoyés dans le cloud ?
-**Réponse :** Les résultats sont envoyés à l’aide d’Azure Service Bus. Pour plus d’informations, consultez [Fonctionnement](gateway-reference.md#how-the-gateway-works).
+**Réponse :** Les résultats sont envoyés à l’aide d’Azure Service Bus. Pour plus d’informations, consultez [Fonctionnement](gateway-reference.md#how-the-gateway-works).
 
 **Question :** Où sont stockées mes informations d’identification ?
-**Réponse :** Les informations d’identification que vous entrez pour une source de données sont chiffrées et stockées dans le service cloud de passerelle. Les informations d’identification sont déchiffrées au niveau de la passerelle en local.
+**Réponse :** Les informations d’identification que vous entrez pour une source de données sont chiffrées et stockées dans le service cloud de passerelle. Les informations d’identification sont déchiffrées au niveau de la passerelle en local.
 
 ### <a name="high-availabilitydisaster-recovery"></a>Haute disponibilité/reprise d’activité
 **Question :** Existe-t-il des formules pour activer les scénarios de haute disponibilité avec la passerelle ?
 **Réponse :** Oui, la haute disponibilité est [désormais disponible](https://flow.microsoft.com/blog/gateway-ha-increased-apply-to-each).
 
 **Question :** Quelles options sont disponibles pour la reprise d’activité ?
-**Réponse :** Vous pouvez utiliser la clé de récupération pour restaurer ou déplacer une passerelle.
+**Réponse :** Vous pouvez utiliser la clé de récupération pour restaurer ou déplacer une passerelle.
 
 **Question :** Quel est l’avantage de la clé de récupération ?
-**Réponse :** Elle permet de migrer ou de récupérer les paramètres de la passerelle.
+**Réponse :** Elle permet de migrer ou de récupérer les paramètres de la passerelle.
 
 ### <a name="troubleshooting-questions"></a>Questions relatives à la résolution des problèmes
 **Question :** Où sont les journaux de la passerelle ?
-**Réponse :** Consultez la section [Outils](gateway-reference.md#tools) plus loin dans cette rubrique.
+**Réponse :** Consultez la section [Outils](gateway-reference.md#tools) plus loin dans cette rubrique.
 
 **Question :** Comment puis-je voir quelles requêtes sont envoyées à la source de données locale ?
-**Réponse :** Vous pouvez activer le traçage de requête, qui inclut les requêtes envoyées. N’oubliez pas de rétablir la valeur d’origine lors de la résolution des problèmes. Si vous laissez le traçage des requêtes activé, cela génère des journaux plus volumineux.
+**Réponse :** Vous pouvez activer le traçage de requête, qui inclut les requêtes envoyées. N’oubliez pas de rétablir la valeur d’origine lors de la résolution des problèmes. Si vous laissez le traçage des requêtes activé, cela génère des journaux plus volumineux.
 
 Vous pouvez également consulter les outils disponibles dans votre source de données pour le traçage des requêtes. Par exemple, vous pouvez utiliser des événements étendus ou le Générateur de profils SQL pour SQL Server et Analysis Services.
 

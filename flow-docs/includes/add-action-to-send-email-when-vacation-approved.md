@@ -16,5 +16,5 @@
    
      Cette carte est un modèle du courrier qui est envoyé lorsque l’état de la demande de congés change.
    
-     Remarque : dans la zone **Corps** de la carte **Envoyer un e-mail**, utilisez le jeton **Commentaires** à partir de l’action **Approbations - Démarrer une approbation**.
+     Remarque : Dans la zone **Corps** de la carte **Envoyer un e-mail**, utilisez le jeton **Commentaires** à partir de l’action **Approbations - Démarrer une approbation**.
 

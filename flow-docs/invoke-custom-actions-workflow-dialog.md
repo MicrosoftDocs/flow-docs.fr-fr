@@ -2,7 +2,7 @@
 title: Appeler des actions personnalisées à partir d’un workflow | Microsoft Docs
 description: Découvrez comment appeler une action personnalisée à partir d’un workflow
 ms.custom: ''
-ms.date: 06/27/2018
+ms.date: 11/22/2018
 ms.reviewer: ''
 ms.service: crm-online
 ms.suite: ''
@@ -22,21 +22,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8b2904632f4b3bf097275906d917e686cace67ba
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: e4dbedbd8157f2dd1814bbbbd080a6b366c04938
+ms.sourcegitcommit: a505b0aac796960d57fccee92eb18c6566ac9c35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688512"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "53006975"
 ---
 # <a name="invoke-custom-actions-from-a-workflow"></a>Appeler des actions personnalisées à partir d’un workflow
 
-Les workflows ont de nombreuses fonctionnalités prenant en charge les scénarios métier. L’appel d’actions de SDK pour un enregistrement, telles que la création, la mise à jour et la suppression, à partir d’un workflow résout un certain nombre de scénarios métier. Toutefois, si vous combinez les fonctionnalités des workflows avec la puissance des actions personnalisées appelées directement à partir d’un workflow, vous ajoutez une toute nouvelle plage de scénarios métier à votre application sans avoir à écrire de code.  
+Les workflows ont de nombreuses fonctionnalités prenant en charge les scénarios métier. L’appel d’actions d’opération de base sur les données pour un enregistrement, telles que la création, la mise à jour et la suppression, à partir d’un workflow résout un certain nombre de scénarios métier. Toutefois, si vous combinez les fonctionnalités des workflows avec la puissance des actions personnalisées appelées directement à partir d’un workflow, vous ajoutez une toute nouvelle plage de scénarios métier à votre application sans avoir à écrire de code.  
   
  Examinons le scénario dans lequel une action personnalisée est appelée à partir d’un workflow. Nous allons appeler une action personnalisée pour demander l’approbation du responsable quand une remise sur une opportunité particulière dépasse 20 %.  
   
 <a name="action"></a>   
-## <a name="dynamics-365-customer-engagement-example-create-a-custom-action-using-the-opportunity-entity"></a>Exemple Dynamics 365 Customer Engagement : Créer une action personnalisée à l’aide de l’entité Opportunité
+## <a name="dynamics-365-customer-engagement-example-create-a-custom-action-using-the-opportunity-entity"></a>Exemple Dynamics 365 Customer Engagement : Créer une action personnalisée à l’aide de l’entité Opportunité
   
 1. Dans [l’Explorateur de solutions](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer), sélectionnez **Processus**.  
   
