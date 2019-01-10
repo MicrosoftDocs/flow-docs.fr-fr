@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 77ce6e368c8cb54d360ebeaa32f1f649e30aa297
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
+ms.openlocfilehash: 9edad8ef0aa4e51292bddc5dc59c90ae84223de2
+ms.sourcegitcommit: ade400bab38f85071d4c8bf6a5380f561f12f2f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727179"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53248842"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Répondre aux requêtes de suppression RGPD d’une personne concernée pour Microsoft Flow
 
@@ -55,7 +55,7 @@ Pour les données et ressources nécessitant une vérification manuelle, Microso
 
 * **Accès au site Web :** connectez-vous au [Centre d’administration de PowerApps](https://admin.powerapps.com/) ou au [Centre d'administration de Microsoft Flow](https://admin.flow.microsoft.com/)
 
-* **Accès à PowerShell :**  [applets de commandes Admin PowerShell PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) 
+* **Accès à PowerShell** :  [Cmdlets Admin PowerShell PowerApps](https://go.microsoft.com/fwlink/?linkid=871804) 
 
 Voici le détail des expériences disponibles permettant à un administrateur de supprimer chaque type de données personnelles au sein de chaque type de ressource :
 
@@ -175,6 +175,7 @@ $deleteDsrUserId = "7822bb68-7c24-49ce-90ce-1ec8deab99a7"
 Get-AdminConnection -CreatedBy $deleteDsrUserId | Remove-AdminConnection 
 
 ```
+
 ## <a name="delete-the-users-permissions-to-shared-connections"></a>Supprimer les autorisations de l’utilisateur pour les connexions partagées
 
 Applets de commande PowerShell PowerApps Maker
@@ -281,11 +282,12 @@ Avec l’introduction de Common Data Service for Apps, si une base de données e
 Pour plus d’informations sur la suppression de l’autorisation d’un utilisateur dans un environnement, consultez la rubrique [Utilisation d’environnements dans Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 
 ## <a name="delete-gateway-settings"></a>Supprimer les paramètres de la passerelle
+
 Vous trouverez des informations sur les demandes de suppression des données de la personne concernée pour les passerelles de données locales [ici](https://docs.microsoft.com/power-bi/service-gateway-onprem#tenant-level-administration).
 
 ## <a name="delete-user-details"></a>Supprimer les détails de l’utilisateur
-Les détails de l’utilisateur fournissent un lien entre un utilisateur et un locataire spécifique. Avant d’exécuter cette commande, vérifiez que tous les flux de cet utilisateur ont été réaffectés et/ou supprimés. Une fois cette vérification effectuée, un administrateur peut supprimer les détails de l’utilisateur en appelant l’applet de commande **Remove-AdminFlowUserDetails** et en passant l’ID d’objet pour l’utilisateur.
 
+Les détails de l’utilisateur fournissent un lien entre un utilisateur et un locataire spécifique. Avant d’exécuter cette commande, vérifiez que tous les flux de cet utilisateur ont été réaffectés et/ou supprimés. Une fois cette vérification effectuée, un administrateur peut supprimer les détails de l’utilisateur en appelant l’applet de commande **Remove-AdminFlowUserDetails** et en passant l’ID d’objet pour l’utilisateur.
 
 Applets de commandes PowerShell PowerApps Admin
 ```PowerShell
@@ -297,14 +299,18 @@ Remove-AdminFlowUserDetails -UserId 1b6759b9-bbea-43b6-9f3e-1af6206e0e80
 > Si un utilisateur détient encore des flux individuels ou d’équipe, cette commande retourne une erreur. Pour résoudre cette erreur, supprimez tous les flux restants ou les flux d’équipe de cet utilisateur et réexécutez la commande.
 >
 >
+
 ## <a name="delete-the-user-from-azure-active-directory"></a>Supprimer l’utilisateur d’Azure Active Directory
+
 Une fois les étapes ci-dessus terminées, l’étape finale consiste à supprimer le compte d’utilisateur pour Azure Active Directory en suivant les étapes décrites dans la documentation du RGPD sur les demandes de la personne concernée dans Azure, qui se trouve sur le [portail d’approbation de services Office 365](https://servicetrust.microsoft.com/ViewPage/GDPRDSR).
 
 ## <a name="delete-the-user-from-unmanaged-tenant"></a>Supprimer l’utilisateur d’un locataire non géré
+
 Dans le cas où vous êtes membre d’un locataire non géré, vous devez effectuer une action de **fermeture de compte** à partir du [portail de confidentialité des comptes professionnels et scolaires](https://go.microsoft.com/fwlink/?linkid=873123).
 
 Pour déterminer si vous êtes ou non utilisateur d’un locataire géré ou non géré, effectuez les actions suivantes :
-1. Ouvrez l’URL suivante dans un navigateur, en veillant à utiliser votre adresse e-mail dans l’URL :[ https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1 ](https://login.windows.net/common/userrealm/foobar@contoso.com?api-version=2.1).
+
+1. Ouvrez l’URL suivante dans un navigateur, en veillant à utiliser votre adresse e-mail dans l’URL :[https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1](https://login.microsoftonline.com/common/userrealm/foobar@contoso.com?api-version=2.1).
 1. Si vous êtes membre d’un **locataire non géré**, vous voyez la mention `"IsViral": true` dans la réponse.
 
     {
@@ -318,4 +324,3 @@ Pour déterminer si vous êtes ou non utilisateur d’un locataire géré ou non
     }
 
 1. Dans le cas contraire, c’est que vous appartenez à un locataire géré.
-
