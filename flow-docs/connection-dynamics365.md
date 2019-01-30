@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c780b3d305fbd5549f9c7ffc2a23571007dac7a7
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
+ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188613"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "54905672"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Créer un flux à l’aide de Dynamics 365 (en ligne)
 En utilisant un connecteur Dynamics 365, vous pouvez créer des flux qui se lancent lorsqu’un événement se produit dans Dynamics 365 ou un autre service, qui effectue ensuite une action dans Dynamics 365 ou un autre service. 
@@ -78,7 +78,7 @@ Si le modèle dont vous avez besoin n’est pas disponible, créez entièrement 
     
     ![Flux - Ajouter une rubrique](./media/connection-dynamics365/flow-addtopic.png)
     
-    > **Conseil :** dans le volet de contenu dynamique, cliquez ou appuyez sur **Voir plus** pour afficher plus de champs associés à l’entité. Par exemple, vous pouvez également remplir le champ **Objet** de la tâche avec le champ **Nom de la société**, **Client**, **Description** ou **E-mail** du prospect.
+    > **Conseil :** Dans le volet de contenu dynamique, cliquez ou appuyez sur **Voir plus** pour afficher plus de champs associés à l’entité. Par exemple, vous pouvez également remplir le champ **Objet** de la tâche avec le champ **Nom de la société**, **Client**, **Description** ou **E-mail** du prospect.
     > 
     > 
 12. Cliquez ou appuyez sur **Créer un flux**.
@@ -100,7 +100,7 @@ Cette procédure pas à pas vous montre comment créer une tâche dans [Wunderli
 10. Cliquez ou appuyez sur **Créer un flux**.  
 
 ## <a name="trigger-based-logic"></a>Logique basée sur des déclencheurs
-Des déclencheurs comme **Lorsqu’un enregistrement est créé**, **Lorsqu’un enregistrement est mis à jour** et **Lorsqu’un enregistrement est supprimé** lancent votre flux dans un délai de quelques minutes après la survenance de l’événement.  Dans de rares cas, votre flux peut prendre jusqu’à 2 heures pour se déclencher.
+Des déclencheurs comme **Lorsqu’un enregistrement est créé**, **Lorsqu’un enregistrement est mis à jour** et **Lorsqu’un enregistrement est supprimé** lancent votre flux dans un délai de quelques minutes après l’événement.  Dans de rares cas, votre flux peut prendre jusqu’à 2 heures pour se déclencher.
 
 Quand le déclencheur s’active, le flux reçoit une notification mais s’exécute sur les données qui existent au moment où l’action s’exécute.  Par exemple, si votre flux se déclenche quand un nouvel enregistrement est créé et que vous mettez à jour l’enregistrement à deux reprises avant l’exécution du flux, votre flux s’exécute une seule fois avec les données les plus récentes.
 
@@ -111,7 +111,7 @@ Par exemple, vous pouvez utiliser une requête de filtre pour récupérer unique
 
   ![Flow - Requête de tri](./media/connection-dynamics365/flow-orderby-query.png)
 
-### <a name="best-practices-when-using-advanced-options"></a>Bonnes pratiques lors de l’utilisation des options avancées
+### <a name="best-practices-when-using-advanced-options"></a>Meilleures pratiques lors de l’utilisation des options avancées
 Lorsque vous ajoutez une valeur à un champ, vous devez faire correspondre le type de champ, que vous tapiez une valeur ou en sélectionniez une à partir du volet de contenu dynamique.
 
 | Type de champ | Utilisation | Emplacement | Nom | Type de données |
@@ -147,7 +147,7 @@ Cet exemple affecte également la tâche à un utilisateur spécifique en foncti
 
 Pour rechercher l’ID d’un enregistrement, consultez [Rechercher l’ID d’un enregistrement](#find-the-records-id) plus loin dans cette rubrique.
 
-> **Important :** les champs ne doivent pas contenir de valeur s’ils ont la description « Utilisation interne uniquement ». Ces champs sont **Chemin d’accès traversé**, **Paramètres supplémentaires** et **Numéro de version de la règle du fuseau horaire**.
+> **Important :** Les champs ne doivent pas contenir de valeur s’ils ont la description « Utilisation interne uniquement ». Ces champs sont **Chemin d’accès traversé**, **Paramètres supplémentaires** et **Numéro de version de la règle du fuseau horaire**.
 > 
 > 
 

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 238ef8eac80d3259981cb11cc21e3b05eb83e0ec
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: fb9f95845a6b516bfb83ed476929d8682098601f
+ms.sourcegitcommit: 4bd9fa4a9549a1830644f68cbf9ba50ed0ef8e19
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689729"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55204936"
 ---
 # <a name="create-team-flows"></a>Créer des flux d’équipe
 Créez un flux d’équipe en ajoutant d’autres personnes de votre organisation en tant que propriétaires. Tous les propriétaires d’un flux d’équipe peuvent exécuter les actions suivantes :
@@ -70,11 +70,12 @@ Pour créer un flux d’équipe ou pour ajouter des propriétaires à un flux d�
    
      Félicitations, le flux d’équipe a été créé !
 
-##<a name="add-a-list-as-a-co-owner"></a>Ajouter une liste en tant que copropriétaire
+## <a name="add-a-list-as-a-co-owner"></a>Ajouter une liste en tant que copropriétaire
 
 Vous pouvez ajouter des listes SharePoint en tant que copropriétaire dans un flux afin que toutes les personnes disposant d’un accès en modification obtiennent automatiquement un accès en modification sur le flux. Une fois que le flux est partagé, il vous suffit juste de distribuer un lien vers celui-ci.
 
 ## <a name="remove-an-owner"></a>Supprimer un propriétaire
+
 > [!IMPORTANT]
 > Quand vous supprimez un propriétaire dont les informations d’identification sont utilisées pour accéder aux services Microsoft Flow, vous devez mettre à jour les informations d’identification de ces connexions afin que le flux continue à s’exécuter correctement.
 > 
@@ -93,7 +94,20 @@ Vous pouvez ajouter des listes SharePoint en tant que copropriétaire dans un fl
    
     ![utilisateur supprimé](./media/create-team-flows/removeowner4.png)
 
+
+## <a name="update-connection-owner"></a>Mettre à jour le propriétaire de connexion
+
+Vous devrez peut-être changer le propriétaire d’une connexion dans un flux si vous supprimez le propriétaire existant. Suivez ces étapes pour changer le propriétaire d’un flux :
+
+1. Sélectionnez le flux qui contient la connexion que vous souhaitez mettre à jour dans la liste **Flux d’équipes**.
+1. Sélectionnez **Tout afficher** dans la liste **PROPRIÉTAIRES**.
+1. Sélectionnez **Gérer les connexions** dans la liste **Connexions en cours d’utilisation**.
+1. Recherchez la connexion que vous voulez mettre à jour, puis sélectionnez-la.
+1. Sélectionnez **...** (plus de commandes), puis **Changer de compte**.
+1. Suivez les étapes afin d’utiliser un autre compte pour la connexion.
+
 ## <a name="embedded-and-other-connections"></a>Connexions incorporées et autres
+
 Les connexions utilisées dans un flux se répartissent en deux catégories :
 
 * **Incorporées** &mdash; Ces connexions sont utilisées dans le flux.
