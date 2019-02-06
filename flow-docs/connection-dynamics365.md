@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: e5abf1dd6f1f1d1dd6853aa552460694aebddd61
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
+ms.openlocfilehash: 64dc59bc53dfdc1d09dbb80be4f32a33c7259415
+ms.sourcegitcommit: 20a151bc5ef94c1ecde22934cbd878710ffb312c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905672"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55504504"
 ---
 # <a name="create-a-flow-by-using-dynamics-365-online"></a>Créer un flux à l’aide de Dynamics 365 (en ligne)
 En utilisant un connecteur Dynamics 365, vous pouvez créer des flux qui se lancent lorsqu’un événement se produit dans Dynamics 365 ou un autre service, qui effectue ensuite une action dans Dynamics 365 ou un autre service. 
@@ -120,6 +120,7 @@ Lorsque vous ajoutez une valeur à un champ, vous devez faire correspondre le ty
 | Champs de type entier |Certains champs nécessitent un entier ou du contenu dynamique (champ de type Entier). En voici quelques exemples : **Pourcentage effectué** et **Durée**. |**Paramètres** > **Personnalisations** > **Personnaliser le système** > **Entités** > **Tâche** > **Champs** |**percentcomplete** |**Nombre entier** |
 | Champs de date |Certains champs nécessitent une date entrée au format mm/jj/aaaa ou du contenu dynamique (champ de type date). En voici quelques exemples : **Créé le**, **Date de début**, **Début réel**, **Dernière durée de suspension**, **Fin réelle** et **Date d’échéance**. |**Paramètres** > **Personnalisations** > **Personnaliser le système** > **Entités** > **Tâche** > **Champs** |**createdon** |**Date et heure** |
 | Champs qui nécessitent à la fois un ID d’enregistrement et un type de recherche |Certains champs qui font référence à un autre enregistrement d’entité nécessitent l’ID d’enregistrement et le type de recherche. |**Paramètres** > **Personnalisations** > **Personnaliser le système** > **Entités** > **Compte** > **Champs** |**accountid** |**Clé primaire** |
+|Groupe d’options|Les champs de groupes d’options nécessitent un entier connu à passer dans ce type de champ.  Dans la zone de personnalisation de Dynamics 365, vous pouvez voir les groupes d’options avec le champ d’entier et son intitulé respectif.|Paramètres > Personnalisation > Personnaliser le système > Entités > Compte > Champs | Méthode de contact préférée| Nombre entier|
 
 ### <a name="more-examples-of-fields-that-require-both-a-record-id-and-lookup-type"></a>Autres exemples de champs qui nécessitent à la fois un ID d’enregistrement et un type de recherche
 Pour compléter le tableau précédent, voici plusieurs exemples de champs qui ne fonctionnent pas avec les valeurs sélectionnées à partir de la liste de contenu dynamique. Au lieu de cela, ces champs nécessitent à la fois un ID d’enregistrement et un type de recherche entrés dans les champs PowerApps.

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: fb9f95845a6b516bfb83ed476929d8682098601f
-ms.sourcegitcommit: 4bd9fa4a9549a1830644f68cbf9ba50ed0ef8e19
+ms.openlocfilehash: 29d6532593719bef147cdacf1c0e2576ec734837
+ms.sourcegitcommit: c4cfb0a9b668c958755b3cdeae99eabf83651710
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55204936"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55479416"
 ---
 # <a name="create-team-flows"></a>Créer des flux d’équipe
 Créez un flux d’équipe en ajoutant d’autres personnes de votre organisation en tant que propriétaires. Tous les propriétaires d’un flux d’équipe peuvent exécuter les actions suivantes :
@@ -74,6 +74,10 @@ Pour créer un flux d’équipe ou pour ajouter des propriétaires à un flux d�
 
 Vous pouvez ajouter des listes SharePoint en tant que copropriétaire dans un flux afin que toutes les personnes disposant d’un accès en modification obtiennent automatiquement un accès en modification sur le flux. Une fois que le flux est partagé, il vous suffit juste de distribuer un lien vers celui-ci.
 
+> [!TIP]
+> Utilisez une liste lorsque le flux est connecté à SharePoint et un groupe dans d’autres cas.
+>
+
 ## <a name="remove-an-owner"></a>Supprimer un propriétaire
 
 > [!IMPORTANT]
@@ -114,6 +118,8 @@ Les connexions utilisées dans un flux se répartissent en deux catégories :
 * **Autres** &mdash; Ces connexions ont été définies pour un flux mais ne sont pas utilisées dans celui-ci.
 
 Si vous arrêtez une connexion dans un flux, celle-ci s’affiche dans la liste de connexions **Autres** et y reste jusqu’à ce qu’un propriétaire l’inclue à nouveau dans le flux.
+
+Suivez les étapes visant à [mettre à jour un propriétaire de connexion](./create-team-flows.md#update-connection-owner) pour apporter des modifications aux connexions incorporées.
 
 La liste des connexions apparaît sous la liste des propriétaires dans les propriétés d’un flux :
 

@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8baaf85ae07d2763886eb1ffda0141e4804cb630
-ms.sourcegitcommit: 8a36a3211e76b2b1a4a3154bc41e12a87dc3c288
+ms.openlocfilehash: af2e113278f480eb3c748cb1a2f9a81e34d32258
+ms.sourcegitcommit: a35abc6a2148cbfb48ca36d4af09bfd90eaffa42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2018
-ms.locfileid: "53179814"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55647849"
 ---
 # <a name="understand-on-premises-data-gateways-for-microsoft-flow"></a>Comprendre les passerelles de données locales pour Microsoft Flow
 Utilisez la passerelle de données locale avec Microsoft Flow pour établir des connexions sécurisées à vos sources de données locales telles que Microsoft SQL Server.
@@ -166,6 +166,9 @@ Il n’existe actuellement aucun emplacement unique où les administrateurs clie
 
 **Question :** Ai-je besoin d’une passerelle pour les sources de données dans le cloud, comme SQL Azure ?
 **Réponse :** Non. Une passerelle se connecte aux sources de données locales uniquement.
+
+**Question :** Dois-je installer ma passerelle dans l’environnement par défaut ?
+**Réponse :** Oui, Microsoft Flow prend uniquement en charge les passerelles installées dans l’environnement par défaut.
 
 **Question :** Quel est le vrai nom du service Windows ?
 **Réponse :** Dans Services, la passerelle est appelée **Power BI Enterprise Gateway Service**.

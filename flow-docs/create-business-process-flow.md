@@ -22,14 +22,14 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 1e765d4c7c11354e382c3ff74ac66103345ff39f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 93d0e035ed3661bd78c55a246106e604f2866b2e
+ms.sourcegitcommit: 29045ac95102af371a358b79b345b54a130fcab0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691031"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55501431"
 ---
-# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Tutoriel : Créer un flux de processus métier pour standardiser les processus
+# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Tutoriel : Créer un flux de processus métier pour standardiser les processus
 
 Ce tutoriel vous montre comment créer un flux de processus métier dans PowerApps. Pour en savoir plus sur les raisons d’utiliser des flux de processus métier, consultez [Vue d’ensemble des flux de processus d’entreprise](business-process-flows-overview.md). Pour plus d’informations sur la création d’un flux de tâches mobile, consultez [Créer un flux de tâches mobile](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
@@ -40,7 +40,12 @@ Ce tutoriel vous montre comment créer un flux de processus métier dans PowerAp
  > [!TIP]
  >  Après avoir créé une définition du flux de processus métier, vous pouvez contrôler qui est autorisé à créer, lire, mettre à jour ou supprimer l’instance du flux de processus métier. Par exemple, pour des processus de service, vous pouvez accorder un accès total aux conseillers du service clientèle pour leur permettre de changer l’instance du flux de processus métier, mais accorder un accès en lecture seule à l’instance destinée aux commerciaux pour leur permettre de superviser les activités après-vente de leurs clients. Pour configurer la sécurité d’une définition de flux de processus métier que vous créez, sélectionnez **Activer les rôles de sécurité** dans la barre d’action.  
   
-<a name="BKMK_Createbusinessprocessflows"></a>   
+<a name="BKMK_Createbusinessprocessflows"></a>
+
+## <a name="prerequisites"></a>Prérequis
+
+Vous devez avoir [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) pour créer des flux de processus métier. Certains plans de licence Dynamics 365 incluent Flow Plan 2.
+
 ## <a name="create-a-business-process-flow"></a>Créer un flux de processus métier  
   
 1. Ouvrez [l’Explorateur de solutions](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).
