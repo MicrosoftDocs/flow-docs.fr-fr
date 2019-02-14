@@ -4,9 +4,13 @@
       "docset_name": "flow",
       "build_source_folder": "flow-docs",
       "build_output_subfolder": "flow",
-      "locale": "fr-FR",
+      "locale": "fr-fr",
       "monikers": [],
       "moniker_ranges": [],
+      "xref_query_tags": [
+        "/dotnet",
+        "/dynamics365/customer-engagement/web-api"
+      ],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
@@ -25,8 +29,8 @@
     "ceicnotifications@microsoft.com"
   ],
   "branches_to_filter": [
-    "master-sxs",
     "master",
+    "master-sxs",
     "live"
   ],
   "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/flow-docs.fr-fr",
@@ -40,7 +44,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.fr-FR",
+      "url": "https://github.com/Microsoft/templates.docs.msft.fr-fr",
       "branch": "master",
       "branch_mapping": {}
     },
