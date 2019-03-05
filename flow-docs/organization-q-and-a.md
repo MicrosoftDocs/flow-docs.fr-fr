@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: f62bbf9e508c269c17284382b674a07221a2d568
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
+ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690557"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "56885501"
 ---
 # <a name="flow-in-your-organization-qa"></a>Questions et réponses sur Microsoft Flow dans votre organisation
 Cette rubrique décrit comment les utilisateurs de votre organisation peuvent utiliser Flow, et comment vous pouvez contrôler le service Microsoft Flow.
@@ -46,6 +46,10 @@ Les utilisateurs peuvent s’inscrire en accédant à [flow.microsoft.com](https
 Lorsqu’un utilisateur de votre organisation s’inscrit à Microsoft Flow avec la deuxième option, une licence Microsoft Flow lui est attribuée automatiquement.
 
 De plus amples détails sont disponibles sous [S’inscrire à Microsoft Flow](sign-up-sign-in.md).
+
+### <a name="what-is-the-microsoft-flow-free-plan"></a>Qu’est-ce que le Plan gratuit de Microsoft Flow ?
+
+Le Plan gratuit de Microsoft Flow est utilisé uniquement à des fins de suivi. Son activation ou désactivation n’a aucun impact sur la capacité d’un utilisateur à créer des flux. Si vous désactivez le Plan gratuit de Microsoft Flow, il se réactive lorsqu’un utilisateur se connecte. Il s’agit du comportement attendu.
 
 ### <a name="can-i-block-another-person-from-signing-up-for-flow"></a>Puis-je empêcher une autre personne de s’inscrire à Flow ?
 Microsoft Flow est un service cloud public auquel tout le monde peut s’inscrire et que tout le monde peut utiliser pour automatiser les tâches quotidiennes. Pour utiliser Microsoft Flow, les utilisateurs n’ont pas besoin de posséder ou d’utiliser un compte Office 365. Pour cette raison, il n’existe actuellement aucun mécanisme pour empêcher une autre personne d’utiliser Flow (puisque n’importe qui dans le monde peut le faire, quelle que soit son adresse de messagerie).
@@ -147,7 +151,7 @@ Si un locataire a été créé par Microsoft Flow, vous pouvez revendiquer et g�
    2. Sélectionnez l’icône de lancement d’application dans le coin supérieur gauche et cliquez sur Administrateur.
    3. Lisez les instructions de la page **Become the admin** (Devenir l’administrateur), puis choisissez **Yes, I want to be the admin** (Oui, je souhaite être l’administrateur).  
       
-       **REMARQUE** : si cette option n’est pas affichée, cela signifie qu’il existe déjà un administrateur Office 365.
+       **REMARQUE** : Si cette option n’est pas affichée, cela signifie qu’il existe déjà un administrateur Office 365.
 
 ### <a name="if-i-have-multiple-domains-can-i-control-the-office-365-tenant-that-users-are-added-to"></a>Si je possède plusieurs domaines, puis-je contrôler le locataire Office 365 auquel les utilisateurs sont ajoutés ?
 Si vous ne faites rien, un locataire est créé pour chaque domaine et sous-domaine de messagerie des utilisateurs.
@@ -156,7 +160,7 @@ Pour que tous les utilisateurs soient dans le même locataire indépendamment de
 
 * Créez un locataire cible à l’avance ou utilisez un locataire existant. Ajoutez tous les domaines et sous-domaines que vous souhaitez consolider au sein de ce locataire. Tous les utilisateurs dont l’adresse électronique se termine par ces domaines et sous-domaines rejoignent alors automatiquement le locataire cible lors de leur inscription.
 
-**Important** : il n’existe aucun mécanisme automatique pris en charge permettant de déplacer des utilisateurs entre les locataires une fois qu’ils ont été créés. Pour en savoir plus sur l’ajout de domaines à un locataire Office 365, voir [Ajouter des utilisateurs et un domaine à Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
+**IMPORTANT** : Il n’existe aucun mécanisme automatique pris en charge permettant de déplacer des utilisateurs entre les locataires une fois qu’ils ont été créés. Pour en savoir plus sur l’ajout de domaines à un locataire Office 365, voir [Ajouter des utilisateurs et un domaine à Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 
 ### <a name="how-can-i-restrict-my-users-ability-to-access-my-organizations-business-data"></a>Comment puis-je limiter la capacité de mes utilisateurs à accéder aux données d’entreprise de mon organisation ?
 Microsoft Flow vous permet de créer des zones pour les données d’entreprise et les données non commerciales, comme indiqué ci-dessous. Une fois que ces stratégies de protection contre la perte de données sont implémentées, les utilisateurs ne peuvent pas concevoir ou exécuter de flux qui combinent des données d’entreprise et non commerciales. Pour plus d’informations, consultez [Stratégies de protection contre la perte de données](prevent-data-loss.md).

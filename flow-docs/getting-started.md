@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cfd337180d1517df67864e239b611f6283e3af14
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: bb623e84f309303557d05d82422d2419f8d3ccbe
+ms.sourcegitcommit: 300829df88dfa1d0049ea506f949b29d6bd52e42
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689775"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57251811"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Prise en main de Microsoft Flow #
 
@@ -93,6 +93,7 @@ Lorsque vous créez un flux à partir de zéro, vous contrôlez l’intégralit�
 - [Créer un flux d’approbation](wait-for-approvals.md).
 - [Voir un flux en action](see-a-flow-run.md).
 - [Publier un modèle](publish-a-template.md).
+- [Créer des flux à partir d’un modèle Microsoft Teams](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
 ## <a name="use-the-mobile-app"></a>Utiliser l’application mobile ##
 
