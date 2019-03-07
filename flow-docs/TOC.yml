@@ -21,6 +21,8 @@ items:
     href: get-started-logic-flow.md
   - name: Déclencher un flux avec la messagerie
     href: email-triggers.md
+  - name: Créer un flux avec Common Data Service
+    href: connection-cds.md
   - name: Créer un flux avec Dynamics 365
     href: connection-dynamics365.md
   - name: Filtrer et copier des données
@@ -217,9 +219,9 @@ items:
     href: https://flow.microsoft.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-ms.openlocfilehash: a06bf4922b8e17fb8956d9fd5d45f313f736c286
-ms.sourcegitcommit: 791bf29ad58dee8df475fc864ccc213c2c1ebd75
+ms.openlocfilehash: 6d6e0511193a6d09bd3c584cf58fa1c776d524a0
+ms.sourcegitcommit: 61f0eb1fdc54da02eb57dadf09899fa6f308b00d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53441088"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57524356"
