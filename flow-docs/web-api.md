@@ -1,3 +1,22 @@
+---
+title: Les flux sont maintenant stockées dans Common Data Service for Apps et utilisent l’API web riche
+description: Les flux sont maintenant stockées dans Common Data Service for Apps et utilisent l’API web riche.
+author: stepsic-microsoft-com
+ms.reviewer: deonhe
+ms.date: 03/05/2019
+ms.topic: article
+ms.prod: ''
+ms.service: business-applications
+ms.technology: ''
+ms.author: stepsic
+audience: Power user
+ms.openlocfilehash: 111fb191c6963e02d7bf54b419fd7088ce7605fc
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463006"
+---
 # <a name="microsoft-flow-web-api"></a>API web Microsoft Flow
 
 À l’avenir, tous les flux seront stockés dans Common Data Service (CDS) pour Apps et exploiteront l’[API Web avancée](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
