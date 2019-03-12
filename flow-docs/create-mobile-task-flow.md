@@ -3,7 +3,7 @@ title: Créer un flux de tâches mobile avec PowerApps | Microsoft Docs
 ms.custom: ''
 ms.date: 06/11/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: ba48fe37c0effe75f5dafec5e62a39ae21758c10
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 7f15f11a4e66d80762384f8183af7973fcca76bf
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689752"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462760"
 ---
 # <a name="create-a-mobile-task-flow"></a>Créer un flux de tâches mobile
 
