@@ -15,12 +15,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f1b51a48d7355684d2c6883bbf0db12853f686eb
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 92db054d5e9fab7ef6077146260ce46f540697c9
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690235"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462832"
 ---
 # <a name="create-a-custom-action"></a>Créer une action personnalisée
 
@@ -48,19 +48,19 @@ Utilisez des actions personnalisées quand vous souhaitez automatiser une série
  
 Contrairement aux processus de workflow, vous n’avez pas besoin de définir les options suivantes :  
   
-- **Démarrer quand** : les actions démarrent quand le code appelle le message généré pour celles-ci.  
+- **Démarrer quand** : Les actions démarrent quand le code appelle le message généré pour celles-ci.  
   
-- **Étendue** : les actions sont toujours exécutées dans le contexte de l’utilisateur appelant.  
+- **Étendue** : Les actions sont toujours exécutées dans le contexte de l’utilisateur appelant.  
   
-- **Exécuter en arrière-plan** : les actions sont toujours des workflows en temps réel.  
+- **Exécuter en arrière-plan** : Les actions sont toujours des workflows en temps réel.  
   
 Les actions ont également quelque chose que les processus de workflow n’ont pas : des arguments d’entrée et de sortie.
 
 > [!NOTE]
-> Vous pouvez activer une action personnalisée à partir d’un workflow sans écrire de code. Pour plus d’informations, consultez [Appeler des actions personnalisées à partir d’un workflow](invoke-custom-actions-workflow-dialog.md).
+> Vous pouvez activer une action personnalisée à partir d’un workflow sans écrire de code. Plus d’informations : [Appeler des actions personnalisées à partir d’un workflow](invoke-custom-actions-workflow-dialog.md).
  
 <a name="edit"></a>   
-## <a name="edit-an-action"></a>Modifier une action  
+## <a name="edit-an-action"></a>Ajouter une action  
  Vous devez désactiver les processus pour pouvoir les modifier.  
   
  Vous pouvez modifier une action qui a été créée dans le cadre d’une solution non managée ou incluse dans une solution installée dans votre organisation. Si la solution est une solution managée, vous n’êtes peut-être pas en mesure de la modifier. L’éditeur de solutions a la possibilité de modifier les propriétés managées afin que l’action installée avec une solution managée ne soit pas modifiable.  
@@ -90,10 +90,10 @@ Les actions ont également quelque chose que les processus de workflow n’ont p
  Comme tous les processus, vous pouvez activer le processus en tant que modèle et l’utiliser comme point de départ avancé pour les processus qui suivent un modèle similaire.  
   
  **Définir les arguments de processus**  
- Dans cette zone, vous spécifiez toutes les données que l’action attend pour démarrer et les données à transmettre au terme de l’action. Pour plus d’informations, consultez [Définir les arguments de processus](#define-process-arguments)  
+ Dans cette zone, vous spécifiez toutes les données que l’action attend pour démarrer et les données à transmettre au terme de l’action. Plus d’informations : [Définir les arguments de processus](#define-process-arguments)  
   
  **Ajouter des phases et des étapes**  
- Comme pour les autres processus, vous spécifiez les actions à effectuer et à quel moment les effectuer. Pour plus d’informations, consultez [Ajouter des phases et des étapes](#add-stages-and-steps)
+ Comme pour les autres processus, vous spécifiez les actions à effectuer et à quel moment les effectuer. Plus d’informations : [Ajouter des phases et des étapes](#add-stages-and-steps)
 
 <a name="BKMK_DefineProcessArgs"></a>   
 ## <a name="define-process-arguments"></a>Définir les arguments de processus  

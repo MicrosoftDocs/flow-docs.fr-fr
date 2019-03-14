@@ -1,10 +1,10 @@
 ---
-title: Bonnes pratiques pour les processus de workflow dans PowerApps | MicrosoftDocs
+title: Bonnes pratiques pour la gestion des processus de workflow | Microsoft Docs
 description: Comprendre les méthodes recommandées pour utiliser des workflows
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bba5b203782cfa813de6ddc509a8be604e5e146b
-ms.sourcegitcommit: 50ea1cdd763863a2cbc88f9f965bdf9351f1059c
+ms.openlocfilehash: c0a59a625f4d43d125bde6ddf6edd5da5b6f6430
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51225537"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462783"
 ---
 # <a name="best-practices-for-workflow-processes"></a>Bonnes pratiques pour les processus de workflow
 
@@ -61,7 +61,7 @@ Pour les workflows qui ne s’exécutent pas en arrière-plan (synchrones), nous
 ![Option permettant de conserver les journaux pour les workflows ayant échoué](media/keep-logs-for-workflows.png)
 
 ## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Limiter le nombre de workflows qui mettent à jour la même entité
-L’exécution de plusieurs workflows qui mettent à jour la même entité peut entraîner des problèmes de verrouillage de ressource. Imaginez que plusieurs workflows sont en cours d’exécution et que chaque mise à jour d’opportunité déclenche une mise à jour du compte associé. Quand plusieurs instances de ces workflows sont en cours d’exécution et qu’elles essaient de mettre à jour le même enregistrement de compte simultanément, des problèmes de verrouillage de ressource peuvent survenir. Des échecs de workflow se produisent et un message d’erreur, tel que **Délai d’attente SQL : Impossible d’obtenir un verrou sur la ressource _nom de ressource_**, est enregistré. 
+L’exécution de plusieurs workflows qui mettent à jour la même entité peut entraîner des problèmes de verrouillage de ressource. Imaginez que plusieurs workflows sont en cours d’exécution et que chaque mise à jour d’opportunité déclenche une mise à jour du compte associé. Quand plusieurs instances de ces workflows sont en cours d’exécution et qu’elles essaient de mettre à jour le même enregistrement de compte simultanément, des problèmes de verrouillage de ressource peuvent survenir. Les échecs de workflow se produisent et un message d’erreur, tel que **Délai d’attente SQL : Impossible d’obtenir un verrou sur _nom de ressource_**, est enregistré. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   

@@ -3,7 +3,7 @@ title: Configurer des actions pour les workflows dans PowerApps | Microsoft Docs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -21,16 +21,16 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7bd236368e572c7204309094982b2868db0bce8f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: c1b8686000b7723f2d942f3c6c5ebe685d98429d
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690669"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462907"
 ---
 # <a name="configure-custom-actions-from-a-workflow"></a>Configurer des actions personnalisées à partir d’un workflow
 
-Vous pouvez activer une action personnalisée à partir d’un workflow sans écrire de code. Pour plus d’informations, consultez [Appeler des actions personnalisées à partir d’un workflow](invoke-custom-actions-workflow-dialog.md).  
+Vous pouvez activer une action personnalisée à partir d’un workflow sans écrire de code. Plus d’informations : [Appeler des actions personnalisées à partir d’un workflow](invoke-custom-actions-workflow-dialog.md).  
   
  Vous pouvez également créer une action afin qu’un développeur puisse l’utiliser dans du code, ou vous pouvez être amené à modifier une action déjà définie. Comme pour les processus de workflow, penchez-vous sur les questions suivantes :  
   
@@ -41,13 +41,13 @@ Vous pouvez activer une action personnalisée à partir d’un workflow sans éc
  
 Contrairement aux processus de workflow, vous n’avez pas besoin de définir les options suivantes :  
   
-- **Démarrer quand** : les actions démarrent quand le code appelle le message généré pour celles-ci.  
+- **Démarrer quand** : Les actions démarrent quand le code appelle le message généré pour celles-ci.  
   
-- **Étendue** : les actions sont toujours exécutées dans le contexte de l’utilisateur appelant.  
+- **Étendue** : Les actions sont toujours exécutées dans le contexte de l’utilisateur appelant.  
   
-- **Exécuter en arrière-plan** : les actions sont toujours des workflows en temps réel.  
+- **Exécuter en arrière-plan** : Les actions sont toujours des workflows en temps réel.  
   
-Les actions ont également quelque chose que les processus de workflow n’ont pas : des arguments d’entrée et de sortie. Pour plus d’informations, consultez [Définir les arguments de processus](configure-actions.md#BKMK_DefineProcessArgs).  
+Les actions ont également quelque chose que les processus de workflow n’ont pas : des arguments d’entrée et de sortie. Plus d’informations : [Définir les arguments de processus](configure-actions.md#BKMK_DefineProcessArgs)  
   
 <a name="create"></a>   
 ## <a name="create-an-action"></a>Créer une action  
@@ -73,7 +73,7 @@ Les actions ont également quelque chose que les processus de workflow n’ont p
 ## <a name="edit-an-action"></a>Ajouter une action  
  Vous devez désactiver les processus pour pouvoir les modifier.  
   
- Vous pouvez modifier une action qui a été créée dans le cadre d’une solution non managée ou incluse dans une solution installée dans votre organisation. Si la solution est une solution managée, vous n’êtes peut-être pas en mesure de la modifier. L’éditeur de solutions a la possibilité de modifier les propriétés gérées afin que l’action installée avec une solution managée ne soit pas modifiable.  
+ Vous pouvez modifier une action qui a été créée dans le cadre d’une solution non managée ou incluse dans une solution installée dans votre organisation. Si la solution est une solution managée, vous n’êtes peut-être pas en mesure de la modifier. L’éditeur de solutions a la possibilité de modifier les propriétés managées afin que l’action installée avec une solution managée ne soit pas modifiable.  
   
  Quand une action est enregistrée, un nom unique est généré en fonction du nom du processus. Le préfixe de personnalisation ajouté à ce nom unique provient de l’éditeur de solutions. Il s’agit du nom du message qu’un développeur utilise dans son code.  
   
@@ -100,10 +100,10 @@ Les actions ont également quelque chose que les processus de workflow n’ont p
  Comme tous les processus, vous pouvez activer le processus en tant que modèle et l’utiliser comme point de départ avancé pour les processus qui suivent un modèle similaire.  
   
  **Définir les arguments de processus**  
- Dans cette zone, vous spécifiez toutes les données que l’action attend pour démarrer et les données à transmettre au terme de l’action. Pour plus d’informations, consultez [Définir les arguments de processus](configure-actions.md#BKMK_DefineProcessArgs).  
+ Dans cette zone, vous spécifiez toutes les données que l’action attend pour démarrer et les données à transmettre au terme de l’action. Plus d’informations : [Définir les arguments de processus](configure-actions.md#BKMK_DefineProcessArgs)  
   
  **Ajouter des étapes, conditions et actions**  
- Comme pour les autres processus, vous spécifiez les actions à effectuer et à quel moment les effectuer. Pour plus d’informations, consultez [Ajouter des étapes, conditions et actions](configure-actions.md#BKMK_AddStagesConditionsAndActions)
+ Comme pour les autres processus, vous spécifiez les actions à effectuer et à quel moment les effectuer. Plus d’informations : [Ajouter des étapes, conditions et actions](configure-actions.md#BKMK_AddStagesConditionsAndActions)
 
 <a name="BKMK_DefineProcessArgs"></a>   
 ### <a name="define-process-arguments"></a>Définir les arguments de processus  
@@ -135,7 +135,7 @@ Les actions ont également quelque chose que les processus de workflow n’ont p
 |Chaîne|Valeur de texte.|  
   
 > [!NOTE]
-> Les valeurs de l’argument **EntityCollection** ne peuvent pas être définies dans l’interface utilisateur des conditions ou des actions. Ces valeurs sont fournies par les développeurs dans le code personnalisé en vue de leur utilisation. Pour plus d’informations, consultez [Créer vos propres actions](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-own-actions). 
+> Les valeurs de l’argument **EntityCollection** ne peuvent pas être définies dans l’interface utilisateur des conditions ou des actions. Ces valeurs sont fournies par les développeurs dans le code personnalisé en vue de leur utilisation. Plus d’informations : [Créer vos propres actions](https://docs.microsoft.com/dynamics365/customer-engagement/developer/create-own-actions) 
   
 <a name="BKMK_AddStagesConditionsAndActions"></a>   
 ### <a name="add-stages-and-steps"></a>Ajouter des phases et des étapes  

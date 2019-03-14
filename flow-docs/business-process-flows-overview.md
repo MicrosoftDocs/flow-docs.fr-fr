@@ -3,7 +3,7 @@ title: Vue d’ensemble des flux de processus métier | Microsoft Docs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: baefae21e605b0e54e32b09dfaee8f2980d73c13
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: b1e23a3ddfd4302c4a5429029ea4fb47f0ab9808
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690308"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462992"
 ---
 # <a name="business-process-flows-overview"></a>Vue d’ensemble des flux de processus métier
 
@@ -137,7 +137,7 @@ Les flux de processus métier guident les utilisateurs dans la réalisation de l
  Pour activer une entité personnalisée pour les flux de processus métier, cochez la case **Flux des processus d’entreprise (des champs vont être créés)** dans la définition de l’entité. Notez que vous ne pouvez pas annuler cette action.  
   
 > [!NOTE]
->  Si vous accédez à la phase du flux de processus métier dans laquelle se trouve l’entité `Social Activity` et que vous choisissez le bouton **Phase suivante**, vous voyez l’option **Créer**. Quand vous choisissez **Créer**, le formulaire **Activité sociale** est chargé. Toutefois, `Social Activity` n’étant pas valide pour `Create` à partir de l’interface utilisateur de l’application, vous ne pouvez pas enregistrer le formulaire, et le message d’erreur « Erreur inattendue » apparaît.  
+>  Si vous accédez à la phase du flux de processus métier dans laquelle se trouve l’entité `Social Activity` et que vous choisissez le bouton **Phase suivante**, vous voyez l’option **Créer**. Quand vous choisissez **Créer**, le formulaire **Activité sociale** est chargé. Toutefois, `Social Activity` n’étant pas valide pour `Create` à partir de l’interface utilisateur de l’application, vous ne pouvez pas enregistrer le formulaire, et le message d’erreur suivant s’affiche : « Erreur inattendue ».  
   
 <a name="BPF_MaxNumbers"></a>   
 ### <a name="maximum-number-of-processes-stages-and-steps"></a>Nombre maximal de processus, de phases et d’étapes  
@@ -174,7 +174,7 @@ Vous pouvez également interagir avec les entités de flux de processus métier 
 ### <a name="limitations-of-using-business-process-flow-entities"></a>Limitations de l’utilisation des entités de flux de processus métier
 
 - Vous ne pouvez pas créer de formulaires personnalisés pour les entités basées sur un flux de processus métier.
-- Si une solution inclut une entité de flux de processus métier, vous devez ajouter celle-ci manuellement à la solution avant de l’exporter. Sinon, l’entité de flux de processus métier n’est pas incluse dans le package de solution. Pour plus d’informations, consultez [Ajouter des composants de solution](/powerapps/maker/model-driven-apps/create-solution#add-solution-components).
+- Si une solution inclut une entité de flux de processus métier, vous devez ajouter celle-ci manuellement à la solution avant de l’exporter. Sinon, l’entité de flux de processus métier n’est pas incluse dans le package de solution. Plus d’informations : [Ajouter des composants de solution](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
 
 ### <a name="next-steps"></a>Étapes suivantes  
  [Regarder une courte vidéo (4:49) sur les flux de processus métier](https://go.microsoft.com/fwlink/p/?linkid=842226)   

@@ -4,7 +4,7 @@ description: Découvrez les différents types de logique métier que vous pouvez
 ms.custom: ''
 ms.date: 05/01/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -22,12 +22,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b6cf8c2bc5e7499e7eaf5feb367c07a3aa94b3f7
-ms.sourcegitcommit: f7985b96afe68b079b7fd4a6d04cd0a042d893e0
+ms.openlocfilehash: 5e123fa2abc8955d90fad2c9b09da76e449bf4b1
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47188590"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462944"
 ---
 # <a name="create-custom-business-logic-through-processes"></a>Créer une logique métier personnalisée par le biais de processus
 
@@ -92,8 +92,8 @@ PowerApps inclut plusieurs types de processus, chacun conçu pour un objectif di
 |Directeur général - Dirigeant d’entreprise|Organisation|  
 |Administrateur système|Organisation|  
 |Personnalisateur de système|Organisation|  
-|Vice-président du marketing|Division mère : sous-divisions|  
-|Directeur de division|Division mère : sous-divisions|  
+|Vice-président du marketing|Divis. mère : sous-divisions|  
+|Directeur de division|Divis. mère : sous-divisions|  
 |Responsable de service|Division|  
 |Directeur du marketing|Division|  
 |Directeur commercial|Division|  

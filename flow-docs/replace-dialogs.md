@@ -3,7 +3,7 @@ title: Remplacer les boîtes de dialogue par des flux de processus métier ou de
 ms.custom: ''
 ms.date: 08/02/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: get-started-article
@@ -21,12 +21,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 87a12345c72fd3dd3e93c1afecd282a688e4d4d1
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 498efb98a4c89ca6c2a01e345f5593beae4dbcca
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44691086"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57463007"
 ---
 # <a name="replace-dialogs-with-business-process-flows-or-canvas-apps"></a>Remplacer les boîtes de dialogue par des flux de processus métier ou des applications de canevas
 
@@ -84,7 +84,7 @@ Enfin, configurez les phases et les étapes du flux de processus métier, en ajo
 
 Pour mettre ce flux de processus métier à la disposition des utilisateurs, accordez les privilèges d’accès appropriés aux utilisateurs concernés, puis activez le flux.
 
-Pour plus d’informations sur la création d’un flux de processus métier, consultez [Tutoriel : Créer un flux de processus métier pour standardiser les processus](create-business-process-flow.md).
+Pour plus d’informations sur la façon de créer un flux de processus métier, consultez [Tutoriel : Créer un flux de processus métier pour standardiser les processus](create-business-process-flow.md).
 
 ## <a name="dialog-replacement-using-canvas-app-scenario"></a>Scénario de remplacement d’une boîte de dialogue par une application de canevas
 
@@ -118,14 +118,14 @@ Puis-je lancer une application de canevas en tant que fenêtre contextuelle à p
 - Oui. Pour cela, définissez simplement l’URL cible à celle de votre application de canevas. Cette URL est indiquée dans la section **Détails** de l’application, comme décrit précédemment.
 
 Les workflows peuvent-ils être appelés à partir d’une application de canevas ?
-- Non, cela n’est pas pris en charge. Nous vous recommandons d’utiliser un flux à la place. Pour plus d’informations, consultez [Présentation des flux de bouton avec entrée utilisateur](button-flow-with-user-input-tokens.md)
+- Non, cela n’est pas pris en charge. Nous vous recommandons d’utiliser un flux à la place. Plus d’informations : [Présentation des flux de bouton avec entrée utilisateur](button-flow-with-user-input-tokens.md)
 
 Puis-je convertir automatiquement des boîtes de dialogue en flux de processus métier ou en applications de canevas ?
 - Non, il n’existe pas de méthode permettant d’effectuer cette conversion automatiquement.
 
 
 ## <a name="see-also"></a>Voir aussi
-[Tutoriel : Créer un flux de processus métier pour standardiser les processus](create-business-process-flow.md) </br>
+[Tutoriel : Créer un flux de processus métier pour standardiser les processus](create-business-process-flow.md) </br>
 [Que sont les applications de canevas dans PowerApps ?](/powerapps/maker/canvas-apps/getting-started)
 
 

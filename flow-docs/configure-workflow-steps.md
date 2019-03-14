@@ -4,7 +4,7 @@ description: Découvrez comment configurer des étapes de workflow
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
-ms.service: crm-online
+ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -18,12 +18,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8e34f8ef8847ab08e14c91ee6d7871697b0275ce
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 9ebdb1eddaea1f2fd7918c968879f5da37c287fe
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690442"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462838"
 ---
 # <a name="configure-workflow-stages-and-steps"></a>Configurer des phases et des étapes de workflow
 
@@ -76,7 +76,7 @@ Quand vous concevez des workflows, vous pouvez placer la logique à exécuter da
   
 |Type de condition|Description|  
 |--------------------|-----------------|  
-|**Condition de vérification**|Instruction « si-\<condition>-alors » logique.<br /><br /> Vous pouvez vérifier les valeurs actuelles de l’enregistrement sur lequel le workflow s’exécute, de tous les enregistrements liés à cet enregistrement par une relation N à 1 ou de tous les enregistrements créés par des étapes précédentes. En fonction de ces valeurs, vous pouvez définir des étapes supplémentaires quand la condition est vérifiée.<br /><br /> Dans l’instruction « si-\<condition>-alors », vous pouvez utiliser les opérateurs suivants : **Est égal à**, **Est différent de**, **Contient des données**, **Ne contient pas de données**, **Sous** et **Pas sous**. **Remarque :** Les opérateurs **Sous** et **Pas sous** sont des opérateurs hiérarchiques. Ils peuvent uniquement servir sur les entités pour lesquelles une relation hiérarchique est définie. Si vous essayez d’utiliser ces opérateurs sur les entités pour lesquelles aucune relation hiérarchique n’est définie, le message d’erreur suivant apparaît : « Vous utilisez un opérateur hiérarchique sur une entité pour laquelle aucune relation hiérarchique n’est définie. Rendez l’entité hiérarchique (en marquant une relation comme hiérarchique) ou utilisez un autre opérateur. » Pour plus d’informations sur les relations hiérarchiques, consultez [Définir et interroger des données liées hiérarchiquement](/powerapps/maker/common-data-service/define-query-hierarchical-data). Une capture d’écran qui suit le tableau illustre la définition du processus de workflow qui utilise les opérateurs hiérarchiques **Sous** et **Pas sous**.|  
+|**Condition de vérification**|Instruction « si-\<condition>-alors » logique.<br /><br /> Vous pouvez vérifier les valeurs actuelles de l’enregistrement sur lequel le workflow s’exécute, de tous les enregistrements liés à cet enregistrement par une relation N à 1 ou de tous les enregistrements créés par des étapes précédentes. En fonction de ces valeurs, vous pouvez définir des étapes supplémentaires quand la condition est vérifiée.<br /><br /> Dans l’instruction « si-\<condition> alors », vous pouvez utiliser les opérateurs suivants : **Est égal à**, **Est différent de**, **Contient des données**, **Ne contient pas de données**, **Sous** et **Pas sous**. **Remarque :**  Les opérateurs **Sous** et **Pas sous** sont des opérateurs hiérarchiques. Ils peuvent uniquement servir sur les entités pour lesquelles une relation hiérarchique est définie. Si vous essayez d’utiliser ces opérateurs sur les entités pour lesquelles aucune relation hiérarchique n’est définie, le message d’erreur suivant s’affiche : « Vous utilisez un opérateur hiérarchique sur une entité pour laquelle aucune relation hiérarchique n’est définie. Rendez l’entité hiérarchique (en marquant une relation comme hiérarchique) ou utilisez un autre opérateur. » Pour plus d’informations sur les relations hiérarchiques, consultez [Définir et interroger des données liées hiérarchiquement](/powerapps/maker/common-data-service/define-query-hierarchical-data). Une capture d’écran qui suit le tableau illustre la définition du processus de workflow qui utilise les opérateurs hiérarchiques **Sous** et **Pas sous**.|  
 |**Branche conditionnelle**|Instruction « sinon-si-alors » logique. L’éditeur utilise le texte « Sinon, si \<condition>, alors : ».<br /><br /> Sélectionnez une condition de vérification que vous avez définie ; vous pouvez alors ajouter une branche conditionnelle pour définir des étapes supplémentaires qui sont exécutées si la condition n’est pas vérifiée.|  
 |**Action par défaut**|Instruction « sinon » logique. L’éditeur utilise le texte « Sinon : ».<br /><br /> Sélectionnez une condition de vérification, une branche conditionnelle, une condition d’attente ou une branche d’attente parallèle que vous avez définie ; vous pouvez alors utiliser une action par défaut afin de définir des étapes pour tous les cas qui ne satisfont pas aux critères définis dans les éléments de condition ou de branche.|  
 |**Condition d’attente**|Permet à un workflow d’arrière-plan de s’interrompre jusqu’à ce que les critères définis par la condition soient remplis. Le workflow redémarre automatiquement une fois que les critères de la condition d’attente sont remplis.<br /><br /> Les workflows en temps réel ne peuvent pas utiliser de conditions d’attente.|  

@@ -14,12 +14,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 137cfd02ef3ba41cc9fffacc0aa23dc88e31fcef
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 5f3e2145741c96d20f73ff74f5fd6cc6c1cbb52e
+ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690971"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "57462899"
 ---
 # <a name="classic-common-data-service-cds-for-apps-workflows"></a>Workflows Common Data Service (CDS) for Apps classiques 
 
@@ -74,7 +74,7 @@ Les développeurs peuvent créer des workflows à l’aide des informations cont
  ![Onglet Général dans un workflow](media/create-workflow-general-tab.PNG "Onglet Général dans un workflow")  
   
  **Activer en tant que**  
- Vous pouvez choisir **Modèle de processus** afin de créer un point de départ avancé pour d’autres modèles. Si vous choisissez cette option, après avoir activé le workflow, celui-ci n’est pas appliqué, mais est sélectionnable dans la boîte de dialogue **Créer un processus** si vous sélectionnez **Type** : **Nouveau processus à partir d’un modèle existant (sélection à partir d’une liste)**.  
+ Vous pouvez choisir **Modèle de processus** afin de créer un point de départ avancé pour d’autres modèles. Si vous choisissez cette option après avoir activé le workflow, celui-ci n’est pas appliqué, mais peut être sélectionné dans la boîte de dialogue **Créer un processus** si vous sélectionnez **Type** : **Nouveau processus à partir d’un modèle existant (sélection à partir d’une liste)**.  
   
  Les modèles de processus sont pratiques si vous avez de nombreux processus de workflow similaires et que vous souhaitez les définir sans dupliquer la même logique.  
   
@@ -103,7 +103,7 @@ Les développeurs peuvent créer des workflows à l’aide des informations cont
 >  Les tâches de workflow ne sont pas supprimées immédiatement quand elles s’achèvent, mais peu après, via un traitement par lots.  
   
  **Étendue**  
- Pour les entités appartenant à l’utilisateur, les options sont **Organisation**, **Divis. mère : sous-divisions**, **Division** ou **Utilisateur**. Pour les entités appartenant à l’organisation, la seule option est **Organisation**.  
+ Pour les entités appartenant à l’utilisateur, les options sont **Organisation**, **Divis. mère : sous-divisions**, **Division** ou **Utilisateur**. Pour les entités appartenant à l’organisation, la seule option est **Organisation**.  
   
  Si l’étendue est **Organisation**, la logique de workflow peut être appliquée à n’importe quel enregistrement dans l’organisation. Sinon, le workflow est uniquement applicable à un sous-ensemble d’enregistrements appartenant à l’étendue.  
   
@@ -111,7 +111,7 @@ Les développeurs peuvent créer des workflows à l’aide des informations cont
 >  La valeur d’étendue par défaut est **Utilisateur**. Vérifiez que la valeur d’étendue est appropriée avant d’activer le workflow.  
   
  **Démarrer quand**  
- Utilisez les options de cette section pour spécifier quand un workflow doit démarrer automatiquement. Vous pouvez configurer un workflow en temps réel afin qu’il s’exécute avant certains événements. Cette fonctionnalité est très puissante, car le workflow peut arrêter l’action avant qu’il ne se produise. Pour plus d’informations, consultez [Utilisation de workflows en temps réel](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Voici les options disponibles :  
+ Utilisez les options de cette section pour spécifier quand un workflow doit démarrer automatiquement. Vous pouvez configurer un workflow en temps réel afin qu’il s’exécute avant certains événements. Cette fonctionnalité est très puissante, car le workflow peut arrêter l’action avant qu’il ne se produise. Plus d’informations : [Utilisation de workflows en temps réel](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Voici les options disponibles :  
   
 - **L’enregistrement est créé**  
   
