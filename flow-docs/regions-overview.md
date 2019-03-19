@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4d8be06222a0ed64290772d168def85720877f28
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 32301a87c33e5586280d822df8f6c381dbbf96a9
+ms.sourcegitcommit: 3d0aecc89ed12b58f4b424c1c5a0654350f07d08
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689568"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57885158"
 ---
 # <a name="faq-for-regions-in-microsoft-flow"></a>FAQ sur les régions de Microsoft Flow
 Ce document fournit une liste de questions fréquemment posées sur Microsoft Flow.
@@ -45,6 +45,8 @@ Les administrateurs peuvent identifier la région s’ils se connectent au [cent
 * Inde
 * Japon
 * Canada
+* Amérique du Sud
+* Royaume-Uni
 
 ## <a name="what-features-are-specific-to-a-given-region"></a>Quelles fonctionnalités sont spécifiques à une région donnée ?
 Les environnements peuvent être créés dans différentes régions et sont liés à cet emplacement géographique. Lorsque vous créez un flux dans un environnement, ce flux est déployé dans les centres de données de cet emplacement géographique. Cela s’applique à tous les éléments que vous créez dans l’environnement, y compris les modèles de données courants, les flux, les connexions, les passerelles, les applications et les connecteurs personnalisés.
