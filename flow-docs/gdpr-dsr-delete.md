@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9edad8ef0aa4e51292bddc5dc59c90ae84223de2
-ms.sourcegitcommit: ade400bab38f85071d4c8bf6a5380f561f12f2f5
+ms.openlocfilehash: 523e46269522d50eebe34fc559d69f4c146a2c3f
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53248842"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353076"
 ---
 # <a name="responding-to-gdpr-data-subject-delete-requests-for-microsoft-flow"></a>Répondre aux requêtes de suppression RGPD d’une personne concernée pour Microsoft Flow
 
@@ -49,7 +49,7 @@ Le tableau suivant présente les données personnelles automatiquement supprimé
 
 *Chacune de ces ressources contient les enregistrements « Créé par » et « Modifié par » incluant des données personnelles. Pour des raisons de sécurité, ces enregistrements sont conservés jusqu'à ce que la ressource soit supprimée.
 
-**Pour les environnements qui incluent une base de données Common Data Service For Apps, les autorisations d’environnement (par exemple quels utilisateurs sont affectés aux rôles Créateur d’environnement et Administrateur) sont stockées sous forme d’enregistrements dans la base de données Common Data Service. Consultez la section [Exécution de demandes DSR avec des données client Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251) pour obtenir des conseils sur la façon de répondre aux demandes DSR pour les utilisateurs de Common Data Service.
+**Pour les environnements qui incluent une base de données Common Data Service, les autorisations d’environnement (par exemple quels utilisateurs sont affectés aux rôles Créateur d’environnement et Administrateur) sont stockées sous forme d’enregistrements dans la base de données Common Data Service. Consultez la section [Exécution de demandes DSR avec des données client Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251) pour obtenir des conseils sur la façon de répondre aux demandes DSR pour les utilisateurs de Common Data Service.
 
 Pour les données et ressources nécessitant une vérification manuelle, Microsoft Flow offre les expériences suivantes, qui permettent de rechercher ou de modifier les données personnelles d’un utilisateur spécifique :
 
@@ -76,7 +76,7 @@ Voici le détail des expériences disponibles permettant à un administrateur de
 |Autorisations des connecteurs personnalisés|Microsoft Flow Maker Portal| ||
 |Historique des approbations|Microsoft PowerApps Maker Portal*|||
 
-*Avec l’introduction de Common Data Service for Apps, si une base de données est créée dans l’environnement, les autorisations de cet environnement et les autorisations d’apps basées sur un modèle sont stockées sous forme d’enregistrements dans Common Data Service pour l’instance de base de données d’applications. Consultez la section [Exécution de demandes DSR avec des données client Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251) pour obtenir des conseils sur la façon de répondre aux demandes DSR pour les utilisateurs de Common Data Service.
+*Avec l’introduction de Common Data Service, si une base de données est créée dans l’environnement, les autorisations de cet environnement et les autorisations des applications basées sur des modèles sont stockées sous forme d’enregistrements dans l’instance de base de données Common Data Service. Consultez la section [Exécution de demandes DSR avec des données client Common Data Service](https://go.microsoft.com/fwlink/?linkid=872251) pour obtenir des conseils sur la façon de répondre aux demandes DSR pour les utilisateurs de Common Data Service.
 
 \*\* Un administrateur peut uniquement accéder à ces ressources depuis Microsoft Flow Maker Portal s’il en a reçu l’accès du Centre d’administration de Microsoft Flow.
 
@@ -137,7 +137,7 @@ Ces étapes copient des flux existants pour un utilisateur qui quitte l’organi
 
 ## <a name="delete-approval-history-from-microsoft-flow"></a>Supprimer l’historique des approbations de Microsoft Flow
 
- Les données d’approbation de Microsoft Flow sont stockées dans la version actuelle ou une version précédente de Common Data Service for Apps. Dans une approbation, les informations personnelles existent sous la forme d’attributions d’approbation, et des commentaires sont inclus dans une réponse d’approbation. Les administrateurs peuvent accéder à ces données en procédant comme suit :
+ Les données d’approbation de Microsoft Flow sont stockées dans la version actuelle ou une version précédente de Common Data Service. Dans une approbation, les informations personnelles existent sous la forme d’attributions d’approbation, et des commentaires sont inclus dans une réponse d’approbation. Les administrateurs peuvent accéder à ces données en procédant comme suit :
 
 1. Connectez-vous à [PowerApps](https://web.powerapps.com/).
 
@@ -277,7 +277,7 @@ Un administrateur peut accorder un accès Administrateur à un environnement cr�
 
 Les utilisateurs peuvent recevoir des autorisations (par exemple, Administrateur d’environnement, Créateur d’environnement Maker, etc.) dans un environnement, stockées dans le service Microsoft Flow sous la forme d’une « attribution de rôle ».
 
-Avec l’introduction de Common Data Service for Apps, si une base de données est créée dans l’environnement, ces « autorisations de rôle » sont stockées sous forme d’enregistrements dans Common Data Service pour l’instance de base de données d’applications.
+Avec l’introduction de Common Data Service, si une base de données est créée dans l’environnement, ces « autorisations de rôle » sont stockées sous forme d’enregistrements dans l’instance de base de données Common Data Service.
 
 Pour plus d’informations sur la suppression de l’autorisation d’un utilisateur dans un environnement, consultez la rubrique [Utilisation d’environnements dans Microsoft Flow](https://docs.microsoft.com/flow/environments-overview-admin).
 

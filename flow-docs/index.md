@@ -2,31 +2,25 @@
 layout: HubPage
 hide_bc: true
 title: Documentation sur Microsoft Flow | Microsoft Docs
-description: Microsoft Flow est un service qui vous aide à créer des workflows automatisés entre vos applications et services favoris pour synchroniser des fichiers, obtenir des notifications, collecter des données, et bien plus encore.
+description: 'Microsoft Flow est un service qui vous aide à créer des workflows automatisés entre vos applications et services favoris pour synchroniser des fichiers, obtenir des notifications, collecter des données, et bien plus encore.'
 keywords:
-- Microsoft Flow
-- workflow
-- flux
-- workflow d’approbation
-- workflow SharePoint
+  - Microsoft Flow
+  - workflow
+  - flux
+  - workflow d’approbation
+  - workflow SharePoint
 author: msftman
 ms.author: deonhe
 manager: kfile
 ms.date: 03/28/2018
 ms.topic: hub-page
 ms.reviewer:
-- karann-msft
+  - karann-msft
 search.app:
-- Flow
+  - Flow
 search.audienceType:
-- flowmaker
-- enduser
-ms.openlocfilehash: 03eebb10c1155894b9dc1db5a0283cd72d78a1ae
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711585"
+  - flowmaker
+  - enduser
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -428,12 +422,12 @@ ms.locfileid: "46711585"
                                     <div class="card">
                                         <div class="cardImageOuter">
                                             <div class="cardImage  bgdAccent1">
-                                                <img src="media/index/analytics_reporting.svg" alt="Use Common Data Service (CDS) for apps." />
+                                                <img src="media/index/analytics_reporting.svg" alt="Use Common Data Service." />
                                             </div>
                                         </div>
                                         <div class="cardText">
-                                            <h3>Utiliser Common Data Service (CDS) for Apps</h3>
-                                            <p>Utilisez Common Data Service (CDS) for Apps avec les processus de workflow.</p>
+                                            <h3>Utiliser Common Data Service</h3>
+                                            <p>Utilisez Common Data Service avec des processus de workflow.</p>
                                         </div>
                                     </div>
                                 </div>

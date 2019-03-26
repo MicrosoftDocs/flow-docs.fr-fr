@@ -1,5 +1,5 @@
 ---
-title: Utiliser des dialogues CDS for Apps pour les processus guidés (déprécié) | Microsoft Docs
+title: Utiliser des dialogues Common Data Service pour les processus guidés (déprécié) | Microsoft Docs
 description: Les dialogues sont les processus synchrones ou interactifs qui collectent et traitent des informations à l’aide de scripts pas à pas pour diriger les utilisateurs dans un processus
 ms.custom: ''
 ms.date: 10/31/2017
@@ -15,22 +15,22 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f8b2e87bdb9aed63e9f180d446349779cd37c25c
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 90bdbc0ecf9b778ec6da3e4cac2b32b44e361fb0
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689660"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352915"
 ---
-# <a name="use-cds-for-apps-dialogs-for-guided-processes-deprecated"></a>Utiliser des dialogues CDS for Apps pour les processus guidés (déprécié)
+# <a name="use-common-data-service-dialogs-for-guided-processes-deprecated"></a>Utiliser des dialogues Common Data Service pour les processus guidés (déprécié)
 
-[Les dialogues sont dépréciés](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). Vous devez remplacer les dialogues par des flux de processus métier ou des applications de canevas. Pour plus d’informations, consultez [Remplacer les dialogues par des flux de processus métier ou des applications de canevas](replace-dialogs.md). 
+[Les dialogues sont dépréciés](/dynamics365/get-started/whats-new/customer-engagement/important-changes-coming#dialogs-are-deprecated). Vous devez remplacer les dialogues par des flux de processus métier ou des applications de canevas. Plus d’informations : [Remplacer les dialogues par des flux de processus métier ou des applications de canevas](replace-dialogs.md) 
 
-Les dialogues sont les processus synchrones ou interactifs dans Common Data Service (CDS) for Apps qui collectent et traitent des informations à l’aide de scripts pas à pas pour diriger les utilisateurs dans un processus Par exemple, vous pouvez créer des dialogues destinés à guider vos conseillers du service clientèle dans la résolution et le signalement d’incidents. De même, vous pouvez créer des dialogues pour standardiser les processus de vente tels que la qualification d’opportunité et la notation des prospects. Pour plus d’informations, consultez [Utiliser des dialogues pour les processus guidés](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) dans le Guide du développeur Dynamics 365 for Customer Engagement.
+Les dialogues sont les processus synchrones ou interactifs dans Common Data Service qui collectent et traitent des informations à l’aide de scripts pas à pas pour diriger les utilisateurs dans un processus Par exemple, vous pouvez créer des dialogues destinés à guider vos conseillers du service clientèle dans la résolution et le signalement d’incidents. De même, vous pouvez créer des dialogues pour standardiser les processus de vente tels que la qualification d’opportunité et la notation des prospects. Pour plus d’informations, consultez [Utiliser des dialogues pour les processus guidés](/dynamics365/customer-engagement/developer/use-dialogs-guided-processes) dans le Guide du développeur Dynamics 365 for Customer Engagement.
 
 ## <a name="differences-between-workflows-and-dialogs"></a>Différences entre workflows et dialogues
 
-Le tableau suivant compare les dialogues et les workflows CDS for Apps.  
+Le tableau suivant compare les dialogues et les workflows Common Data Service.  
 
 
 | Workflows     |    Dialogues      |

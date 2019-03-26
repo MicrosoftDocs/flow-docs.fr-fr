@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: ef3f6c98d16733977482c5cb3c0c23e168f5eeca
-ms.sourcegitcommit: 8debf0041094f32fa221f5da3dbbcbc4f7815ff8
+ms.openlocfilehash: 6e05c24aa00c29dff4ca07432277ca7b907ebbb0
+ms.sourcegitcommit: e17963065b72ddaba7b2605908c62768acb8c16c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56885501"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58327087"
 ---
 # <a name="flow-in-your-organization-qa"></a>Questions et réponses sur Microsoft Flow dans votre organisation
 Cette rubrique décrit comment les utilisateurs de votre organisation peuvent utiliser Flow, et comment vous pouvez contrôler le service Microsoft Flow.
@@ -38,7 +38,7 @@ Microsoft Flow est un service cloud public conçu pour aider les utilisateurs et
 Les utilisateurs disposent de deux méthodes pour s’inscrire à Microsoft Flow par le biais du portail web :
 
 #### <a name="option-1"></a>Option 1
-Les utilisateurs peuvent s’inscrire en accédant à [flow.microsoft.com](https://flow.microsoft.com), en sélectionnant **Inscrivez-vous gratuitement**, puis en terminant le processus d’inscription à Microsoft Flow sur [portal.office.com](https://portal.office.com/Start?sku=flow_free) ou [signup.live.com](https://signup.live.com).
+Les utilisateurs peuvent s’inscrire en accédant à [flow.microsoft.com](https://flow.microsoft.com), en sélectionnant **Inscrivez-vous gratuitement**, puis en effectuant le processus d’inscription à Microsoft Flow sur [admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free) ou [signup.live.com](https://signup.live.com).
 
 #### <a name="option-2"></a>Option 2
 Les utilisateurs peuvent s’inscrire en accédant à [flow.microsoft.com](https://flow.microsoft.com), en sélectionnant **Se connecter**, en se connectant à l’aide de leur compte professionnel, scolaire ou personnel et en acceptant les conditions d’utilisation de Microsoft Flow.    
@@ -147,7 +147,7 @@ Si un locataire a été créé par Microsoft Flow, vous pouvez revendiquer et g�
 1. Rejoignez le locataire en vous inscrivant à Microsoft Flow à l’aide d’un domaine d’adresse électronique identique au domaine du locataire que vous souhaitez gérer. Par exemple, si Microsoft a créé le locataire contoso.com, vous devez rejoindre le locataire en utilisant une adresse électronique se terminant par @contoso.com.
 2. Revendiquez le contrôle d’administration en vérifiant la propriété du domaine : une fois dans le locataire, vous pouvez prendre le rôle d’administrateur en vérifiant la propriété du domaine. Pour cela, procédez comme suit :    
    
-   1. Accédez à [https://portal.office.com](https://portal.office.com/Start?sku=flow_free).
+   1. Accédez à [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
    2. Sélectionnez l’icône de lancement d’application dans le coin supérieur gauche et cliquez sur Administrateur.
    3. Lisez les instructions de la page **Become the admin** (Devenir l’administrateur), puis choisissez **Yes, I want to be the admin** (Oui, je souhaite être l’administrateur).  
       

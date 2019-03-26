@@ -1,6 +1,6 @@
 ---
-title: Les flux sont maintenant stockées dans Common Data Service for Apps et utilisent l’API web riche
-description: Les flux sont maintenant stockées dans Common Data Service for Apps et utilisent l’API web riche.
+title: Les flux sont maintenant stockés dans Common Data Service et utilisent l’API web avancée
+description: Les flux sont maintenant stockés dans Common Data Service et utilisent l’API web avancée.
 author: stepsic-microsoft-com
 ms.reviewer: deonhe
 ms.date: 03/05/2019
@@ -10,16 +10,16 @@ ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: 111fb191c6963e02d7bf54b419fd7088ce7605fc
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.openlocfilehash: ede20606d1d5ba2a97217dfbcfb3c9fffec2c017
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57463006"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353053"
 ---
 # <a name="microsoft-flow-web-api"></a>API web Microsoft Flow
 
-À l’avenir, tous les flux seront stockés dans Common Data Service (CDS) pour Apps et exploiteront l’[API Web avancée](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/perform-operations-web-api).
+À l’avenir, tous les flux seront stockés dans Common Data Service et tireront parti de l’[API Web avancée](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
 Ce contenu traite de la gestion des flux inclus sur l’onglet **Solutions** dans Microsoft Flow. Actuellement, les flux sous **Mes flux** ne sont pas pris en charge par ces API.
 
@@ -52,7 +52,7 @@ Vous pouvez aussi obtenir par programmation la liste des instances disponibles v
 
 Les en-têtes `Accept` et `Content-type` de chaque requête faite à l’API Web doivent être définis sur `application/json`.
 
-Enfin, remplissez l’en-tête `Authorization` avec un jeton du porteur Azure AD. Vous pouvez [apprendre](https://docs.microsoft.com/dynamics365/customer-engagement/developer/authenticate-users) à acquérir un jeton du porteur Azure AD pour CDS for Apps. Par exemple, cette requête :
+Enfin, remplissez l’en-tête `Authorization` avec un jeton du porteur Azure AD. Vous pouvez [apprendre](https://docs.microsoft.com/powerapps/developer/common-data-service/authenticate-oauth) à acquérir un jeton du porteur Azure AD pour Common Data Service. Par exemple, cette requête :
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows
@@ -79,7 +79,7 @@ La réponse contient la liste des flux provenant de cet environnement :
         "_modifiedby_value": "00000000-0000-0000-0000-000000000003",
         "_createdby_value": "00000000-0000-0000-0000-000000000003",
         "type": 1,
-        "description": "This flow updates some data in CDS for Apps.",
+        "description": "This flow updates some data in Common Data Service.",
         "clientdata": "{\"properties\":{\"connectionReferences\":{\"shared_commondataservice\":{\"source\":\"NotSpecified\",\"id\":\"/providers/Microsoft.PowerApps/apis/shared_commondataservice\",\"tier\":\"NotSpecified\"}},\"definition\":{...}},\"schemaVersion\":\"1.0.0.0\"}"
     }]
 }
@@ -91,22 +91,22 @@ Comme indiqué ci-dessus, vous pouvez obtenir la liste des flux de travail en ap
 
 | Nom de la propriété     | Description                                              |
 | ----------------- | -------------------------------------------------------- |
-| Catégorie          | Catégorie du flux. Les différents types sont : 0 - Workflows CDS for Apps classiques Apps, 1 - Boîtes de dialogue CDS for Apps classiques, 2 - règles d’entreprise, 3 - Actions CDS for Apps classiques, 4 - flux de processus métier et 5 - flux automatisés, instantanés ou planifiés. |
+| Catégorie          | Catégorie du flux. Les différents types sont : 0 - workflows Common Data Service classiques, 1 - dialogues Common Data Service classiques, 2 - règles métier, 3 - actions Common Data Service classiques, 4 - flux de processus métier et 5 - flux automatisés, instantanés ou planifiés. |
 | statecode         | L’état du flux. L’état peut être **0** - désactivé ou **1** - activé.|
 | workflowuniqueid  | Identificateur unique de cette installation du flux. |
 | workflowid        | Identificateur unique d’un flux pour toutes les importations. |
 | createdon         | Date de création du flux. |
-| _ownerid_value    | Identificateur unique de l’utilisateur ou de l’équipe propriétaire du flux. Il s’agit d’un ID de l’entité systemusers dans CDS for Apps. |
+| _ownerid_value    | Identificateur unique de l’utilisateur ou de l’équipe propriétaire du flux. Il s’agit d’un ID de l’entité systemusers dans Common Data Service. |
 | modifiedon        | Dernière mise à jour du flux. |
 | ismanaged         | Indique si le flux a été installé via une solution managée. |
 | name              | Nom complet que vous avez donné au flux. |
-| _modifiedby_value | Dernier utilisateur ayant mis à jour le flux. Il s’agit d’un ID de l’entité systemusers dans CDS for Apps. |
-| _createdby_value  | Utilisateur ayant créé le flux. Il s’agit d’un ID de l’entité systemusers dans CDS for Apps. |
+| _modifiedby_value | Dernier utilisateur ayant mis à jour le flux. Il s’agit d’un ID de l’entité systemusers dans Common Data Service. |
+| _createdby_value  | Utilisateur ayant créé le flux. Il s’agit d’un ID de l’entité systemusers dans Common Data Service. |
 | type              | Indique si le flux est en cours d’exécution, ou s’il s’agit d’un modèle pouvant être utilisé pour créer des flux supplémentaires. 1 - flux, 2 - activation ou 3 - modèle. |
 | description       | Description du flux donnée par l’utilisateur. |
 | clientdata        | Une chaîne encodée JSON d’un objet qui contient l’élément connectionReferences et la définition du flux. |
 
-Vous pouvez aussi interroger des propriétés spécifiques, filtrer la liste des flux et bien plus encore, comme décrit dans la [documentation sur l’API CDS for Apps pour interroger des données](https://docs.microsoft.com/dynamics365/customer-engagement/developer/webapi/query-data-web-api). Par exemple, cette requête retourne uniquement les flux automatisés, instantanés ou planifiés qui sont actuellement activés :
+Vous pouvez aussi interroger des propriétés spécifiques, filtrer la liste des flux et bien plus encore, comme décrit dans la [documentation sur l’API Common Data Service pour interroger des données](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/query-data-web-api). Par exemple, cette requête retourne uniquement les flux automatisés, instantanés ou planifiés qui sont actuellement activés :
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/workflows?$filter=category eq 5 and statecode eq 1
@@ -130,7 +130,7 @@ Content-type: application/json
         "statecode": 0,
         "name": "Sample flow name",
         "type": 1,
-        "description": "This flow reads some data from CDS for Apps.",
+        "description": "This flow reads some data from Common Data Service.",
         "primaryentity":"none",
         "clientdata": "{\"properties\":{\"connectionReferences\":{\"shared_commondataservice\":{\"connectionName\":\"shared-commondataser-00000000-0000-0000-0000-000000000004\",\"source\":\"Invoker\",\"id\":\"/providers/Microsoft.PowerApps/apis/shared_commondataservice\"}},\"definition\":{\"$schema\": \"https:\/\/schema.management.azure.com\/providers\/Microsoft.Logic\/schemas\/2016-06-01\/workflowdefinition.json#\",\"contentVersion\": \"1.0.0.0\",\"parameters\": {\"$connections\": {\"defaultValue\": {},\"type\": \"Object\"},\"$authentication\": {\"defaultValue\": {},\"type\": \"SecureObject\"}},\"triggers\": {\"Recurrence\": {\"recurrence\": {\"frequency\": \"Minute\",\"interval\": 1},\"type\": \"Recurrence\"}},\"actions\": {\"List_records\": {\"runAfter\": {},\"metadata\": {\"flowSystemMetadata\": {\"swaggerOperationId\": \"GetItems_V2\"}},\"type\": \"ApiConnection\",\"inputs\": {\"host\": {\"api\": {\"runtimeUrl\": \"https:\/\/firstrelease-001.azure-apim.net\/apim\/commondataservice\"},\"connection\": {\"name\": \"@parameters('$connections')['shared_commondataservice']['connectionId']\"}},\"method\": \"get\",\"path\": \"\/v2\/datasets\/@{encodeURIComponent(encodeURIComponent('default.cds'))}\/tables\/@{encodeURIComponent(encodeURIComponent('accounts'))}\/items\",\"queries\": {\"$top\": 1},\"authentication\": \"@parameters('$authentication')\"}}},\"outputs\": {}}},\"schemaVersion\":\"1.0.0.0\"}"
 }
@@ -193,7 +193,7 @@ Authorization: Bearer ey...
 
 ## <a name="get-all-users-with-whom-a-flow-is-shared"></a>Obtenir tous les utilisateurs avec qui un flux est partagé
 
-Pour répertorier les utilisateurs avec un accès, vous utilisez une *fonction* dans CDS for Apps. Cette fonction prend un paramètre unique de `Target` :
+Pour lister les utilisateurs avec un accès, utilisez une *fonction* dans Common Data Service. Cette fonction prend un paramètre unique de `Target` :
 
 ```http
 GET https://org00000000.crm0.dynamics.com/api/data/v9.1/RetrieveSharedPrincipalsAndAccess(Target=@tid)?@tid={'@odata.id':'workflows(00000000-0000-0000-0000-000000000002)'}
@@ -310,8 +310,8 @@ Appelez l’action `ImportSolution` pour importer une solution.
 
 | Nom de la propriété                    | Description                               |
 | -------------------------------- | ----------------------------------------- |
-| OverwriteUnmanagedCustomizations | S’il y a des instances de ces flux dans CDS for Apps, cet indicateur doit être défini sur `true` pour les importer. Sinon, elles ne seront pas remplacées. |
-| PublishWorkflows                 | Indique si des flux de travail CDS for Apps classiques seront activés lors de l’importation. Ce paramètre ne s’applique pas à d’autres types de flux. |
+| OverwriteUnmanagedCustomizations | S’il y a des instances de ces flux dans Common Data Service, cet indicateur doit être défini sur `true` pour les importer. Sinon, elles ne seront pas remplacées. |
+| PublishWorkflows                 | Indique si des flux de travail Common Data Service classiques seront activés lors de l’importation. Ce paramètre ne s’applique pas à d’autres types de flux. |
 | ImportJobId                      | Fournit une nouvelle et unique interface graphique utilisateur pour suivre la tâche d’importation. |
 | CustomizationFile                | Un fichier zip de base encodé 64 contenant la solution. |
 

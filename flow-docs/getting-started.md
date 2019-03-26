@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bb623e84f309303557d05d82422d2419f8d3ccbe
-ms.sourcegitcommit: 300829df88dfa1d0049ea506f949b29d6bd52e42
+ms.openlocfilehash: 9ab3594f540129eb9caf8900c87420c08c1f7037
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57251811"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352993"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Prise en main de Microsoft Flow #
 
@@ -35,7 +35,7 @@ Bienvenue ! Microsoft Flow est un service qui vous aide à créer des workflows
 
 Les principaux types de flux sont les flux [automatisés](get-started-logic-flow.md), de [bouton](introduction-to-button-flows.md), [planifiés](run-scheduled-tasks.md) et de [processus métier](business-process-flows-overview.md).
 
-Si vous êtes personnalisateur Dynamics 365 Customer Engagement, vous pouvez également être familiarisé avec les processus Common Data Service for Apps classiques qui incluent les [workflows](configure-workflow-steps.md), les [actions](create-actions.md), les [flux de tâches mobiles](create-mobile-task-flow.md) et les [dialogues](use-cds-for-apps-dialogs.md).
+Si vous êtes personnalisateur Dynamics 365 Customer Engagement, vous êtes peut-être aussi familiarisé avec les processus Common Data Service classiques qui incluent les [workflows](configure-workflow-steps.md), les [actions](create-actions.md), les [flux de tâches mobiles](create-mobile-task-flow.md) et les [dialogues](use-cds-for-apps-dialogs.md).
 
 La première étape consiste à vous [inscrire](sign-up-sign-in.md), ou, si vous avez déjà un compte Microsoft Flow, [connectez-vous](https://flow.microsoft.com/signin) sur votre tablette, votre ordinateur de bureau ou même votre téléphone.
 

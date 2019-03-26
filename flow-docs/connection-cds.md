@@ -1,6 +1,6 @@
 ---
-title: Créer un flux automatisé avec Common Data Service for Apps | Microsoft Docs
-description: Créer des workflows à l’aide d’une connexion Common Data Service for Apps et Microsoft Flow
+title: Créer un flux automatisé avec Common Data Service | Microsoft Docs
+description: Créer des workflows à l’aide d’une connexion Common Data Service et Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,18 +20,18 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f9a417f99b6ea4105a451b65f7ccabbf36922d78
-ms.sourcegitcommit: 61f0eb1fdc54da02eb57dadf09899fa6f308b00d
+ms.openlocfilehash: 6dba013481983d0b8c43c82c7bc6eed800fccc2e
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57524494"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352892"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service-for-apps"></a>Créer un flux automatisé à l’aide de Common Data Service for Apps
+# <a name="create-an-automated-flow-by-using-common-data-service"></a>Créer un flux automatisé à l’aide de Common Data Service
 
-Avec le connecteur Common Data Service for Apps, vous pouvez créer des flux qui sont démarrés par des événements de création et de mise à jour dans votre base de données Common Data Service. De plus, vous pouvez effectuer des actions de création, de mise à jour, de récupération et de suppression sur des enregistrements de la base de données Common Data Service for Apps.
+Avec le connecteur Common Data Service, vous pouvez créer des flux qui sont démarrés par des événements de création et de mise à jour dans votre base de données Common Data Service. De plus, vous pouvez effectuer des actions de création, de mise à jour, de récupération et de suppression sur des enregistrements de la base de données Common Data Service.
 
-## <a name="initiate-a-flow-from-common-data-service-for-apps"></a>Démarrer un flux à partir de Common Data Service for Apps
+## <a name="initiate-a-flow-from-common-data-service"></a>Démarrer un flux à partir de Common Data Service
 
 Vous pouvez utiliser n’importe lequel des déclencheurs suivants pour démarrer votre flux :
 
@@ -75,9 +75,9 @@ Ce flux se déclenche dès que le premier ou le dernier nom de contact détenu p
 
 Pour créer un flux qui se déclenche suite à une action de création, de mise à jour ou de suppression sur un enregistrement, l’utilisateur doit disposer d’autorisations de niveau utilisateur pour effectuer des opérations de création, de lecture, d’écriture et de suppression sur l’entité d’inscription de rappel. De plus, en fonction des étendues définies, l’utilisateur peut devoir disposer au moins de ce niveau de lecture sur la même entité.  [Découvrez des informations supplémentaires](https://docs.microsoft.com/power-platform/admin/database-security) sur la sécurité des environnements.
 
-## <a name="write-data-into-common-data-service-for-apps"></a>Écrire des données dans Common Data Service for Apps
+## <a name="write-data-into-common-data-service"></a>Écrire des données dans Common Data Service
 
-Pour écrire des données dans Common Data Service for Apps, utilisez l’une des actions suivantes :
+Pour écrire des données dans Common Data Service, utilisez l’une des actions suivantes :
 
 - Créer un enregistrement
 - Mettre à jour un enregistrement

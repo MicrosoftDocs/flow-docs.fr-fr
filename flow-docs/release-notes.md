@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: db8a8c99344b93ad981a26d5174e99385d2a3f82
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
+ms.openlocfilehash: 392a869d6b25bb16ee02a6bb3373d6edcf81621b
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905743"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58353145"
 ---
 # <a name="release-notes"></a>Notes de publication
 ## <a name="top-questions"></a>Principales questions
@@ -96,7 +96,7 @@ Le programme d’évaluation de Microsoft Flow permet d’obtenir un accès en a
 ### <a name="release-2018-07-23"></a>Version 23-07-2018
 
 - **Générer et exécuter des flux à partir d’Excel** : avec le nouveau bouton **Flux** (accessible à partir de l’onglet **Données** du ruban), vous pouvez créer et déclencher des automatisations à partir de Microsoft Flow sur vos données de table dans Excel. Automatisez le traitement des données ou la copie/l’importation de données.
-- **Créer un flux de processus d’entreprise** : un flux de processus d’entreprise est un nouveau type de flux interactif avec état basé sur Common Data Service for Apps. Ces nouveaux flux permettent de définir un ensemble de phases et d’étapes que les utilisateurs peuvent suivre. Ils peuvent revenir en arrière ou avancer en fonction de leurs besoins.
+- **Créer un flux de processus métier** : un flux de processus métier est un nouveau type de flux interactif avec état basé sur Common Data Service. Ces nouveaux flux permettent de définir un ensemble de phases et d’étapes que les utilisateurs peuvent suivre. Ils peuvent revenir en arrière ou avancer en fonction de leurs besoins.
 - **Créer un flux pour Microsoft To-Do dans Outlook Web App** : si une personne est \@mentionnée dans Outlook Web App, un raccourci s’affiche pour lui permettre de créer un flux. Ce flux crée automatiquement des tâches pour la \@personne mentionnée dans Microsoft To-Do, en fonction du contenu de l’e-mail.
 - **Prise en charge de la vue SharePoint** : le connecteur SharePoint prend désormais en charge la sélection d’une vue SharePoint spécifique sur les déclencheurs et actions. Cela permet de filtrer les colonnes sur uniquement les champs qui se trouvent dans la vue sélectionnée.
 - **Quatre nouveaux connecteurs** : Azure IoT Central, une solution SaaS IoT hautement évolutive, ajouté, ainsi que Survey 123, LMS365 et ProjectWise Design Integration.
@@ -151,7 +151,7 @@ Le programme d’évaluation de Microsoft Flow permet d’obtenir un accès en a
 
 ### <a name="release-2018-04-04"></a>Version 04-04-2018
 
-- **Approbations sur Common Data Service** - Les approbations modernes reposent sur la version la plus récente de Common Data Service for Apps. Cela signifie que vous pouvez créer des flux qui lisent l’état des approbations que vous envoyez ou recevez avec le connecteur CDS.
+- **Approbations sur Common Data Service** - Les approbations modernes reposent sur la version la plus récente de Common Data Service. Cela signifie que vous pouvez créer des flux qui lisent l’état des approbations que vous envoyez ou recevez avec le connecteur Common Data Service.
 - **Recherche des erreurs dans apply to each** - Accédez directement aux erreurs dans les boucles dans la vue d’exécution de flux, même si des centaines d’éléments sont dans la boucle.
 - **Réaffectation des approbations** - Vous pouvez affecter une approbation que vous recevez à une autre personne de votre organisation pour lui déléguer l’approbation. 
 - **Listes des salles** - Le connecteur Outlook Office 365 a ajouté des actions pour obtenir des données de salle de votre organisation.

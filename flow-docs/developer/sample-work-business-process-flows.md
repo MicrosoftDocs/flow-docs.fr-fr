@@ -18,24 +18,24 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 6fe2b6d600d86dfd807dbb1ef794a1f428f26fbf
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6f3543b666e471d1f7fa0fe24fc718e50d35aec8
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690051"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352961"
 ---
 # <a name="sample-work-with-business-process-flows"></a>Exemple : Utiliser des flux de processus métier
 
 Cet exemple montre comment utiliser par programmation des flux de processus métier tels que la récupération d’instances de flux de processus métier pour un enregistrement d’entité, la récupération du chemin d’accès actif d’une instance de flux de processus métier et de ses phases de processus et le changement de phase active. Pour plus d’informations sur ces concepts, consultez [Utiliser des flux de processus métier à l’aide de code](business-process-flows-code.md).  
 
- Vous pouvez télécharger cet exemple à partir de la page [Exemple : Utiliser des flux de processus métier](https://go.microsoft.com/fwlink/p/?LinkId=846108).  
+ Cet exemple est disponible en téléchargement depuis l’[exemple : Utiliser des flux de processus métier](https://go.microsoft.com/fwlink/p/?LinkId=846108).  
 
 <a name="BKMK_Prerequisites"></a>   
 ## <a name="prerequisites"></a>Prérequis  
  Avant d’exécuter l’exemple :  
 
-1. Vous devez avoir accès à un environnement Common Data Service for Apps.  
+1. Vous devez avoir accès à un environnement Common Data Service.  
 
 2. Vous devez disposer des privilèges appropriés sur les entités Prospect, Opportunité et Workflow et sur les enregistrements d’entité de définition de flux de processus métier utilisés dans cet exemple.  
 
@@ -70,7 +70,7 @@ Cet exemple montre comment utiliser par programmation des flux de processus mét
 
 2. Recherchez le fichier `WorkWithBPF.sln` dans votre dossier d’extraction, puis ouvrez-le dans Visual Studio.  
 
-3. L’exemple de projet utilise des packages NuGet qui doivent être restaurés avant que l’exemple ne soit exécuté. Vérifiez que la restauration automatique de packages NuGet est activée dans Visual Studio. Pour plus d’informations, consultez [Activation et désactivation de la restauration des packages NuGet](https://go.microsoft.com/fwlink/?linkid=846106).  
+3. L’exemple de projet utilise des packages NuGet qui doivent être restaurés avant que l’exemple ne soit exécuté. Vérifiez que la restauration automatique de packages NuGet est activée dans Visual Studio. Plus d’informations : [Activation et désactivation de la restauration des packages NuGet](https://go.microsoft.com/fwlink/?linkid=846106)  
 
     Vous pouvez également sélectionner **Projet** > **Gérer les Packages NuGet**, puis sélectionner **Restaurer** pour restaurer manuellement les packages utilisés dans l’exemple.  
 
