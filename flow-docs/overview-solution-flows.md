@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 2515b64629436ccb96de497eaf928b83f281dc5f
-ms.sourcegitcommit: b41b45f6fa29a22e9a9a4d3c726a2321b2ff3cbf
+ms.openlocfilehash: 8b0e64317b868dc32ede173329fa2f88ed53de76
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025637"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352990"
 ---
 # <a name="overview"></a>Présentation
 
@@ -40,7 +40,7 @@ Les flux créés au sein d’une solution sont appelés flux *basés sur une sol
 
 Pour créer des solutions et des flux basés sur une solution, vous avez besoin des composants suivants :
 
-- [Common Data Service for Apps 2.0](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
+- [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
 - Environnement avec la version 9.1.0.267 ou ultérieure.
 
   Pour vérifier votre version, accédez au [Centre d’administration de Microsoft Flow](https://admin.flow.microsoft.com), sélectionnez **Environnements**, sélectionnez l’environnement souhaité, puis sélectionnez l’onglet **Détails**.
