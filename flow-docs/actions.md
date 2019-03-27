@@ -17,12 +17,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7d75332f8902d5889881d122f2d42e3c203e34ad
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
+ms.openlocfilehash: cf5c0e488f1d01c514f509b9d2a8afae265cf487
+ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462737"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58352869"
 ---
 # <a name="use-actions"></a>Utiliser des actions
 
@@ -39,7 +39,7 @@ Les actions donnent la possibilité de définir un verbe unique (ou message) qui
 <a name="BKMK_GlobalMessages"></a>   
 ## <a name="global-messages"></a>Messages globaux 
  
- Contrairement aux [plug-ins](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in) ou workflows CDS for Apps, une action n’a pas besoin d’être associée à une entité spécifique. Vous pouvez définir des actions « globales » qui peuvent être appelées toutes seules.
+ Contrairement aux [plug-ins](/powerapps/developer/common-data-service/apply-business-logic-with-code?branch=master#create-a-plug-in) ou workflows Common Data Service, une action n’a pas besoin d’être associée à une entité spécifique. Vous pouvez définir des actions « globales » qui peuvent être appelées toutes seules.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
