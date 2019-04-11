@@ -459,7 +459,7 @@ Si la langue initialisée n’est pas listée, Flow utilise par défaut la langu
 | Code de langue     | Langue                   | 
 |------------|----------------------------| 
 | bg-bg      | Bulgare (Bulgarie)       | 
-| ca-es      | Catalan (Espagne)            | 
+| ca-es      | "catalan" (Catalan)            | 
 | cs-cz      | Tchèque (République tchèque)     | 
 | da-dk      | Danois (Danemark)           | 
 | de-de      | Allemand (Allemagne)           | 
@@ -467,7 +467,7 @@ Si la langue initialisée n’est pas listée, Flow utilise par défaut la langu
 | en-Us      | Anglais (États-Unis)    | 
 | es-es      | Espagnol (Castillan)        | 
 | et-ee      | Estonien (Estonie)         | 
-| eu-es      | Basque (Espagne)             | 
+| eu-es      | "basque" (Basque)             | 
 | fi-fi      | Finnois (Finlande)          | 
 | fr-fr      | Français (France)            | 
 | gl-es      | Galicien (Espagne)           | 
