@@ -57,23 +57,23 @@ Facilitez la lecture de votre texte en l’espaçant à l’aide de paragraphes 
    
 **Exemple**
 
-Ajoutez des lignes entre votre texte à l’aide de la touche Entrée.
-Vous aérez ainsi votre texte et le rendez plus facile à lire.
+Add lines between your text with the Enter key.
+This spaces your text better and makes it easier to read.
 
 **Résultat :**   
-Ajoutez des lignes entre votre texte à l’aide de la touche Entrée.      
-Vous aérez ainsi votre texte et le rendez plus facile à lire.
+Add lines between your text with the Enter key.      
+This spaces your text better and makes it easier to read.
 
 
 **Exemple 2**
 
-Insérez deux espaces avant la fin de la ligne.(espace, espace)     
-Vous ajoutez ainsi un espace entre deux paragraphes.
+Add two spaces prior to the end of the line.(space, space)     
+This adds space in between paragraphs.
 
 **Résultat :**  
-Insérez deux espaces avant la fin de la ligne.   
+Add two spaces prior to the end of the line.   
 
-Vous ajoutez ainsi un espace entre deux paragraphes.
+This adds space in between paragraphs.
   
 
 ## <a name="lists"></a>Listes
@@ -94,9 +94,9 @@ Les listes triées commencent par un numéro, suivi d’un point pour chaque él
 
 **Résultat :**
 
-1. Premier élément.
-2. Deuxième élément.
-3. Troisième élément.
+1. First item.
+2. Second item.
+3. Third item.
 
 ### <a name="bullet-lists"></a>Listes à puces
 
@@ -112,9 +112,9 @@ Les listes triées commencent par un numéro, suivi d’un point pour chaque él
 
 **Résultat :**
 
-- Élément 1
-- Élément 2
-- Élément 3
+- Item 1
+- Item 2
+- Item 3
 
 ### <a name="nested-lists"></a>Listes imbriquées
 
@@ -134,15 +134,15 @@ Les listes triées commencent par un numéro, suivi d’un point pour chaque él
 
 **Résultat :**  
 
-1. Premier élément.
+1. First item.
 
-    - Élément 1
-    - Élément 2
-    - Élément 3
-2. Deuxième élément.
-    - Élément imbriqué 1
-    - Élément imbriqué 2
-    - Élément imbriqué 3
+    - Item 1
+    - Item 2
+    - Item 3
+2. Second item.
+    - Nested item 1
+    - Nested item 2
+    - Nested item 3
 
 
 ## <a name="links"></a>Liens
@@ -212,10 +212,10 @@ Organisez les données structurées à l’aide de tableaux.
 
 **Résultat :**  
 
-| Titre 1 | Titre 2 | Titre 3 |  
+| Heading 1 | Heading 2 | Heading 3 |  
 |-----------|:---------:|-----------:|  
-| Cellule A1 | Cellule A2 | Cellule A3 |  
-| Cellule B1 | Cellule B2 | Cellule B3<br/>seconde ligne de texte |  
+| Cell A1 | Cell A2 | Cell A3 |  
+| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Accentuation (gras, italique, barré)  
@@ -239,9 +239,9 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 **Résultat :**
 
-Utilisez l’_accentuation_ dans des commentaires pour exprimer un avis **fort** et signaler des <s>corrections</s>   
-**_Texte en gras et italique_**   
-**~~Texte en gras et barré~~**  
+Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
+**_Bold, italicized text_**   
+**~~Bold, strike-through text~~**  
 
 
 ## <a name="special-characters"></a>Caractères spéciaux
