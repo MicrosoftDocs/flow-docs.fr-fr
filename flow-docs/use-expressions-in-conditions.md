@@ -6,26 +6,24 @@ suite: flow
 documentationcenter: na
 author: msftman
 manager: anneta
-editor: ''
-tags: ''
 ms.service: flow
 ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/01/2017
+ms.date: 04/15/2019
 ms.author: deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 81aa718837fa14615459f3688a282c25cb99bab6
-ms.sourcegitcommit: dc188618c36583b20af3e838d72bd7b020575d7d
+ms.openlocfilehash: d6ad21cace7643abeb19de185c247f17ec9a2b35
+ms.sourcegitcommit: dfd9b4994aa9cb877ac4136460e011a344e27cb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48874434"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59614531"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Utiliser des expressions dans des conditions pour vérifier plusieurs valeurs
 Dans cette procédure pas à pas, vous allez apprendre à utiliser des expressions et **conditions** pour comparer plusieurs valeurs en **mode Avancé**.
@@ -36,13 +34,13 @@ Vous pouvez utiliser n’importe quelle combinaison parmi les expressions logiqu
 
 Expression|Description|Exemple
 --------|-----------|-------
-|[and](#use-the-and-expression)|Accepte deux arguments et retourne la valeur true si les deux valeurs sont true.<br><b>Remarque</b> : les deux arguments doivent être des valeurs booléennes.|Cette expression retourne la valeur false : <br>and(greater(1,10),equals(0,0))
-|[or](#use-the-or-expression)|Accepte deux arguments et retourne la valeur true si un des arguments a la valeur true. <br><b>Remarque</b> : les deux arguments doivent être des valeurs booléennes.|Cette expression retourne la valeur true :<br>or(greater(1,10),equals(0,0))
+|[and](#use-the-and-expression)|Accepte deux arguments et retourne la valeur true si les deux valeurs sont true.<br><b>Remarque</b> : Les deux arguments doivent être des valeurs booléennes.|Cette expression retourne la valeur false : <br>and(greater(1,10),equals(0,0))
+|[or](#use-the-or-expression)|Accepte deux arguments et retourne la valeur true si un des arguments a la valeur true. <br><b>Remarque</b> : Les deux arguments doivent être des valeurs booléennes.|Cette expression retourne la valeur true :<br>or(greater(1,10),equals(0,0))
 |equals|Retourne true si les deux valeurs sont égales.|Par exemple, si parameter1 est someValue, cette expression retourne true :<br>equals(parameters('parameter1'), 'someValue')
-|[less](#use-the-less-expression)|Accepte deux arguments et retourne la valeur true si le premier argument est inférieur au deuxième argument. <br><b>Remarque</b> : les types pris en charge sont integer, float et string.|Cette expression retourne la valeur true :<br>less(10,100)
-|lessOrEquals|Accepte deux arguments et retourne la valeur true si le premier argument est inférieur ou égal au deuxième argument. <br><b>Remarque</b> : les types pris en charge sont integer, float et string.|Cette expression retourne la valeur true :<br>lessOrEquals(10,10)
-|[greater](#use-the-greater-expression)|Accepte deux arguments et retourne la valeur true si le premier argument est supérieur au deuxième argument. <br><b>Remarque</b> : les types pris en charge sont integer, float et string.|Cette expression retourne la valeur false :<br>greater(10,10)
-|greaterOrEquals|Accepte deux arguments et retourne la valeur true si le premier argument est supérieur ou égal au deuxième argument. <br><b>Remarque</b> : les types pris en charge sont integer, float et string.|Cette expression retourne la valeur false :<br>greaterOrEquals(10,100)
+|[less](#use-the-less-expression)|Accepte deux arguments et retourne la valeur true si le premier argument est inférieur au deuxième argument. <br><b>Remarque</b> : Les types pris en charge sont integer, float et string.|Cette expression retourne la valeur true :<br>less(10,100)
+|lessOrEquals|Accepte deux arguments et retourne la valeur true si le premier argument est inférieur ou égal au deuxième argument. <br><b>Remarque</b> : Les types pris en charge sont integer, float et string.|Cette expression retourne la valeur true :<br>lessOrEquals(10,10)
+|[greater](#use-the-greater-expression)|Accepte deux arguments et retourne la valeur true si le premier argument est supérieur au deuxième argument. <br><b>Remarque</b> : Les types pris en charge sont integer, float et string.|Cette expression retourne la valeur false :<br>greater(10,10)
+|greaterOrEquals|Accepte deux arguments et retourne la valeur true si le premier argument est supérieur ou égal au deuxième argument. <br><b>Remarque</b> : Les types pris en charge sont integer, float et string.|Cette expression retourne la valeur false :<br>greaterOrEquals(10,100)
 |[empty](#use-the-empty-expression)|Retourne la valeur true si l’objet, le tableau ou la chaîne est vide.|Cette expression retourne la valeur true :<br>empty('')
 |not|Retourne la valeur booléenne opposée. |Cette expression retourne la valeur true :<br>not(contains('200 Success','Fail'))
 |if|Retourne une valeur spécifique si l’expression retourne la valeur true ou false.|Cette expression retourne la valeur yes :<br>if(equals(1, 1), 'yes', 'no')
@@ -93,7 +91,7 @@ Vous allez créer le flux.
     ![nouvelle étape](includes/media/new-step/action.png)
 2. Recherchez **rows (lignes)**, puis sélectionnez **Excel - Get rows (Excel - Obtenir les lignes)**.
 
-    Remarque : sélectionnez l’action « obtenir les lignes » qui correspond à la feuille de calcul que vous utilisez. Par exemple, si vous utilisez Google Sheets, sélectionnez **Google Sheets - Get rows (Google Sheets - Obtenir les lignes)**.
+    Remarque : Sélectionnez l’action « obtenir les lignes » qui correspond à la feuille de calcul que vous utilisez. Par exemple, si vous utilisez Google Sheets, sélectionnez **Google Sheets - Get rows (Google Sheets - Obtenir les lignes)**.
 
     ![obtenir les lignes](includes/media/new-step/get-excel-rows.png)
 3. Sélectionnez l’icône de dossier dans la zone **Nom de fichier**, puis sélectionnez la feuille de calcul qui contient vos données.
@@ -214,6 +212,6 @@ Voici l’implémentation de l’expression **and** qui identifie toutes les per
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
-## <a name="learn-more"></a>En savoir plus
-En savoir plus sur les autres [expressions](https://docs.microsoft.com/azure/logic-apps/logic-apps-workflow-definition-language#functions)
+## <a name="use-functions-in-expressions"></a>Utiliser des fonctions dans les expressions
 
+Certaines expressions tirent leurs valeurs d’actions de runtime qui n’existent peut-être pas encore quand un flux commence à s’exécuter. Pour référencer ou utiliser ces valeurs dans des expressions, vous pouvez utiliser des fonctions fournies par le langage de définition du workflow. Plus d’informations : [Informations de référence sur les fonctions du langage de définition du workflow dans Microsoft Flow](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
