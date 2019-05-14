@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d48ba29d932bc3d9b0d631b4646eb68d89134271
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035165"
+---
 Cette rubrique explique comment **Créer un flux de bouton** pour la société Contoso Flooring. 
 
 Un flux de bouton permet d’**envoyer un courrier** à une équipe pour l’**alerter concernant des tâches** à accomplir. La **Propriété** des flux **peut être attribuée à une** personne ou **partagée par plusieurs** membres d’une équipe.  
@@ -48,7 +56,7 @@ Un flux de bouton permet d’**envoyer un courrier** à une équipe pour l’**a
      ![Créer un flux](./media/learning-create-button-flow/12-create-flow.png)
 
 ## <a name="create-a-team-flow"></a>Créer un flux d’équipe
-Vous pouvez utiliser ce flux de bouton en tant qu’exemple montrant comment créer un flux d’équipe. Que se passe-t-il si la créatrice de ce flux est absente pour cause de maladie ? Que se passe-t-il si elle quitte l’entreprise ? Vous voulez être certain que ce flux continuera de fonctionner. Pour ce faire, ajoutez des copropriétaires.
+Vous pouvez utiliser ce flux de bouton en tant qu’exemple montrant comment créer un flux d’équipe. Que se passe-t-il si la créatrice de ce flux est absente pour cause de maladie ? Que se passe-t-il lorsque cette personne quitte l’entreprise ? Vous voulez être certain que ce flux continuera de fonctionner. Pour ce faire, ajoutez des copropriétaires.
 
 1. Pour ajouter un copropriétaire, sélectionnez l’**icône d’équipe** sur votre flux.
    
@@ -66,9 +74,9 @@ Vous pouvez utiliser ce flux de bouton en tant qu’exemple montrant comment cr�
 ## <a name="summary"></a>Résumé
 Dans cette leçon, vous avez vu comment **créer un flux de bouton**. 
 
-En quelques minutes, le flux a permis à une employée de l’entrepôt d’**alerter son équipe** de l’**arrivée d’une livraison**, de sorte que l’équipe n’a pas dû attendre celle-ci et perdre par la même occasion un temps précieux qu’elle a pu consacrer à d’autres tâches. 
+En quelques minutes, le flux a permis à une employée de l’entrepôt **d’alerter l’équipe** de **l’arrivée d’une livraison**, de sorte que l’équipe n’a pas dû attendre celle-ci et perdre par la même occasion un temps précieux qu’elle a pu consacrer à d’autres tâches. 
 
-L’employée a ensuite partagé ce bouton avec l’équipe, afin que d’autres membres de celle-ci puissent également déclencher le flux au cas où elle viendrait à s’absenter.
+L’employée a ensuite partagé ce bouton avec l’équipe, afin que d’autres membres de celle-ci puissent également déclencher le flux au cas où cette personne viendrait à s’absenter.
 
 ## <a name="next-lesson"></a>Leçon suivante
 Suivez la leçon suivante pour apprendre à créer un flux utilisant des **notification Push**.

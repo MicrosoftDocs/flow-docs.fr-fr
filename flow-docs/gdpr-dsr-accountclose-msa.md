@@ -20,16 +20,16 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: be12491490cac51a0b91906b1a663522c2a7658f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6480fe6a7e6ca26a7dbad3952b6608a9e0a880ae
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688763"
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035072"
 ---
 # <a name="responding-to-gdpr-data-subject-account-close-requests-for-microsoft-flow"></a>Répondre aux demandes de fermeture de compte RGPD des personnes concernées pour Microsoft Flow
 
-Le **droit d’effacer** des données personnelles est une protection fondamentale dans le RGPD. Ce droit inclut la suppression de toutes les données personnelles, à l’exception des informations du journal d’audit. Quand un utilisateur décide de fermer son compte Microsoft (MSA), ses données sous-jacentes sont également supprimées.
+Le **droit d’effacer** des données personnelles est une protection fondamentale dans le RGPD. Ce droit inclut la suppression de toutes les données personnelles, à l’exception des informations du journal d’audit. Quand les utilisateurs décident de fermer leur compte Microsoft (MSA), leurs données sous-jacentes sont également supprimées.
 
 Ces ressources contiennent des données personnelles qui sont automatiquement supprimées quand un utilisateur ferme un compte de service administré :
 

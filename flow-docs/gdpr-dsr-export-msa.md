@@ -20,12 +20,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: d03b2fff23fc313ebb7f8c12ce2835687f589516
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: 6f181a66453573c2f636cbe5130b7fc003a3b151
+ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690764"
+ms.lasthandoff: 05/03/2019
+ms.locfileid: "65035024"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Répondre aux requêtes d’exportation RGPD des personnes concernées pour Microsoft Flow
 
@@ -33,7 +33,7 @@ Dans le cadre du partenariat conclu avec vous pour vous accompagner dans l’ado
 
 ## <a name="manage-export-requests"></a>Gérer les demandes d’exportation
 
-Le *droit à la portabilité des données* permet à une personne concernée de demander une copie de ses données personnelles dans un format électronique (c’est-à-dire un format « structuré, couramment utilisé, lisible par une machine et interopérable ») et qui peut être transmise à un autre contrôleur de données.
+Le *droit à la portabilité des données* permet aux personnes concernées de demander une copie de leurs données personnelles dans un format électronique (c’est-à-dire un format « structuré, couramment utilisé, lisible par machine et interopérable ») et qui peut être transmise à un autre contrôleur de données.
 
 Utilisez le [Tableau de bord de confidentialité Microsoft](https://account.microsoft.com/privacy/) ou [Microsoft Flow](https://flow.microsoft.com/) pour rechercher ou exporter les données personnelles d’un utilisateur spécifique.
 
@@ -98,7 +98,7 @@ L’historique des exécutions est téléchargé sous la forme d’un fichier .c
 
 ## <a name="export-a-users-activity-feed"></a>Exporter le flux d’activités d’un utilisateur
 
-Dans [Microsoft Flow](https://flow.microsoft.com/), le flux d’activités affiche l’historique des activités, échecs et notifications d’un utilisateur. Un utilisateur peut consulter son flux d’activités en suivant ces étapes :
+Dans [Microsoft Flow](https://flow.microsoft.com/), le flux d’activités affiche l’historique des activités, échecs et notifications d’un utilisateur. Les utilisateurs peuvent consulter leur flux d’activités en procédant comme suit :
 
 1. Connectez-vous à [Microsoft Flow](http://flow.microsoft.com/), sélectionnez l’icône en forme de cloche dans l’angle supérieur droit, puis choisissez **Afficher toute l’activité**.
 

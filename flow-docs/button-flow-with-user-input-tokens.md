@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f87b0d93b912799a4977f347d89b12421cf42e70
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
+ms.openlocfilehash: 5c1aed64ad5ac8fc1cced9290b376cb54f97e65a
+ms.sourcegitcommit: c1b32d32eed29ab2e0b76a852c273eb4def0be7e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711562"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "64992316"
 ---
 # <a name="introducing-button-flows-with-user-input"></a>Présentation des flux de bouton avec entrée utilisateur
 Créez un flux de bouton pour exécuter des tâches de routine en appuyant simplement sur un bouton. Personnalisez votre flux en autorisant l’utilisateur à fournir des détails spécifiques à utiliser lors de l’exécution du flux. Cette rubrique vous guide lors de la création d’un flux de bouton qui accepte une entrée de l’utilisateur, lors de l’exécution du flux de bouton, puis lors de la mise en surbrillance de la façon de fournir l’entrée d’utilisateur.
@@ -118,7 +118,28 @@ Dans cette procédure pas à pas, vous allez utiliser l’application mobile Mic
     ![](./media/button-flow-with-user-input-tokens/runmt5.png)  
 7. (facultatif) Affichez les résultats détaillés de l’exécution de flux en appuyant sur l’étape **Create a new work item** (Créer un élément de travail).
    
-    ![](./media/button-flow-with-user-input-tokens/runmt6.png)  
+    ![](./media/button-flow-with-user-input-tokens/runmt6.png)
+
+
+## <a name="use-different-input-types"></a>Utiliser différents types d’entrée
+
+Les flux de votre bouton peuvent également accepter des types de données enrichis. Voici la liste des types d’entrée de données que les flux de bouton acceptent : 
+
+- Texte
+- Listes déroulantes (comme des boutons radio)
+- Adresse e-mail
+- Fichier (par exemple, une photo sur votre téléphone)
+- Case à cocher Oui ou Non
+- Nombre
+- Date (avec un sélecteur de calendrier)
+
+Pour utiliser ces types d’entrée, ajoutez le déclencheur **Déclencher manuellement un flux** et ajoutez un de ces types à votre flux :
+
+![Options d’entrée](media/button-flow-with-user-input-tokens/input-options.png)
+
+Vous pouvez également désigner certaines entrées comme obligatoires et d’autres comme facultatives. Utilisez le menu d’action (... sur le côté droit) dans chaque champ d’entrée. Il existe une limite de cinq entrées par bouton.
+
+![Sélectionner des jetons facultatifs](media/button-flow-with-user-input-tokens/required-optional.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Partager des flux de bouton](share-buttons.md)

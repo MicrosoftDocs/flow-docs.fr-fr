@@ -14,12 +14,12 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: 4fcbca859d167e82229aa60f96f5122912e5cca3
-ms.sourcegitcommit: c7c9add30d5bf1ab6bd5b55b802fd28618b38411
+ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54362975"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65054095"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Utiliser des flux de processus métier à l’aide de code
 
@@ -131,7 +131,7 @@ Vous pouvez récupérer le nom de votre entité de flux de processus métier de 
 
 L’entité personnalisée qui est créée automatiquement à l’activation d’un flux de processus métier pour stocker des instances de flux de processus métier est conforme au modèle de sécurité standard, à l’image de toute autre entité personnalisée dans Customer Engagement. Cela implique que les privilèges accordés sur ces entités définissent les autorisations d’exécution pour les utilisateurs de flux de processus métier.
 
-La portée de l’entité de flux de processus métier personnalisée est l’organisation. Les privilèges ordinaires de création, récupération, mise à jour et suppression sur cette entité définissent l’autorisation accordée à l’utilisateur en fonction de ses rôles attribués. Par défaut, quand l’entité personnalisée de flux de processus métier est créée, seuls les rôles de sécurité **Administrateur système** et **Personnalisateur de système** ont accès à celle-ci ; vous devez donc accorder explicitement des autorisations sur la nouvelle entité de flux de processus métier (par exemple, **Mon flux de processus métier personnalisé**) pour les autres rôles de sécurité en fonction des besoins.
+La portée de l’entité de flux de processus métier personnalisée est l’organisation. Les privilèges ordinaires de création, récupération, mise à jour et suppression sur cette entité définissent l’autorisation accordée aux utilisateurs en fonction de leurs rôles attribués. Par défaut, quand l’entité personnalisée de flux de processus métier est créée, seuls les rôles de sécurité **Administrateur système** et **Personnalisateur de système** ont accès à celle-ci ; vous devez donc accorder explicitement des autorisations sur la nouvelle entité de flux de processus métier (par exemple, **Mon flux de processus métier personnalisé**) pour les autres rôles de sécurité en fonction des besoins.
 
 ![](media/bpf-privileges.png)
 

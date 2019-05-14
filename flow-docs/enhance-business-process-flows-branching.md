@@ -17,12 +17,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: a7e1dc8d366ac9f23682362c8a673eb67df65975
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: f8911c828b216d8f65210b4c54603fd8838e848b
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690511"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65054113"
 ---
 # <a name="tutorial-enhance-business-process-flows-with-branching"></a>Tutoriel : Améliorer les flux de processus métier avec le branchement
 
@@ -58,10 +58,10 @@ Les flux de processus métier vous guident tout au long des différentes phases 
 > - Une entité utilisée dans le processus peut être revisitée à plusieurs reprises (plusieurs boucles d’entité fermées).  
 > - Un processus peut revenir à la phase précédente, quel que soit le type d’entité. Par exemple, si la phase active est **Fournir un devis** sur un enregistrement de devis, les utilisateurs du processus peuvent déplacer la phase active vers la phase **Proposer** sur un enregistrement d’opportunité.  
 >   
->   Ou bien, supposons qu’un processus se trouve dans la phase **Présenter la proposition** dans votre flux de processus **Inclure le prospect** > **Identifier les besoins** > **Créer une proposition** > **Présenter la proposition** > **Fermer**. Si la proposition présentée au client nécessite que des recherches supplémentaires soient effectuées pour identifier ses besoins, les utilisateurs peuvent simplement sélectionner la phase **Identifier les besoins** de votre processus et choisir **Définir comme actif**.  
+>   Ou bien, supposons qu’un processus se trouve dans la phase **Présenter la proposition** dans votre flux de processus : **Inclure le prospect** > **Identifier les besoins** > **Créer une proposition** > **Présenter la proposition** > **Fermer**. Si la proposition présentée au client nécessite que des recherches supplémentaires soient effectuées pour identifier ses besoins, les utilisateurs peuvent simplement sélectionner la phase **Identifier les besoins** de votre processus et choisir **Définir comme actif**.  
   
 <a name="CarSelling365"></a>   
-## <a name="dynamics-365-customer-engagement-example-car-selling-process-flow-with-two-branches"></a>Exemple Dynamics 365 Customer Engagement : flux de processus de vente de voitures avec deux branches
+## <a name="dynamics-365-customer-engagement-example-car-selling-process-flow-with-two-branches"></a>Exemple Dynamics 365 Customer Engagement : Flux de processus Vente de voiture avec deux branches
  
 Examinons l’exemple du flux de processus métier avec deux branches pour la vente de voitures nouvelles et d’occasion.  
   

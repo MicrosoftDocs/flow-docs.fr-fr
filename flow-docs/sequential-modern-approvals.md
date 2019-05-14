@@ -20,17 +20,21 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f75f9b822078fcec8701bf06c3dcb8be0e07d874
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
+ms.openlocfilehash: dd30051425906fdc305be536342eeb7e1762d1eb
+ms.sourcegitcommit: 197bdf2fd1867c2c7162c909daf41e10279721f5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690732"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "65019860"
 ---
 # <a name="manage-sequential-approvals-with-microsoft-flow"></a>Gérer les approbations séquentielles avec Microsoft Flow
 Certains flux de travail exigent une approbation préalable avant que l’approbateur final donne sa décision finale. Par exemple, une entreprise peut avoir une stratégie d’approbation séquentielle qui exige une approbation préalable des factures dont le montant est supérieur à 1 000 € avant leur approbation par le département Finance.
 
 Dans cette procédure pas à pas, vous créez un flux séquentiel qui gère les demandes de congés des employés.
+
+> [!NOTE]
+> SharePoint est utilisé ici uniquement comme exemple. Il n’est pas obligatoire pour créer des flux d’approbation. Vous pouvez utiliser l’un des 200 services avec lesquels Microsoft Flow s’intègre pour piloter vos flux.
+
 
 ## <a name="detailed-steps-in-the-flow"></a>Étapes détaillées du flux
 Le flux :
@@ -40,7 +44,7 @@ Le flux :
 3. Envoie par courrier la décision d’approbation préalable à l’employé.
 4. Met à jour la liste SharePoint Online avec la décision et les commentaires de la personne chargée de l’approbation préalable.
    
-   Remarque : si la demande est pré-approuvée, la procédure continue avec les étapes suivantes :
+   Remarque : Si la demande est pré-approuvée, la procédure continue avec les étapes suivantes :
 5. Envoie la demande à l’approbateur final.
 6. Envoie par courrier la décision finale à l’employé.
 7. Met à jour la liste SharePoint avec la décision finale.
@@ -52,7 +56,7 @@ Cette image résume les étapes précédentes :
 ## <a name="prerequisites"></a>Prérequis
 [!INCLUDE [prerequisites-for-modern-approvals](includes/prerequisites-for-modern-approvals.md)]
 
-La liste SharePoint Online que vous créez doit comprendre les colonnes suivantes :
+Dans le cadre de cette procédure pas à pas, la liste SharePoint Online que vous créez doit comprendre les colonnes suivantes :
 
    ![Colonnes de liste SharePoint](./media/sequential-modern-approvals/sharepoint-columns.png)
 
@@ -85,7 +89,7 @@ Après chaque opération d’enregistrement, sélectionnez **Modifier le flux** 
 ## <a name="add-an-approval-action-for-pre-approvals"></a>Ajouter une action d’approbation pour les approbations préalables
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
 
-Remarque : cette action envoie la demande d’approbation préalable à l’adresse de courrier indiquée dans la zone **Assigned To** (Affecté à).
+Remarque : Cette action envoie la demande d’approbation préalable à l’adresse de courrier indiquée dans la zone **Assigned To** (Affecté à).
 
 ## <a name="add-a-condition"></a>Ajouter une condition
 [!INCLUDE [add-approval-condition-response](includes/add-approval-condition-response.md)]
@@ -137,7 +141,7 @@ Remarque : cette action envoie la demande d’approbation préalable à l’adr
 
    ![configuration des demandes refusées](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-Remarque : cette action doit être ajoutée à la branche **SI NON, NE RIEN FAIRE** sous la carte **Condition**.
+Remarque : Cette action doit être ajoutée à la branche **SI NON, NE RIEN FAIRE** sous la carte **Condition**.
 
 ## <a name="update-sharepoint-with-pre-approval-rejection"></a>Mettre à jour SharePoint avec le refus d’approbation préalable
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
@@ -147,7 +151,7 @@ Remarque : cette action doit être ajoutée à la branche **SI NON, NE RIEN FAI
 ## <a name="send-email-with-final-rejection"></a>Envoyer par courrier le refus final
 1. Utilisez les étapes de la section [Envoyer par courrier le refus final](sequential-modern-approvals.md#send-email-with-pre-approval-rejection), puis configurez une action qui envoie un courrier lorsque la demande de congés est refusée par l’approbateur final.
    
-    Remarque : cette action doit être ajoutée à la branche **SI NON, NE RIEN FAIRE** sous la carte **Condition 2**.
+    Remarque : Cette action doit être ajoutée à la branche **SI NON, NE RIEN FAIRE** sous la carte **Condition 2**.
 2. Lorsque vous avez terminé, la carte doit ressembler à cette image :
    
    ![configuration des demandes refusées](./media/sequential-modern-approvals/final-rejection-email-card.png)
@@ -183,7 +187,7 @@ Votre demande doit ressembler à cette image :
 ## <a name="approve-the-request"></a>Approuver une demande
 Les étapes d’approbation d’une demande sont identiques aux étapes d’[approbation préalable d’une demande](sequential-modern-approvals.md#pre-approve-a-request)
 
-Remarque : l’approbateur final reçoit la demande de congés uniquement une fois qu’elle a été pré-approuvée.
+Remarque : L’approbateur final reçoit la demande de congés uniquement une fois qu’elle a été pré-approuvée.
 
 ## <a name="reject-a-request"></a>Refuser une demande
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]
