@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 9dd2aed8b8cdb1f0a8e673c5466291f60baaf41d
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689384"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64466519"
 ---
 # <a name="add-multiple-actions-and-advanced-options-to-a-flow"></a>Ajouter plusieurs actions et options avancées à un flux
 Personnalisez un flux en ajoutant une ou plusieurs options avancées et plusieurs actions pour le même déclencheur. Par exemple, ajoutez une option avancée qui envoie un e-mail avec une priorité élevée. Outre l’envoi de messages lorsqu’un élément est ajouté à une liste SharePoint, créez un fichier dans le dossier Dropbox qui contient les mêmes informations.
@@ -76,7 +76,7 @@ Dans cette procédure, vous allez ajouter une action au milieu du flux. Cette ac
   
     ![Supprimer le menu](./media/multi-step-logic-flow/deletemenu.png)
   
-     **Remarque :** vous ne pouvez pas supprimer une action si vous utilisez des sorties qu’elle génère dans le flux. En premier lieu, supprimez ces sorties des champs, puis supprimez l’action.
+     **Remarque :** Vous ne pouvez pas supprimer une action si vous utilisez des sorties à partir de celui-ci n’importe où dans le flux. En premier lieu, supprimez ces sorties des champs, puis supprimez l’action.
 
 ## <a name="add-advanced-options"></a>Ajouter des options avancées
 Commencez par un flux disposant d’une action **Envoyer un e-mail**.

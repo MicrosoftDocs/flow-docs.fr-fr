@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0e46ba9a9ff1044e72b8550b47d126e2999cfb71
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461023"
+---
 ## <a name="what-is-an-environment"></a>Qu’est-ce qu’un environnement ?
 Un environnement est un espace virtuel utilisé pour stocker, gérer et partager des applications, des flux et des données d’entreprise dans Common Data Service. Les environnements sont géolocalisés afin que toutes les applications et données stockées dans la base de données d’un environnement le soient également.  
 

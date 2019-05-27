@@ -16,9 +16,9 @@ search.audienceType:
 - developer
 ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65054095"
 ---
 # <a name="work-with-business-process-flows-using-code"></a>Utiliser des flux de processus métier à l’aide de code

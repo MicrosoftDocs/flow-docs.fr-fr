@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: d45bf5974c24a8258f3f4e51e1e4c89b9c74fba7
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460338"
+---
 Pour ce flux, vous allez créer une liste **SharePoint** dans laquelle l’équipe Marketing de **Contoso Flooring** stocke ses **publications Twitter** ainsi que leurs dates. À partir de là, vous allez générer un flux qui tweete automatiquement le contenu à la place de l’équipe. 
 
 ## <a name="connect-microsoft-flow-services"></a>Connecter les services Microsoft Flow
@@ -81,7 +89,7 @@ Voilà pour le déclencheur.
 3. Définissez la valeur de délai.
    
    1. Cliquez ou appuyez dans le champ **Horodatage**. 
-   2. Lorsque la zone de contenu dynamique s’ouvre, faites défiler vers le bas pour voir les trois colonnes de la liste SharePoint : **Titre**, **Date de tweet**, et **Contenu du tweet**.
+   2. Lorsque la zone de contenu dynamique s’ouvre, faites défiler vers le bas, et vous voyez les trois colonnes de la liste SharePoint : **Titre**, **Date de Tweet**, et **contenu du Tweet**.
    3. Sélectionnez **Date de tweet**. 
       
        ![Horodatage Différer jusqu’à](./media/learning-push-notifications/14-delay-until-timestamp.png)

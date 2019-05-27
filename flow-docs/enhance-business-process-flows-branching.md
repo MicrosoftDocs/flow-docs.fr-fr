@@ -19,9 +19,9 @@ search.audienceType:
 - enduser
 ms.openlocfilehash: f8911c828b216d8f65210b4c54603fd8838e848b
 ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/06/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65054113"
 ---
 # <a name="tutorial-enhance-business-process-flows-with-branching"></a>Tutoriel : Améliorer les flux de processus métier avec le branchement

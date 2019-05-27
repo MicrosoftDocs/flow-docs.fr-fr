@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0422f774f18fd7ac49bed005755be251a7f24c1f
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462455"
+---
 Si vous êtes approbateur dans un flux d’approbation, vous recevrez un courrier chaque fois qu’un utilisateur crée une demande. La demande d’approbation est également envoyée au centre d’approbations. Vous pouvez ensuite approuver ou refuser les demandes à partir du courrier, du centre d’approbations ou de l’application Microsoft Flow.
 
 Pour approuver une demande :

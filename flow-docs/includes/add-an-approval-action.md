@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: cb78740e4227542566f1ffabbbda023b439d4de4
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64469627"
+---
 1. Sélectionnez **Nouvelle étape**, puis **Ajouter une action**.
 
     ![nouvelle étape](media/modern-approvals/select-sharepoint-add-action.png)

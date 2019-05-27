@@ -13,19 +13,19 @@ ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/28/2018
+ms.date: 04/30/2019
 ms.author: deonhe
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 8a6ece8d2233703da2cd6eb6ed48d2334d076c39
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.openlocfilehash: f019a6ca5856c0fb3c5360642b4f3fcb23594b16
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690120"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64950502"
 ---
 # <a name="data-loss-prevention-dlp-policies"></a>Stratégies de protection contre la perte de données
 
@@ -182,6 +182,36 @@ Si vous n’avez pas les autorisations d’administrateur et que vous souhaitez 
 ## <a name="dlp-policy-permissions"></a>Autorisations liées aux stratégies de protection contre la perte de données
 
 Seuls les administrateurs de locataires et d’environnements peuvent créer et modifier des stratégies de protection contre la perte de données. Plus d’informations sur les autorisations sont disponibles dans [l’article sur les environnements](environments-overview-admin.md).
+
+
+## <a name="custom-and-http-connectors"></a>Connecteurs personnalisés et HTTP
+
+Connecteurs personnalisés et HTTP doivent être ajoutés à DLPs à l’aide d’un modèle Microsoft Flow ou un PowerShell.
+
+> [!TIP]
+> Vous ne pouvez pas rétrograder à partir de la version du schéma 2018-11-01. Prise en charge HTTP ne peut pas être supprimé à partir d’une stratégie. Si vous tentez de supprimer la prise en charge HTTP, la stratégie DLP est peut-être endommagée. En outre, si une stratégie DLP est mis à jour pour prendre en charge des connecteurs HTTP, flux actuels à l’aide de ces fonctionnalités HTTP peuvent être fermés.
+
+Voici les connecteurs HTTP que vous pouvez ajouter à une stratégie :
+
+- HTTP (et HTTP + Swagger)
+- HTTP Webhook
+- Requête HTTP
+
+## <a name="add-connectors-custom-and-http-connectors-with-templates"></a>Ajouter des connecteurs personnalisés et HTTP avec des modèles
+
+Pour ajouter un connecteur personnalisé à une stratégie en utilisant un [modèle](https://flow.microsoft.com/galleries/public/templates/ae9683086770420e902c043e5ed4b363/), entrez le nom de la stratégie, le groupe auquel ajouter le connecteur et le nom du connecteur, ID et le type. Exécuter le flux une fois pour ajouter le connecteur personnalisé à la stratégie et d’un groupe donné.
+
+Pour ajouter les connecteurs HTTP à une stratégie existante via le [modèle](https://flow.microsoft.com/galleries/public/templates/834eb1366aa54335a5f979014a9e0477/), entrez le nom de la stratégie que vous souhaitez les ajouter à, puis exécutez le flux.
+
+## <a name="add-custom-and-http-connectors-with-powershell"></a>Ajouter des connecteurs HTTP avec PowerShell et personnalisés
+
+Pour ajouter la prise en charge des connecteurs personnalisés et/ou des connecteurs HTTP à une stratégie à l’aide de PowerShell, [télécharger](https://docs.microsoft.com/powerapps/administrator/powerapps-powershell) et importer les derniers scripts PowerShell de PowerApps, puis utiliser ces applets de commande :  'Nouvelle AdminDlpPolicy', 'Set-AdminDlpPolicy', 'Add-CustomConnectorToPolicy' et 'Remove-CustomConnectorFromPolicy » pour modifier la stratégie. Utilisez le « Get-Help-détaillées « applet de commande en tant que référence.
+
+
+> [!IMPORTANT]
+> Utilisez la version du schéma 2018-11-01 pendant la création ou la mise à jour une stratégie DLP pour inclure des connecteurs HTTP. Ajout de HTTP prennent en charge l’aide du modèle ou de PowerShell n’affecte que la stratégie spécifiée. Nouvelles stratégies créées via le centre d’administration ne contient pas les connecteurs HTTP.
+
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 

@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 3742ac7afed24b0a1523a6038978589d293ba00b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44688487"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460286"
 ---
 # <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>Répondre aux demandes RGPD de droits des personnes concernées
 
@@ -54,14 +54,14 @@ Microsoft fournit des produits, des services et des outils pour aider les contr�
 
 Voici une vue d’ensemble des processus présentés dans ce guide :
 
-1. **Découvrir** : utiliser des outils de recherche et de découverte pour trouver facilement les données des clients pouvant faire l’objet d’une demande DSR. Si vous déterminez que les documents que vous collectez répondent aux directives de votre contrôleur justifiant une action, vous pouvez effectuer une ou plusieurs des actions DSR décrites dans les étapes suivantes. Découvrez plus d’informations dans la [documentation sur la découverte DSR de Microsoft Flow pour les comptes Microsoft](gdpr-dsr-discovery-msa.md). Vous pouvez aussi déterminer que la demande ne satisfait pas aux directives de votre contrôleur en matière de réponse aux demandes DSR.
+1. **Découvrir**: Utiliser les outils de recherche et de découverte pour trouver facilement les données client qui peuvent faire l’objet d’une requête DSR. Si vous déterminez que les documents que vous collectez répondent aux directives de votre contrôleur justifiant une action, vous pouvez effectuer une ou plusieurs des actions DSR décrites dans les étapes suivantes. Découvrez plus d’informations dans la [documentation sur la découverte DSR de Microsoft Flow pour les comptes Microsoft](gdpr-dsr-discovery-msa.md). Vous pouvez aussi déterminer que la demande ne satisfait pas aux directives de votre contrôleur en matière de réponse aux demandes DSR.
 
-1. **Accéder** : récupérer les données personnelles qui se trouvent dans le cloud Microsoft et, si c’est demandé, effectuer une copie de celles-ci de façon à les mettre à disposition de la personne concernée.
+1. **Accès**: Récupérer les données personnelles qui résident dans le cloud de Microsoft et, le cas échéant, effectuer une copie de ce qui peut être disponible à l’objet de données.
 
-1. **Rectifier** : apporter des modifications ou implémenter d’autres actions demandées sur les données personnelles, là où c’est applicable.
+1. **Rectifier**: apporter des modifications ou implémenter d’autres actions demandées sur les données personnelles, là où c’est applicable.
 
-1. **Restreindre** : limiter le traitement des données personnelles, en supprimant les licences pour différents services en ligne ou en désactivant les services souhaités quand c’est possible. Vous pouvez également supprimer les données du cloud Microsoft et les conserver localement ou dans un autre emplacement.
+1. **Restreindre**: limiter le traitement des données personnelles, en supprimant les licences pour différents services en ligne ou en désactivant les services souhaités quand c’est possible. Vous pouvez également supprimer les données du cloud Microsoft et les conserver localement ou dans un autre emplacement.
 
-1. **Supprimer** : supprimer définitivement des données personnelles qui se trouvent dans le cloud Microsoft. Découvrez plus d’informations sur la [suppression des données personnelles pour les comptes Microsoft](gdpr-dsr-delete-msa.md). Découvrez plus d’informations sur la [fermeture d’un compte Microsoft](gdpr-dsr-accountclose-msa.md).
+1. **supprimer**: supprimer définitivement des données personnelles qui se trouvent dans le cloud Microsoft. Découvrez plus d’informations sur la [suppression des données personnelles pour les comptes Microsoft](gdpr-dsr-delete-msa.md). Découvrez plus d’informations sur la [fermeture d’un compte Microsoft](gdpr-dsr-accountclose-msa.md).
 
-1. **Exporter** : fournir une copie électronique des données personnelles (dans un format lisible par une machine). [Découvrez plus d’informations sur l’exportation des données personnelles pour les comptes Microsoft](gdpr-dsr-export-msa.md).
+1. **Exporter**: Fournir une copie électronique (dans un format lisible par machine) des données personnelles. [Découvrez plus d’informations sur l’exportation des données personnelles pour les comptes Microsoft](gdpr-dsr-export-msa.md).

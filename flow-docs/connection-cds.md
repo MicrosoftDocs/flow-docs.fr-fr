@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 6dba013481983d0b8c43c82c7bc6eed800fccc2e
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58352892"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64457005"
 ---
 # <a name="create-an-automated-flow-by-using-common-data-service"></a>Créer un flux automatisé à l’aide de Common Data Service
 

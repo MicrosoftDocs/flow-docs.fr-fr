@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 09f1d3ca4cfb79cb73c91aa77d18be07c047c028
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462828"
+---
 Bienvenue dans la Formation guidée sur Microsoft Flow. Cette **autoformation en ligne** explique le fonctionnement de Microsoft Flow de façon séquentielle pour vous permettre d’acquérir et d’approfondir vos connaissances pas à pas, à partir de la base. Le cours est conçu pour fournir des **conseils sous la forme de modules compréhensibles**, riches en **éléments visuels et exemples**, suivant une progression logique pour vous aider à apprendre les principes et les détails.
 
 Ce cours vous permet de découvrir Microsoft Flow et ses concepts, et d’apprendre à **générer des flux**, ainsi qu’à **gérer** et **administrer** ceux-ci dans votre environnement. Il présente des informations et scénarios relatifs à une entreprise fictive nommée Contoso Flooring, l’objectif étant que vous compreniez comment appliquer les mêmes scénarios à votre propre entreprise ou aux entreprises de vos clients.

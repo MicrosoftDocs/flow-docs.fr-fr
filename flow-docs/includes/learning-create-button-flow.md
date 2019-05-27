@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: d48ba29d932bc3d9b0d631b4646eb68d89134271
-ms.sourcegitcommit: 5b27ac91b56078e91f45f993f1967731d14af92b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/03/2019
+ms.lasthandoff: 05/25/2019
 ms.locfileid: "65035165"
 ---
 Cette rubrique explique comment **Créer un flux de bouton** pour la société Contoso Flooring. 

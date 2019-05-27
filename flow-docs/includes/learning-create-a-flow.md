@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f5fd6ecb3ace5d2e11f4929fe94124b231cccf2a
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463737"
+---
 Bienvenue à nouveau dans la Formation guidée sur Microsoft Flow. Dans le cadre de cette leçon, vous allez découvrir davantage l’environnement Microsoft Flow, et **créer votre premier flux**.
 
 La prise en main de Microsoft Flow est aisée, car vous avez le choix entre un très grand nombre de **modèles** qui vous aident à interconnecter de façon plus significative les services que vous utilisez déjà.  

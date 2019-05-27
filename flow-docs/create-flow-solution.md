@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: cbc6e3a8ffe50eb7ad27e80eba044957647a1da3
-ms.sourcegitcommit: b41b45f6fa29a22e9a9a4d3c726a2321b2ff3cbf
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025609"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64456616"
 ---
 # <a name="create-a-flow-in-a-solution"></a>Créer un flux dans une solution
 

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 914fe6d84bb63e1f3e184794d34fbfd58ad30963
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690166"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64459890"
 ---
 # <a name="use-the-apply-to-each-action-in-microsoft-flow-to-process-a-list-of-items-periodically"></a>Utiliser l’action « Appliquer à chacun » dans Microsoft Flow pour traiter régulièrement une liste d’éléments
 De nombreux déclencheurs peuvent commencer immédiatement un flux en fonction d’un événement tel que la réception d’un e-mail dans votre boîte de réception. Ces déclencheurs sont formidables, mais vous pouvez parfois exécuter un flux qui interroge une source de données selon une planification prédéfinie et mène certaines actions en fonction des propriétés des éléments dans la source de données. Pour ce faire, votre flux peut être démarré selon une planification (par exemple une fois par jour) et utiliser une action de boucle comme **Appliquer à chacun** pour traiter une liste d’éléments. Par exemple, vous pouvez utiliser **Appliquer à chacun** pour mettre à jour les enregistrements d’une base de données ou d’une liste d’éléments à partir de Microsoft SharePoint.

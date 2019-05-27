@@ -17,11 +17,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: aa061d5e2f668e8950a6cdab89992996f64c6fe8
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689614"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460929"
 ---
 # <a name="add-an-on-demand-workflow-to-a-business-process-flow"></a>Ajouter un workflow à la demande à un flux de processus métier
 
@@ -32,8 +32,8 @@ Un workflow est activé selon l’endroit où vous le placez sur le concepteur d
 - Processus globaux à la demande. Quand le workflow est déposé sur la zone **Workflow global**, il est déclenché au moment de l’activation ou de l’archivage du processus (quand le statut passe à l’état appliqué, terminé, réactivé ou abandonné). 
 
 Les exigences suivantes s’appliquent quand vous ajoutez un workflow à un flux de processus métier.
-- Pour les workflows ajoutés à une phase : vous ne pouvez utiliser des workflows actifs à la demande que pour l’entité de la phase où vous ajoutez les workflows.  
-- Pour les workflows globaux : vous ne pouvez utiliser des workflows actifs à la demande que pour l’entité principale du flux de processus métier.
+- Pour les flux de travail ajoutés à une étape : Vous pouvez uniquement utiliser active à la demande des flux de travail créé pour la même entité de l’étape où vous ajoutez le flux de travail.  
+- Pour les flux de travail global : Vous pouvez uniquement utiliser active à la demande des flux de travail créé pour l’entité principale du flux de processus d’entreprise.
 
 ## <a name="add-an-on-demand-workflow-to-a-business-process-flow-stage"></a>Ajouter un workflow à la demande à une phase du flux de processus métier
 
@@ -66,5 +66,5 @@ Dans l’exemple ci-dessous, un workflow à la demande nommé **My on demand wor
  
 ## <a name="next-steps"></a>Étapes suivantes
 [Utiliser des processus de workflow pour automatiser des processus qui ne requièrent pas l’intervention de l’utilisateur](workflow-processes.md) <br/>
-[Tutoriel : Créer un flux de processus métier pour standardiser les processus](create-business-process-flow.md) <br/>
+[Tutoriel : Créer un flux de processus métier pour standardiser les processus](create-business-process-flow.md) <br/>
 [Automatisation des flux de processus métier dans Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/)

@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: e0f9b8e5b345b4dbc226cff2f42850bb126c09b3
-ms.sourcegitcommit: 44bc9de9f06b64615731ceb60a4f46cfcd45b167
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727133"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461823"
 ---
 # <a name="responding-to-gdpr-data-subject-export-requests-for-microsoft-flow"></a>Répondre aux requêtes d’exportation RGPD des personnes concernées pour Microsoft Flow
 
@@ -39,7 +39,7 @@ Microsoft Flow offre les options suivantes pour rechercher ou exporter les donn�
 
 * **Accès au site Web :** connectez-vous au [Centre d’administration de PowerApps](https://admin.powerapps.com/) ou au [Centre d'administration de Microsoft Flow](https://admin.flow.microsoft.com/).
 
-* **Accès à PowerShell :**  [applets de commandes Admin PowerShell PowerApps](https://go.microsoft.com/fwlink/?linkid=871804).
+* **Accès à PowerShell** :  [Cmdlets PowerShell d’administration PowerApps](https://go.microsoft.com/fwlink/?linkid=871804).
 
 |**Données client**|**Accès au site Web**|**Accès à PowerShell**|
 |-----------------|------------------|-------------------|

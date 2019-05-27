@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: a4c1189e943d5e1f48507bd3e55b5f2d8fe52a8c
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64460514"
+---
 Cette rubrique montre comment exécuter des flux planifiés en utilisant un déclencheur nommé **Périodicité**.  Vous allez générer pour l’équipe marketing de Contoso un flux qui extrait automatiquement les adresses e-mail de clients d’un tableau Excel sur OneDrive. Vous allez configurer le flux de façon à ce qu’une fois par jour, les nouvelles adresses e-mail entrées dans la feuille de calcul soient ajoutées à une liste de clients sur MailChimp. 
 
 ## <a name="create-a-scheduled-flow"></a>Créer une tâche planifiée
@@ -15,7 +23,7 @@ Cette rubrique montre comment exécuter des flux planifiés en utilisant un déc
    
     ![](./media/learning-recurrence/excel-get-rows.png)
    
-    **Remarque** : veillez à bien sélectionner **Obtenir lignes**, et non **Obtenir la ligne**. 
+    **Remarque** : Veillez à sélectionner **obtenir les lignes**, et non **obtenir une ligne**. 
 6. Sélectionnez **Nom de fichier**, puis accédez à l’emplacement de votre fichier. Sélectionnez **Nom de la table**, puis choisissez la table souhaitée dans la feuille de calcul. 
    
     ![](./media/learning-recurrence/excel-get-file.png)
@@ -26,7 +34,7 @@ Cette rubrique montre comment exécuter des flux planifiés en utilisant un déc
    
     ![](./media/learning-recurrence/select-mailchimp.png)
    
-    **Remarque :** MailChimp est un connecteur *Premium*. Selon votre licence Microsoft Flow, il se peut que vous deviez souscrire une version d’évaluation pour pouvoir utiliser ce connecteur.
+    **Remarque :** MailChimp est un *premium* connecteur. Selon votre licence Microsoft Flow, il se peut que vous deviez souscrire une version d’évaluation pour pouvoir utiliser ce connecteur.
 9. Ajoutez les champs **ID de la liste** et **État** à partir des menus déroulants :
    
    * **ID de la liste** : sélectionnez la liste de distribution MailChimp de votre choix.

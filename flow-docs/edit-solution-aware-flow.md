@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: cee250718b65deaa5d8472eb4eb90965a555674b
-ms.sourcegitcommit: b41b45f6fa29a22e9a9a4d3c726a2321b2ff3cbf
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025661"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64456289"
 ---
 # <a name="edit-a-solution-aware-flow"></a>Modifier un flux basé sur une solution
 

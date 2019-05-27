@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bb5f08b2606b889a19de0167ef2825cd3428d069
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463397"
+---
 Dans une rubrique précédente, vous avez vu comment générer un processus d’approbation autour de tweets stockés dans une liste SharePoint.  Cette rubrique décrit ce qui se passe quand un approbateur reçoit une nouvelle demande d’approbation. 
 
 ## <a name="create-and-process-a-request"></a>Créer et traiter une demande

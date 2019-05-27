@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 3ba49aff12118d79d41a7b76f7c8a0f7e3f1d01b
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689683"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64468073"
 ---
 # <a name="monitor-activity-in-microsoft-flow-from-your-phone"></a>Surveiller l’activité à partir de votre téléphone dans Microsoft Flow
 Affichez un résumé du nombre de fois où chaque flux a réussi ou échoué aujourd’hui, hier et les jours précédents. Découvrez plus d’informations sur chaque exécution, comme le moment de l’exécution, la durée de chaque étape et la raison éventuelle de l’échec.
@@ -47,7 +47,7 @@ Lorsque le flux est exécuté, il envoie une notification Push personnalisée à
 
 ![Envoyer une notification Push](./media/mobile-monitor-activity/create-event.png)
 
-**Remarque :** vous pouvez également [gérer votre flux](mobile-manage-flows.md) à partir de l’application mobile.
+**Remarque :** Vous pouvez également [gérer vos flux](mobile-manage-flows.md) à partir de l’application mobile.
 
 ## <a name="display-a-summary-of-activity"></a>Afficher un résumé de l’activité
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nVCGJamOw6s?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>

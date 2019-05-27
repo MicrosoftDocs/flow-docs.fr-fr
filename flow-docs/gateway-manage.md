@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b25f63a3980d21e60b26a0783ac4bf5eb6030cd3
-ms.sourcegitcommit: 282059c82bfcf5896d06043476c34641906e20e3
-ms.translationtype: HT
+ms.openlocfilehash: b8b14f720736a60b04cbd9ae23dec5c0524ff03c
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49087905"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65054059"
 ---
 # <a name="manage-an-on-premises-data-gateway-in-microsoft-flow"></a>Gérer une passerelle de données locale dans Microsoft Flow
 
@@ -60,7 +60,13 @@ Une passerelle vous permet de vous connecter à des données locales sur ces con
 > [!NOTE]
 > Vous pouvez créer une passerelle et une connexion locale uniquement dans votre [environnement par défaut](environments-overview-maker.md).
 
+## <a name="install-a-gateway"></a>Installer une passerelle
 
+1. Téléchargez l’[Assistant d’installation de la passerelle](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+
+1. Exécutez l’Assistant et entrez les informations d’identification avec lesquelles vous avez établi la connexion à Microsoft Flow.
+
+    Après l’inscription et la configuration, la passerelle s’affiche dans la liste **Mes passerelles** de Microsoft Flow.
 
 ## <a name="view-your-gateways"></a>Afficher vos passerelles
 
@@ -72,14 +78,22 @@ Dans l’angle supérieur droit du [site web Microsoft Flow](https://flow.micros
 > Les passerelles que vous avez créées ou auxquelles vous avez obtenu l’accès dans PowerApps apparaissent dans la liste **Mes passerelles** de Microsoft Flow.
 
 
+## <a name="cluster-your-gateways"></a>Vos passerelles du cluster
 
-## <a name="install-a-gateway"></a>Installer une passerelle
+Vous pouvez créer *clusters à haute disponibilité des installations de passerelle de données locales* afin d’éviter les points uniques de défaillance dans l’accès aux ressources de données en local. 
 
-1. Téléchargez l’[Assistant d’installation de la passerelle](https://go.microsoft.com/fwlink/?LinkID=820580&clcid=0x409).
+Par défaut, Microsoft Flow utilise la passerelle principale du cluster. Si la passerelle principale n’est pas disponible, le service bascule vers la passerelle suivante dans le cluster et ainsi de suite.
 
-1. Exécutez l’Assistant et entrez les informations d’identification avec lesquelles vous avez établi la connexion à Microsoft Flow.
+Une fois que vous avez configuré un cluster de passerelle, vous pouvez autoriser le trafic doit être réparti entre toutes les passerelles dans le cluster. 
 
-    Après l’inscription et la configuration, la passerelle s’affiche dans la liste **Mes passerelles** de Microsoft Flow.
+Suivez ces étapes pour répartir le trafic sur vos passerelles :
+
+1. Sélectionnez **données** sur la barre de navigation sur le côté gauche.
+1. Sélectionnez **passerelles**.
+1. Sélectionnez un de vos passerelles.
+1. Sélectionnez **répartir les demandes entre toutes les passerelles actives dans ce cluster**.
+1. Sélectionnez **appliquer** pour enregistrer vos modifications.
+
 
 Pour plus d’informations, consultez [Comprendre les passerelles](gateway-reference.md).
 

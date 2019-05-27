@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: c28fa7feb743db4616199246d6d517e2e1f6aff9
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690994"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64457883"
 ---
 # <a name="use-data-operations-with-microsoft-flow"></a>Utiliser des opérations sur les données avec Microsoft Flow
 Dans cette procédure pas à pas, découvrez certaines opérations sur les données courantes de Microsoft Flow (telles que composer un message, joindre, sélectionner, filtrer un tableau, créer un tableau et analyser JSON) qui sont disponibles pour manipuler des données lorsque vous créez des flux.
@@ -145,7 +145,7 @@ Utilisez l’action **Opérations sur les données - Créer un tableau CSV** pou
    
     ![configurer l’action « créer un tableau csv »](./media/data-operations/create-csv-table.png)
    
-    Remarque : le jeton **Corps** de cette image provient d’une action **Requête/réponse - réponse**. Toutefois, vous pouvez obtenir l’entrée de l’action **Créer un tableau CSV** à partir de la sortie de l’action précédente de votre flux, ou vous pouvez la saisir directement dans la zone **De**.
+    Remarque : Le **corps** jeton dans cette image provient d’un **demande / réponse-réponse** action, toutefois, vous pouvez obtenir l’entrée pour le **créer un tableau CSV** action à partir de la sortie de n’importe quel l’action précédente dans votre flux, ou vous pouvez entrer directement dans le **de** boîte.
 2. Enregistrez et exécutez votre flux.
    
     Lors de l’exécution de votre flux, la sortie **Créer un tableau CSV** ressemble à l’image suivante :

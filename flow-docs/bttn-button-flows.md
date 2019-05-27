@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 813ad16dbc9514975daadac456b73d98fc30db79
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689062"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64461895"
 ---
 # <a name="run-your-flows-with-physical-buttons-bttns-from-the-button-corporation-preview"></a>Exécuter vos flux avec des boutons physiques (bttns) à partir de Button Corporation (préversion)
 Déclenchez vos flux en appuyant sur un bouton bttn (bouton physique développé par [The Button Corporation](https://my.bt.tn/)). Par exemple, vous pouvez appuyer sur un bouton bttn qui déclenche un flux qui effectue les tâches suivantes :
@@ -56,7 +56,7 @@ Vous pouvez utiliser un de ces modèles pour créer rapidement des flux pour vot
 
 ![modèles bttn](./media/bttn-button-flows/bttn-templates.png)
 
-Conseil : pour les besoins de cette procédure pas à pas, donnez à votre bouton bttn un nom qui représente une salle de conférence dans un immeuble de bureaux classique.
+Conseil : Dans le cadre de cette procédure pas à pas, nommez votre bouton bttn qui représente une salle de conférence dans un immeuble de bureaux classique.
 
 Les paramètres de votre bouton bttn doivent ressembler à cet exemple (issu du site web bttn) :
 
@@ -69,7 +69,7 @@ Maintenant que vous avez inscrit et configuré votre bouton bttn, vous pouvez co
    
     ![se connecter](./media/bttn-button-flows/sign-into-flow.png)
    
-    Remarque : en guise d’alternative, vous pouvez créer des flux dans l’application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows).
+    Remarque : Comme alternative, vous pouvez créer des flux dans l’application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), ou [Windows Phone](https://aka.ms/flowmobilewindows).
 2. Entrez **bttn** dans la zone de recherche, puis sélectionnez l’icône de recherche.
    
     ![recherche](./media/bttn-button-flows/bttn-search-template.png)
@@ -85,7 +85,7 @@ Maintenant que vous avez inscrit et configuré votre bouton bttn, vous pouvez co
     ![informations d’identification](./media/bttn-button-flows/bttn-provide-credentials.png)
 2. Lorsque vous vous connectez au service bttn, autorisez Microsoft Flow à utiliser vos boutons bttn.
    
-    **Important** : si vous n’autorisez pas Microsoft Flow à utiliser vos boutons bttn, vous ne pouvez pas les voir ni vous y connecter à partir de Microsoft Flow.
+    **Important**: Si vous n’autorisez Microsoft Flow à utiliser vos boutons bttn, vous ne pouvez pas voir ou s’y connecter à partir de Microsoft Flow.
    
     ![autoriser](./media/bttn-button-flows/authorize-bttn.png)
 3. Une fois que vous êtes connecté aux deux services, sélectionnez le bouton **Continuer**.
@@ -110,7 +110,7 @@ Maintenant que vous avez inscrit et configuré votre bouton bttn, vous pouvez co
    
     Vous pouvez consulter l’historique des exécutions sur le site web Microsoft Flow ou sur votre appareil mobile.
    
-    Remarque : l’état d’exécution est défini sur **running** (en cours d’exécution) jusqu’à ce qu’un utilisateur sélectionne **Acknowledge** (Reconnaître) dans le message de demande de support.
+    Remarque : L’état d’exécution a la valeur **en cours d’exécution** jusqu'à ce qu’un utilisateur sélectionne **accusé de réception** dans l’e-mail de demande de support.
 3. Vous pouvez également vérifier que le courrier a été envoyé à l’équipe de support.
    
     Si vous avez respecté cette procédure, l’adresse de courrier de support est similaire à l’exemple suivant :

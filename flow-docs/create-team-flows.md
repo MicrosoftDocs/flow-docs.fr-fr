@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 29d6532593719bef147cdacf1c0e2576ec734837
-ms.sourcegitcommit: c4cfb0a9b668c958755b3cdeae99eabf83651710
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55479416"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64457930"
 ---
 # <a name="create-team-flows"></a>Créer des flux d’équipe
 Créez un flux d’équipe en ajoutant d’autres personnes de votre organisation en tant que propriétaires. Tous les propriétaires d’un flux d’équipe peuvent exécuter les actions suivantes :

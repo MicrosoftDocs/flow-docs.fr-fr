@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 6c48d79138dfdafa94e56380343840d6aa0fcbb5
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690870"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64470192"
 ---
 # <a name="build-an-approval-loop-by-using-microsoft-flow-and-the-microsoft-common-data-service"></a>Créer une chaîne d’approbation avec Microsoft Flow et le service Common Data Service de Microsoft
 Le service Common Data Service vous permet de générer des flux qui comportent des informations stockées dans une base de données indépendante d’un flux. Les approbations en sont le meilleur exemple. Si vous stockez l’état de l’approbation dans une entité, votre flux peut fonctionner par-dessus.
@@ -148,7 +148,7 @@ En suivant les étapes décrites dans cette section, vous allez créer :
     ![Ajouter le jeton de nom de fichier](./media/common-data-model-approve/add-filename-token.png)
 5. Sous **Approbateur**, tapez ou collez l’adresse de messagerie de la personne qui révisera les fichiers.
    
-    **Remarque** : pour faciliter le test du flux, spécifiez votre propre adresse. Vous pourrez la modifier ultérieurement lorsque le flux sera prêt pour une utilisation réelle.
+    **Remarque** : Pour que le test du flux, spécifiez votre propre adresse. Vous pourrez la modifier ultérieurement lorsque le flux sera prêt pour une utilisation réelle.
    
     ![Ajouter un approbateur](./media/common-data-model-approve/add-approver.png)
 6. Sous **État**, tapez ou collez **En attente**.
@@ -166,7 +166,7 @@ En suivant les étapes décrites dans cette section, vous allez créer :
    
     ![Choisir une valeur](./media/common-data-model-approve/choose-value.png)
    
-    **Remarque** : si votre navigateur n’est pas agrandi au maximum, cliquez ou appuyez dans la zone supérieure contenant **Choisir une valeur**.
+    **Remarque** : Si votre navigateur n’est pas agrandi au maximum, cliquez ou appuyez dans la zone supérieure contenant **choisir une valeur**.
 3. Sous **Sorties de Créer un objet**, cliquez ou appuyez sur **État** pour ajouter le jeton de paramètre au champ.
    
     ![Ajouter le jeton d’état](./media/common-data-model-approve/add-status.png)
@@ -177,7 +177,7 @@ En suivant les étapes décrites dans cette section, vous allez créer :
    
     ![Spécifier l’état à surveiller](./media/common-data-model-approve/do-until-not-pending.png)
    
-    **Remarque** : si votre navigateur n’est pas agrandi au maximum, cliquez ou appuyez dans la zone inférieure contenant **Choisir une valeur**.
+    **Remarque** : Si votre navigateur n’est pas agrandi au maximum, cliquez ou appuyez dans la zone inférieure contenant **choisir une valeur**.
 6. Près du bas de l’action **Do until**, cliquez ou appuyez sur **Ajouter une action**.
    
     ![Ajouter une action dans un Do until](./media/common-data-model-approve/add-action-in-dountil.png)
@@ -200,7 +200,7 @@ En suivant les étapes décrites dans cette section, vous allez créer :
    
     ![Angle supérieur gauche de la condition](./media/common-data-model-approve/condition-upper-left.png)
    
-    **Remarque** : si votre navigateur n’est pas agrandi au maximum, cliquez ou appuyez dans la zone supérieure contenant **Choisir une valeur**.
+    **Remarque** : Si votre navigateur n’est pas agrandi au maximum, cliquez ou appuyez dans la zone supérieure contenant **choisir une valeur**.
 3. Sous **Sorties de Obtenir un objet**, cliquez ou appuyez sur le jeton de paramètre **État** pour l’ajouter au champ.
    
     ![Ajouter un état à la condition](./media/common-data-model-approve/add-status-to-condition.png)
@@ -208,7 +208,7 @@ En suivant les étapes décrites dans cette section, vous allez créer :
    
     ![Vérifier si l’état est défini sur Approuvé](./media/common-data-model-approve/status-equals-approved.png)
    
-    **Remarque** : si votre navigateur n’est pas agrandi au maximum, tapez ou collez **Approuvé** dans la zone inférieure contenant **Choisir une valeur**
+    **Remarque** : Si votre navigateur n’est pas agrandi au maximum, tapez ou collez **Approved** dans la zone inférieure contenant **choisir une valeur**.
 
 ## <a name="send-notification-mail"></a>Envoyer un courrier électronique de notification
 1. Sous **Si oui, ne rien faire**, cliquez ou appuyez sur **Ajouter une action**.
@@ -219,7 +219,7 @@ En suivant les étapes décrites dans cette section, vous allez créer :
     ![Si oui, envoyer un message](./media/common-data-model-approve/if-yes-send-mail.png)
 3. Sous **À**, tapez ou collez l’adresse de la personne que vous souhaitez notifier lorsqu’un élément est accepté.
    
-    **Remarque** : pour faciliter le test du flux, spécifiez votre propre adresse. Vous pouvez la modifier lorsque le flux est prêt pour une utilisation réelle.
+    **Remarque** : Pour que le test du flux, spécifiez votre propre adresse. Vous pouvez la modifier lorsque le flux est prêt pour une utilisation réelle.
    
     ![Destinataire de l’approbation](./media/common-data-model-approve/approval-recipient.png)
 4. Sous **Objet**, cliquez ou appuyez dans la zone, puis sur le jeton de paramètre **Nom de fichier** pour l’ajouter au champ.

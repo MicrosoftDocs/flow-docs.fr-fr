@@ -14,12 +14,12 @@ search.app:
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 705051668c4e25d5bddc3e6f92e445f3474baad1
-ms.sourcegitcommit: 3d0aecc89ed12b58f4b424c1c5a0654350f07d08
-ms.translationtype: HT
+ms.openlocfilehash: a32b80ce9dba28f0c94c13989e4892fe6533813f
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58059803"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035188"
 ---
 # <a name="microsoft-flow-us-government"></a>Microsoft Flow US Government
 
@@ -143,7 +143,7 @@ Les services Microsoft Flow US Government sont déployés sur Microsoft Azure Go
 
 Lorsqu’un utilisateur d’une organisation qui utilise ADFS tente d’accéder à Microsoft Flow US Government, l’utilisateur est redirigé vers une page de connexion hébergée sur le serveur ADFS de l’organisation.
 
-L’utilisateur fournit ses informations d’identification au serveur ADFS de son organisation. Le serveur ADFS de l’organisation tente d’authentifier les informations d’identification à l’aide de l’infrastructure Active Directory de l’organisation.
+L’utilisateur fournit des informations d’identification au serveur ADFS de leur organisation. Le serveur ADFS de l’organisation tente d’authentifier les informations d’identification à l’aide de l’infrastructure Active Directory de l’organisation.
 
 Si l’authentification réussit, le serveur ADFS de l’organisation émet un ticket SAML (Security Assertion Markup Language) qui contient des informations sur l’identité et le groupe d’appartenance de l’utilisateur.
 

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b2cf6c52a2cbaf06fc638fe8fc898689e6d523c4
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690810"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64459997"
 ---
 # <a name="create-a-flow-that-uses-the-common-data-service"></a>Créer un flux qui utilise le service Common Data Service
 Améliorez l’efficacité opérationnelle avec une vue unifiée des données métier en créant un flux qui utilise le service [Common Data Service](https://powerapps.microsoft.com/tutorials/data-platform-intro/). Déployez cette base de données d’entreprise sécurisée qui comprend des entités métier standard bien formées (par exemple, Ventes, Achat, Service clientèle et Productivité) dans votre organisation. Stockez les données de l’organisation dans une ou plusieurs [entités personnalisées](https://powerapps.microsoft.com/tutorials/data-platform-create-entity/), qui offrent plusieurs avantages par rapport aux sources de données externes telles que Microsoft Excel et Salesforce.
@@ -85,12 +85,12 @@ Par exemple, utilisez le service Common Data Service au sein de Microsoft Flow d
     ![Spécifier l’instance de Dynamics 365](./media/common-data-model-intro/specify-instance.png)
 2. (facultatif) Près du haut de l’écran, spécifiez un nom différent pour le flux que vous créez.
    
-    **Remarque** : si votre fenêtre de navigateur est réduite, l’apparence de interface peut différer légèrement.
+    **Remarque** : Si votre navigateur n’est pas agrandi au maximum, l’interface utilisateur peut différer légèrement.
    
     ![Nommer le flux](./media/common-data-model-intro/name-flow.png)
 3. Cliquez ou appuyez sur **Créer un flux**.
    
-    **Remarque** : si votre fenêtre de navigateur est réduite, il se peut que seule la coche apparaisse.
+    **Remarque** : Si votre navigateur n’est pas agrandi au maximum, seule la coche peut apparaître.
    
     ![Créer un flux](./media/common-data-model-intro/create-flow.png)
 

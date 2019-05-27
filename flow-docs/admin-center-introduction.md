@@ -21,11 +21,11 @@ search.app:
 search.audienceType:
 - admin
 ms.openlocfilehash: 60688ef8290caae516793326bd487c291f1f0a83
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689292"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64456051"
 ---
 # <a name="the-admin-center"></a>Centre d’administration
 

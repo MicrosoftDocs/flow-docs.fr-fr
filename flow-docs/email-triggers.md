@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 94af3389301f40aa5caaa46eda98c8b1c9be0228
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44689798"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64458776"
 ---
 # <a name="trigger-a-flow-based-on-email-properties"></a>Déclencher un flux en fonction des propriétés d’un courrier
 Utilisez le déclencheur **À la réception d'un e-mail** pour créer un flux qui s’exécute lorsqu’une ou plusieurs des propriétés d’e-mail suivantes correspondent aux critères que vous fournissez :

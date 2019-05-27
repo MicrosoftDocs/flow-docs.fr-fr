@@ -20,12 +20,12 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9ab3594f540129eb9caf8900c87420c08c1f7037
-ms.sourcegitcommit: 24da014ea8db8e59f097c4622d1e2cca9a4d1709
-ms.translationtype: HT
+ms.openlocfilehash: f667401774e49505009cd416f6975ff38683a5c7
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58352993"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "65035248"
 ---
 # <a name="get-started-with-microsoft-flow"></a>Prise en main de Microsoft Flow #
 
@@ -94,6 +94,38 @@ Lorsque vous créez un flux à partir de zéro, vous contrôlez l’intégralit�
 - [Voir un flux en action](see-a-flow-run.md).
 - [Publier un modèle](publish-a-template.md).
 - [Créer des flux à partir d’un modèle Microsoft Teams](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
+
+
+## <a name="peek-at-the-code"></a>Lire le code
+
+Vous n’avez pas besoin d’être développeur pour créer des flux, toutefois, Microsoft Flow fournit-il un **lire le code** fonctionnalité qui permet à quiconque entrent en examiner plus en détail le code est généré pour toutes les actions et déclencheurs dans un flux. Lire le code pourrait vous donner une compréhension plus claire des données qui sont utilisées par les déclencheurs et actions. Suivez ces étapes pour lire le code est généré pour vos flux à partir du concepteur Microsoft Flow : 
+
+1. Sélectionnez le **...**  élément de menu situé en haut à droite de n’importe quel **action** ou **déclencheur**. 
+1. Sélectionnez **lire le code**.
+
+    ![Lire le code](media/getting-started/peek-code.png)
+
+1. Notez que la représentation JSON complet des actions et déclencheurs. Cela inclut toutes les entrées, telles que le texte que vous entrez directement et les expressions utilisées. Vous pouvez sélectionner ici des expressions et les coller ensuite dans le **Dynamic Content** Éditeur d’expression. Cela peut également vous donner une façon de vérifier les données que vous attendez sont présentes dans le flux.
+
+    ![Lire le code](media/getting-started/peek-code-details.png)
+   
+
+## <a name="find-your-flows-easily"></a>Trouver vos flux facilement
+
+Lorsque votre creative jus de démarrage *circulant*, vous pouvez créer plusieurs flux. Ne vous inquiétez pas, la recherche de vos flux est facile : simplement utiliser la zone de recherche sur le **mes flux**, **flux d’équipes**, **connexions**, ou **Solutions** écran pour afficher circule uniquement qui correspondent aux termes de recherche que vous entrez.
+
+![Filtrer ou rechercher des flux](media/getting-started/filter-search-box.png)
+ 
+> [!NOTE]
+> Le filtre de recherche recherche uniquement des flux qui ont été chargés dans la page. Si vous ne trouvez pas votre flux, essayez de sélectionner **charger plus** en bas de la page.
+
+## <a name="get-notifications-when-somethings-wrong"></a>Obtenir des notifications lorsque quelque chose ne va pas
+
+Utiliser le centre de notification Microsoft Flow (situé en haut à droite du concepteur) pour rapidement voir une liste de flux ont échoué récemment. Le centre de notification s’affiche un nombre qui indique le nombre de flux ayant échoué récemment.
+
+À partir du centre de notification, vous pouvez accéder à la **activité** page de Microsoft Flow pour voir tous vos flux ayant récemment exécuté, des notifications ou a échoué.
+
+![Centre de notification](media/getting-started/notification-center.png)
 
 ## <a name="use-the-mobile-app"></a>Utiliser l’application mobile ##
 

@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 50466c2cf51593a4e34796fdf1d7a285eb63d462
-ms.sourcegitcommit: 31b578972f00e6ab2e50ea0b674142199b3b7a35
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54905671"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64471573"
 ---
 # <a name="create-and-test-an-approval-workflow-with-microsoft-flow"></a>Créer et tester un flux de travail d’approbation avec Microsoft Flow
 

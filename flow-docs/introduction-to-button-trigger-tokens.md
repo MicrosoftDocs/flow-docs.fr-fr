@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: dc1b93553938221c3f1c995b63b984cfff913c06
-ms.sourcegitcommit: ffed9f02092fbd19fc4108aee05dd40d1a2a3755
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "46711608"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64462761"
 ---
 # <a name="get-started-with-button-trigger-tokens"></a>Bien démarrer avec les jetons de déclencheur de bouton
 ## <a name="what-are-button-trigger-tokens"></a>Que sont les jetons de déclencheur de bouton ?
@@ -84,7 +84,7 @@ Commençons :
    ![jeton de déclencheur de bouton](./media/introduction-to-button-trigger-tokens/9.png)  
 
 ## <a name="run-the-button-flow"></a>Exécuter le flux de bouton
-**REMARQUE** : ce flux de bouton envoie votre emplacement actuel par courrier électronique.  
+**REMARQUE** : Ce flux de bouton envoie votre emplacement actuel par courrier électronique.  
 
 1. Appuyez sur la catégorie **Boutons** en bas de l’écran. La liste des boutons que vous êtes autorisé à utiliser s’affiche. Appuyez sur le bouton qui représente le flux de bouton que vous venez de créer :  
    ![jeton de déclencheur de bouton](./media/introduction-to-button-trigger-tokens/10.png)  

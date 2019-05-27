@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: 1d2560a2a15a77a516701bce977c5bed9fbbe1cf
-ms.sourcegitcommit: c8646cff9ca510203cd0414d1be93a7d12e6018d
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "48892401"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64453998"
 ---
 # <a name="frequently-asked-questions"></a>Forum aux questions
 ## <a name="audience-and-strategy"></a>Public concerné et stratégie

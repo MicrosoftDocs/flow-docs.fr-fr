@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: af18e8caae8e74bb12d274c6e5cb0d94a0e0471b
-ms.sourcegitcommit: b684b379e6007d3bd00948525156e7fbd39bf96c
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "57665011"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64468518"
 ---
 # <a name="run-flows-on-a-schedule"></a>Exécuter des flux selon une planification
 Créez un flux qui effectue une ou plusieurs tâches, telles que l’envoi d’un rapport par e-mail :

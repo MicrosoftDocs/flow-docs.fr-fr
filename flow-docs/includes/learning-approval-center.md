@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 431bb579e19f89132f5ea0ca772a89ea17988de2
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64463431"
+---
 Dans une rubrique précédente, vous avez appris à alimenter de façon simple votre flux Twitter à l’aide d’une liste SharePoint. Cette rubrique explique comment créer un scénario plus adapté à l’entreprise en utilisant des approbations. Ainsi, toute personne ayant accès à la liste SharePoint peut tweeter, et l’équipe en charge des médias sociaux peut approuver ou rejeter les tweets. L’équipe conserve le contrôle du compte et du contenu envoyé aux clients. 
 
 ## <a name="create-an-approval-request-flow"></a>Créer un flux de demande d’approbation
@@ -21,7 +29,7 @@ Par défaut, ce modèle démarre un processus d’approbation chaque fois qu’u
 2. De retour dans **Microsoft Flow**, dans l’action **Lorsqu’un élément est créé**, entrez les valeurs suivantes :
    
    * **Adresse du site** : URL SharePoint de votre équipe
-   * **Nom de la liste** : TweetsContoso
+   * **Nom de liste**: ContosoTweets
      
      ![Site et liste](./media/learning-approval-center/site-address.png)
 3. Dans l’action **Démarrer une approbation**, sélectionnez **Modifier** pour afficher tous les champs. 

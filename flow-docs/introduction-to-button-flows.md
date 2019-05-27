@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: cbcbce51bb950ef9154f356ce44a651f25ce55bd
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690080"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64464149"
 ---
 # <a name="introducing-button-flows"></a>Présentation des flux de bouton
 ## <a name="what-are-button-flows"></a>Que sont les flux de bouton ?
@@ -65,14 +65,14 @@ Dans cette procédure pas à pas, nous allons créer un bouton qui démarre une 
    ![Image de présentation](./media/introduction-to-button-flows/create-button-8.png)  
 9. Ensuite, configurez les propriétés de la notification Push sur la carte **Envoyer une notification Push**. Par défaut, cette notification Push est configurée pour envoyer un lien HTML à une page web qui affiche l’état de la build :  
    ![Image de présentation](./media/introduction-to-button-flows/create-button-9.png)  
-10. Sélectionnez le bouton **Créer un flux** pour enregistrer votre flux de bouton : ![Image de présentation](./media/introduction-to-button-flows/create-button-10.png)  
+10. Sélectionnez le **créer un flux** bouton pour enregistrer votre flux de bouton : ![Image de présentation](./media/introduction-to-button-flows/create-button-10.png)  
 11. Le message de réussite suivant doit s’afficher au bout de quelques instants :  
     ![Image de présentation](./media/introduction-to-button-flows/create-button-11.png)  
 
 Félicitations, vous avez créé un flux de bouton. Vous pouvez maintenant exécuter ce flux de bouton à tout moment, en tout lieu, à partir de l’onglet **Boutons** de l’application Flow. Appuyez simplement sur le « bouton » pour exécuter le flux. L’application mobile Microsoft Flow est disponible pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### <a name="from-your-mobile-device"></a>À partir de votre appareil mobile
-**Remarque** : cette procédure affiche les écrans d’un appareil Android, mais les écrans et l’expérience sur un appareil iOS sont similaires.
+**Remarque** : Cette procédure affiche les écrans à partir d’un appareil Android, les écrans et l’expérience sur un appareil iOS sont similaires.
 
 Dans l’application Flow :
 
@@ -117,7 +117,7 @@ Vous devriez maintenant recevoir les notifications Push, indiquant que le messag
 Vous pouvez surveiller des flux de bouton à partir de l’onglet **Activité** de l’application Flow :   
 ![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-13.png)  
 
-**Remarque** : appuyez sur une activité pour afficher les résultats de l’exécution et en savoir plus sur l’exécution.  
+**Remarque** : Appuyez sur une activité pour afficher les résultats de l’exécution pour en savoir plus sur l’exécution.  
 
 ![Image de présentation](./media/introduction-to-button-flows/activity-details-1.png)  
 

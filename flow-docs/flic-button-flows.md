@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: bbcb6c8950e8ac5959880727604e0355b3150c6f
-ms.sourcegitcommit: a20fbed9941f0cd8b69dc579277a30da9c8bb31b
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "44690471"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64455637"
 ---
 # <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Exécuter vos flux en appuyant sur un bouton intelligent Flic (préversion)
 Déclenchez vos flux en appuyant sur un bouton physique, appelé Flic, proposé par Shortcut Labs. Par exemple, appuyez sur un bouton Flic pour effectuer le suivi de vos heures de travail, bloquer votre calendrier, compter le nombre de visiteurs lors d’un événement ou enregistrer des emplacements géographiques.
@@ -57,7 +57,7 @@ Une fois que vous avez lié un événement Flic à Microsoft Flow, vous pouvez l
 ## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Créer un flux déclenché par un bouton Flic
 Dans cette procédure pas à pas, vous allez utiliser un bouton Flic pour exécuter un flux qui enregistre le temps qu’un consultant passe avec chaque client. Le consultant appuie sur le bouton Flic une fois qu’il est arrivé chez le client, puis appuie de nouveau dessus juste avant de partir. Chaque appui sur le bouton Flic démarre une exécution du flux auquel il est connecté. Le flux enregistre l’heure actuelle dans Google Sheets, puis envoie une notification par courrier. Le courrier contient des détails sur l’exécution du flux.
 
-Remarque : veillez à utiliser l’application mobile Flic pour appairer et configurer au moins une action de **clic** pour déclencher Microsoft Flow. Dans cette capture d’écran, j’ai configuré l’action de **clic** pour déclencher Microsoft Flow. Plus loin dans cette procédure pas à pas, vous allez configurer le déclenchement du flux lorsque le bouton Flic est activé une fois.
+Remarque : Vérifiez que vous avez utilisé l’application mobile Flic à paire et configurez au moins une **cliquez sur** action pour déclencher Microsoft Flow. Dans cette capture d’écran, j’ai configuré l’action de **clic** pour déclencher Microsoft Flow. Plus loin dans cette procédure pas à pas, vous allez configurer le déclenchement du flux lorsque le bouton Flic est activé une fois.
 
    ![configuration du bouton flic](./media/flic-button-flows/flic-configured-for-flow.png)
 
@@ -80,11 +80,11 @@ Commencez à créer le flux.
    ![passer en revue les détails du modèle](./media/flic-button-flows/flic-template-details.png)
 2. Dans Google Sheets, créez une feuille de calcul qui contient une table avec des colonnes nommées **ClickType** et **TimeStamp**.
    
-      Conseil : nommez les colonnes dans Google Sheets en entrant leur nom en haut de la colonne. Votre feuille doit donc apparaître comme dans la capture d’écran suivante :
+      Conseil : Nommez les colonnes dans Google Sheets en entrant le nom de colonne en haut de la colonne. Votre feuille doit donc apparaître comme dans la capture d’écran suivante :
    
    ![Google Sheets](./media/flic-button-flows/flic-google-sheet.png)
    
-   Remarque : vous utiliserez cette feuille plus loin dans cette procédure pas à pas.
+   Remarque : Vous utiliserez cette feuille plus loin dans cette procédure pas à pas.
 
 ### <a name="add-the-flic-trigger-to-your-flow"></a>Ajouter le déclencheur Flic à votre flux
 1. Connectez-vous aux services du modèle, puis sélectionnez **Continuer**.
@@ -112,7 +112,7 @@ Commencez à créer le flux.
 1. Sélectionnez la feuille de calcul créée précédemment dans la liste **Fichier**.
 2. Sélectionnez la feuille dans la liste **Feuille de calcul**.
    
-   Remarque : deux cases supplémentaires apparaissent dans la carte **Insert row (Insérer une ligne)** une fois que vous avez sélectionné la feuille. Ces cases représentent les deux colonnes de la feuille créée précédemment.
+   Remarque : Deux cases supplémentaires apparaissent dans le **insérer une ligne** carte après avoir sélectionné la feuille. Ces cases représentent les deux colonnes de la feuille créée précédemment.
 3. Sélectionnez la zone **ClickType**, puis sélectionnez le jeton **Click type (Type de clic)**.
 4. Sélectionnez la zone **Timestamp**, puis sélectionnez le jeton **Click time (Heure du clic)**.
    

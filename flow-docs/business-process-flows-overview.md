@@ -21,11 +21,11 @@ search.audienceType:
 - flowmaker
 - enduser
 ms.openlocfilehash: b1e23a3ddfd4302c4a5429029ea4fb47f0ab9808
-ms.sourcegitcommit: 9ecf4956320d465a3bf618b79a9023b729d33c89
-ms.translationtype: HT
+ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57462992"
+ms.lasthandoff: 05/25/2019
+ms.locfileid: "64464986"
 ---
 # <a name="business-process-flows-overview"></a>Vue d’ensemble des flux de processus métier
 
