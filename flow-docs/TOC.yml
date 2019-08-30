@@ -80,15 +80,18 @@
       href: remove-solution-aware-flow.md
 - name: Common Data Service
   items:
-    - name: Flux de travail classiques de Common Data Service
-      href: workflow-processes.md
+    - name: Workflows Common Data Service classiques
       items:
+        - name: Présentation
+          href: workflow-processes.md
         - name: Configurer les phases et les étapes de workflow
           href: configure-workflow-steps.md
         - name: Superviser et gérer les processus de workflow
           href: monitor-manage-processes.md
         - name: Bonnes pratiques pour les processus de workflow
           href: best-practices-workflow-processes.md
+        - name: Remplacer les workflows par des flux
+          href: replace-workflows-with-flows.md
     - name: Actions classiques de Common Data Service
       items:
         - name: Utiliser des actions
