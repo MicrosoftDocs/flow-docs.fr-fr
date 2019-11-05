@@ -1,9 +1,10 @@
 ---
-title: Vue d’ensemble des flux de processus métier | Microsoft Docs
+title: Vue d’ensemble des flux de processus d’entreprise | MicrosoftDocs
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
 ms.service: flow
+author: MSFTMAN
 ms.suite: ''
 ms.tgt_pltfrm: ''
 ms.topic: article
@@ -13,171 +14,172 @@ applies_to:
 - PowerApps
 ms.assetid: 4469877e-bb95-481a-bc52-c9746f937ce5
 caps.latest.revision: 16
-ms.author: matp
+ms.author: DEONHE
 manager: kvivek
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b1e23a3ddfd4302c4a5429029ea4fb47f0ab9808
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 230c35947c4e499c5e26fc37bb87828ec787a469
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64464986"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545519"
 ---
-# <a name="business-process-flows-overview"></a>Vue d’ensemble des flux de processus métier
+# <a name="business-process-flows-overview"></a>Vue d’ensemble des flux de processus d’entreprise
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Pour que les utilisateurs entrent des données de manière cohérente et suivent les mêmes étapes chaque fois qu’ils collaborent avec un client, vous pouvez créer un flux de processus métier. Par exemple, vous pouvez créer un flux de processus métier pour que tous les utilisateurs gèrent les demandes de service client de la même manière ou pour qu’ils obtiennent l’approbation d’une facture avant d’envoyer une commande. Les flux de processus métier utilisent la même technologie sous-jacente que les autres processus, mais les fonctionnalités qu’ils fournissent sont très différentes de celles qui utilisent des processus. Pour savoir comment créer ou modifier un flux de processus métier, consultez [Créer un flux de processus métier](create-business-process-flow.md).  
+Vous pouvez vous assurer que les utilisateurs entrent les données de manière cohérente et suivent les mêmes étapes chaque fois qu’ils travaillent avec un client en créant un workflow de processus d’entreprise. Par exemple, vous souhaiterez peut-être créer un processus d’entreprise pour que tout le monde gère les demandes de service client de la même manière, ou pour demander à ce que les personnes reçoivent une approbation pour une facture avant de soumettre une commande. Les flux de processus d’entreprise utilisent la même technologie sous-jacente que les autres processus, mais les fonctionnalités qu’ils fournissent sont très différentes des autres fonctionnalités qui utilisent des processus. Pour savoir comment créer ou modifier un workflow de processus d’entreprise, consultez [créer un workflow de processus d’entreprise](create-business-process-flow.md).  
   
- [Regardez une courte vidéo (4:49) sur les flux de processus métier.](https://go.microsoft.com/fwlink/p/?linkid=842226)  
+ [Regardez une brève vidéo (4:49) sur les flux de processus d’entreprise.](https://go.microsoft.com/fwlink/p/?linkid=842226)  
   
 <a name="BKMK_Why"></a>   
-## <a name="why-use-business-process-flows"></a>Pourquoi utiliser des flux de processus métier ?  
-Les flux de processus métier guident les utilisateurs dans la réalisation de leur travail. Ils fournissent une expérience utilisateur rationalisée qui guide les utilisateurs à travers les processus que leur organisation a définis pour des interactions devant aboutir à une conclusion donnée. Cette expérience utilisateur peut être adaptée en fonction du rôle de sécurité associé à l’utilisateur et du travail qu’il effectue.  
+## <a name="why-use-business-process-flows"></a>Pourquoi utiliser des flux de processus d’entreprise ?  
+Les flux de processus d’entreprise fournissent un guide permettant aux utilisateurs d’effectuer leur travail. Ils fournissent une expérience utilisateur rationalisée qui amène les gens à parcourir les processus définis pour les interactions qui doivent être avancées jusqu’à une conclusion d’une sorte. Cette expérience utilisateur peut être personnalisée afin que les personnes avec des rôles de sécurité différents puissent avoir une expérience qui correspond au mieux au travail qu’ils font.  
   
- Utilisez des flux de processus métier pour définir un ensemble d’étapes que les utilisateurs doivent suivre pour aboutir à un résultat souhaité. Ces étapes indiquent visuellement aux utilisateurs où ils en sont dans le processus métier. Les flux de processus métier réduisent les besoins en formation, car les nouveaux utilisateurs n’ont pas besoin de se concentrer sur l’entité qu’ils doivent utiliser. Ils peuvent laisser le processus les guider. Vous pouvez configurer des flux de processus métier pour prendre en charge des méthodologies de ventes courantes qui peuvent aider vos groupes de ventes à obtenir de meilleurs résultats. Pour les groupes de service, les flux de processus métier peuvent aider les nouvelles équipes à être opérationnelles plus rapidement et à éviter les erreurs qui pourraient engendrer des insatisfactions chez les clients.  
+ Utilisez les flux de processus d’entreprise pour définir un ensemble d’étapes que les utilisateurs doivent suivre pour les faire passer à un résultat souhaité. Ces étapes fournissent un indicateur visuel qui indique aux personnes où elles se trouvent dans le processus d’entreprise. Les flux de processus d’entreprise réduisent le besoin de formation, car les nouveaux utilisateurs n’ont pas à se concentrer sur l’entité qu’ils doivent utiliser. Ils peuvent laisser le processus les guider. Vous pouvez configurer des flux de processus d’entreprise pour prendre en charge des méthodologies de vente courantes qui peuvent aider vos groupes de ventes à obtenir de meilleurs résultats. Pour les groupes de services, les flux de processus d’entreprise peuvent aider le nouveau personnel à être plus rapide et à éviter des erreurs susceptibles d’entraîner des clients insatisfaisants.  
   
 <a name="BKMK_What"></a>   
-## <a name="what-can-business-process-flows-do"></a>À quoi les flux de processus métier peuvent-ils servir ?  
- Avec des flux de processus métier, vous définissez un ensemble de *phases* et *d’étapes* qui sont ensuite affichées dans un contrôle en haut du formulaire.  
+## <a name="what-can-business-process-flows-do"></a>Quel est le rôle des flux de processus d’entreprise ?  
+ Avec les flux de processus d’entreprise, vous définissez un *ensemble d'* étapes et d' *étapes* qui sont ensuite affichées dans un contrôle en haut du formulaire.  
   
- ![Phases d’un processus métier](media/business-process-stages.png "Phases d’un processus métier")  
+ ![Processus d’entreprise avec étapes](media/business-process-stages.png "Processus d’entreprise avec étapes")  
   
- Chaque phase contient un groupe d’étapes. Chaque étape représente un champ dans lequel des données peuvent être entrées. Les utilisateurs passent à la phase suivante à l’aide du bouton **Phase suivante**. Vous pouvez rendre une étape obligatoire afin que les utilisateurs doivent entrer des données pour le champ correspondant avant de passer à la phase suivante. Cette technique est communément appelée « processus de phases (stage-gating) ».  
+ Chaque étape contient un groupe d’étapes. Chaque étape représente un champ dans lequel les données peuvent être entrées. Les utilisateurs avancent jusqu’à l’étape suivante en utilisant le bouton **Next stage** . Vous pouvez effectuer une étape requise pour que les utilisateurs puissent entrer des données pour le champ correspondant avant de passer à l’étape suivante. C’est communément appelé « étape-déclenchement ».  
   
- Les flux de processus métier sont relativement simples par rapport aux autres types de processus, car ils ne fournissent pas de logique métier conditionnelle ou d’automatisation au-delà de l’expérience simplifiée de la saisie de données et du contrôle de l’entrée dans les phases. Toutefois, quand vous les combinez avec d’autres processus et personnalisations, ils peuvent jouer un rôle important pour faire économiser du temps aux utilisateurs, ce qui réduit les coûts de formation et accroît l’adoption par ces derniers.  
+ Les flux de processus d’entreprise s’affichent relativement simplement par rapport à d’autres types de processus, car ils ne fournissent pas de logique métier ou d’automatisation conditionnelle au-delà de la fourniture d’une expérience rationalisée pour l’entrée de données et le contrôle de l’entrée en étapes. Toutefois, lorsque vous les combinez avec d’autres processus et personnalisations, ils peuvent jouer un rôle important dans l’économie du temps, la réduction des coûts de formation et l’adoption de l’utilisateur.  
 
 <a name="BKMK_BPFwithOtherCustomizations"></a>   
-### <a name="business-process-flows-integrated-with-other-customizations"></a>Flux de processus métier intégrés à d’autres personnalisations  
- Quand votre utilisateur ou vous-même entrez des données à l’aide de flux de processus métier, les modifications de données sont également appliquées aux champs de formulaire afin que toute automatisation fournie par des règles métier ou des scripts de formulaire soit applicable immédiatement. Vous pouvez ajouter des étapes qui définissent des valeurs pour des champs qui sont absents dans le formulaire ; ces champs sont alors ajoutés au modèle objet `Xrm.Page` utilisé pour les scripts de formulaire. Tous les workflows qui sont lancés par des modifications apportées à des champs inclus dans un flux de processus métier sont appliqués quand les données du formulaire sont enregistrées. Si l’automatisation est appliquée par un workflow en temps réel, l’utilisateur voit immédiatement les modifications quand il actualise les données du formulaire après avoir enregistré l’enregistrement.  
+### <a name="business-process-flows-integrated-with-other-customizations"></a>Flux de processus d’entreprise intégré à d’autres personnalisations  
+ Lorsque vous ou votre utilisateur entre des données à l’aide de flux de processus d’entreprise, les modifications de données sont également appliquées aux champs de formulaire afin que toute automatisation fournie par les règles d’entreprise ou les scripts de formulaire puisse être appliquée immédiatement. Vous pouvez ajouter des étapes qui définissent des valeurs pour les champs qui ne sont pas présents dans le formulaire. ces champs seront ajoutés au modèle d’objet `Xrm.Page` utilisé pour les scripts de formulaire. Tous les flux de travail initiés par des modifications apportées à des champs inclus dans un flux de processus d’entreprise sont appliqués lorsque les données du formulaire sont enregistrées. Si l’automatisation est appliquée par un workflow en temps réel, les modifications sont immédiatement visibles à l’utilisateur lorsque les données du formulaire sont actualisées après l’enregistrement de l’enregistrement.  
   
- Bien que le contrôle du flux de processus métier dans le formulaire ne fournisse pas de programmabilité côté client directe, les modifications appliquées par les règles métier ou les scripts de formulaire sont automatiquement appliquées aux contrôles de flux de processus métier. Si vous masquez un champ dans un formulaire, ce champ est également masqué dans le contrôle du flux de processus métier. Si vous définissez une valeur à l’aide de règles métier ou de scripts de formulaire, cette valeur est définie dans le flux de processus métier.  
+ Bien que le contrôle de workflow de processus d’entreprise dans le formulaire ne fournisse pas de programmabilité directe côté client, les modifications appliquées par les règles d’entreprise ou les scripts de formulaire sont automatiquement appliquées aux contrôles de workflow de processus d’entreprise. Si vous masquez un champ dans un formulaire, ce champ est également masqué dans le contrôle de workflow de processus d’entreprise. Si vous définissez une valeur à l’aide de règles d’entreprise ou de scripts de formulaire, cette valeur sera définie dans le processus d’entreprise.  
   
 ### <a name="concurrent-process-flows"></a>Flux de processus simultanés  
- Les flux de processus métier simultanés permettent aux personnalisateurs de configurer plusieurs processus métier et de les associer au même enregistrement de départ. Les utilisateurs peuvent basculer entre plusieurs processus métier qui s’exécutent simultanément et reprendre leur travail à la phase du processus à laquelle ils se trouvaient.  
+ Les flux de processus d’entreprise simultanés permettent aux personnalisations de configurer plusieurs processus d’entreprise et de les associer au même enregistrement de départ. Les utilisateurs peuvent basculer entre plusieurs processus d’entreprise exécutés simultanément et reprendre leur travail à l’étape où ils se trouvaient.  
   
 <a name="BKMK_SystemBPF"></a>   
-### <a name="system-business-process-flows"></a>Flux de processus métier système  
- Les flux de processus métier ci-après sont inclus. Pour comprendre comment fonctionnent les flux de processus métier, passez en revue ces flux de processus métier système :  
+### <a name="system-business-process-flows"></a>Flux de processus d’entreprise système  
+ Les flux de processus d’entreprise suivants sont inclus. Pour comprendre le fonctionnement du flux de processus d’entreprise, passez en revue les flux de processus d’entreprise suivants :  
   
--   Processus de vente prospect-opportunité  
+-   Prospect au processus de vente d’opportunités  
   
--   Processus de vente Opportunité  
+-   Processus de vente des opportunités  
   
--   Processus téléphone-incident  
+-   Téléphone au processus de cas  
   
 <a name="BKMK_multipleEntities"></a>   
-## <a name="multiple-entities-in-business-process-flows"></a>Entités multiples dans les flux de processus métier  
- Vous pouvez utiliser un flux de processus métier pour une seule entité ou englober plusieurs entités. Par exemple, vous pouvez avoir un processus qui commence par une opportunité, puis passe à un devis, à une commande, à une facture, puis, pour finir, à la fermeture de l’opportunité.  
+## <a name="multiple-entities-in-business-process-flows"></a>Plusieurs entités dans les flux de processus d’entreprise  
+ Vous pouvez utiliser un workflow de processus d’entreprise pour une seule entité ou plusieurs entités. Par exemple, vous pouvez avoir un processus qui commence par une opportunité, puis continue jusqu’à un devis, une commande, puis une facture, avant de revenir à la fin de l’opportunité.  
   
- Vous pouvez concevoir des flux de processus métier qui lient les enregistrements relatifs à au maximum cinq différentes entités dans un même processus afin que les utilisateurs de l’application puissent se concentrer sur le flux de leur processus plutôt que sur l’entité dans laquelle ils travaillent. Ils peuvent évoluer plus facilement entre les enregistrements de l’entité associée.  
+ Vous pouvez concevoir des flux de processus d’entreprise qui associent les enregistrements pour cinq entités différentes dans un même processus afin que les utilisateurs de l’application puissent se concentrer sur le flux de leur processus plutôt que sur l’entité dans laquelle ils travaillent. Ils peuvent naviguer plus facilement entre les enregistrements d’entité associés.  
   
 <a name="BKMK_MultipleBPF"></a>   
-## <a name="multiple-business-process-flows-are-available-per-entity"></a>Plusieurs flux de processus métier sont disponibles par entité  
- Tous les utilisateurs dans une organisation ne suivent pas forcément le même processus, et différentes conditions peuvent nécessiter l’application d’un autre processus. Vous pouvez avoir jusqu’à 10 flux de processus métier actifs par entité pour fournir des processus appropriés en fonction de la situation.  
+## <a name="multiple-business-process-flows-are-available-per-entity"></a>Plusieurs flux de processus d’entreprise sont disponibles par entité  
+ Tous les utilisateurs d’une organisation ne peuvent pas suivre le même processus et des conditions différentes peuvent nécessiter l’application d’un processus différent. Vous pouvez avoir jusqu’à 10 flux de processus d’entreprise actifs par entité pour fournir les processus appropriés pour différentes situations.  
   
 <a name="BPF_controlsWhichBPF"></a>   
-### <a name="control-which-business-process-flow-will-be-applied"></a>Contrôler le flux de processus métier à appliquer  
- Vous pouvez associer des flux de processus métier à des rôles de sécurité afin que seuls les utilisateurs dotés de ces rôles de sécurité puissent les voir ou s’en servir. Vous pouvez également définir l’ordre des flux de processus métier afin de contrôler le flux de processus métier à définir par défaut. Cette approche fonctionne de la même façon que la définition de plusieurs formulaires pour une entité.  
+### <a name="control-which-business-process-flow-will-be-applied"></a>Contrôler le workflow de processus d’entreprise qui sera appliqué  
+ Vous pouvez associer des flux de processus d’entreprise à des rôles de sécurité afin que seules les personnes disposant de ces rôles de sécurité puissent les voir ou les utiliser. Vous pouvez également définir l’ordre des flux de processus d’entreprise afin de pouvoir contrôler le flux de processus d’entreprise qui sera défini par défaut. Cela fonctionne de la même façon que plusieurs formulaires pour une entité sont définis.  
   
- Quand un utilisateur crée un enregistrement d’entité, la liste des définitions de processus métier actif disponibles est filtrée par le rôle de sécurité de l’utilisateur. La première définition de processus métier actif disponible pour le rôle de sécurité de l’utilisateur en fonction de la liste de l’ordre des processus est celle qui est appliquée par défaut. Si plusieurs définitions de processus métier actif sont disponibles, les utilisateurs peuvent en charger une autre à partir de la boîte de dialogue Changer de processus. À chaque changement de processus, celui affiché passe à l’arrière-plan et est remplacé par celui sélectionné, mais il conserve son état et peut être rétabli. Chaque enregistrement peut se voir associer plusieurs instances de processus (chacune pour une définition de flux de processus métier différente, dans la limite de 10). Au chargement du formulaire, un seul flux de processus métier est affiché. Quand un utilisateur applique un processus différent, ce processus ne peut se charger par défaut que pour cet utilisateur.  
+ Quand quelqu’un crée un nouvel enregistrement d’entité, la liste des définitions de processus d’entreprise actives est filtrée par le rôle de sécurité de l’utilisateur. La première définition de processus d’entreprise activée pour le rôle de sécurité de l’utilisateur, selon la liste des commandes de processus, est celle appliquée par défaut. Si plusieurs définitions de processus d’entreprise actives sont disponibles, les utilisateurs peuvent en charger un autre à partir de la boîte de dialogue changer de processus. Chaque fois que les processus sont basculés, le affiché passe en arrière-plan et est remplacé par celui qui est sélectionné, mais il conserve son état et peut être rétabli. Chaque enregistrement peut être associé à plusieurs instances de processus (chacune pour une définition de workflow de processus métier différente, jusqu’à 10). Lors du chargement du formulaire, un seul fluide de processus d’entreprise est restitué. Lorsqu’un utilisateur applique un processus différent, ce processus peut uniquement être chargé par défaut pour cet utilisateur particulier.  
   
- Pour qu’un processus métier soit chargé par défaut pour tous les utilisateurs (ce qui revient à « épingler » le processus), vous pouvez ajouter, au chargement du formulaire, un script d’API cliente personnalisé (ressource web) qui charge une instance de processus métier existante en fonction de l’ID de la définition de processus métier. 
+ Pour s’assurer qu’un processus d’entreprise est chargé par défaut pour tous les utilisateurs (comportement équivalant à l’épinglage du processus), un script d’API client personnalisé (ressource Web) peut être ajouté sur le chargement de formulaire qui charge spécifiquement une instance de processus d’entreprise existante en fonction de l’entreprise ID de définition de processus. 
  
   
 <a name="BKMK_Considerations"></a>   
-## <a name="business-process-flow-considerations"></a>Considérations relatives aux flux de processus métier  
- Vous pouvez définir des flux de processus métier uniquement pour les entités qui les prennent en charge. Notez également que vous ne pouvez pas ajouter un nombre illimité de processus, de phases et d’étapes.  
+## <a name="business-process-flow-considerations"></a>Considérations sur le déroulement des processus d’entreprise  
+ Vous pouvez définir des flux de processus d’entreprise uniquement pour les entités qui les prennent en charge. Vous devez également connaître les limites du nombre de processus, d’étapes et d’étapes qui peuvent être ajoutés.  
   
-### <a name="business-process-flows-that-call-a-workflow"></a>Flux de processus métier qui appellent un workflow  
- Vous pouvez appeler des workflows à la demande depuis un flux de processus métier. Pour ce faire, à partir du nouveau concepteur de flux de processus métier, vous pouvez faire glisser un composant de workflow vers une phase du processus ou vers la section Workflow global. Pour plus d’informations sur l’utilisation de workflows dans les flux de processus métier, consultez le [billet de blog relatif à l’automatisation des flux de processus métier dans Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
+### <a name="business-process-flows-that-call-a-workflow"></a>Flux de processus d’entreprise appelant un flux de travail  
+ Vous pouvez appeler des workflows à la demande à partir d’un flux de processus d’entreprise. Vous pouvez configurer ce mode à partir du nouveau concepteur de flux de processus d’entreprise en faisant glisser un composant de workflow vers une étape de processus ou vers la section flux de travail globaux. Pour plus d’informations sur l’utilisation de workflows dans les flux de processus d’entreprise, consultez [blog : automatisation des flux de processus d’entreprise dans Dynamics 365](https://blogs.msdn.microsoft.com/crm/2017/03/28/business-process-flow-automation-in-dynamics-365/).  
   
- Quand vous incluez un workflow que vous souhaitez déclencher à la sortie d’une phase de votre flux de processus métier et que cette phase est la dernière phase du flux, le concepteur donne l’impression que le workflow sera déclenché quand cette phase sera terminée. Toutefois, le workflow ne sera pas déclenché, car aucune transition de phase n’a lieu. Vous ne recevez pas d’avertissement ou d’erreur vous empêchant d’inclure le workflow sur la phase. Quand un utilisateur interagit avec le flux de processus métier, le fait de terminer ou d’abandonner le processus n’entraîne pas une transition de phase et le workflow n’est donc pas déclenché. Prenons les exemples suivants :  
+ Lorsque vous incluez un flux de travail que vous souhaitez déclencher à la sortie de la phase d’une étape dans votre flux de processus d’entreprise, et que cette étape est la dernière étape du flux, le concepteur donne l’impression que le flux de travail sera déclenché une fois cette étape terminée. Toutefois, le flux de travail n’est pas déclenché, car une transition d’étape n’a pas lieu. Vous ne recevrez pas d’avertissement ou d’erreur vous empêchant d’inclure le flux de travail à l’étape. Lorsqu’un utilisateur interagit avec le flux de processus d’entreprise, la fin ou l’abandon du processus n’entraîne pas de transition d’étape, et par conséquent, le flux de travail n’est pas déclenché. Prenons les exemples suivants :  
   
--   Vous créez un flux de processus métier avec deux phases, S1 se connecte à S2, avec un workflow sur la phase S2, et vous définissez le déclencheur sur **Sortie de phase**.  
+-   Vous créez un flux de processus d’entreprise en deux étapes : S1 se connecte à S2, avec un flux de travail à l’étape S2 et définit le déclencheur sur **phase de sortie**.  
   
--   Vous créez un flux de processus métier avec trois phases, S1 se connecte à S2, puis S2 se branche sur S3. Vous incluez un workflow sur S2 et définissez le déclencheur sur **Sortie de phase**.  
+-   Vous créez un workflow de processus d’entreprise avec trois étapes, S1 se connecte à S2, puis S2 à S3. Vous incluez un flux de travail sur S2 et définissez le déclencheur sur **étape quitter**.  
   
- Le workflow ne se déclenche dans aucun des deux cas. Pour contourner ce problème, vous pouvez ajouter un workflow global et ajouter à ce dernier le workflow que vous souhaitez déclencher afin que celui-ci soit déclenché pour le processus métier, plutôt que pour une phase du processus. Vous pouvez définir le déclencheur pour un workflow global sur Processus abandonné ou Processus terminé afin que le workflow soit déclenché quand un utilisateur abandonne ou termine le processus métier.  
+ Le flux de travail n’est pas déclenché dans les deux cas. Pour contourner ce problème, vous pouvez ajouter un flux de travail global et ajouter le flux de travail que vous souhaitez déclencher à celui-ci afin que le flux de travail soit déclenché pour le processus d’entreprise plutôt qu’une étape du processus. Vous pouvez définir le déclencheur pour un flux de travail global pour traiter l’abandon ou le processus terminé pour que le flux de travail se déclenche lorsqu’un utilisateur abandonne ou termine le processus d’entreprise.  
   
 <a name="BKMK_Entities"></a>   
-### <a name="entities-that-can-use-business-process-flows"></a>Entités pouvant utiliser des flux de processus métier  
- Toutes les entités personnalisées peuvent utiliser des flux de processus métier. Les entités standard suivantes peuvent également utiliser des flux de processus métier :  
+### <a name="entities-that-can-use-business-process-flows"></a>Entités pouvant utiliser des flux de processus d’entreprise  
+ Toutes les entités personnalisées peuvent utiliser des flux de processus d’entreprise. Les entités standard suivantes peuvent également utiliser des flux de processus d’entreprise :  
   
 -   Compte  
--   Rendez-vous  
--   Campagne  
--   Activité de campagne  
--   Réponse de campagne  
--   Concurrent  
--   Contact  
--   E-mail  
+-   RDV  
+-   Campagnes  
+-   Activité de la campagne  
+-   Réponse de la campagne  
+-   Ses  
+-   Communiquer  
+-   Messagerie  
 -   Droit  
 -   Télécopie  
--   Incident  
+-   Études  
 -   Facture  
--   Prospect  
--   Lettre  
+-   duisent  
+-   Identificateur  
 -   Liste marketing  
--   Opportunité  
+-   Occasion  
 -   Appel téléphonique  
--   Produit  
--   Élément tarifaire  
--   Devis  
+-   Production  
+-   Élément de liste de prix  
+-   Cours  
 -   Rendez-vous périodique  
 -   Documentation commerciale  
 -   Activité sociale  
--   Commande  
+-   Ordre  
 -   Utilisateur  
 -   Tâche  
--   Équipe  
+-   Travail  
   
- Pour activer une entité personnalisée pour les flux de processus métier, cochez la case **Flux des processus d’entreprise (des champs vont être créés)** dans la définition de l’entité. Notez que vous ne pouvez pas annuler cette action.  
+ Pour activer une entité personnalisée pour les flux de processus d’entreprise, activez la case à cocher **flux de processus d’entreprise (champs créés)** dans la définition de l’entité. Notez que vous ne pouvez pas annuler cette action.  
   
 > [!NOTE]
->  Si vous accédez à la phase du flux de processus métier dans laquelle se trouve l’entité `Social Activity` et que vous choisissez le bouton **Phase suivante**, vous voyez l’option **Créer**. Quand vous choisissez **Créer**, le formulaire **Activité sociale** est chargé. Toutefois, `Social Activity` n’étant pas valide pour `Create` à partir de l’interface utilisateur de l’application, vous ne pouvez pas enregistrer le formulaire, et le message d’erreur suivant s’affiche : « Erreur inattendue ».  
+>  Si vous accédez à l’étape de déroulement du processus d’entreprise qui contient l’entité `Social Activity` et que vous choisissez le bouton **étape suivante** , l’option **créer** s’affiche. Lorsque vous choisissez **créer**, le formulaire **activité sociale** se charge. Toutefois, étant donné que `Social Activity` n’est pas valide pour `Create` à partir de l’interface utilisateur de l’application, vous ne pouvez pas enregistrer le formulaire et le message d’erreur suivant s’affiche : « erreur inattendue ».  
   
 <a name="BPF_MaxNumbers"></a>   
-### <a name="maximum-number-of-processes-stages-and-steps"></a>Nombre maximal de processus, de phases et d’étapes  
- Pour garantir des performances acceptables et la convivialité de l’interface utilisateur, certaines limitations s’appliquent, dont vous devez être conscient quand vous envisagez d’utiliser des flux de processus métier :  
+### <a name="maximum-number-of-processes-stages-and-steps"></a>Nombre maximal de processus, étapes et étapes  
+ Pour garantir des performances acceptables et la facilité d’utilisation de l’interface utilisateur, vous devez tenir compte de certaines limitations lorsque vous envisagez d’utiliser des flux de processus d’entreprise :  
   
--   Il ne peut pas y avoir plus de 10 processus de flux de processus métier activés par entité.  
+-   Il ne peut pas y avoir plus de 10 processus de workflow de processus d’entreprise activés par entité.  
   
--   Chaque processus peut contenir 30 phases au maximum.  
+-   Chaque processus ne peut pas contenir plus de 30 étapes.  
   
--   Les processus à plusieurs entités peuvent contenir au maximum cinq entités.
+-   Les processus à plusieurs entités ne peuvent pas contenir plus de cinq entités.
   
-## <a name="business-process-flow-entity-customization-support"></a>Prise en charge de la personnalisation des entités de flux de processus métier 
+## <a name="business-process-flow-entity-customization-support"></a>Prise en charge de la personnalisation de l’entité de workflow de processus d’entreprise 
 
-À compter de la mise à jour version 9.0 de Dynamics 365 (en ligne), les entités de flux de processus métier peuvent apparaître dans le système ; ainsi, les données d’enregistrement des entités peuvent être rendues disponibles dans les grilles, vues, graphiques et tableaux de bord. 
+Introduite dans la mise à jour de Dynamics 365 (Online), version 9,0, les entités de workflow de processus d’entreprise peuvent apparaître dans le système afin que les données d’enregistrement d’entité puissent être mises à disposition dans des grilles, des affichages, des graphiques et des tableaux de bord. 
 
-### <a name="use-business-process-flow-entity-records-with-grids-views-charts-and-dashboards"></a>Utiliser des enregistrements d’entité de flux de processus métier avec des grilles, vues, graphiques et tableaux de bord
+### <a name="use-business-process-flow-entity-records-with-grids-views-charts-and-dashboards"></a>Utiliser des enregistrements d’entité de workflow de processus d’entreprise avec des grilles, des affichages, des graphiques et des tableaux de bord
 
-Les flux de processus métier étant disponibles en tant qu’entité, vous pouvez maintenant utiliser des vues, des graphiques, des tableaux de bord et des recherches avancés à partir des données de flux de processus métier pour une entité spécifique, telle qu’un prospect ou une opportunité. Les personnalisateurs et les administrateurs système peuvent créer des tableaux de bord, des vues, des graphiques et des grilles de flux de processus métier personnalisés similaires à ceux créés avec toute autre entité.
+Avec les flux de processus d’entreprise disponibles en tant qu’entité, vous pouvez désormais utiliser des recherches avancées, des affichages, des graphiques et des tableaux de bord provenant de données de flux de processus d’entreprise pour une entité donnée, par exemple un prospect ou une opportunité. Les administrateurs système et les personnalisateurs peuvent créer des grilles, des affichages, des graphiques et des tableaux de bord de processus métier personnalisés similaires à ceux créés avec n’importe quelle autre entité.
 
-Les flux de processus métier, tels que **Processus de vente prospect-opportunité**, apparaissent sous la forme d’une entité personnalisable dans l’Explorateur de solutions.
+Les flux de processus d’entreprise, tels que **prospect-processus de vente d’opportunités**, s’affichent sous la forme d’une entité personnalisable dans l’Explorateur de solutions.
 
-![Explorateur de solutions avec l’entité Processus de vente prospect-opportunité](media/bpf-lead-solution-explorer.png)
+![Explorateur de solutions avec une entité de processus de prospect-à-opportunité](media/bpf-lead-solution-explorer.png)
 
-Pour accéder à une vue de flux de processus métier par défaut, ouvrez l’Explorateur de solutions, développez **Entités**, développez le processus de votre choix, tel que **Processus de vente prospect-opportunité**, sélectionnez **Vues**, puis sélectionnez la vue souhaitée.
+Pour accéder à une vue de workflow de processus d’entreprise par défaut, ouvrez l’Explorateur de solutions, développez **entités** > développez le processus de votre choix, par exemple **prospect au processus de vente d’opportunités**, sélectionnez **vues**, puis sélectionnez la vue de votre choix.
 
-Vous pouvez afficher sous forme de graphique plusieurs vues par défaut, telles que la vue **Processus de vente : Opportunités actives**. 
+Plusieurs affichages par défaut sont disponibles et peuvent être consultés sous forme de graphique, tels que la vue **active des ventes d’opportunités** . 
 
-![Vue Processus de vente : Opportunités actives](media/bpf-default-view.png)
+![Vue des processus de vente des opportunités actives](media/bpf-default-view.png)
 
-### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Interagir avec l’entité de flux de processus métier à partir d’un workflow
-Vous pouvez également interagir avec les entités de flux de processus métier à partir d’un workflow. Par exemple, vous pouvez créer un workflow pour l’enregistrement de l’entité Flux des processus d’entreprise pour changer la phase active quand un champ de l’enregistrement de l’entité Opportunité est mis à jour. Pour plus d’informations sur la procédure à suivre, consultez le [billet de blog consacré à l’automatisation des phases des flux de processus métier à l’aide de workflows](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
+### <a name="interact-with-the-business-process-flow-entity-from-a-workflow"></a>Interagir avec l’entité de flux de processus d’entreprise à partir d’un Workflow
+Vous pouvez également interagir avec les entités de flux de processus d’entreprise à partir d’un flux de travail. Par exemple, vous pouvez créer un flux de travail pour l’enregistrement d’entité de flux de processus d’entreprise afin de modifier l’étape active quand un champ de l’enregistrement d’entité opportunité est mis à jour. Pour plus d’informations sur la procédure à suivre, consultez [automatiser les étapes de flux de processus d’entreprise à l’aide de workflows](https://blogs.msdn.microsoft.com/crminthefield/2017/12/18/automate-business-process-flow-stages-using-workflows).
 
 
-### <a name="limitations-of-using-business-process-flow-entities"></a>Limitations de l’utilisation des entités de flux de processus métier
+### <a name="limitations-of-using-business-process-flow-entities"></a>Limitations relatives à l’utilisation d’entités de workflow de processus d’entreprise
 
-- Vous ne pouvez pas créer de formulaires personnalisés pour les entités basées sur un flux de processus métier.
-- Si une solution inclut une entité de flux de processus métier, vous devez ajouter celle-ci manuellement à la solution avant de l’exporter. Sinon, l’entité de flux de processus métier n’est pas incluse dans le package de solution. Plus d’informations : [Ajouter des composants de solution](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
+- Actuellement, vous ne pouvez pas créer de formulaires personnalisés pour des entités basées sur un workflow de processus d’entreprise.
+- Si une solution comprend une entité de workflow de processus d’entreprise, l’entité de workflow de processus d’entreprise doit être ajoutée manuellement à la solution avant son exportation. Dans le cas contraire, l’entité de workflow de processus d’entreprise ne sera pas incluse dans le package de solution. Plus d’informations : [Ajouter des composants de solution](/powerapps/maker/model-driven-apps/create-solution#add-solution-components)
 
 ### <a name="next-steps"></a>Étapes suivantes  
- [Regarder une courte vidéo (4:49) sur les flux de processus métier](https://go.microsoft.com/fwlink/p/?linkid=842226)   
- [Créer un flux de processus métier](create-business-process-flow.md)   
- [Améliorer les flux de processus métier avec le branchement](enhance-business-process-flows-branching.md) <br/>
- [Livre blanc : Optimisation des processus avec Dynamics 365](http://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>
+ [Regardez une brève vidéo (4:49) sur les flux de processus d’entreprise](https://go.microsoft.com/fwlink/p/?linkid=842226)   
+ [Créer un  de workflow de processus d’entreprise](create-business-process-flow.md)  
+ [Améliorer les flux de processus d’entreprise avec branchement](enhance-business-process-flows-branching.md) <br/>
+ [Livre blanc : processus d’activation avec Dynamics 365](https://download.microsoft.com/download/C/3/B/C3B46E35-9445-43B9-800B-474E022EE352/Process%20Enablement%20with%20Microsoft%20Dynamics%20CRM%202013.pdf)</br>

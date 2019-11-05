@@ -1,6 +1,6 @@
 ---
-title: Créer un flux à partir de votre téléphone | Microsoft Docs
-description: Créez un flux à partir d’un modèle, par exemple, pour envoyer une notification Push lorsque vous recevez des messages d’une adresse que vous spécifiez.
+title: Créer un Flow à partir de votre téléphone | Microsoft Docs
+description: Créez un workflow à partir d’un modèle qui, par exemple, envoie une notification push lorsque vous recevez des messages à partir d’une adresse que vous spécifiez.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,78 +20,79 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f87320c61427957c02ff75675e4e15b938ac99f4
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 095b3a7f6565afff0a944bb08aee8f3a06ea114b
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64468782"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73549057"
 ---
-# <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Créer un flux à partir de votre téléphone à l’aide de Microsoft Flow
-Créez un flux à partir de votre téléphone à l’aide d’un modèle, que vous pouvez trouver en recherchant parmi une liste de services, en parcourant les catégories ou en spécifiant des mots clés. Suivez les étapes décrites dans cette rubrique pour créer un flux qui envoie une notification Push à votre téléphone quand vous recevez un message de votre responsable.
+# <a name="create-a-flow-from-your-phone-by-using-microsoft-flow"></a>Créer un fluide à partir de votre téléphone à l’aide de Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Créez un fluide à partir de votre téléphone à l’aide d’un modèle, que vous pouvez trouver en parcourant une liste de services, en recherchant des catégories ou en spécifiant des mots clés. Suivez les étapes de cette rubrique pour créer un Flow qui envoie une notification push à votre téléphone quand vous recevez du courrier de votre responsable.
 
-Si vous débutez sur Microsoft Flow, [consultez une vue d’ensemble](getting-started.md).
+Si vous n’êtes pas familiarisé avec Microsoft Flow, [consultez la présentation](getting-started.md).
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 * Un [compte pour Microsoft Flow](sign-up-sign-in.md).
-* Application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows) sur un [appareil pris en charge](getting-started.md#use-the-mobile-app). Les illustrations de cette rubrique reflètent la version iPhone de l’application, mais l’interface Android ou Windows Phone lui ressemble.
-* Pour utiliser le modèle présenté dans cette rubrique, vous avez également besoin :
+* L’Microsoft Flow application mobile pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)ou [Windows Phone](https://aka.ms/flowmobilewindows) sur un [appareil pris en charge](getting-started.md#use-the-mobile-app). Les graphiques de cette rubrique reflètent la version iPhone de l’application, mais l’interface sur un appareil Android ou Windows Phone est similaire.
+* Pour utiliser le modèle présenté dans cette rubrique, vous aurez également besoin des éléments suivants :
   
-  * d’informations d’identification Office 365 ;
-  * de notifications Push activées sur votre téléphone.
+  * Informations d’identification Office 365.
+  * Notifications push activées sur votre téléphone.
 
 ## <a name="find-a-template"></a>Rechercher un modèle
 1. Ouvrez l’application mobile, puis appuyez sur **Parcourir** en bas de l’écran.
    
-    ![Icône Parcourir](./media/mobile-create-flow/browse-icon.png)
+    ![Icône parcourir](./media/mobile-create-flow/browse-icon.png)
    
-    Pour trouver un modèle, procédez de l’une des manières suivantes :
+    Vous pouvez trouver un modèle de l’une des manières suivantes :
    
    * Spécifiez un mot clé dans la zone de recherche en haut de l’écran.
    * Appuyez sur une option dans la liste des services.
-   * Défilez vers le bas pour afficher des catégories, puis cliquez sur un modèle dans une catégorie.
+   * Faites défiler l’affichage pour afficher diverses catégories, puis appuyez sur un modèle dans n’importe quelle catégorie.
      
        ![Onglet Parcourir](./media/mobile-create-flow/browse-tab.png)
      
-     Pour ce didacticiel, vous allez ouvrir le modèle qui envoie une notification Push lorsque vous recevez un message électronique de votre responsable.
+     Pour ce didacticiel, vous allez ouvrir le modèle qui envoie une notification push lorsque vous recevez un message de votre responsable.
 2. Dans la liste des services, cliquez sur **Afficher tout**.
    
     ![Afficher la liste des services](./media/mobile-create-flow/list-services.png)
-3. Appuyez sur l’icône **Notification Push**.
+3. Appuyez sur l’icône de **notification push**.
    
-    ![Notification Push](./media/mobile-create-flow/push-notifications.png)
-4. Dans la barre de recherche, tapez **message électronique**, puis appuyez sur le modèle qui permet d’envoyer des notifications Push lorsque vous recevez un message de votre responsable.
+    ![Notifications push](./media/mobile-create-flow/push-notifications.png)
+4. Dans la barre de recherche, tapez **e-mail**, puis appuyez sur le modèle pour envoyer une notification push lorsque vous recevez un message de votre responsable.
    
     ![Choisir un modèle](./media/mobile-create-flow/choose-template.png)
-5. Dans l’écran qui donne des détails sur le modèle que vous avez sélectionné, appuyez sur **Utiliser ce modèle**.
+5. Dans l’écran qui donne des détails sur le modèle que vous avez sélectionné, appuyez sur **utiliser ce modèle**.
    
     ![Confirmer le modèle](./media/mobile-create-flow/confirm-template.png)
 
-## <a name="finish-the-flow"></a>Terminer le flux
-1. Si vous y êtes invité, cliquez sur **Se connecter**, puis fournissez vos informations d’identification pour Office 365 Outlook et/ou Utilisateurs d’Office 365.
+## <a name="finish-the-flow"></a>Terminer le Flow
+1. Si vous y êtes invité, appuyez sur **se connecter**et indiquez vos informations d’identification pour Office 365 Outlook, Office 365 utilisateurs ou les deux.
    
-    ![Se connecter à Office 365](./media/mobile-create-flow/office-signin.png)
+    ![Connectez-vous à Office 365](./media/mobile-create-flow/office-signin.png)
    
-    Vous pouvez utiliser les mêmes connexions lorsque vous créez d’autres flux.
-2. Dans l’angle supérieur droit, appuyez sur **Suivant**.
+    Vous pouvez utiliser les mêmes connexions quand vous créez d’autres flux.
+2. Dans l’angle supérieur droit, appuyez sur **suivant**.
    
-    ![Appuyer sur Suivant](./media/mobile-create-flow/next.png)
+    ![Appuyez sur suivant](./media/mobile-create-flow/next.png)
    
-    L’écran suivant affiche l’événement déclencheur et toutes les actions qui en résultent.
+    L’écran suivant montre l’événement déclencheur et toutes les actions qui en résultent.
    
-    ![Actions et événements de déclencheur](./media/mobile-create-flow/flow-structure.png)
+    ![Événements déclencheurs et actions](./media/mobile-create-flow/flow-structure.png)
    
-    Pour ce modèle, un nouveau message déclenche le flux, qui récupère vos informations (notamment l’adresse de votre responsable) et vous envoie une notification Push lorsque vous recevez un message de cette adresse. Certains modèles nécessitent une personnalisation pour fonctionner correctement. Ce n’est pas le cas de ce modèle.
-3. (facultatif) En haut de l’écran, tapez un nom différent pour le flux.
+    Pour ce modèle, un nouveau message déclenche le Flow, qui récupère vos informations (y compris l’adresse de votre responsable) et vous envoie une notification push lorsque vous recevez du courrier électronique à partir de cette adresse. Certains modèles requièrent une certaine personnalisation pour fonctionner correctement, mais ce modèle ne l’est pas.
+3. facultatif Vers le haut de l’écran, tapez un nom différent pour le Flow.
    
-    ![Renommer le flux](./media/mobile-create-flow/rename-flow.png)
-4. Dans l’angle supérieur droit, appuyez sur **Créer**.
+    ![Renommer le Flow](./media/mobile-create-flow/rename-flow.png)
+4. Dans l’angle supérieur droit, appuyez sur **créer**.
    
-    ![Créer un flux](./media/mobile-create-flow/create-flow.png)
+    ![créer un Flow](./media/mobile-create-flow/create-flow.png)
    
-    Votre flux est créé et va vérifier si vous avez reçu un message électronique de votre responsable jusqu’à ce que vous le suspendiez ou supprimiez.
+    Votre Flow est créé et vérifie la messagerie électronique de votre responsable jusqu’à ce que vous suspendiez ou supprimiez le Workflow.
 
 ## <a name="next-steps"></a>Étapes suivantes
-* [Surveiller l’activité de flux](mobile-monitor-activity.md).
-* [Gérer vos flux](mobile-manage-flows.md).
+* [Surveillez votre activité de Flow](mobile-monitor-activity.md).
+* [Gérez vos flux](mobile-manage-flows.md).
 

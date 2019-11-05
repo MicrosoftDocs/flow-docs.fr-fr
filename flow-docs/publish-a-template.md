@@ -1,6 +1,6 @@
 ---
-title: Soumettre un modèle de flux | Microsoft Docs
-description: Soumettez votre flux en tant que modèle afin que d’autres organisations puissent le trouver dans la galerie de modèles et utiliser le flux que vous avez créé.
+title: Envoyer un modèle de Flow | Microsoft Docs
+description: Soumettez votre Flow en tant que modèle afin que d’autres organisations puissent le trouver dans la Galerie de modèles et utiliser le Flow que vous avez créé.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,31 +20,32 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 693874ae7876b7c91fa55c45a656b3b76c52a517
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 20edec6203ef1d5919bbdb9553e3a58a587f7f66
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465198"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548893"
 ---
-# <a name="submit-a-template-to-the-microsoft-flow-gallery"></a>Soumettre un modèle à la galerie Microsoft Flow
+# <a name="submit-a-template-to-the-microsoft-flow-gallery"></a>Envoyer un modèle à la Galerie de Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Soumettez un modèle de flux à la galerie de modèles Microsoft Flow. Les modèles aident les personnes non seulement à créer des flux plus facilement, mais également à imaginer des scénarios supplémentaires susceptibles de tirer parti d’un flux.
+Soumettre un modèle de Flow à la Galerie de modèles pour Microsoft Flow. Les modèles aident les utilisateurs non seulement à créer des flux plus facilement, mais également à imaginer des scénarios supplémentaires qui pourraient tirer parti d’un flux.
 
-1. Sur la page **Mes flux**, sélectionnez les points de suspension (...) d’un flux.
+1. Dans la page **mes flux** , sélectionnez les points de suspension (...) pour un flux.
 
-    ![Bouton Points de suspension](./media/publish-a-template/ellipsis-button.png)
+    ![Bouton de sélection](./media/publish-a-template/ellipsis-button.png)
 1. Sélectionnez **Détails** dans le menu qui s’affiche.
-1. Sélectionnez **Plus**, puis **Envoyer en tant que modèle** dans le menu qui s’affiche.
+1. Sélectionnez **plus**, puis **Envoyer en tant que modèle** dans le menu qui s’affiche.
 
     ![Menu contextuel](./media/publish-a-template/context-menu.png)
 
    Vous pouvez uniquement envoyer des flux qui ont été exécutés correctement au moins une fois depuis le dernier enregistrement :
 
-     ![Bouton Points de suspension](./media/publish-a-template/need-successful-run-warning.png)
-1. Indiquez un titre explicite, une description claire du scénario que votre modèle permet d’automatiser, le principal avantage, le nombre d’utilisateurs et le nombre d’exécutions, ainsi que les catégories qui s’appliquent au modèle.
+     ![Bouton de sélection](./media/publish-a-template/need-successful-run-warning.png)
+1. Spécifiez un titre explicite, une description claire du scénario que votre modèle vous aidera à automatiser, le plus grand avantage, le nombre d’utilisateurs, le nombre d’exécutions et les catégories qui s’appliquent au modèle.
 
     ![Options de modèle](./media/publish-a-template/template-options.png)
-1. Sélectionnez **Soumettre**.
+1. Sélectionnez **Envoyer**.
 
-     L’équipe Microsoft Flow vérifie et *modifie éventuellement* votre modèle. Si elle approuve votre modèle, celui-ci apparaît dans la galerie de modèles pour Microsoft Flow.
+     L’équipe Microsoft Flow vérifie et *modifie éventuellement* votre modèle. Si l’équipe approuve votre modèle, elle apparaît dans la Galerie de modèles pour Microsoft Flow.

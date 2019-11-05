@@ -1,6 +1,6 @@
 ---
-title: Configurer des phases et des étapes de workflow dans PowerApps | Microsoft Docs
-description: Découvrez comment configurer des étapes de workflow
+title: Configurer des étapes et des étapes de flux de travail dans PowerApps | MicrosoftDocs
+description: En savoir plus sur la configuration des étapes de flux de travail
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -18,101 +18,102 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 9ebdb1eddaea1f2fd7918c968879f5da37c287fe
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 4239e939f9522b4b3a22e56dfc69275482b017a7
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64456159"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547072"
 ---
-# <a name="configure-workflow-stages-and-steps"></a>Configurer des phases et des étapes de workflow
+# <a name="configure-workflow-stages-and-steps"></a>Configurer des étapes et des étapes de flux de travail
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Quand vous concevez des workflows, vous pouvez placer la logique à exécuter dans des phases et des étapes.  
-  
- **Phases**  
- Les phases facilitent la lecture de la logique des workflows et expliquent cette logique. Toutefois, les phases n’affectent pas la logique ou le comportement des workflows. Si un processus comprend des phases, toutes les étapes du processus doivent être accompagnées d’une phase.  
+Lorsque vous concevez des flux de travail, vous avez la possibilité de contenir la logique que vous souhaitez exécuter en étapes et en étapes.  
   
  **Étapes**  
- Les étapes sont des unités de logique métier dans un workflow. Les étapes peuvent inclure des conditions, des actions, d’autres étapes ou une combinaison de ces éléments.  
+ Les étapes rendent la logique du workflow plus facile à lire et expliquent la logique du flux de travail. Toutefois, les étapes n’affectent pas la logique ou le comportement des workflows. Si un processus a des étapes, toutes les étapes du processus doivent être contenues dans une étape.  
+  
+ **Étapes**  
+ Les étapes sont une unité de logique métier au sein d’un flux de travail. Les étapes peuvent inclure des conditions, des actions, d’autres étapes ou une combinaison de ces éléments.  
   
 <a name="BKMK_ActionsWorkflowProcessesCanPerform"></a>  
  
-## <a name="actions-that-workflow-processes-can-perform"></a>Actions réalisables par les processus de workflow  
+## <a name="actions-that-workflow-processes-can-perform"></a>Actions que les processus de flux de travail peuvent effectuer  
 
- Les processus de workflow peuvent effectuer les actions répertoriées dans le tableau suivant.  
+ Les processus de workflow peuvent effectuer les actions indiquées dans le tableau suivant.  
   
-|Action|Description|  
+|Transactionnel|Descriptive|  
 |------------|-----------------|  
-|**Créer l’enregistrement**|Crée un enregistrement pour une entité et assigne aux attributs les valeurs de votre choix.|  
-|**Mettre à jour l’enregistrement**|Vous pouvez mettre à jour l’enregistrement sur lequel le workflow s’exécute, tous les enregistrements liés à cet enregistrement par une relation N à 1 ou tous les enregistrements créés par des étapes précédentes.|  
-|**Attribuer l’enregistrement**|Vous attribuer l’enregistrement sur lequel le workflow s’exécute, tous les enregistrements liés à cet enregistrement par une relation N à 1 ou tous les enregistrements créés par des étapes précédentes.|  
-|**Envoyer un courrier électronique**|Envoie un e-mail. Vous pouvez choisir de créer un e-mail ou d’utiliser un modèle d’e-mail configuré pour l’entité de l’enregistrement sur lequel le workflow est en cours d’exécution, pour toutes les entités qui ont une relation N à 1 avec l’entité ou pour l’entité de tous les enregistrements créés par des étapes précédentes.|  
-|**Lancer un workflow enfant**|Démarre un processus de workflow qui a été configuré en tant que workflow enfant.|  
-|**Modifier le statut**|Change le statut de l’enregistrement sur lequel le processus s’exécute, de tous les enregistrements liés à cet enregistrement par une relation N à 1 ou de tous les enregistrements créés par des étapes précédentes.|  
-|**Arrêter le workflow**|Arrête le workflow actuel. Vous pouvez définir un statut **Terminé** ou **Annulé** et spécifier un message de statut.<br /><br /> Quand des workflows en temps réel sont configurés pour un événement, l’arrêt d’un workflow ayant le statut « Annulé » empêche l’exécution de l’action d’événement. Pour plus d’informations, consultez [Utilisation de workflows en temps réel](configure-workflow-steps.md#BKMK_SynchronousWorkflows).|  
-|**Étape personnalisée**|Les développeurs peuvent créer des étapes de workflow personnalisées qui définissent des actions. Aucune étape personnalisée n’est disponible par défaut.|  
+|**Créer un enregistrement**|Crée un nouvel enregistrement pour une entité et assigne des valeurs que vous choisissez aux attributs.|  
+|**Mettre à jour l’enregistrement**|Vous pouvez mettre à jour l’enregistrement sur lequel le workflow s’exécute, l’un des enregistrements liés à cet enregistrement dans une relation N :1 ou tout enregistrement créé par les étapes précédentes.|  
+|**Attribuer un enregistrement**|Vous pouvez affecter l’enregistrement sur lequel le workflow s’exécute, l’un des enregistrements liés à cet enregistrement avec une relation N :1 ou tout enregistrement créé par les étapes précédentes.|  
+|**Envoyer un E-mail**|Envoie un e-mail. Vous pouvez choisir de créer un nouveau message électronique ou d’utiliser un modèle de message électronique configuré pour l’entité de l’enregistrement sur lequel le workflow s’exécute, ou pour toutes les entités qui ont une relation N :1 avec l’entité, ou l’entité pour tous les enregistrements créés par des étapes précédentes.|  
+|**Démarrer le flux de travail enfant**|Démarre un processus de flux de travail qui a été configuré en tant que Workflow enfant.|  
+|**Modifier l’État**|Modifie l’état de l’enregistrement sur lequel le processus s’exécute, les enregistrements liés à cet enregistrement avec une relation N :1 ou les enregistrements créés par les étapes précédentes.|  
+|**Arrêter le flux de travail**|Arrête le flux de travail actuel. Vous pouvez définir un état de **réussite** ou d' **annulation** et spécifier un message d’État.<br /><br /> Lorsque les flux de travail en temps réel sont configurés pour un événement, l’arrêt d’un workflow dont l’État est annulé empêchera l’exécution de l’action de l’événement. Pour plus d’informations, consultez [utilisation des flux de travail en temps réel](configure-workflow-steps.md#BKMK_SynchronousWorkflows) .|  
+|**Étape personnalisée**|Les développeurs peuvent créer des étapes de flux de travail personnalisées qui définissent des actions. Aucune étape personnalisée n’est disponible par défaut.|  
   
-### <a name="setting-record-values"></a>Définition des valeurs d’un enregistrement  
+### <a name="setting-record-values"></a>Définition des valeurs d’enregistrement  
 
- Quand vous créez un enregistrement, vous pouvez définir des valeurs pour celui-ci. Quand vous mettez à jour un enregistrement, vous pouvez définir, ajouter, incrémenter, décrémenter, multiplier ou effacer des valeurs.  
+ Lorsque vous créez un enregistrement, vous pouvez définir des valeurs pour l’enregistrement. Lorsque vous mettez à jour un enregistrement, vous pouvez définir, ajouter, incrémenter, décrémenter, multiplier ou effacer des valeurs.  
   
- Quand vous sélectionnez **Définir les propriétés**, une boîte de dialogue s’ouvre et affiche le formulaire par défaut pour l’entité.  
+ Lorsque vous sélectionnez **définir les propriétés**, une boîte de dialogue s’ouvre et affiche le formulaire par défaut de l’entité.  
   
- En bas de la boîte de dialogue, vous pouvez voir une liste de champs supplémentaires non présents dans le formulaire.  
+ En bas de la boîte de dialogue, vous pouvez voir une liste de champs supplémentaires absents du formulaire.  
   
- Pour n’importe quel champ, vous pouvez définir une valeur statique qui sera définie par le workflow.  
+ Pour n’importe quel champ, vous pouvez définir une valeur statique et celle-ci sera définie par le flux de travail.  
   
- Sur le côté droit de la boîte de dialogue, **l’Assistant Formulaire** vous permet de définir ou d’ajouter des valeurs dynamiques à partir du contexte de l’enregistrement actuel. Ces valeurs comprennent les valeurs des enregistrements associés qui sont accessibles à partir des relations N à 1 (plusieurs-à-un) pour l’entité.  
+ Sur le côté droit de la boîte de dialogue, l' **Assistant formulaire** vous donne la possibilité de définir ou d’ajouter des valeurs dynamiques à partir du contexte de l’enregistrement actif. Cela comprend les valeurs des enregistrements connexes qui sont accessibles à partir des relations N :1 (plusieurs-à-un) pour l’entité.  
   
- Les options disponibles dans **l’Assistant Formulaire** dépendent du champ que vous avez sélectionné dans le formulaire. Quand vous définissez une valeur dynamique, vous voyez un espace réservé jaune appelé « champ de données dynamiques » qui indique où les données dynamiques seront incluses. Pour enlever la valeur, il vous suffit de sélectionner le champ de données dynamiques et de le supprimer. Pour les champs de texte, vous pouvez utiliser une combinaison de données statiques et de données dynamiques.  
+ Les options disponibles dans l' **Assistant formulaire** dépendent du champ que vous avez sélectionné dans le formulaire. Lorsque vous définissez une valeur dynamique, vous verrez un espace réservé jaune appelé « Slug » qui indique où les données dynamiques seront incluses. Si vous souhaitez supprimer la valeur, sélectionnez simplement la ligne-bloc et supprimez-la. Pour les champs de texte, vous pouvez utiliser une combinaison de données statiques et dynamiques.  
   
- Avec des valeurs dynamiques, vous n’avez pas la certitude qu’un champ ou une entité associée a la valeur que vous souhaitez définir. Vous pouvez en fait définir une série de champs pour essayer de définir la valeur et les trier à l’aide des flèches vertes. Si le premier champ ne contient pas de données, le deuxième champ est essayé, et ainsi de suite. Si aucun des champs ne contient de données, vous pouvez spécifier une valeur à utiliser par défaut.  
+ Avec les valeurs dynamiques, vous ne savez pas si un champ ou une entité associée possède la valeur que vous souhaitez définir. Vous pouvez en fait définir un certain nombre de champs pour essayer de définir la valeur et les trier dans l’ordre à l’aide des flèches vertes. Si le premier champ n’a pas de données, le deuxième champ sera essayé, et ainsi de suite. Si aucun des champs ne contient de données, vous pouvez spécifier une valeur par défaut à utiliser.  
   
 <a name="BKMK_SettingConditionsForWorkflowActions"></a>   
 
-## <a name="setting-conditions-for-workflow-actions"></a>Définition des conditions pour les actions de workflow  
+## <a name="setting-conditions-for-workflow-actions"></a>Définition de conditions pour les actions de flux de travail  
 
- Les actions que vous souhaitez appliquer dépendent souvent de conditions. Les processus de workflow offrent plusieurs moyens de définir des conditions et de créer une logique de branchement pour obtenir les résultats souhaités. Vous pouvez vérifier les valeurs de l’enregistrement sur lequel le processus de workflow s’exécute, de tous les enregistrements liés à cet enregistrement par une relation N à 1 ou les valeurs au sein du processus lui-même.  
+ Les actions que vous allez appliquer dépendent souvent des conditions. Les processus de workflow offrent plusieurs moyens de définir des conditions et de créer une logique de branchement pour obtenir les résultats souhaités. Vous pouvez vérifier les valeurs de l’enregistrement sur lequel s’exécute le processus de workflow, les enregistrements liés à cet enregistrement avec une relation N :1 ou les valeurs dans le processus lui-même.  
   
-|Type de condition|Description|  
+|Type de condition|Descriptive|  
 |--------------------|-----------------|  
-|**Condition de vérification**|Instruction « si-\<condition>-alors » logique.<br /><br /> Vous pouvez vérifier les valeurs actuelles de l’enregistrement sur lequel le workflow s’exécute, de tous les enregistrements liés à cet enregistrement par une relation N à 1 ou de tous les enregistrements créés par des étapes précédentes. En fonction de ces valeurs, vous pouvez définir des étapes supplémentaires quand la condition est vérifiée.<br /><br /> Dans l’instruction « si-\<condition> alors », vous pouvez utiliser les opérateurs suivants : **Est égal à**, **Est différent de**, **Contient des données**, **Ne contient pas de données**, **Sous** et **Pas sous**. **Remarque :**  Les opérateurs **Sous** et **Pas sous** sont des opérateurs hiérarchiques. Ils peuvent uniquement servir sur les entités pour lesquelles une relation hiérarchique est définie. Si vous essayez d’utiliser ces opérateurs sur les entités pour lesquelles aucune relation hiérarchique n’est définie, le message d’erreur suivant s’affiche : « Vous utilisez un opérateur hiérarchique sur une entité pour laquelle aucune relation hiérarchique n’est définie. Rendez l’entité hiérarchique (en marquant une relation comme hiérarchique) ou utilisez un autre opérateur. » Pour plus d’informations sur les relations hiérarchiques, consultez [Définir et interroger des données liées hiérarchiquement](/powerapps/maker/common-data-service/define-query-hierarchical-data). Une capture d’écran qui suit le tableau illustre la définition du processus de workflow qui utilise les opérateurs hiérarchiques **Sous** et **Pas sous**.|  
-|**Branche conditionnelle**|Instruction « sinon-si-alors » logique. L’éditeur utilise le texte « Sinon, si \<condition>, alors : ».<br /><br /> Sélectionnez une condition de vérification que vous avez définie ; vous pouvez alors ajouter une branche conditionnelle pour définir des étapes supplémentaires qui sont exécutées si la condition n’est pas vérifiée.|  
-|**Action par défaut**|Instruction « sinon » logique. L’éditeur utilise le texte « Sinon : ».<br /><br /> Sélectionnez une condition de vérification, une branche conditionnelle, une condition d’attente ou une branche d’attente parallèle que vous avez définie ; vous pouvez alors utiliser une action par défaut afin de définir des étapes pour tous les cas qui ne satisfont pas aux critères définis dans les éléments de condition ou de branche.|  
-|**Condition d’attente**|Permet à un workflow d’arrière-plan de s’interrompre jusqu’à ce que les critères définis par la condition soient remplis. Le workflow redémarre automatiquement une fois que les critères de la condition d’attente sont remplis.<br /><br /> Les workflows en temps réel ne peuvent pas utiliser de conditions d’attente.|  
-|**Branche d’attente parallèle**|Définit une condition d’attente alternative pour un workflow d’arrière-plan avec un ensemble correspondant d’étapes supplémentaires qui ne sont effectuées que si le critère initial est rempli. Vous pouvez utiliser des branches d’attente parallèles pour créer des limites de temps dans votre logique de workflow. Elles permettent d’éviter que le workflow attende indéfiniment que les critères définis dans une condition d’attente soient remplis.|  
-|**Étape personnalisée**|Les développeurs peuvent créer des étapes de workflow personnalisées qui définissent des conditions. Aucune étape personnalisée n’est disponible par défaut.|  
+|**Vérifier la condition**|Instruction « if-\<> » logique.<br /><br /> Vous pouvez vérifier les valeurs actuelles de l’enregistrement sur lequel le workflow s’exécute, de l’un des enregistrements liés à cet enregistrement dans une relation N :1 ou de tout enregistrement créé par les étapes précédentes. En fonction de ces valeurs, vous pouvez définir des étapes supplémentaires lorsque la condition a la valeur true.<br /><br /> Dans l’instruction « if-\<> Then », vous pouvez utiliser les opérateurs suivants : **est égal**à, **n’est pas égal**à, **contient des données**, **ne contient pas de données**, **sous** et **non sous**. **Remarque :**  Le **sous** et **non sous** sont des opérateurs hiérarchiques. Elles ne peuvent être utilisées que sur les entités qui ont une relation hiérarchique définie. Si vous essayez d’utiliser ces opérateurs sur les entités qui n’ont pas de relation hiérarchique définie, le message d’erreur suivant s’affiche : «vous utilisez un opérateur hiérarchique sur une entité qui n’a pas de relation hiérarchique définie. Créez l’entité hiérarchique (en marquant une relation comme hiérarchique) ou utilisez un opérateur différent.» Pour plus d’informations sur les relations hiérarchiques, consultez [définir et interroger des données hiérarchiquement associées](/powerapps/maker/common-data-service/define-query-hierarchical-data). Une capture d’écran qui suit le tableau est un exemple de la définition du processus de workflow qui utilise le **sous** et **non sous** les opérateurs hiérarchiques.|  
+|**Branche conditionnelle**|Une instruction « Else-If-Then » logique, l’éditeur utilise le texte « sinon, si \<condition > Then : »<br /><br /> Sélectionnez une condition de vérification que vous avez définie précédemment et vous pouvez ajouter une branche conditionnelle pour définir des étapes supplémentaires lorsque la condition de vérification retourne la valeur false.|  
+|**Action par défaut**|Instruction « Else » logique. l’éditeur utilise le texte « sinon : »<br /><br /> Sélectionnez une condition de vérification, une branche conditionnelle, une condition d’attente ou une branche d’attente parallèle que vous avez définie précédemment et vous pouvez utiliser une action par défaut pour définir les étapes de tous les cas qui ne correspondent pas aux critères définis dans les éléments de condition ou de branche.|  
+|**Condition d’attente**|Permet à un flux de travail en arrière-plan de s’interrompre jusqu’à ce que les critères définis par la condition soient satisfaits. Le flux de travail démarre automatiquement à nouveau lorsque les critères de la condition d’attente sont satisfaits.<br /><br /> Les workflows en temps réel ne peuvent pas utiliser les conditions d’attente.|  
+|**Branche d’attente parallèle**|Définit une condition d’attente alternative pour un flux de travail en arrière-plan avec un ensemble d’étapes supplémentaires correspondantes qui sont exécutées uniquement lorsque le critère initial est respecté. Vous pouvez utiliser des branches d’attente parallèles pour créer des limites de temps dans votre logique de Workflow. Elles permettent d’empêcher le workflow d’attendre indéfiniment jusqu’à ce que les critères définis dans une condition d’attente soient satisfaits.|  
+|**Étape personnalisée**|Les développeurs peuvent créer des étapes de flux de travail personnalisées qui définissent des conditions. Aucune étape personnalisée n’est disponible par défaut.|  
   
- La capture d’écran suivante illustre la définition d’un processus de workflow avec les opérateurs hiérarchiques **Sous** et **Pas sous**. Dans notre exemple, nous appliquons deux remises différentes à deux groupes de comptes. Dans **Ajouter une étape**, nous avons sélectionné **Vérifier la condition** pour spécifier la condition **si-alors** contenant les opérateurs **Sous** ou **Pas sous**. La première condition **si-alors** s’applique à tous les comptes qui sont **Sous** le compte Alpine Ski House. Ces comptes bénéficient d’une remise de 10 % sur les produits et services achetés. La seconde condition **si-alors** s’applique à tous les comptes qui ne sont **Pas sous** le compte Alpine Ski House ; ces comptes bénéficie d’une remise de 5 %. Ensuite, nous avons sélectionné **Mettre à jour l’enregistrement** pour définir l’action à exécuter selon la condition.  
+ La capture d’écran suivante contient un exemple de définition de processus de flux de travail avec le **sous** et **non sous** les opérateurs hiérarchiques. Dans notre exemple, nous appliquons deux remises différentes à deux groupes de comptes. Dans **Ajouter une étape**, nous avons sélectionné la **condition de vérification** pour spécifier la condition **Si** , qui contient les opérateurs **sous** ou **non sous** . La première condition **si-Then** s’applique à tous les comptes qui se trouvent **sous** le compte Alpine Ski House. Ces comptes bénéficient d’une remise de 10% sur les bons et les services achetés. La seconde condition **If-Then** s’applique à tous les comptes qui **ne sont pas sous** le compte Alpine Ski House et qui bénéficient d’une remise de 5%. Ensuite, nous avons sélectionné **mettre à jour l’enregistrement** pour définir l’action à effectuer en fonction de la condition.  
   
- ![Processus de workflow avec les opérateurs Sous&#47;Pas sous](media/wfp-under-not-under.PNG "Processus de workflow avec les opérateurs Sous/Pas sous")  
+ ![Processus de workflow avec&#47;sous-opérateurs non sous](media/wfp-under-not-under.PNG "Processus de workflow avec les opérateurs sous/non sous")  
   
 <a name="BKMK_SynchronousWorkflows"></a>   
 
-## <a name="using-real-time-workflows"></a>Utilisation de workflows en temps réel  
+## <a name="using-real-time-workflows"></a>Utilisation des flux de travail en temps réel  
 
- Vous pouvez configurer des workflows en temps réel, mais vous devez les utiliser avec précaution. Les workflows d’arrière-plan sont généralement recommandés, car le système peut les appliquer quand des ressources sur le serveur sont disponibles. Le travail que doit effectuer le serveur s’en trouve fluidifié et tout utilisateur peut bénéficier de performances système optimales. L’inconvénient est que les actions définies par les workflows d’arrière-plan ne sont pas immédiates. Vous ne pouvez pas prédire quand elles seront appliquées, mais en règle générale, cette opération prend quelques minutes. Pour la plupart des tâches d’automatisation de processus métier, cela est acceptable car les utilisateurs du système n’ont pas besoin d’avoir conscience que le processus est en cours d’exécution.  
+ Vous pouvez configurer des flux de travail en temps réel, mais vous devez les utiliser avec précaution. Les flux de travail en arrière-plan sont généralement recommandés, car ils permettent au système de les appliquer à mesure que des ressources sur le serveur sont disponibles. Cela permet de lisser le travail que le serveur doit effectuer et de maintenir des performances optimales pour tous les utilisateurs du système. L’inconvénient est que les actions définies par les flux de travail en arrière-plan ne sont pas immédiates. Vous ne pouvez pas prédire à quel moment ils seront appliqués, mais cela prend généralement quelques minutes. Pour une plus grande automatisation des processus d’entreprise, cela est parfait, car les personnes qui utilisent le système n’ont pas besoin d’être axents que le processus est en cours d’exécution.  
   
- Utilisez des workflows en temps réel quand un processus métier requiert l’affichage immédiat des résultats du processus ou si vous souhaitez la possibilité d’annuler une opération. Par exemple, vous pouvez souhaiter définir certaines valeurs par défaut pour un enregistrement quand il est enregistré pour la première fois ou vous assurer que certains enregistrements ne sont pas supprimés.  
+ Utilisez des flux de travail en temps réel lorsqu’un processus d’entreprise demande à un utilisateur de voir immédiatement les résultats du processus ou si vous souhaitez pouvoir annuler une opération. Par exemple, vous souhaiterez peut-être définir certaines valeurs par défaut pour un enregistrement la première fois qu’il est enregistré, ou vous voulez vous assurer que certains enregistrements ne sont pas supprimés.  
   
-### <a name="converting-between-real-time-and-background-workflows"></a>Conversion entre workflows en temps réel et workflows d’arrière-plan  
+### <a name="converting-between-real-time-and-background-workflows"></a>Conversion entre les flux de travail en temps réel et en arrière-plan  
 
- Vous pouvez convertir un workflow en temps réel en workflow d’arrière-plan en choisissant **Convertir en workflow d’arrière-plan** dans la barre d’outils.  
+ Vous pouvez modifier un flux de travail en temps réel dans un flux de travail en arrière-plan en choisissant **convertir en flux de travail en arrière-plan** dans la barre d’outils.  
   
- Vous pouvez convertir un workflow d’arrière-plan en workflow en temps réel en choisissant **Convertir en workflow temps réel** dans la barre d’outils. Si le workflow d’arrière-plan utilise une condition d’attente, il devient non valide et vous ne pouvez pas l’activer tant que vous n’avez pas supprimé la condition d’attente.  
+ Vous pouvez modifier un flux de travail en arrière-plan en flux de travail en temps réel en choisissant **convertir en flux de travail en temps réel** dans la barre d’outils. Si le flux de travail en arrière-plan utilise des conditions d’attente, il devient non valide et vous ne pouvez pas l’activer tant que vous n’avez pas supprimé la condition d’attente.  
   
-### <a name="initiating-real-time-workflows-before-or-after-status-changes"></a>Lancement de workflows en temps réel avant ou après la modification du statut  
+### <a name="initiating-real-time-workflows-before-or-after-status-changes"></a>Lancement de flux de travail en temps réel avant ou après les modifications d’État  
 
- Quand vous configurez **Options des processus automatiques** pour des workflows en temps réel, les options **Démarrer quand** dont vous disposez pour l’événement de modification du statut sont **Après** ou **Avant**. L’option par défaut est **Après**.  
+ Quand vous configurez **des options pour les processus automatiques** pour les flux de travail en temps réel, l’événement **Démarrer quand** les options de l’État changes vous permet de sélectionner **après** ou **avant** les modifications de l’État. L’option par défaut est **après**.  
   
- Quand vous sélectionnez **Avant**, vous dites que vous voulez que la logique dans le workflow soit appliquée avant que les données modifiant le statut ne soient enregistrées. Vous pouvez ainsi vérifier les valeurs avant que toute autre logique ne soit appliquée après l’opération et empêcher l’exécution d’une logique supplémentaire. Par exemple, vous pouvez avoir une logique supplémentaire dans une action de workflow personnalisée ou de plug-in qui peut lancer des actions sur un autre système. En arrêtant un traitement supplémentaire, vous pouvez éviter les cas où des systèmes externes sont affectés. L’application de workflows en temps réel avant cet événement signifie également que les autres actions de plug-in ou de workflow qui peuvent avoir enregistré des données n’ont pas besoin d’être « restaurées » quand l’opération est annulée.  
+ Lorsque vous sélectionnez **avant** d’indiquer que vous souhaitez que la logique du flux de travail soit appliquée avant l’enregistrement des données de modification de l’État. Cela vous permet de vérifier les valeurs avant l’application d’une autre logique après l’opération et d’empêcher l’exécution d’une logique supplémentaire. Par exemple, vous pouvez avoir une logique supplémentaire dans un plug-in ou une action de flux de travail personnalisé qui peut lancer des actions sur un autre système. En arrêtant le traitement, vous pouvez éviter les cas où des systèmes externes sont affectés. L’application de flux de travail en temps réel avant cet événement signifie également que les autres actions de flux de travail ou de plug-in qui peuvent avoir enregistré des données n’ont pas besoin d’être « restaurées » lorsque l’opération est annulée.  
   
-### <a name="using-the-stop-workflow-action-with-real-time-workflows"></a>Utilisation de l’action Arrêter le workflow avec des workflow en temps réel  
+### <a name="using-the-stop-workflow-action-with-real-time-workflows"></a>Utilisation de l’action arrêter le flux de travail avec des flux de travail en temps réel  
 
- Quand vous appliquez une action **Arrêter le workflow** dans un workflow, vous pouvez spécifier une condition de statut qui peut être **Terminé** ou **Annulé**. Quand vous définissez le statut sur Annulé, vous empêchez l’opération. L’utilisateur reçoit un message dont l’en-tête est **Erreur du processus métier** et qui contient le texte du message de statut lié à l’action d’arrêt.  
+ Lorsque vous appliquez une action **arrêter le workflow** dans un flux de travail, vous avez la possibilité de spécifier une condition d’État qui peut être **réussie** ou **annulée**. Lorsque vous définissez l’État sur annulé, vous empêchez l’opération. Un message d’erreur contenant le texte du message d’état de l’action d’arrêt s’affiche pour l’utilisateur avec l’en-tête **Erreur du processus d’entreprise**.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
  [Créer une logique métier personnalisée avec des processus](guide-staff-through-common-tasks-processes.md)   
- [Vue d’ensemble des processus de workflow](workflow-processes.md)   
- [Superviser et gérer les processus de workflow](monitor-manage-processes.md)   
- [Bonnes pratiques pour les processus de workflow](best-practices-workflow-processes.md)
+ [Vue d’ensemble des processus de flux de travail](workflow-processes.md)   
+ [Surveiller et gérer les processus de flux de travail](monitor-manage-processes.md)   
+ [Meilleures pratiques pour les processus de flux de travail](best-practices-workflow-processes.md)

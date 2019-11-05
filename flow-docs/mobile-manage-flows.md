@@ -1,6 +1,6 @@
 ---
-title: Gérer des flux à partir de votre téléphone | Microsoft Docs
-description: Affichez la liste de vos flux, activez ou désactivez des flux et affichez les événements, actions et historiques d’exécution de chaque flux
+title: Gérer les flux à partir de votre téléphone | Microsoft Docs
+description: Afficher une liste de vos flux, les activer ou les désactiver, et afficher les événements, les actions et l’historique d’exécution de chaque flux
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,50 +20,51 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 4a35166ec57e81b957f7659e0e670e80bbf510ca
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 6f452f52d654d6f03a3262de8888c68cb2480704
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64467775"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548637"
 ---
-# <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Gérer des flux à partir de votre téléphone dans Microsoft Flow
-Affichez la liste de tous les flux que vous avez créés. En outre, affichez les événements et actions de chaque flux, activez ou désactivez un flux ou explorez un historique d’exécution.
+# <a name="manage-flows-in-microsoft-flow-from-your-phone"></a>Gérer les flux dans Microsoft Flow à partir de votre téléphone
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Affichez la liste de tous les flux que vous avez créés et, pour chaque flux, affichez ses événements et actions, activez-le ou désactivez-le, puis explorez son historique d’exécution.
 
 **Conditions préalables**
 
-* Installez l’application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows) sur un [appareil pris en charge](getting-started.md#use-the-mobile-app). Les illustrations de cette rubrique reflètent la version iPhone de l’application, mais les graphiques sur l’interface Android et Windows Phone lui ressemblent.
-* Si vous ne disposez pas d’un flux, créez-en un sur [le site web de Microsoft Flow](https://flow.microsoft.com/). Pour faciliter les tests, utilisez-en un que vous pouvez déclencher vous-même au lieu d’attendre un événement externe.
+* Installez l’application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)ou [Windows Phone](https://aka.ms/flowmobilewindows) sur un [appareil pris en charge](getting-started.md#use-the-mobile-app). Les graphiques de cette rubrique reflètent la version iPhone de l’application, mais les graphiques sur Android et les Windows Phone ressemblent à ce qui est similaire.
+* Si vous n’avez pas encore de fluide, créez-en un sur [le site Web pour Microsoft Flow](https://flow.microsoft.com/). Pour faciliter les tests, utilisez-en un que vous puissiez déclencher vous-même au lieu d’attendre un événement externe.
 
-Le flux présenté dans ce didacticiel s’exécute lorsque vous recevez des messages provenant d’une adresse spécifique :
+Le déroulement de ce didacticiel s’exécute lorsque vous recevez des messages d’une adresse spécifique :
 
-![Déclencher un flux à la réception d’un message électronique provenant d’une adresse spécifique](./media/mobile-manage-flows/create-trigger.png)
+![Déclencher le workflow lors de la réception d’un courrier électronique à partir d’une adresse spécifique](./media/mobile-manage-flows/create-trigger.png)
 
-Vous pouvez configurer un tel flux avec votre adresse de messagerie personnelle pour les tests et une adresse différente (par exemple, celle de votre responsable) lorsque le flux est prêt pour une utilisation réelle.
+Vous pouvez configurer un tel Flow avec votre adresse de messagerie personnelle à des fins de test et une autre adresse (par exemple, le de votre responsable) lorsque le workflow est prêt pour une utilisation réelle.
 
-Lorsque le flux est exécuté, il envoie une notification Push personnalisée à votre téléphone avec la syntaxe suivante :
+Lorsque le workflow s’exécute, il envoie une notification push personnalisée, avec cette syntaxe, à votre téléphone :
 
-![Envoyer un message à Slack](./media/mobile-manage-flows/create-event.png)
+![Envoyer un message à la marge](./media/mobile-manage-flows/create-event.png)
 
-**Remarque** : Vous pouvez également [surveiller l’activité de flux](mobile-monitor-activity.md) à partir de l’application mobile.
+**Remarque**: vous pouvez également [surveiller l’activité de Flow](mobile-monitor-activity.md) à partir de l’application mobile.
 
-## <a name="manage-a-flow"></a>Gérer un flux
-1. Ouvrez l’application mobile, puis appuyez sur **Mes flux** en bas de l’écran pour afficher tous vos flux.
+## <a name="manage-a-flow"></a>Gérer un Flow
+1. Ouvrez l’application mobile, puis appuyez sur **mes flux** en bas de l’écran pour répertorier tous vos flux.
    
-    Chaque entrée indique le nom du flux, des icônes pour les événements et actions associés, l’heure de la dernière exécution et une icône qui indique si la dernière exécution a réussi.
+    Chaque entrée indique le nom du Flow, les icônes pour ses événements et actions, l’heure à laquelle il s’est exécuté le plus récemment et une icône qui indique si l’exécution la plus récente a réussi.
    
-    ![Liste de flux](./media/mobile-manage-flows/flow-list.png)
-2. Appuyez sur un flux pour afficher ses options de gestion.
+    ![Liste des flux](./media/mobile-manage-flows/flow-list.png)
+2. Appuyez sur un Flow pour afficher les options de gestion de celui-ci.
    
-    ![Options de gestion de flux](./media/mobile-manage-flows/flow-details.png)
-3. Appuyez sur le bouton bascule **Activer le flux** pour activer ou désactiver le flux.
-4. Appuyez sur **Voir le flux** pour afficher les événements et actions associés, appuyez sur chaque événement ou action que vous voulez développer et appuyez sur **Précédent**.
+    ![Options de gestion d’un Flow](./media/mobile-manage-flows/flow-details.png)
+3. Appuyez sur **activer** /désactiver le déroulement pour activer ou désactiver le Flow.
+4. Appuyez sur **afficher le Flow** pour afficher les événements et actions pour ce Flow, appuyez sur chaque événement ou sur une action pour le développer, puis sur **précédent**.
    
-    ![Événements et actions d’un flux](./media/mobile-manage-flows/flow-event-action.png)
-5. Appuyez sur **Historique d’exécution** pour afficher les réussites et/ou échecs du flux.
+    ![Événements et actions pour un Workflow](./media/mobile-manage-flows/flow-event-action.png)
+5. Appuyez sur **historique d’exécution** pour afficher les réussites, les échecs ou les deux.
    
-    ![Liste d’exécutions](./media/mobile-manage-flows/history-mixed.png)
-6. Appuyez sur une exécution pour indiquer si chaque événement et action a réussi et, dans ce cas, la durée (en secondes) nécessaire pour la réussite du flux.
+    ![Liste des exécutions](./media/mobile-manage-flows/history-mixed.png)
+6. Appuyez sur une exécution pour indiquer si chaque événement et action ont réussi et, le cas échéant, le temps écoulé (en secondes).
    
     ![Détails de l’exécution](./media/mobile-manage-flows/flow-run.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Rechercher et corriger les erreurs avec l’outil de vérification de Microsoft Flow | Microsoft Docs
+title: Rechercher et corriger les erreurs avec le vérificateur de Microsoft Flow | Microsoft Docs
 description: Recherchez et corrigez les erreurs rapidement avec l’outil de vérification de Microsoft Flow.
 services: ''
 suite: flow
@@ -20,39 +20,40 @@ search.app:
 - Powerplatform
 search.audienceType:
 - flowmaker
-ms.openlocfilehash: a6a7acd464131cebaa692d72a9a0a44a572b2470
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 2751b914c9f1afcab9cc5eee8c55e3b85ea07716
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65060856"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547919"
 ---
-# <a name="the-microsoft-flow-checker"></a>L’outil de vérification de Microsoft Flow
+# <a name="the-microsoft-flow-checker"></a>Vérificateur de Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-L’outil de vérification de Microsoft Flow promeut une qualité supérieure flux en veillant à ce vous suivent les meilleures pratiques lors de la conception de flux. Lorsque vous exécutez l’outil de vérification, vous obtenez des insights sur des questions comme « quelles sont les zones de mise en œuvre de mon flux posent un problème de performances ou la fiabilité ? »
+L’outil de vérification de Microsoft Flow promeut des flux de qualité supérieure en vous assurant que vous suivez les meilleures pratiques lors de la conception de flux. Lorsque vous exécutez l’outil de vérification, vous pouvez obtenir des informations sur des questions telles que « quelles sont les zones de l’implémentation de mon fluide qui présentent un risque de performances ou de fiabilité ? »
 
-Pour chaque problème l’outil de vérification identifie, les points de vérificateur des occurrences spécifiques au sein du flux où vous envisagez d’effectuer des améliorations. Et bien, vous allez apprendre à implémenter ces améliorations en suivant les instructions détaillées.
+Pour chaque problème identifié par l’outil de vérification, celui-ci pointe vers des occurrences spécifiques dans le Flow où vous devez envisager d’apporter des améliorations. Et apprenez à implémenter ces améliorations en suivant les instructions détaillées.
 
-L’outil de vérification est toujours actif, qui apparaissent dans la barre de commandes dans le concepteur. L’outil de vérification présente un point rouge lorsqu’elle détecte un ou plusieurs des erreurs ou des erreurs potentielles dans votre flux.
+L’outil de vérification est toujours actif, apparaissant dans la barre de commandes du concepteur. Le vérificateur affiche un point rouge lorsqu’il détecte une ou plusieurs erreurs ou erreurs potentielles dans votre workflow.
 
-![Outil de vérification](media/checker/checker-in-designer.png "outil de vérification")
+![Vérification](media/checker/checker-in-designer.png "Vérification")
 
 
 ## <a name="view-errors-in-the-checker"></a>Afficher les erreurs dans l’outil de vérification
 
-Lorsque vous concevez votre flux, vous pouvez sélectionner le bouton de l’outil de vérification des flux pour ouvrir l’outil d’analyse pour afficher les erreurs et avertissements. 
+Lors de la conception de votre Flow, vous pouvez sélectionner le bouton de l’outil de vérification de Flow pour ouvrir l’outil de vérification et afficher les erreurs et les avertissements. 
 
-L’outil de vérification s’ouvre aussi automatiquement lorsque vous enregistrez le flux s’il existe des erreurs ou avertissements.  Une fois que l’outil de vérification s’ouvre, il affiche toutes les erreurs et avertissements dans votre flux. Dans chaque section, l’outil de vérification appelle les actions où l’erreur ou l’avertissement se produit. 
+L’outil d’analyse s’ouvre automatiquement lorsque vous enregistrez le workflow en présence d’erreurs ou d’avertissements.  Une fois que l’outil de vérification s’ouvre, il affiche toutes les erreurs et tous les avertissements dans votre workflow. Dans chaque section, l’outil de vérification appelle les actions où l’erreur ou l’avertissement se produit. 
 
-## <a name="learn-to-fix-errors-and-warnings"></a>Apprenez à corriger les erreurs et avertissements
+## <a name="learn-to-fix-errors-and-warnings"></a>Apprendre à corriger les erreurs et les avertissements
 
-Développez chaque section pour en savoir plus sur la façon de corriger une erreur.
+Développez chaque section pour en savoir plus sur la résolution d’une erreur.
 
-![Outil de vérification détails](media/checker/checker-detail.png "outil de vérification de détails")
+![Détails du vérificateur](media/checker/checker-detail.png "Détails du vérificateur")
 
-## <a name="learn-more"></a>En savoir plus
+## <a name="learn-more"></a>Pour en savoir plus
 
-[Bien démarrer avec Microsoft Flow](getting-started.md)
+[Prise en main de Microsoft Flow](getting-started.md)
 
 
 

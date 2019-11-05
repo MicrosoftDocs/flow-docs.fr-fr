@@ -1,6 +1,6 @@
 ---
-title: Gérer les approbations de page de SharePoint avec Microsoft Flow | Microsoft Docs
-description: Découvrez comment gérer les approbations de page de SharePoint avec Microsoft Flow...
+title: Gérer les approbations de pages SharePoint avec Microsoft Flow | Microsoft Docs
+description: Découvrez comment gérer les approbations de pages SharePoint avec Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,65 +15,66 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: d5e01a3d2e13cc48107e19e0e2bbea3821437273
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 1b328b604f9b199c2303dde3a0aa00898f188ada
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061339"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547646"
 ---
-# <a name="manage-sharepoint-page-approvals-with-microsoft-flow"></a>Gérer les approbations de page de SharePoint avec Microsoft Flow
+# <a name="manage-sharepoint-page-approvals-with-microsoft-flow"></a>Gérer les approbations de pages SharePoint avec Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Administrateurs du site SharePoint peuvent utiliser Microsoft Flow pour exiger des pages de site nouveau ou mis à jour doivent être approuvées avant d’être publiées.
+Les administrateurs de site SharePoint peuvent utiliser Microsoft Flow pour exiger l’approbation des pages de site nouvelles ou mises à jour avant leur publication.
 
-Dans cet article, vous allez apprendre à configurer votre site SharePoint pour utiliser un flux pour exiger des modifications du site doivent être approuvées avant leur mise en service.
+Dans cet article, vous allez apprendre à configurer votre site SharePoint pour qu’il utilise un Flow pour exiger que les modifications apportées au site soient approuvées avant leur mise en ligne.
 
-## <a name="configure-sharepoint-for-page-approvals"></a>Configurer SharePoint pour les approbations de la page
+## <a name="configure-sharepoint-for-page-approvals"></a>Configurer SharePoint pour les approbations de pages
 
-### <a name="prerequisites"></a>Prérequis 
+### <a name="prerequisites"></a>Conditions préalables 
 
-Vous devez être un administrateur de site SharePoint pour effectuer les activités dans cet article.
+Pour effectuer les activités de cet article, vous devez être administrateur de site SharePoint.
 
-1. Connexion à SharePoint en tant qu’un administrateur de site.
-1. Sélectionnez **Pages** à partir de la barre de navigation.
+1. Connectez-vous à SharePoint en tant qu’administrateur de site.
+1. Sélectionnez **pages** dans la barre de navigation.
 
-    ![Sélectionnez le flux d’approbation de page](media/customize-sharepoint-page-approvals/pages.png)
+    ![Sélectionner un workflow d’approbation de page](media/customize-sharepoint-page-approvals/pages.png)
 
-1. Sélectionnez **flux** , puis sélectionnez **configurer des flux d’approbation de page**.
+1. Sélectionnez **Flow** , puis sélectionnez **configurer le workflow d’approbation de page**.
     
-    ![Sélectionnez le flux d’approbation de page](media/customize-sharepoint-page-approvals/select-page-approval-flow.png)
+    ![Sélectionner un workflow d’approbation de page](media/customize-sharepoint-page-approvals/select-page-approval-flow.png)
 
-1. Fournir un **le nom du flux**, au moins un nom dans la **approbateurs** zone, puis sélectionnez **créer**.
+1. Indiquez un **nom de workflow**, au moins un nom dans la zone **approbateurs** , puis sélectionnez **créer**.
     
-    ![Sélectionnez le flux d’approbation de page](media/customize-sharepoint-page-approvals/flow-name-approvers-create.png)
+    ![Sélectionner un workflow d’approbation de page](media/customize-sharepoint-page-approvals/flow-name-approvers-create.png)
 
-Voilà ! Chaque fois une page est ajoutée ou modifiée, une demande d’approbation accède à présent à la **approbateurs** vous répertorié dans le flux.
+Voilà! À présent, chaque fois qu’une page est ajoutée ou modifiée, une demande d’approbation est envoyée aux **approbateurs** que vous avez listés dans le Flow.
 
-Le flux d’approbation de page s’apparente à un autre flux, donc il est répertorié dans le **mes flux** onglet.
+Le flux d’approbation de page est comme n’importe quel autre flux. il est donc indiqué sous l’onglet **mes flux** .
 
-![Sélectionnez le flux d’approbation de page](media/customize-sharepoint-page-approvals/page-approval-flow-success.png)
+![Sélectionner un workflow d’approbation de page](media/customize-sharepoint-page-approvals/page-approval-flow-success.png)
 
 ## <a name="submit-a-page-for-approval"></a>Soumettre une page pour approbation
 
-Maintenant que vous avez créé un flux d’approbation de page, toute personne qui ajoute ou modifie une page devrez effectuer les opérations suivantes :
+Maintenant que vous avez créé un workflow d’approbation de page, toute personne qui ajoute ou modifie une page doit effectuer les opérations suivantes :
 
- - Apportez une modification au site (ajouter une nouvelle page, par exemple), puis enregistrez la modification.
+ - Modifiez le site (ajoutez une nouvelle page, par exemple), puis enregistrez la modification.
 
      ![Envoyer la page pour approbation](media/customize-sharepoint-page-approvals/create-new-page.png)
      
- - Attendez que quelqu'un approuver la modification.
+ - Attendez qu’une personne approuve la modification.
     
     ![Envoyer la page pour approbation](media/customize-sharepoint-page-approvals/wait-for-approval.png)
     
 ## <a name="approve-a-page"></a>Approuver une page
 
-Les approbateurs reçoivent un e-mail chaque fois qu’une demande d’approbation de page. Ils peuvent approuver les demandes directement dans le courrier électronique (si leur client de messagerie prend en charge les messages actionnables) ou ouvrez la page à partir de l’e-mail, et puis approuve la page dans SharePoint.
+Les approbateurs reçoivent un e-mail chaque fois qu’une demande d’approbation de page est envoyée. Ils peuvent approuver les demandes directement dans l’e-mail (si leur client de messagerie prend en charge les messages actionnables) ou ouvrir la page de l’e-mail à consulter, puis approuver la page dans SharePoint.
 
-## <a name="customize-page-approval-flows"></a>Personnaliser le flux d’approbation de page
+## <a name="customize-page-approval-flows"></a>Personnaliser les flux d’approbation de page
 
-Étant donné que les approbations de la page utilisent Microsoft Flow dans les coulisses, le flux d’approbation de page est disponible pour les propriétaires de site modifier et ajouter une logique métier personnalisée dans le flux. Pour modifier le flux, le propriétaire de site peut sélectionner **flux** , puis sélectionnez **consultez vos flux** dans la bibliothèque de pages pour rechercher le flux d’approbation de page.
+Étant donné que les approbations de page utilisent Microsoft Flow en arrière-plan, le processus d’approbation de page est disponible pour les propriétaires de site afin de modifier et d’ajouter toute logique métier personnalisée dans le Workflow. Pour modifier le flux, le propriétaire du site peut sélectionner des **flux** , puis sélectionner **afficher vos flux** dans la bibliothèque de pages pour trouver le flux d’approbation de page.
 
-## <a name="learn-more"></a>En savoir plus
+## <a name="learn-more"></a>Pour en savoir plus
 
-- [Flux d’approbation de page](https://support.office.com/article/page-approval-flow-a8b2e689-d4a1-4639-8028-333c0ece30d9)
-- [Configurer l’approbation de page](https://support.office.com/article/configure-page-approval-14ce6976-a0a7-427b-b4ab-d28d344a5222)
+- [Workflow d’approbation de page](https://support.office.com/article/page-approval-flow-a8b2e689-d4a1-4639-8028-333c0ece30d9)
+- [Configurer l’approbation de la page](https://support.office.com/article/configure-page-approval-14ce6976-a0a7-427b-b4ab-d28d344a5222)

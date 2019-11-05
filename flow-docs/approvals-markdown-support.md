@@ -1,6 +1,6 @@
 ---
-title: Utiliser Markdown pour formater les approbations Microsoft Flow | Microsoft Docs
-description: Apprenez à utiliser Markdown pour formater les demandes d’approbation Microsoft Flow.
+title: Utiliser la démarque pour mettre en forme les approbations de Microsoft Flow | Microsoft Docs
+description: Apprenez à utiliser la démarque pour mettre en forme Microsoft Flow demandes d’approbation.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,24 +20,25 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 7611ccb8bba9f2647402df46753de284016d7cd4
-ms.sourcegitcommit: 014f64bcc4aed27794d5c7efc2eca241d271518e
-ms.translationtype: HT
+ms.openlocfilehash: b82ac7c53c8c018b5e61011e4c1d8b9cdabe9747
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58656128"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545312"
 ---
-# <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Utiliser Markdown dans des demandes d’approbation Microsoft Flow
+# <a name="use-markdown-in-microsoft-flow-approval-requests"></a>Utiliser la démarque dans Microsoft Flow les demandes d’approbation
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Cet article explique comment utiliser la syntaxe [Markdown](https://en.wikipedia.org/wiki/Markdown) pour ajouter une mise en forme enrichie et des tables à vos demandes d’approbation.
+Cet article explique comment utiliser la syntaxe de [démarque](https://en.wikipedia.org/wiki/Markdown) pour ajouter des tables et une mise en forme enrichies à vos demandes d’approbation.
 
 ## <a name="headers"></a>En-têtes
 
-Structurez vos commentaires à l’aide d’en-têtes. Les en-têtes permettent de segmenter les commentaires et les rendent ainsi plus lisibles.
+Structurez vos commentaires à l’aide d’en-têtes. Les en-têtes segmentent les commentaires plus longs, ce qui les rend plus faciles à lire.
 
-Commencez une ligne par un caractère de hachage `#` pour définir un titre. Organisez vos remarques à l’aide de sous-titres en commençant une ligne par des caractères de hachage supplémentaires, par exemple `####`. Jusqu'à six niveaux d’en-têtes sont pris en charge.
+Commencez une ligne par un caractère de hachage `#` pour définir un titre. Organisez vos notes avec des sous-titres en démarrant une ligne avec des caractères de hachage supplémentaires, par exemple `####`. Jusqu’à six niveaux d’en-tête sont pris en charge.
 
-**Exemple :**
+**Tels**
 
 ```Markdown
 # This is a H1 header
@@ -47,44 +48,44 @@ Commencez une ligne par un caractère de hachage `#` pour définir un titre. Org
 ##### This is a H5 header
 ```
 
-**Résultat :**
+**Venir**
 
-![Exporter le flux](./media/approvals-markdown-support/mrkdown-headers.png)
+![Exporter le workflow](./media/approvals-markdown-support/mrkdown-headers.png)
 
 ## <a name="paragraphs-and-line-breaks"></a>Paragraphes et sauts de ligne
 
-Facilitez la lecture de votre texte en l’espaçant à l’aide de paragraphes ou de sauts de ligne. Insérez deux espaces avant le saut de ligne pour commencer un nouveau paragraphe, ou deux sauts de ligne consécutivement pour commencer un nouveau paragraphe.   
+Facilitez la lecture de votre texte en le divisant par des paragraphes ou des sauts de ligne. Entrez deux espaces avant le saut de ligne pour commencer un nouveau paragraphe, ou entrez deux sauts de ligne consécutivement pour commencer un nouveau paragraphe.   
    
-**Exemple**
+**Tels**
 
-Ajoutez les lignes entre votre texte avec la touche Entrée.
-Cela permet de mieux espacer votre texte et de le rendre plus lisible.
+Ajoutez des lignes entre votre texte à l’aide de la touche entrée.
+Cela permet d’améliorer la lisibilité de votre texte.
 
 **Résultat :**    
-Ajoutez les lignes entre votre texte avec la touche Entrée.      
-Cela permet de mieux espacer votre texte et de le rendre plus lisible.
+Ajoutez des lignes entre votre texte à l’aide de la touche entrée.      
+Cela permet d’améliorer la lisibilité de votre texte.
 
 
 **Exemple 2**
 
-Ajoutez deux espaces avant la fin de la ligne.(espace, espace)     
-Ceci permet d’ajouter de l’espace entre des paragraphes.
+Ajoutez deux espaces avant la fin de la ligne. (espace, espace)     
+Cela ajoute de l’espace entre les paragraphes.
 
-**Résultat :**  
+**Venir**  
 Ajoutez deux espaces avant la fin de la ligne.   
 
-Ceci permet d’ajouter de l’espace entre des paragraphes.
+Cela ajoute de l’espace entre les paragraphes.
   
 
-## <a name="lists"></a>Listes
+## <a name="lists"></a>Suivant
 
-Organisez les éléments connexes à l’aide de listes. Vous pouvez ajouter des listes triées contenant des numéros ou des listes non triées avec des puces uniquement.
+Organiser les éléments associés avec des listes. Vous pouvez ajouter des listes triées avec des nombres ou des listes non triées avec des puces simples.
 
-Les listes triées commencent par un numéro, suivi d’un point pour chaque élément de la liste. Les listes non triées commencent par un `*`. Commencez chaque élément de la liste sur une nouvelle ligne. Dans un fichier ou un widget Markdown, insérez deux espaces avant le saut de ligne pour commencer un nouveau paragraphe, ou deux sauts de ligne consécutivement pour commencer un nouveau paragraphe.   
+Les listes triées commencent par un nombre suivi d’un point pour chaque élément de liste. Les listes non triées commencent par un `*`. Commencez chaque élément de liste sur une nouvelle ligne. Dans un fichier ou un widget de démarque, entrez deux espaces avant le saut de ligne pour commencer un nouveau paragraphe, ou entrez deux sauts de ligne consécutivement pour commencer un nouveau paragraphe.   
 
 ### <a name="ordered-or-numbered-lists"></a>Listes triées ou numérotées
 
-**Exemple :**
+**Tels**
 
 ```Markdown
 0. First item.
@@ -92,15 +93,15 @@ Les listes triées commencent par un numéro, suivi d’un point pour chaque él
 0. Third item.
 ```
 
-**Résultat :**
+**Venir**
 
-1. First item.
-2. Second item.
-3. Third item.
+1. Premier élément.
+2. Deuxième élément.
+3. Troisième élément.
 
 ### <a name="bullet-lists"></a>Listes à puces
 
-**Exemple :**
+**Tels**
 
 <pre>
 
@@ -110,15 +111,15 @@ Les listes triées commencent par un numéro, suivi d’un point pour chaque él
 
 </pre>
 
-**Résultat :**
+**Venir**
 
-- Item 1
-- Item 2
-- Item 3
+- Élément 1
+- Élément 2
+- Élément 3
 
 ### <a name="nested-lists"></a>Listes imbriquées
 
-**Exemple :**
+**Tels**
 <pre>
 
 1. First item.
@@ -132,43 +133,43 @@ Les listes triées commencent par un numéro, suivi d’un point pour chaque él
 
 </pre>
 
-**Résultat :**  
+**Venir**  
 
-1. First item.
+1. Premier élément.
 
-    - Item 1
-    - Item 2
-    - Item 3
-2. Second item.
-    - Nested item 1
-    - Nested item 2
-    - Nested item 3
+    - Élément 1
+    - Élément 2
+    - Élément 3
+2. Deuxième élément.
+    - Élément imbriqué 1
+    - Élément imbriqué 2
+    - Élément imbriqué 3
 
 
-## <a name="links"></a>Liens
+## <a name="links"></a>Liées
 
-Les URL HTTP et HTTPS sont automatiquement mises en forme sous forme de liens. 
+Les URL HTTP et HTTPs sont automatiquement mises en forme en tant que liens. 
 
-Vous pouvez définir des liens au format texte pour votre URL à l’aide de la syntaxe Markdown standard :
+Vous pouvez définir des liens hypertexte de texte pour votre URL en utilisant la syntaxe de lien de démarque standard :
 
 ```Markdown
 [Link Text](Link URL)
 ```
 
-**Exemple :**
+**Tels**
 <pre>
 &#91;Microsoft Flow](https://flow.microsoft.com)
 </pre>
 
-**Résultat :**
+**Venir**
 
 [Microsoft Flow](https://flow.microsoft.com)
 
 ### <a name="anchor-links"></a>Liens d’ancrage
 
-Des ID d’ancrage sont attribués à tous les en-têtes lors du rendu au format HTML. L’ID représente le texte du titre, les espaces étant remplacés par des tirets (-) et toutes les lettres sont des minuscules.
+Les ID d’ancrage sont assignés à tous les en-têtes lorsqu’ils sont rendus au format HTML. L’ID est le texte du titre, les espaces étant remplacés par des tirets (-) et tous les minuscules.
 
-**Exemple :**
+**Tels**
 
 <pre>
 ###Link to a heading in the page
@@ -176,29 +177,29 @@ Des ID d’ancrage sont attribués à tous les en-têtes lors du rendu au format
 
 <br/>
 
-**Résultat :**
+**Venir**
 
-Syntaxe d’un lien d’ancrage pour une section.
+Syntaxe d’un lien d’ancrage vers une section...
 
 <pre>
 [Link to a heading in the page](#link-to-a-heading-in-the-page)
 </pre> 
 <br/>
-L’ID est entièrement composé de minuscules, et le lien respecte la casse. Veillez par conséquent à utiliser des minuscules même si l’en-tête lui-même est constitué de majuscules.
+L’ID est en minuscules, et le lien respecte la casse. Veillez donc à utiliser des minuscules, même si l’en-tête lui-même utilise majuscules.
 
 
-## <a name="tables"></a>Tableaux
+## <a name="tables"></a>Elles
 
-Organisez les données structurées à l’aide de tableaux. 
+Organisez les données structurées avec des tables. 
 
-- Placez chaque ligne du tableau sur sa propre ligne 
-- Séparez les cellules du tableau à l’aide de la barre verticale `|` 
-- Les deux premières lignes d’un tableau définissent les en-têtes de colonne et l’alignement des éléments dans le tableau
-- Utilisez les deux-points (`:`) pour séparer l’en-tête et le corps des tableaux afin de spécifier l’alignement de la colonne (gauche, centre, droite) 
-- Pour insérer une nouvelle ligne, utilisez la balise de saut de ligne HTML (`<br/>`) (fonctionne uniquement dans un document Wiki)  
-- Veillez à terminer chaque ligne avec un retour chariot (CR) ou un saut de ligne (LF). 
+- Placer chaque ligne de table sur sa propre ligne 
+- Séparer les cellules d’un tableau à l’aide du caractère de barre verticale `|` 
+- Les deux premières lignes d’une table définissent les en-têtes de colonnes et l’alignement des éléments dans le tableau.
+- Utiliser les signes deux-points (`:`) lors de la Division de l’en-tête et du corps des tableaux pour spécifier l’alignement des colonnes (gauche, Centre, droite) 
+- Pour commencer une nouvelle ligne, utilisez la balise break HTML (`<br/>`) (fonctionne dans un wiki mais pas ailleurs)  
+- Veillez à terminer chaque ligne par une CR ou un LF. 
 
-**Exemple :**
+**Tels**
 
 ```
 | Heading 1 | Heading 2 | Heading 3 |  
@@ -210,24 +211,24 @@ Organisez les données structurées à l’aide de tableaux.
 
 
 
-**Résultat :**  
+**Venir**  
 
-| Heading 1 | Heading 2 | Heading 3 |  
+| Titre 1 | Titre 2 | Titre 3 |  
 |-----------|:---------:|-----------:|  
-| Cell A1 | Cell A2 | Cell A3 |  
-| Cell B1 | Cell B2 | Cell B3<br/>second line of text |  
+| Cellule a1 | Cellule a2 | Cellule a3 |  
+| Cellule B1 | Cellule B2 | Cellule B3<br/>deuxième ligne de texte |  
 
  
 ## <a name="emphasis-bold-italics-strikethrough"></a>Accentuation (gras, italique, barré)  
 
-Vous pouvez mettre en évidence un texte en appliquant aux caractères un style gras, italique ou barré : 
-- Pour mettre en italique : entourez le texte d’un astérisque `*` ou d’un trait de soulignement `_`.   
-- Pour mettre en gras : entourez le texte d’astérisques doubles `**`.    
-- Pour barrer un texte : entourez le texte de deux caractères tilde `~~`.   
+Vous pouvez mettre en évidence le texte en appliquant le gras, l’italique ou le barré aux caractères : 
+- Pour appliquer l’italique : entourez le texte d’un astérisque `*` ou un trait de soulignement `_`   
+- Pour appliquer l’attribut gras : Placez le texte entre deux astérisques `**`.    
+- Pour appliquer le style barré : Placez le texte entre deux caractères tilde `~~`.   
 
-Combinez ces éléments pour appliquer plusieurs styles au texte.    
+Combinez ces éléments pour appliquer plusieurs caractères d’accentuation au texte.    
 
-**Exemple :**
+**Tels**
 
 <pre>
 Use _emphasis_ in comments to express **strong** opinions and point out ~~corrections~~ 
@@ -237,11 +238,11 @@ Use _emphasis_ in comments to express **strong** opinions and point out ~~correc
 
 <br/>
 
-**Résultat :**
+**Venir**
 
-Use _emphasis_ in comments to express **strong** opinions and point out <s>corrections</s>   
-**_Bold, italicized text_**    
-**~~Bold, strike-through text~~**  
+Utilisez l' _accent_ sur les commentaires pour exprimer des opinions **solides** et faire état des <s>corrections</s>   
+**_Texte en gras et en italique_**    
+**~~Texte en gras et barré~~**  
 
 
 ## <a name="special-characters"></a>Caractères spéciaux
@@ -249,15 +250,15 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 <table width="650px">
 <tbody valign="top">
 <tr>
-<th width="300px">Syntaxe</th>
-<th width="350px">Exemple/notes</th>
+<th width="300px">Stockéesyntaxe</th>
+<th width="350px">Exemples/remarques</th>
 </tr>
 
 
 
 <tr>
 <td>
-<p>Pour insérer un des caractères suivants, ajoutez en préfixe une barre oblique inverse :</p>
+<p>Pour insérer l’un des caractères suivants, préfixe avec une barre oblique inverse :</p>
 
 <p style="margin-bottom:2px;">```\   backslash ``` </p>
 <p style="margin-bottom:2px;"><code>\`</code>   `backtick`</p>
@@ -273,13 +274,13 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 
 
 </td>
-<td>Quelques exemples d’insertion de caractères spéciaux
-<p>Entrez ```\\``` pour obtenir \\ </p>
-<p>Entrez ```\_``` pour obtenir _ </p>
-<p>Entrez ```\#``` pour obtenir \# </p>
-<p>Entrez ```\(``` pour obtenir \( </p>
-<p>Entrez ```\.``` pour obtenir \. </p>
-<p>Entrez ```\!``` pour obtenir \! </p>
+<td>Exemples d’insertion de caractères spéciaux
+<p>Entrez ```\\``` pour accéder à \\ </p>
+<p>Entrez ```\_``` pour accéder à _ </p>
+<p>Entrez ```\#``` pour accéder à \# </p>
+<p>Entrez ```\(``` pour accéder à \( </p>
+<p>Entrez ```\.``` pour accéder à \. </p>
+<p>Entrez ```\!``` pour accéder à \! </p>
 </td>
 </tr>
 

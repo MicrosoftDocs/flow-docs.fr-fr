@@ -1,6 +1,6 @@
 ---
-title: Enlever ou supprimer des flux basés sur une solution | Microsoft Docs
-description: Découvrez comment enlever ou supprimer des flux basés sur une solution.
+title: Découvrez comment supprimer ou supprimer des flux sensibles à la solution | Microsoft Docs
+description: Découvrez comment supprimer ou supprimer des flux prenant en charge les solutions.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,35 +20,36 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 120689bce2100c383297f95371387f9b41559ffe
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: e4bab1f20abb01682836dcf832abcb65d315334c
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465028"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548493"
 ---
-# <a name="remove-a-solution-aware-flow"></a>Enlever un flux basé sur une solution
+# <a name="remove-a-solution-aware-flow"></a>Supprimer un Flow sensible à la solution
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Vous pouvez soit simplement enlever un flux d’une solution, soit le supprimer entièrement d’un environnement.
+Vous pouvez soit supprimer un workflow d’une solution, soit supprimer entièrement le workflow d’un environnement.
 
-Action|Résultat
+Transactionnel|Venir
 ------|-----------
-Enlever de cette solution|Le flux est enlevé de la solution sélectionnée, mais il est conservé dans l’environnement. Vous pouvez continuer à utiliser le flux dans d’autres solutions de l’environnement.
-Supprimer de cet environnement|Le flux est entièrement supprimé ; il n’est plus disponible dans l’environnement.
+Supprimer de cette solution|Le Flow est supprimé de la solution sélectionnée, mais il reste dans l’environnement. Vous pouvez utiliser le Flow dans d’autres solutions de l’environnement à une date ultérieure.
+Supprimer de cet environnement|Le Flow est supprimé ; elle n’est pas disponible dans l’environnement.
 
-1. Connectez-vous à Microsoft Flow, puis sélectionnez **Solutions** dans la barre de navigation.
-1. Sélectionnez la solution contenant le flux à supprimer.
+1. Connectez-vous à Microsoft Flow, puis sélectionnez **solutions** dans la barre de navigation.
+1. Sélectionnez la solution qui contient le Flow que vous souhaitez supprimer.
 
    ![](./media/remove-solution-aware-flow/new-flow-inside-solution.png)
    
-1. Sélectionnez **...** (Plus de commandes) pour votre flux, sélectionnez **Enlever**, puis sélectionnez **Enlever de cette solution** ou **Supprimer de cet environnement**.
+1. Sélectionnez **...** (plus de commandes) pour votre Flow, sélectionnez **supprimer**, puis sélectionnez **supprimer de cette solution** ou **supprimer de cet environnement**.
 
    ![](./media/remove-solution-aware-flow/delete-flow-from-solution-options.png)
 
-## <a name="learn-more"></a>En savoir plus
+## <a name="learn-more"></a>Pour en savoir plus
 
 - [Créer une solution](./overview-solution-flows.md)
-- [Créer un flux dans une solution](./create-flow-solution.md)
+- [Créer un fluide dans une solution](./create-flow-solution.md)
 - [Exporter une solution](./export-flow-solution.md)
 - [Importer une solution](./import-flow-solution.md)
-- [Modifier un flux basé sur une solution](./edit-solution-aware-flow.md)
+- [Modifier un Flow sensible à la solution](./edit-solution-aware-flow.md)

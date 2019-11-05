@@ -20,90 +20,91 @@ search.app:
 - Powerplatform
 search.audienceType:
 - maker
-ms.openlocfilehash: d1f4b6d6dad3138bf935947076be4fe75661e36e
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: eaaa87f9213c5ed04aee65e37ee642436e49dfca
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061707"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547220"
 ---
-# <a name="create-custom-response-options-for-approval-flows"></a>Créer des options de réponse personnalisée pour le flux d’approbation
+# <a name="create-custom-response-options-for-approval-flows"></a>Créer des options de réponse personnalisées pour les flux d’approbation
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Supposons que vous souhaitez envoyer une demande d’approbation chaque fois qu’un employé télécharge une note de frais sur SharePoint, puis autoriser l’approbateur de répondre avec une des trois options : Accepter, vous avez besoin des informations plus ou rejeter.
+Supposons que vous souhaitiez envoyer une demande d’approbation chaque fois qu’un employé charge un état de dépenses dans SharePoint, puis autoriser l’approbateur à répondre avec l’une des trois options suivantes : accepter, demander plus d’informations ou rejeter.
 
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
-- Un compte Microsoft Flow avec une licence de Plan 2 (Plan 2 est nécessaire pour utiliser des fonctionnalités premium. Approbations est une fonctionnalité premium.)
-- Une liste SharePoint pour les employés à entrer leurs notes de frais.
+- Un compte Microsoft Flow.
+- Liste SharePoint permettant aux employés d’entrer leurs notes de frais.
 
-## <a name="create-approval-flow"></a>Créer un flux d’approbation
+## <a name="create-approval-flow"></a>Créer un workflow d’approbation
 1. Connectez-vous à [Microsoft Flow](https://flow.microsoft.com).
-1. Sélectionnez **mes flux** à partir de la barre de navigation gauche.
-1. Sélectionnez **New** > **créer entièrement**.
+1. Sélectionnez **mes flux** dans la barre de navigation de gauche.
+1. Sélectionnez **nouveau** > **créer à partir d’un espace**.
 
-    ![Créer à partir de l’option vide](media/create-approval-response-options/create-approval-response-options.png)
+    ![Créer à partir d’une option vide](media/create-approval-response-options/create-approval-response-options.png)
 
-1. Dans l’écran qui s’ouvre, sélectionnez **créer entièrement**. 
+1. Dans l’écran qui s’ouvre, sélectionnez **créer à partir d’un espace**. 
 
-    ![Sélectionnez Créer entièrement](media/create-approval-response-options/create-from-blank.png)
+    ![Sélectionnez créer à partir d’un espace](media/create-approval-response-options/create-from-blank.png)
 
-1. Recherchez **sharepoint** , puis sélectionnez **lorsqu’un élément est créé** à partir de la liste des déclencheurs. 
+1. Recherchez **SharePoint** , puis sélectionnez le **moment où un élément est créé** à partir de la liste des déclencheurs. 
 
-1. Fournir le SharePoint **adresse du Site** et **liste nom**. 
+1. Fournissez l' **adresse du site** SharePoint et le nom de la **liste**. 
 
-1. Sélectionnez **nouvelle étape**, recherchez **approbation**, puis sélectionnez **Start et attendre qu’une approbation (V2)**.
+1. Sélectionnez **nouvelle étape**, recherchez **approbation**, puis sélectionnez **Démarrer et attendre une approbation (v2)** .
 
-1. Sur le **Start et attendre qu’une approbation (V2)** carte, sélectionnez le **type d’approbation** liste.
+1. Sur la carte **Démarrer et attendre une approbation (v2)** , sélectionnez la liste **type d’approbation** .
 
     ![Type d’approbation](media/create-approval-response-options/select-approval-type.png)
 
-1. Sélectionnez **personnalisé réponses - attendre une réponse (Premium)**.
+1. Sélectionner **des réponses personnalisées-attendre une réponse (Premium)** .
 
     ![Réponses personnalisées](media/create-approval-response-options/select-custom-responses.png)
 
-    Ensuite, vous allez créer des réponses personnalisées qui utilisent le vos approbateurs quand ils répondent à une demande d’approbation d’une dépense de l’employé.
+    Ensuite, vous allez créer les réponses personnalisées qui seront utilisées par vos approbateurs lorsqu’ils répondront à une demande d’approbation pour les frais d’un employé.
 
 
-1. Dans le **réponse options élément - 1** , entrez **Accept** , puis sélectionnez **ajouter un nouvel élément**. 
+1. Dans la zone **options de réponse, élément-1** , entrez **accepter** , puis sélectionnez **Ajouter un nouvel élément**. 
 
     ![Réponse personnalisée 1](media/create-approval-response-options/enter-response-1.png)
 
-1. Dans le **réponse options élément - 2** , entrez **rejeter** , puis sélectionnez **ajouter un nouvel élément**.
+1. Dans la zone **options de réponse, élément-2** , entrez **rejeter** , puis sélectionnez **Ajouter un nouvel élément**.
 
     ![Réponse personnalisée 2](media/create-approval-response-options/enter-response-2.png)
 
-1. Dans le **réponse options élément - 3** , entrez **vous avez besoin des informations plus**.
+1. Dans la zone **options de réponse, élément-3** , entrez **des informations supplémentaires**.
 
     ![Réponse personnalisée 3](media/create-approval-response-options/enter-response-3.png)   
     
 
-1. Entrez un **titre**, **affectés à** (adresse e-mail de l’approbateur), et **détails** (les détails doivent être contenus dans la demande d’approbation).
+1. Entrez un **titre**, **affecté à** (e-mail pour l’approbateur) et **Détails** (détails à faire figurer dans la demande d’approbation).
 
     Voici un exemple de ce que vous pouvez inclure pour votre organisation.
 
     ![Détails des réponses personnalisées](media/create-approval-response-options/enter-title-assigned-to-details.png)
 
 
-Maintenant que vous avez créé vos réponses personnalisées, vous souhaiterez effectuer différentes opérations dans votre flux, en fonction de la réponse de l’approbateur.
+Maintenant que vous avez créé vos réponses personnalisées, vous souhaiterez peut-être effectuer différentes opérations dans votre workflow, en fonction de la réponse de l’approbateur.
 
 
-## <a name="use-approval-responses"></a>Utilisez les réponses d’approbation 
+## <a name="use-approval-responses"></a>Utiliser les réponses d’approbation 
 
-Si la réponse à la demande est **Accept**, vous pouvez souhaiter envoyer un e-mail au service de comptabilité, lui demandant de rembourser l’employé pour la dépense. 
+Si la réponse à la demande est **acceptée**, vous souhaiterez peut-être envoyer un e-mail au service comptabilité, lui demandant de rembourser l’employé pour la dépense. 
 
-Si la réponse est **rejeter**, vous souhaiterez peut-être envoyer un e-mail à l’employé, les informant que la demande a été rejetée.
+Si la réponse est **rejetée**, vous souhaiterez peut-être envoyer un e-mail à l’employé, en lui indiquant que la demande a été rejetée.
 
-Et enfin, si la réponse de l’approbateur est **vous avez besoin des informations plus**, vous souhaiterez peut-être envoyer un e-mail à l’employé, demandant l’employé pour fournir plus d’informations.
+Enfin, si la réponse de l’approbateur a **besoin d’informations supplémentaires**, vous souhaiterez peut-être envoyer un e-mail à l’employé pour demander à l’employé de fournir plus d’informations.
 
-Pour effectuer l’une de ces éléments dans le flux, ajoutez un [ **Condition** ](add-condition.md) ou un **commutateur** action à votre flux, puis sélectionnez le **résultat** champ de l’approbation demander à partir du sélecteur de contenu dynamique. Vérifiez si la valeur est d’accepter, vous avez besoin des informations plus ou rejeter.
+Pour effectuer l’une des opérations suivantes dans le Flow, ajoutez une [**condition**](add-condition.md) ou une action de **commutation** à votre Flow, puis sélectionnez le champ de **résultat** de la demande d’approbation dans le sélecteur de contenu dynamique. Veillez à confirmer si la valeur est accepter, si vous avez besoin d’informations supplémentaires ou de rejet.
 
 ## <a name="respond-to-approval-requests-with-a-custom-response"></a>Répondre aux demandes d’approbation avec une réponse personnalisée
 
-Les approbateurs reçoivent des demandes d’approbation par courrier électronique. Les demandes sont également affichés dans le centre d’approbation sur Microsoft Flow. 
+Les approbateurs reçoivent les demandes d’approbation par courrier électronique. Les demandes sont également affichées dans le centre d’approbation sur Microsoft Flow. 
 
 ![E-mail de demande d’approbation](media/create-approval-response-options/approval-request-email.png)
 
-## <a name="learn-more"></a>En savoir plus
-- Créer [unique de flux de l’approbateur](modern-approvals.md)
-- Créer [approbateur séquentiel flux](sequential-modern-approvals.md)
+## <a name="learn-more"></a>Pour en savoir plus
+- Créer des [flux d’approbateur uniques](modern-approvals.md)
+- Créer des [flux d’approbateur séquentiels](sequential-modern-approvals.md)

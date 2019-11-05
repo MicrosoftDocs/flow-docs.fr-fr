@@ -1,6 +1,6 @@
 ---
-title: Apprenez à créer des flux qui publient des cartes adaptatives à Microsoft Teams | Microsoft Docs
-description: Apprenez à créer des flux qui publier du contenu enrichi avec des cartes adaptatives sur Microsoft Teams.
+title: Apprenez à créer des flux qui publient des cartes adaptatives dans Microsoft teams | Microsoft Docs
+description: Apprenez à créer des flux qui publient du contenu richement mis en forme avec des cartes adaptatives vers Microsoft Teams.
 services: ''
 suite: flow
 documentationcenter: na
@@ -15,49 +15,50 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/29/2019
 ms.author: deonhe
-ms.openlocfilehash: d6bb4bb55fe876db1d8b64c157d3b4967e5d067f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 0aa5b4727bea569732fe5b76f717a87d8d7ddb02
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65061569"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546499"
 ---
 <!--from editor: I notice that adaptive cards is capitalized on the page opened by the link in the first paragraph. But the screenshots in this file don't show it being capitalized. So I'm unsure if it should change.-->
 
 
-# <a name="use-adaptive-cards-in-microsoft-teams"></a>Utiliser des cartes adaptatives dans Microsoft Teams
+# <a name="use-adaptive-cards-in-microsoft-teams"></a>Utiliser des cartes adaptatives dans Microsoft teams
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Vous pouvez créer un flux qui publie [des cartes adaptatives](https://adaptivecards.io) à un canal Microsoft Teams. Avec des cartes adaptatives, vous pouvez utiliser la mise en forme enrichie pour rendre vos publications plus claires, interactives et attrayantes. Des cartes adaptatives peuvent contenir des composants tels que des images, graphiques, texte enrichi et bien plus encore.
+Vous pouvez créer un Flow qui publie des [cartes adaptatives](https://adaptivecards.io) sur un canal Microsoft Teams. Avec les cartes adaptatives, vous pouvez utiliser une mise en forme enrichie pour rendre vos publications plus claires, interactives et attrayantes. Les cartes adaptatives peuvent contenir des composants tels que des images, des graphiques, du texte enrichi et bien plus encore.
 
-## <a name="create-a-flow-that-posts-adaptive-cards-to-a-team"></a>Créer un flux qui publie des cartes adaptatives à une équipe
+## <a name="create-a-flow-that-posts-adaptive-cards-to-a-team"></a>Créer un Flow qui publie des cartes adaptatives dans une équipe
 
-Suivez ces étapes pour créer un flux qui publie une carte adaptative au canal général dans l’équipe de stratégie et de planification. Le flux que nous créons utilise le **publier votre propre carte adaptative en tant qu’au robot de flux d’un canal (version préliminaire)** action pour valider le contenu de la carte adaptative au canal de l’équipe chaque semaine.
+Procédez comme suit pour créer un Flow qui publie une carte adaptative sur le canal général de l’équipe stratégie et planification. Le Flow que nous créons utilise la **carte adaptative poster votre propre en tant que moteur de flow sur une action Channel (** préversion) pour envoyer le contenu de la carte adaptative au canal hebdomadaire de l’équipe.
 
 1. Connectez-vous à Microsoft Teams.
-1. Sélectionnez le **équipes** icône dans le volet de navigation de la barre de gauche, puis sélectionnez le **stratégie and Planning** équipe.
+1. Sélectionnez l’icône **équipes** dans la barre de navigation sur la gauche, puis sélectionnez l’équipe **stratégie et planification** .
 
-    ![Sélectionnez les équipes](media/create-adaptive-cards-teams/select-teams-team.png)
+    ![Sélectionner des équipes](media/create-adaptive-cards-teams/select-teams-team.png)
 
-1. Sélectionnez le **flux** onglet en haut de l’écran.
-1. Sélectionnez le **+** icône (créer entièrement).
-1. Recherchez **périodicité**, puis sélectionnez le **périodicité** déclencheur.
+1. Sélectionnez l’onglet **Flow** en haut de l’écran.
+1. Sélectionnez l’icône **+** (créer à partir d’un espace vide).
+1. Recherchez **récurrence**, puis sélectionnez le déclencheur de **périodicité** .
 
-    ![Carte de périodicité](media/create-adaptive-cards-teams/select-recurrence.png)
+    ![Carte de récurrence](media/create-adaptive-cards-teams/select-recurrence.png)
 
-1. Définissez la planification comme suit pour répéter chaque semaine, à une heure et le fuseau horaire de votre choix :
+1. Définissez la planification comme suit pour répéter chaque semaine, à un fuseau horaire de votre choix :
     
-    ![Carte de périodicité](media/create-adaptive-cards-teams/recurrence-card.png)
+    ![Carte de récurrence](media/create-adaptive-cards-teams/recurrence-card.png)
     
-1. Sélectionnez **Nouvelle étape**.
-1. Recherchez **adaptive**, sélectionnez **Microsoft Teams**, puis sélectionnez le **publier votre propre carte adaptative en tant qu’au robot de flux d’un canal (version préliminaire)** action.
+1. Sélectionnez **nouvelle étape**.
+1. Recherchez **Adaptive**, sélectionnez **Microsoft teams**, puis sélectionnez l’action **poster votre propre carte adaptative en tant que robot de canal (version préliminaire)** .
 
    ![Carte adaptative](media/create-adaptive-cards-teams/select-adaptive-post-message-action.png)
 
-1. Fournir un **équipe**, **canal**, et **Message** sur le **publier votre propre carte adaptative en tant qu’au robot de flux d’un canal (version préliminaire)** carte pour indiquer l’équipe et le canal auquel la carte adaptative **Message** sera publiée.
+1. Fournissez une **équipe**, un **canal**et un **message** sur la carte d' **envoi de votre propre carte adaptative en tant que robot de canal (version préliminaire)** pour indiquer l’équipe et le canal sur lequel le **message** de carte adaptative sera publié.
 
    ![Carte adaptative](media/create-adaptive-cards-teams/adaptive-card-message.png)
 
-   Vous pouvez utiliser cet exemple de contenu JSON pour le **Message**:
+   Vous pouvez utiliser cet exemple de contenu JSON pour le **message**:
 
     ````
         {
@@ -129,19 +130,19 @@ Suivez ces étapes pour créer un flux qui publie une carte adaptative au canal 
     ````
 
 
-1. Donnez un nom à votre flux et enregistrez-le.
+1. Donnez un nom à votre Flow et enregistrez-le.
 
 
-## <a name="run-the-flow"></a>Exécuter le flux
+## <a name="run-the-flow"></a>Exécuter le Flow
 
-Notez que, une fois que la périodicité du temps écoulé, le flux de billets de contenu de la carte adaptative au canal d’équipe que vous avez défini.
+Notez que, une fois l’heure de périodicité écoulée, le workflow publie le contenu de la carte adaptative sur le canal d’équipe que vous avez défini.
 
-![Exécuter le flux](media/create-adaptive-cards-teams/flow-run-result.png)
+![Exécuter le Flow](media/create-adaptive-cards-teams/flow-run-result.png)
 
-## <a name="learn-more"></a>En savoir plus
+## <a name="learn-more"></a>Pour en savoir plus
 
-- Prise en main [exemples de carte adaptative](https://adaptivecards.io/samples/).
-- Créer [contenu de la carte adaptative](https://adaptivecards.io) facilement.
+- Prise en main des [exemples de cartes adaptatives](https://adaptivecards.io/samples/).
+- Créez un [contenu de carte adaptative](https://adaptivecards.io) de manière simple.
 
 
 

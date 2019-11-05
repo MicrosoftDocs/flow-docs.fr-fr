@@ -1,6 +1,6 @@
 ---
-title: Vue d’ensemble des flux basés sur une solution | Microsoft Docs
-description: Découvrez les avantages de créer des flux dans les solutions.
+title: Vue d’ensemble des flux sensibles à la solution | Microsoft Docs
+description: Découvrez les avantages de la création de flux dans les solutions.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,63 +20,64 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 8b0e64317b868dc32ede173329fa2f88ed53de76
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 19eb7d051c4d1438ec45305620e369b5499252a0
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465343"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548557"
 ---
-# <a name="overview"></a>Présentation
+# <a name="overview"></a>Vue
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Les flux hébergés dans une [solution](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview) offrent l’avantage d’être portables, ce qui vous permet de déplacer facilement les flux et tous leurs composants d’un environnement à un autre. Voici un cas d’usage courant pour un éditeur de logiciels indépendant (ISV) : l’éditeur développe les flux dans un environnement bac à sable, puis les déplace vers un environnement de test. Après le test, il doit déplacer les flux vers un environnement de production pour les mettre à disposition des clients qui les achètent. Ce processus est beaucoup plus simple quand vous créez les flux dans des solutions, puis que vous déplacez ces solutions et leur contenu.
+Lorsque vous hébergez vos flux dans une [solution](https://docs.microsoft.com/powerapps/maker/common-data-service/solutions-overview), ils deviennent portables, ce qui permet de les déplacer facilement et de tous leurs composants d’un environnement à un autre. Un cas d’utilisation classique est qu’un éditeur de logiciels indépendant (ISV) développe des flux dans un environnement de bac à sable (sandbox), puis déplace ces flux vers un environnement de test. Après le test, l’ISV déplace ensuite les flux vers un environnement de production pour les clients qui achètent ces flux. Ce processus est beaucoup plus facile lorsque vous créez vos flux dans des solutions, puis déplacez les solutions et leur contenu.
 
-Les flux créés au sein d’une solution sont appelés flux *basés sur une solution*. Vous pouvez ajouter plusieurs flux dans la même solution.
+Les flux que vous créez à l’intérieur d’une solution sont appelés flux sensibles à la *solution* . Vous pouvez ajouter plusieurs flux dans une solution unique.
 
 > [!NOTE] 
-> Vous ne pouvez pas déplacer des flux non basés sur une solution (flux qui n’ont pas été créés dans une solution) dans une solution.
+> Vous ne pouvez pas déplacer des flux non sensibles à la solution (flux non créés dans une solution) dans une solution.
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
-Pour créer des solutions et des flux basés sur une solution, vous avez besoin des composants suivants :
+Vous devez disposer des composants suivants pour créer des solutions et des flux sensibles à la solution :
 
 - [Common Data Service](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)
-- Environnement avec la version 9.1.0.267 ou ultérieure.
+- Un environnement avec la version 9.1.0.267 ou ultérieure.
 
-  Pour vérifier votre version, accédez au [Centre d’administration de Microsoft Flow](https://admin.flow.microsoft.com), sélectionnez **Environnements**, sélectionnez l’environnement souhaité, puis sélectionnez l’onglet **Détails**.
+  Pour vérifier votre version, accédez à [Microsoft Flow Centre d’administration](https://admin.flow.microsoft.com), sélectionnez **environnements**, sélectionnez l’environnement qui vous intéresse, puis sélectionnez l’onglet **Détails** .
 
 ## <a name="create-a-solution"></a>Créer une solution
 
-Pour créer une solution, effectuez les étapes suivantes :
+Pour créer une solution, procédez comme suit :
 
 1. Connectez-vous à [Microsoft Flow](https://flow.microsoft.com).
-1. Sélectionnez **Solutions** à partir de la barre de navigation.
+1. Sélectionnez **solutions** dans la barre de navigation.
 
    ![](./media/overview-solution-flows/select-solutions-from-left-nav.png)
 
-1. Sélectionnez **+ Nouvelle solution**.
+1. Sélectionnez **+ nouvelle solution**.
 
    ![](./media/overview-solution-flows/select-new-solution.png)
 
-1. Entrez toutes les informations demandées pour la nouvelle solution dans les champs correspondants, notamment **Nom complet**, **Éditeur**, **Version** et **Nom**. Il est également conseillé d’entrer une description pour votre solution.
+1. Fournissez toutes les informations requises pour votre nouvelle solution, notamment le **nom complet**, le serveur de **publication**, la **version**et le **nom**. Il est également judicieux de fournir une description de votre solution.
 
    ![](./media/overview-solution-flows/new-solution.png)
 
-1. Sélectionnez **Enregistrer et fermer** dans le menu en haut.
+1. Sélectionnez **enregistrer et fermer** dans le menu en haut.
 
    ![](./media/overview-solution-flows/save-and-close-solution.png)
 
-   La nouvelle solution doit s’afficher comme dans cette image :
+   Votre nouvelle solution peut apparaître comme cette image :
 
    ![](./media/overview-solution-flows/new-solution-created.png)
 
    > [!TIP]
-   > Sélectionnez **Solutions** pour actualiser la liste des solutions si votre nouvelle solution n’apparaît pas.
+   > Sélectionnez **solutions** pour actualiser la liste des solutions si votre nouvelle solution n’apparaît pas.
 
-## <a name="learn-more"></a>En savoir plus
+## <a name="learn-more"></a>Pour en savoir plus
 
-- [Créer un flux dans une solution](./create-flow-solution.md)
+- [Créer un fluide dans une solution](./create-flow-solution.md)
 - [Exporter une solution](./export-flow-solution.md)
 - [Importer une solution](./import-flow-solution.md)
-- [Modifier un flux basé sur une solution](./edit-solution-aware-flow.md)
-- [Supprimer un flux basé sur une solution](./remove-solution-aware-flow.md)
+- [Modifier un Flow sensible à la solution](./edit-solution-aware-flow.md)
+- [Supprimer un Flow sensible à la solution](./remove-solution-aware-flow.md)

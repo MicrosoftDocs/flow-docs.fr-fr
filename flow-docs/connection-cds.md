@@ -1,11 +1,11 @@
 ---
-title: Créer un flux automatisé avec Common Data Service | Microsoft Docs
-description: Créer des workflows à l’aide d’une connexion Common Data Service et Microsoft Flow
+title: Créer un Flow automatisé avec Common Data Service | Microsoft Docs
+description: Créer des flux de travail à l’aide d’une connexion Common Data Service et Microsoft Flow
 services: ''
 suite: flow
 documentationcenter: na
-author: brandonsimons
-manager: ryjones
+author: MSFTMAN
+manager: KVIVEK
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,100 +14,101 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/06/2019
-ms.author: brandonsimons
+ms.author: Deonhe
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 6dba013481983d0b8c43c82c7bc6eed800fccc2e
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 110f3947cf7ece97bfd9b83ca6a12ee46d04b4d6
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64457005"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547114"
 ---
-# <a name="create-an-automated-flow-by-using-common-data-service"></a>Créer un flux automatisé à l’aide de Common Data Service
+# <a name="create-an-automated-flow-by-using-common-data-service"></a>Créer un workflow automatisé à l’aide de Common Data Service
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Avec le connecteur Common Data Service, vous pouvez créer des flux qui sont démarrés par des événements de création et de mise à jour dans votre base de données Common Data Service. De plus, vous pouvez effectuer des actions de création, de mise à jour, de récupération et de suppression sur des enregistrements de la base de données Common Data Service.
+Avec le connecteur Common Data Service, vous pouvez créer des flux initiés par les événements de création et de mise à jour dans votre base de données Common Data Service. En outre, vous pouvez effectuer des actions de création, de mise à jour, de récupération et de suppression sur des enregistrements au sein de la base de données Common Data Service.
 
-## <a name="initiate-a-flow-from-common-data-service"></a>Démarrer un flux à partir de Common Data Service
+## <a name="initiate-a-flow-from-common-data-service"></a>Lancer un Flow à partir de Common Data Service
 
-Vous pouvez utiliser n’importe lequel des déclencheurs suivants pour démarrer votre flux :
+Vous pouvez utiliser l’un des déclencheurs suivants pour initier votre Flow :
 
 - Quand un enregistrement est sélectionné
-- Quand un enregistrement est créé
-- Quand un enregistrement est supprimé
+- Lors de la création d’un enregistrement
+- Lorsqu’un enregistrement est supprimé
 - Quand un enregistrement est mis à jour
 
 
 > [!div class="mx-imgBorder"]
-> ![Sélectionner un déclencheur](./media/cds-connector/Triggers.png)
+> ![sélectionner un déclencheur](./media/cds-connector/Triggers.png)
 
-Si le déclencheur choisi nécessite qu’un environnement soit sélectionné, vous pouvez choisir `(Current)`, qui utilise toujours la base de données dans l’environnement dans lequel s’exécute Microsoft Flow. Si vous voulez que votre flux se déclenche toujours suite à un événement dans un environnement spécifique, sélectionnez cet environnement.
-
-> [!div class="mx-imgBorder"]
-> ![Choisir un environnement](./media/cds-connector/Environments.png)
-
-Vous pouvez utiliser des étendues pour déterminer si votre flux s’exécute quand vous créez un enregistrement, quand un enregistrement est créé par un utilisateur au sein de votre division ou quand un enregistrement est créé par un utilisateur de votre organisation.
+Si le déclencheur sélectionné nécessite la sélection d’un environnement, vous pouvez choisir `(Current)`, qui utilisera toujours la base de données dans l’environnement dans lequel Microsoft Flow s’exécute. Si vous souhaitez que votre Flow soit toujours déclenché en fonction d’un événement dans un environnement spécifique, sélectionnez cet environnement.
 
 > [!div class="mx-imgBorder"]
-> ![Choisir une étendue](./media/cds-connector/Scopes.png)
+> ![choisir l’environnement](./media/cds-connector/Environments.png)
 
-|Étendue|Moment d’activation du déclencheur|
+Vous pouvez utiliser des étendues pour déterminer si votre workflow s’exécute si vous créez un nouvel enregistrement, si un nouvel enregistrement est créé par un utilisateur au sein de votre division, ou si un nouvel enregistrement est créé par un utilisateur de votre organisation.
+
+> [!div class="mx-imgBorder"]
+> ![choisir une étendue](./media/cds-connector/Scopes.png)
+
+|Étendue|Synchronisation du déclencheur|
 | --- | --- |
-|Division|Une action est effectuée sur un enregistrement appartenant à votre division|
-|Organisation|Une action est effectuée par tout utilisateur de l’organisation ou de la base de données|
-|Divis. mère : sous-division|Une action est effectuée sur un enregistrement appartenant à votre division ou à une sous-division|
-|Utilisateur|Une action est effectuée sur un enregistrement dont vous êtes le propriétaire|
+|Division|Une action est effectuée sur un enregistrement détenu par votre division|
+|Dernière|Une action est effectuée par toute personne au sein de l’organisation ou de la base de données|
+|Parent : Division enfant|Une action est effectuée sur un enregistrement détenu par votre division ou une division enfant|
+|Utilisateur|Une action est effectuée sur un enregistrement dont vous êtes propriétaire|
 
-Les déclencheurs qui s’exécutent quand un enregistrement est mis à jour peuvent également utiliser des attributs de filtrage. Cela garantit que le flux s’exécute uniquement quand tous les attributs définis sont mis à jour.
+Les déclencheurs qui s’exécutent lorsqu’un enregistrement est mis à jour peuvent également utiliser des attributs de filtrage. Cela garantit que le workflow s’exécute uniquement lorsque l’un des attributs définis est mis à jour.
 
 > [!IMPORTANT]
-> Utilisez des attributs de filtre pour empêcher votre flux de s’exécuter inutilement.
+> Utilisez les attributs de filtre pour empêcher l’exécution inutile de votre workflow.
 
-Ce flux se déclenche dès que le premier ou le dernier nom de contact détenu par l’utilisateur du flux est mis à jour.
+Ce processus déclenche chaque fois que le nom ou le prénom du contact auquel appartient l’utilisateur de Flow est mis à jour.
 
 > [!div class="mx-imgBorder"]
-> ![Attributs de filtre](./media/cds-connector/FilterAttributes.png)
+> attributs de filtre de ![](./media/cds-connector/FilterAttributes.png)
 
-## <a name="trigger-privileges"></a>Privilèges des déclencheurs
+## <a name="trigger-privileges"></a>Privilèges de déclencheur
 
-Pour créer un flux qui se déclenche suite à une action de création, de mise à jour ou de suppression sur un enregistrement, l’utilisateur doit disposer d’autorisations de niveau utilisateur pour effectuer des opérations de création, de lecture, d’écriture et de suppression sur l’entité d’inscription de rappel. De plus, en fonction des étendues définies, l’utilisateur peut devoir disposer au moins de ce niveau de lecture sur la même entité.  [Découvrez des informations supplémentaires](https://docs.microsoft.com/power-platform/admin/database-security) sur la sécurité des environnements.
+Pour créer un Flow qui se déclenche à partir de Create, Update ou DELETE sur un enregistrement, l’utilisateur doit disposer des autorisations de niveau utilisateur pour Create, Read, Write et Delete sur l’entité d’inscription de rappel. En outre, selon les étendues définies, l’utilisateur peut avoir besoin au moins de ce niveau de lecture sur la même entité.  [En savoir plus](https://docs.microsoft.com/power-platform/admin/database-security) sur la sécurité de l’environnement.
 
 ## <a name="write-data-into-common-data-service"></a>Écrire des données dans Common Data Service
 
-Pour écrire des données dans Common Data Service, utilisez l’une des actions suivantes :
+Utilisez l’une des actions suivantes pour écrire des données dans Common Data Service :
 
-- Créer un enregistrement
+- Créer un nouvel enregistrement
 - Mettre à jour un enregistrement
 
-Voici un exemple de création d’une tâche de suivi quand un utilisateur donné crée un enregistrement de compte.  
+Voici un exemple de création d’une tâche de suivi lorsque l’utilisateur donné crée un nouvel enregistrement de compte.  
 
 > [!div class="mx-imgBorder"]
-> ![Tâche de suivi](./media/cds-connector/Regarding.png)
+> tâche de suivi ![](./media/cds-connector/Regarding.png)
 
 ## <a name="advanced-concepts"></a>Concepts avancés
 
-### <a name="write-data-into-customer-owner-and-regarding-fields"></a>Écrire des données dans le client, le propriétaire et les champs de type Concernant
+### <a name="write-data-into-customer-owner-and-regarding-fields"></a>Écrire des données dans les champs client, propriétaire et à propos de
 
-Pour écrire des données dans le client, le propriétaire et les champs de type Concernant, deux champs doivent être remplis.
+Pour écrire des données dans les champs Customer, owner et relative, deux champs doivent être remplis.
 
-| Catégorie du champ | Exemples de paramètres |
+| Catégorie de champ | Exemples de paramètres |
 | --- | --- |
-| Concernant | Concernant = ID de l’enregistrement (par exemple, un ID de compte) et Type Concernant comme sélectionné dans la liste. |
-| Client | Représente l’ID de l’enregistrement et le type de client comme sélectionné dans la liste. |
-| Propriétaire | Représente l’ID de l’équipe ou de l’utilisateur système, et le type de propriétaire comme sélectionné dans la liste. |
+| Agissant | Concernant = ID de l’enregistrement (par exemple, ID de compte) et concernant le type sélectionné dans la liste. |
+| Assistance | Représente l’ID de l’enregistrement et le type de client sélectionné dans la liste. |
+| Du | Représente l’ID de l’utilisateur ou de l’équipe système, et le type de propriétaire sélectionné dans la liste. |
 
-### <a name="enable-upsert-behavior"></a>Activer le comportement d’upsert
+### <a name="enable-upsert-behavior"></a>Activer le comportement upsert
 
-Vous pouvez exploiter la commande **Mettre à jour un enregistrement** pour fournir des actions d’upsert, ce qui met à jour l’enregistrement s’il existe déjà ou en crée un nouveau. Pour appeler upsert, fournissez l’entité et une clé GUID. Si l’enregistrement avec le type et la clé spécifiés existe, une mise à jour se produit. Sinon, un enregistrement avec la clé spécifiée est créé.
+Vous pouvez utiliser la commande **mettre à jour un enregistrement** pour fournir des actions Upsert, qui met à jour l’enregistrement s’il existe déjà, ou crée un enregistrement. Pour appeler Upsert, fournissez l’entité et une clé GUID. S’il existe un enregistrement avec le type et la clé spécifiés, une mise à jour se produit. Dans le cas contraire, un enregistrement avec la clé spécifiée est créé.
 
-### <a name="trigger-behavior"></a>Comportement des déclencheurs
+### <a name="trigger-behavior"></a>Comportement du déclencheur
 
-Si vous avez un déclencheur inscrit sur la mise à jour d’un enregistrement, le flux s’exécute pour chaque mise à jour *validée* sur l’enregistrement donné. Le service appelle votre flux de façon asynchrone et avec la charge utile qu’il capture au moment où l’appel se produit.
+Si un déclencheur est inscrit sur la mise à jour d’un enregistrement, le workflow s’exécute pour chaque mise à jour *validée* de l’enregistrement donné. Le service appelle votre Flow de façon asynchrone et avec la charge utile qu’il capture au moment où l’appel se produit.
 
 > [!NOTE]
-> Si vous avez deux mises à jour qui se produisent à quelques secondes d’intervalles, le flux peut être déclenché plusieurs fois avec le contenu avec version le plus récent.
+> Si vous avez deux mises à jour qui se produisent dans les secondes les unes des autres, le workflow peut être déclenché plusieurs fois avec le contenu avec version le plus récent.
 
-Les exécutions de flux peuvent être retardées s’il existe un backlog de tâches système dans votre environnement.  Si ce retard se produit, votre flux est déclenché quand la tâche système destinée à appeler le flux s’exécute.
+Les exécutions de Flow peuvent être retardées en cas de retard de travail système dans votre environnement.  Si ce délai se produit, votre workflow est déclenché lorsque le travail système est appelé à s’exécuter.

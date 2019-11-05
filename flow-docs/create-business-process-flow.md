@@ -1,13 +1,13 @@
 ---
-title: Créer un flux de processus métier dans PowerApps | Microsoft Docs
-description: Découvrez comment créer un flux de processus métier
+title: Créer un workflow de processus d’entreprise dans PowerApps | MicrosoftDocs
+description: Découvrez comment créer un workflow de processus d’entreprise
 ms.custom: ''
 ms.date: 08/17/2018
 ms.reviewer: ''
 ms.service: flow
 ms.suite: ''
 ms.tgt_pltfrm: ''
-ms.topic: get-started-article
+ms.topic: conceptual
 applies_to:
 - Dynamics 365 (online)
 - Dynamics 365 Version 9.x
@@ -22,223 +22,349 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: 33ae71ea6b0af6a94021f5b0a02690aae21f0043
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 3bd154935e06031b031432e10fa977f23e1a2c54
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64458189"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546533"
 ---
-# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Tutoriel : Créer un flux de processus métier pour standardiser les processus
+# <a name="tutorial-create-a-business-process-flow-to-standardize-processes"></a>Didacticiel : créer un workflow de processus d’entreprise pour normaliser les processus
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Ce tutoriel vous montre comment créer un flux de processus métier dans PowerApps. Pour en savoir plus sur les raisons d’utiliser des flux de processus métier, consultez [Vue d’ensemble des flux de processus d’entreprise](business-process-flows-overview.md). Pour plus d’informations sur la création d’un flux de tâches mobile, consultez [Créer un flux de tâches mobile](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
+Ce didacticiel vous montre comment créer un workflow de processus d’entreprise avec PowerApps. Pour en savoir plus sur les raisons pour lesquelles vous utilisez des flux de processus d’entreprise, consultez [vue d’ensemble des flux de processus d’entreprise](business-process-flows-overview.md). Pour plus d’informations sur la création d’un workflow de tâche mobile, consultez [créer un workflow mobile](https://docs.microsoft.com/dynamics365/customer-engagement/customize/create-mobile-task-flow).  
   
- Quand un utilisateur démarre le flux d’un processus métier, les différentes phases et étapes du processus s’affichent dans la barre du processus située en haut d’un formulaire :  
+ Quand un utilisateur démarre un workflow de processus d’entreprise, les étapes et étapes du processus s’affichent dans la barre de processus en haut d’un formulaire :  
   
- ![Phases d’un processus métier](media/business-process-stages.png "Phases d’un processus métier")  
+ ![Processus d’entreprise avec étapes](media/business-process-stages.png "Processus d’entreprise avec étapes")  
   
  > [!TIP]
- >  Après avoir créé une définition du flux de processus métier, vous pouvez contrôler qui est autorisé à créer, lire, mettre à jour ou supprimer l’instance du flux de processus métier. Par exemple, pour des processus de service, vous pouvez accorder un accès total aux conseillers du service clientèle pour leur permettre de changer l’instance du flux de processus métier, mais accorder un accès en lecture seule à l’instance destinée aux commerciaux pour leur permettre de superviser les activités après-vente de leurs clients. Pour configurer la sécurité d’une définition de flux de processus métier que vous créez, sélectionnez **Activer les rôles de sécurité** dans la barre d’action.  
+ >  Après avoir créé une définition de workflow de processus d’entreprise, vous pouvez contrôler qui peut créer, lire, mettre à jour ou supprimer l’instance de workflow de processus d’entreprise. Par exemple, pour les processus liés au service, vous pouvez fournir un accès complet aux représentants du service clientèle pour modifier l’instance de workflow du processus d’entreprise, mais fournir un accès en lecture seule à l’instance pour les représentants commerciaux, afin qu’ils puissent surveiller les activités postérieures à la vente pour leur acheteurs. Pour définir la sécurité d’une définition de workflow de processus d’entreprise que vous créez, sélectionnez **activer les rôles de sécurité** dans la barre d’action.  
   
 <a name="BKMK_Createbusinessprocessflows"></a>
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
-Vous devez avoir [Flow Plan 2](https://preview.flow.microsoft.com/pricing/) pour créer des flux de processus métier. Certains plans de licence Dynamics 365 incluent Flow Plan 2.
+Vous avez besoin d’un [plan de flux 2](https://preview.flow.microsoft.com/pricing/) afin de créer des flux de processus d’entreprise. Certains plans de licence Dynamics 365 incluent Flow plan 2.
 
-## <a name="create-a-business-process-flow"></a>Créer un flux de processus métier  
+## <a name="create-a-business-process-flow"></a>Créer un workflow de processus d’entreprise  
   
 1. Ouvrez [l’Explorateur de solutions](/powerapps/maker/model-driven-apps/advanced-navigation#solution-explorer).
   
-2. Dans le volet de navigation de gauche, sélectionnez **Processus**. 
+2. Dans le volet de navigation gauche, sélectionnez **processus**. 
   
-3.  Dans la barre d’outils **Actions**, sélectionnez **Nouveau**.  
+3.  Dans la barre d’outils **actions** , sélectionnez **nouveau**.  
   
-4.  Dans la boîte de dialogue **Créer un processus**, renseignez les champs obligatoires :  
+4.  Dans la boîte de dialogue **créer un processus** , renseignez les champs obligatoires :  
   
-    -   Entrez un nom de processus. Le nom du processus ne doit pas nécessairement être unique, mais il doit être significatif pour aider les utilisateurs dans le choix d’un processus. Vous pourrez modifier ce nom ultérieurement.  
+    -   Entrez un nom de processus. Le nom du processus n’a pas besoin d’être unique, mais il doit être significatif pour les personnes qui doivent choisir un processus. Vous pouvez le modifier ultérieurement.  
   
-    -   Dans la liste **Catégorie**, sélectionnez **Flux des processus d’entreprise**.  
+    -   Dans la liste **catégorie** , sélectionnez **Workflow du processus d’entreprise**.  
   
-         Vous ne pourrez pas modifier la catégorie après avoir créé le processus.  
+         Vous ne pouvez pas modifier la catégorie après avoir créé le processus.  
   
-    -   Dans la liste **Entité**, sélectionnez l’entité sur laquelle vous voulez baser le processus.  
+    -   Dans la liste **entité** , sélectionnez l’entité sur laquelle vous souhaitez baser le processus.  
   
-         L’entité sélectionnée s’applique aux champs disponibles pour les étapes qui peuvent être ajoutées à la première phase du flux du processus. Si vous ne trouvez pas l’entité souhaitée, vérifiez que le groupe d’options Flux des processus d’entreprise (des champs vont être créés) est spécifié dans la définition de l’entité. Vous ne pourrez pas modifier ce paramètre après avoir enregistré le processus.  
+         L’entité que vous sélectionnez affecte les champs disponibles pour les étapes qui peuvent être ajoutées à la première étape du processus. Si vous ne trouvez pas l’entité souhaitée, vérifiez que l’option flux des processus d’entreprise (champs créés) est définie dans la définition de l’entité. Vous ne pouvez pas le modifier une fois que vous avez enregistré le processus.  
   
 5. Sélectionnez **OK**.  
   
-     Le nouveau processus est créé, et le concepteur de flux de processus métier s’ouvre, avec une phase déjà créée pour vous.  
+     Le nouveau processus est créé et le concepteur de workflow de processus d’entreprise s’ouvre avec un seul étage déjà créé pour vous.  
   
- ![Fenêtre du flux du processus métier montrant les principaux éléments](media/business-process-flow-window-showing-main-elements.png "Fenêtre du flux du processus métier montrant les principaux éléments")  
+ ![Fenêtre de workflow de processus d’entreprise présentant les principaux éléments](media/business-process-flow-window-showing-main-elements.png "Fenêtre de workflow de processus d’entreprise présentant les principaux éléments")  
   
-6. **Ajoutez les phases nécessaires.** Si vous souhaitez que les utilisateurs progressent d’une phase métier à une autre dans le processus :  
+6. **Ajoutez des étapes.** Si vos utilisateurs progressent d’une étape à l’autre dans le processus :  
   
-    1.  Faites glisser un composant **Phase** de l’onglet **Composants** vers un signe + dans le concepteur.  
+    1.  Faites glisser un composant **stage** de l’onglet **composants** et déposez-le sur un signe + dans le concepteur.  
   
-        ![Faire glisser une phase du processus métier](media/drag-business-process-stage.png "Faire glisser une phase du processus métier")  
+        ![Faire glisser une étape du processus d’entreprise](media/drag-business-process-stage.png "Faire glisser une étape du processus d’entreprise")  
   
-    2.  Pour définir les propriétés d’une phase, sélectionnez la phase, puis définissez ses propriétés sous l’onglet **Propriétés** sur le côté droit de l’écran :  
+    2.  Pour définir les propriétés d’une phase, sélectionnez l’étape, puis définissez les propriétés sous l’onglet **Propriétés** sur le côté droit de l’écran :  
   
-        -   Entrez un nom complet.  
+        -   Entrez un nom d’affichage.  
   
-        -   Si vous le souhaitez, sélectionnez une catégorie pour la phase.  La catégorie (par exemple, **Qualifier** ou **Développer**) apparaît sous la forme d’un chevron dans la barre du processus.  
+        -   Si vous le souhaitez, sélectionnez une catégorie pour la phase.  La catégorie (par exemple, **qualifier** ou **développer**) apparaît sous la forme d’un chevron dans la barre des processus.  
   
-            ![Chevron de la barre du processus métier](media/business-process-bar-chevron.png "Chevron de la barre du processus métier")  
+            ![Chevron de la barre des processus d’entreprise](media/business-process-bar-chevron.png "Chevron de la barre des processus d’entreprise")  
   
-        -   Quand vous avez terminé de modifier les propriétés, sélectionnez le bouton **Appliquer**.  
+        -   Lorsque vous avez terminé de modifier les propriétés, cliquez sur le bouton **appliquer** .  
   
-7. **Ajoutez des étapes à une phase.** Pour afficher les étapes d’une phase, sélectionnez **Détails** en bas à droite de la phase. Pour ajouter des étapes :  
+7. **Ajoutez des étapes à une étape.** Pour afficher les étapes d’une étape, sélectionnez **Détails** dans le coin inférieur droit de la phase. Pour ajouter des étapes supplémentaires :  
   
-    1.  Faites glisser un composant **Étape** de l’onglet **Composants** vers la phase.  
+    1.  Faites glisser le composant **Step** vers l’étape à partir de l’onglet **composants** .  
   
-        ![Ajouter une étape à une phase d’un processus métier](media/add-step-stage-business-process.png "Ajouter une étape à une phase d’un processus métier")  
+        ![Ajouter une étape à une étape dans un processus d’entreprise](media/add-step-stage-business-process.png "Ajouter une étape à une étape dans un processus d’entreprise")  
   
-    2.  Sélectionnez l’étape, puis définissez ses propriétés sous l’onglet **Propriétés** :  
+    2.  Sélectionnez l’étape, puis définissez les propriétés sous l’onglet **Propriétés** :  
   
-        1.  Entrez un nom complet pour l’étape.  
+        1.  Entrez un nom d’affichage pour l’étape.  
   
-        2.  Si vous voulez que les utilisateurs entrent des données pour terminer une étape, sélectionnez le champ approprié dans la liste déroulante.  
+        2.  Si vous souhaitez que les utilisateurs entrent des données pour effectuer une étape, sélectionnez le champ approprié dans la liste déroulante.  
   
-        3.  Sélectionnez **Obligatoire** si les utilisateurs doivent renseigner le champ pour terminer l’étape avant de passer à la phase suivante du processus.  
+        3.  Sélectionnez **obligatoire** si les utilisateurs doivent renseigner le champ pour terminer l’étape avant de passer à l’étape suivante du processus.  
   
-        4.  Sélectionnez **Appliquer** quand vous avez terminé.  
+        4.  Sélectionnez **appliquer** lorsque vous avez terminé.  
   
-8. **Ajoutez une branche (condition) au processus.** Pour ajouter une condition de branche :  
+8. **Ajoutez une branche (condition) au processus.** Pour ajouter une condition de branchement :  
   
-    1.  Faites glisser le composant **Condition** de l’onglet **Composants** vers un signe + entre deux phases.  
+    1.  Faites glisser le composant **condition** de l’onglet **composants** vers un signe + entre deux étapes.  
   
-        ![Ajouter une condition à un flux de processus métier](media/add-condition-business-process-flow.png "Ajouter une condition à un flux de processus métier")  
+        ![Ajouter une condition à un workflow de processus d’entreprise](media/add-condition-business-process-flow.png "Ajouter une condition à un workflow de processus d’entreprise")  
   
-    2.  Sélectionnez la condition, puis définissez ses propriétés sous l’onglet **Propriétés**. Pour plus d’informations sur les propriétés de création de branche, consultez [Améliorer les flux de processus d’entreprise avec le branchement](enhance-business-process-flows-branching.md). Quand vous avez terminé de définir les propriétés de la condition, sélectionnez **Appliquer**.  
+    2.  Sélectionnez la condition, puis définissez les propriétés sous l’onglet **Propriétés** . Pour plus d’informations sur les propriétés de branchement, consultez [améliorer les flux de processus d’entreprise avec la branche](enhance-business-process-flows-branching.md). Lorsque vous avez terminé de définir les propriétés de la condition, sélectionnez **appliquer**.  
   
-9. **Ajoutez un workflow.** Pour appeler un workflow :  
+9. **Ajoutez un flux de travail.** Pour appeler un flux de travail :  
   
-    1.  Faites glisser un composant **Workflow** de l’onglet **Composants** vers une phase ou vers l’élément **Workflow global** dans le concepteur.   L’endroit où vous ajoutez le composant dépend de ce qui suit :  
+    1.  Faites glisser un composant de **Workflow** de l’onglet **composants** vers une étape ou vers l’élément de **flux de travail global** dans le concepteur.   Celui auquel vous l’ajoutez dépend des éléments suivants :  
   
-       - **Faites-le glisser vers une phase** si vous souhaitez déclencher le workflow à l’entrée ou à la sortie de la phase. Le composant Workflow doit être basé sur la même entité principale que la phase.  
+       - **Faites-le glisser jusqu’à une étape** lorsque vous souhaitez déclencher le flux de travail à l’entrée ou à la sortie de l’étape. Le composant de Workflow doit être basé sur la même entité principale que l’étape.  
   
-       - **Faites-le glisser vers l’élément Workflow global** si vous souhaitez déclencher le workflow au moment de l’activation ou de l’archivage du processus (quand l’état passe à **Terminé** ou à **Abandonné**). Le composant Workflow doit être basé sur la même entité principale que le processus.  
+       - **Faites-le glisser vers l’élément de flux de travail global** lorsque vous souhaitez déclencher le flux de travail lorsque le processus est activé ou lorsque le processus est archivé (lorsque l’état passe à **terminé** ou **abandonné**). Le composant de Workflow doit être basé sur la même entité principale que le processus.  
   
-    2.  Sélectionnez le workflow, puis définissez ses propriétés sous l’onglet **Propriétés** :  
+    2.  Sélectionnez le flux de travail, puis définissez les propriétés sous l’onglet **Propriétés** :  
   
-       1.  Entrez un nom complet.  
+       1.  Entrez un nom d’affichage.  
   
-       2.  Choisissez à quel moment le workflow doit être déclenché.  
+       2.  Sélectionnez le moment auquel le flux de travail doit être déclenché.  
   
-       3.  Recherchez un workflow actif à la demande existant qui correspond à l’entité de la phase, ou créez un workflow en sélectionnant **Nouveau**.  
+       3.  Recherchez un flux de travail actif à la demande existant qui correspond à l’entité stage ou créez un nouveau flux de travail en sélectionnant **nouveau**.  
   
-       4.  Sélectionnez **Appliquer** quand vous avez terminé.  
+       4.  Sélectionnez **appliquer** lorsque vous avez terminé.  
   
-       Pour plus d’informations sur les workflows, consultez [Processus de workflow](../common-data-service/workflow-processes.md).  
+       Pour plus d’informations sur les flux de travail, consultez [processus de workflow](../common-data-service/workflow-processes.md).  
   
-10. Pour valider le flux du processus métier, sélectionnez **Valider** dans la barre d’action.  
+10. Pour valider le processus d’entreprise, sélectionnez **valider** dans la barre d’action.  
   
-11. Pour enregistrer le processus comme brouillon afin de continuer à travailler dessus, sélectionnez **Enregistrer** dans la barre d’action.  
+11. Pour enregistrer le processus en tant que brouillon pendant que vous continuez à l’utiliser, sélectionnez **Enregistrer** dans la barre d’action.  
   
     > [!IMPORTANT]
-    >  Tant qu’un processus est un brouillon, personne d’autre que vous ne peut l’utiliser.  
+    >  Tant qu’un processus est un brouillon, les utilisateurs ne seront pas en mesure de l’utiliser.  
   
-12. Pour activer le processus et le mettre à la disposition de votre équipe, sélectionnez **Activer** dans la barre d’action.  
+12. Pour activer le processus et le mettre à la disposition de votre équipe, sélectionnez **activer** dans la barre d’action.  
 
-13. Pour contrôler qui peut créer, lire, mettre à jour ou supprimer l’instance du flux de processus métier, sélectionnez **Modifier les rôles de sécurité** dans la barre de commandes du concepteur. Par exemple, pour des processus de service, vous pouvez accorder un accès total aux conseillers du service clientèle pour leur permettre de changer l’instance du flux de processus métier, mais accorder un accès en lecture seule à l’instance destinée aux commerciaux pour leur permettre de superviser les activités après-vente de leurs clients.
+13. Pour contrôler qui peut créer, lire, mettre à jour ou supprimer l’instance de workflow de processus d’entreprise, sélectionnez **modifier des rôles de sécurité** dans la barre de commandes du concepteur. Par exemple, pour les processus liés au service, vous pouvez fournir un accès complet aux représentants du service clientèle pour modifier l’instance de workflow du processus d’entreprise, mais fournir un accès en lecture seule à l’instance pour les représentants commerciaux, afin qu’ils puissent surveiller les activités postérieures à la vente pour leur acheteurs.
 
-  Dans l’écran **Rôles de sécurité**, sélectionnez le nom d’un rôle pour ouvrir la page d’informations sur le rôle de sécurité. Sélectionnez l’onglet Flux des processus d’entreprise, puis assignez les privilèges d’accès appropriés au flux de processus métier pour un rôle de sécurité.
+  Dans l’écran **rôles de sécurité** , sélectionnez le nom d’un rôle pour ouvrir la page informations sur le rôle de sécurité. Sélectionnez l’onglet flux de processus d’entreprise, puis attribuez les privilèges appropriés sur le flux de processus d’entreprise pour un rôle de sécurité.
 
   > [!NOTE]
-  > Les rôles de sécurité Administrateur système et Personnalisateur de système ont par défaut accès aux nouveaux flux de processus métier.
+  > Les rôles de sécurité administrateur système et Personnalisateur de système ont accès aux nouveaux flux de processus d’entreprise par défaut.
 
-   ![Assigner des privilèges à un flux de processus métier](media/bpf-assign-privileges.png)
+   ![Affecter des privilèges à un workflow de processus d’entreprise](media/bpf-assign-privileges.png)
 
-  Choisissez les privilèges à assigner en sélectionnant les cases d’option correspondantes, puis cliquez sur Enregistrer. Pour plus d’informations sur les privilèges, consultez [Privilèges des flux des processus d’entreprise](business-process-flows-overview.md#BKMK_MultipleBPF).
+  Spécifiez les privilèges en sélectionnant les cases d’option appropriées, puis cliquez sur Enregistrer. Pour plus d’informations sur les privilèges, consultez [privilèges de workflow de processus d’entreprise](business-process-flows-overview.md#BKMK_MultipleBPF).
 
-  N’oubliez pas ensuite d’assigner le rôle de sécurité aux utilisateurs souhaités dans votre organisation.
+  Ensuite, n’oubliez pas d’attribuer le rôle de sécurité aux utilisateurs appropriés de votre organisation.
 
 > [!TIP] 
->  Voici quelques conseils à prendre en compte quand vous créez votre flux de tâches dans la fenêtre du concepteur :  
+>  Voici quelques conseils à garder à l’esprit quand vous travaillez sur votre workflow dans la fenêtre du concepteur :  
 >   
-> - Pour effectuer une capture instantanée du contenu de la fenêtre du flux de processus métier, sélectionnez **Capture instantanée** dans la barre d’action. Cette fonction est utile, par exemple, pour partager ou voir les commentaires d’un membre de l’équipe sur le processus.  
-> - Utilisez la mini-carte pour accéder rapidement aux différentes parties du processus. C’est utile si vous avez un processus complexe qui n’est pas entièrement visible à l’écran.  
-> - Pour ajouter une description au processus métier, sélectionnez **Détails** sous le nom du processus affiché dans le coin gauche de la fenêtre du flux de processus métier. La description est limitée à 2 000 caractères.  
+> - Pour prendre un instantané de tous les éléments de la fenêtre de workflow de processus d’entreprise, sélectionnez **instantané** dans la barre d’action. Cela est utile, par exemple, si vous souhaitez partager et obtenir des commentaires sur le processus à partir d’un membre de l’équipe.  
+> - Utilisez la mini-carte pour accéder rapidement à différentes parties du processus. Cela est utile lorsque vous avez un processus complexe qui fait défiler l’écran.  
+> - Pour ajouter une description du processus d’entreprise, sélectionnez **Détails** sous le nom du processus dans le coin gauche de la fenêtre de processus d’entreprise. Vous pouvez utiliser jusqu’à 2000 caractères.  
   
 <a name="BKMK_Editbusinessprocessflows"></a>   
-## <a name="edit-a-business-process-flow"></a>Modifier un flux de processus métier  
- Pour modifier un flux de processus métier, ouvrez l’Explorateur de solutions, sélectionnez **Processus**, puis sélectionnez le **flux de processus métier** à modifier dans la liste des processus.  
+## <a name="edit-a-business-process-flow"></a>Modifier un workflow de processus d’entreprise  
+ Pour modifier les flux de processus d’entreprise, ouvrez l’Explorateur de solutions, sélectionnez **processus**, puis sélectionnez le **flux de processus d’entreprise** dans la liste des processus que vous souhaitez modifier.  
   
- Quand vous sélectionnez le nom du flux de processus métier à modifier dans la liste des processus, le flux s’ouvre dans le concepteur, où vous pouvez ensuite apporter les modifications souhaitées. Développez **Détails** sous le nom du processus pour le renommer ou ajouter une description, et afficher des informations supplémentaires.  
+ Lorsque vous sélectionnez le nom du workflow de processus d’entreprise que vous souhaitez modifier dans la liste des processus, celui-ci s’ouvre dans le concepteur, où vous pouvez effectuer les mises à jour de votre choix. Développez **Détails** sous le nom du processus pour le renommer ou ajoutez une description, puis affichez des informations supplémentaires.  
   
- ![Section Détails développée pour un flux de processus métier](media/business-process-flow-details.png "Section Détails développée pour un flux de processus métier")  
+ ![Section détaillée développée d’un workflow de processus d’entreprise](media/business-process-flow-details.png "Section détaillée développée d’un workflow de processus d’entreprise")  
   
   
-## <a name="other-things-to-know-about-business-process-flows"></a>Autres points à connaître sur les flux de processus métier
- **Modifier les phases**  
-Les flux de processus métier peuvent avoir jusqu’à 30 phases.    
+## <a name="other-things-to-know-about-business-process-flows"></a>Autres choses à savoir sur les flux de processus d’entreprise
+ **Modifier les étapes**  
+Les flux de processus d’entreprise peuvent avoir jusqu’à 30 étapes.    
   
-Vous pouvez ajouter ou modifier les propriétés suivantes d’une phase :  
+Vous pouvez ajouter ou modifier les propriétés suivantes d’une phase :  
   
 - **Nom de la phase**  
   
-- **Entité**. Vous pouvez modifier l’entité de n’importe quelle phase, à l’exception de la première.  
+- **Entité**. Vous pouvez modifier l’entité pour n’importe quelle étape, à l’exception de la première.  
   
-- **Catégorie de phase**. Une catégorie vous permet de regrouper les phases par type d’action. Cela est utile pour les rapports qui regroupent les enregistrements en fonction de la phase dans laquelle ils se trouvent. Les options de catégorie de phase proviennent du groupe d’options général Catégorie de phase. Vous pouvez éventuellement ajouter des options à ce groupe d’options général et changer les étiquettes des options existantes. Vous avez aussi la possibilité de supprimer ces options, mais nous vous recommandons de conserver les options existantes. Si vous supprimez des options, vous ne pourrez pas ajouter exactement les mêmes ultérieurement. Si vous ne souhaitez pas que ces options soient utilisées, changez l’étiquette en « Ne pas utiliser ».  
+- **Catégorie**de la phase. Une catégorie vous permet de regrouper des étapes selon un type d’action. Elle est utile pour les rapports qui regroupent les enregistrements en cours d’étape. Les options de la catégorie stage proviennent du groupe d’options global de la catégorie phase. Vous pouvez ajouter des options supplémentaires à ce groupe d’options global et modifier les étiquettes des options existantes si vous le souhaitez. Vous pouvez également supprimer ces options si vous le souhaitez, mais nous vous recommandons de conserver les options existantes. Si vous la supprimez, vous ne pourrez pas rajouter exactement la même option. Si vous ne souhaitez pas qu’ils soient utilisés, remplacez l’étiquette par « ne pas utiliser ».  
   
-- **Relation**. Entrez une relation quand la phase précédente dans le processus est basée sur une autre entité. Pour la phase que vous êtes en train de définir, choisissez **Sélectionner les relations** et sélectionnez une relation à utiliser lors du passage d’une phase à une autre. Nous vous recommandons de sélectionner une relation pour les motifs suivants :  
+- **Relation**. Entrez une relation lorsque l’étape précédente du processus est basée sur une autre entité. Pour l’étape actuellement définie, choisissez **Sélectionner des relations** pour identifier une relation à utiliser lors du déplacement entre les deux étapes. Il est recommandé de sélectionner une relation pour les avantages suivants :  
   
-    -   Les relations ont souvent des mappages d’attributs qui reportent automatiquement les données entre les enregistrements, afin de réduire la saisie de données.  
+    -   Les relations ont souvent des mappages d’attributs définis qui transportent automatiquement les données entre les enregistrements, ce qui réduit l’entrée des données.  
   
-    -   Quand vous sélectionnez **Phase suivante** dans la barre du processus pour un enregistrement, tous les enregistrements qui utilisent la relation seront également répertoriés dans le flux du processus, encourageant de ce fait la réutilisation des enregistrements dans le processus. En outre, dans un souci de simplifier le processus, vous pouvez utiliser des workflows pour automatiser la création d’enregistrements afin que l’utilisateur n’ait plus qu’à les sélectionner au lieu d’avoir à les créer.  
+    -   Lorsque vous sélectionnez **étape suivante** sur la barre de processus d’un enregistrement, tous les enregistrements qui utilisent la relation sont listés dans le processus, ce qui permet de promouvoir la réutilisation des enregistrements dans le processus. En outre, vous pouvez utiliser des flux de travail pour automatiser la création d’enregistrements afin que l’utilisateur le sélectionne simplement au lieu d’en créer un pour simplifier le processus.  
   
 **Modifier les étapes**  
- Chaque phase peut comporter jusqu’à 30 étapes.    
+ Chaque étape peut avoir jusqu’à 30 étapes.    
   
 **Ajouter une branche**  
-Pour en savoir plus sur l’ajout d’une branche à une phase, consultez [Améliorer les flux de processus d’entreprise avec le branchement](enhance-business-process-flows-branching.md).  
+Pour en savoir plus sur l’ajout d’une branche à une phase, consultez [améliorer les flux de processus d’entreprise avec la branche](enhance-business-process-flows-branching.md).  
   
-Pour mettre un flux de processus métier à la disposition des utilisateurs, vous devez définir l’ordre du flux de processus, modifier les rôles de sécurité et activer le flux de processus.  
+Pour mettre un workflow de processus d’entreprise à la disposition des personnes à utiliser, vous devez ordonner le processus, activer les rôles de sécurité et l’activer.  
   
-**Définir l’ordre du flux de processus**  
- Si plusieurs flux de processus métier ont été créés pour une entité (type d’enregistrement), vous devez définir lequel des processus est automatiquement assigné aux nouveaux enregistrements. Dans la barre de commandes, sélectionnez **Ordre des flux des processus**. Pour les nouveaux enregistrements ou ceux qui n’ont pas encore de flux de processus associé, le premier flux de processus métier auquel un utilisateur peut accéder est celui qui sera automatiquement utilisé.  
+**Définir l’ordre du déroulement des processus**  
+ Lorsque vous avez plusieurs workflows de processus d’entreprise pour une entité (type d’enregistrement), vous devez définir le processus qui est automatiquement attribué aux nouveaux enregistrements. Dans la barre de commandes, sélectionnez **Flow Process process**. Pour les nouveaux enregistrements ou enregistrements qui n’ont pas encore de workflow de processus associé, le premier workflow de processus d’entreprise auquel un utilisateur a accès est celui qui sera utilisé.  
   
-**Modifier les rôles de sécurité**  
-Un utilisateur a accès à un flux de processus métier en fonction du privilège ayant été défini pour ce flux dans le rôle de sécurité assigné à l’utilisateur. 
+**Activer les rôles de sécurité**  
+Les utilisateurs ont accès à un workflow de processus d’entreprise en fonction du privilège défini sur le processus d’entreprise dans le rôle de sécurité attribué à l’utilisateur. 
 
-Par défaut, seuls les rôles de sécurité **Administrateur système** et **Personnalisateur de système** ont accès aux nouveaux flux de processus métier. 
+Par défaut, seuls les rôles de sécurité **administrateur système** et **Personnalisateur de système** peuvent afficher un nouveau workflow de processus d’entreprise. 
 
-Pour assigner les privilèges d’accès à un flux de processus métier, ouvrez le flux de processus métier à modifier, puis sélectionnez **Modifier les rôles de sécurité** dans la barre de commandes du concepteur de flux de processus métier. Reportez-vous à l’étape 13 sous [Créer un flux de processus métier](#create-a-business-process-flow), plus haut dans cette rubrique.
+Pour spécifier des privilèges sur un workflow de processus d’entreprise, ouvrez le processus d’entreprise pour le modifier, puis sélectionnez **modifier les rôles de sécurité** dans la barre de commandes du concepteur de workflow de processus d’entreprise. Consultez l’étape 13 sous [créer un workflow de processus d’entreprise](#create-a-business-process-flow) répertorié précédemment dans cette rubrique.
   
-**Activer**  
-Pour mettre un flux de processus métier à la disposition des utilisateurs, vous devez d’abord l’activer. Dans la barre de commandes, sélectionnez **Activer**. Une fois que vous avez confirmé l’activation, le flux de processus métier est disponible pour les utilisateurs. Si un flux de processus métier contient des erreurs, vous ne pouvez pas l’activer tant que vous n’avez pas corrigé les erreurs.  
+**Déclencher**  
+Avant de pouvoir utiliser le workflow de processus d’entreprise, vous devez l’activer. Dans la barre de commandes, sélectionnez **activer**. Une fois que vous avez confirmé l’activation, le workflow du processus d’entreprise est prêt à être utilisé. Si un workflow de processus d’entreprise contient des erreurs, vous ne pouvez pas l’activer tant que les erreurs ne sont pas corrigées.  
 
-## <a name="add-an-on-demand-action-to-a-business-process-flow"></a>Ajouter une action à la demande à un flux de processus métier
-La mise à jour Dynamics 365 (Online) version 9.0 intègre une nouvelle fonctionnalité : l’automatisation des flux de processus métier à l’aide d’étapes d’action. Vous pouvez ajouter un bouton à un flux de processus métier qui déclenchera une action ou un workflow.
+## <a name="add-an-on-demand-action-to-a-business-process-flow"></a>Ajouter une action à la demande à un workflow de processus d’entreprise
+La mise à jour de la version 9,0 de Dynamics 365 (Online) introduit une fonctionnalité de workflow de processus d’entreprise : automatisation du déroulement des processus d’entreprise avec des étapes d’action. Vous pouvez ajouter un bouton à un flux de processus d’entreprise qui déclenchera une action ou un flux de travail.
 
-### <a name="add-on-demand-workflows-or-actions-using-an-action-step"></a>Ajouter des workflows ou des actions à la demande à l’aide d’une étape d’action
-Supposons que, dans le cadre du processus de qualification des opportunités, l’organisation Contoso exige que toutes les opportunités soient examinées par un approbateur désigné. En conséquence, l’organisation Contoso a créé une action qui : 
+### <a name="add-on-demand-workflows-or-actions-using-an-action-step"></a>Ajouter des flux de travail ou des actions à la demande à l’aide d’une étape d’action
+Supposons que, dans le cadre du processus de qualification des opportunités, l’organisation contoso exige que toutes les opportunités soient révisées par un réviseur désigné. Par la suite, l’organisation contoso a créé une action qui : 
 
-- crée un enregistrement de tâche assigné à l’approbateur de l’opportunité ; 
-- ajoute l’étiquette « Prête pour la révision » à la rubrique de l’opportunité. 
+- Crée un enregistrement de tâche affecté au réviseur de l’opportunité. 
+- Ajoute « prêt pour révision » à la rubrique opportunité. 
 
-De plus, Contoso doit permettre l’exécution de ces actions à la demande. Pour intégrer ces tâches au processus de qualification des opportunités, les actions doivent figurer dans le flux de processus métier des opportunités. Pour activer cette fonctionnalité, sélectionnez **En tant qu’étape d’action du flux de processus métier**.
-![Exécution possible en tant que flux de processus métier.](media/action-available-to-run.png)
+En outre, contoso doit être en mesure d’exécuter ces actions à la demande. Pour intégrer ces tâches dans le processus de qualification des opportunités, les actions doivent apparaître dans le processus d’entreprise opportunité. Pour activer cette fonctionnalité, sélectionnez **en tant qu’étape d’action de workflow de processus d’entreprise**.
+![disponible pour une exécution en tant que workflow de processus d’entreprise.](media/action-available-to-run.png)
 
-Ensuite, l’étape d’action est ajoutée au flux de processus métier des opportunités de Contoso. Enfin, le flux de processus est validé et mis à jour.
+Ensuite, l’étape de l’action est ajoutée au workflow de processus d’entreprise de l’opportunité de contoso. Le processus est ensuite validé et mis à jour.
 
-![Action ajoutée au flux de processus métier des opportunités.](media/add-action-to-bpf.png)
+![Action ajoutée au workflow de processus d’entreprise opportunité.](media/add-action-to-bpf.png)
 
-À présent, les commerciaux de Contoso peuvent lancer l’action de l’étape du processus métier **Qualifier l’opportunité**, à la demande, en sélectionnant **Exécuter**.
+Désormais, les membres de la Salesforce de contoso peuvent lancer l’action à partir de l’étape **qualifier l’opportunité** du processus d’entreprise, à la demande, en sélectionnant **exécuter**.
 
-![Exécuter l’action.](media/action-execute.png)
+![Action d’exécution.](media/action-execute.png)
 
 > [!IMPORTANT]
-> - Pour permettre l’exécution d’une action ou d’un workflow à la demande, le flux de processus métier doit contenir une étape d’action. Si l’étape d’action exécute un workflow, celui-ci doit être configuré pour être exécuté à la demande.
-> - L’entité associée à l’action ou au workflow doit être identique à celle qui est associée au flux de processus métier.
+> - Pour pouvoir exécuter une action ou un flux de travail à la demande, le flux de processus d’entreprise doit inclure une étape d’action. Si l’étape de l’action exécute un flux de travail, le flux de travail doit être configuré pour s’exécuter à la demande.
+> - L’entité associée à l’action ou au flux de travail doit être la même que l’entité associée au flux du processus d’entreprise.
 
-### <a name="limitation-of-using-action-steps-in-a-business-process-flow"></a>Limitations relatives à l’utilisation des étapes d’action dans un flux de processus métier
+### <a name="limitation-of-using-action-steps-in-a-business-process-flow"></a>Limitation de l’utilisation des étapes d’action dans un workflow de processus d’entreprise
 
-- Les actions ne sont pas disponibles en tant qu’étapes d’action si les paramètres d’entrée ou de sortie ont les types Entity, EntityCollection ou OptionSet (Picklist). Les actions ayant plusieurs paramètres de sortie EntityReference et celles ayant un ou plusieurs paramètres d’entrée EntityReference ne sont pas disponibles en tant qu’étapes d’action. Les actions qui ne sont pas associées à une entité principale (action globale) ne sont pas disponibles en tant qu’étapes d’action.
+- Les actions ne sont pas disponibles en tant qu’étapes d’action si les paramètres d’entrée ou de sortie sont des types Entity, EntityCollection ou d’utilisateur (liste déroulante). Les actions avec plusieurs paramètres de sortie EntityReference ou un nombre quelconque de paramètres d’entrée EntityReference ne sont pas disponibles en tant qu’étapes d’action. Les actions qui ne sont pas associées à une entité principale (action globale) ne sont pas disponibles en tant qu’étapes d’action.
 
+## <a name="instant-flows-in-business-process-flows"></a>Flux instantanés dans les flux de processus d’entreprise
+
+Vous pouvez exécuter un **Workflow instantané** pour automatiser des tâches répétitives, générer des documents, effectuer le suivi des approbations, et bien plus encore, à partir d’une étape dans un processus d’entreprise.
+
+### <a name="add-an-instant-flow-as-a-step-in-a-business-process"></a>Ajouter un workflow instantané en tant qu’étape dans un processus d’entreprise
+
+Supposons que vous vendez des imprimantes et que vous utilisiez le **processus de vente Lead-opportunité** pour fermer les contrats. Dans le cadre de ce processus, vous aimeriez que le responsable de l’équipe révise et approuve les propositions que l’équipe de vente rassemble au cours d’une étape antérieure du processus d’entreprise avant de la partager avec le client.
+
+Pour ce faire, vous devez effectuer deux opérations :
+1. Créez un workflow instantané qui demande la révision et l’approbation de la proposition de la part de l’équipe.
+1. Ajoutez le workflow instantané comme étape dans le **processus de vente opportunité**.
+
+> [!TIP]
+> Seuls les [flux sensibles](https://docs.microsoft.com/flow/overview-solution-flows) à la solution peuvent être ajoutés en tant qu’étape dans un processus d’entreprise. 
+
+### <a name="build-an-instant-flow"></a>Créer un workflow instantané
+
+1. Dans Microsoft Flow, sélectionnez **solutions** dans le menu de navigation.
+1. Sélectionnez **solution par défaut** dans la liste des solutions qui s’affiche. 
+1. Sélectionnez le menu **+ nouveau** , puis sélectionnez **Flow** dans la liste qui s’affiche.
+1. Recherchez, puis sélectionnez le connecteur **Common Data Service** .
+1. Recherchez, puis sélectionnez le déclencheur **lorsqu’un enregistrement est sélectionné** dans la liste des déclencheurs de **Common Data Service** .
+1. Définissez **environnement** sur **par défaut**, puis affectez à nom de l' **entité** la valeur **prospect au processus de vente des opportunités**.
+1. Ajoutez un champ d’entrée de texte pour que l’utilisateur entre le lien vers la proposition.
+
+   ![Déclencheur de workflow instantané](media/instant-flow-trigger.png "Déclencheur de workflow instantané")
+
+   Nous aurons besoin d’informations de l’instance de workflow de processus d’entreprise pour fournir un contexte à la demande d’approbation. par conséquent, procédez comme suit.
+
+1. Ajoutez l’action **analyser JSON** . 
+1. Définissez le **contenu** sur **entité** en le sélectionnant dans la liste des valeurs dynamiques du déclencheur lors de la **sélection d’un enregistrement** .
+1. Collez le contenu suivant dans le champ **schéma** .
+
+    ```json
+    {
+        "type": "object",
+        "properties": {
+        "entity": {
+            "type": "object",
+            "properties": {
+                "FlowsWorkflowLogId": {
+                    "type": "string"
+                },
+                "BPFInstanceId": {
+                    "type": "string"
+                },
+                "BPFInstanceEntityName": {
+                    "type": "string"
+                },
+                "BPFDefinitionId": {
+                    "type": "string"
+                },
+                "BPFDefinitionEntityName": {
+                    "type": "string"
+                },
+                "StepId": {
+                    "type": "string"
+                },
+                "BPFDefinitionName": {
+                    "type": "string"
+                },
+                "BPFInstanceName": {
+                    "type": "string"
+                },
+                "BPFFlowStageLocalizedName": {
+                    "type": "string"
+                },
+                "BPFFlowStageEntityName": {
+                    "type": "string"
+                },
+                "BPFFlowStageEntityCollectionName": {
+                    "type": "string"
+                },
+                "BPFFlowStageEntityRecordId": {
+                    "type": "string"
+                },
+                "BPFActiveStageId": {
+                    "type": "string"
+                },
+                "BPFActiveStageEntityName": {
+                    "type": "string"
+                },
+                "BPFActiveStageLocalizedName": {
+                    "type": "string"
+                }
+            }
+          }
+        }
+   }
+   ```
+
+   Voici à quoi ressemblent les choses :
+
+   ![Analyser JSON](media/instant-flow-json-date.png "Analyser JSON")
+
+  1. Ajoutez l’action d' **extraction d’enregistrement** à partir du connecteur **Common Data Service** .
+  1. Affectez à **environnement** la valeur **(actuel)** , **nom** de l’entité pour **diriger le processus de vente des opportunités**et identificateur d' **élément** en **BPFFlowStageEntityRecordID**.
+
+     ![Ajouter un enregistrement](media/instant-flow-add-record.png)
+
+     Maintenant que nous disposons des données, définissez le processus d’approbation en ajoutant l’action **Démarrer et attendre une approbation (v2)** , puis en renseignant les informations pertinentes. En savoir plus sur les [approbations]( sequential-modern-approvals.md) si vous n’êtes pas familiarisé.
+
+     > [!TIP]
+     > - Utilisez le sélecteur de contenu dynamique pour ajouter des champs à partir de l’action **obtenir un enregistrement** afin d’ajouter des informations pertinentes à la demande d’approbation afin que les approbateurs puissent facilement savoir ce que fait la demande. 
+     > - Pour fournir un contexte supplémentaire concernant l’étape active dans laquelle se trouve le processus d’entreprise, ajoutez le champ **BPFActiveStageLocalizedName** dans la liste des valeurs dynamiques.
+
+     Votre carte d' **approbation (v2)** peut ressembler à celle-ci :
+
+      ![Carte d’approbation](media/instant-flow-add-approval-action.png)
+
+1. Enfin, enregistrez le workflow, puis activez-le.
+
+### <a name="add-this-flow-as-a-step-in-the-lead-to-opportunity-sales-process"></a>Ajoutez ce workflow comme étape dans le processus de vente de l’opportunité.
+
+Maintenant que vous avez créé le workflow instantané, il vous suffit de l’ajouter à votre processus d’entreprise. 
+
+1. Ouvrez le **processus de vente Lead-opportunité** dans le concepteur de workflow pour les processus d’entreprise. 
+1. Glissez-déposez l' **étape de Flow (** préversion) à partir de la liste des **composants** jusqu’à la phase **proposer** .
+1. Ensuite, sélectionnez l’icône de recherche dans le champ **Sélectionner un flux** pour répertorier tous les flux que vous pouvez ajouter à un flux de processus d’entreprise.
+1. Sélectionnez un Flow dans la liste, puis enregistrez vos modifications en sélectionnant le bouton **appliquer** en bas du volet Propriétés.
+1. Enfin, sélectionnez le bouton **mettre à jour** pour que ce processus d’entreprise s’effectue avec la nouvelle étape de transmission instantanée disponible pour vos utilisateurs.
   
-## <a name="next-steps"></a>Étapes suivantes  
- [Vue d’ensemble des flux de processus d’entreprise](business-process-flows-overview.md) </br>   
- [Améliorer les flux de processus d’entreprise avec le branchement](enhance-business-process-flows-branching.md)
+## <a name="next-steps"></a>Étapes suivantes
+
+ - [Vue d’ensemble des flux de processus d’entreprise](business-process-flows-overview.md)  
+ - [Améliorer les flux de processus d’entreprise avec branchement](enhance-business-process-flows-branching.md)
+ - [Vue d’ensemble des approbations](sequential-modern-approvals.md)
+ - [Procédure détaillée pour ajouter un workflow instantané à un workflow de processus d’entreprise](https://docs.microsoft.com/business-applications-release-notes/april19/microsoft-flow/instant-steps-business-process-flows)
+
 

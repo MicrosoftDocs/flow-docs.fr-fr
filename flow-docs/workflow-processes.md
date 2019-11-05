@@ -1,7 +1,7 @@
 ---
-title: Workflows Common Data Service classiques | Microsoft Docs
+title: Flux de travail de Common Data Service classiques | MicrosoftDocs
 ms.custom: ''
-ms.date: 08/06/2018
+ms.date: 08/27/2019
 ms.reviewer: matp
 ms.service: flow
 ms.topic: article
@@ -14,140 +14,144 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: b48fd51fcdf5ea85b564f7e422f72afa3f318060
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 42ac7bd75268010a8d7e2bf88a600621504dda39
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64463535"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548337"
 ---
-# <a name="classic-common-data-service-workflows"></a>Workflows Common Data Service classiques 
+# <a name="classic-common-data-service-workflows"></a>Flux de travail de Common Data Service classiques 
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Les workflows automatisent les processus métier sans interface utilisateur. En règle générale, les processus de workflow servent à lancer des automatisations qui ne nécessitent pas d’interaction utilisateur.  
+Les flux de travail automatisent les processus d’entreprise sans interface utilisateur. Les gens utilisent généralement des processus de flux de travail pour lancer l’automatisation qui ne requiert aucune interaction de l’utilisateur.
+
+> [!IMPORTANT]
+> Utilisez des flux au lieu de flux de travail classiques pour automatiser vos processus d’entreprise. Pour plus d’informations, [Replacez les flux de travail Common Data Service classiques avec des flux](replace-workflows-with-flows.md) .  
   
- Chaque processus de workflow est associé à une seule entité. Quand vous configurez des workflows, vous devez prendre en compte quatre aspects principaux :  
+ Chaque processus de workflow est associé à une seule entité. Lorsque vous configurez des flux de travail, vous devez tenir compte de quatre aspects majeurs :  
   
 -   Quand les démarrer ?  
   
--   Doivent-ils s’exécuter en tant que workflow en temps réel ou workflow d’arrière-plan ?  
+-   Doivent-ils s’exécuter en tant que flux de travail en temps réel ou en arrière-plan ?  
   
--   Quelles actions doivent-ils effectuer ?  
+-   Quelles actions doivent-elles effectuer ?  
   
--   Dans quelles conditions les actions doivent-elles être effectuées ?  
+-   Dans quelles conditions dois-je effectuer des actions ?  
   
- Cette rubrique explique comment rechercher les processus de workflow, quand les démarrer et s’ils doivent s’exécuter en tant que workflow en temps réel ou d’arrière-plan. Pour plus d’informations sur les actions qu’ils doivent effectuer et sur les conditions, consultez [Configuration de processus de workflow](configure-workflow-steps.md).  
+ Cette rubrique explique comment rechercher des processus de flux de travail et décrit quand les démarrer et s’ils doivent s’exécuter en temps réel ou en arrière-plan. Pour plus d’informations sur les actions qu’ils doivent effectuer et les conditions, consultez [Configuration des processus de flux de travail](configure-workflow-steps.md).  
   
 <a name="BKMK_WhereToCustomizeWorkflows"></a>   
-## <a name="where-do-you-customize-workflow-processes"></a>Où personnalisez-vous les processus de workflow ?  
- Vous pouvez voir les workflows dans votre organisation en consultant le nœud **Processus** dans la **Solution par défaut** et en filtrant sur les processus qui ont la **Catégorie** **Workflow**.  
+## <a name="where-do-you-customize-workflow-processes"></a>Où personnaliser les processus de flux de travail ?  
+ Vous pouvez voir les flux de travail de votre organisation en affichant le nœud **processus** dans la **solution par défaut** et en filtrant sur les processus qui ont la **catégorie** **Workflow**.  
   
- ![Processus filtrés par workflow dans Dynamics 365](media/workflow-processes-filtered.PNG "Processus filtrés par workflow dans Dynamics 365")  
+ ![Processus filtrés par Workflow dans Dynamics 365](media/workflow-processes-filtered.PNG "Processus filtrés par Workflow dans Dynamics 365")  
   
- Selon la façon dont l’application est générée, les utilisateurs peuvent y créer ou modifier leurs workflows. 
+ Selon la façon dont l’application est générée, les utilisateurs peuvent créer ou modifier leurs flux de travail dans l’application. 
  
-Les développeurs peuvent créer des workflows à l’aide des informations contenues dans le [Guide du développeur pour Dynamics 365 Customer Engagement](https://docs.microsoft.com/dynamics365/customer-engagement/developer/developer-guide), et les solutions que vous achetez peuvent inclure des workflows que vous pouvez modifier.  
+Les développeurs peuvent créer des flux de travail à l’aide des informations contenues dans le [Guide du développeur Common Data Service](https://docs.microsoft.com/powerapps/developer/common-data-service/workflow/workflow-extensions) et les solutions que vous achetez peuvent inclure des flux de travail que vous pouvez modifier.  
   
 <a name="BKMK_WorkflowProperties"></a>   
-## <a name="workflow-properties"></a>Propriétés de workflow  
- Dans l’Explorateur de solutions, sélectionnez **Processus** et cliquez sur **Nouveau**.  
+## <a name="workflow-properties"></a>Propriétés du flux de travail  
+ Dans l’Explorateur de solutions, sélectionnez **processus** , puis cliquez sur **nouveau**.  
   
- Quand vous créez un workflow, la boîte de dialogue **Créer un processus** vous demande de définir trois propriétés communes à tous les processus :  
+ Lorsque vous créez un flux de travail, la boîte de dialogue **créer un processus** vous demande de définir trois propriétés :  
   
- ![Création d’un workflow dans Dynamics 365](media/create-workflow.PNG "Création d’un workflow dans Dynamics 365")  
+ ![Création d’un workflow dans Dynamics 365](media/create-workflow.PNG "Création d’un workflow dans Dynamics 365")  
   
  **Nom du processus**  
- Le nom du processus de workflow ne doit pas être unique, mais si vous prévoyez un grand nombre de workflows, vous pouvez utiliser une convention de nommage pour différencier clairement vos processus. Vous pouvez appliquer des préfixes standard au nom du workflow. Le préfixe peut décrire la fonction du workflow ou le département de l’entreprise. Vous pouvez ainsi regrouper les éléments similaires dans la liste de workflows.  
+ Le nom du processus de workflow n’a pas besoin d’être unique, mais si vous pensez que vous aurez un grand nombre de flux de travail, vous souhaiterez peut-être utiliser une convention d’affectation de noms pour distinguer clairement vos processus. Vous pouvez appliquer des préfixes standard au nom du flux de travail. Le préfixe peut décrire la fonction du flux de travail ou du service au sein de l’entreprise. Cela vous permet de regrouper des éléments similaires dans la liste des flux de travail.  
   
  **Catégorie**  
- Cette propriété établit qu’il s’agit d’un processus de workflow.  
+ Cette propriété établit qu’il s’agit d’un processus de flux de travail.  
   
- **Entité**  
- Chaque processus de workflow doit être défini sur une seule entité. Vous ne pouvez pas changer l’entité une fois le processus de workflow créé.  
+ **EDM**  
+ Chaque processus de Workflow doit être défini sur une entité unique. Vous ne pouvez pas modifier l’entité une fois le processus de flux de travail créé.  
   
- **Exécuter ce workflow en arrière-plan (recommandé)**  
- Cette option apparaît quand vous sélectionnez un workflow en guise de catégorie. Ce paramètre détermine si le workflow est un workflow en temps réel ou d’arrière-plan. Les workflows en temps réel s’exécutent immédiatement (de façon synchrone), tandis que les workflows d’arrière-plan s’exécutent de façon asynchrone. Les options de configuration disponibles dépendent de votre choix pour ce paramètre. Les workflows d’arrière-plan autorisent des conditions d’attente qui ne sont pas disponibles pour les workflows en temps réel. Tant que vous n’utilisez pas ces conditions d’attente, vous pouvez par la suite convertir des workflows d’arrière-plan en workflows en temps réel et vice versa. Pour plus d’informations sur les conditions d’attente, consultez [Définition des conditions pour les actions de workflow](configure-workflow-steps.md#BKMK_SettingConditionsForWorkflowActions).  
+ **Exécuter ce flux de travail en arrière-plan (recommandé)**  
+ Cette option apparaît lorsque vous sélectionnez workflow comme catégorie. Ce paramètre détermine si le flux de travail est un flux de travail en temps réel ou en arrière-plan. Les workflows en temps réel s’exécutent immédiatement (de façon synchrone) et les flux de travail en arrière-plan s’exécutent de façon asynchrone. Les options de configuration disponibles dépendent de votre choix pour ce paramètre. Les flux de travail en arrière-plan autorisent les conditions d’attente qui ne sont pas disponibles pour les flux de travail en temps réel. Tant que vous n’utilisez pas ces conditions d’attente, vous pouvez ultérieurement convertir des workflows en arrière-plan en temps réel et des flux de travail en temps réel en flux de travail en arrière-plan. Pour plus d’informations sur les conditions d’attente, consultez [définition de conditions pour les actions de flux de travail](configure-workflow-steps.md#BKMK_SettingConditionsForWorkflowActions).  
   
- De plus, l’option **Type** vous permet de spécifier s’il faut générer un nouveau workflow à partir de zéro ou démarrer à partir d’un modèle existant. Quand vous choisissez **Nouveau processus à partir d’un modèle existant (sélection à partir d’une liste)**, vous pouvez choisir parmi les processus de workflow disponibles qui ont été enregistrés en tant que modèle de processus.  
+ Vous disposez également de l’option **type** pour spécifier si vous souhaitez créer un nouveau flux de travail à partir de zéro ou choisir de démarrer à partir d’un modèle existant. Quand vous choisissez **nouveau processus à partir d’un modèle existant (sélectionner dans la liste),** vous pouvez choisir parmi les processus de flux de travail disponibles précédemment enregistrés en tant que modèle de processus.  
   
- Après avoir créé le workflow ou si vous modifiez un workflow existant, vous disposez des propriétés supplémentaires suivantes :  
+ Après avoir créé le flux de travail ou si vous en modifiez un existant, vous aurez les propriétés supplémentaires suivantes :  
   
- ![Onglet Général dans un workflow](media/create-workflow-general-tab.PNG "Onglet Général dans un workflow")  
+ ![Onglet général dans un flux de travail](media/create-workflow-general-tab.PNG "Onglet général dans un flux de travail")  
   
  **Activer en tant que**  
- Vous pouvez choisir **Modèle de processus** afin de créer un point de départ avancé pour d’autres modèles. Si vous choisissez cette option après avoir activé le workflow, celui-ci n’est pas appliqué, mais peut être sélectionné dans la boîte de dialogue **Créer un processus** si vous sélectionnez **Type** : **Nouveau processus à partir d’un modèle existant (sélection à partir d’une liste)**.  
+ Vous pouvez choisir le **modèle de processus** pour créer un point de départ avancé pour d’autres modèles. Si vous choisissez cette option, après avoir activé le flux de travail, celui-ci ne sera pas appliqué. à la place, il sera disponible pour la sélection dans la boîte de dialogue **créer un processus** si vous sélectionnez **type**: **nouveau processus à partir d’un modèle existant (sélectionner dans la liste)** .  
   
- Les modèles de processus sont pratiques si vous avez de nombreux processus de workflow similaires et que vous souhaitez les définir sans dupliquer la même logique.  
+ Les modèles de processus sont pratiques lorsque vous avez un certain nombre de processus de flux de travail similaires et que vous souhaitez les définir sans dupliquer la même logique.  
   
 > [!NOTE]
->  La modification d’un modèle de processus ne change pas le comportement des processus de workflow qui ont été créés à l’aide de ce modèle. Un workflow créé à l’aide d’un modèle est une copie du contenu du modèle.  
+>  La modification d’un modèle de processus ne modifie pas les comportements des autres processus de workflow créés précédemment à l’aide de celui-ci en tant que modèle. Un nouveau flux de travail créé à l’aide d’un modèle est une copie du contenu du modèle.  
   
- **Disponible pour exécution**  
- Les options de cette section décrivent les modes d’exécution du workflow.  
+ **Disponible pour l’exécution**  
+ Cette section contient des options qui décrivent comment le flux de travail est disponible pour être exécuté.  
   
- **Exécuter ce workflow en arrière-plan (recommandé)**  
- Cette case à cocher reflète l’option que vous avez sélectionnée quand vous avez créé le workflow. Cette option est désactivée, mais vous pouvez la changer à partir du menu **Actions** en sélectionnant **Convertir en workflow temps réel** ou **Convertir en workflow d’arrière-plan**.  
+ **Exécuter ce flux de travail en arrière-plan (recommandé)**  
+ Cette case à cocher reflète l’option que vous avez sélectionnée lors de la création du flux de travail. Cette option est désactivée, mais vous pouvez la modifier à partir du menu **actions** en choisissant **convertir en flux de travail en temps réel** ou **convertir en flux de travail en arrière-plan**.  
   
  **En tant que processus à la demande**  
- Choisissez cette option si vous souhaitez autoriser les utilisateurs à exécuter ce workflow à partir de la commande **Exécuter le workflow**.  
+ Choisissez cette option si vous souhaitez autoriser les utilisateurs à exécuter ce flux de travail à partir de la commande **exécuter le flux de travail** .  
   
  **En tant que processus enfant**  
- Choisissez cette option si vous souhaitez que le workflow puisse être démarré à partir d’un autre workflow.  
+ Choisissez cette option si vous souhaitez permettre au flux de travail d’être disponible pour être démarré à partir d’un autre flux de travail.  
   
  **Rétention des tâches de workflow**  
- Cette section contient une option permettant de supprimer un workflow une fois son exécution terminée.  
+ Cette section contient une option permettant de supprimer un flux de travail une fois l’exécution du flux de travail terminée.  
   
- **Supprimer automatiquement les tâches de workflow terminées (pour libérer de l’espace disque)**  
+ **Supprimer automatiquement les tâches de workflow terminées (pour économiser de l’espace disque)**  
  Choisissez cette option si vous souhaitez qu’une tâche de workflow terminée soit automatiquement supprimée.  
   
 > [!NOTE]
->  Les tâches de workflow ne sont pas supprimées immédiatement quand elles s’achèvent, mais peu après, via un traitement par lots.  
+>  Les tâches de workflow ne sont pas supprimées immédiatement à l’achèvement, mais juste après, par le biais d’un processus de traitement par lots.  
   
  **Étendue**  
- Pour les entités appartenant à l’utilisateur, les options sont **Organisation**, **Divis. mère : sous-divisions**, **Division** ou **Utilisateur**. Pour les entités appartenant à l’organisation, la seule option est **Organisation**.  
+ Pour les entités appartenant à l’utilisateur, les options sont **organisation**, **parent : divisions enfants**, **Division**ou **utilisateur**. Pour les entités appartenant à l’organisation, la seule option est **organisation**.  
   
- Si l’étendue est **Organisation**, la logique de workflow peut être appliquée à n’importe quel enregistrement dans l’organisation. Sinon, le workflow est uniquement applicable à un sous-ensemble d’enregistrements appartenant à l’étendue.  
+ Si Scope est **Organization**, la logique de workflow peut être appliquée à n’importe quel enregistrement dans l’organisation. Dans le cas contraire, le flux de travail ne peut être appliqué qu’à un sous-ensemble d’enregistrements qui se trouvent dans l’étendue.  
   
 > [!NOTE]
->  La valeur d’étendue par défaut est **Utilisateur**. Vérifiez que la valeur d’étendue est appropriée avant d’activer le workflow.  
+>  La valeur d’étendue par défaut est **User**. Veillez à vérifier que la valeur d’étendue est appropriée avant d’activer le flux de travail.  
   
  **Démarrer quand**  
- Utilisez les options de cette section pour spécifier quand un workflow doit démarrer automatiquement. Vous pouvez configurer un workflow en temps réel afin qu’il s’exécute avant certains événements. Cette fonctionnalité est très puissante, car le workflow peut arrêter l’action avant qu’il ne se produise. Plus d’informations : [Utilisation de workflows en temps réel](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Voici les options disponibles :  
+ Utilisez les options de cette section pour spécifier le moment où un flux de travail doit démarrer automatiquement. Vous pouvez configurer un flux de travail en temps réel à exécuter avant certains événements. Il s’agit d’une fonctionnalité très puissante, car le flux de travail peut arrêter l’action avant qu’elle ne se produise. Informations supplémentaires : [utilisation des flux de travail en temps réel](configure-workflow-steps.md#BKMK_SynchronousWorkflows). Les options sont les suivantes :  
   
-- **L’enregistrement est créé**  
+- **Enregistrement créé**  
   
-- **Statut de l’enregistrement modifié**  
+- **Enregistrer les modifications d’État**  
   
 - **L’enregistrement est attribué**  
   
-- **Champs d’enregistrement modifiés**  
+- **Modification des champs d’enregistrement**  
   
-- **L’enregistrement est supprimé**  
+- **Enregistrement supprimé**  
   
 > [!NOTE]
->  N’oubliez pas que les actions et les conditions que vous définissez pour le workflow ignorent à quel moment il est exécuté. Par exemple, si vous définissez un workflow pour mettre à jour l’enregistrement, cette action ne peut pas être effectuée par un workflow en temps réel tant que l’enregistrement n’a pas été créé. Il est impossible de mettre à jour un enregistrement qui n’existe pas. De même, un workflow en arrière-plan ne peut pas mettre à jour un enregistrement qui a été supprimé, même si vous pouvez définir cette action pour le workflow. Si vous configurez un workflow pour effectuer une action qui ne peut pas être exécutée, celle-ci échoue, de même que l’intégralité du workflow.  
+>  Gardez à l’esprit que les actions et les conditions que vous définissez pour le workflow ne sont pas conscientes du moment où le workflow est exécuté. Par exemple, si vous définissez un flux de travail pour mettre à jour l’enregistrement, cette action ne peut pas être effectuée par un flux de travail en temps réel avant la création de l’enregistrement. Impossible de mettre à jour un enregistrement qui n’existe pas. De même, un flux de travail en arrière-plan ne peut pas mettre à jour un enregistrement qui a été supprimé, même si vous pouvez définir cette action pour le Workflow. Si vous configurez un flux de travail pour effectuer une action qui ne peut pas être effectuée, il échouera et l’intégralité du flux de travail échouera.  
   
  **Exécuter en tant que**  
- Cette option est disponible uniquement si vous avez désélectionné l’option **Exécuter ce workflow en arrière-plan (recommandé)** quand vous avez créé le workflow ou si vous avez par la suite converti un workflow d’arrière-plan en workflow en temps réel.  
+ Cette option est disponible uniquement si vous avez sélectionné l’option **exécuter ce flux de travail en arrière-plan (recommandé)** quand vous avez créé le flux de travail ou si vous avez ultérieurement converti un flux de travail en arrière-plan en flux de travail en temps réel.  
   
 <a name="BKMK_SecurityContextOfWorkflowProcesses"></a>   
 ## <a name="security-context-of-workflow-processes"></a>Contexte de sécurité des processus de workflow  
- Quand un workflow en arrière-plan est configuré en tant que processus à la demande et qu’un utilisateur le démarre à l’aide de la commande **Exécuter le workflow**, les actions que le workflow peut effectuer sont limitées à celles que l’utilisateur peut exécuter selon les privilèges et les niveaux d’accès définis par le(s) rôle(s) de sécurité associé(s) à son compte d’utilisateur.  
+ Lorsqu’un flux de travail en arrière-plan est configuré en tant que processus à la demande et qu’il est démarré par un utilisateur à l’aide de la commande **exécuter le workflow** , les actions que le flux de travail peut effectuer sont limitées à celles que l’utilisateur peut effectuer en fonction des privilèges et des niveaux d’accès définis par le ou les rôles de sécurité définis pour leur compte d’utilisateur.  
   
- Quand un workflow d’arrière-plan démarre en fonction d’un événement, le workflow agit dans le contexte de la personne qui en est le propriétaire, généralement la personne qui l’a créé.  
+ Lorsqu’un flux de travail en arrière-plan commence en fonction d’un événement, le workflow opère dans le contexte de la personne qui le possède, généralement la personne qui a créé le flux de travail.  
   
- Pour les workflows en temps réel, vous avez l’option **Exécuter en tant que** et pouvez choisir si le workflow doit appliquer le contexte de sécurité du propriétaire du workflow ou de l’utilisateur qui a apporté des modifications à l’enregistrement. Si votre workflow inclut des actions qu’aucun utilisateur ne pourrait effectuer en raison de contraintes de sécurité, vous devez choisir de le rendre exécutable dans le contexte de son propriétaire.  
+ Pour les flux de travail en temps réel, vous disposez de l’option **exécuter en tant que** et vous pouvez choisir si le flux de travail doit appliquer le contexte de sécurité du propriétaire du flux de travail ou l’utilisateur qui a apporté des modifications à l’enregistrement. Si votre flux de travail comprend des actions que tous les utilisateurs ne seraient pas en mesure d’effectuer en fonction des contraintes de sécurité, vous devez choisir d’exécuter le flux de travail en tant que propriétaire du flux de travail.  
   
 <a name="BKMK_ActivatingWorkflows"></a>   
-## <a name="activate-a-workflow"></a>Activer un workflow  
- Les workflows peuvent uniquement être modifiés quand ils sont désactivés. Un workflow doit être activé pour être utilisable manuellement ou applicable en fonction d’événements. Pour être activé, un workflow doit contenir au moins une étape. Pour plus d’informations sur la configuration des étapes, consultez [Configuration des processus de workflow](configure-workflow-steps.md)  
+## <a name="activate-a-workflow"></a>Activer un flux de travail  
+ Les workflows peuvent être modifiés uniquement lorsqu’ils sont désactivés. Pour qu’un flux de travail puisse être utilisé manuellement ou être appliqué en raison des événements, il doit être activé. Pour qu’un flux de travail puisse être activé, il doit contenir au moins une étape. Pour plus d’informations sur la configuration des étapes, consultez [Configuration des processus de flux de travail](configure-workflow-steps.md) .  
   
- Un workflow ne peut être activé ou désactivé que par son propriétaire ou par une personne détenant le privilège **Agir au nom d’un autre utilisateur** telle que l’administrateur système.  En effet, un utilisateur malveillant pourrait modifier le workflow d’une personne sans que cette dernière en ait conscience. Vous pouvez réattribuer un workflow que vous possédez en changeant le propriétaire. Ce champ se trouve sous l’onglet **Administration**. Si vous n’êtes pas l’administrateur système et que vous devez modifier un workflow qui est détenu par un autre utilisateur, ce dernier doit le désactiver et vous l’attribuer. Une fois que vous avez terminé de modifier le workflow, vous pouvez le réattribuer à cet utilisateur afin qu’il puisse l’activer.  
+ Un flux de travail peut être activé ou désactivé uniquement par le propriétaire du flux de travail ou par une personne ayant le droit **d’agir pour le compte d’un autre utilisateur** , tel que l’administrateur système.  Cela est dû au fait qu’un utilisateur malveillant peut modifier le flux de travail d’une personne sans avoir conscience de la modification. Vous pouvez réaffecter un flux de travail que vous possédez en modifiant le propriétaire. Ce champ se trouve sous l’onglet **administration** . Si vous n’êtes pas l’administrateur système et que vous devez modifier un flux de travail détenu par un autre utilisateur, vous en avez besoin pour le désactiver et l’attribuer. Une fois que vous avez fini de modifier le flux de travail, vous pouvez l’affecter à ce dernier afin qu’il puisse l’activer.  
   
- Avec les workflows en temps réel, l’utilisateur doit avoir le privilège **Activer les processus en temps réel**. Comme les workflows en temps réel ont un plus grand risque d’affecter les performances système, seuls les utilisateurs qui peuvent évaluer le risque potentiel doivent disposer de ce privilège.  
+ Pour les flux de travail en temps réel, l’utilisateur doit disposer du privilège **activer les processus en temps réel** . Étant donné que les flux de travail en temps réel présentent un risque plus élevé d’impact sur les performances du système, seules les personnes qui peuvent évaluer le risque potentiel doivent avoir ce privilège.  
   
- Les workflows étant enregistrés quand ils sont activés, il n’est pas nécessaire de les enregistrer avant de les activer.  
+ Les workflows sont enregistrés lorsqu’ils sont activés. il n’est donc pas nécessaire de les enregistrer avant de les activer.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- [Configuration de processus de workflow](configure-workflow-steps.md)  <br/>
-[Ajouter un workflow à la demande à un flux de processus métier](bpf-add-on-demand-workflow.md) 
+ [Configuration des processus de flux de travail](configure-workflow-steps.md)  <br/>
+[Ajouter un flux de travail à la demande à un flux de processus d’entreprise](bpf-add-on-demand-workflow.md) 
 

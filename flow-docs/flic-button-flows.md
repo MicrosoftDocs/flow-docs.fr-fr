@@ -1,6 +1,6 @@
 ---
-title: Lancer des flux avec des boutons Flic | Microsoft Docs
-description: Démarrez facilement les flux de bouton avec des boutons physiques à partir de Flic, proposé par Shortcut Labs.
+title: Démarrer des flux avec des boutons flic | Microsoft Docs
+description: Démarrez facilement des flux de bouton avec des boutons physiques à partir de flic par les laboratoires de raccourcis.
 services: ''
 suite: flow
 documentationcenter: na
@@ -20,131 +20,132 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: bbcb6c8950e8ac5959880727604e0355b3150c6f
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: e6430f78ad2eccecc5af7f6606bb56e1a7eb4599
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64455637"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73544807"
 ---
-# <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Exécuter vos flux en appuyant sur un bouton intelligent Flic (préversion)
-Déclenchez vos flux en appuyant sur un bouton physique, appelé Flic, proposé par Shortcut Labs. Par exemple, appuyez sur un bouton Flic pour effectuer le suivi de vos heures de travail, bloquer votre calendrier, compter le nombre de visiteurs lors d’un événement ou enregistrer des emplacements géographiques.
+# <a name="run-your-flows-by-pressing-a-flic-smart-button-preview"></a>Exécuter vos flux en appuyant sur un bouton intelligent flic (version préliminaire)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Déclenchez vos flux en appuyant sur un bouton physique, connu sous le nom de flic, à partir des ateliers de raccourcis. Par exemple, appuyez sur un flic pour suivre vos heures de travail, bloquer votre calendrier, compter les visiteurs à un événement ou enregistrer des emplacements géographiques.
 
 > [!IMPORTANT]
-> Configurez toutes les propriétés de Flic à l’aide de l’application mobile Flic pour [Android](https://play.google.com/store/apps/details?id=io.flic.app) ou [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) avant de créer votre flux.
+> Configurez toutes les propriétés de flic à l’aide de l’application mobile flic pour [Android](https://play.google.com/store/apps/details?id=io.flic.app) ou [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) avant de créer votre fluide.
 > 
 > 
 
-## <a name="prerequisites"></a>Prérequis
-Voici les prérequis pour utiliser des boutons Flic avec Microsoft Flow :
+## <a name="prerequisites"></a>Conditions préalables
+Pour utiliser boutons flic avec Microsoft Flow, vous devez disposer des éléments suivants :
 
-* Accédez à [Microsoft Flow](https://flow.microsoft.com).
-* Téléchargez l’application mobile Flic [Android](https://play.google.com/store/apps/details?id=io.flic.app) ou [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) et utilisez-la pour apparier un ou plusieurs boutons Flic.
+* Accès aux [Microsoft Flow](https://flow.microsoft.com).
+* L’application mobile [Android](https://play.google.com/store/apps/details?id=io.flic.app) ou [iOS](https://itunes.apple.com/us/app/flic-app/id977593793?ls=1&mt=8) de flic a été téléchargée et utilisée pour coupler un ou plusieurs boutons flic.
 
-## <a name="configure-flic-properties"></a>Configurer les propriétés de Flic
-Utilisez l’application mobile Flic pour programmer les événements liés aux boutons Flic. Voici les événements concernés :
+## <a name="configure-flic-properties"></a>Configurer les propriétés flic
+Utilisez l’application mobile de flic pour programmer les événements du flic. Les événements sont les suivants :
 
-* clic (une seule pression rapide)
+* cliquer (une pression rapide)
 * double-clic (deux pressions rapides)
-* appui prolongé (une seule pression longue)
+* Hold (une longue pression)
 
-Cette capture d’écran montre un exemple de processus de configuration de bouton Flic :
+Cette capture d’écran montre un exemple de ce à quoi peut ressembler votre processus de configuration flic :
 
-![configurer des boutons Flic](./media/flic-button-flows/configure-flic-actions.png)
+![configurer boutons flic](./media/flic-button-flows/configure-flic-actions.png)
 
-Une fois que vous avez lié un événement Flic à Microsoft Flow, vous pouvez le sélectionner comme déclencheur pour votre flux. Vous sélectionnerez des déclencheurs plus loin dans cette procédure pas à pas.
+Une fois que vous avez lié un événement flic à Microsoft Flow, vous pouvez sélectionner ce flic en tant que déclencheur pour vos flux. Vous sélectionnez les déclencheurs plus loin dans cette procédure pas à pas.
 
-## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Créer un flux déclenché par un bouton Flic
-Dans cette procédure pas à pas, vous allez utiliser un bouton Flic pour exécuter un flux qui enregistre le temps qu’un consultant passe avec chaque client. Le consultant appuie sur le bouton Flic une fois qu’il est arrivé chez le client, puis appuie de nouveau dessus juste avant de partir. Chaque appui sur le bouton Flic démarre une exécution du flux auquel il est connecté. Le flux enregistre l’heure actuelle dans Google Sheets, puis envoie une notification par courrier. Le courrier contient des détails sur l’exécution du flux.
+## <a name="create-a-flow-thats-triggered-by-a-flic"></a>Créer un fluide qui est déclenché par un flic
+Dans cette procédure pas à pas, nous utilisons un flic pour exécuter un Flow qui enregistre le temps que le consultant consacre à chaque client. Le consultant appuie sur le flic une fois à l’arrivée, puis le retouche juste avant le départ du client. Chaque pression sur le flic démarre une exécution du processus auquel il est connecté. Le Flow enregistre l’heure actuelle dans Google Sheets, puis envoie une notification par courrier électronique. L’e-mail contient des détails sur l’exécution du Workflow.
 
-Remarque : Vérifiez que vous avez utilisé l’application mobile Flic à paire et configurez au moins une **cliquez sur** action pour déclencher Microsoft Flow. Dans cette capture d’écran, j’ai configuré l’action de **clic** pour déclencher Microsoft Flow. Plus loin dans cette procédure pas à pas, vous allez configurer le déclenchement du flux lorsque le bouton Flic est activé une fois.
+Remarque : Assurez-vous que vous avez utilisé l’application mobile flic pour effectuer le couplage et configurez au moins une action de **clic** pour déclencher Microsoft Flow. Dans cette capture d’écran, j’ai configuré l’action de **clic** pour déclencher Microsoft Flow. Plus loin dans cette procédure pas à pas, nous allons configurer notre Flow pour déclencher lorsque le flic est activé une fois (clic).
 
-   ![configuration du bouton flic](./media/flic-button-flows/flic-configured-for-flow.png)
+   ![configuration de flic](./media/flic-button-flows/flic-configured-for-flow.png)
 
-Commencez à créer le flux.
+Nous allons commencer à créer notre Flow.
 
-### <a name="start-with-a-template"></a>Commencer avec un modèle
-1. Connectez-vous à [Microsoft Flow](https://flow.microsoft.com).
+### <a name="start-with-a-template"></a>Démarrer avec un modèle
+1. Connectez-vous [Microsoft Flow](https://flow.microsoft.com).
    
-    ![se connecter](./media/flic-button-flows/sign-into-flow.png)
+    ![Connexion](./media/flic-button-flows/sign-into-flow.png)
 2. Entrez **flic** dans la zone de recherche, puis sélectionnez l’icône de recherche.
    
-    ![recherche flic](./media/flic-button-flows/search-flic.png)
-3. Sélectionnez le modèle **Track your working hours with Flic smart button (Suivre vos heures de travail avec le bouton intelligent Flic)**.
+    ![Rechercher flic](./media/flic-button-flows/search-flic.png)
+3. Sélectionnez le modèle **suivi de vos heures de travail avec le bouton intelligent flic** .
    
     ![sélectionner un modèle](./media/flic-button-flows/flic-templates.png)
 
 ### <a name="create-a-spreadsheet-in-google-sheets"></a>Créer une feuille de calcul dans Google Sheets
-1. Passez en revue les détails du modèle. Notez que ce dernier nécessite une feuille de calcul Google Sheets.
+1. Passez en revue les détails du modèle et notez que ce modèle nécessite une feuille de calcul dans Google Sheets.
    
-   ![passer en revue les détails du modèle](./media/flic-button-flows/flic-template-details.png)
-2. Dans Google Sheets, créez une feuille de calcul qui contient une table avec des colonnes nommées **ClickType** et **TimeStamp**.
+   ![examiner les détails du modèle](./media/flic-button-flows/flic-template-details.png)
+2. Dans Google Sheets, créez une feuille de calcul qui contient une feuille avec des colonnes nommées **ClickType** et **timestamp**.
    
-      Conseil : Nommez les colonnes dans Google Sheets en entrant le nom de colonne en haut de la colonne. Votre feuille doit donc apparaître comme dans la capture d’écran suivante :
+      Conseil : vous nommez des colonnes dans Google sheets en entrant le nom de colonne en haut de la colonne. Par conséquent, votre feuille doit apparaître comme dans la capture d’écran suivante :
    
-   ![Google Sheets](./media/flic-button-flows/flic-google-sheet.png)
+   ![Feuille Google](./media/flic-button-flows/flic-google-sheet.png)
    
-   Remarque : Vous utiliserez cette feuille plus loin dans cette procédure pas à pas.
+   Remarque : vous utilisez cette feuille plus loin dans cette procédure pas à pas.
 
-### <a name="add-the-flic-trigger-to-your-flow"></a>Ajouter le déclencheur Flic à votre flux
+### <a name="add-the-flic-trigger-to-your-flow"></a>Ajouter le déclencheur flic à votre Flow
 1. Connectez-vous aux services du modèle, puis sélectionnez **Continuer**.
    
-     Le bouton **Continuer** est activé une fois que vous êtes connecté à tous les services requis pour le modèle :
+     **Continuer** est activé une fois que vous êtes connecté à tous les services requis pour le modèle.
    
-    ![indiquer les informations d’identification](./media/flic-button-flows/flic-template-services-sign-in.png)
-2. Entrez **flic** dans la zone de recherche, puis sélectionnez le déclencheur **Flic - When a Flic is pressed (Flic - Lors de l’appui sur un bouton Flic)**.
+    ![fournir les informations d’identification](./media/flic-button-flows/flic-template-services-sign-in.png)
+2. Entrez **flic** dans la zone de recherche, puis sélectionnez le déclencheur **flic-When a flic enfoncé** .
    
-    ![rechercher un déclencheur flic](./media/flic-button-flows/flic-search-trigger.png)
-3. Sélectionnez le bouton Flic que vous souhaitez utiliser à partir de la liste **Flic button (Bouton Flic)** sur la carte **Flic - When a Flic is pressed (Flic - Lors de l’appui sur un bouton Flic)** .
-4. Sélectionnez **clic** dans la liste des **événements** pour indiquer que vous souhaitez déclencher le flux lorsque vous appuyez une fois sur le bouton Flic.
+    ![Rechercher le déclencheur flic](./media/flic-button-flows/flic-search-trigger.png)
+3. Sélectionnez le flic que vous souhaitez utiliser à partir de la liste de **boutons flic** sur le **flic-quand un flic est enfoncé** .
+4. Sélectionnez **Cliquer** dans la liste des **événements** pour indiquer que vous souhaitez déclencher le workflow lorsque le flic est activé une fois.
    
-    ![sélectionner l’action du bouton flic](./media/flic-button-flows/select-flic.png)
+    ![sélectionner l’action flic](./media/flic-button-flows/select-flic.png)
    
-   Vous pouvez également sélectionner **any (tous)** pour indiquer que chaque événement Flic (clic, double-clic ou appui prolongé) déclenche le flux.
+   Si vous le souhaitez, vous pouvez sélectionner **n’importe** lequel pour indiquer que chaque événement flic (clic, double-clic ou conservation) déclenche le Flow.
    
-   **Double-clic** indique que le flux se déclenche lorsque l’utilisateur appuie deux fois rapidement sur le bouton Flic. **Appui prolongé** indique qu’une pression longue sur le bouton Flic déclenche le flux.
+   Le **double-clic** indique que le workflow se déclenche quand le flic est rapidement enfoncé deux fois. **Hold** indique qu’une pression longue sur le flic déclenche le Flow.
    
-   Vous pouvez créer d’autres flux et les déclencher à l’aide d’autres événements de la liste **Événements**. Par exemple, vous pouvez utiliser l’événement **Double-clic** pour enregistrer l’heure à laquelle vous quittez un client.
+   Vous êtes libre de créer d’autres flux et de les déclencher à l’aide des autres événements de la liste des **événements** . Par exemple, vous pouvez utiliser l’événement de **double-clic** pour enregistrer l’heure à laquelle vous laissez un client.
 
 ### <a name="configure-the-sheet"></a>Configurer la feuille
-   Sur la carte **Insert row (Insérer une ligne)**  :
+   Sur la carte **Insérer une ligne** :
 
-1. Sélectionnez la feuille de calcul créée précédemment dans la liste **Fichier**.
-2. Sélectionnez la feuille dans la liste **Feuille de calcul**.
+1. Sélectionnez la feuille de calcul que vous avez créée précédemment dans la liste des **fichiers** .
+2. Sélectionnez la feuille dans la liste **feuille de calcul** .
    
-   Remarque : Deux cases supplémentaires apparaissent dans le **insérer une ligne** carte après avoir sélectionné la feuille. Ces cases représentent les deux colonnes de la feuille créée précédemment.
-3. Sélectionnez la zone **ClickType**, puis sélectionnez le jeton **Click type (Type de clic)**.
-4. Sélectionnez la zone **Timestamp**, puis sélectionnez le jeton **Click time (Heure du clic)**.
+   Remarque : deux cases supplémentaires apparaissent sur la carte **Insérer une ligne** après la sélection de la feuille. Ces zones représentent les deux colonnes de la feuille que vous avez créée précédemment.
+3. Activez la case à cocher **ClickType** , puis sélectionnez le jeton **type de clic** .
+4. Sélectionnez la zone **horodateur** , puis sélectionnez le jeton **heure de clic** .
    
-    ![configurer les données Google Sheets](./media/flic-button-flows/flick-insert-row-card.png)
+    ![configurer des données Google Sheets](./media/flic-button-flows/flick-insert-row-card.png)
 
-### <a name="confirm-the-email-settings-are-correct"></a>Confirmer que les paramètres de courrier sont corrects
-1. Confirmez que la carte **M’envoyer une notification par e-mail** ressemble à cette capture d’écran.
+### <a name="confirm-the-email-settings-are-correct"></a>Confirmer que les paramètres de messagerie sont corrects
+1. Confirmez que la carte **m’envoyer une notification par e-mail** ressemble à cette capture d’écran.
    
-    ![confirmer la notification par courrier](./media/flic-button-flows/email-settings.png)
+    ![confirmer la notification par courrier électronique](./media/flic-button-flows/email-settings.png)
 
-### <a name="save-your-flow-and-test-it"></a>Enregistrer le flux et le tester
-1. Donnez un nom à votre flux, puis enregistrez-le.
+### <a name="save-your-flow-and-test-it"></a>Enregistrer votre Flow et le tester
+1. Donnez un nom à votre Flow, puis enregistrez-le.
    
-    ![enregistrer votre flux](./media/flic-button-flows/save.png)
+    ![enregistrer votre Flow](./media/flic-button-flows/save.png)
 
-Si vous avez tout fait correctement, appuyer sur le bouton Flic une fois déclenche le flux. Le flux enregistre ensuite le type de clic et l’heure actuelle dans la feuille, puis vous envoie un courrier.
+Si vous avez suivi la procédure, le fait d’appuyer sur la flic une fois déclenche le processus. Le Flow enregistre ensuite le type de clic et l’heure actuelle dans la feuille, puis vous envoie un e-mail.
 
-1. Appuyez sur votre bouton Flic une fois.
-2. Ouvrez votre feuille de calcul dans Google Sheets. Vous devez voir les colonnes **ClickType** et **Timestamp** remplies avec le « clic » et l’heure, respectivement.
+1. Appuyez une fois sur votre flic.
+2. Ouvrez votre feuille de calcul dans Google Sheets. Vous devez voir les colonnes **ClickType** et **timestamp** renseignées avec les colonnes « Click » et Time, respectivement.
    
-    ![voir les résultats de l’exécution](./media/flic-button-flows/flic-google-sheet-after-run.png)
-3. Vous pouvez également voir les résultats de l’exécution à partir du site web Microsoft Flow ou de l’application mobile Microsoft Flow. Voici une capture d’écran de mon exécution de test.
+    ![afficher les résultats de l’exécution](./media/flic-button-flows/flic-google-sheet-after-run.png)
+3. Vous pouvez également voir les résultats de l’exécution à partir du site Web Microsoft Flow ou à partir de l’application mobile Microsoft Flow. Voici une capture d’écran de la série de tests.
    
-    ![enregistrer votre flux](./media/flic-button-flows/flic-test-run-results-portal.png)
-4. Voici à quoi ressemble le corps du courrier de notification que vous avez reçu suite à l’exécution du flux.
+    ![enregistrer votre Flow](./media/flic-button-flows/flic-test-run-results-portal.png)
+4. Voici à quoi ressemble le corps de l’e-mail de notification que j’ai reçu de l’exécution du Workflow.
    
-    ![enregistrer votre flux](./media/flic-button-flows/flic-email-body.png)
+    ![enregistrer votre Flow](./media/flic-button-flows/flic-email-body.png)
 
-Vous pouvez aussi envisager d’étendre le flux pour qu’il enregistre automatiquement votre emplacement (latitude et longitude) lors de l’appui sur le bouton Flic.
+Pour un crédit supplémentaire, envisagez d’étendre le Flow pour enregistrer automatiquement votre emplacement (Latitude et longitude) quand vous appuyez sur le flic.
 
 ## <a name="more-information"></a>Plus d’informations
 * [Partager des flux de bouton](share-buttons.md).
 * Apprenez à utiliser les [jetons de déclencheur de bouton](introduction-to-button-trigger-tokens.md) pour envoyer les données actuelles lorsque vos flux de bouton sont exécutés.
-* Installez l’application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows).
+* Installez l’application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)ou [Windows Phone](https://aka.ms/flowmobilewindows).
 

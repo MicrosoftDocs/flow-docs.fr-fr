@@ -1,6 +1,6 @@
 ---
-title: Utiliser des flux de processus métier à l’aide de code | Microsoft Docs
-description: Découvrez comment utiliser des flux de processus métier par programmation pour créer des processus métier simplifiés et plus efficaces.
+title: Utiliser des flux de processus d’entreprise à l’aide de code | MicrosoftDocs
+description: Découvrez comment travailler par programmation avec les flux de processus d’entreprise pour créer des processus d’entreprise plus efficaces et rationalisés.
 ms.custom: ''
 ms.date: 07/09/2018
 ms.reviewer: ''
@@ -14,78 +14,79 @@ search.app:
 - Flow
 search.audienceType:
 - developer
-ms.openlocfilehash: dde9b4328319e0cbfec7df1ba0bb52f403901989
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 5ce11084cb9a430899fd0a4b672e009c0dc22d25
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65054095"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547725"
 ---
-# <a name="work-with-business-process-flows-using-code"></a>Utiliser des flux de processus métier à l’aide de code
+# <a name="work-with-business-process-flows-using-code"></a>Travailler avec des flux de processus d’entreprise à l’aide de code
+[!INCLUDE [view-pending-approvals](../includes/cc-rebrand.md)]
 
-Un *flux de processus métier* vous permet de créer des processus métier de ventes, de service et autres plus efficaces et simplifiés. Il crée une visualisation de votre processus métier en plaçant des contrôles spéciaux en haut des formulaires d’entité. Les utilisateurs sont guidés tout au long des différentes phases des processus de ventes, de marketing ou de service. Chaque processus prend en charge plusieurs phases et étapes. Vous pouvez ajouter ou supprimer des étapes, changer l’ordre des phases ou ajouter de nouvelles entités au flux de processus.  
+Un *processus d’entreprise* vous permet de créer des processus d’entreprise plus efficaces et rationalisés. Il crée une visualisation de votre processus d’entreprise en plaçant des contrôles spéciaux en haut des formulaires d’entité. Les utilisateurs sont guidés par le biais de différentes étapes des processus de vente, de marketing ou de service jusqu’à leur achèvement. Chaque processus prend en charge plusieurs étapes et étapes. Vous pouvez ajouter ou supprimer des étapes, modifier l’ordre des étapes ou ajouter de nouvelles entités au processus d’entreprise.  
   
-Différentes instances de flux de processus métier peuvent s’exécuter simultanément sur le même enregistrement d’entité. Les utilisateurs peuvent basculer entre des instances de processus métier simultanées et reprendre leur travail au niveau d’une phase actuelle dans le processus. 
+Différentes instances de workflow de processus d’entreprise peuvent s’exécuter simultanément sur le même enregistrement d’entité. Les utilisateurs peuvent basculer entre les instances de processus d’entreprise simultanées et reprendre leur travail à une étape actuelle du processus. 
 
-Cette rubrique fournit des informations sur la façon dont vous pouvez utiliser des flux de processus métier par programmation.
+Cette rubrique fournit des informations sur la façon dont vous pouvez travailler par programmation avec les flux de processus d’entreprise.
 
 > [!NOTE]
-> Vous n’avez pas besoin d’écrire de code pour utiliser des flux de processus métier. Pour plus d’informations sur l’utilisation de l’interface utilisateur pour créer et gérer des flux de processus métier, consultez [Vue d’ensemble des flux de processus métier](../business-process-flows-overview.md).  
+> Vous n’avez pas besoin d’écrire du code pour travailler avec des flux de processus d’entreprise. Pour plus d’informations sur l’utilisation de l’interface utilisateur pour créer et gérer des flux de processus d’entreprise, consultez [vue d’ensemble des flux de processus d’entreprise](../business-process-flows-overview.md)  
 
 <a name="PrereqsBPF"></a>   
-## <a name="prerequisites-for-business-process-flow"></a>Prérequis pour le flux de processus métier 
+## <a name="prerequisites-for-business-process-flow"></a>Conditions préalables pour le workflow de processus d’entreprise 
 
-Les entités personnalisées et les entités qui ont des formulaires d’interface utilisateur mis à jour peuvent participer au flux du processus. Les entités d’interface utilisateur mises à jour ont la propriété <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> définie sur `true`. 
+Les entités personnalisées et les entités qui ont mis à jour des formulaires d’interface utilisateur peuvent participer au processus d’entreprise. Les entités d’interface utilisateur mises à jour ont la propriété <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsAIRUpdated> définie sur `true`. 
 
-Pour activer une entité pour le flux de processus métier, définissez la propriété <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> sur `true`.
+Pour activer une entité pour le workflow du processus d’entreprise, affectez à la propriété <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBusinessProcessEnabled> la valeur `true`.
 
 > [!IMPORTANT]
->  L’activation d’une entité pour le flux de processus métier est un processus unidirectionnel. Vous ne pouvez pas l’annuler.
+>  L’activation d’une entité pour le processus d’entreprise est un processus unidirectionnel. Vous ne pouvez pas l’inverser.
 
    
 <a name="DefineBPF"></a>   
-## <a name="define-business-process-flow"></a>Définir un flux de processus métier
+## <a name="define-business-process-flow"></a>Définir le déroulement du processus d’entreprise
   
-Utilisez le concepteur de flux de processus métier visuel pour définir un flux de processus métier. Plus d’informations : [Créer un flux de processus métier](../create-business-process-flow.md)
+Utilisez le concepteur Visual Business Process Flow pour définir un processus d’entreprise. Pour en savoir plus : [créer un workflow de processus d’entreprise](../create-business-process-flow.md)
 
-Par défaut, un enregistrement de flux de processus métier est créé dans l’état `Draft`.  
+Par défaut, un enregistrement de workflow de processus d’entreprise est créé dans l’État `Draft`.  
 
-La définition d’un flux de processus métier est stockée dans l’entité <xref:Microsoft.Dynamics.CRM.workflow>, tandis que les informations sur les phases du flux de processus métier sont stockées dans l’entité <xref:Microsoft.Dynamics.CRM.processstage>.
+Une définition de workflow de processus d’entreprise est stockée dans l’entité <xref:Microsoft.Dynamics.CRM.workflow>, et les informations d’étape pour le workflow de processus d’entreprise sont stockées dans l’entité <xref:Microsoft.Dynamics.CRM.processstage>.
   
 <a name="ActivateBPF"></a>   
-## <a name="activate-business-process-flow"></a>Activer le flux de processus métier  
- Pour pouvoir utiliser le flux de processus, vous devez l’activer. Pour ce faire, vous devez avoir le privilège `prvActivateBusinessProcessFlow` pour l’entité `Workflow`. Utilisez le message <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> pour définir l’état de l’enregistrement d’entité `Workflow` sur `Activated`. Plus d’informations : Consultez [Effectuer des opérations spécialisées à l’aide d’une mise à jour](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update). 
+## <a name="activate-business-process-flow"></a>Activer le workflow de processus d’entreprise  
+ Avant de pouvoir utiliser le processus, vous devez l’activer. Pour l’activer, vous devez disposer du privilège `prvActivateBusinessProcessFlow` pour l’entité `Workflow`. Utilisez le message <xref:Microsoft.Xrm.Sdk.Messages.UpdateRequest> pour définir l’état de l’enregistrement d’entité `Workflow` sur `Activated`. Pour plus d’informations : [effectuer des opérations spécialisées à l’aide de la mise à jour](/dynamics365/customer-engagement/developer/org-service/perform-specialized-operations-using-update) 
 
  > [!NOTE]
- > Vous pouvez également utiliser le concepteur de flux de processus métier pour activer un flux de processus métier. 
+ > Vous pouvez également utiliser le concepteur de workflow de processus d’entreprise pour activer un workflow de processus d’entreprise. 
 
 <a name="BPFEntity"></a>   
-## <a name="business-process-flow-entity"></a>Entité de flux de processus métier 
- Une fois que vous avez activé la définition d’un flux de processus métier en changeant l’état de l’enregistrement d’entité `Workflow` correspondant ou en utilisant le concepteur de flux de processus métier, une entité personnalisée portant le nom suivant est automatiquement créée pour stocker les instances du flux de processus métier activé : « *\<préfixe_solution_active>*_*\<nom_unique>*  », où nom_unique est dérivé du nom que vous spécifiez.  
+## <a name="business-process-flow-entity"></a>Entité Business Process Flow 
+ Une fois que vous avez activé une définition de workflow de processus d’entreprise en modifiant l’état de l’enregistrement d’entité `Workflow` correspondant ou à l’aide du concepteur de workflow de processus d’entreprise, une entité personnalisée portant le nom suivant est automatiquement créée pour stocker l’entreprise activée instances de workflow de processus : « *\<activesolutionprefix >* _ *\<UniqueName >* », où le UniqueName est dérivé du nom que vous spécifiez.  
   
- Par exemple, si vous avez spécifié « My Custom BPF » (Mon FPM personnalisé) comme nom de définition de flux de processus métier et que vous utilisez l’éditeur par défaut (nouveau) pour votre solution active, le nom de l’entité personnalisée créée pour stocker les instances de processus est « new_mycustombpf ».  
+ Par exemple, si vous avez spécifié « mon BPF personnalisé » comme nom de la définition de workflow de processus d’entreprise et que vous utilisez le serveur de publication par défaut (nouveau) pour votre solution active, le nom de l’entité personnalisée créée pour le stockage des instances de processus sera « new_mycustombpf ».  
   
- Si la valeur `uniquename` n’est pas disponible pour la définition d’un flux de processus métier, par exemple, si le flux de processus a été importé dans le cadre de la solution à partir d’une version antérieure, le nom par défaut de l’entité personnalisée est « `\<activesolutionprefix>_bpf_<GUID_BPF_Definition>` » :  
+ Si la valeur de `uniquename` n’est pas disponible pour une définition de workflow de processus d’entreprise, par exemple si le workflow de processus d’entreprise a été importé dans le cadre de la solution à partir d’une version antérieure, le nom par défaut de l’entité personnalisée sera «`\<activesolutionprefix>_bpf_<GUID_BPF_Definition>`:  
   
 > [!IMPORTANT]
->  Les exemples d’enregistrements de flux de processus métier utilisent des entités système pour stocker les enregistrements d’instance de flux de processus métier correspondants.  
+>  L’exemple d’enregistrement de workflow de processus d’entreprise utilise des entités système pour stocker les enregistrements d’instance de workflow de processus d’entreprise correspondants.  
 >   
->  Toutefois, toute définition de flux de processus métier que vous créez utilise des entités personnalisées pour stocker ses enregistrements d’instance comme expliqué précédemment. 
+>  Toutefois, les nouvelles définitions de workflow de processus d’entreprise que vous créez utilisent des entités personnalisées pour stocker leurs enregistrements d’instance, comme expliqué précédemment. 
 
-Vous pouvez récupérer le nom de votre entité de flux de processus métier de l’une des manières suivantes :
+Vous pouvez récupérer le nom de votre entité de workflow de processus d’entreprise à l’aide de l’une des méthodes suivantes :
 
-- **Utilisation de l’interface utilisateur** : Utilisez l’interface utilisateur de personnalisation pour accéder à votre entité de flux de processus métier :
+- **À l’aide de l’interface utilisateur**: utilisez l’interface utilisateur de personnalisation pour accéder à votre entité de workflow de processus d’entreprise :
 
     ![](media/bpf-entity-name.png)
-- **Utilisation de l’API web** : Utilisez la requête suivante :
+- **À l’aide de l’API Web**: utilisez la requête suivante :
 
-    **Requête**
+    **Demande**
 
     ```
     GET [Organization URI]/api/data/v9.0/workflows?$filter=name eq 'My Custom BPF'&$select=uniquename HTTP/1.1
     ```
 
-    **Réponse**
+    **Lutte**
     ```
     {  
     "@odata.context":"[Organization URI]/api/data/v9.0/$metadata#workflows(uniquename)",
@@ -98,7 +99,7 @@ Vous pouvez récupérer le nom de votre entité de flux de processus métier de 
       ]
     }
     ```
-- **Utilisation du service d’organisation** : Utilisez l’exemple de code suivant :
+- **À l’aide du service d’organisation**: utilisez l’exemple de code suivant :
 
     ```c#
     QueryExpression query = new QueryExpression
@@ -121,60 +122,60 @@ Vous pouvez récupérer le nom de votre entité de flux de processus métier de 
     Workflow Bpf = (Workflow)_serviceProxy.RetrieveMultiple(query).Entities[0]; 
     ```
 > [!NOTE]
-> La propriété <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> est `true` pour les entités de flux de processus métier. Vous pouvez récupérer toutes les entités de flux de processus métier dans votre instance en exécutant la requête d’API web suivante :
+> La propriété <xref:Microsoft.Xrm.Sdk.Metadata.EntityMetadata.IsBPFEntity> est `true` pour les entités de workflow de processus d’entreprise. Vous pouvez récupérer toutes les entités de workflow de processus d’entreprise dans votre instance en exécutant la requête d’API Web suivante :
 > ```http
 > GET [Organization URI]/api/data/v9.0/EntityDefinitions?$select=SchemaName,LogicalName,DisplayName&$filter=IsBPFEntity eq true HTTP/1.1
 > ```
 
 <a name="BPFSecurity"></a>   
-## <a name="manage-security-for-business-process-flows"></a>Gérer la sécurité pour les flux de processus métier
+## <a name="manage-security-for-business-process-flows"></a>Gérer la sécurité des flux de processus d’entreprise
 
-L’entité personnalisée qui est créée automatiquement à l’activation d’un flux de processus métier pour stocker des instances de flux de processus métier est conforme au modèle de sécurité standard, à l’image de toute autre entité personnalisée dans Customer Engagement. Cela implique que les privilèges accordés sur ces entités définissent les autorisations d’exécution pour les utilisateurs de flux de processus métier.
+L’entité personnalisée qui est automatiquement créée lors de l’activation d’un workflow de processus d’entreprise pour stocker des instances de workflow de processus d’entreprise adhère au modèle de sécurité standard comme pour toute autre entité personnalisée dans Common Data Service. Cela implique que les privilèges accordés sur ces entités définissent les autorisations d’exécution pour les utilisateurs pour les flux de processus d’entreprise.
 
-La portée de l’entité de flux de processus métier personnalisée est l’organisation. Les privilèges ordinaires de création, récupération, mise à jour et suppression sur cette entité définissent l’autorisation accordée aux utilisateurs en fonction de leurs rôles attribués. Par défaut, quand l’entité personnalisée de flux de processus métier est créée, seuls les rôles de sécurité **Administrateur système** et **Personnalisateur de système** ont accès à celle-ci ; vous devez donc accorder explicitement des autorisations sur la nouvelle entité de flux de processus métier (par exemple, **Mon flux de processus métier personnalisé**) pour les autres rôles de sécurité en fonction des besoins.
+L’entité de workflow de processus d’entreprise personnalisée a une étendue d’organisation. Les privilèges de création, de récupération, de mise à jour et de suppression standard sur cette entité définissent l’autorisation dont les utilisateurs ont besoin en fonction des rôles qui leur sont attribués. Par défaut, lorsque l’entité personnalisée de workflow de processus d’entreprise est créée, seuls les rôles de sécurité **administrateur système** et **Personnalisateur de système** y ont accès, et vous devez accorder explicitement des autorisations à la nouvelle entité de workflow de processus d’entreprise (pour exemple, **mon BPF personnalisé**) pour les autres rôles de sécurité requis.
 
 ![](media/bpf-privileges.png)
 
 <a name="ManageBPF"></a>   
-## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>Créer, récupérer, mettre à jour et supprimer des enregistrements d’entité de flux de processus métier (instances de processus)  
- L’entité personnalisée qui est créée automatiquement à l’activation d’une définition de flux de processus métier stocke toutes les instances de processus pour la définition du flux de processus métier. L’entité personnalisée prend en charge la création et la gestion programmatiques standard des enregistrements (instances de processus) à l’aide de l’API web et du point de terminaison CRM 2011.
+## <a name="create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances"></a>Créer, récupérer, mettre à jour et supprimer des enregistrements d’entité de workflow de processus d’entreprise (instances de processus)  
+ L’entité personnalisée qui est automatiquement créée lors de l’activation d’une définition de workflow de processus d’entreprise stocke toutes les instances de processus pour la définition de workflow de processus d’entreprise. L’entité personnalisée prend en charge la création et la gestion de programmes standard des enregistrements (instances de processus) à l’aide de l’API Web et du point de terminaison CRM 2011.
 
 > [!IMPORTANT]
-> Le basculement vers une autre instance de processus pour un enregistrement d’entité n’est pris en charge que par le biais de l’interface utilisateur (client) ou programmatiquement à l’aide des informations disponibles dans cette section. Vous ne pouvez plus utiliser le message `SetProcess` (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> ou <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) pour changer de processus programmatiquement (définir un autre flux de processus métier en tant qu’instance de processus active) pour l’enregistrement d’entité cible. 
+> Le basculement vers une autre instance de processus pour un enregistrement d’entité est pris en charge uniquement par le biais de l’interface utilisateur (client) ou par programme à l’aide des informations disponibles dans cette section. Vous ne pouvez plus utiliser le message d' `SetProcess` (<xref href="Microsoft.Dynamics.CRM.SetProcess?text=SetProcess Action" /> ou <xref:Microsoft.Crm.Sdk.Messages.SetProcessRequest>) pour basculer les processus par programme (définissez un autre workflow de processus d’entreprise en tant qu’instance de processus active) pour l’enregistrement d’entité cible. 
 
- Prenons l’exemple suivant, où nous avons un flux de processus métier entre entités, « My Custom BPF » (Mon flux de processus métier personnalisé), comportant 3 phases : S1 : Compte, S2 : Compte et S3 : Contact. 
+ Prenons l’exemple suivant, dans lequel nous avons un workflow de processus d’entreprise entre entités, « mon BPF personnalisé », avec 3 étapes : S1 : compte, S2 : compte et S3 : contact. 
 
  ![](media/sample-bpf.png)
  
-### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>Récupérer tous les enregistrements (instances) pour une entité de flux de processus métier
- Si le nom de votre entité de flux de processus métier est « new_mycustombpf », utilisez la requête suivante pour récupérer tous les enregistrements (instances de processus) liés à cette entité :  
+### <a name="retrieve-all-the-records-instances-for-a-business-process-flow-entity"></a>Récupérer tous les enregistrements (instances) d’une entité de workflow de processus d’entreprise
+ Si le nom de votre entité de workflow de processus d’entreprise est « new_mycustombpf », utilisez la requête suivante pour récupérer tous les enregistrements (instances de processus) de votre entité de workflow de processus d’entreprise :  
   
 ```http
 GET [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
 ```
 
-À ce stade, vous ne pouvez pas obtenir d’instances dans votre réponse, car il n’en existe aucune. Exécutez cette requête après avoir créé une instance de la définition du flux de processus métier plus loin dans cette rubrique.
+À ce stade, vous risquez de ne pas recevoir d’instances dans votre réponse, car il n’en existe aucune. Exécutez cette demande après avoir créé une instance de votre définition de workflow de processus d’entreprise plus loin dans cette rubrique.
 
 > [!NOTE]
-> Pour savoir comment récupérer le nom de votre entité de flux de processus métier, consultez la section précédente, [Entité de flux de processus métier](#business-process-flow-entity).
+> Pour savoir comment récupérer le nom de votre entité de workflow de processus d’entreprise, consultez la section précédente, [entité Business Process Flow](#business-process-flow-entity).
   
-### <a name="create-a-business-process-flow-entity-record-process-instance"></a>Créer un enregistrement d’entité de flux de processus métier (instance de processus) 
+### <a name="create-a-business-process-flow-entity-record-process-instance"></a>Créer un enregistrement d’entité de fluide de processus d’entreprise (instance de processus) 
 
-Créez un enregistrement d’entité de flux de processus métier (instance de processus) par programmation si vous souhaitez basculer vers un autre flux de processus métier pour un enregistrement d’entité sans utiliser l’interface utilisateur. 
+Créez un enregistrement d’entité de workflow de processus d’entreprise (instance de processus) par programmation si vous souhaitez basculer vers un autre processus d’entreprise pour un enregistrement d’entité sans utiliser l’interface utilisateur. 
 
-Pour créer un enregistrement d’entité de flux de processus métier, vous devez spécifier les valeurs suivantes : 
-- Associez l’enregistrement d’entité de flux de processus métier à un enregistrement d’entité principale en définissant la propriété de navigation à valeur unique à l’aide de l’annotation `@odata.bind`. Pour trouver le nom de la propriété de navigation qui pointe vers l’enregistrement d’entité principale pour la définition du flux de processus métier, utilisez le [document CSDL $metadata](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document). 
-- Associez l’enregistrement d’entité de flux de processus métier à une phase valide spécifiée dans la définition du flux de processus métier en définissant la propriété de navigation à valeur unique à l’aide de l’annotation `@odata.bind`. Pour trouver le nom de la propriété de navigation (généralement `activestageid`) qui pointe vers l’enregistrement de phase pour la définition du flux de processus métier, utilisez le [document CSDL $metadata](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document).
+Pour créer un enregistrement d’entité de workflow de processus d’entreprise, vous devez spécifier les valeurs suivantes : 
+- Associez l’enregistrement d’entité de traitement des processus d’entreprise à un enregistrement d’entité primaire en définissant la propriété de navigation à valeur unique à l’aide de l’annotation `@odata.bind`. Pour déterminer le nom de la propriété de navigation qui pointe vers l’enregistrement d’entité primaire pour votre définition de workflow de processus d’entreprise, utilisez le [document $Metadata CSDL](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document). 
+- Associez l’enregistrement d’entité de traitement des processus d’entreprise à une étape valide spécifiée dans la définition du workflow de processus d’entreprise en définissant la propriété de navigation à valeur unique à l’aide de l’annotation `@odata.bind`. Pour connaître le nom de la propriété de navigation (généralement `activestageid`) qui pointe vers l’enregistrement d’étape pour votre définition de workflow de processus d’entreprise, utilisez le [document CSDL $Metadata](/dynamics365/customer-engagement/developer/webapi/web-api-types-operations.md#csdl-metadata-document).
 
-    En outre, vous pouvez récupérer des informations sur toutes les phases pour la définition d’un flux de processus métier à l’aide de la requête d’API web suivante, où l’ID de la définition du flux de processus métier est 2669927e-8ad6-4f95-8a9a-f1008af6956f :
+    En outre, vous pouvez récupérer des informations sur toutes les étapes d’une définition de workflow de processus d’entreprise à l’aide de la demande d’API Web suivante en supposant que l’ID de votre définition de workflow de processus d’entreprise est 2669927e-8ad6-4f95-8a9a-f1008af6956f :
 
-    **Requête**
+    **Demande**
 
     ```http
     GET [Organization URI]/api/data/v9.0/processstages?$select=stagename&$filter=processid/workflowid eq 2669927e-8ad6-4f95-8a9a-f1008af6956f HTTP/1.1
     ```
 
-    **Réponse**
+    **Lutte**
 
     ```http
     {
@@ -199,9 +200,9 @@ Pour créer un enregistrement d’entité de flux de processus métier, vous dev
     }
     ```
 
-Ensuite, utilisez la requête suivante afin de créer une instance de la définition du flux de processus métier pour un enregistrement de compte (ID=a176be9e-9a68-e711-80e7-00155d41e206) avec la phase active définie en tant que première phase de l’instance de processus, S1 (ID=9a9185f5-b75b-4bbb-9c2b-a6626683b99b) :
+Ensuite, utilisez la requête suivante pour créer une instance de votre définition de workflow de processus d’entreprise pour un enregistrement de compte (ID = a176be9e-9a68-E711-80e7-00155d41e206) et l’étape active définie comme première étape de l’instance de processus, S1 (ID = 9a9185f5-b75b-4bbb-9c2b-a6626683b99b):
 
-**Requête**
+**Demande**
 
 ```http
 POST [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -216,7 +217,7 @@ Accept: application/json
 }
 ```
 
-**Réponse**
+**Lutte**
 
 ```http
 HTTP/1.1 204 No Content
@@ -224,7 +225,7 @@ OData-Version: 4.0
 OData-EntityId: [Organization URI]/api/data/v9.0/new_mycustombpfs(cc3f721b-026e-e811-80ff-00155d513100)
 ```
 
-Notez que si vous souhaitez créer une instance de la définition du flux de processus métier avec la phase active définie en tant que phase ***autre*** que la première phase, vous devez également fournir `traversedpath` dans votre requête. Le chemin parcouru est la chaîne délimitée par des virgules des ID de phase de processus qui représentent les phases visitées de l’instance du flux de processus métier. La requête suivante crée une instance d’un enregistrement de compte (ID=679b2464-71b5-e711-80f5-00155d513100) avec la phase active définie en tant que deuxième phase, S2 (ID=19a11fc0-3398-4214-8522-cb2a97f66e4b).
+Notez que, si vous souhaitez créer une instance de votre définition de workflow de processus d’entreprise avec l’étape active définie comme ***une étape différente de la*** première étape, vous devez également fournir `traversedpath` dans votre demande. Le chemin parcouru est la chaîne délimitée par des virgules des ID d’étape de processus qui représentent les étapes visitées de l’instance de workflow de processus d’entreprise. La demande suivante crée une instance pour un enregistrement de compte (ID = 679b2464-71b5-E711-80f5-00155d513100) et un ensemble d’étapes actives comme deuxième étape, S2 (ID = 19a11fc0-3398-4214-8522-cb2a97f66e4b).
 
 ```http
 POST [Organization URI]/api/data/v9.0/new_mycustombpfs HTTP/1.1 
@@ -240,17 +241,17 @@ Accept: application/json
 }
 ```
 
-### <a name="update-a-business-process-flow-entity-record-process-instance"></a>Mettre à jour un enregistrement d’entité de flux de processus métier (instance de processus)
+### <a name="update-a-business-process-flow-entity-record-process-instance"></a>Mettre à jour un enregistrement d’entité de fluide de processus d’entreprise (instance de processus)
 
-Vous pouvez mettre à jour une instance de processus pour passer à la phase suivante ou précédente, abandonner une instance de processus, réactiver une instance de processus ou terminer une instance de processus. 
+Vous pouvez mettre à jour une instance de processus pour passer à l’étape suivante ou précédente, abandonner une instance de processus, réactiver une instance de processus ou terminer une instance de processus. 
 
-#### <a name="stage-navigation"></a>Accès à une phase
+#### <a name="stage-navigation"></a>Navigation dans les étapes
 
-Pour accéder à une autre phase, vous devez mettre à jour un enregistrement d’instance de processus afin de changer son ID de phase active et de mettre à jour le chemin parcouru en conséquence. Notez que vous devez uniquement passer à la phase suivante ou précédente quand vous mettez à jour une instance de flux de processus métier.
+Pour accéder à une autre étape, vous devez mettre à jour un enregistrement d’instance de processus pour modifier son ID d’étape active et mettre à jour le chemin parcouru. Notez que vous devez passer à l’étape suivante ou précédente lors de la mise à jour d’une instance de workflow de processus d’entreprise.
 
-Pour accéder à une phase, vous avez besoin de l’ID de l’instance de flux de processus métier que vous souhaitez mettre à jour. Pour récupérer toutes les instances de flux de processus métier, consultez [Récupérer tous les enregistrements (instances) pour une entité de flux de processus métier](#retrieve-all-the-records-instances-for-a-business-process-flow-entity) plus haut.
+Pour effectuer la navigation entre les étapes, vous avez besoin de l’ID de l’instance de workflow de processus d’entreprise que vous souhaitez mettre à jour. Pour récupérer toutes les instances de votre processus d’entreprise, consultez [récupérer les enregistrements (instances) d’une entité de workflow de processus d’entreprise](#retrieve-all-the-records-instances-for-a-business-process-flow-entity) précédemment.
 
-En supposant que l’ID de l’instance de processus que vous souhaitez mettre à jour est dc2ab599-306d-e811-80ff-00155d513100, utilisez la requête suivante pour mettre à jour la phase active de S1 à S2 :
+En supposant que l’ID de l’instance de processus que vous souhaitez mettre à jour est dc2ab599-306d-e811-80ff-00155d513100, utilisez la requête suivante pour mettre à jour l’étape active de S1 à S2 :
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1
@@ -264,26 +265,26 @@ OData-Version: 4.0
 }
 ```
 
-#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Changer l’état d’une instance de processus : abandonner, réactiver ou terminer 
+#### <a name="change-the-state-of-a-process-instance-abort-reactivate-or-finish"></a>Modifier l’état d’une instance de processus : abandonner, réactiver ou terminer 
 
-Une instance de processus peut avoir un des états suivants : **Actif**, **Terminé** ou **Abandonné**. L’état est déterminé par les attributs suivants sur l’enregistrement d’instance de processus :
+Une instance de processus peut avoir l’un des États suivants : **actif**, **terminé**ou **abandonné**. L’État est déterminé par les attributs suivants sur l’enregistrement d’instance de processus :
 
-- **statecode** : affiche l’état de l’instance de processus.
+- **statecode**: affiche l’état de l’instance de processus.
 
-    |Valeur|Étiquette|
+    |ajoutée|Noms|
     |-----|-----|
-    |0    |Actif|
-    |1    |Inactif|
+    |entre    |Proactive|
+    |1,0    |Inactive|
 
-- **statuscode** : affiche des informations sur le statut de l’instance de processus.
+- **statusCode**: affiche des informations sur l’état de l’instance de processus.
 
-    |Valeur|Étiquette|
+    |ajoutée|Noms|
     |-----|-----|
-    |1    |Actif|
-    |2    |Terminé|
-    |3    |Abandonné|
+    |1,0    |Proactive|
+    |2    |Démarré|
+    |1,3    |Abandonnée|
 
-Ainsi, pour **Abandonner** une instance de processus, utilisez la requête suivante en définissant les valeurs `statecode` et `statuscode` de manière appropriée :
+Par conséquent, pour **abandonner** une instance de processus, utilisez la demande suivante, définissez les valeurs `statecode` et `statuscode` de manière appropriée :
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1   
@@ -298,15 +299,15 @@ OData-Version: 4.0
 ```
  
 > [!NOTE]
-> Vous pouvez abandonner une instance de processus dans n’importe quelle phase.
+> Vous pouvez abandonner une instance de processus à tout moment.
 
-De même, pour réactiver une instance de processus, remplacez les valeurs `statecode` et `statuscode` dans le code ci-dessus par **0** et **1** respectivement.
+De même, pour réactiver une instance de processus, remplacez les valeurs `statecode` et `statuscode` dans le code ci-dessus respectivement par **0** et **1** .
 
-Enfin, pour définir un statut d’instance de processus comme étant **Terminé**, ce qui n’est possible qu’à la dernière phase d’une instance de processus, remplacez les valeurs `statecode` et `statuscode` dans le code ci-dessus par **0** et **2** respectivement.
+Enfin, pour définir l’état d’une instance de processus comme **terminé**, ce qui n’est possible qu’à la dernière étape d’une instance de processus, remplacez les valeurs `statecode` et `statuscode` dans le code ci-dessus par **0** et **2** , respectivement.
 
 #### <a name="cross-entity-navigation"></a>Navigation entre les entités
 
-Pour naviguer entre les entités dans cet exemple, vous devez définir la phase active de l’instance de processus sur la dernière phase, S3 (ID=a107e2fd-7543-4c1a-b6b4-b8060ecb1a1a), mettre à jour le chemin parcouru en conséquence et définir un enregistrement de contact en tant qu’enregistrement d’entité principale selon la définition du flux de processus métier.
+Pour la navigation entre les entités dans cet exemple, vous devez définir l’étape active de l’instance de processus à la dernière étape, S3 (ID = a107e2fd-7543-4c1a-b6b4-b8060ecb1a1a), mettre à jour le chemin parcouru en conséquence et définir un enregistrement de contact en tant qu’enregistrement d’entité primaire en fonction de définition du workflow de processus d’entreprise.
 
 ```http
 PATCH [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1   
@@ -321,72 +322,72 @@ OData-Version: 4.0
 }
 ``` 
 
-### <a name="delete-a-business-process-flow-entity-record-process-instance"></a>Supprimer un enregistrement d’entité de flux de processus métier (instance de processus)
+### <a name="delete-a-business-process-flow-entity-record-process-instance"></a>Supprimer un enregistrement d’entité de fluide de processus d’entreprise (instance de processus)
 
-Utilisez la requête d’API web suivante :
+Utilisez la demande d’API Web suivante :
 
-**Requête**
+**Demande**
 
 ```http
 DELETE [Organization URI]/api/data/v9.0/new_mycustombpfs(dc2ab599-306d-e811-80ff-00155d513100) HTTP/1.1
 ```  
 
-**Réponse**
+**Lutte**
 
-Si l’enregistrement existe, vous obtenez une réponse normale avec le statut 204 indiquant que la suppression a réussi. Si l’entité est introuvable, vous obtenez une réponse avec le statut 404.
+Si l’enregistrement existe, vous obtenez une réponse normale avec l’État 204 pour indiquer que la suppression a réussi. Si l’entité est introuvable, vous obtenez une réponse avec l’État 404.
 
 ## <a name="use-retrieveprocessinstances-and-retrieveactivepath-messages"></a>Utiliser des messages RetrieveProcessInstances et RetrieveActivePath
 
-Utilisez le message `RetrieveProcessInstances` (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> ou <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) pour récupérer toutes les instances de flux de processus métier pour un enregistrement d’entité dans toutes les définitions de processus métier. Les instances de flux de processus métier retournées pour une entité sont classées en fonction de l’attribut `modifiedon` qui leur est associé. Par exemple, l’instance de flux de processus métier la plus récemment modifiée est le *premier* enregistrement dans la collection retournée. L’instance de flux de processus métier la plus récemment modifiée est celle qui est active sur l’interface utilisateur pour un enregistrement d’entité.  
+Utilisez le message d' `RetrieveProcessInstances` (<xref href="Microsoft.Dynamics.CRM.RetrieveProcessInstances?text=RetrieveActivePath Function" /> ou <xref:Microsoft.Crm.Sdk.Messages.RetrieveProcessInstancesRequest>) pour récupérer toutes les instances de workflow de processus d’entreprise pour un enregistrement d’entité dans toutes les définitions de processus d’entreprise. Les instances de workflow de processus d’entreprise retournées pour une entité sont triées en fonction de l’attribut `modifiedon` de l’instance. Par exemple, l’instance de workflow de processus d’entreprise modifié le plus récemment sera le *premier* enregistrement dans la collection retournée. L’instance de workflow de processus d’entreprise récemment modifiée est celle qui est active sur l’interface utilisateur pour un enregistrement d’entité.  
   
-Chaque enregistrement d’instance de flux de processus métier retourné pour un enregistrement d’entité suite à l’utilisation du message `RetrieveProcessInstances` stocke l’ID de la phase active dans l’attribut `processstageid` qui peut être utilisé pour rechercher la phase active, puis pour passer à la phase précédente ou suivante. Pour ce faire, vous devez tout d’abord rechercher le chemin d’accès actif d’une instance de flux de processus métier et les phases disponibles dans l’instance de flux de processus à l’aide du message `RetrieveActivePath` (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> ou <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>).   
+Chaque enregistrement d’instance de workflow de processus d’entreprise renvoyé pour un enregistrement d’entité à la suite de l’utilisation de la `RetrieveProcessInstances` message stocke l’ID de l’étape active dans l’attribut `processstageid` qui peut être utilisé pour Rechercher l’étape active, puis passer à l’étape précédente ou suivante. Pour ce faire, vous devez d’abord Rechercher le chemin d’accès actif d’une instance de workflow de processus d’entreprise et les étapes disponibles dans l’instance de workflow à l’aide du message de `RetrieveActivePath` (<xref href="Microsoft.Dynamics.CRM.RetrieveActivePath?text=RetrieveActivePath Function" /> ou <xref:Microsoft.Crm.Sdk.Messages.RetrieveActivePathRequest>).   
   
- Une fois que vous disposez des informations sur la phase active et le chemin d’accès actif pour une instance de flux de processus métier, vous pouvez utiliser ces informations pour passer à une phase précédente ou suivante dans le chemin d’accès actif. La navigation vers l’avant parmi les phases doit être effectuée dans l’ordre ; autrement dit, vous devez uniquement passer à la phase suivante dans le chemin d’accès actif.   
+ Une fois que vous avez l’étape active et les informations de chemin d’accès actives pour une instance de workflow de processus d’entreprise, vous pouvez utiliser ces informations pour passer à l’étape précédente ou suivante dans le chemin d’accès actif. La navigation vers l’avant des étapes doit être effectuée dans l’ordre, autrement dit, vous ne devez passer à l’étape suivante que dans le chemin d’accès actif.   
   
- Pour obtenir l’exemple de code complet qui illustre l’utilisation de ces deux méthodes et l’accès aux phases à l’aide du [service d’organisation](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata), consultez [Exemple : Utiliser des flux de processus métier](sample-work-business-process-flows.md). 
+ Pour obtenir un exemple complet du code illustrant l’utilisation de ces deux méthodes et de la navigation au niveau des étapes à l’aide du [service d’organisation](/dynamics365/customer-engagement/developer/org-service/use-organization-service-read-write-data-metadata), consultez [exemple : travailler avec des flux de processus d’entreprise](sample-work-business-process-flows.md). 
 
 <a name="ApplyBPF"></a>   
-## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Appliquer des flux de processus métier pendant la création d’un enregistrement d’entité
+## <a name="apply-business-process-flow-while-creating-an-entity-record"></a>Appliquer le workflow de processus d’entreprise lors de la création d’un enregistrement d’entité
 
-Cette section fournit des informations sur le comportement par défaut de l’application automatique de flux de processus métier aux enregistrements d’entité créés dans Customer Engagement, ainsi que sur la façon de contourner ce comportement afin d’appliquer un flux de processus métier de votre choix pour les nouveaux enregistrements d’entité.
+Cette section fournit des informations sur le comportement par défaut pour appliquer automatiquement des flux de processus d’entreprise aux nouveaux enregistrements d’entité créés dans Common Data Service, et comment vous pouvez le remplacer pour appliquer un flux de processus d’entreprise de votre choix pour de nouveaux enregistrements d’entité.
 
-Par défaut, pour une entité pour laquelle plusieurs flux de processus métier sont définis, le système applique un flux de processus métier au nouvel enregistrement d’entité à l’aide de la logique à plusieurs étapes suivante :
-1. Identifier tous les flux de processus métier applicables au nouvel enregistrement d’entité selon l’attribut **Workflow.PrimaryEntity** des enregistrements de définition de flux de processus métier.
-2. Identifier les définitions de flux de processus métier auxquelles l’utilisateur actuel a accès. Pour plus d’informations sur la détermination et la gestion de l’accès à un flux de processus métier, consultez [Gérer la sécurité des flux de processus métier](#BPFSecurity) plus haut dans cette rubrique.<br/>  
-3. Toutes les définitions de flux de processus métier dans le système sont soumises à un ordre global par entité. L’ordre du flux de processus métier est stocké dans l’attribut **Workflow.ProcessOrder**. Les définitions de flux de processus métier pour une entité sont triées en fonction de cet ordre ; celle ayant la plus petite valeur d’ordre est choisie.
-4. Enfin, si l’enregistrement d’entité est créé à partir d’une application métier (module d’application), un niveau de filtrage supplémentaire est appliqué pour récupérer le flux de processus métier à appliquer automatiquement au nouvel enregistrement d’entité. Quand vous travaillez dans une application métier, les entités, flux de processus métier, vues et formulaires accessibles aux utilisateurs sont déterminés par les rôles de sécurité attribués à l’application. 
-    - Si l’application métier ne contient pas de flux de processus métier, le flux de processus métier est appliqué comme expliqué jusqu’à l’étape 3.
-    - Si l’application métier a un ou plusieurs flux de processus métier, seuls les flux de processus métier présents dans l’application sont applicables. Dans ce cas, quand l’utilisateur travaille dans le contexte d’une application métier, la liste des flux de processus métier issue de l’étape 3 est filtrée de manière à ne contenir que ceux qui font partie de l’application métier et qui sont présents dans le module d’application, puis est triée en fonction de l’ordre des processus. 
-    - Si aucun flux de processus métier n’est disponible dans une application métier pour l’entité ou pour une entité à laquelle l’utilisateur a accès, aucun flux de processus métier n’est appliqué pour le nouvel enregistrement d’entité.
+Par défaut, pour une entité qui a plusieurs flux de processus d’entreprise définis pour celle-ci, le système applique un flux de processus d’entreprise au nouvel enregistrement d’entité à l’aide de la logique en plusieurs étapes suivante :
+1. Identifiez tous les flux de processus d’entreprise applicables au nouvel enregistrement d’entité en fonction de l’attribut **Workflow. PrimaryEntity** des enregistrements de définition de flux de processus d’entreprise.
+2. Identifiez les définitions de workflow de processus d’entreprise auxquelles l’utilisateur actuel a accès. Pour plus d’informations sur la façon dont l’accès à un flux de processus d’entreprise est déterminé et géré, consultez [gérer la sécurité des flux de processus d’entreprise](#BPFSecurity) plus haut dans cette rubrique.<br/>  
+3. Toutes les définitions de workflow de processus d’entreprise dans le système sont soumises à une commande globale par entité. L’ordre du flux de processus d’entreprise est stocké dans l’attribut **Workflow. ProcessOrder** . Les définitions de workflow de processus d’entreprise pour une entité sont triées en fonction de cette commande, et celle avec la valeur de commande la moins faible est choisie.
+4. Enfin, si l’enregistrement d’entité est créé à partir d’une application d’entreprise (module d’application), un niveau supplémentaire de filtrage est appliqué pour choisir le processus d’entreprise à appliquer automatiquement au nouvel enregistrement d’entité. Lorsque vous travaillez dans une application, les utilisateurs peuvent accéder uniquement aux entités pertinentes, aux flux de processus d’entreprise, aux affichages et aux formulaires auxquels ils ont accès en vertu des rôles de sécurité attribués à l’application d’entreprise. 
+    - Si l’application d’entreprise ne contient pas de workflow de processus d’entreprise, le workflow de processus d’entreprise est appliqué comme expliqué jusqu’à l’étape 3.
+    - Si l’application d’entreprise possède un ou plusieurs flux de processus d’entreprise, seuls les flux de processus d’entreprise présents dans l’application sont applicables. Dans ce cas, lorsque l’utilisateur travaille dans un contexte d’application métier, la liste des flux de processus d’entreprise de l’étape 3 est filtrée plus loin que celle qui fait partie de l’application métier présente dans le module d’application et est triée en fonction de l’ordre des processus. 
+    - Si aucun workflow de processus d’entreprise n’est disponible dans une application d’entreprise pour l’entité ou une application à laquelle l’utilisateur a accès, aucun workflow de processus d’entreprise n’est appliqué pour le nouvel enregistrement d’entité.
 
-Vous pouvez remplacer la logique par défaut qui prévoit l’application automatique des flux de processus métier aux nouveaux enregistrements d’entité. Pour ce faire, définissez l’attribut **ProcessId** de l’entité sur une des valeurs suivantes au moment de la création d’un enregistrement d’entité :
-- Définissez-le sur **Guid.Empty** afin d’ignorer la définition d’un flux de processus métier pour les nouveaux enregistrements d’entité. Cette approche peut vous intéresser si vous créez des enregistrements d’entité en bloc, mais que vous ne souhaitez pas que le flux de processus métier leur soit appliqué.
-- Définissez-le sur une entité de flux de processus métier spécifique (telle qu’une référence d’entité). Dans ce cas, le système applique le flux de processus métier spécifié au lieu de la logique par défaut.
+Vous pouvez remplacer la logique par défaut des flux de processus d’entreprise qui est appliquée automatiquement aux nouveaux enregistrements d’entité. Pour ce faire, définissez l’attribut **ProcessID** de l’entité sur l’une des valeurs suivantes lors de la création d’un nouvel enregistrement d’entité :
+- Affectez la valeur **GUID. Empty** pour ignorer la définition d’un workflow de processus d’entreprise pour les nouveaux enregistrements d’entité. Vous souhaiterez peut-être le faire si vous créez en bloc des enregistrements d’entité, mais que vous ne voulez pas que le workflow de processus d’entreprise leur soit appliqué.
+- Affectez-lui une entité de workflow de processus d’entreprise spécifique (comme référence d’entité). Dans ce cas, le système applique le workflow de processus d’entreprise spécifié au lieu de la logique par défaut.
 
-Si vous ne définissez pas de valeur pour l’attribut **ProcessId** au moment de la création d’un enregistrement d’entité, le système applique la logique par défaut comme expliqué précédemment.
+Si vous ne définissez pas de valeur pour l’attribut **ProcessID** lors de la création d’un nouvel enregistrement d’entité, le système applique la logique par défaut comme expliqué précédemment.
 
 > [!NOTE]
-> Le remplacement de la logique par défaut qui prévoit l’application automatique des flux de processus métier aux nouveaux enregistrements d’entité n’est pris en charge que par programmation. Vous ne pouvez pas effectuer cette opération à l’aide de l’interface utilisateur.
+> La substitution de la logique par défaut des flux de processus d’entreprise s’appliquant automatiquement aux nouveaux enregistrements d’entité est prise en charge par programme uniquement. Vous ne pouvez pas le faire à l’aide de l’interface utilisateur.
 
-## <a name="legacy-process-related-attributes-in-entities"></a>Attributs liés aux processus hérités dans les entités
+## <a name="legacy-process-related-attributes-in-entities"></a>Attributs de processus hérités dans les entités
 
-Les attributs liés aux processus hérités (comme **ProcessId**, **StageId** et **TraversedPath**) sur les entités activées pour les flux de processus métier sont déjà dépréciés. La manipulation de ces attributs liés aux processus hérités pour les enregistrements d’entité cible ne garantissant pas la cohérence de l’état des flux de processus métier, elle ***n’est pas*** un scénario pris en charge. La méthode recommandée consiste à utiliser les attributs de l’entité de flux de processus métier comme expliqué précédemment dans la section [Créer, récupérer, mettre à jour et supprimer des enregistrements d’entité de flux de processus métier (instances de processus)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances).
+Les attributs de processus hérités (tels que **ProcessID**, **StageId**et **TraversedPath**) sur les entités activées pour les flux de processus d’entreprise sont déjà dépréciés. La manipulation de ces attributs de processus hérités pour les enregistrements d’entité cible ne garantit pas la cohérence de l’état du processus d’entreprise et n’est ***pas*** un scénario pris en charge. La méthode recommandée consiste à utiliser les attributs de l’entité de workflow de processus d’entreprise, comme expliqué précédemment dans la section [créer, récupérer, mettre à jour et supprimer des enregistrements d’entité de workflow de processus d’entreprise (instances de processus)](#create-retrieve-update-and-delete-business-process-flow-entity-records-process-instances) .
 
-La seule exception à cette approche est la modification par programmation de l’attribut **ProcessId** pendant la création d’un enregistrement d’entité pour remplacer l’application par défaut du flux de processus métier au nouvel enregistrement, comme expliqué dans la section précédente : [Appliquer des flux de processus métier pendant la création d’un enregistrement d’entité](#ApplyBPF).
+La seule exception est la modification par programmation de l’attribut **ProcessID** lors de la création d’un enregistrement d’entité pour remplacer l’application par défaut du workflow du processus d’entreprise par le nouvel enregistrement, comme expliqué dans la section précédente : [application d’entreprise processus de création d’un enregistrement d’entité](#ApplyBPF).
 
 <a name="BKMK_clientSideScript"></a>   
-## <a name="client-side-programmability-support-for-business-process-flows"></a>Prise en charge par programmation côté client des flux de processus métier  
- Il existe un objet côté client que vous pouvez utiliser pour interagir avec les flux de processus métier dans vos scripts de formulaire. Les flux de processus métier déclenchent des événements côté client chaque fois qu’un processus est appliqué à un enregistrement, que la phase est changée ou que son statut passe à `Active`, `Finished` ou `Aborted`. Pour plus d’informations, consultez [formContext.data.process (informations de référence sur l’API cliente)](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process.md).  
+## <a name="client-side-programmability-support-for-business-process-flows"></a>Prise en charge de la programmabilité côté client pour les flux de processus d’entreprise  
+ Il existe un objet côté client que vous pouvez utiliser pour interagir avec les flux de processus d’entreprise dans vos scripts de formulaire. Les flux de processus d’entreprise déclenchent des événements côté client chaque fois qu’un processus est appliqué à un enregistrement, que l’étape est modifiée ou que son état est modifié en `Active`, `Finished`ou `Aborted`. Informations supplémentaires : [formContext. Data. Process (informations de référence sur l’API Client)](/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process.md)  
   
 <a name="BKMK_MaxSettings"></a>   
-## <a name="maximum-number-of-processes-stages-and-steps"></a>Nombre maximal de processus, de phases et d’étapes  
- Par entité, la valeur par défaut pour le nombre maximal de flux de processus métier activés est 10. Vous pouvez spécifier une valeur différente à l’aide de l’attribut `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity`. Toutefois, si la valeur est supérieure à 10, vous pouvez constater une diminution des performances du système quand vous changez de processus ou que vous ouvrez un enregistrement auquel est attribué un flux de processus métier. Cela peut être particulièrement le cas si les processus englobent plusieurs entités.  
+## <a name="maximum-number-of-processes-stages-and-steps"></a>Nombre maximal de processus, étapes et étapes  
+ Par entité, la valeur par défaut du nombre maximal de flux de processus d’entreprise activés est 10. Vous pouvez spécifier une autre valeur à l’aide de l’attribut `Organization.MaximumActiveBusinessProcessFlowsAllowedPerEntity`. Toutefois, si la valeur est supérieure à 10, vous pouvez constater une diminution des performances de votre système lorsque vous basculez des processus ou ouvrez un enregistrement qui a un workflow de processus d’entreprise attribué. Cela peut être particulièrement perceptible si les processus s’étendent sur plusieurs entités.  
   
  Les paramètres suivants ne sont pas personnalisables :  
   
--   Le nombre maximal de phases par entité dans le processus est 30.  
+-   Le nombre maximal d’étapes par entité dans le processus est de 30.  
   
--   Le nombre maximal d’étapes par phase est 30.  
+-   Le nombre maximal d’étapes dans chaque phase est de 30.  
   
--   Le nombre maximal d’entités pouvant participer au flux de processus est 5.  
+-   Le nombre maximal d’entités pouvant participer au processus est de 5.  
 

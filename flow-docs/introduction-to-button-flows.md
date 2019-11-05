@@ -1,5 +1,5 @@
 ---
-title: Apprenez à automatiser et à exécuter des tâches répétitives avec les flux de bouton | Microsoft Docs
+title: Découvrez comment automatiser et exécuter des tâches répétitives avec des flux de bouton | Microsoft Docs
 description: Présentation des flux de bouton.
 services: ''
 suite: flow
@@ -20,130 +20,131 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: cbcbce51bb950ef9154f356ce44a651f25ce55bd
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 403c3d7cc116555ab26d5e4168587de5e5a6720f
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64464149"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73547539"
 ---
 # <a name="introducing-button-flows"></a>Présentation des flux de bouton
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 ## <a name="what-are-button-flows"></a>Que sont les flux de bouton ?
-Il existe de nombreuses tâches répétitives que nous voudrions tous exécuter en appuyant simplement sur un bouton. Par exemple, vous pouvez avoir besoin d’envoyer rapidement un e-mail à votre équipe pour lui rappeler de rejoindre la synchronisation d’équipe quotidienne, ou de démarrer une nouvelle build Visual Studio Online de votre base de code une fois que vous avez été informé qu’il n’y a plus aucun archivage planifié pour la journée. Les flux de bouton vous permettent d’accomplir ces tâches et de nombreuses autres simplement en appuyant sur un bouton sur votre appareil mobile.
+Il y a de nombreuses tâches répétitives que nous souhaitons que nous puissions exécuter en appuyant simplement sur un bouton. Par exemple, vous devrez peut-être envoyer rapidement par courrier électronique à votre équipe pour lui rappeler de rejoindre la synchronisation quotidienne de l’équipe, ou vous pouvez démarrer une nouvelle version de Visual Studio Online de votre base de code une fois que vous êtes informé qu’il n’y a plus d’archivages planifiés pour la journée. Les flux de bouton vous permettent d’accomplir ces tâches et de nombreuses autres tâches simplement en appuyant sur un bouton sur votre appareil mobile.
 
-**Remarque** Vous pouvez créer des flux de bouton à partir de votre appareil mobile ou du portail Flow.  
-  ![Image de présentation](./media/introduction-to-button-flows/buttons-montage.png)  
+**Remarque** Vous pouvez créer des flux de bouton à partir de votre appareil mobile ou à partir du portail de flux.  
+  image de vue d’ensemble ![](./media/introduction-to-button-flows/buttons-montage.png)  
 
 ## <a name="why-create-buttons"></a>Pourquoi créer des boutons ?
-Créez des boutons pour pouvoir facilement exécuter des tâches répétitives depuis n’importe où et à tout moment sur votre appareil mobile. L’exécution de boutons vous fait gagner du temps et, puisque les tâches sont automatisées, les erreurs sont moins nombreuses qu’avec une exécution manuelle.  
+Créez des boutons pour pouvoir facilement exécuter des tâches répétitives, à tout moment, à l’aide de votre appareil mobile. L’exécution de boutons vous fait gagner du temps et, étant donné que les tâches qu’ils effectuent sont automatisées, il y aura moins d’erreurs que si vous les avez effectuées manuellement.  
 
 ## <a name="create-a-button"></a>Créer un bouton
-### <a name="prerequisites"></a>Prérequis
-* Accès à Flow. Contactez votre administrateur pour lui demander l’accès.
-* Un compte disposant des autorisations pour utiliser les connecteurs afin de créer votre bouton. Par exemple, vous avez besoin d’un compte Dropbox pour créer un bouton qui permet d’accéder à Dropbox.
+### <a name="prerequisites"></a>Conditions préalables
+* Accès au Flow. Votre administrateur peut vous fournir un accès.
+* Un compte disposant des autorisations nécessaires pour utiliser les connecteurs pour créer votre bouton. Par exemple, vous aurez besoin d’un compte Dropbox pour créer un bouton qui accède à Dropbox.
 
 ### <a name="from-the-portal"></a>À partir du portail
-Dans cette procédure pas à pas, nous allons créer un bouton qui démarre une build Visual Studio Online (VSO) et envoie des notifications pour vous avertir au début de la génération :  
+Dans cette procédure pas à pas, nous allons créer un bouton qui démarre une build Visual Studio Online (VSO) et envoie des notifications pour vous avertir quand la génération démarre :  
 
-1. Sélectionnez la liste déroulante **Affichage** et choisissez la catégorie **Bouton**. Cela filtre la liste des modèles pour afficher uniquement ceux qui peuvent être utilisés dans les flux de bouton.  
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-1.png)   
-2. Sélectionnez le modèle **Trigger a new build in VSO (Déclencher une nouvelle génération dans VSO)** dans la liste des modèles.  
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-2.png)  
-3. Sélectionnez le bouton **Utiliser ce modèle** dans la page **Trigger a new build in VSO (Déclencher une nouvelle génération dans VSO)**.   
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-3.png)  
+1. Sélectionnez la liste déroulante **Afficher** et choisissez la catégorie de **bouton** . Cela permet de filtrer la liste des modèles à ceux qui peuvent être utilisés dans les flux de bouton.  
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-1.png)   
+2. Sélectionnez le modèle **déclencher une nouvelle build dans VSO dans** la liste des modèles.  
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-2.png)  
+3. Sélectionnez le bouton **utiliser ce modèle** dans la page **déclencher une nouvelle build dans VSO** .   
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-3.png)  
 4. Si vous n’êtes pas connecté, vous êtes invité à le faire à ce stade :  
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-4.png)  
-5. Une fois que vous êtes connecté à Flow, vous êtes invité à vous connecter aux connecteurs utilisés dans le modèle que vous avez sélectionné. Dans cet exemple, à l’étape 2 ci-dessus, vous avez sélectionné le modèle **Trigger a new build in VSO (Déclencher une nouvelle génération dans VSO)**. Vous devez donc vous connecter à VSO (et aux autres connecteurs que vous utilisez), si vous n’êtes pas déjà connecté :  
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-pre-req-1.png)    
-6. Sélectionnez le bouton **Accepter** si vous acceptez d’autoriser Flow à accéder à votre compte VSO.  
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-5.png)   
-   **Remarque** Vous devez autoriser chaque connecteur de la même façon. Le concepteur doit avoir l’aspect suivant lorsque vous êtes prêt à passer à l’étape suivante. Sélectionnez le bouton **Continuer** pour poursuivre :  
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-6.png)   
+   ![Image de vue d’ensemble](./media/introduction-to-button-flows/create-button-4.png)  
+5. Une fois que vous êtes connecté à Flow, vous êtes invité à vous connecter aux connecteurs utilisés dans le modèle que vous avez sélectionné. Dans cet exemple, à l’étape 2 ci-dessus, nous avons sélectionné le modèle **déclencher une nouvelle build dans VSO** . nous devons donc nous connecter à VSO (et à tous les autres connecteurs que vous utilisez) si vous n’êtes pas déjà connecté :  
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-pre-req-1.png)    
+6. Sélectionnez le bouton **accepter** si vous acceptez d’autoriser le passage à accéder à votre compte VSO.  
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-5.png)   
+   **Remarque** Vous devez autoriser chaque connecteur de la même façon. Le concepteur doit apparaître comme ceci lorsque vous êtes prêt à passer à l’étape suivante. Sélectionnez le bouton **Continuer** pour vous déplacer :  
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-6.png)   
 7. Vous êtes maintenant prêt à configurer les propriétés de la build que vous souhaitez démarrer :    
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-7.png)  
-8. Sélectionnez ou entrez le **nom de compte**, le **nom du projet**, l’**ID de définition de build**, la **branche source** et éventuellement les **paramètres** dans la carte **Mettre en file d’attente une nouvelle build** :    
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-8.png)  
-9. Ensuite, configurez les propriétés de la notification Push sur la carte **Envoyer une notification Push**. Par défaut, cette notification Push est configurée pour envoyer un lien HTML à une page web qui affiche l’état de la build :  
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-9.png)  
-10. Sélectionnez le **créer un flux** bouton pour enregistrer votre flux de bouton : ![Image de présentation](./media/introduction-to-button-flows/create-button-10.png)  
-11. Le message de réussite suivant doit s’afficher au bout de quelques instants :  
-    ![Image de présentation](./media/introduction-to-button-flows/create-button-11.png)  
+   ![Image de vue d’ensemble](./media/introduction-to-button-flows/create-button-7.png)  
+8. Sélectionnez ou entrez le **nom du compte**, le **nom du projet**, l’ID de définition de **Build**, la **branche source** et, éventuellement, les **paramètres**, dans la carte **de la file d’attente d’une nouvelle build** :    
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-8.png)  
+9. Ensuite, configurez les propriétés de la notification push sur la carte **Envoyer une notification push** . Par défaut, cette notification push est configurée pour envoyer un lien HTML vers une page Web qui affiche l’état de la build :  
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-9.png)  
+10. Sélectionnez le bouton **créer un Flow** pour enregistrer votre workflow : ![image de présentation](./media/introduction-to-button-flows/create-button-10.png)  
+11. Ce message de réussite doit s’afficher dans quelques instants :  
+    ![Image de vue d’ensemble](./media/introduction-to-button-flows/create-button-11.png)  
 
-Félicitations, vous avez créé un flux de bouton. Vous pouvez maintenant exécuter ce flux de bouton à tout moment, en tout lieu, à partir de l’onglet **Boutons** de l’application Flow. Appuyez simplement sur le « bouton » pour exécuter le flux. L’application mobile Microsoft Flow est disponible pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows).
+Félicitations, vous avez créé un Flow. Vous pouvez maintenant exécuter ce bouton à tout moment, n’importe où, à partir de l’onglet **boutons** de l’application Flow. Appuyez simplement sur le bouton et il s’exécutera ! L’application Microsoft Flow mobile est disponible pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)ou [Windows Phone](https://aka.ms/flowmobilewindows).
 
 ### <a name="from-your-mobile-device"></a>À partir de votre appareil mobile
-**Remarque** : Cette procédure affiche les écrans à partir d’un appareil Android, les écrans et l’expérience sur un appareil iOS sont similaires.
+**Remarque**: bien que cette procédure pas à pas affiche les écrans d’un appareil Android, les écrans et l’expérience sur un appareil iOS sont similaires.
 
 Dans l’application Flow :
 
-1. Sélectionnez l’onglet **Parcourir** et faites défiler jusqu’à la catégorie **Bouton**.  
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-1.png)  
-2. Sélectionnez le lien **Afficher tous**. Ceci affiche tous les modèles de bouton prêts à l’emploi.     
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-2.png)  
-3. Sélectionnez le modèle **Envoyer un courrier électronique pour rappeler à votre équipe de rejoindre une réunion**    
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-3.png)  
-4. Sélectionnez le lien **UTILISER CE MODÈLE** en bas de la page.    
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-4.png)  
-5. Vous devez vous connecter à tous les services qui utilisent ce modèle :    
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-5.png)  
-6. Sélectionnez le lien **Suivant** une fois que vous êtes connecté à tous les services.      
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-6.png)  
-7. Sélectionnez le lien **Créer**. Ici, vous pouvez également consulter le flux et apporter les modifications dont vous avez besoin pour personnaliser le message électronique, par exemple.        
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-7.png)  
-8. Au bout de quelques instants, le flux de bouton est créé. Sélectionnez **VOIR MON FLUX** :   
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-8.png)  
-9. Vos flux s’affichent sous l’onglet **Mes flux**.  
-   ![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-9.png)  
+1. Sélectionnez l’onglet **Parcourir** et faites défiler jusqu’à la catégorie de **bouton** .  
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-from-mobile-1.png)  
+2. Sélectionnez le lien **Afficher tout** . Cela permet d’afficher tous les modèles de bouton prêts à l’emploi.     
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-from-mobile-2.png)  
+3. Sélectionner le modèle **Envoyer un e-mail pour rappeler à votre équipe de rejoindre une réunion**    
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-from-mobile-3.png)  
+4. Sélectionnez le lien **utiliser ce modèle** en bas de la page.    
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-from-mobile-4.png)  
+5. Vous devez vous connecter à tous les services utilisés par ce modèle :    
+   ![Image de vue d’ensemble](./media/introduction-to-button-flows/create-button-from-mobile-5.png)  
+6. Sélectionnez le lien **suivant** après vous être connecté à tous les services.      
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-from-mobile-6.png)  
+7. Sélectionnez le lien **créer** . Vous pouvez également consulter le Flow et apporter les modifications nécessaires pour personnaliser l’e-mail, par exemple.        
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-from-mobile-7.png)  
+8. Après quelques instants, le déroulement du bouton est créé. Sélectionnez **afficher mon Flow**:   
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-from-mobile-8.png)  
+9. Afficher tous vos flux sous l’onglet **mes flux**  
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-from-mobile-9.png)  
 
-Félicitations, vous avez créé un flux de bouton. Vous pouvez maintenant exécuter ce flux de bouton à tout moment, en tout lieu, à partir de l’onglet **Boutons** de l’application Flow. Appuyez simplement sur le « bouton » pour exécuter le flux. L’application Flow est actuellement disponible sur les appareils mobiles Android et iOS.  
+Félicitations, vous avez créé un Flow. Vous pouvez maintenant exécuter ce bouton à tout moment, n’importe où, à partir de l’onglet **boutons** de l’application Flow. Appuyez simplement sur le bouton et il s’exécutera ! L’application Flow est actuellement disponible sur les appareils mobiles Android et iOS.  
 
-![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-10.png)  
+![Image de vue d’ensemble](./media/introduction-to-button-flows/create-button-from-mobile-10.png)  
 
-## <a name="trigger-a-button-flow"></a>Déclencher un flux de bouton
-Maintenant que vous avez créé un flux de bouton, il est temps de l’exécuter. Étant donné que vous pouvez uniquement exécuter des flux de bouton à partir de l’application Flow, vérifiez que vous avez installé Flow sur votre appareil mobile Android ou iOS.  
+## <a name="trigger-a-button-flow"></a>Déclencher un workflow de bouton
+Maintenant que vous avez créé un workflow de bouton, il est temps de l’exécuter. Étant donné que vous pouvez uniquement exécuter des flux de bouton à partir de l’application de flux, assurez-vous d’avoir installé Flow sur votre appareil mobile Android ou iOS.  
 
-1. À présent, lancez l’application Flow, cliquez sur l’onglet **Boutons** situé en bas de la page, puis cliquez sur le *bouton* qui représente le flux de bouton que vous souhaitez déclencher :  
-   ![Image de présentation](./media/introduction-to-button-flows/trigger-button-1.png)   
-2. Observez la progression de l’exécution du flux :  
-   ![Image de présentation](./media/introduction-to-button-flows/trigger-button-2.png)   
-3. Enfin, la page se met à jour et indique que le flux de bouton est terminé :  
-   ![Image de présentation](./media/introduction-to-button-flows/trigger-button-3.png)   
+1. À présent, lancez l’application de Flow, appuyez sur l’onglet **boutons** situé en bas de la page, puis appuyez sur le *bouton* qui représente le déroulement du bouton que vous souhaitez déclencher :  
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/trigger-button-1.png)   
+2. Consultez la progression de l’exécution du workflow :  
+   ![Image de vue d’ensemble](./media/introduction-to-button-flows/trigger-button-2.png)   
+3. Enfin, la page est mise à jour, ce qui indique que le déroulement du bouton est terminé :  
+   ![Image de vue d’ensemble](./media/introduction-to-button-flows/trigger-button-3.png)   
 
-Vous savez à présent comment exécuter un flux. 
+C’est tout ce qu’il faut faire pour exécuter un fluide. 
 
-Vous devriez maintenant recevoir les notifications Push, indiquant que le message a été envoyé.  
+Vous devez maintenant recevoir la notification push, indiquant que le message électronique a été envoyé.  
 
-## <a name="monitor-your-button-flow-runs"></a>Surveiller l’exécution de votre flux de bouton
-Vous pouvez surveiller des flux de bouton à partir de l’onglet **Activité** de l’application Flow :   
-![Image de présentation](./media/introduction-to-button-flows/create-button-from-mobile-13.png)  
+## <a name="monitor-your-button-flow-runs"></a>Surveiller vos exécutions de workflow de bouton
+Vous pouvez surveiller les flux de bouton à partir de l’onglet **activité** de l’application Flow :   
+image de vue d’ensemble ![](./media/introduction-to-button-flows/create-button-from-mobile-13.png)  
 
-**Remarque** : Appuyez sur une activité pour afficher les résultats de l’exécution pour en savoir plus sur l’exécution.  
+**Remarque**: Appuyez sur n’importe quelle activité pour examiner les résultats de l’exécution et en savoir plus sur l’exécution.  
 
-![Image de présentation](./media/introduction-to-button-flows/activity-details-1.png)  
+![Image de vue d’ensemble](./media/introduction-to-button-flows/activity-details-1.png)  
 
 ## <a name="manage-button-flows"></a>Gérer les flux de bouton
-Comme vous avez un contrôle total sur vos flux de bouton, vous pouvez activer/désactiver, modifier ou supprimer un bouton à tout moment, en tout lieu. À partir de l’application mobile ou du portail Flow, sélectionnez **Mes flux** pour commencer à gérer vos flux.    
+Vous avez le contrôle total de vos flux de bouton pour pouvoir activer/désactiver, modifier ou supprimer un bouton à tout moment, en tout lieu. À partir de l’application mobile ou du portail Flow, sélectionnez **mes flux** pour commencer à gérer vos flux.    
 
-Sous l’onglet **Mes flux** de l’application Flow :
+Sous l’onglet **mes flux** de l’application Flow :
 
-1. Sélectionnez le flux que vous souhaitez gérer :    
-   ![Image de présentation](./media/introduction-to-button-flows/trigger-button-4.png)   
-2. Vous pouvez appuyer sur chacune de ces options, selon ce que vous souhaitez accomplir :    
-   ![Image de présentation](./media/introduction-to-button-flows/manage-flow-1.png)  
-3. Appuyez sur **Supprimer le flux** pour supprimer un flux.  
+1. Sélectionnez le Flow que vous souhaitez gérer :    
+   ![Image de vue d’ensemble](./media/introduction-to-button-flows/trigger-button-4.png)   
+2. Vous pouvez appuyer sur l’une de ces options, en fonction de ce que vous souhaitez accomplir :    
+   ![Image de vue d’ensemble](./media/introduction-to-button-flows/manage-flow-1.png)  
+3. Appuyez sur **supprimer le Flow** pour supprimer un fluide.  
 
-**Remarque** La totalité de l’historique d’exécution est supprimé lorsque vous supprimez un flux :   
-![Image de présentation](./media/introduction-to-button-flows/manage-flow-2.png)   
+**Remarque** L’historique des exécutions est supprimé lorsque vous supprimez un flow :   
+image de vue d’ensemble ![](./media/introduction-to-button-flows/manage-flow-2.png)   
 
-1. Cliquez sur **Mettre à jour** une fois que vous avez terminé la modification d’un flux de bouton pour enregistrer vos modifications :   
-   ![Image de présentation](./media/introduction-to-button-flows/manage-flow-3.png)   
-2. Cliquez sur **Historique d’exécution** pour afficher les résultats de toutes les exécutions d’un flux de bouton particulier :    
-   ![Image de présentation](./media/introduction-to-button-flows/manage-flow-4.png)  
-3. Si vous désactivez un flux, il n’est plus disponible sous l’onglet **Boutons** :    
-   ![Image de présentation](./media/introduction-to-button-flows/manage-flow-5.png)  
+1. Appuyez sur **mettre à jour** une fois que vous avez fini de modifier un workflow de bouton pour enregistrer vos modifications :   
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/manage-flow-3.png)   
+2. Appuyez sur **historique d’exécution** pour afficher les résultats de toutes les exécutions d’un déroulement de bouton particulier :    
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/manage-flow-4.png)  
+3. Si vous désactivez un Flow, il n’est plus disponible sous l’onglet **boutons** :    
+   image de vue d’ensemble ![](./media/introduction-to-button-flows/manage-flow-5.png)  
 
 ## <a name="next-steps"></a>Étapes suivantes
 * [Partager des flux de bouton](share-buttons.md).
 * Apprenez à utiliser les [jetons de déclencheur de bouton](introduction-to-button-trigger-tokens.md) pour envoyer des données en temps réel lorsque vos flux de bouton sont exécutés.
-* Installez l’application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows).
+* Installez l’application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)ou [Windows Phone](https://aka.ms/flowmobilewindows).
 

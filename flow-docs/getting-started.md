@@ -1,6 +1,6 @@
 ---
-title: Prise en main| Microsoft Docs
-description: Méthodes rapides pour démarrer l’automatisation de votre travail et de vos activités personnelles avec Microsoft Flow
+title: Prise en main | Microsoft Docs
+description: Méthodes rapides pour commencer à automatiser votre travail et votre vie avec Power automate
 services: ''
 suite: flow
 documentationcenter: na
@@ -10,7 +10,7 @@ editor: ''
 tags: ''
 ms.service: flow
 ms.devlang: na
-ms.topic: hero-article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/31/2017
@@ -20,117 +20,134 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f667401774e49505009cd416f6975ff38683a5c7
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 54d1478f34743b6059692b927da8baf2c49a35a7
+ms.sourcegitcommit: 53f049dc7e7cad652e728941ee426b7ad2a116da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "65035248"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73589852"
 ---
-# <a name="get-started-with-microsoft-flow"></a>Prise en main de Microsoft Flow #
+# <a name="get-started-with-power-automate"></a>Prise en main de Power automate
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/iMteXfAvDSE?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF" frameborder="0" allowfullscreen></iframe>
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Bienvenue ! Microsoft Flow est un service qui vous aide à créer des workflows automatisés entre vos applications et services favoris pour synchroniser des fichiers, obtenir des notifications, collecter des données, etc.
+<br>
+<iframe width="1129" height="635" src="https://www.youtube.com/embed/hCuxuUaGC6Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Les principaux types de flux sont les flux [automatisés](get-started-logic-flow.md), de [bouton](introduction-to-button-flows.md), [planifiés](run-scheduled-tasks.md) et de [processus métier](business-process-flows-overview.md).
+Invité! Power automate est un service qui vous permet de créer des flux de travail automatisés entre vos applications et services favoris pour synchroniser des fichiers, obtenir des notifications, collecter des données et bien plus encore.
 
-Si vous êtes personnalisateur Dynamics 365 Customer Engagement, vous êtes peut-être aussi familiarisé avec les processus Common Data Service classiques qui incluent les [workflows](configure-workflow-steps.md), les [actions](create-actions.md), les [flux de tâches mobiles](create-mobile-task-flow.md) et les [dialogues](use-cds-for-apps-dialogs.md).
+Les principaux types de flux sont les flux [automatisé](get-started-logic-flow.md), de [bouton](introduction-to-button-flows.md), [planifié](run-scheduled-tasks.md)et de [processus d’entreprise](business-process-flows-overview.md) .
 
-La première étape consiste à vous [inscrire](sign-up-sign-in.md), ou, si vous avez déjà un compte Microsoft Flow, [connectez-vous](https://flow.microsoft.com/signin) sur votre tablette, votre ordinateur de bureau ou même votre téléphone.
+## <a name="types-of-flows"></a>Types de flux
 
-## <a name="check-out-the-start-page"></a>Consulter la page de démarrage ##
+Power automate est l’un des trois piliers de Power Platform. Il fournit une plateforme de code faible pour le workflow et l’automatisation des processus. Voici une liste des différents types de flux :
 
-[Sur la page de démarrage](https://flow.microsoft.com) de Microsoft Flow, vous pouvez [explorer un ensemble varié de modèles](https://flow.microsoft.com/templates) et en apprendre plus sur les principales fonctionnalités de Microsoft Flow. Vous pouvez avoir une idée de ce qui est possible et de la manière dont Microsoft Flow peut vous aider dans votre entreprise et votre vie de tous les jours.
+| **Type de workflow**                                                                       | **Cas d’usage**                                                                                  | **Indicatif**                                                                             |
+|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| [Flux automatisés](get-started-logic-flow.md)                 | Créer un Flow qui effectue automatiquement une ou plusieurs tâches après qu’il a été déclenché par un événement. | [Connecteurs](https://docs.microsoft.com/connectors/) pour les services Cloud ou locaux. |
+| [Flux de bouton](introduction-to-button-flows.md)              | Exécuter des tâches répétitives à tout moment, à tout moment, via votre appareil mobile.                        |                                                                                        |
+| [Flux planifiés](run-scheduled-tasks.md)                    | Créer un Flow qui effectue une ou plusieurs tâches selon une planification.             |                                                                                        |
+| [Flux de processus d’entreprise](business-process-flows-overview.md) | Définissez un ensemble d’étapes que les utilisateurs doivent suivre pour les faire passer à un résultat souhaité.                 | Processus humains                                                                        |
+| [Flux de l’interface utilisateur (version préliminaire)](ui-flows/overview.md)                                                | Enregistrez et automatisez la lecture des étapes manuelles sur les logiciels hérités.                    | Applications de bureau et Web qui n’ont pas d’API disponibles pour l’automatisation.    |
 
-Avec Microsoft Flow, vous pouvez :
+Vous pouvez créer et gérer tous les flux à partir de l’onglet **mes flux** dans Power automate.
 
-- Rechercher facilement des modèles et des services.
+Si vous êtes un utilisateur Dynamics 365, vous pouvez également vous familiariser avec les processus de Common Data Service classiques qui incluent, les [flux de travail](configure-workflow-steps.md), les [actions](create-actions.md), les [flux de tâches mobiles](create-mobile-task-flow.md)et les [boîtes de dialogue](use-cds-for-apps-dialogs.md).
 
-    ![Page de démarrage 1 Flow](./media/getting-started/flowhome1.png)
+La première étape consiste à s' [inscrire](sign-up-sign-in.md), ou, si vous disposez déjà d’un compte avec Power automate, à vous [connecter](https://flow.microsoft.com/signin) sur votre tablette, votre ordinateur de bureau ou même votre téléphone.
 
-- Choisir parmi les services les plus populaires.
+## <a name="check-out-the-start-page"></a>Consultez la page de démarrage ##
 
-    ![Page de démarrage 2 Flow](./media/getting-started/flowhome2.png)
+[Sur la page de démarrage](https://flow.microsoft.com) de Power automate, vous pouvez [explorer un ensemble varié de modèles](https://flow.microsoft.com/templates) et en savoir plus sur les principales fonctionnalités de Power automate. Vous pouvez obtenir un aperçu rapide de ce qui est possible et de la manière dont Power automate peut aider votre entreprise et votre vie.
 
-- Consulter une vue d’ensemble de chaque flux.
+Avec Power automate, vous pouvez :
 
-    ![Page de démarrage 3 Flow](./media/getting-started/flowhome3.png)
+- Recherchez facilement des modèles et des services.
 
-Chaque modèle est conçu dans un but spécifique. Par exemple, il existe des modèles pour envoyer un message texte lorsque votre patron vous envoie un courrier électronique, ajouter des prospects Twitter à Dynamics 365 ou sauvegarder vos fichiers. Ces modèles ne constituent qu’une infime partie des possibilités. Ils sont destinés à vous encourager à créer des flux qui sont personnalisés en fonction des processus exacts dont vous avez besoin.
+    ![Page de démarrage du Flow 1](./media/getting-started/flowhome1.png)
 
-## <a name="create-your-first-flow"></a>Créer votre premier flux ##
+- Choisissez parmi les services les plus populaires.
 
-1. Sélectionnez un modèle utile pour vous. Un modèle simple est [**Recevoir des rappels quotidiens par e-mail**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/) :
+    ![Page de démarrage du Flow 2](./media/getting-started/flowhome2.png)
+
+- Consultez une vue d’ensemble de chaque Flow.
+
+    ![Page de démarrage du Flow 3](./media/getting-started/flowhome3.png)
+
+Chaque modèle est conçu à des fins spécifiques. Par exemple, il existe des modèles pour vous envoyer un message texte lorsque votre patron vous envoie un courrier électronique, en ajoutant des clients Twitter à Dynamics 365 ou en sauvegardant vos fichiers. Ces modèles sont juste le bout de l’iceberg. Ils sont destinés à vous inspirer à créer des flux personnalisés pour les processus exacts dont vous avez besoin.
+
+## <a name="create-your-first-flow"></a>Créer votre premier Flow ##
+
+1. Sélectionnez un modèle qui vous convient. Un modèle simple est [**obtenir des rappels quotidiens par courrier électronique**](https://flow.microsoft.com/galleries/public/templates/45a3399aa29345308f08b6db0a9c85b9/):
 
     ![modèle de rappel quotidien](./media/getting-started/template-details.png)
 
 1. Sélectionnez **Continuer**.
 
-    ![Créer la connexion](./media/getting-started/create-connection.png)
+    ![Créer une connexion](./media/getting-started/create-connection.png)
 
-1. Entrez les adresses de messagerie qui recevront le rappel quotidien. Saisissez ensuite le message de rappel. Enfin, sélectionnez **Créer un flux**, puis vérifiez que votre flux fonctionne comme prévu.
+1. Entrez les adresses de messagerie auxquelles le rappel quotidien sera envoyé. Ensuite, entrez le message de rappel. Enfin, sélectionnez **créer un Flow**, puis vérifiez que votre flow s’exécute comme prévu.
 
     ![Fournir les informations d’identification pour la connexion](./media/getting-started/configure-email-details.png)
 
     > [!NOTE]
-    > Vous pouvez maintenant parcourir les conditions qui déclenchent le flux et l’action résultant de cet événement. Testez les paramètres pour personnaliser le flux. Vous pouvez même ajouter ou supprimer des actions.
+    > Vous pouvez explorer les conditions qui déclenchent le Flow et l’action résultant de cet événement. Jouez avec les paramètres pour que le fluide soit le vôtre. Vous pouvez même ajouter ou supprimer des actions.
 
-1. Sélectionnez **Terminé**.
+1. Sélectionnez **terminé**.
 
 [Suivez ce didacticiel](get-started-logic-template.md) pour en savoir plus sur la création de flux à partir de modèles.
 
 ## <a name="get-creative"></a>Soyez créatif ##
 
-Maintenant que vous avez créé votre premier flux à partir d’un modèle, utilisez l’une des [150 sources de données](https://flow.microsoft.com/connectors/) et plus prises en charge par Microsoft Flow pour [créer vos propres flux à partir de zéro](get-started-logic-flow.md).
+Maintenant que vous avez créé votre premier flux à partir d’un modèle, utilisez l’une des plus de [150 sources de données](https://flow.microsoft.com/connectors/) que Power automate prend en charge pour [créer vos propres flux à partir de zéro](get-started-logic-flow.md).
 
-![Création d’un flux](./media/getting-started/build-a-flow.png)
+![Création d’un fluide](./media/getting-started/build-a-flow.png)
 
-Lorsque vous créez un flux à partir de zéro, vous contrôlez l’intégralité du flux de travail. Voici quelques idées pour vous aider à vous lancer :
+Lorsque vous créez un flux à partir de zéro, vous contrôlez l’ensemble du flux de travail. Voici quelques idées pour vous aider à démarrer :
 
 - [Flux avec de nombreuses étapes](multi-step-logic-flow.md).
-- [Exécution de tâches selon une planification](run-scheduled-tasks.md).
-- [Créer un flux d’approbation](wait-for-approvals.md).
-- [Voir un flux en action](see-a-flow-run.md).
-- [Publier un modèle](publish-a-template.md).
-- [Créer des flux à partir d’un modèle Microsoft Teams](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
+- [Exécuter des tâches selon une planification](run-scheduled-tasks.md).
+- [Créez un workflow d’approbation](wait-for-approvals.md).
+- [Regardez un Flow en action](see-a-flow-run.md).
+- [Publiez un modèle](publish-a-template.md).
+- [Créer des flux à partir d’un modèle Microsoft teams](https://flow.microsoft.com/connectors/shared_teams/microsoft-teams/).
 
 
 ## <a name="peek-at-the-code"></a>Lire le code
 
-Vous n’avez pas besoin d’être développeur pour créer des flux, toutefois, Microsoft Flow fournit-il un **lire le code** fonctionnalité qui permet à quiconque entrent en examiner plus en détail le code est généré pour toutes les actions et déclencheurs dans un flux. Lire le code pourrait vous donner une compréhension plus claire des données qui sont utilisées par les déclencheurs et actions. Suivez ces étapes pour lire le code est généré pour vos flux à partir du concepteur Microsoft Flow : 
+Vous n’avez pas besoin d’être développeur pour créer des flux. Toutefois, Power automate fournit une fonctionnalité d' **Aperçu du code** qui permet à quiconque d’examiner de plus près le code généré pour l’ensemble des actions et des déclencheurs dans un flux. L’aperçu du code peut vous permettre de mieux comprendre les données utilisées par les déclencheurs et les actions. Suivez ces étapes pour lire le code généré pour vos flux à partir du concepteur Power automate : 
 
-1. Sélectionnez le **...**  élément de menu situé en haut à droite de n’importe quel **action** ou **déclencheur**. 
+1. Sélectionnez l’élément de menu **...** dans le coin supérieur droit d’une **action** ou d’un **déclencheur**. 
 1. Sélectionnez **lire le code**.
 
     ![Lire le code](media/getting-started/peek-code.png)
 
-1. Notez que la représentation JSON complet des actions et déclencheurs. Cela inclut toutes les entrées, telles que le texte que vous entrez directement et les expressions utilisées. Vous pouvez sélectionner ici des expressions et les coller ensuite dans le **Dynamic Content** Éditeur d’expression. Cela peut également vous donner une façon de vérifier les données que vous attendez sont présentes dans le flux.
+1. Notez la représentation JSON complète des actions et des déclencheurs. Cela comprend toutes les entrées, telles que le texte que vous entrez directement, et les expressions utilisées. Vous pouvez sélectionner des expressions ici, puis les coller dans l’éditeur d’expressions de **contenu dynamique** . Cela peut également vous donner un moyen de vérifier que les données attendues sont présentes dans le Workflow.
 
     ![Lire le code](media/getting-started/peek-code-details.png)
    
 
-## <a name="find-your-flows-easily"></a>Trouver vos flux facilement
+## <a name="find-your-flows-easily"></a>Trouvez facilement vos flux
 
-Lorsque votre creative jus de démarrage *circulant*, vous pouvez créer plusieurs flux. Ne vous inquiétez pas, la recherche de vos flux est facile : simplement utiliser la zone de recherche sur le **mes flux**, **flux d’équipes**, **connexions**, ou **Solutions** écran pour afficher circule uniquement qui correspondent aux termes de recherche que vous entrez.
+Lorsque vos jus créatifs commencent à *circuler*, vous pouvez créer de nombreux flux. Ne vous inquiétez pas, la recherche de vos flux est simple. Utilisez la zone de recherche de l’écran **mes flux**, **flux d’équipe**, **connexions**ou **solutions** pour afficher uniquement les flux qui correspondent aux termes de recherche que vous entrez.
 
-![Filtrer ou rechercher des flux](media/getting-started/filter-search-box.png)
+![Filtrer ou Rechercher des flux](media/getting-started/filter-search-box.png)
  
 > [!NOTE]
-> Le filtre de recherche recherche uniquement des flux qui ont été chargés dans la page. Si vous ne trouvez pas votre flux, essayez de sélectionner **charger plus** en bas de la page.
+> Le filtre de recherche recherche uniquement les flux qui ont été chargés dans la page. Si vous ne trouvez pas votre Flow, essayez de sélectionner **charger plus** en bas de la page.
 
-## <a name="get-notifications-when-somethings-wrong"></a>Obtenir des notifications lorsque quelque chose ne va pas
+## <a name="get-notifications-when-somethings-wrong"></a>Recevoir des notifications en cas de problème
 
-Utiliser le centre de notification Microsoft Flow (situé en haut à droite du concepteur) pour rapidement voir une liste de flux ont échoué récemment. Le centre de notification s’affiche un nombre qui indique le nombre de flux ayant échoué récemment.
+Utilisez Power automate notification Center (situé en haut à droite du concepteur) pour voir rapidement la liste des flux ayant échoué récemment. Le centre de notifications affiche un nombre qui indique le nombre de flux ayant échoué récemment.
 
-À partir du centre de notification, vous pouvez accéder à la **activité** page de Microsoft Flow pour voir tous vos flux ayant récemment exécuté, des notifications ou a échoué.
+Dans le centre de notifications, vous pouvez accéder à la page **activité** de Power automate pour voir tous vos flux récemment exécutés, les notifications envoyées ou les échecs.
 
-![Centre de notification](media/getting-started/notification-center.png)
+![Centre de notifications](media/getting-started/notification-center.png)
 
 ## <a name="use-the-mobile-app"></a>Utiliser l’application mobile ##
 
-Téléchargez l’application mobile Microsoft Flow pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios) ou [Windows Phone](https://aka.ms/flowmobilewindows). Avec cette application, vous pouvez [surveiller l’activité du flux](mobile-monitor-activity.md), [gérer votre flux](mobile-manage-flows.md) et [créer des flux à partir de modèles](mobile-create-flow.md).
+Téléchargez l’application Mobile Power automate pour [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios)ou [Windows Phone](https://aka.ms/flowmobilewindows). Avec cette application, vous pouvez [surveiller l’activité de flux](mobile-monitor-activity.md), [gérer vos flux](mobile-manage-flows.md) et [créer des flux à partir de modèles](mobile-create-flow.md).
 
 ## <a name="were-here-to-help"></a>Nous sommes là pour vous aider ##
 
-Nous avons hâte de voir ce que vous ferez avec Microsoft Flow et nous voulons nous assurer que vous bénéficiez d’une formidable expérience. N’oubliez pas de consulter nos didacticiels de [formation interactive](https://flow.microsoft.com/guided-learning/) et [rejoignez notre communauté](http://go.microsoft.com/fwlink/?LinkID=787467) pour poser des questions et partager vos idées. [Contactez le support technique](http://go.microsoft.com/fwlink/?LinkID=787479) si vous rencontrez des problèmes.
+Nous sommes ravis de voir ce que vous faites avec Power automate et nous souhaitons vous assurer d’avoir une expérience de qualité. Veillez à consulter nos didacticiels de [formation guidée](https://flow.microsoft.com/guided-learning/) et [Rejoignez notre communauté](https://go.microsoft.com/fwlink/?LinkID=787467) pour poser des questions et partager vos idées. Si vous rencontrez des problèmes, [Contactez le support technique](https://go.microsoft.com/fwlink/?LinkID=787479) .

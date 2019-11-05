@@ -1,11 +1,12 @@
 ---
-title: Découverte des requêtes RGPD des personnes concernées avec Microsoft Flow | Microsoft Docs
-description: Découvrez comment utiliser Microsoft Flow pour répondre aux requêtes de découverte RGPD des personnes concernées.
+title: Détection des demandes de l’objet des données Microsoft Flow RGPD | Microsoft Docs
+description: Découvrez comment utiliser Microsoft Flow pour répondre aux demandes de découverte des objets de données RGPD.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,37 +15,37 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 4/17/2018
-ms.author: keweare
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 9ec66eefdbf2f6b6a9047678e9c29cb66900eda2
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 197d9ebfc38fc4f5b52bf674aef61d419530f439
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64454087"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548122"
 ---
-# <a name="responding-to-gdpr-data-subject-discovery-requests-for-microsoft-flow"></a>Répondre aux requêtes de découverte RGPD des personnes concernées avec Microsoft Flow
+# <a name="responding-to-gdpr-data-subject-discovery-requests-for-microsoft-flow"></a>Réponse aux demandes de découverte des objets de données RGPD pour Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-La première étape pour répondre à une DSR consiste à identifier les données personnelles qui font l’objet de la requête. Cette première étape vous aide à déterminer si une DSR répond aux exigences de votre organisation, ce qui vous permet alors d’accepter ou de refuser une requête DSR. Par exemple, après avoir identifié et examiné les données personnelles en question, vous pouvez décider que la requête ne répond pas aux exigences de votre organisation car elle risque de porter atteinte aux droits et libertés d’autres personnes.
+La première étape de la réponse à un DSR consiste à rechercher des données personnelles faisant l’objet de la demande. Cette première étape vous aide à déterminer si un DSR répond aux exigences de votre organisation en matière de respect ou de refus d’une demande DSR. Par exemple, après avoir trouvé et examiné les données personnelles en question, vous pouvez déterminer que la demande ne répond pas aux exigences de votre organisation, car cela peut nuire aux droits et libertés des autres.
 
-Voici un résumé des types de ressources Microsoft Flow contenant des données personnelles pour un utilisateur spécifique.
+Vous trouverez ci-dessous un résumé des types de ressources de Microsoft Flow qui contiennent des données personnelles pour un utilisateur spécifique.
 
 |**Ressources contenant des données personnelles**|**Objectif**|
 |-----|-----|
-|Journaux générés par le système|Données de télémétrie qui consignent les événements système et l’historique.|
-|Historique des exécutions|Historique de chaque exécution de flux au cours des 28 derniers jours. Ces données incluent l’heure de début, l’heure de fin, l’état et toutes les informations d’entrée/sortie du flux. [En savoir plus](https://flow.microsoft.com/blog/download-history-recurrence/)|
-|Flux d'activités| Fournit un récapitulatif des activités du flux, y compris l’état de l’exécution, les échecs et les notifications.|
-|Tâches de l’utilisateur|Invisibles pour l’utilisateur, ces tâches système sont effectuées pour le compte d’un utilisateur afin d’exécuter les flux.|
-|Flux|Logique du workflow appliquée à un flux. [En savoir plus](https://docs.microsoft.com/flow/get-started-logic-flow)|
-|Autorisations de flux|Les flux peuvent être partagés et réassignés à d’autres utilisateurs. Il existe des listes d’autorisations pour tous les flux. [En savoir plus](https://docs.microsoft.com/flow/frequently-asked-questions#can-i-share-the-flows-i-create)|
-|Détails de l’utilisateur|Informations invisibles par l’utilisateur et qui permettent l’exécution du flux.|
-|Connexions|Informations utilisées par les connecteurs et assurant la connectivité avec les API, systèmes, bases de données, etc. [En savoir plus](https://docs.microsoft.com/flow/add-manage-connections)|
-|Autorisations de connexion|Autorisations pour une connexion spécifique. [En savoir plus](https://docs.microsoft.com/flow/add-manage-connections)|
-|Connecteurs personnalisés|Connecteurs personnalisés qu’un utilisateur a créés et publiés, assurant la connectivité avec des systèmes tiers ou personnalisés. [En savoir plus](https://docs.microsoft.com/connectors/custom-connectors/)|
-|Autorisations des connecteurs personnalisés|Listes des autorisations pour les connecteurs personnalisés. [En savoir plus](https://docs.microsoft.com/connectors/custom-connectors/share)|
-|Passerelle|Les passerelles représentent des services de données locaux qui peuvent être installés par un utilisateur pour transférer des données rapidement et en toute sécurité entre Microsoft Flow et une source de données qui ne figure pas dans le cloud. [En savoir plus](https://docs.microsoft.com/flow/gateway-manage)|
-|Autorisations de passerelle|Les passerelles peuvent être partagées avec des utilisateurs au sein d’une organisation. [En savoir plus](https://go.microsoft.com/fwlink/?linkid=872249)|
+|Journaux générés par le système|Télémétrie qui capture les événements système et l’historique.|
+|historique des exécutions|Historique de chaque exécution de workflow au cours des 28 derniers jours. Ces données incluent l’heure de début, l’heure de fin, l’État et toutes les informations d’entrée/sortie du Workflow. [Pour en savoir plus](https://flow.microsoft.com/blog/download-history-recurrence/)|
+|Flux d’activités| Fournit un récapitulatif des activités de Flow, y compris l’état d’exécution, les échecs et les notifications.|
+|Travaux utilisateur|Non visible pour l’utilisateur, travaux système qui s’exécutent pour le compte d’un utilisateur afin que les flux soient exécutés.|
+|Trouvent|Logique de workflow qui existe pour un flux. [Pour en savoir plus](https://docs.microsoft.com/flow/get-started-logic-flow)|
+|Autorisations de Flow|Les flux peuvent être partagés et réaffectés à d’autres utilisateurs. Les listes d’autorisations existent pour tous les flux. [Pour en savoir plus](https://docs.microsoft.com/flow/frequently-asked-questions#can-i-share-the-flows-i-create)|
+|Détails de l’utilisateur|Détails, qui ne sont pas visibles par l’utilisateur, qui prennent en charge l’exécution du Workflow.|
+|Connexions|Utilisé par les connecteurs et permet la connectivité aux API, systèmes, bases de données, etc. [Pour en savoir plus](https://docs.microsoft.com/flow/add-manage-connections)|
+|Autorisations de connexion|Autorisations pour une connexion spécifique. [Pour en savoir plus](https://docs.microsoft.com/flow/add-manage-connections)|
+|Connecteurs personnalisés|Connecteurs personnalisés qu’un utilisateur a créés et publiés pour permettre la connectivité à des systèmes tiers ou personnalisés. [Pour en savoir plus](https://docs.microsoft.com/connectors/custom-connectors/)|
+|Autorisations de connecteur personnalisées|Listes d’autorisations pour les connecteurs personnalisés. [Pour en savoir plus](https://docs.microsoft.com/connectors/custom-connectors/share)|
+|Gateway|Les passerelles sont des services de données locaux qui peuvent être installés par un utilisateur pour transférer des données rapidement et en toute sécurité entre Microsoft Flow et une source de données qui ne se trouve pas dans le Cloud. [Pour en savoir plus](https://docs.microsoft.com/flow/gateway-manage)|
+|Autorisations de la passerelle|Les passerelles peuvent être partagées avec les utilisateurs au sein d’une organisation. [Pour en savoir plus](https://go.microsoft.com/fwlink/?linkid=872249)|

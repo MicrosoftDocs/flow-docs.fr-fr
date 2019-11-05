@@ -1,11 +1,12 @@
 ---
-title: Voir l’exécution d’un flux | Microsoft Docs
-description: Affichez les entrées et sorties de chaque étape d’un flux pour vérifier qu’il se comporte comme prévu.
+title: Regarder une exécution de workflow | Microsoft Docs
+description: Affichez les entrées et les sorties de chaque étape d’un Flow pour vérifier qu’elles se comportent comme prévu.
 services: ''
 suite: flow
 documentationcenter: na
-author: merwanhade
-manager: anneta
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,36 +15,36 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/05/2018
-ms.author: mhade
 search.app:
 - Flow
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: f449307318fc1165cb607467de4cdd652df434d2
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 32afe2ef424b00f4d13ee4589b95062625d5f12c
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64465749"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548452"
 ---
-# <a name="watch-your-flows-in-action"></a>Voir votre flux en action
+# <a name="watch-your-flows-in-action"></a>Regardez vos flux en action
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 >[!VIDEO https://www.youtube.com/embed/3wPoUCGm7Yg]
 
-Pour vérifier que votre flux s’exécute comme prévu, lancez le déclencheur, puis passez en revue les entrées et sorties générées par chaque étape de votre flux.
+Pour vous assurer que vos flux s’exécutent comme prévu, exécutez le déclencheur, puis examinez les entrées et les sorties générées par chaque étape de votre flux.
 
-1. Créez ou mettez à jour un flux ; laissez le concepteur ouvert après avoir sélectionné **Créer un flux** ou **Mettre à jour un flux**.
+1. Créez ou mettez à jour un Flow, puis laissez le concepteur ouvert après avoir sélectionné **créer un Flow** ou **mettre à jour le workflow**.
 
-     Par exemple, [créez un flux](get-started-logic-flow.md) qui envoie un e-mail à chaque fois que quelqu’un publie un Tweet comportant le hashtag **#azure**.
-1. Exécutez l’action de démarrage pour votre flux.
+     Par exemple, [créez un Flow](get-started-logic-flow.md) qui envoie un courrier électronique chaque fois qu’un tweet utilise le mot-dièse **#azure** .
+1. Effectuez l’action de démarrage pour votre Flow.
 
-    Par exemple, envoyez un tweet contenant le hashtag **#azure**.
+    Par exemple, envoyez un tweet qui contient le mot-dièse **#azure** .
 
-    L’action de démarrage et chacune des étapes suivantes indiquent si elles ont abouti et combien de temps elles ont mis.
+    L’action de démarrage et chaque étape suivante indiquent si elle a réussi et combien de temps a duré.
 
     ![Image d’une exécution réussie](./media/see-a-flow-run/successful-flow-run.png)
 1. Sélectionnez le déclencheur ou l’action pour afficher ses entrées et sorties.
 
-    ![Image d’une exécution réussie avec cartes développées](./media/see-a-flow-run/successful-flow-expanded-cards.png)
-1. Sélectionnez **Modifier le flux** pour apporter des modifications supplémentaires, ou **Terminé** si le flux fonctionne comme prévu.
+    ![Image d’une exécution réussie avec des cartes développées](./media/see-a-flow-run/successful-flow-expanded-cards.png)
+1. Sélectionnez **modifier le Flow** pour apporter des modifications supplémentaires ou sélectionnez **terminé** si le workflow fonctionne comme prévu.

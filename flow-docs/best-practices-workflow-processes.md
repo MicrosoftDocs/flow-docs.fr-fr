@@ -1,6 +1,6 @@
 ---
-title: Bonnes pratiques pour la gestion des processus de workflow | Microsoft Docs
-description: Comprendre les méthodes recommandées pour utiliser des workflows
+title: Meilleures pratiques pour la gestion des processus de flux de travail | MicrosoftDocs
+description: Comprendre les méthodes recommandées pour utiliser les flux de travail
 ms.custom: ''
 ms.date: 06/27/2018
 ms.reviewer: ''
@@ -22,54 +22,55 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: c0a59a625f4d43d125bde6ddf6edd5da5b6f6430
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: ad9935b171568b62376232f450a62dbda4752cac
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460594"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73546012"
 ---
-# <a name="best-practices-for-workflow-processes"></a>Bonnes pratiques pour les processus de workflow
+# <a name="best-practices-for-workflow-processes"></a>Meilleures pratiques pour les processus de flux de travail
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Cette rubrique contient de bonnes pratiques pour la création et la gestion de processus de workflow.  
+Cette rubrique contient les meilleures pratiques pour la création et la gestion des processus de flux de travail.  
   
 <a name="BKMK_AvoidInfiniteLoops"></a>   
-## <a name="avoid-infinite-loops"></a>Éviter les boucles infinies  
- Il est possible de créer une logique dans un workflow qui lance une boucle infinie, ce qui consomme les ressources serveur et affecte les performances. Une boucle infinie peut notamment se produire si un workflow est configuré pour démarrer quand un attribut est mis à jour, puis que cet attribut est mis à jour dans la logique du workflow. L’action de mise à jour déclenche le même workflow qui met à jour l’enregistrement et déclenche le workflow de façon répétée.  
+## <a name="avoid-infinite-loops"></a>Évitez les boucles infinies  
+ Il est possible de créer une logique dans un flux de travail qui initie une boucle infinie, qui consomme les ressources du serveur et affecte les performances. Une boucle infinie peut généralement se produire si vous avez un flux de travail configuré pour démarrer lorsqu’un attribut est mis à jour, puis il met à jour cet attribut dans la logique du flux de travail. L’action mettre à jour déclenche le même flux de travail qui met à jour l’enregistrement et déclenche à nouveau le flux de travail, puis de nouveau.  
   
- Les workflows que vous créez incluent une logique pour détecter et arrêter les boucles infinies. Si un processus de workflow est exécuté plus d’un certain nombre de fois sur un enregistrement spécifique dans une courte période de temps, le processus échoue avec l’erreur suivante : **Cette tâche de workflow a été annulée car le workflow qui l’a lancée comprenait une boucle infinie. Corrigez la logique de workflow, puis ressayez**. Le nombre limite de fois est 16.  
+ Les flux de travail que vous créez incluent la logique permettant de détecter et d’arrêter les boucles infinies. Si un processus de workflow est exécuté plus d’un certain nombre de fois sur un enregistrement spécifique dans un laps de temps réduit, le processus échoue avec l’erreur suivante : **ce travail de workflow a été annulé, car le workflow qui l’a démarré a inclus une boucle infinie. Corrigez la logique du flux de travail et réessayez**. La limite des heures est de 16.  
   
 <a name="BKMK_UseWorkflowTemplates"></a>   
-## <a name="use-workflow-templates"></a>Utiliser des modèles de workflow  
- Si vous avez des workflows qui sont similaires et que vous envisagez de créer des workflows qui suivent le même modèle, enregistrez votre workflow dans un modèle de workflow. Ainsi, la prochaine fois que vous devez créer un workflow similaire, opérez à l’aide du modèle ; vous vous épargnerez la saisie de toutes les conditions et actions à partir de zéro.  
+## <a name="use-workflow-templates"></a>Utiliser des modèles de flux de travail  
+ Si vous avez des flux de travail similaires et que vous prévoyez de créer plus de flux de travail qui suivent le même modèle, enregistrez votre workflow en tant que modèle de flux de travail. De cette façon, la prochaine fois que vous aurez besoin de créer un flux de travail similaire, créez le workflow à l’aide du modèle et évitez d’entrer toutes les conditions et les actions à partir de zéro.  
   
- Dans la boîte de dialogue **Créer un processus**, choisissez **Nouveau processus à partir d’un modèle existant (sélection à partir d’une liste)**.  
+ Dans la boîte de dialogue **créer un processus** , choisissez **nouveau processus à partir d’un modèle existant (sélectionner dans la liste)** .  
   
 <a name="BKMK_UseChildWorkflows"></a>   
-## <a name="use-child-workflows"></a>Utiliser des workflows enfants  
- Si vous appliquez la même logique dans différents workflows ou dans des branches conditionnelles, définissez cette logique en tant que workflow enfant afin que vous ne soyez pas obligé de la répliquer manuellement dans chaque workflow ou branche conditionnelle. La gestion de vos workflows s’en trouve simplifiée. Au lieu d’examiner de nombreux workflows qui peuvent appliquer la même logique, vous pouvez simplement mettre à jour un seul workflow.  
+## <a name="use-child-workflows"></a>Utiliser des flux de travail enfants  
+ Si vous appliquez la même logique dans des flux de travail différents ou dans des branches conditionnelles, définissez cette logique en tant que flux de travail enfant afin de ne pas avoir à répliquer cette logique manuellement dans chaque flux de travail ou branche conditionnelle. Cela permet de faciliter la gestion de vos flux de travail. Au lieu d’examiner de nombreux flux de travail qui peuvent appliquer la même logique, vous pouvez simplement mettre à jour un flux de travail.  
   
 ## <a name="automatically-delete-completed-workflow-jobs"></a>Supprimer automatiquement les tâches de workflow terminées
-Pour les workflows d’arrière-plan (asynchrones), nous vous recommandons de sélectionner l’option **Supprimer automatiquement les tâches de workflow terminées (pour libérer de l’espace disque)** dans la définition des workflows. Le fait de cocher cette case permet au système de supprimer les journaux de workflow relatifs aux exécutions réussies afin d’économiser de l’espace. Notez que les journaux liés aux exécutions de workflow ayant échoué sont toujours enregistrés à des fins de dépannage.  
+Pour les flux de travail d’arrière-plan (asynchrones), nous vous recommandons de sélectionner l’option **supprimer automatiquement les tâches de workflow terminées (pour économiser l’espace disque)** dans la définition de Workflow. L’activation de cette case à cocher permet au système de supprimer les journaux de workflow en vue d’une exécution réussie afin d’économiser de l’espace. Notez que les journaux des exécutions de flux de travail ayant échoué seront toujours enregistrés pour la résolution des problèmes.  
 
 ![Rétention des tâches de workflow](media/workflow-job-retention.png)
 
 <a name="BKMK_AutoDeleteCompletedWorkflowJobs"></a>   
-## <a name="keep-logs-for-workflow-jobs-that-encountered-errors"></a>Conserver les journaux pour les tâches de workflow qui rencontrent des erreurs  
-Pour les workflows qui ne s’exécutent pas en arrière-plan (synchrones), nous vous recommandons de sélectionner l’option **Conserver les journaux pour les tâches de workflow qui rencontrent des erreurs** dans la définition des workflows. Quand vous sélectionnez cette option, les journaux liés aux exécutions de workflow ayant échoué sont enregistrés à des fins de dépannage. Les journaux liés aux exécutions de workflows synchrones ayant réussi sont toujours supprimés à des fins d’économie d’espace.   
+## <a name="keep-logs-for-workflow-jobs-that-encountered-errors"></a>Conserver les journaux des tâches de workflow qui ont rencontré des erreurs  
+Pour les flux de travail qui ne s’exécutent pas en arrière-plan (synchrone), nous vous recommandons de sélectionner l’option **conserver les journaux pour les tâches de workflow qui ont rencontré des erreurs** dans la définition de Workflow. La sélection de cette option permet d’enregistrer les journaux des exécutions de workflow ayant échoué pour le dépannage. Les journaux des exécutions de workflow synchrones réussis seront toujours supprimés pour économiser de l’espace.   
 
-![Option permettant de conserver les journaux pour les workflows ayant échoué](media/keep-logs-for-workflows.png)
+![Option conserver les journaux des flux de travail ayant échoué](media/keep-logs-for-workflows.png)
 
 ## <a name="limit-the-number-of-workflows-that-update-the-same-entity"></a>Limiter le nombre de workflows qui mettent à jour la même entité
-L’exécution de plusieurs workflows qui mettent à jour la même entité peut entraîner des problèmes de verrouillage de ressource. Imaginez que plusieurs workflows sont en cours d’exécution et que chaque mise à jour d’opportunité déclenche une mise à jour du compte associé. Quand plusieurs instances de ces workflows sont en cours d’exécution et qu’elles essaient de mettre à jour le même enregistrement de compte simultanément, des problèmes de verrouillage de ressource peuvent survenir. Les échecs de workflow se produisent et un message d’erreur, tel que **Délai d’attente SQL : Impossible d’obtenir un verrou sur _nom de ressource_**, est enregistré. 
+L’exécution de plusieurs flux de travail qui met à jour la même entité peut entraîner des problèmes de verrouillage des ressources. Imaginez plusieurs flux de travail en cours d’exécution où chaque mise à jour d’opportunité déclenche une mise à jour du compte associé. Plusieurs instances de ces flux de travail exécutant et tentant de mettre à jour le même enregistrement de compte en même temps peuvent entraîner des problèmes de verrouillage des ressources. Des échecs de flux de travail se produisent et un message d’erreur, tel que **délai d’expiration SQL : impossible d’obtenir un verrou sur le _nom de ressource_de ressource**, est enregistré. 
 
   
 <a name="BKMK_DocumentChangesUsingNotes"></a>   
 ## <a name="use-notes-to-keep-track-of-changes"></a>Utiliser des notes pour effectuer le suivi des modifications  
- Quand vous modifiez des workflows, vous devez utiliser l’onglet Notes et taper ce que vous avez fait et les raisons qui vous ont poussé à le faire. Ainsi, une autre personne peut comprendre les modifications que vous avez apportées.  
+ Lorsque vous modifiez des workflows, vous devez utiliser l’onglet remarques et taper ce que vous avez fait et pourquoi vous l’avez fait. Cela permet à un autre utilisateur de comprendre les modifications que vous avez apportées.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- [Vue d’ensemble des processus de workflow](workflow-processes.md)   
- [Configurer des processus de workflow](configure-workflow-steps.md)   
- [Superviser et gérer les processus de workflow](monitor-manage-processes.md)
+ [Vue d’ensemble des processus de flux de travail](workflow-processes.md)   
+ [Configurer les processus de flux de travail](configure-workflow-steps.md)   
+ [Surveiller et gérer les processus de flux de travail](monitor-manage-processes.md)
    

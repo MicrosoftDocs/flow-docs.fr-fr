@@ -1,6 +1,6 @@
 ---
 title: Utilisez des expressions avec des conditions. | Microsoft Docs
-description: Utilisez des expressions avancées, telles que « and », « or », « empty », « less » et « greater », avec les conditions Microsoft Flow.
+description: Utilisez des expressions avancées telles que « et », « ou », « Empty », « Less » et « plus » avec des conditions de Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
@@ -18,200 +18,201 @@ search.app:
 search.audienceType:
 - flowmaker
 - enduser
-ms.openlocfilehash: d6ad21cace7643abeb19de185c247f17ec9a2b35
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 940ab40b9bac7d76734773805820911a20cd46aa
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64466974"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548373"
 ---
 # <a name="use-expressions-in-conditions-to-check-multiple-values"></a>Utiliser des expressions dans des conditions pour vérifier plusieurs valeurs
-Dans cette procédure pas à pas, vous allez apprendre à utiliser des expressions et **conditions** pour comparer plusieurs valeurs en **mode Avancé**.
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
+Dans cette procédure pas à pas, vous allez apprendre à utiliser des expressions et des **conditions** pour comparer plusieurs valeurs en **mode avancé**.
 
-Lorsque vous créez un flux, vous pouvez utiliser la carte [**Condition**](add-condition.md#add-a-condition) en mode de base pour comparer rapidement une valeur avec une autre. Vous devrez peut-être parfois comparer plusieurs valeurs. Par exemple, vous pouvez vérifier la valeur de quelques colonnes d’une feuille de calcul ou une table de base de données.
+Lorsque vous créez un fluide, vous pouvez utiliser la carte [**condition**](add-condition.md#add-a-condition) en mode de base pour comparer rapidement une valeur unique à une autre valeur. Toutefois, il est parfois nécessaire de comparer plusieurs valeurs. Par exemple, vous pouvez vérifier la valeur de quelques colonnes dans une feuille de calcul ou une table de base de données.
 
-Vous pouvez utiliser n’importe quelle combinaison parmi les expressions logiques suivantes dans vos conditions.
+Vous pouvez utiliser n’importe quelle combinaison d’expressions logiques suivantes dans vos conditions.
 
-Expression|Description|Exemple
+formule|Descriptive|Tels
 --------|-----------|-------
-|[and](#use-the-and-expression)|Accepte deux arguments et retourne la valeur true si les deux valeurs sont true.<br><b>Remarque</b> : Les deux arguments doivent être des valeurs booléennes.|Cette expression retourne la valeur false : <br>and(greater(1,10),equals(0,0))
-|[or](#use-the-or-expression)|Accepte deux arguments et retourne la valeur true si un des arguments a la valeur true. <br><b>Remarque</b> : Les deux arguments doivent être des valeurs booléennes.|Cette expression retourne la valeur true :<br>or(greater(1,10),equals(0,0))
-|equals|Retourne true si les deux valeurs sont égales.|Par exemple, si parameter1 est someValue, cette expression retourne true :<br>equals(parameters('parameter1'), 'someValue')
-|[less](#use-the-less-expression)|Accepte deux arguments et retourne la valeur true si le premier argument est inférieur au deuxième argument. <br><b>Remarque</b> : Les types pris en charge sont integer, float et string.|Cette expression retourne la valeur true :<br>less(10,100)
-|lessOrEquals|Accepte deux arguments et retourne la valeur true si le premier argument est inférieur ou égal au deuxième argument. <br><b>Remarque</b> : Les types pris en charge sont integer, float et string.|Cette expression retourne la valeur true :<br>lessOrEquals(10,10)
-|[greater](#use-the-greater-expression)|Accepte deux arguments et retourne la valeur true si le premier argument est supérieur au deuxième argument. <br><b>Remarque</b> : Les types pris en charge sont integer, float et string.|Cette expression retourne la valeur false :<br>greater(10,10)
-|greaterOrEquals|Accepte deux arguments et retourne la valeur true si le premier argument est supérieur ou égal au deuxième argument. <br><b>Remarque</b> : Les types pris en charge sont integer, float et string.|Cette expression retourne la valeur false :<br>greaterOrEquals(10,100)
-|[empty](#use-the-empty-expression)|Retourne la valeur true si l’objet, le tableau ou la chaîne est vide.|Cette expression retourne la valeur true :<br>empty('')
-|not|Retourne la valeur booléenne opposée. |Cette expression retourne la valeur true :<br>not(contains('200 Success','Fail'))
-|if|Retourne une valeur spécifique si l’expression retourne la valeur true ou false.|Cette expression retourne la valeur yes :<br>if(equals(1, 1), 'yes', 'no')
+|[les](#use-the-and-expression)|Accepte deux arguments et retourne true si les deux valeurs sont vraies.<br><b>Remarque</b>: les deux arguments doivent être des valeurs booléennes.|Cette expression retourne la valeur false : <br>et (supérieur à (1, 10), égal à (0, 0))
+|[ni](#use-the-or-expression)|Accepte deux arguments et retourne true si l’un des arguments a la valeur true. <br><b>Remarque</b>: les deux arguments doivent être des valeurs booléennes.|Cette expression retourne true :<br>ou (supérieur (1, 10), égal à (0, 0))
+|Equals|Retourne la valeur true si deux valeurs sont égales.|Par exemple, si paramètre1 est someValue, cette expression retourne true :<br>est égal à (Parameters ('paramètre1 '), 'someValue')
+|[inferieur](#use-the-less-expression)|Accepte deux arguments et retourne la valeur true si le premier argument est inférieur au deuxième argument. <br><b>Remarque</b>: les types pris en charge sont Integer, float et String.|Cette expression retourne true :<br>moins (10100)
+|lessOrEquals|Accepte deux arguments et retourne la valeur true si le premier argument est inférieur ou égal au deuxième argument. <br><b>Remarque</b>: les types pris en charge sont Integer, float et String.|Cette expression retourne true :<br>lessOrEquals (10, 10)
+|[supérieur](#use-the-greater-expression)|Accepte deux arguments et retourne la valeur true si le premier argument est supérieur au deuxième argument. <br><b>Remarque</b>: les types pris en charge sont Integer, float et String.|Cette expression retourne la valeur false :<br>supérieur (10, 10)
+|greaterOrEquals|Accepte deux arguments et retourne la valeur true si le premier argument est supérieur ou égal au deuxième argument. <br><b>Remarque</b>: les types pris en charge sont Integer, float et String.|Cette expression retourne la valeur false :<br>greaterOrEquals (10100)
+|[vidé](#use-the-empty-expression)|Retourne la valeur true si l’objet, le tableau ou la chaîne est vide.|Cette expression retourne true :<br>Empty (' ')
+|pas|Retourne l’inverse d’une valeur booléenne. |Cette expression retourne true :<br>Not (contient (« 200 Success », « Fail »))
+|Que|Retourne une valeur spécifique si l’expression donne True ou false.|Cette expression renvoie « Oui » :<br>Si (est égal à (1, 1), « oui », « non »)
 
-## <a name="prerequisites"></a>Prérequis
-* Accédez à Microsoft Flow.
-* Une feuille de calcul avec les tableaux décrits plus loin dans cette procédure pas à pas. Veillez à enregistrer votre feuille de calcul dans un emplacement tel que Dropbox ou Microsoft OneDrive afin que Microsoft Flow puisse y accéder.
-* Microsoft Office 365 Outlook ou un autre service de messagerie pris en charge dans vos flux.
+## <a name="prerequisites"></a>Conditions préalables
+* Accès aux Microsoft Flow.
+* Une feuille de calcul avec les tables décrites plus loin dans cette procédure pas à pas. Veillez à enregistrer votre feuille de calcul dans un emplacement tel que Dropbox ou Microsoft OneDrive afin que les Microsoft Flow puissent y accéder.
+* Microsoft Office Outlook 365 (pendant que nous utilisons Office 365 Outlook, vous pouvez utiliser n’importe quel service de messagerie pris en charge dans vos flux.)
 
-## <a name="use-the-or-expression"></a>Utiliser l’expression or
-Parfois, votre flux de travail doit entreprendre une action si la valeur d’un élément est valueA **ou** valueB. Par exemple, vous pouvez suivre l’état des tâches dans un tableau de feuille de calcul. Supposons que le tableau possède une colonne nommée *Status* et que les valeurs possibles dans la colonne *Status* sont les suivantes :
+## <a name="use-the-or-expression"></a>Utiliser l’expression ou
+Parfois, votre flux de travail doit effectuer une action si la valeur d’un élément est valueA **ou** valueB. Par exemple, vous pouvez effectuer le suivi de l’état des tâches dans un tableau de feuille de calcul. Supposons que la table possède une colonne nommée *Status* et que les valeurs possibles dans la colonne *Status* soient :
 
-* **completed**
-* **blocked**
-* **unnecessary**
-* **not started**
+* **procédé**
+* **obstrué**
+* **évite**
+* **non démarré**
 
-Voici un exemple de la façon dont la feuille de calcul peut se présenter :
+Voici un exemple de ce à quoi peut ressembler la feuille de calcul :
 
 ![exemple de feuille de calcul](./media/use-expressions-in-conditions/spreadsheet-table.png)
 
-Étant donné la feuille de calcul précédente, vous souhaitez utiliser Microsoft Flow pour supprimer toutes les lignes ayant une colonne *Status* définie sur *completed* ou *unnecessary*.
+À partir de la feuille de calcul précédente, vous souhaitez utiliser Microsoft Flow pour supprimer toutes les lignes dont la colonne *Status* est définie sur *Completed* ou *inutile*.
 
-Vous allez créer le flux.
+Créons le Flow.
 
-### <a name="start-with-a-blank-flow"></a>Commencer avec un flux vide
-1. Connectez-vous à [Microsoft Flow](https://flow.microsoft.com).
+### <a name="start-with-a-blank-flow"></a>Démarrer avec un flot vide
+1. Connectez-vous [Microsoft Flow](https://flow.microsoft.com).
 
-    ![se connecter](includes/media/modern-approvals/sign-in.png)
-2. Sélectionnez l’onglet **Mes flux**.
+    ![Connexion](includes/media/modern-approvals/sign-in.png)
+2. Sélectionnez l’onglet **mes flux** .
 
     ![sélectionner mes flux](includes/media/modern-approvals/select-my-flows.png)
-3. Sélectionnez **Créer entièrement**.
+3. Sélectionnez **créer à partir d’un espace vide**.
 
-    ![créer entièrement](includes/media/modern-approvals/blank-template.png)
+    ![créer à partir d’un espace](includes/media/modern-approvals/blank-template.png)
 
-### <a name="add-a-trigger-to-your-flow"></a>Ajouter un déclencheur à votre flux
-1. Recherchez **Planification**, puis sélectionnez le déclencheur **Planification - Récurrence**.
+### <a name="add-a-trigger-to-your-flow"></a>Ajouter un déclencheur à votre Flow
+1. Recherchez **planification**, puis sélectionnez le déclencheur **planification-récurrence**
 
-    ![déclencheur Planification](includes/media/schedule-trigger/schedule-trigger.png)
-2. Définissez l’exécution quotidienne de la planification.
+    ![déclencheur de planification](includes/media/schedule-trigger/schedule-trigger.png)
+2. Définissez la planification pour qu’elle s’exécute une fois par jour.
 
     ![définir la planification](includes/media/schedule-trigger/set-schedule.png)
 
-### <a name="select-the-spreadsheet-and-get-all-rows"></a>Sélectionner la feuille de calcul et obtenir toutes les lignes
-1. Sélectionnez **Nouvelle étape** > **Ajouter une action**.
+### <a name="select-the-spreadsheet-and-get-all-rows"></a>Sélectionner la feuille de calcul et récupérer toutes les lignes
+1. Sélectionnez **nouvelle étape** > **Ajouter une action**.
 
-    ![nouvelle étape](includes/media/new-step/action.png)
-2. Recherchez **rows (lignes)**, puis sélectionnez **Excel - Get rows (Excel - Obtenir les lignes)**.
+    ![Nouvelle étape](includes/media/new-step/action.png)
+2. Recherchez des **lignes**, puis sélectionnez **Excel-obtenir des lignes**.
 
-    Remarque : Sélectionnez l’action « obtenir les lignes » qui correspond à la feuille de calcul que vous utilisez. Par exemple, si vous utilisez Google Sheets, sélectionnez **Google Sheets - Get rows (Google Sheets - Obtenir les lignes)**.
+    Remarque : sélectionnez l’action « extraire les lignes » qui correspond à la feuille de calcul que vous utilisez. Par exemple, si vous utilisez Google Sheets, sélectionnez **Google Sheets-obtenir des lignes**.
 
-    ![obtenir les lignes](includes/media/new-step/get-excel-rows.png)
-3. Sélectionnez l’icône de dossier dans la zone **Nom de fichier**, puis sélectionnez la feuille de calcul qui contient vos données.
+    ![récupérer les lignes](includes/media/new-step/get-excel-rows.png)
+3. Sélectionnez l’icône de dossier dans la zone **nom de fichier** , accédez à, puis sélectionnez la feuille de calcul qui contient vos données.
 
-    ![sélectionner la feuille de calcul](includes/media/new-step/select-spreadsheet.png)
-4. Sélectionnez le tableau qui contient vos données à partir de la liste **Nom du tableau**.
+    ![sélectionner une feuille de calcul](includes/media/new-step/select-spreadsheet.png)
+4. Sélectionnez la table qui contient vos données dans la liste nom de la **table** .
 
-    ![sélectionner un tableau](includes/media/new-step/select-table.png)
+    ![sélectionner une table](includes/media/new-step/select-table.png)
 
-### <a name="check-the-status-column-of-each-row"></a>Vérifier la colonne Status de chaque ligne
-1. Sélectionnez **Nouvelle étape** > **Plus** > **Ajouter un appliquer à chaque**.
+### <a name="check-the-status-column-of-each-row"></a>Vérifiez la colonne État de chaque ligne
+1. Sélectionnez **nouvelle étape** > **plus** > **Ajouter un appliquer à chaque**.
 
-    ![sélectionner un tableau](includes/media/new-step/apply-to-each.png)
-2. Ajoutez le jeton **Valeur** dans la zone **Sélectionnez un résultat à partir des étapes précédentes**.
+    ![sélectionner une table](includes/media/new-step/apply-to-each.png)
+2. Ajoutez le jeton de **valeur** à la zone **Sélectionnez une sortie à partir des étapes précédentes** .
 
-    ![sélectionner un tableau](includes/media/apply-to-each/add-value-token.png)
-3. Sélectionnez **Ajouter une condition** > **Modifier en mode Avancé**.
-4. Ajoutez l’expression **or** suivante. Cette expression **or** vérifie la valeur de chaque ligne du tableau (une ligne est appelée « élément » dans une expression). Si la valeur de la colonne **status** est *completed* **ou** *unnecessary*, l’expression **or** prend la valeur « true ».
+    ![sélectionner une table](includes/media/apply-to-each/add-value-token.png)
+3. Sélectionnez **Ajouter une condition** > **modifier en mode avancé**.
+4. Ajoutez l’expression **ou** suivante. Cette expression **ou** vérifie la valeur de chaque ligne de la table (une ligne est appelée « élément » lorsque vous y accédez dans une expression). Si la valeur de la colonne **Status** est *terminée* **ou** *inutile*, l’expression **ou** prend la valeur « true ».
 
-    L’expression **or** s’affiche comme illustré ici :
+    L’expression **ou** s’affiche comme illustré ici :
 
     ````@or(equals(item()?['status'], 'unnecessary'), equals(item()?['status'], 'completed'))````
 
-    Votre carte **Condition** ressemble à cette image :
+    La carte de **condition** ressemble à l’image suivante :
 
-    ![Image de l’expression or](./media/use-expressions-in-conditions/or-expression.png)
+    ![image de l’expression or](./media/use-expressions-in-conditions/or-expression.png)
 
 ### <a name="delete-matching-rows-from-the-spreadsheet"></a>Supprimer les lignes correspondantes de la feuille de calcul
-1. Sélectionnez **Ajouter une action** sous la section **SI OUI, NE RIEN FAIRE** de la condition.
-2. Recherchez **Supprimer la ligne**, puis sélectionnez **Excel - Supprimer la ligne**.
+1. Sélectionnez **Ajouter une action** dans la branche **si oui, ne rien faire** de la condition.
+2. Recherchez **Supprimer la ligne**, puis sélectionnez **Excel-supprimer la ligne**.
 
-    ![image supprimer la ligne](includes/media/new-step/select-delete-excel-row.png)
-3. Dans la zone **Nom de fichier**, recherchez et sélectionnez la feuille de calcul qui contient les données que vous souhaitez supprimer.
-4. Dans la liste **Nom du tableau**, sélectionnez le tableau qui contient vos données.
-5. Placez le jeton **ID de ligne** dans la zone **ID de ligne**.
+    ![supprimer l’image de ligne](includes/media/new-step/select-delete-excel-row.png)
+3. Dans la zone **nom de fichier** , recherchez et sélectionnez le fichier de feuille de calcul qui contient les données que vous souhaitez supprimer.
+4. Dans la liste nom de la **table** , sélectionnez la table qui contient vos données.
+5. Placez le jeton d' **ID de ligne** dans la zone **ID de ligne** .
 
     ![fichier de feuille de calcul](includes/media/new-step/delete-excel-row.png)
 
-### <a name="name-the-flow-and-save-it"></a>Nommer le flux et l’enregistrer
-1. Nommez votre flux, puis sélectionnez le bouton **Créer un flux**.
+### <a name="name-the-flow-and-save-it"></a>Nommer le Flow et l’enregistrer
+1. Donnez un nom à votre Flow, puis sélectionnez le bouton **créer un Flow** .
 
-    ![enregistrer votre flux](./media/use-expressions-in-conditions/name-and-save.png)
+    ![enregistrer votre Flow](./media/use-expressions-in-conditions/name-and-save.png)
 
-### <a name="run-the-flow-with-the-or-expression"></a>Exécuter le flux avec l’expression or
-Le flux s’exécute une fois que vous l’avez enregistré. Si vous avez créé la feuille de calcul indiquée plus haut dans cette procédure pas à pas, voici à quoi elle ressemble après l’exécution :
+### <a name="run-the-flow-with-the-or-expression"></a>Exécuter le Flow avec l’expression ou
+Le workflow s’exécute une fois que vous l’avez enregistré. Si vous avez créé la feuille de calcul indiquée plus haut dans cette procédure pas à pas, voici à quoi elle ressemble une fois l’exécution terminée :
 
-![Expression or exécutée](./media/use-expressions-in-conditions/spreadsheet-table-after-or-expression-runs.png)
+![ou l’expression se termine](./media/use-expressions-in-conditions/spreadsheet-table-after-or-expression-runs.png)
 
-Notez que toutes les données des lignes dont le statut était « completed » ou « unnecessary » dans la colonne Status ont été supprimées.
+Notez que toutes les données des lignes dont l’État est « Completed » ou « inutile » dans la colonne Status ont été supprimées.
 
 ## <a name="use-the-and-expression"></a>Utiliser l’expression and
-Supposons que vous avez un tableau de feuille de calcul avec deux colonnes. Les noms de colonne sont Status et Assigned. Supposons également que vous souhaitez supprimer toutes les lignes si la valeur de la colonne Status est « blocked » et que la valeur de la colonne Assigned est « John Wonder ».  Pour accomplir cette tâche, suivez toutes les étapes décrites plus haut dans cette procédure pas à pas. Toutefois, lorsque vous modifiez la carte **Condition** en mode Avancé, utilisez l’expression **and** indiquée ici :
+Supposons que vous disposez d’un tableau de feuille de calcul avec deux colonnes. Les noms des colonnes sont Status et Assigned. Supposons également que vous souhaitez supprimer toutes les lignes si la valeur de la colonne d’État est « bloqué » et que la valeur de la colonne affectée est « John Wonder ».  Pour accomplir cette tâche, suivez toutes les étapes décrites plus haut dans cette procédure pas à pas. Toutefois, lorsque vous modifiez la carte **condition** en mode avancé, utilisez l’expression **and** présentée ici :
 
 ````@and(equals(item()?['Status'], 'blocked'), equals(item()?['Assigned'], 'John Wonder'))````
 
-Votre carte **Condition** ressemble à cette image :
+La carte de **condition** ressemble à l’image suivante :
 
-![Image de l’expression and](./media/use-expressions-in-conditions/and-expression.png)
+![image de l’expression and](./media/use-expressions-in-conditions/and-expression.png)
 
-### <a name="run-the-flow-with-the-and-expression"></a>Exécuter le flux avec l’expression and
-Si vous avez respecté la procédure, votre feuille de calcul doit ressembler à l’image suivante :
+### <a name="run-the-flow-with-the-and-expression"></a>Exécuter le Flow avec l’expression and
+Si vous avez suivi le, votre feuille de calcul ressemble à cette image :
 
-![avant l’exécution de la fonction and](./media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png)
+![avant et s’exécute](./media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png)
 
-Une fois que votre flux est exécuté, votre feuille de calcul doit ressembler à l’image suivante :
+Une fois votre workflow exécuté, votre feuille de calcul ressemble à cette image :
 
-![après l’exécution de la fonction and](./media/use-expressions-in-conditions/spreadsheet-table-after-and-expression-runs.png)
+![après et s’exécute](./media/use-expressions-in-conditions/spreadsheet-table-after-and-expression-runs.png)
 
-## <a name="use-the-empty-expression"></a>Utiliser l’expression empty
-Notez qu’il existe plusieurs lignes vides dans la feuille de calcul. Pour les supprimer, utilisez l’expression **empty** pour identifier toutes les lignes qui n’ont pas de texte dans les colonnes Assigned et Status.
+## <a name="use-the-empty-expression"></a>Utiliser l’expression Empty
+Notez qu’il y a maintenant plusieurs lignes vides dans la feuille de calcul. Pour les supprimer, utilisez l’expression **Empty** pour identifier toutes les lignes qui n’ont pas de texte dans les colonnes Assigned et Status.
 
-Pour accomplir cette tâche, suivez toutes les étapes décrites plus haut dans la section **Utiliser l’expression and** de cette procédure pas à pas. Toutefois, lorsque vous modifiez la carte **Condition** en mode Avancé, utilisez l’expression empty comme suit :
+Pour accomplir cette tâche, suivez toutes les étapes répertoriées dans la section **utiliser l’expression and** plus haut dans cette procédure pas à pas. Toutefois, lorsque vous modifiez la carte **condition** en mode avancé, utilisez l’expression Empty comme suit :
 
 ````@and(empty(item()?['Status']), empty(item()?['Assigned']))````
 
-Votre carte **Condition** ressemble à cette image :
+La carte de **condition** ressemble à l’image suivante :
 
-![Image de l’expression empty](./media/use-expressions-in-conditions/empty-expression.png)
+![image d’expression vide](./media/use-expressions-in-conditions/empty-expression.png)
 
-Une fois que votre flux est exécuté, votre feuille de calcul doit ressembler à l’image suivante :
+Après l’exécution de votre workflow, la feuille de calcul ressemble à l’image suivante :
 
-![Après l’exécution de la fonction empty](./media/use-expressions-in-conditions/spreadsheet-table-after-empty-expression-runs.png)
+![après des exécutions vides](./media/use-expressions-in-conditions/spreadsheet-table-after-empty-expression-runs.png)
 
-Notez que les lignes supplémentaires sont supprimées du tableau.
+Notez que des lignes supplémentaires sont supprimées de la table.
 
-## <a name="use-the-greater-expression"></a>Utiliser l’expression greater
-Imaginez que vous avez acheté des tickets de match de football pour vos collègues et que vous utilisez une feuille de calcul pour vous assurer que chaque personne vous rembourse. Vous pouvez rapidement créer un flux qui envoie un message quotidien à chaque personne qui n’a pas encore remboursé la totalité du montant.
+## <a name="use-the-greater-expression"></a>Utiliser l’expression supérieure
+Imaginez que vous avez acheté des tickets de baseball pour vos collègues et que vous utilisez une feuille de calcul pour vous assurer qu’ils sont remboursés par chaque personne. Vous pouvez rapidement créer un workflow qui envoie un e-mail quotidien à chaque personne qui n’a pas payé le montant total.
 
-Utilisez l’expression **greater** pour identifier les employés qui n’ont pas remboursé la totalité du montant. Vous pouvez ensuite envoyer automatiquement un message électronique de rappel à ceux qui n’ont pas payé la totalité du montant.
+Utilisez l’expression **supérieure** pour identifier les employés qui n’ont pas payé le montant total. Vous pouvez ensuite envoyer automatiquement un courrier électronique de rappel à ceux qui n’ont pas été entièrement payés.
 
-Voici une vue de la feuille de calcul :
+Voici une vue de la feuille de calcul :
 
 ![vue de la feuille de calcul](./media/use-expressions-in-conditions/tickets-spreadsheet-table.png)
 
-Voici l’implémentation de l’expression **greater** qui identifie toutes les personnes qui ont payé moins que le montant dû :
+Voici l’implémentation de l’expression **supérieure** qui identifie toutes les personnes qui ont payé moins que le montant dû :
 
 ````@greater(item()?['Due'], item()?['Paid'])````
 
 ## <a name="use-the-less-expression"></a>Utiliser l’expression less
-Imaginez que vous avez acheté des tickets de match de football pour vos collègues et que vous utilisez une feuille de calcul pour vous assurer que chaque personne vous rembourse à la date acceptée par tous. Vous pouvez créer un flux qui envoie un message de rappel pour chaque personne qui n’a pas encore payé la totalité du montant si la date d’échéance est dans moins d’un jour.
+Imaginez que vous avez acheté des tickets de baseball pour vos collègues et que vous utilisez une feuille de calcul pour vous assurer que chaque personne est remboursée par la date à laquelle tout le monde a convenu. Vous pouvez créer un Flow qui envoie un message de rappel à chaque personne qui n’a pas payé le montant total si la date actuelle est antérieure à un jour avant la date d’échéance.
 
-Utilisez l’expression **and** avec l’expression **less**, car il existe deux conditions qui sont validées :
+Utilisez l’expression and avec l’expression **less** **,** car deux conditions sont validées :
 
 
-|          Condition à valider          | Expression à utiliser |                    Exemple                     |
+|          Condition à valider          | expression à utiliser |                    Tels                     |
 |-----------------------------------------|-------------------|------------------------------------------------|
-|   La totalité du montant a-t-il été payé ?    |      greater      |   @greater(item()?['Due'], item()?['Paid'])    |
-| La date d’échéance est-elle située dans un jour ? |       less        | @less(item()?['DueDate'], addDays(utcNow(),1)) |
+|   Le montant total a-t-il été payé ?    |      supérieur      |   @greater(Item () ? [' Due'], élément () ? [« Payé »])    |
+| La date d’échéance est-elle inférieure à un jour ? |       inferieur        | @less(Item () ? [' DueDate'], addDays (utcNow (), 1)) |
 
-## <a name="combine-the-greater-and-less-expressions-in-an-and-expression"></a>Combiner les expressions greater et less dans une expression et
-Utilisez l’expression **greater** pour identifier les employés qui ont payé moins que le montant total dû et utilisez l’expression **less** pour déterminer si la date d’échéance du paiement est située dans moins d’un jour. Vous pouvez ensuite ajouter l’action **Envoyer un message électronique** pour envoyer un courrier électronique de rappel à ceux qui n’ont pas payé la totalité du montant alors que la date d’échéance est dans moins d’un jour.
+## <a name="combine-the-greater-and-less-expressions-in-an-and-expression"></a>Combiner les expressions supérieure et inférieure dans une expression and
+Utilisez l’expression **supérieure** pour identifier les employés qui ont payé moins que le montant total dû et utilisez l’expression **moins** pour déterminer si la date d’échéance du paiement est antérieure d’un jour à la date actuelle. Vous pouvez ensuite **Envoyer une action envoyer un courrier électronique** pour envoyer des rappels conviviaux à ceux qui n’ont pas été entièrement payés et la date d’échéance est antérieure à un jour.
 
-Voici une vue du tableau de la feuille de calcul :
+Voici une vue du tableau de la feuille de calcul :
 
 ![vue de la feuille de calcul](./media/use-expressions-in-conditions/spreadsheet-table-due-date.png)
 
-Voici l’implémentation de l’expression **and** qui identifie toutes les personnes qui ont payé moins que le montant dû et le fait que la date d’échéance est située dans moins d’un jour :
+Voici l’implémentation de l’expression **and** qui identifie toutes les personnes qui ont payé moins que le montant dû, et la date d’échéance est antérieure d’un jour à la date actuelle :
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
 ## <a name="use-functions-in-expressions"></a>Utiliser des fonctions dans les expressions
 
-Certaines expressions tirent leurs valeurs d’actions de runtime qui n’existent peut-être pas encore quand un flux commence à s’exécuter. Pour référencer ou utiliser ces valeurs dans des expressions, vous pouvez utiliser des fonctions fournies par le langage de définition du workflow. Plus d’informations : [Informations de référence sur les fonctions du langage de définition du workflow dans Microsoft Flow](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)
+Certaines expressions obtiennent leurs valeurs à partir d’actions d’exécution qui peuvent ne pas encore exister lorsqu’un workflow commence à s’exécuter. Pour référencer ou utiliser ces valeurs dans les expressions, vous pouvez utiliser des fonctions fournies par le langage de définition de flux de travail. Informations supplémentaires : [référence aux fonctions pour le langage de définition de flux de travail dans Microsoft Flow](https://docs.microsoft.com/azure/logic-apps/workflow-definition-language-functions-reference)

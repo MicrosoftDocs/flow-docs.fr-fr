@@ -1,11 +1,12 @@
 ---
-title: Résumé des demandes RGPD des personnes concernées pour les comptes Microsoft (MSA) | Microsoft Docs
-description: Découvrez comment répondre aux requêtes RGPD d’une personne concernée pour Microsoft Flow.
+title: Résumé des demandes de l’objet de données RGPD pour les comptes Microsoft (MSA) | Microsoft Docs
+description: Découvrez comment répondre aux demandes de l’objet de données RGPD pour Microsoft Flow.
 services: ''
 suite: flow
 documentationcenter: na
-author: KentWeareMSFT
-manager: KFile
+author: MSFTMAN
+manager: KVIVEK
+ms.author: Deonhe
 editor: ''
 tags: ''
 ms.service: flow
@@ -14,54 +15,54 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 5/16/2018
-ms.author: keweare
 search.app:
 - Flow
 - Powerplatform
 search.audienceType:
 - admin
-ms.openlocfilehash: 3742ac7afed24b0a1523a6038978589d293ba00b
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: bff3e050db40c60622496202a092f94cc1d36fca
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64460286"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548182"
 ---
-# <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>Répondre aux demandes RGPD de droits des personnes concernées
+# <a name="respond-to-gdpr-data-subject-rights-dsrs-requests"></a>Répondre aux demandes de droits de l’objet des données RGPD (retours directs)
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
-Cet article décrit le Règlement général sur la protection des données (RGPD) de l’Union européenne et fournit les étapes que vous pouvez suivre pour prendre en charge la conformité au RGPD pour les utilisateurs Microsoft Flow qui s’authentifient avec les comptes Microsoft (MSA).
+Cet article décrit le Règlement général sur la protection des données de l’Union européenne (RGPD) et présente les étapes à suivre pour prendre en charge la conformité RGPD pour les utilisateurs Microsoft Flow qui s’authentifient avec les comptes Microsoft (MSA).
 
-## <a name="prerequisites"></a>Prérequis
+## <a name="prerequisites"></a>Conditions préalables
 
-Vous avez besoin d’un compte de service administré avec une [licence Microsoft Flow gratuite](https://flow.microsoft.com/pricing/) pour effectuer les étapes de cet article.
+Vous avez besoin d’un MSA avec une [licence Microsoft Flow gratuite](https://flow.microsoft.com/pricing/) pour effectuer les étapes décrites dans cet article.
 
 >[!TIP]
-> Des informations sur la conformité à RGPD sont également disponibles pour les utilisateurs qui s’authentifient avec des [comptes Azure Active Directory](gdpr-dsr-summary.md).
+> Les informations de conformité RGPD sont également disponibles pour les utilisateurs qui s’authentifient avec des [comptes Azure Active Directory](gdpr-dsr-summary.md).
 >
 >
 
-## <a name="respond-to-dsrs-for-microsoft-flow-customer-data"></a>Répondre aux demandes de droits des personnes concernées pour les données des clients Microsoft Flow
+## <a name="respond-to-dsrs-for-microsoft-flow-customer-data"></a>Répondre à retours directs pour Microsoft Flow données client
 
-Une demande formelle d’une personne concernée à un contrôleur pour effectuer une action sur ses données personnelles est appelée demande de droits de la personne concernée (DSR, Data Subject Rights). Le RGPD définit les données personnelles comme étant **toute donnée relative à une personne physique identifiée ou identifiable**. Le RGPD octroie à des personnes (également appelées « personnes concernées ») des droits pour gérer les données personnelles qui ont été collectées par un employeur, une entité ou une organisation (également appelé « contrôleur de données » ou tout simplement « contrôleur »). Ces droits sont les suivants :
+La demande formelle d’un objet de données à un contrôleur pour effectuer une action sur ses données personnelles est appelée demande de droits de l’objet des données (DSR). RGPD définit des données personnelles en tant que **données relatives à une personne physique identifiée ou identifiable**. Le RGPD offre aux personnes (appelées « sujets de données ») des droits pour gérer les données personnelles collectées par un employeur, une agence ou une organisation (également appelé contrôleur de données ou contrôleur). Ces droits sont les suivants :
 
-* Obtenir une copie des données personnelles.
-* Demander des corrections des données personnelles.
-* Limiter le traitement des données personnelles.
-* Supprimer des données personnelles.
-* Recevoir les données personnelles dans un format électronique, de façon à pouvoir les déplacer vers un autre contrôleur.
+* Obtenir des copies des données personnelles.
+* Demande de corrections aux données personnelles.
+* Restriction du traitement des données personnelles.
+* Suppression des données personnelles.
+* Réception de données personnelles dans un format électronique afin qu’elles puissent être déplacées vers un autre contrôleur.
 
-Microsoft fournit des produits, des services et des outils pour aider les contrôleurs à rechercher et à agir sur les données personnelles en réponse à des demandes DSR pour des données qui se trouvent dans le cloud.
+Microsoft fournit des produits, des services et des outils pour aider les contrôleurs à rechercher et à agir sur les données personnelles lors de la réponse aux requêtes retours directs pour les données qui résident dans le Cloud.
 
-Voici une vue d’ensemble des processus présentés dans ce guide :
+Voici une vue d’ensemble des processus décrits dans ce guide :
 
-1. **Découvrir**: Utiliser les outils de recherche et de découverte pour trouver facilement les données client qui peuvent faire l’objet d’une requête DSR. Si vous déterminez que les documents que vous collectez répondent aux directives de votre contrôleur justifiant une action, vous pouvez effectuer une ou plusieurs des actions DSR décrites dans les étapes suivantes. Découvrez plus d’informations dans la [documentation sur la découverte DSR de Microsoft Flow pour les comptes Microsoft](gdpr-dsr-discovery-msa.md). Vous pouvez aussi déterminer que la demande ne satisfait pas aux directives de votre contrôleur en matière de réponse aux demandes DSR.
+1. **Découvrir**: utilisez les outils de recherche et de découverte pour rechercher facilement les données client susceptibles de faire l’objet d’une demande de DSR. Si vous déterminez que les documents que vous collectez remplissent les directives de votre contrôleur pour agir, vous pouvez effectuer une ou plusieurs des actions DSR décrites dans les étapes suivantes. Pour plus d’informations, consultez la [Microsoft Flow documentation sur la détection du DSR pour les comptes Microsoft](gdpr-dsr-discovery-msa.md). Vous pouvez également décider que la demande ne répond pas aux directives de votre contrôleur pour répondre aux demandes du DSR.
 
-1. **Accès**: Récupérer les données personnelles qui résident dans le cloud de Microsoft et, le cas échéant, effectuer une copie de ce qui peut être disponible à l’objet de données.
+1. **Accès**: Récupérez les données personnelles qui résident dans le Cloud Microsoft et, si nécessaire, faites-en une copie afin que puisse être mis à la disposition de l’objet des données.
 
-1. **Rectifier**: apporter des modifications ou implémenter d’autres actions demandées sur les données personnelles, là où c’est applicable.
+1. **Rectifier**: apporter des modifications ou implémenter d’autres actions demandées sur les données personnelles, le cas échéant.
 
-1. **Restreindre**: limiter le traitement des données personnelles, en supprimant les licences pour différents services en ligne ou en désactivant les services souhaités quand c’est possible. Vous pouvez également supprimer les données du cloud Microsoft et les conserver localement ou dans un autre emplacement.
+1. **Restreindre**: restreindre le traitement des données personnelles, soit en supprimant des licences pour différentes services en ligne, soit en désactivant les services souhaités dans la mesure du possible. Vous pouvez également supprimer des données du Cloud Microsoft et les conserver localement ou à un autre emplacement.
 
-1. **supprimer**: supprimer définitivement des données personnelles qui se trouvent dans le cloud Microsoft. Découvrez plus d’informations sur la [suppression des données personnelles pour les comptes Microsoft](gdpr-dsr-delete-msa.md). Découvrez plus d’informations sur la [fermeture d’un compte Microsoft](gdpr-dsr-accountclose-msa.md).
+1. **Supprimer**: supprimer définitivement les données personnelles qui résident dans le Cloud de Microsoft. En savoir plus sur [la suppression des données personnelles pour les comptes Microsoft](gdpr-dsr-delete-msa.md). En savoir plus sur [la fermeture d’un compte Microsoft](gdpr-dsr-accountclose-msa.md).
 
-1. **Exporter**: Fournir une copie électronique (dans un format lisible par machine) des données personnelles. [Découvrez plus d’informations sur l’exportation des données personnelles pour les comptes Microsoft](gdpr-dsr-export-msa.md).
+1. **Exporter**: fournir une copie électronique (dans un format lisible par machine) des données personnelles. [En savoir plus sur l’exportation de données personnelles pour les comptes Microsoft](gdpr-dsr-export-msa.md).

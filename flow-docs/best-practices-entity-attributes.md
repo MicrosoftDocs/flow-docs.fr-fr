@@ -1,6 +1,6 @@
 ---
-title: Meilleures pratiques pour l’utilisation des attributs d’entité de flux de processus métier | MicrosoftDocs
-description: Découvrez les meilleures pratiques pour l’utilisation des attributs d’entité de flux de processus métier.
+title: Meilleures pratiques relatives à l’utilisation des attributs d’entité de workflow de processus d’entreprise | MicrosoftDocs
+description: Découvrez les meilleures pratiques pour l’utilisation des attributs d’entité Business Process Flow.
 ms.custom: ''
 ms.date: 04/23/2019
 ms.reviewer: ''
@@ -19,95 +19,96 @@ helpviewer_keywords:
 author: msftman
 ms.author: deonhe
 manager: kvivek
-ms.openlocfilehash: 950f03d78e708f00f28b68daf7c1012fae231c95
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: b46eac7317db8f5b63ebcd7b8b1fe8c79109bc11
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64472969"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73545279"
 ---
-# <a name="best-practices-in-using-business-process-flow-attributes"></a>Meilleures pratiques pour l’utilisation des attributs de flux de processus métier
+# <a name="best-practices-in-using-business-process-flow-attributes"></a>Meilleures pratiques en matière d’utilisation des attributs de workflow de processus d’entreprise
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 
-Les attributs liés aux processus hérités dans les entités sont déconseillés. Voici quelques meilleures pratiques pour l’utilisation de l’attribut *Active Stage* (activestageid) sur l’entité de flux de processus métier. 
+Les attributs hérités liés au processus dans les entités sont déconseillés. Voici quelques-unes des meilleures pratiques pour l’utilisation de l’attribut *stage actif* (activestageid) sur l’entité Business Process Flow. 
 
-## <a name="reporting-on-the-active-stage-of-a-business-process-flow"></a>Création de rapport sur la phase active d’un flux de processus métier
+## <a name="reporting-on-the-active-stage-of-a-business-process-flow"></a>Création de rapports sur l’étape active d’un workflow de processus d’entreprise
 
-Supposons que vous souhaitez obtenir un aperçu de votre pipeline des ventes en créant un rapport sur la phase active dans laquelle se trouve le **Processus de vente prospect-opportunité**.
+Supposons que vous souhaitiez obtenir une vue de votre pipeline de ventes en signalant l’étape active à laquelle est situé le **prospect dans le processus de vente des opportunités** .
 
-Auparavant, pour créer un rapport sur les processus métier par phase, il était possible de définir une vue sur chaque entité connexe du flux de processus métier et créer un rapport sur le champ *Active Stage* (activestageid).
+Auparavant, pour créer des rapports sur les processus d’entreprise par étape, vous pouvez définir une vue sur chaque entité associée du workflow du processus d’entreprise, puis créer un rapport sur le champ *étape active* (activestageid).
 
-Le champ *Active Stage* (activestageid) étant déconseillé sur les entités connexes, il existe deux façons de créer des rapports sur les flux de processus métier.
+Avec la dépréciation du champ *étape active* (activestageid) sur les entités associées, il existe deux façons de rendre compte des flux de processus d’entreprise.
 
-### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Option 1 : Vues et graphiques sur l’entité de flux de processus métier **(recommandé)**
+### <a name="option-1-views-and-charts-on-business-process-flow-entity-recommended"></a>Option 1 : affichages et graphiques sur l’entité de workflow de processus d’entreprise **(recommandé)**
 
-Dans les versions 9.0 et ultérieures, chaque flux de processus métier crée sa propre entité Common Data Service, généralement avec le même nom que le flux de processus métier. Pour créer des rapports sur le flux de processus métier, sélectionnez l’entité de flux de processus métier pour lequel vous voulez créer un rapport et créez des vues et des graphiques, comme vous le faisiez avant.
+Dans les versions 9,0 et ultérieures, chaque workflow de processus d’entreprise crée sa propre Common Data Service entité, généralement avec le même nom que le workflow du processus d’entreprise. Pour créer un rapport sur le workflow du processus d’entreprise, sélectionnez l’entité du workflow de processus d’entreprise sur lequel vous souhaitez créer un rapport, puis créez des affichages et des graphiques, comme vous l’avez fait précédemment.
 
-Dans notre exemple, procédez comme suit pour accéder à l’entité **Processus de vente prospect-opportunité** :
+Dans notre exemple, suivez les étapes ci-dessous pour accéder à l’entité **lead to opportunité Sales process** :
 1. Accédez à https://web.powerapps.com.
-1. Sélectionnez **Données**.
-1. Sélectionnez **Entités**.
-1. Définissez le filtre sur **Tout**.
-1. Recherchez et sélectionnez l’entité **Processus de vente prospect-opportunité**.
+1. Sélectionnez les **données**.
+1. Sélectionnez les **entités**.
+1. Définissez le filtre sur **tout**.
+1. Recherchez, puis sélectionnez l’entité **lead to opportunité Sales process** .
 
-   ![entité processus de vente prospect-opportunité](media/best-practices-entity-attributes/lead-opportunity-process.png)
+   ![diriger vers l’entité de processus de vente d’opportunités](media/best-practices-entity-attributes/lead-opportunity-process.png)
 
-Ici, vous pouvez définir des vues et graphiques comme vous le feriez sur n’importe quelle autre entité.
+Ici, vous pouvez définir des vues et des graphiques comme vous le feriez sur n’importe quelle autre entité.
 
-![détails de l’entité du processus de traduction](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
+![Détails de l’entité processus de traduction](media/best-practices-entity-attributes/lead-to-opportunity-sales-process-details.png)
 
-L’avantage de cette approche est que vous pouvez utiliser une vue ou un graphique unique pour créer un rapport sur les flux de processus métier qui s’étendent sur plusieurs entités.
+L’un des avantages de cette approche est que vous pouvez utiliser une vue ou un graphique unique pour effectuer un rapport sur les flux de processus d’entreprise qui s’étendent sur plusieurs entités.
 
-En outre, comme l’entité de flux de processus métier n’est pas différente de toute autre entité personnalisée dans Common Data Service, vous pouvez ajouter des champs personnalisés à l’entité pour effectuer le suivi de toutes les informations dont vous avez besoin.
+En outre, comme l’entité de workflow de processus d’entreprise n’est pas différente de celle d’une autre entité personnalisée dans Common Data Service, vous pouvez ajouter des champs personnalisés à l’entité pour suivre toutes les informations supplémentaires dont vous avez besoin.
 
-### <a name="option-2-copy-active-stage-to-a-related-entity"></a>Option 2 : copier la phase active dans une entité connexe
+### <a name="option-2-copy-active-stage-to-a-related-entity"></a>Option 2 : copier l’étape active vers une entité associée
 
-Ou bien, pour continuer la création de rapports sur l’entité associée, créez un flux pour copier le champ *Active Stage* (activestageid) à partir de l’entité de flux de processus métier dans un champ personnalisé sur les entités Common Data Service associées.
+Sinon, pour poursuivre la création de rapports à partir de l’entité associée, créez un Flow pour copier le champ d' *étape active* (activestageid) à partir de l’entité de workflow de processus d’entreprise dans un champ personnalisé sur les entités Common Data Service associées.
 
 Voici quelques éléments à prendre en compte lorsque vous utilisez cette approche :
 
-1.  Il est possible d’avoir plusieurs flux de processus métier en cours d’exécution sur une seule entité. Avec cette approche, il est préférable d’avoir un champ personnalisé qui stocke la phase active pour chaque flux de processus métier qui s’exécute sur l’entité. Cette approche garantit l’intégrité de la création de rapports.
+1.  Il est possible d’exécuter plusieurs workflows de processus d’entreprise sur une seule entité. Avec cette approche, il est préférable d’avoir un champ personnalisé qui stocke l’étape active pour chaque workflow de processus d’entreprise qui s’exécute sur l’entité. Cette approche garantit l’intégrité de la création de rapports.
 
-1.  Étant donné que la création de rapports est pilotée par l’entité associée, il n’est pas possible de créer une vue unique pour les rapports sur les flux de processus métier qui s’étendent sur plusieurs entités.
+1.  Comme la création de rapports est motivée par l’entité associée, il n’est pas possible de créer une vue unique qui signale des flux de processus d’entreprise qui s’étendent sur plusieurs entités.
 
-## <a name="using-the-active-stage-to-run-logic"></a>Utilisation de la phase active pour exécuter la logique
+## <a name="using-the-active-stage-to-run-logic"></a>Utilisation de l’étape active pour exécuter la logique
 
-Voici quelques cas dans lesquels vous souhaiterez peut-être exécuter une logique qui est basée sur la phase active :
+Voici quelques cas dans lesquels vous pouvez souhaiter exécuter une logique basée sur l’étape active :
 
-### <a name="using-the-active-stage-to-run-client-side-logic"></a>Utilisation de la phase active pour exécuter la logique côté client
+### <a name="using-the-active-stage-to-run-client-side-logic"></a>Utilisation de l’étape active pour exécuter une logique côté client
 
-Lorsque vous utilisez le processus métier, il existe beaucoup de choses que vous pouvez vouloir effectuer automatiquement. Par exemple :
+À mesure que vous utilisez le processus d’entreprise, vous souhaiterez peut-être effectuer automatiquement plusieurs opérations. Par exemple :
 
--   Modifier le flux de processus métier actif en fonction des informations nouvellement disponibles dans le formulaire ou le flux de processus métier.
+-   Modifiez le workflow de processus d’entreprise actif en fonction des informations récemment disponibles sur le formulaire ou le processus d’entreprise.
 
--   Déplacer la phase active vers l’étape précédente ou suivante, en fonction des valeurs entrées par les utilisateurs pour les étapes ou les champs de formulaire.
+-   Déplacer l’étape active vers l’étape suivante ou précédente, en fonction des valeurs entrées par les utilisateurs pour les étapes ou les champs de formulaire.
 
--   Masquer ou afficher des champs et onglets de formulaire en fonction de la phase sélectionnée.
+-   Masquer ou afficher les onglets et les champs de formulaire en fonction de la phase sélectionnée.
 
--   Afficher des messages d’information et exécuter des calculs en fonction des flux de processus métier actifs, de la phase active sélectionnée ou des événements, comme le déplacement de la phase active.
+-   Affichez des messages informatifs et exécutez des calulations en fonction des flux de processus d’entreprise actifs, de l’étape active ou sélectionnée ou des événements tels que le déplacement de l’étape active.
 
 > [!TIP]
-> Pour les scénarios comme ceux-ci, utilisez l’ensemble [d’API clientes](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process) pris en charge pour les flux de processus métier.
+> Pour des scénarios comme ceux-ci, utilisez l’ensemble d' [API client](https://docs.microsoft.com/dynamics365/customer-engagement/developer/clientapi/reference/formcontext-data-process) pris en charge pour les flux de processus d’entreprise.
 >
 
-### <a name="using-the-active-stage-to-run-server-side-logic"></a>Utilisation de la phase active pour exécuter la logique côté serveur
+### <a name="using-the-active-stage-to-run-server-side-logic"></a>Utilisation de l’étape active pour exécuter une logique côté serveur
 
-Il peut arriver que l’automatisation basée sur le flux de processus métier doit être effectuée côté serveur. Par exemple :
+Il peut y avoir des cas où l’automatisation basée sur le processus d’entreprise doit être effectuée côté serveur. Par exemple :
 
--   Envoyer un e-mail à un utilisateur si la phase **Qualify** du **Processus de vente Opportunité** est active pendant plus de 15 jours.
+-   Envoyer un e-mail à un utilisateur si l’étape de **qualification** du **processus de vente** est active pendant plus de 15 jours.
 
--   Créer automatiquement un ensemble d’activités pertinentes à la phase active du **Processus de vente Opportunité** chaque fois qu’il change.
+-   Créer automatiquement un ensemble d’activités en rapport avec l’étape active du **processus d’opportunité de vente** à chaque fois qu’il change.
 
--   Terminer automatiquement le **Processus de vente Opportunité** à l’issue de l’activité d’appel téléphonique de clôture.
+-   Terminez automatiquement le **processus d’opportunité de vente** lorsque l’activité appel téléphonique pour la clôture se termine.
 
 > [!TIP]
-> Utiliser des flux de travail Common Data Service classiques ou des flux que vous définissez sur l’entité pour le flux de processus métier.
+> Utilisez les flux de travail Common Data Service classiques ou les flux que vous définissez sur l’entité pour le flux du processus d’entreprise.
 > 
 
-Pour créer un flux de travail Common Data Service classique qui crée des activités pour les révisions de solution interne et effectuer le suivi avec le client lors de la phase **Propose** du **Processus de vente Opportunité** :
+Pour créer un flux de travail de Common Data Service classique qui crée des activités pour les révisions de solutions internes et pour le suivi du client dans la phase **proposer** du **processus de vente d’opportunités**:
 
-1. Créez-le sur l’entité **Processus de vente Opportunité** et configurez-le pour s’exécuter chaque fois que le champ **Active Stage** pour l’entité change. 
-1. Définissez une condition pour vérifier si le champ **Active Stage** est égal à **Propose**. 
-1. Créez un enregistrement de rendez-vous et d’appel téléphonique pour la révision interne de la solution et l’appel du client pour passer en revue la solution respectivement.
+1. Créez-le sur l’entité de **processus opportunité Sales** et définissez-le pour qu’il s’exécute chaque fois que le champ **étape active** de l’entité change. 
+1. Définissez une condition pour vérifier si le champ d' **étape active** est **proposer**. 
+1. Créez un enregistrement de rendez-vous et d’appel téléphonique pour la révision interne de la solution et l’appel client pour passer en revue la solution, respectivement.
 
-   ![clôturer le suivi de la phase](media/best-practices-entity-attributes/close-stage-followup.png)
+   ![fermer le suivi de l’étape](media/best-practices-entity-attributes/close-stage-followup.png)
