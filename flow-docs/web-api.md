@@ -10,14 +10,15 @@ ms.service: business-applications
 ms.technology: ''
 ms.author: stepsic
 audience: Power user
-ms.openlocfilehash: ede20606d1d5ba2a97217dfbcfb3c9fffec2c017
-ms.sourcegitcommit: 93f8bac60cebb783b3a8fc8887193e094d4e27e2
+ms.openlocfilehash: 210965e443f42935529219705cd7b08fe60c92ca
+ms.sourcegitcommit: 510706f5699b6cf9dda9dcafbed715f9f6d559e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/25/2019
-ms.locfileid: "64463640"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73548653"
 ---
 # <a name="microsoft-flow-web-api"></a>API web Microsoft Flow
+[!INCLUDE [view-pending-approvals](includes/cc-rebrand.md)]
 
 À l’avenir, tous les flux seront stockés dans Common Data Service et tireront parti de l’[API Web avancée](https://docs.microsoft.com/powerapps/developer/common-data-service/webapi/perform-operations-web-api).
 
@@ -33,7 +34,7 @@ Pour commencer à créer des requêtes, vous devrez d’abord construire l’URL
 
 - Le **sous-domaine régional** dépend de l’emplacement de votre environnement. Lorsque vous vous connectez à Microsoft Flow, vous pouvez voir la région de votre environnement dans l’URL de la page web. Utilisez ce nom de région pour trouver le sous-domaine associé dans le tableau suivant :
 
-     ![URL du flux](media/web-api/get-region-name.png "URL du flux")
+     ![URL de flux](media/web-api/get-region-name.png "URL de flux")
 
      | Région         | Sous-domaine   |
      | -------------- | ----------- |
@@ -91,7 +92,7 @@ Comme indiqué ci-dessus, vous pouvez obtenir la liste des flux de travail en ap
 
 | Nom de la propriété     | Description                                              |
 | ----------------- | -------------------------------------------------------- |
-| Catégorie          | Catégorie du flux. Les différents types sont : 0 - workflows Common Data Service classiques, 1 - dialogues Common Data Service classiques, 2 - règles métier, 3 - actions Common Data Service classiques, 4 - flux de processus métier et 5 - flux automatisés, instantanés ou planifiés. |
+| Catégorie          | Catégorie du flux. Les différents types sont : 0 - workflows Common Data Service classiques, 1 - dialogues Common Data Service classiques, 2 - règles métier, 3 - actions Common Data Service classiques, 4 - flux de processus métier et 5 - flux automatisés, instantanés ou planifiés. |
 | statecode         | L’état du flux. L’état peut être **0** - désactivé ou **1** - activé.|
 | workflowuniqueid  | Identificateur unique de cette installation du flux. |
 | workflowid        | Identificateur unique d’un flux pour toutes les importations. |
