@@ -66,6 +66,28 @@
       href: enhance-business-process-flows-branching.md
     - name: Meilleures pratiques pour les attributs de flux de processus métier
       href: best-practices-entity-attributes.md
+- name: Flux d’interface utilisateur (préversion)
+  items:
+    - name: Présentation des flux d’interface utilisateur
+      href: ./ui-flows/overview.md
+    - name: Configurer des flux d’interface utilisateur
+      href: ./ui-flows/setup.md
+    - name: Créer et tester des flux d’interface utilisateur de bureau
+      href: ./ui-flows/create-desktop.md
+    - name: Modifier les flux d’interface utilisateur de bureau
+      href: ./ui-flows/edit-desktop.md
+    - name: Utiliser les entrées et les sorties dans les flux d’interface utilisateur de bureau
+      href: ./ui-flows/inputs-outputs-desktop.md
+    - name: Créer et tester des flux d’interface utilisateur web
+      href: ./ui-flows/create-web.md
+    - name: Modifier les flux d’interface utilisateur web
+      href: ./ui-flows/edit-web.md
+    - name: Utiliser les entrées et les sorties dans les flux d’interface utilisateur web
+      href: ./ui-flows/inputs-outputs-web.md
+    - name: Exécuter des flux d’interface utilisateur
+      href: ./ui-flows/run-ui-flow.md
+    - name: Gérer les flux d’interface utilisateur
+      href: ./ui-flows/manage.md
 - name: Solutions
   items:
     - name: Présentation
